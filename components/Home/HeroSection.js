@@ -33,13 +33,14 @@ export default function HeroSection ({ tl }) {
 
   return (
     <div className='sectionOne d-flex align-items-center py-5'>
-      <div className='container'>
+      <div className='wrapper '>
         <div className='row py-5 d-flex align-items-stretch'>
           <div className='col-12 col-md-6  d-flex align-items-center'>
-            <div className=''>
+            <div className='hero-heading'>
               <h1 className=''>Designed for everyone</h1>
               <p className=''>
-                Suite of products to help boost your financial positioning
+                Suite of products to help boost your <br />
+                financial positioning
               </p>
               <a
                 className=' btn btn-black px-3 py-1'
