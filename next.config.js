@@ -1,4 +1,4 @@
-const webpack = require("webpack");
+const webpack = require('webpack')
 module.exports = {
   exportPathMap: async function (
     defaultPathMap,
@@ -13,21 +13,25 @@ module.exports = {
       '/trading-basic': { page: '/trading-basic' },
       '/products/funding': { page: '/products/funding' },
       '/products/liquidity': { page: '/products/liquidity' },
-      '/products/token': { page: '/products/token' },
+      '/products/token': { page: '/products/token' }
     }
   },
   images: {
     loader: 'imgix',
-    path: '/',
+    path: '/'
   },
-  webpack: (config) => {
+  rules: {
+    'react/no-unescaped-entities': 'off',
+    '@next/next/no-page-custom-font': 'off'
+  },
+  webpack: config => {
     config.plugins.push(
       new webpack.ProvidePlugin({
-        $: "jquery",
-        jQuery: "jquery",
-        "window.jQuery": "jquery",
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery'
       })
-    );
-    return config;
-  },
-};
+    )
+    return config
+  }
+}
