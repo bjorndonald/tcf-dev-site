@@ -195,24 +195,24 @@ export default function NavBar () {
                 <ul className='mobileMenuListSub'>
                   <li>
                     <Link href='/archive'>
-                      <a className='mobileMenuListSubA'>Archive</a>
+                      <a className='mobileMenuListSubA'>Bites</a>
                     </Link>
                   </li>
                   <li>
                     <Link href='/trading-basic'>
-                      <a className='mobileMenuListSubA'>Trading Basic</a>
+                      <a className='mobileMenuListSubA'>Basics</a>
                     </Link>
                   </li>
                 </ul>
               </li>
               <li className='mobileMenuListChild'>
                 <a className='mobileMenuListChildA' href='#'>
-                  Who We Are
+                  About
                 </a>
                 <ul className='mobileMenuListSub'>
                   <li>
                     <Link href='/about-us'>
-                      <a className='mobileMenuListSubA'>About Us</a>
+                      <a className='mobileMenuListSubA'>Model</a>
                     </Link>
                   </li>
                   {/* <li><Link href="/station"><a className="mobileMenuListSubA">Station</a></Link></li> */}
@@ -221,7 +221,7 @@ export default function NavBar () {
                       href='https://www.centralstation.blog/'
                       targe='_blank'
                     >
-                      <a className='mobileMenuListSubA'>Station</a>
+                      <a className='mobileMenuListSubA'>Blog</a>
                     </Link>
                   </li>
                 </ul>
