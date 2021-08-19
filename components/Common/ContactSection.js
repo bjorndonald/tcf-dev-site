@@ -36,7 +36,7 @@ export default function ContactSection ({ tl }) {
             <Image
               src='/images/ContactUsCardImage.png'
               alt='Image'
-              width={1645}
+              width={1445}
               height={900}
             />
           </div>
