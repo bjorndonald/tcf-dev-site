@@ -87,3 +87,17 @@
     url(../fonts/futura/FuturaPTCondExtraBold.woff) format("woff"),
     url(../fonts/futura/FuturaPTCondExtraBold.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: eina;
+  src: url('../fonts/eina/Eina01-Bold.ttf') format('truetype');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: eina;
+  src: url('../fonts/eina/Eina01-SemiBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

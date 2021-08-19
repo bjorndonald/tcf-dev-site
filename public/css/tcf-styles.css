@@ -181,6 +181,7 @@ select {
 }
 
 .nav-link {
+  font-family: eina;
 }
 
 .menu-overlay-cBtn {
@@ -317,7 +318,8 @@ select {
 .topNavLink a,
 .topNavLinkRight a {
   font-size: 18px;
-  font-family: futura-pt-b, 'system-ui', Helvetica Neue, sans-serif !important;
+  /* font-family: futura-pt-b, 'system-ui', Helvetica Neue, sans-serif !important; */
+  font-family: eina;
 }
 
 .topNavLink .dropdown .dropdown-menu {
@@ -485,6 +487,7 @@ select {
   position: relative;
   width: 100%;
   text-align: center;
+  overflow: hidden;
   z-index: 1000;
 }
 
@@ -494,13 +497,16 @@ select {
 
 .sectionMobile .box {
   position: absolute;
-  width: 100%;
+  width: 100.5%;
   top: 0;
-  left: 0%;
+  left: -0.5%;
   overflow: hidden;
 
   /* transform: translate(0%, 0%); */
   text-align: center;
+}
+
+.sectionMobile .box img {
 }
 
 .hero-heading {
@@ -509,9 +515,12 @@ select {
 
 .hero-heading h1 {
   font-size: 8rem;
+  font-family: eina;
+  font-weight: bold;
 }
 
 .hero-heading p {
+  font-family: eina;
   font-size: 2rem;
 }
 
@@ -526,7 +535,7 @@ select {
   position: relative;
   width: 52%;
   height: 100%;
-  border-radius: 2.35rem;
+  border-radius: 1.9vw;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -544,12 +553,20 @@ select {
 .mobImg .box {
   /* margin-bottom: 2px; */
   margin-left: 2px;
+  border-radius: 2.35vw;
 }
 
 .mobImg .box img {
   width: 100%;
   display: block;
-  margin: 0 auto -6px auto !important;
+  overflow: hidden;
+  border-radius: 2.35vw;
+  margin: 0 auto -0.1vw -0.02vw !important;
+}
+
+.mobImg .box div {
+  overflow: hidden;
+  border-radius: 2.35vw;
 }
 
 .sectionTwoContent p {
@@ -754,8 +771,8 @@ select {
   color: #fff;
   font-size: 25px;
   line-height: 30px;
-  opacity: 0;
-  transition: opacity 0.5s cubic-bezier(0.19, 1, 0.4, 1);
+  /* opacity: 0; */
+  /* transition: opacity 0.5s cubic-bezier(0.19, 1, 0.4, 1); */
   width: 40%;
 }
 
@@ -876,6 +893,14 @@ select {
   color: #000;
 }
 
+.yesCheckBox {
+  margin-bottom: 0 !important;
+}
+
+.yesCheckBox input[type='checkbox'] {
+  appearance: checkbox;
+}
+
 .sectionContactUs .fieldWrap {
   margin-bottom: 20px;
   position: relative;
@@ -891,6 +916,9 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  /* display: flex;
+  justify-content: center; */
+  /* padding: 1rem 0; */
 }
 
 .arrow-down {

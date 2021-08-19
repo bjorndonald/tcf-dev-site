@@ -93,7 +93,7 @@ export default function MobileSection ({ tl }) {
                 <div className='box box2'>
                   <Image
                     src='/images/mob-2.png'
-                    width={210}
+                    width={212}
                     height={416.25}
                     alt='Image'
                   />
@@ -101,7 +101,7 @@ export default function MobileSection ({ tl }) {
                 <div className='box box3'>
                   <Image
                     src='/images/mob-3.png'
-                    width={210}
+                    width={212}
                     height={416.25}
                     alt='Image'
                   />
@@ -109,7 +109,7 @@ export default function MobileSection ({ tl }) {
                 <div className='box box4'>
                   <Image
                     src='/images/mob-4.png'
-                    width={210}
+                    width={212}
                     height={416.25}
                     alt='Image'
                   />

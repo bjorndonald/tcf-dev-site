@@ -58,8 +58,7 @@ export default function ContactSection ({ tl }) {
                   />
                 </div>
                 <div className='countryWrap fieldWrap'>
-                  {/* <div className='arrow-down'></div> */}
-                  <select className='fCountry '>
+                  <select className='fCountry custom-select-box'>
                     <option>Country</option>
                     <option>Option Two</option>
                     <option>Option three</option>
@@ -80,7 +79,8 @@ export default function ContactSection ({ tl }) {
                 <div className='fieldWrap'>
                   <p>
                     By clicking &quot;Get started&quot;, you agree to
-                    Traderscentral Terms of Use and Privacy Policy.
+                    Traderscentral <br />
+                    Terms of Use and Privacy Policy.
                   </p>
                 </div>
               </form>
