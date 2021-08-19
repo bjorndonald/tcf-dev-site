@@ -55,7 +55,7 @@ export default function NavBar () {
                 src='/images/logo.png'
                 alt='Traders Central Fund Logo'
                 width={200}
-                height={20.36}
+                height={51.02}
               />
             </a>
           </Link>

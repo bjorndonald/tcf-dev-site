@@ -37,7 +37,7 @@ export default function ContactSection ({ tl }) {
               src='/images/ContactUsCardImage.png'
               alt='Image'
               width={1645}
-              height={930}
+              height={900}
             />
           </div>
           <div className='col-md-6 gaspSlideRight'>

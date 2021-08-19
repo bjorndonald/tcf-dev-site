@@ -7,15 +7,25 @@ export default function BoxSection () {
         <div className='row'>
           <div className='col-12 col-md-6 sectionThreeHeader'>
             <div className='internal'>
-              <h2>Investing for everyone</h2>
-              <p>An ecosystem built to facilitate your financial needs</p>
+              <h2>
+                Investing for <br />
+                everyone
+              </h2>
+              <p>
+                An ecosystem built to facilitate <br />
+                your financial needs
+              </p>
             </div>
           </div>
           <div className='homeBoxOne col-12 col-md-6'>
             <a href='products/funding' className='card'>
               <div>
                 <h3>Fund</h3>
-                <p>Funding retail traders in 24 hours</p>
+                <p>
+                  Funding retail
+                  <br /> traders in 24 <br />
+                  hours
+                </p>
                 <div className='hideText'>
                   Become a remote prop trader in 24 hours
                 </div>
@@ -30,7 +40,10 @@ export default function BoxSection () {
             <a href='products/token' className='card'>
               <div>
                 <h3>Traders Central Tokens</h3>
-                <p>Send and redeem TCT{"'"}s for discounts</p>
+                <p>
+                  Send and redeem <br />
+                  TCT{"'"}s for discounts
+                </p>
                 <div className='hideText'>A currency for our ecosystem</div>
               </div>
               <div className='d-flex justify-content-end'>
@@ -43,7 +56,11 @@ export default function BoxSection () {
             <a href='products/liquidity ' className='card'>
               <div>
                 <h3>Traders Central Capital</h3>
-                <p>Launch your prop fund from anywhere in the world</p>
+                <p>
+                  Launch your prop <br />
+                  fund from anywhere <br />
+                  in the world
+                </p>
                 <div className='hideText'>
                   Access market making services in a few steps.
                 </div>
@@ -58,7 +75,10 @@ export default function BoxSection () {
             <a traget='_blank' href='https://tccrypto.io/' className='card'>
               <div>
                 <h3>Traders Central Crypto</h3>
-                <p>Buy and Sell Crypto</p>
+                <p>
+                  Buy and Sell <br />
+                  Crypto
+                </p>
                 <div className='hideText'>
                   Towards sound money and decentralisation
                 </div>

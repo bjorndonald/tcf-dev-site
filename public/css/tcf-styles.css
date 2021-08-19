@@ -790,8 +790,7 @@ select {
 }
 
 .sectionThree .card:hover span {
-  background: #fff;
-  color: #fff;
+  text-decoration: underline;
   margin-left: 20px;
 }
 
@@ -810,7 +809,7 @@ select {
 }
 
 .sectionThree .card span {
-  font-size: 16px;
+  font-size: 1.2rem;
   line-height: 16px;
   font-weight: 600;
   padding: 10px 20px;
@@ -834,7 +833,7 @@ select {
 }
 
 .sectionThree .card:hover span {
-  color: #000;
+  /* color: #000; */
 }
 
 /*@media(min-width:768px){
@@ -904,6 +903,13 @@ select {
 .homeBoxFour .card p {
   color: #fff;
 }
+
+/* .homeBoxOne .card span,
+.homeBoxTwo .card span,
+.homeBoxThree .card span,
+.homeBoxFour .card span {
+  color: #fff;
+} */
 
 @media (min-width: 992px) {
   .sectionThree .homeBoxTwo {

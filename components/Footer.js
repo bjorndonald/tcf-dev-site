@@ -35,7 +35,7 @@ export default function Footer () {
                 <ul>
                   <li>
                     <Link href='/products/funding'>
-                      <a>funding</a>
+                      <a>Funding</a>
                     </Link>
                   </li>
                   <li>
