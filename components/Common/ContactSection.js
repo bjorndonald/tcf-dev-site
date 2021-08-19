@@ -73,7 +73,12 @@ export default function ContactSection ({ tl }) {
                 </div>
                 <div className='yesCheckBox fieldWrap'>
                   <p>
-                    <input type='checkbox' value='yes' /> Send me helpfull info.
+                    <label className='checkbox-container'>
+                      <input type='checkbox' values='yes' />
+                      <span className='checkmark'></span>
+                    </label>
+                    {/* <input type='checkbox' value='yes' />  */}
+                    Send me helpful info.
                   </p>
                 </div>
                 <div className='fieldWrap'>

@@ -9,6 +9,7 @@ export default function MetaTag ({ title, description, canonicalURL }) {
       <meta name='description' content={description} />
       <link rel='canonical' href={canonicalURL} />
       <link rel='stylesheet' href='/css/custom-select.css' />
+      <link rel='stylesheet' href='/css/check-box.css' />
       <title>{title}</title>
     </Head>
   )

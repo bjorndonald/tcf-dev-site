@@ -4,6 +4,21 @@
   }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: eina;
+  font-weight: bolder;
+}
+
+p {
+  font-weight: bold;
+  font-family: eina;
+}
+
 @media (min-width: 1200px) {
   .container,
   .container-lg,
@@ -182,6 +197,13 @@ select {
 
 .nav-link {
   font-family: eina;
+}
+
+.placeholder {
+  width: 259.19px;
+  height: 190.15px;
+  background-color: #000;
+  border-radius: 5rem;
 }
 
 .menu-overlay-cBtn {
@@ -392,25 +414,32 @@ select {
 
 .topNavLink .nav-item.dropdown.NavFourBox .dropdown-menu .card {
   margin: 0 5px;
+  font-family: eina;
+  background-color: #000;
+  border-radius: 1.25rem;
+  height: 100%;
   transform: translateY(0);
   transition: 0.35s cubic-bezier(0.19, 1, 0.4, 1);
 }
 
 .topNavLink .nav-item.dropdown.NavFourBox .dropdown-menu .card-body {
-  border-radius: 0 0 5px 5px;
+  /* background-color: #000; */
   /*border: 1px solid rgba(47,47,47,.1);
   border-width: 0 1px 1px;*/
 }
 
 .topNavLink .nav-item.dropdown.NavFourBox .dropdown-menu h2 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: bolder;
+  color: #fff;
 }
 
 .topNavLink .nav-item.dropdown.NavFourBox .dropdown-menu p {
   font-size: 16px;
   min-height: 38px;
+  font-weight: bold;
   margin: 0;
+  color: #fff;
 }
 
 .topNavLink .nav-item.dropdown.NavFourBox .dropdown-menu .card:hover {
@@ -465,15 +494,19 @@ select {
 .sectionTwo h2,
 .sectionTwo p {
   color: #fff;
+  font-family: eina;
 }
 
 .sectionTwo h2 {
+  font-family: eina;
+  font-weight: bolder;
   font-size: 50px;
   font-weight: 900;
 }
 
 .sectionTwo p {
   font-size: 30px;
+  font-weight: bold;
 }
 
 .sectionMobile {
@@ -514,7 +547,7 @@ select {
 }
 
 .hero-heading h1 {
-  font-size: 8rem;
+  font-size: 6rem;
   font-family: eina;
   font-weight: bold;
 }
@@ -602,6 +635,8 @@ select {
   color: #fff;
   text-align: center;
   line-height: 30px;
+  font-family: eina;
+
   padding: 0 10px;
   font-weight: bold;
 }
@@ -621,7 +656,7 @@ select {
 .sectionTwoContentWrap .sectionTwoContent {
   position: absolute;
   top: 0%;
-  right: 0%;
+  left: 0%;
   padding-top: 0.5rem;
   padding-bottom: 2rem;
   /* transform: translate(0%, 25%); */
@@ -681,6 +716,7 @@ select {
   .sectionTwo h2 {
     font-size: 25px;
     font-weight: 900;
+    font-family: eina;
   }
 
   .sectionTwo p {
@@ -694,10 +730,25 @@ select {
 /***  Section Three ***/
 .sectionThree {
   background-color: #fff;
+  box-sizing: border-box;
+}
+
+.sectionThree h2 {
+  font-family: eina;
+  font-weight: bolder;
+}
+
+.sectionThree p {
+  font-family: eina;
+  font-weight: bold;
 }
 
 .sectionThree .sectionThreeHeader {
-  min-height: 200px;
+  min-height: 570px;
+}
+
+.sectionThree .sectionThreeHeader .internal {
+  /* padding-bottom: 100px; */
 }
 
 .sectionThree .sectionThreeHeader h2 {
@@ -708,12 +759,13 @@ select {
 .sectionThree .sectionThreeHeader p {
   font-size: 30px;
   font-weight: 600;
+
   color: #000;
 }
 
 .sectionThree .card {
   padding: 5% 5%;
-  border-radius: 10px;
+  border-radius: 40px;
   margin-bottom: 20px;
   transition: all 0.5s cubic-bezier(0.19, 1, 0.4, 1);
   border: 3px solid transparent;
@@ -739,12 +791,13 @@ select {
 
 .sectionThree .card:hover span {
   background: #fff;
-  color: #000;
+  color: #fff;
   margin-left: 20px;
 }
 
 .sectionThree .card h3 {
   font-size: 24px;
+  font-family: eina;
   line-height: 24px;
 }
 
@@ -780,6 +833,10 @@ select {
   opacity: 1;
 }
 
+.sectionThree .card:hover span {
+  color: #000;
+}
+
 /*@media(min-width:768px){
   .sectionThree .card {
       min-height: 34rem;
@@ -799,7 +856,7 @@ select {
 .homeBoxTwo .card span,
 .homeBoxOne .hideText,
 .homeBoxTwo .hideText {
-  color: #fff !important;
+  color: #fff;
 }
 
 @media (max-width: 991px) {
@@ -815,7 +872,8 @@ select {
     max-height: 550px;
   }
 }
-
+.homeBoxTwo {
+}
 .homeBoxOne .card {
   background-color: #3101a5;
   /* background-image: url(../images/homeBoxOneBg.png); */
@@ -849,11 +907,11 @@ select {
 
 @media (min-width: 992px) {
   .sectionThree .homeBoxTwo {
-    margin-top: calc(5rem - 26vw);
+    margin-top: calc(8rem - 26vw);
   }
 
   .sectionThree .homeBoxFour {
-    margin-top: calc(5rem - 26vw);
+    margin-top: calc(8rem - 26vw);
   }
 }
 
@@ -894,7 +952,7 @@ select {
 }
 
 .yesCheckBox {
-  margin-bottom: 0 !important;
+  margin-bottom: 1rem !important;
 }
 
 .yesCheckBox input[type='checkbox'] {

@@ -13,11 +13,11 @@ jQuery(document).ready(function ($) {
   $('.custom-select-box').each(function () {
     var $this = $(this),
       selectOptions = $(this).children('option').length
-    console.log(selectOptions)
+
     $this.addClass('hide-select')
     $this.wrap('<div class="select"></div>')
     $this.after('<div class="custom-select-bx"></div>')
-
+    $('div.select').append('<div class="arrow-right"></div>')
     var $customSelect = $this.next('div.custom-select-bx')
     $customSelect.text(
       $this
@@ -45,24 +45,32 @@ jQuery(document).ready(function ($) {
 
     var $optionlistItems = $optionlist.children('li')
 
-    $customSelect.click(function (e) {
+    $customSelect.on('click', function (e) {
       e.stopPropagation()
+      console.log('vvv')
       $('div.custom-select-bx.active')
         .not(this)
         .each(function () {
           $(this)
             .removeClass('active')
             .next('ul.select-options')
+
             .hide()
         })
       $(this)
         .toggleClass('active')
         .next('ul.select-options')
-        .slideToggle()
+
+        .show()
     })
 
     $optionlistItems.click(function (e) {
       e.stopPropagation()
+      $(this)
+        .parent()
+        .find('li')
+        .removeClass('active')
+      $(this).addClass('active')
       $customSelect.text($(this).text()).removeClass('active')
       $this.val($(this).attr('rel'))
       $optionlist.hide()
@@ -80,16 +88,16 @@ jQuery(document).ready(function ($) {
       $('[data-toggle="popover"]').popover();
     });*/
 
-  $('body').popover({
-    html: true,
-    content: function () {
-      return $(this)
-        .next()
-        .html()
-    },
-    selector: '.has-popover',
-    trigger: 'hover'
-  })
+  // $('body').popover({
+  //   html: true,
+  //   content: function () {
+  //     return $(this)
+  //       .next()
+  //       .html()
+  //   },
+  //   selector: '.has-popover',
+  //   trigger: 'hover'
+  // })
 
   $('.btnCad85').click(function () {
     $('.cadText85').show()

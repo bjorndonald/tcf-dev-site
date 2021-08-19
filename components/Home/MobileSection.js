@@ -58,23 +58,23 @@ export default function MobileSection ({ tl }) {
               <div className='sectionTwoList'>
                 <div className='sectionTwoNav sectionTwoNavFix sectionTwoNavF'>
                   <ul>
-                    <li className='active'>Client Portal</li>
-                    <li>Socials</li>
-                    <li>Profile</li>
+                    <li className='active'>Manage</li>
+                    <li>Connect</li>
+                    <li>Learn</li>
                   </ul>
                 </div>
                 <div className='sectionTwoNav sectionTwoNav-2 '>
                   <ul>
-                    <li>Client Portal</li>
-                    <li className='active'>Socials</li>
-                    <li>Profile</li>
+                    <li>Manage</li>
+                    <li className='active'>Connect</li>
+                    <li>Learn</li>
                   </ul>
                 </div>
                 <div className='sectionTwoNav sectionTwoNav-3'>
                   <ul>
-                    <li>Client Portal</li>
-                    <li>Socials</li>
-                    <li className='active'>Profile</li>
+                    <li>Manage</li>
+                    <li>Connect</li>
+                    <li className='active'>Learn</li>
                   </ul>
                 </div>
               </div>
@@ -122,12 +122,12 @@ export default function MobileSection ({ tl }) {
                   <h2>
                     <div className='sectionTwoContentLine sectionTwoContentLineOne'>
                       <div className='sectionTwoContentLineOneInner'>
-                        Track your trading{' '}
+                        Keep tabs on{' '}
                       </div>
                     </div>
                     <div className='sectionTwoContentLine sectionTwoContentLineTwo'>
                       <div className='sectionTwoContentLineTwoInner'>
-                        portfolio with ease!
+                        your portfolio
                       </div>
                     </div>
                     {/* <div className="sectionTwoContentLine sectionTwoContentLineThree">
@@ -135,9 +135,11 @@ export default function MobileSection ({ tl }) {
                                 </div> */}
                   </h2>
                   <p>
-                    Stay on top of your trading performance, learn what other
-                    traders are doing, and receive TCTs in one place, the client
-                    portal!
+                    Stay on top of your assets. All your
+                    <br />
+                    accounts in one place, track analytics
+                    <br />
+                    and process tasks
                   </p>
                 </div>
 

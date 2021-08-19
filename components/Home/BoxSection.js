@@ -5,11 +5,13 @@ export default function BoxSection () {
     <div className='sectionThree py-5'>
       <div className='container'>
         <div className='row'>
-          <div className='col-12 col-lg-6 sectionThreeHeader'>
-            <h2>Investing for everyone</h2>
-            <p>An ecosystem built to facilitate your financial needs</p>
+          <div className='col-12 col-md-6 sectionThreeHeader'>
+            <div className='internal'>
+              <h2>Investing for everyone</h2>
+              <p>An ecosystem built to facilitate your financial needs</p>
+            </div>
           </div>
-          <div className=' homeBoxOne col-12 col-md-6'>
+          <div className='homeBoxOne col-12 col-md-6'>
             <a href='products/funding' className='card'>
               <div>
                 <h3>Fund</h3>

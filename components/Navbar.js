@@ -279,13 +279,6 @@ export default function NavBar () {
                     <Link href='/products/funding'>
                       <a className='box-dropdown-item'>
                         <div className='card'>
-                          <Image
-                            className='card-img-top'
-                            src='/images/piggy.png'
-                            alt='Card image cap'
-                            width={259.19}
-                            height={190.15}
-                          />
                           <div className='card-body'>
                             <h2>Funding</h2>
                             <p>
@@ -301,13 +294,6 @@ export default function NavBar () {
                     <Link href='/products/token'>
                       <a className='box-dropdown-item'>
                         <div className='card'>
-                          <Image
-                            className='card-img-top'
-                            src='/images/token.png'
-                            alt='Card image cap'
-                            width={259.19}
-                            height={190.15}
-                          />
                           <div className='card-body'>
                             <h2>Token</h2>
                             <p>TCT - virtual currency with in our ecosystem.</p>
@@ -323,13 +309,6 @@ export default function NavBar () {
                       href='https://tccrypto.io/'
                     >
                       <div className='card'>
-                        <Image
-                          className='card-img-top'
-                          src='/images/bitcoin.png'
-                          alt='Card image cap'
-                          width={259.19}
-                          height={190.15}
-                        />
                         <div className='card-body'>
                           <h2>Crypto</h2>
                           <p>Buy and sell crypto in seconds!</p>
@@ -342,13 +321,6 @@ export default function NavBar () {
                     <Link href='/products/liquidity'>
                       <a className='box-dropdown-item' href='liquidity'>
                         <div className='card'>
-                          <Image
-                            className='card-img-top'
-                            src='/images/laquidty.png'
-                            alt='Card image cap'
-                            width={259.19}
-                            height={190.15}
-                          />
                           <div className='card-body'>
                             <h2>Liquidity</h2>
                             <p>Start your prop fund in 24 hours</p>
