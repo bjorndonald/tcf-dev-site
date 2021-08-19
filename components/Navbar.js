@@ -349,12 +349,12 @@ export default function NavBar () {
                 >
                   <li>
                     <Link href='/archive'>
-                      <a className='dropdown-item'>Archive</a>
+                      <a className='dropdown-item'>Bites</a>
                     </Link>
                   </li>
                   <li>
                     <Link href='/trading-basic'>
-                      <a className='dropdown-item'>Trading Basic</a>
+                      <a className='dropdown-item'>Basics</a>
                     </Link>
                   </li>
                 </ul>
@@ -369,7 +369,7 @@ export default function NavBar () {
                   aria-haspopup='true'
                   aria-expanded='false'
                 >
-                  Who We Are
+                  About
                 </a>
                 <ul
                   className='dropdown-menu'
@@ -377,7 +377,7 @@ export default function NavBar () {
                 >
                   <li>
                     <Link href='/about-us'>
-                      <a className='dropdown-item'>About Us</a>
+                      <a className='dropdown-item'>Model</a>
                     </Link>
                   </li>
                   <li>
@@ -385,7 +385,7 @@ export default function NavBar () {
                       href='https://www.centralstation.blog/'
                       target='_blank'
                     >
-                      <a className='dropdown-item'>Station</a>
+                      <a className='dropdown-item'>Blog</a>
                     </Link>
                   </li>
                 </ul>

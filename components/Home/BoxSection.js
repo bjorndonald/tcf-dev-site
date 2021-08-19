@@ -39,7 +39,7 @@ export default function BoxSection () {
           <div className=' homeBoxTwo col-12 col-md-6'>
             <a href='products/token' className='card'>
               <div>
-                <h1>Traders Central Tokens</h1>
+                <h1>Tokens</h1>
                 <p>
                   Send and redeem <br />
                   TCT{"'"}s for discounts
@@ -55,7 +55,7 @@ export default function BoxSection () {
           <div className=' homeBoxThree col-12 col-md-6'>
             <a href='products/liquidity ' className='card'>
               <div>
-                <h1>Traders Central Capital</h1>
+                <h1>Capital</h1>
                 <p>
                   Launch your prop <br />
                   fund from anywhere <br />
@@ -74,7 +74,7 @@ export default function BoxSection () {
           <div className=' homeBoxFour col-12 col-md-6'>
             <a traget='_blank' href='https://tccrypto.io/' className='card'>
               <div>
-                <h1>Traders Central Crypto</h1>
+                <h1>Crypto</h1>
                 <p>
                   Buy and Sell <br />
                   Crypto
