@@ -1,0 +1,64 @@
+.blogSectionOne {
+  .cord {
+    position: absolute;
+    height: calc(100% - 3rem);
+    width: 0.5rem;
+    // top: ;
+    left: 14.5rem;
+    z-index: -2;
+    background-color: black;
+
+    .tip {
+      position: absolute;
+      height: 2rem;
+      width: 2rem;
+      border-radius: 50%;
+      background-color: #000;
+      bottom: -0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: -0.75rem;
+
+      &::after {
+        content: '';
+        background-color: #fff;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 500%;
+      }
+    }
+  }
+
+  .top-title {
+    margin-top: 10vh;
+  }
+
+  .card {
+    border: none;
+    background-color: transparent;
+  }
+
+  .button {
+    width: 100%;
+    .d-flex {
+      padding-left: 1rem;
+      width: 28rem;
+    }
+  }
+}
+.blogSectionTwo {
+  background-color: #000;
+  color: #fff;
+  min-height: 70vh;
+
+  h4 {
+    font-weight: lighter;
+    font-size: 2rem;
+  }
+
+  .btn {
+    background-color: #fff;
+    color: #000 !important;
+  }
+}

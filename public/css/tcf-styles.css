@@ -1722,9 +1722,20 @@ select {
 }
 
 .aboutUsSectionEs {
-  background: url(../images/aboutUsSectionEs.jpg) center center;
+  /* background: url(../images/aboutUsSectionEs.jpg) center center; */
   background-size: cover;
   color: #fff;
+}
+
+.aboutUsSectionEs .owlEs {
+  padding: 2rem;
+  width: 40.625rem;
+  height: 40.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/aboutUsSectionEs.jpg) center center;
+  border-radius: 50%;
 }
 
 .aboutUsSectionEs h2 {
@@ -2109,7 +2120,7 @@ select {
 
 .liquiditySectionOne {
   height: 100vh;
-  background: #e8eff8;
+  /* background: #e8eff8; */
   overflow: hidden;
 }
 
@@ -2122,14 +2133,22 @@ select {
   font-size: 20px;
 }
 
-.liquiditySectionOne h2 {
-  color: #26638e;
-  font-size: 40px;
+.liquiditySectionOne h1 {
+  color: #000;
+  font-size: 3rem;
   font-weight: bold;
 }
 
 .liquiditySectionOne p {
-  color: #26638e;
+  color: #000;
+  font-size: 1.8rem;
+}
+
+.image-placeholder {
+  width: 30vw;
+  height: 20vw;
+  border-radius: 2rem;
+  background-color: #000;
 }
 
 .liquiditySectionOneVideo {
@@ -2146,6 +2165,38 @@ select {
   .liquiditySectionOneVideo {
     margin: 50px -200px 0;
   }
+}
+
+.liquiditySectionTwo h2 {
+  font-size: 3rem;
+}
+
+.liquiditySectionTwo p {
+  font-size: 1.2rem;
+}
+
+.liquiditySectionThree h2 {
+  font-size: 3rem;
+}
+
+.liquiditySectionThree p {
+  font-size: 1.2rem;
+}
+
+.liquiditySectionFour h2 {
+  font-size: 3rem;
+}
+
+.liquiditySectionFour p {
+  font-size: 1.2rem;
+}
+
+.liquiditySectionFive h2 {
+  font-size: 3rem;
+}
+
+.liquiditySectionFive p {
+  font-size: 1.2rem;
 }
 
 .csuList {
