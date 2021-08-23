@@ -52,6 +52,7 @@ export default function TokenSectionFourS1 ({ tl }) {
               </div>
             </div>
           </div>
+          {/*  */}
           <div className='col-6'>
             <div className='tokenSectionSlRight'>
               <div className='tokenSectionSlT_top'></div>
