@@ -136,9 +136,10 @@ export default function NavBar () {
                     </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
+                      href='/products/crypto'
                       className='mobileMenuListSubIA'
-                      href='https://tccrypto.io/'
+                      // href='https://tccrypto.io/'
                     >
                       <div className='mobileMenuListSubiW d-flex align-items-stretch'>
                         <div className='mobileMenuListSubImg'>
@@ -157,7 +158,7 @@ export default function NavBar () {
                           </div>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <Link href='/products/liquidity'>
@@ -304,17 +305,14 @@ export default function NavBar () {
                   </li>
 
                   <li>
-                    <a
-                      className='box-dropdown-item'
-                      href='https://tccrypto.io/'
-                    >
+                    <Link className='box-dropdown-item' href='/products/crypto'>
                       <div className='card'>
                         <div className='card-body'>
                           <h2>Crypto</h2>
                           <p>Buy and sell crypto in seconds!</p>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </li>
 
                   <li>

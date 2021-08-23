@@ -9,6 +9,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.min.css'
 import './../public/css/liquidity.scss'
 import './../public/css/aboutus.scss'
 import './../public/css/blog.scss'
+import './../public/css/crypto.scss'
 
 import { Fragment } from 'react'
 
