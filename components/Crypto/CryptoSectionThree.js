@@ -3,29 +3,29 @@ import { gsap } from 'gsap/dist/gsap'
 
 export default function CryptoSectionThree ({ tl }) {
   useEffect(() => {
-    tl.from('.cryptoSectionThree', {
-      opacity: 0,
+    tl.to('.cryptoSectionThree', {
+      opacity: 1,
       duration: 0.8,
       delay: 0.8,
       ease: 'easeIn'
     })
       .from(
-        '.cryptoSectionOne .pOne',
+        '.cryptoSectionThree .pOne',
         { x: 100, opacity: 0, duration: 0.8, ease: 'easeIn' },
         '>-0'
       )
       .from(
-        '.cryptoSectionOne h1',
+        '.cryptoSectionThree h1',
         { x: -100, opacity: 0, duration: 0.8, ease: 'easeIn' },
         '>-0.5'
       )
       .from(
-        '.cryptoSectionOne .pTwo',
+        '.cryptoSectionThree .pTwo',
         { x: 100, opacity: 0, duration: 0.8, ease: 'easeIn' },
         '>-0.5'
       )
       .from(
-        '.cryptoSectionOne a',
+        '.cryptoSectionThree a',
         { x: -100, opacity: 0, duration: 0.8, ease: 'easeIn' },
         '>-0.5'
       )

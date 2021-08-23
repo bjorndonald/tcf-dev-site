@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { gsap } from 'gsap/dist/gsap'
 
-export default function CryptoSectionOne ({ tl }) {
+export default function BlogSectionOne ({ tl }) {
   useEffect(() => {
     tl.from('.blogSectionOne', {
       opacity: 0,

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { gsap } from 'gsap/dist/gsap'
 import dynamic from 'next/dynamic'
 
-export default function TradingBasicSectionFour ({ tl }) {
+export default function BlogSectionOne ({ tl }) {
   useEffect(() => {
     gsap
       .timeline({

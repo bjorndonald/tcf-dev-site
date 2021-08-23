@@ -2008,7 +2008,7 @@ select {
 }
 
 .tokenSectionSl {
-  background: url(../images/tokenSectionSl.jpg);
+  /* background: url(../images/tokenSectionSl.jpg); */
   background-size: cover;
   color: #fff;
   font-size: 50px;
