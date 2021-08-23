@@ -9,7 +9,6 @@ $(function () {
 })
 
 jQuery(document).ready(function ($) {
-  console.log('ddd')
   $('.custom-select-box').each(function () {
     var $this = $(this),
       selectOptions = $(this).children('option').length
@@ -47,7 +46,7 @@ jQuery(document).ready(function ($) {
 
     $customSelect.on('click', function (e) {
       e.stopPropagation()
-      console.log('vvv')
+
       $('div.custom-select-bx.active')
         .not(this)
         .each(function () {

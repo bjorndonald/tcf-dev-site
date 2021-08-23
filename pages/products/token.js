@@ -22,7 +22,7 @@ export default function token () {
 
       <TokenSectionFourS1 tl={hc_tl} />
       <TokenSectionThree tl={hc_tl} />
-      {/* <TokenSectionFourS2 tl={hc_tl} /> */}
+
       <TokenSectionFive tl={hc_tl} />
       <TokenSectionFaq tl={hc_tl} />
     </Fragment>

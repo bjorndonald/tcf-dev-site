@@ -219,7 +219,8 @@ export default function NavBar () {
                   {/* <li><Link href="/station"><a className="mobileMenuListSubA">Station</a></Link></li> */}
                   <li>
                     <Link
-                      href='https://www.centralstation.blog/'
+                      // href='https://www.centralstation.blog/'
+                      href='/blog'
                       targe='_blank'
                     >
                       <a className='mobileMenuListSubA'>Blog</a>
@@ -380,7 +381,8 @@ export default function NavBar () {
                   </li>
                   <li>
                     <Link
-                      href='https://www.centralstation.blog/'
+                      // href='https://www.centralstation.blog/'
+                      href='/blog'
                       target='_blank'
                     >
                       <a className='dropdown-item'>Blog</a>
