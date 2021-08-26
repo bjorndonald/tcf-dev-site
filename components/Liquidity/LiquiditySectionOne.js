@@ -1,40 +1,40 @@
 import React, { useEffect } from 'react'
 import { gsap } from 'gsap/dist/gsap'
 
-export default function LiquiditySectionOne ({ tl }) {
-  useEffect(() => {
-    tl.from('.liquiditySectionOne', {
-      opacity: 0,
-      duration: 0.8,
-      delay: 0.8,
-      ease: 'easeIn'
-    })
-      .from(
-        '.liquiditySectionOne .liquiditySectionOneVideo',
-        { opacity: 0, duration: 0.8, ease: 'easeIn' },
-        '>0'
-      )
-      .from(
-        '.liquiditySectionOne h1',
-        { x: -100, opacity: 0, duration: 0.8, ease: 'easeIn' },
-        '>-0.5'
-      )
-      .from(
-        '.liquiditySectionOne h2',
-        { x: -100, opacity: 0, duration: 0.8, ease: 'easeIn' },
-        '>-0.5'
-      )
-      .from(
-        '.liquiditySectionOne p',
-        { x: -100, opacity: 0, duration: 0.8, ease: 'easeIn' },
-        '>-0.5'
-      )
-      .from(
-        '.liquiditySectionOne a',
-        { x: -100, opacity: 0, duration: 0.8, ease: 'easeIn' },
-        '>-0.5'
-      )
-  }, [tl])
+export default function LiquiditySectionOne () {
+  // useEffect(() => {
+  //   tl.from('.liquiditySectionOne', {
+  //     opacity: 0,
+  //     duration: 0.8,
+  //     delay: 0.8,
+  //     ease: 'easeIn'
+  //   })
+  //     .from(
+  //       '.liquiditySectionOne .liquiditySectionOneVideo',
+  //       { opacity: 0, duration: 0.8, ease: 'easeIn' },
+  //       '>0'
+  //     )
+  //     .from(
+  //       '.liquiditySectionOne h1',
+  //       { x: -100, opacity: 0, duration: 0.8, ease: 'easeIn' },
+  //       '>-0.5'
+  //     )
+  //     .from(
+  //       '.liquiditySectionOne h2',
+  //       { x: -100, opacity: 0, duration: 0.8, ease: 'easeIn' },
+  //       '>-0.5'
+  //     )
+  //     .from(
+  //       '.liquiditySectionOne p',
+  //       { x: -100, opacity: 0, duration: 0.8, ease: 'easeIn' },
+  //       '>-0.5'
+  //     )
+  //     .from(
+  //       '.liquiditySectionOne a',
+  //       { x: -100, opacity: 0, duration: 0.8, ease: 'easeIn' },
+  //       '>-0.5'
+  //     )
+  // }, [tl])
   return (
     <div className='liquiditySectionOne py-5 d-flex align-items-center'>
       <div className='container'>

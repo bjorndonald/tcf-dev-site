@@ -1,39 +1,20 @@
 import React, { useEffect } from 'react'
 import { gsap } from 'gsap/dist/gsap'
+import { OverlayTrigger, Tab, Row, Col, Nav, Tooltip } from 'react-bootstrap'
 
-export default function CryptoSectionFour ({ tl }) {
-  useEffect(() => {
-    tl.from('.cryptoSectionOne', {
-      opacity: 0,
-      duration: 0.8,
-      delay: 0.8,
-      ease: 'easeIn'
-    })
-      .from(
-        '.cryptoSectionOne .pOne',
-        { x: 100, opacity: 0, duration: 0.8, ease: 'easeIn' },
-        '>-0'
-      )
-      .from(
-        '.cryptoSectionOne h1',
-        { x: -100, opacity: 0, duration: 0.8, ease: 'easeIn' },
-        '>-0.5'
-      )
-      .from(
-        '.cryptoSectionOne .pTwo',
-        { x: 100, opacity: 0, duration: 0.8, ease: 'easeIn' },
-        '>-0.5'
-      )
-      .from(
-        '.cryptoSectionOne a',
-        { x: -100, opacity: 0, duration: 0.8, ease: 'easeIn' },
-        '>-0.5'
-      )
-  }, [tl])
+export default function CryptoSectionFour () {
+  // useEffect(() => {
+  //   tl.from('.cryptoSectionFour', {
+  //     opacity: 0,
+  //     duration: 0.8,
+  //     delay: 0.8,
+  //     ease: 'easeIn'
+  //   })
+  // }, [tl])
   return (
-    <div className='cryptoSectionFour py-5 d-flex align-items-center heightHv'>
+    <div className='cryptoSectionFour py-5 d-flex align-items-center '>
       <div className='container'>
-        <h1>To the moon in three steps</h1>
+        <h1 style={{ color: 'black' }}>To the moon in three steps</h1>
         <div className='row d-flex justify-content-between'>
           <div className='card col-md-3 d-flex shadow-sm flex-column align-items-center justify-content-center'>
             <img src='/images/crypto/signup.svg' alt='' />
@@ -61,6 +42,47 @@ export default function CryptoSectionFour ({ tl }) {
               withdrawals.
             </p>
           </div>
+        </div>
+
+        <div className='fees-section '>
+          <Tab.Container id='fees-section' defaultActiveKey='deposits'>
+            <div className='row justify-content-center'>
+              <h1 className='text-center'>Fees</h1>
+            </div>
+            <div className='row justify-content-center '>
+              <Nav>
+                <Nav.Item>
+                  <Nav.Link eventKey='deposits'>Deposits</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey='trading'>Trading</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey='withdrawals'>Withdrawals</Nav.Link>
+                </Nav.Item>
+              </Nav>
+            </div>
+
+            <div className='row col-12 m-0 p-0'>
+              <Tab.Content className='mt-2'>
+                <Tab.Pane eventKey='deposits'>
+                  <div className='row col-12 deposits justify-content-center m-0 p-0'>
+                    <img src='/images/crypto/deposits.jpg' alt='' />
+                  </div>
+                </Tab.Pane>
+                <Tab.Pane eventKey='trading'>
+                  <div className='row col-12 trading justify-content-center m-0 p-0'>
+                    <img src='/images/crypto/trading.jpg' alt='' />
+                  </div>
+                </Tab.Pane>
+                <Tab.Pane eventKey='withdrawals'>
+                  <div className='row col-12 withdrawals justify-content-center m-0 p-0'>
+                    <img src='/images/crypto/withdrawals.jpg' alt='' />
+                  </div>
+                </Tab.Pane>
+              </Tab.Content>
+            </div>
+          </Tab.Container>
         </div>
       </div>
     </div>

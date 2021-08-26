@@ -2,32 +2,32 @@ import React, { useEffect } from 'react'
 import { gsap } from 'gsap/dist/gsap'
 import Image from 'next/image'
 
-export default function AboutUsSectionJotc ({ tl }) {
-  useEffect(() => {
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: '.aboutUsSectionJotc',
-          start: 'top 150px',
-          end: 'bottom center',
-          scrub: 4,
-          pin: true
-        }
-      })
-      .add('start')
-      .from(
-        '.aboutUsSectionJotc .gaspSlideLeft',
-        { x: -50, opacity: 0 },
-        'start'
-      )
-      .from(
-        '.aboutUsSectionJotc .gaspSlideRight',
-        { x: 50, opacity: 0 },
-        'start'
-      )
-  }, [tl])
+export default function AboutUsSectionJotc () {
+  // useEffect(() => {
+  //   gsap
+  //     .timeline({
+  //       scrollTrigger: {
+  //         trigger: '.aboutUsSectionJotc',
+  //         start: 'top 150px',
+  //         end: 'bottom center',
+  //         scrub: 4,
+  //         pin: true
+  //       }
+  //     })
+  //     .add('start')
+  //     .from(
+  //       '.aboutUsSectionJotc .gaspSlideLeft',
+  //       { x: -50, opacity: 0 },
+  //       'start'
+  //     )
+  //     .from(
+  //       '.aboutUsSectionJotc .gaspSlideRight',
+  //       { x: 50, opacity: 0 },
+  //       'start'
+  //     )
+  // }, [tl])
   return (
-    <div className='aboutUsSectionJotc py-5 d-flex align-items-center heightHv'>
+    <div className='aboutUsSectionJotc py-5 d-flex align-items-center'>
       <div className='container'>
         <div className='row d-flex align-items-center helpCenterSectionFiveOne'>
           <div className='col-12  gaspSlideLeft'>

@@ -1,0 +1,119 @@
+.fundingSectionOne {
+  .text-center {
+    margin-top: 0rem;
+
+    h1 {
+      margin-top: -12rem;
+      font-size: 4rem;
+    }
+  }
+}
+
+.fundingSectionThree {
+  .monthly {
+    .pTableDetailWrap:first-child {
+      background-color: black;
+      color: white;
+    }
+
+    .pTableSingleList h3 {
+      color: white;
+    }
+
+    .pTableSingleList p {
+      color: white;
+    }
+
+    .pTableSingleList ul li {
+      color: white;
+      background-color: transparent;
+    }
+
+    .pTableSingleListWrap {
+      background-color: #be015f;
+      color: white;
+
+      .cadText85 {
+        font-size: 2rem;
+        padding-top: 1rem;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        padding-bottom: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        line-height: 1rem;
+        border-radius: 3.125rem;
+      }
+    }
+  }
+}
+.priceTableNav {
+  .nav {
+    position: relative;
+    width: 14rem;
+    height: 4rem;
+
+    .nav-item {
+      position: absolute;
+      top: 0;
+      height: 4rem;
+      width: 8rem;
+
+      .nav-link {
+        background-color: #000000;
+        color: white;
+        width: 100%;
+        font-size: 1rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1.875rem;
+      }
+
+      .nav-link.active {
+        background-color: #ebeef5;
+        color: black;
+        border: none;
+        border-radius: 1.875rem;
+        z-index: 4;
+      }
+    }
+
+    .nav-item {
+    }
+
+    .nav-item:first-child {
+      left: 0;
+    }
+
+    .nav-item:first-child .nav-link {
+      padding-right: 2rem;
+    }
+
+    .nav-item:last-child .nav-link {
+      padding-left: 2rem;
+    }
+
+    .nav-item:first-child .nav-link.active {
+      padding-right: 1rem;
+    }
+
+    .nav-item:last-child .nav-link.active {
+      padding-left: 1rem;
+    }
+
+    .nav-item:last-child {
+      right: 0;
+    }
+  }
+}
+
+.fundingSectionTwo {
+  height: 80vh;
+}
+
+.fundingSectionThree {
+  margin-bottom: 10vh;
+}

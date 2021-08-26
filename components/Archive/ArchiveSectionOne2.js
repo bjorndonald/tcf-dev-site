@@ -1,32 +1,32 @@
-import React, { useEffect } from "react";
-import Image from 'next/image';
-import { gsap } from "gsap/dist/gsap";
-import dynamic from "next/dynamic";
+import React, { useEffect } from 'react'
+import Image from 'next/image'
+import { gsap } from 'gsap/dist/gsap'
+import dynamic from 'next/dynamic'
 
-const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
-  ssr: false,
-});
+const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
+  ssr: false
+})
 
-export default function ArchiveSectionOne2({tl}) {
-  useEffect(() => {
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: ".archiveSectionOne1",
-        start: "top 250px",
-        end: "bottom center",
-        scrub: 1,
-        pin:true
-      }	
-    })
-    .from(".archiveSectionOne1 .row", { x: -150, opacity : 0 });
-  }, [tl]);
+export default function ArchiveSectionOne2 () {
+  // useEffect(() => {
+  //   gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: ".archiveSectionOne1",
+  //       start: "top 250px",
+  //       end: "bottom center",
+  //       scrub: 1,
+  //       pin:true
+  //     }
+  //   })
+  //   .from(".archiveSectionOne1 .row", { x: -150, opacity : 0 });
+  // }, [tl]);
   return (
-    <div className="archiveSectionOne1 pt-5 d-flex align-items-center overFlowH">
-      <div className="container">
-        <div className="row">
-          <div className="col-12 owSliderW">
+    <div className='archiveSectionOne1 pt-5 d-flex align-items-center overFlowH'>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-12 owSliderW'>
             <OwlCarousel
-              className="owSlider owSliderTA owl-carousel owl-theme"
+              className='owSlider owSliderTA owl-carousel owl-theme'
               items={2}
               loop={false}
               lazyLoad={true}
@@ -35,11 +35,11 @@ export default function ArchiveSectionOne2({tl}) {
               responsive={{
                 0: { items: 1 },
                 767: { items: 2 },
-                1000: { items: 3 },
+                1000: { items: 3 }
               }}
             >
-              <div className="owSliderbox owSliderOne owSliderTAOne">
-                <a className="card" href="#">
+              <div className='owSliderbox owSliderOne owSliderTAOne'>
+                <a className='card' href='#'>
                   <div>
                     <h2>The Market</h2>
                     <p>Explore archive &gt;</p>
@@ -47,50 +47,50 @@ export default function ArchiveSectionOne2({tl}) {
                 </a>
               </div>
 
-              <div className="owSliderbox">
-                <a className="card" href="#">
-                  <h3>Investin 101{":"} Investing Basics for Beginners</h3>
-                  <div className="auther">By Andrew Goldman</div>
+              <div className='owSliderbox'>
+                <a className='card' href='#'>
+                  <h3>Investin 101{':'} Investing Basics for Beginners</h3>
+                  <div className='auther'>By Andrew Goldman</div>
                   <p>
                     Want to invest like a pro? Learn the basics of investing
-                    from us and we&apos;ll have you on the road to investing in no
-                    time
+                    from us and we&apos;ll have you on the road to investing in
+                    no time
                   </p>
                 </a>
               </div>
 
-              <div className="owSliderbox">
-                <a className="card" href="#">
-                  <h3>Investin 101{":"} Investing Basics for Beginners</h3>
-                  <div className="auther">By Andrew Goldman</div>
+              <div className='owSliderbox'>
+                <a className='card' href='#'>
+                  <h3>Investin 101{':'} Investing Basics for Beginners</h3>
+                  <div className='auther'>By Andrew Goldman</div>
                   <p>
                     Want to invest like a pro? Learn the basics of investing
-                    from us and we&apos;ll have you on the road to investing in no
-                    time
+                    from us and we&apos;ll have you on the road to investing in
+                    no time
                   </p>
                 </a>
               </div>
 
-              <div className="owSliderbox">
-                <a className="card" href="#">
-                  <h3>Investin 101{":"} Investing Basics for Beginners</h3>
-                  <div className="auther">By Andrew Goldman</div>
+              <div className='owSliderbox'>
+                <a className='card' href='#'>
+                  <h3>Investin 101{':'} Investing Basics for Beginners</h3>
+                  <div className='auther'>By Andrew Goldman</div>
                   <p>
                     Want to invest like a pro? Learn the basics of investing
-                    from us and we&apos;ll have you on the road to investing in no
-                    time
+                    from us and we&apos;ll have you on the road to investing in
+                    no time
                   </p>
                 </a>
               </div>
 
-              <div className="owSliderbox">
-                <a className="card" href="#">
-                  <h3>Investin 101{":"} Investing Basics for Beginners</h3>
-                  <div className="auther">By Andrew Goldman</div>
+              <div className='owSliderbox'>
+                <a className='card' href='#'>
+                  <h3>Investin 101{':'} Investing Basics for Beginners</h3>
+                  <div className='auther'>By Andrew Goldman</div>
                   <p>
                     Want to invest like a pro? Learn the basics of investing
-                    from us and we&apos;ll have you on the road to investing in no
-                    time
+                    from us and we&apos;ll have you on the road to investing in
+                    no time
                   </p>
                 </a>
               </div>
@@ -99,5 +99,5 @@ export default function ArchiveSectionOne2({tl}) {
         </div>
       </div>
     </div>
-  );
+  )
 }

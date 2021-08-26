@@ -45,7 +45,9 @@ export default function NavBar () {
     //     (scrollTop ? "scrolled" : "")
     //   }
     // >
-    <div className={'fixed-top bg-white nav__container navbar-fixed-top '}>
+    <div
+      className={'fixed-top bg-white nav__container navbar-fixed-top top-menu'}
+    >
       <div className='container-fluid'>
         <nav className='navbar navbar-expand-lg navbar-light'>
           <Link href='/'>
@@ -59,7 +61,7 @@ export default function NavBar () {
               />
             </a>
           </Link>
-          <div className='menu-fullS menu-overlay'>
+          <div className='menu-fullS menu-overlay '>
             <div className='menu-overlay-cBtn text-right my-4'>
               <button
                 className='navbar-toggler navClose'
@@ -286,6 +288,12 @@ export default function NavBar () {
                             <p>
                               The easiest way for forex traders to get funded.
                             </p>
+                            <p
+                              className='mt-4'
+                              style={{ textAlign: 'right', color: '#fff' }}
+                            >
+                              See
+                            </p>
                           </div>
                         </div>
                       </a>
@@ -299,6 +307,12 @@ export default function NavBar () {
                           <div className='card-body'>
                             <h2>Token</h2>
                             <p>TCT - virtual currency with in our ecosystem.</p>
+                            <p
+                              className='mt-4'
+                              style={{ textAlign: 'right', color: '#fff' }}
+                            >
+                              See
+                            </p>
                           </div>
                         </div>
                       </a>
@@ -306,13 +320,21 @@ export default function NavBar () {
                   </li>
 
                   <li>
-                    <Link className='box-dropdown-item' href='/products/crypto'>
-                      <div className='card'>
-                        <div className='card-body'>
-                          <h2>Crypto</h2>
-                          <p>Buy and sell crypto in seconds!</p>
+                    <Link href='/products/crypto'>
+                      <a className='box-dropdown-item'>
+                        <div className='card'>
+                          <div className='card-body'>
+                            <h2>Crypto</h2>
+                            <p>Buy and sell crypto in seconds!</p>
+                            <p
+                              className='mt-4'
+                              style={{ textAlign: 'right', color: '#fff' }}
+                            >
+                              See
+                            </p>
+                          </div>
                         </div>
-                      </div>
+                      </a>
                     </Link>
                   </li>
 
@@ -323,6 +345,12 @@ export default function NavBar () {
                           <div className='card-body'>
                             <h2>Liquidity</h2>
                             <p>Start your prop fund in 24 hours</p>
+                            <p
+                              className='mt-4'
+                              style={{ textAlign: 'right', color: '#fff' }}
+                            >
+                              See
+                            </p>
                           </div>
                         </div>
                       </a>
@@ -331,7 +359,7 @@ export default function NavBar () {
                 </ul>
               </li>
 
-              <li className='nav-item dropdown dropdown-inline'>
+              <li className='nav-item dropdown bubble-bg dropdown-inline'>
                 <a
                   className='nav-link m-2 dropdown-toggle'
                   href='#'
@@ -343,7 +371,7 @@ export default function NavBar () {
                   Learn
                 </a>
                 <ul
-                  className='dropdown-menu'
+                  className='dropdown-menu white-background'
                   aria-labelledby='navbarDropdownMenuLinkTwo'
                 >
                   <li>
@@ -359,7 +387,7 @@ export default function NavBar () {
                 </ul>
               </li>
 
-              <li className='nav-item dropdown dropdown-inline'>
+              <li className='nav-item dropdown bubble-bg dropdown-inline'>
                 <a
                   className='nav-link m-2 dropdown-toggle'
                   href='#'
@@ -371,7 +399,7 @@ export default function NavBar () {
                   About
                 </a>
                 <ul
-                  className='dropdown-menu'
+                  className='dropdown-menu white-background'
                   aria-labelledby='navbarDropdownMenuLinkThree'
                 >
                   <li>

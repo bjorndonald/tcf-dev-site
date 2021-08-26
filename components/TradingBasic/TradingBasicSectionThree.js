@@ -3,51 +3,51 @@ import Image from 'next/image'
 import { gsap } from 'gsap/dist/gsap'
 import dynamic from 'next/dynamic'
 
-export default function TradingBasicSectionThree ({ tl }) {
-  useEffect(() => {
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: '.tradingBasicSectionThree',
-          start: 'top 150px',
-          end: 'bottom center',
-          scrub: true,
-          pin: true
-        }
-      })
-      .add('start'),
-      // .from(
-      //   '.tradingBasicSectionThree .sectionTitleWrap',
-      //   { y: -50, opacity: 0, duration: 0.8 },
-      //   'start'
-      // )
-      // .from(
-      //   '.tradingBasicSectionThree .smallCard1',
-      //   { x: 0, opacity: 1, duration: 0.8 },
-      //   'start'
-      // )
-      // .from(
-      //   '.tradingBasicSectionThree .smallCard2',
-      //   { x: 0, opacity: 1, duration: 0.8 },
-      //   'start'
-      // )
-      // .from(
-      //   '.tradingBasicSectionThree .smallCard3',
-      //   { x: 0, opacity: 1, duration: 0.8 },
-      //   'start'
-      // )
-      // .from(
-      //   '.tradingBasicSectionThree .smallCard4',
-      //   { x: 0, opacity: 1, duration: 0.8 },
-      //   'start'
-      // )
-      // .from('.tradingBasicSectionThree .smallCard5', {
-      //   x: 0,
-      //   opacity: 0,
-      //   duration: 0.8
-      // }),
-      'start'
-  }, [tl])
+export default function TradingBasicSectionThree () {
+  // useEffect(() => {
+  //   gsap
+  //     .timeline({
+  //       scrollTrigger: {
+  //         trigger: '.tradingBasicSectionThree',
+  //         start: 'top 150px',
+  //         end: 'bottom center',
+  //         scrub: true,
+  //         pin: true
+  //       }
+  //     })
+  //     .add('start'),
+  // .from(
+  //   '.tradingBasicSectionThree .sectionTitleWrap',
+  //   { y: -50, opacity: 0, duration: 0.8 },
+  //   'start'
+  // )
+  // .from(
+  //   '.tradingBasicSectionThree .smallCard1',
+  //   { x: 0, opacity: 1, duration: 0.8 },
+  //   'start'
+  // )
+  // .from(
+  //   '.tradingBasicSectionThree .smallCard2',
+  //   { x: 0, opacity: 1, duration: 0.8 },
+  //   'start'
+  // )
+  // .from(
+  //   '.tradingBasicSectionThree .smallCard3',
+  //   { x: 0, opacity: 1, duration: 0.8 },
+  //   'start'
+  // )
+  // .from(
+  //   '.tradingBasicSectionThree .smallCard4',
+  //   { x: 0, opacity: 1, duration: 0.8 },
+  //   'start'
+  // )
+  // .from('.tradingBasicSectionThree .smallCard5', {
+  //   x: 0,
+  //   opacity: 0,
+  //   duration: 0.8
+  // }),
+  //     'start'
+  // }, [tl])
   return (
     <div className='tradingBasicSectionThree py-5 d-flex align-items-center heightHv'>
       <div className='container'>

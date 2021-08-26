@@ -86,7 +86,7 @@ export default function Footer () {
             </div>
           </div>
 
-          <div className='col-12 col-md-6 footer-col-four mb-5'>
+          <div className='col-md-6 footer-col-four mb-5'>
             <ul>
               <li>
                 <a
@@ -117,11 +117,37 @@ fgu04
               </li>
             </ul>
           </div>
+          <div className='col-md-6 d-flex align-items-end justify-content-end'>
+            <p>© 2021, Traders Central Inc. All Rights Reserved.</p>
+          </div>
         </div>
 
         <div className='row footer-bottom pt-3 pb-2 '>
           <div className='col-12'>
-            <p>© 2021, Traders Central Inc. All Rights Reserved.</p>
+            <p style={{ fontSize: 'small', textAlign: 'justify' }}>
+              We provide funding services to traders through several affiliates.
+              Our referral/introductory funding product is offered by Traders
+              Central Fund Corporate which is a Canadian entity with
+              registration no. BC1281254 and connects traders and brokers to
+              backers for funding trading accounts. Our introductory crypto spot
+              trading and liquidity services product is offered by Prime Bridge
+              Security, LLC which is a St. Vincent and Grenadines entity with
+              registration no 959 LLC. It provides a technology platform to
+              facilitate the online purchase and selling of digital currencies,
+              digital assets, and legal tender or fiat currency (crypto to
+              crypto, crypto to fiat, and fiat to crypto trading). Trading
+              contains substantial risk. There is always a potential of loss of
+              some or all of the amount invested and the value in your funded
+              account can increase or decrease. Past performance is not
+              necessarily indicative of future results. View legal{' '}
+              <a
+                style={{ fontSize: 'small', textDecoration: 'underline' }}
+                href='https://legal.traderscentralfund.com'
+              >
+                {' '}
+                library
+              </a>{' '}
+            </p>
           </div>
         </div>
       </div>

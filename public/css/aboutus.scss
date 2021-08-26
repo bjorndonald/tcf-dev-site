@@ -1,6 +1,12 @@
 .aboutUsSectionDttiy {
-  //   background: url(../images/aboutUsSectionEs.jpg) center center;
-  background-color: #be015f;
+  background: url(../images/aboutUsSectionEs.png) center center;
+  background-position: center;
+  background-size: cover;
+
+  .container {
+    margin-top: 0;
+  }
+
   h2 {
     color: #fff;
     font-size: 3.125rem;
@@ -10,4 +16,8 @@
     font-size: 1.5rem;
     color: #fff;
   }
+}
+
+.aboutUsSectionJotc {
+  height: 70vh;
 }

@@ -13,7 +13,9 @@ module.exports = {
       '/trading-basic': { page: '/trading-basic' },
       '/products/funding': { page: '/products/funding' },
       '/products/liquidity': { page: '/products/liquidity' },
-      '/products/token': { page: '/products/token' }
+      '/products/token': { page: '/products/token' },
+      '/products/crypto': { page: '/products/crypto' },
+      '/products/blog': { page: '/products/blog' }
     }
   },
   images: {

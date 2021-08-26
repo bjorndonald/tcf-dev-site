@@ -1,0 +1,144 @@
+.sectionTwoNav {
+  ul {
+    margin-top: -2rem;
+    li {
+      font-family: eina;
+      display: flex;
+      justify-content: flex-end;
+      text-align: right;
+      font-weight: normal;
+      margin-bottom: 1rem;
+      i {
+        width: 1rem;
+        font-size: 1rem;
+        // color: white;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.helpCenterSectionOne {
+  .helpCenterSearchBox {
+    background-color: #f0f0f0;
+    border-radius: 3.125rem;
+  }
+
+  h1 {
+    font-weight: bolder;
+    font-size: 5rem;
+  }
+  h3 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+  }
+
+  input {
+    border: none;
+  }
+
+  .input-group-prepend {
+    border: none;
+    border-bottom-right-radius: 3.125rem;
+    border-top-right-radius: 3.125rem;
+  }
+
+  .input-group-text {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+}
+
+.helpCenterSectionTwo .container {
+  margin-top: 0;
+
+  h2 {
+    font-weight: bolder;
+    font-size: 3.75rem;
+  }
+
+  .eyntkBoxs .col-md-5 {
+    padding: 2rem 3rem;
+  }
+
+  .eyntkBox {
+    padding: 3rem 1rem 2rem 2rem;
+    background-color: black;
+    color: white;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+
+    h3 {
+      text-align: left;
+      color: white;
+      font-size: 3.5rem;
+    }
+    p {
+      margin: 0;
+      text-align: left;
+      font-size: 1.65rem;
+    }
+  }
+}
+
+.helpCenterSectionThree {
+  .container {
+    margin-top: 0;
+  }
+
+  .article {
+    margin-bottom: 5rem;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+  }
+}
+
+.helpCenterSectionFour {
+  height: 100vh;
+  .sectionTitleWrap {
+    margin-bottom: 6rem;
+
+    h2 {
+      font-size: 4.5rem;
+    }
+  }
+
+  .list {
+    padding-left: 5rem;
+    h1 {
+      font-family: eina;
+      font-weight: bolder;
+      font-size: 4rem;
+    }
+
+    h3 {
+      font-family: eina;
+      font-weight: bolder;
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.helpCenterSectionFive {
+  height: 60vh;
+  h2 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 2.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+  }
+  .btn {
+    border-radius: 3.125rem;
+    font-size: 2.5rem;
+  }
+}

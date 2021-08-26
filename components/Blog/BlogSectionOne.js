@@ -1,28 +1,33 @@
 import React, { useEffect } from 'react'
 import { gsap } from 'gsap/dist/gsap'
 
-export default function BlogSectionOne ({ tl }) {
-  useEffect(() => {
-    tl.from('.blogSectionOne', {
-      opacity: 0,
-      duration: 0.8,
-      delay: 0.8,
-      ease: 'easeIn'
-    })
-  }, [tl])
+export default function BlogSectionOne () {
+  // useEffect(() => {
+  //   tl.from('.blogSectionOne', {
+  //     opacity: 0,
+  //     duration: 0.8,
+  //     delay: 0.8,
+  //     ease: 'easeIn'
+  //   })
+  // }, [tl])
   return (
     <div className='blogSectionOne py-5 d-flex align-items-center heightHv'>
       <div className='container'>
-        <div className='row pt-5 top-title'>
+        {/* <div className='row pt-5 top-title'>
           <div className='col-12'>
             <div className=' text-center'>
               <h2>Discover the trader in you.</h2>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className='row py-5 flex-column align-items-center justify-content-between'>
-          <h1>All you need to know.</h1>
+        <div
+          style={{ marginTop: '2rem' }}
+          className='row py-5 flex-column align-items-center justify-content-between'
+        >
+          <h1 style={{ marginBottom: '3rem' }} className=''>
+            All you need to know.
+          </h1>
 
           <div className='row flex-column align-items-center justify-content-between'>
             {/* <h3>Buy & Sell Crypto In Seconds!</h3>

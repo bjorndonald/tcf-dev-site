@@ -2,30 +2,30 @@ import React, { useEffect } from 'react'
 import { gsap } from 'gsap/dist/gsap'
 import Image from 'next/image'
 
-export default function LiquiditySectionFour ({ tl }) {
-  useEffect(() => {
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: '.liquiditySectionFour',
-          start: 'top 150px',
-          end: 'bottom +=100px',
-          scrub: 4,
-          pin: true
-        }
-      })
-      .add('start')
-      .from(
-        '.liquiditySectionFour .gaspSlideLeft',
-        { x: -50, opacity: 0 },
-        'start'
-      )
-      .from(
-        '.liquiditySectionFour .gaspSlideRight',
-        { x: 50, opacity: 0 },
-        'start'
-      )
-  }, [tl])
+export default function LiquiditySectionFour () {
+  // useEffect(() => {
+  //   gsap
+  //     .timeline({
+  //       scrollTrigger: {
+  //         trigger: '.liquiditySectionFour',
+  //         start: 'top 150px',
+  //         end: 'bottom +=100px',
+  //         scrub: 4,
+  //         pin: true
+  //       }
+  //     })
+  //     .add('start')
+  //     .from(
+  //       '.liquiditySectionFour .gaspSlideLeft',
+  //       { x: -50, opacity: 0 },
+  //       'start'
+  //     )
+  //     .from(
+  //       '.liquiditySectionFour .gaspSlideRight',
+  //       { x: 50, opacity: 0 },
+  //       'start'
+  //     )
+  // }, [tl])
   return (
     <div className='liquiditySectionFour py-5 d-flex align-items-center heightHv'>
       <div className='container'>

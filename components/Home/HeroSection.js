@@ -1,35 +1,38 @@
 import React, { useEffect } from 'react'
 import { gsap, Power4 } from 'gsap'
+import { connect } from 'react-redux'
 
-export default function HeroSection ({ tl }) {
-  useEffect(() => {
-    tl.to('.sectionOne', {
-      opacity: 1,
-      duration: 0.8,
-      delay: 0.8,
-      ease: Power4.easeIn
-    })
-      .from(
-        '.HomeHeroVideo',
-        { x: '+=50', opacity: 0, duration: 0.8, ease: 'easeIn' },
-        '>-0'
-      )
-      .from(
-        '.sectionOne h1',
-        { x: -50, opacity: 0, duration: 0.8, ease: 'easeIn' },
-        '>-0.5'
-      )
-      .from(
-        '.sectionOne p',
-        { x: -50, opacity: 0, duration: 0.8, ease: 'easeIn' },
-        '>-0.5'
-      )
-      .from(
-        '.sectionOne a',
-        { x: -50, opacity: 0, duration: 0.8, ease: 'easeIn' },
-        '>-0.5'
-      )
-  }, [tl])
+function HeroSection (props) {
+  // useEffect(() => {
+  //   console.log(props.timeline)
+  //   props.timeline
+  //     .to('.sectionOne', {
+  //       opacity: 1,
+  //       duration: 0.8,
+  //       delay: 0.8,
+  //       ease: Power4.easeIn
+  //     })
+  //     .from(
+  //       '.HomeHeroVideo',
+  //       { x: '+=50', opacity: 0, duration: 0.8, ease: 'easeIn' },
+  //       '>-0'
+  //     )
+  //     .from(
+  //       '.sectionOne h1',
+  //       { x: -50, opacity: 0, duration: 0.8, ease: 'easeIn' },
+  //       '>-0.5'
+  //     )
+  //     .from(
+  //       '.sectionOne p',
+  //       { x: -50, opacity: 0, duration: 0.8, ease: 'easeIn' },
+  //       '>-0.5'
+  //     )
+  //     .from(
+  //       '.sectionOne a',
+  //       { x: -50, opacity: 0, duration: 0.8, ease: 'easeIn' },
+  //       '>-0.5'
+  //     )
+  // }, [])
 
   return (
     <div className='sectionOne d-flex align-items-center py-5'>
@@ -65,3 +68,18 @@ export default function HeroSection ({ tl }) {
     </div>
   )
 }
+
+const mapDispatchToProps = dispatch => ({
+  setTimeline: timeline => {
+    dispatch(setTimeline(timeline))
+  },
+  clearTimeline: timeline => {
+    dispatch(clearTimeline(timeline))
+  }
+})
+
+const mapStateToProps = state => ({
+  timeline: state.config.timeline
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(HeroSection)

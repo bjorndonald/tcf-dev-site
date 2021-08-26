@@ -1,35 +1,38 @@
 import React, { useEffect } from 'react'
 import { gsap } from 'gsap/dist/gsap'
+import { connect } from 'react-redux'
+import { clearTimeline, setTimeline } from '../../store/actions/configActions'
 
-export default function TokenSectionOne ({ tl }) {
-  useEffect(() => {
-    tl.from('.tokenSectionOne', {
-      opacity: 0,
-      duration: 0.8,
-      delay: 0.8,
-      ease: 'easeIn'
-    })
-      .from(
-        '.tokenSectionOne .pOne',
-        { x: 100, opacity: 0, duration: 0.8, ease: 'easeIn' },
-        '>-0'
-      )
-      .from(
-        '.tokenSectionOne h1',
-        { x: -100, opacity: 0, duration: 0.8, ease: 'easeIn' },
-        '>-0.5'
-      )
-      .from(
-        '.tokenSectionOne .pTwo',
-        { x: 100, opacity: 0, duration: 0.8, ease: 'easeIn' },
-        '>-0.5'
-      )
-      .from(
-        '.tokenSectionOne a',
-        { x: -100, opacity: 0, duration: 0.8, ease: 'easeIn' },
-        '>-0.5'
-      )
-  }, [tl])
+function TokenSectionOne (props) {
+  // useEffect(() => {
+  //   props.timeline
+  //     .from('.tokenSectionOne', {
+  //       opacity: 0,
+  //       duration: 0.8,
+  //       delay: 0.8,
+  //       ease: 'easeIn'
+  //     })
+  //     .from(
+  //       '.tokenSectionOne .pOne',
+  //       { x: 100, opacity: 0, duration: 0.8, ease: 'easeIn' },
+  //       '>-0'
+  //     )
+  //     .from(
+  //       '.tokenSectionOne h1',
+  //       { x: -100, opacity: 0, duration: 0.8, ease: 'easeIn' },
+  //       '>-0.5'
+  //     )
+  //     .from(
+  //       '.tokenSectionOne .pTwo',
+  //       { x: 100, opacity: 0, duration: 0.8, ease: 'easeIn' },
+  //       '>-0.5'
+  //     )
+  //     .from(
+  //       '.tokenSectionOne a',
+  //       { x: -100, opacity: 0, duration: 0.8, ease: 'easeIn' },
+  //       '>-0.5'
+  //     )
+  // }, [])
   return (
     <div className='tokenSectionOne py-5 d-flex align-items-center heightHv'>
       <div className='container'>
@@ -56,3 +59,18 @@ export default function TokenSectionOne ({ tl }) {
     </div>
   )
 }
+
+const mapDispatchToProps = dispatch => ({
+  setTimeline: timeline => {
+    dispatch(setTimeline(timeline))
+  },
+  clearTimeline: timeline => {
+    dispatch(clearTimeline(timeline))
+  }
+})
+
+const mapStateToProps = state => ({
+  timeline: state.config.timeline
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(TokenSectionOne)

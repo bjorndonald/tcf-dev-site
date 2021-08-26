@@ -81,6 +81,27 @@ jQuery(document).ready(function ($) {
     })
   })
 
+  // console.log('aa')
+
+  $('.fundingSectionThree .nav-link').on('click', function () {
+    $(this)
+      .parent()
+      .css('z-index', '4')
+    $(this)
+      .parent()
+      .parent()
+      .find('.nav-item')
+      .each((i, x) => {
+        if (
+          $(x)
+            .find('a')
+            .hasClass('active')
+        ) {
+          $(x).css('z-index', '2')
+        }
+      })
+  })
+
   // $('.dropdown-toggle').dropdown()
 
   /*$(function () {

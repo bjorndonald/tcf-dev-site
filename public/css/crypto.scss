@@ -1,4 +1,5 @@
 .cryptoSectionOne {
+  height: 80vh;
   background: linear-gradient(
     160deg,
     rgba(8, 33, 87, 1) 25%,
@@ -24,7 +25,7 @@
 
     .cryptoTextWrap {
       display: flex;
-      width: 50rem;
+      width: 52rem;
       height: 4rem;
       border-radius: 3.125rem;
       background-color: #fff;
@@ -60,22 +61,34 @@
 }
 
 .cryptoSectionTwo {
-  height: 60vh;
+  height: 90vh;
   background-color: #f8f7fc;
 
+  .container {
+    max-width: 90%;
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .card {
-    padding: 1rem 3rem;
+    padding: 3rem;
     text-align: center;
     img {
-      width: 8rem;
+      height: 8rem;
     }
 
     h4 {
       margin: 1rem 0;
+      font-size: 3rem;
     }
 
     p {
-      font-size: 0.8rem;
+      font-size: 1.25rem;
+      line-height: 3rem;
+      font-weight: normal;
+      color: #333;
     }
   }
 
@@ -112,6 +125,11 @@
   );
 
   .container {
+    max-width: 90%;
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 0%;
   }
 
@@ -127,7 +145,15 @@
 
   .col-md-3 {
     img {
-      height: 6rem;
+      height: 14rem;
+    }
+
+    p {
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+    span {
+      font-size: 1.25rem;
     }
 
     .green {
@@ -137,7 +163,64 @@
 }
 
 .cryptoSectionFour {
+  height: 180vh;
   background-color: #f8f7fc;
+  .container {
+    max-width: 90%;
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0%;
+  }
+
+  .card {
+    h4 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 3rem;
+      text-align: center;
+      font-weight: normal;
+      color: #333;
+    }
+  }
+
+  .fees-section {
+    margin-top: 5rem;
+
+    .nav-link {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-link.active {
+      text-decoration: underline;
+    }
+
+    h1 {
+      color: #000;
+      text-align: center;
+      margin-bottom: 0.75rem;
+    }
+    .tab-content {
+      width: 100%;
+      // height: 50vh;
+      .tab-pane {
+        width: 100%;
+        height: 100%;
+        div {
+          height: 100%;
+          img {
+            // height: 65.4vh;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 
   h1 {
     color: #db0e72;
@@ -153,10 +236,10 @@
         height: 8rem;
       }
 
-      p {
-        font-size: 1rem;
-        text-align: center;
-      }
+      // p {
+      //   font-size: 1rem;
+      //   text-align: center;
+      // }
     }
 
     @media (min-width: 768px) {
@@ -205,7 +288,7 @@
     height: 4rem;
     border-radius: 3.125rem;
     background-color: #fff;
-    padding-left: 1rem;
+    padding-left: 2rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-right: 0.5rem;
@@ -214,7 +297,8 @@
       background-color: transparent;
       border: none;
       outline: none;
-      font-size: 1.5rem;
+
+      font-size: 1.75rem;
       width: 35rem;
     }
 
@@ -234,3 +318,13 @@
     }
   }
 }
+
+.cryptoSectionFive {
+  .btn-blue {
+    padding: 0.5rem 1rem;
+    background-color: #0d2461;
+    color: white;
+    margin: 0 0.1255rem;
+  }
+}
+//

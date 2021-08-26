@@ -2,30 +2,30 @@ import React, { useEffect } from 'react'
 import { gsap } from 'gsap/dist/gsap'
 import Image from 'next/image'
 
-export default function TokenSectionThree ({ tl }) {
-  useEffect(() => {
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: '.tokenSectionThree',
-          start: 'top 150px',
-          end: 'bottom center',
-          scrub: 2,
-          pin: true
-        }
-      })
-      .add('start')
-      .from(
-        '.tokenSectionThree .gaspSlideLeft',
-        { x: -50, opacity: 0 },
-        'start'
-      )
-      .from(
-        '.tokenSectionThree .gaspSlideRight',
-        { x: 50, opacity: 0 },
-        'start'
-      )
-  }, [tl])
+export default function TokenSectionThree () {
+  // useEffect(() => {
+  //   gsap
+  //     .timeline({
+  //       scrollTrigger: {
+  //         trigger: '.tokenSectionThree',
+  //         start: 'top 150px',
+  //         end: 'bottom center',
+  //         scrub: 2,
+  //         pin: true
+  //       }
+  //     })
+  //     .add('start')
+  //     .from(
+  //       '.tokenSectionThree .gaspSlideLeft',
+  //       { x: -50, opacity: 0 },
+  //       'start'
+  //     )
+  //     .from(
+  //       '.tokenSectionThree .gaspSlideRight',
+  //       { x: 50, opacity: 0 },
+  //       'start'
+  //     )
+  // }, [tl])
   return (
     <div className='tokenSectionThree tokenSectionaCOE py-5 d-flex align-items-center heightHv'>
       <div className='container'>

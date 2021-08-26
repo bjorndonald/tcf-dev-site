@@ -13,13 +13,10 @@ export default function blog () {
   let hc_tl = gsap.timeline()
 
   return (
-    <div>
+    <Fragment>
       <MetaTag title='Blog Page' />
       <BlogSectionOne tl={hc_tl} />
       <BlogSectionTwo tl={hc_tl} />
-      {/* <AboutUsSectionEs tl={hc_tl} />
-      <AboutUsSectionDttiy tl={hc_tl} />
-      <AboutUsSectionJotc tl={hc_tl} /> */}
-    </div>
+    </Fragment>
   )
 }

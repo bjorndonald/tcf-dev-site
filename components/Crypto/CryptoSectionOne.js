@@ -1,33 +1,33 @@
 import React, { useEffect } from 'react'
 import { gsap } from 'gsap/dist/gsap'
 
-export default function CryptoSectionOne ({ tl }) {
-  useEffect(() => {
-    tl.to('.cryptoSectionOne', {
-      opacity: 1,
-      duration: 0.8,
-      delay: 0.8,
-      ease: 'easeIn'
-    })
-      .to(
-        '.cryptoSectionOne h1',
-        { x: 0, opacity: 1, duration: 0.8, ease: 'easeIn' },
-        '>-0.5'
-      )
-      // .from(
-      //   '.cryptoSectionOne h2',
-      //   { x: 100, opacity: 0, duration: 0.8, ease: 'easeIn' },
-      //   '>-0.5'
-      // )
-      .to(
-        '.cryptoSectionOne .cryptoTextWrap .btn',
-        { x: 0, opacity: 1, duration: 0.8, ease: 'easeIn' },
-        '>-0.5'
-      )
-  }, [tl])
+export default function CryptoSectionOne () {
+  // useEffect(() => {
+  //   tl.to('.cryptoSectionOne', {
+  //     opacity: 1,
+  //     duration: 0.8,
+  //     delay: 0.8,
+  //     ease: 'easeIn'
+  //   })
+  //     .to(
+  //       '.cryptoSectionOne h1',
+  //       { x: 0, opacity: 1, duration: 0.8, ease: 'easeIn' },
+  //       '>-0.5'
+  //     )
+  //     // .from(
+  //     //   '.cryptoSectionOne h2',
+  //     //   { x: 100, opacity: 0, duration: 0.8, ease: 'easeIn' },
+  //     //   '>-0.5'
+  //     // )
+  //     .to(
+  //       '.cryptoSectionOne .cryptoTextWrap .btn',
+  //       { x: 0, opacity: 1, duration: 0.8, ease: 'easeIn' },
+  //       '>-0.5'
+  //     )
+  // }, [tl])
   return (
-    <div className='cryptoSectionOne py-5 d-flex align-items-center heightHv'>
-      <div className='container h-100 d-flex flex-column align-items-center justify-content-between'>
+    <div className='cryptoSectionOne py-5 d-flex align-items-center '>
+      <div className='container d-flex flex-column align-items-center justify-content-between'>
         <div className='row py-5 flex-column align-items-center justify-content-between'>
           <h1>
             Trade the most popular <br />

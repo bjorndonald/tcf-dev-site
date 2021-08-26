@@ -19,6 +19,7 @@ export default function BoxSection () {
           </div>
           <div className='homeBoxOne col-12 col-md-6'>
             <a href='products/funding' className='card'>
+              <div className='image'></div>
               <div>
                 <h1>Fund</h1>
                 <p>
@@ -30,7 +31,7 @@ export default function BoxSection () {
                   Become a remote prop trader in 24 hours
                 </div>
               </div>
-              <div className='d-flex justify-content-end'>
+              <div className='d-flex justify-content-end see-btn'>
                 <span>See</span>
               </div>
             </a>
@@ -38,6 +39,7 @@ export default function BoxSection () {
 
           <div className=' homeBoxTwo col-12 col-md-6'>
             <a href='products/token' className='card'>
+              <div className='image'></div>
               <div>
                 <h1>Tokens</h1>
                 <p>
@@ -46,7 +48,7 @@ export default function BoxSection () {
                 </p>
                 <div className='hideText'>A currency for our ecosystem</div>
               </div>
-              <div className='d-flex justify-content-end'>
+              <div className='d-flex justify-content-end see-btn'>
                 <span>See</span>
               </div>
             </a>
@@ -54,6 +56,7 @@ export default function BoxSection () {
 
           <div className=' homeBoxThree col-12 col-md-6'>
             <a href='products/liquidity ' className='card'>
+              <div className='image'></div>
               <div>
                 <h1>Capital</h1>
                 <p>
@@ -65,7 +68,7 @@ export default function BoxSection () {
                   Access market making services in a few steps.
                 </div>
               </div>
-              <div className='d-flex justify-content-end'>
+              <div className='d-flex justify-content-end see-btn'>
                 <span>See</span>
               </div>
             </a>
@@ -73,6 +76,7 @@ export default function BoxSection () {
 
           <div className=' homeBoxFour col-12 col-md-6'>
             <a traget='_blank' href='https://tccrypto.io/' className='card'>
+              <div className='image'></div>
               <div>
                 <h1>Crypto</h1>
                 <p>
@@ -83,7 +87,7 @@ export default function BoxSection () {
                   Towards sound money and decentralisation
                 </div>
               </div>
-              <div className='d-flex justify-content-end'>
+              <div className='d-flex justify-content-end see-btn'>
                 <span>See</span>
               </div>
             </a>

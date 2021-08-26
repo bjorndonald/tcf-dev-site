@@ -2,27 +2,27 @@ import React, { useEffect } from 'react'
 import Image from 'next/image'
 import { gsap } from 'gsap/dist/gsap'
 
-export default function ContactSection ({ tl }) {
-  useEffect(() => {
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: '.sectionContactUs',
-          start: 'top center',
-          end: 'bottom bottom',
-          scrub: 1,
-          pin: true
-        }
-      })
-      .add('start')
-      .from(
-        '.sectionContactUs .sectionTitleWrap',
-        { y: -50, opacity: 0 },
-        'start'
-      )
-      .from('.sectionContactUs .gaspSlideLeft', { x: -50, opacity: 0 }, 'start')
-      .from('.sectionContactUs .gaspSlideRight', { x: 50, opacity: 0 }, 'start')
-  }, [tl])
+export default function ContactSection () {
+  // useEffect(() => {
+  //   gsap
+  //     .timeline({
+  //       scrollTrigger: {
+  //         trigger: '.sectionContactUs',
+  //         start: 'top center',
+  //         end: 'bottom bottom',
+  //         scrub: 1,
+  //         pin: true
+  //       }
+  //     })
+  //     .add('start')
+  //     .from(
+  //       '.sectionContactUs .sectionTitleWrap',
+  //       { y: -50, opacity: 0 },
+  //       'start'
+  //     )
+  //     .from('.sectionContactUs .gaspSlideLeft', { x: -50, opacity: 0 }, 'start')
+  //     .from('.sectionContactUs .gaspSlideRight', { x: 50, opacity: 0 }, 'start')
+  // }, [tl])
   return (
     <div className='sectionContactUs py-5 d-flex align-items-center heightHv'>
       <div className='container'>

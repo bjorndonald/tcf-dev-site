@@ -11,15 +11,27 @@ import './../public/css/aboutus.scss'
 import './../public/css/blog.scss'
 import './../public/css/crypto.scss'
 import './../public/css/token.scss'
+import './../public/css/help.scss'
+import './../public/css/funding.scss'
+import './../public/css/archive.scss'
 
 import { Fragment } from 'react'
+
+import { createStore, applyMiddleware } from 'redux'
+import rootReducer from './../store/reducers/rootReducer'
+import { Provider } from 'react-redux'
+import thunk from 'redux-thunk'
+
+const store = createStore(rootReducer, applyMiddleware(thunk))
 
 export default function MyApp ({ Component, pageProps }) {
   return (
     <Fragment>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <Provider store={store}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </Provider>
     </Fragment>
   )
 }

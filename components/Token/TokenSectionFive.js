@@ -1,22 +1,22 @@
 import React, { useEffect } from 'react'
 import { gsap } from 'gsap/dist/gsap'
 
-export default function TokenSectionFive ({ tl }) {
-  useEffect(() => {
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: '.tokenSectionFive',
-          start: 'top 150px',
-          end: 'bottom center',
-          scrub: 4,
-          pin: true
-        }
-      })
-      .add('start')
-      .from('.tokenSectionFive .gaspSlideLeft', { x: -50, opacity: 0 }, 'start')
-      .from('.tokenSectionFive .gaspSlideRight', { x: 50, opacity: 0 }, 'start')
-  }, [tl])
+export default function TokenSectionFive () {
+  // useEffect(() => {
+  //   gsap
+  //     .timeline({
+  //       scrollTrigger: {
+  //         trigger: '.tokenSectionFive',
+  //         start: 'top 150px',
+  //         end: 'bottom center',
+  //         scrub: 4,
+  //         pin: true
+  //       }
+  //     })
+  //     .add('start')
+  //     .from('.tokenSectionFive .gaspSlideLeft', { x: -50, opacity: 0 }, 'start')
+  //     .from('.tokenSectionFive .gaspSlideRight', { x: 50, opacity: 0 }, 'start')
+  // }, [tl])
   return (
     <div className='tokenSectionFive'>
       <div className=' py-5 d-flex align-items-center heightHv'>

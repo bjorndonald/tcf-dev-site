@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import Script from 'next/script'
 import Head from 'next/head'
 import MetaTag from './../components/MetaTag'
@@ -8,12 +8,23 @@ import MobileSection from './../components/Home/MobileSection'
 import BoxSection from './../components/Home/BoxSection'
 import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+import { connect } from 'react-redux'
+import { clearTimeline, setTimeline } from '../store/actions/configActions'
 
-export default function Home () {
-  gsap.registerPlugin(ScrollTrigger)
-  let hc_tl = gsap.timeline()
+function Home (props) {
+  // props.clearTimeline()
+  // gsap.registerPlugin(ScrollTrigger)
+  // let hc_tl = gsap.timeline()
+  // props.setTimeline(hc_tl)
+  // // console.log(hc_tl)
+  // useEffect(() => {
+  //   // props.setTimeline(hc_tl)
+  //   return () => {
+  //     props.clearTimeline()
+  //   }
+  // }, [])
 
-  return (
+  return props.loading ? null : (
     <Fragment>
       <MetaTag title='Home Page' />
       <Head>
@@ -32,13 +43,30 @@ export default function Home () {
           integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl'
           crossOrigin='anonymous'
         ></script>
-        <script src='https:code.jquery.com/jquery-3.4.1.min.js'></script>
+        <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
         <script src='/js/script.js'></script>
       </Head>
-      <HeroSection tl={hc_tl} />
-      <MobileSection tl={hc_tl} />
-      <BoxSection tl={hc_tl} />
-      <ContactSection tl={hc_tl} />
+      <HeroSection />
+      <MobileSection />
+      <BoxSection />
+      <ContactSection />
     </Fragment>
   )
 }
+
+const mapDispatchToProps = dispatch => ({
+  setTimeline: timeline => {
+    dispatch(setTimeline(timeline))
+  },
+  clearTimeline: () => {
+    dispatch(clearTimeline())
+  }
+})
+
+const mapStateToProps = state => ({
+  questions: state.config.questions,
+  timeline: state.config.timeline,
+  loading: state.config.loading
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home)

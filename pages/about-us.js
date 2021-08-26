@@ -8,16 +8,20 @@ import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
 export default function aboutUs () {
-  gsap.registerPlugin(ScrollTrigger)
-  let hc_tl = gsap.timeline()
+  // gsap.registerPlugin(ScrollTrigger)
+  // let hc_tl = gsap.timeline()
 
   return (
     <Fragment>
       <MetaTag title='Home Page' />
-      <AboutUsSectionOne tl={hc_tl} />
+      {/* <AboutUsSectionOne tl={hc_tl} />
       <AboutUsSectionEs tl={hc_tl} />
       <AboutUsSectionDttiy tl={hc_tl} />
-      <AboutUsSectionJotc tl={hc_tl} />
+      <AboutUsSectionJotc tl={hc_tl} /> */}
+      <AboutUsSectionOne />
+      <AboutUsSectionEs />
+      <AboutUsSectionDttiy />
+      <AboutUsSectionJotc />
     </Fragment>
   )
 }
