@@ -1095,8 +1095,8 @@ select {
 .homeBoxThree .card .image {
   position: absolute;
   right: 0.5rem;
-  width: 24rem;
-  height: 24rem;
+  width: 18rem;
+  height: 18rem;
   bottom: 0.5rem;
   z-index: 2;
   border-radius: 3.125rem;
