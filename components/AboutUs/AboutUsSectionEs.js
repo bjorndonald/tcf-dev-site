@@ -21,7 +21,7 @@ export default function AboutUsSectionEs () {
   //     .from(".aboutUsSectionEs .owlEs", { y: 50, opacity : 0 }, 'start');
   // }, [tl]);
   return (
-    <div className='aboutUsSectionEs py-5 d-flex align-items-center heightHv'>
+    <div className='aboutUsSectionEs  d-flex align-items-center '>
       <div className='container'>
         <div className='row'>
           <div className='col-12 pb-5'>
@@ -38,22 +38,25 @@ export default function AboutUsSectionEs () {
             >
               <div className='item aboutSliderOne'>
                 <div className='aboutSliderC'>
-                  <h3>Crypto</h3>
+                  <h3>TC.Crypto</h3>
                   <p>
-                    Providing liquidity to over 80 funds allowing anyone to
-                    start their own prop firm.{' '}
+                    Buy and sell cryptocurrencies with our top tier liquidity,
+                    getting you in and out of the market with minimal slippage.
                   </p>
                   <a target='_blank' href='https://tccrypto.io/'>
                     LEARN MORE
                   </a>
                 </div>
               </div>
+              {/* TC.Fund
+Connecting retail traders to backers to provide them with start up capital.
+LEARN MORE */}
               <div className='item aboutSliderTwo'>
                 <div className='aboutSliderC'>
-                  <h3>Fund</h3>
+                  <h3>TC.Fund</h3>
                   <p>
-                    Providing liquidity to over 80 funds allowing anyone to
-                    start their own prop firm.{' '}
+                    Connecting retail traders to backers to provide them with
+                    start up capital.
                   </p>
                   <a
                     target='_blank'
@@ -63,12 +66,15 @@ export default function AboutUsSectionEs () {
                   </a>
                 </div>
               </div>
+              {/* TC.Bridge
+Our very own tailor-made brokerage provides industry beating spreads for proprietary and retail traders
+LEARN MORE */}
               <div className='item aboutSliderThree'>
                 <div className='aboutSliderC'>
-                  <h3>Bridge</h3>
+                  <h3>TC.Bridge</h3>
                   <p>
-                    Providing liquidity to over 80 funds allowing anyone to
-                    start their own prop firm.{' '}
+                    Our very own tailor-made brokerage provides industry beating
+                    spreads for proprietary and retail traders.
                   </p>
                   <a
                     target='_blank'
@@ -78,12 +84,15 @@ export default function AboutUsSectionEs () {
                   </a>
                 </div>
               </div>
+              {/* TC.Capital
+Providing liquidity to over 80 funds allowing anyone to start their own prop firm.
+LEARN MORE */}
               <div className='item aboutSliderFour'>
                 <div className='aboutSliderC'>
-                  <h3>Capital</h3>
+                  <h3>Prime Bridge</h3>
                   <p>
                     Providing liquidity to over 80 funds allowing anyone to
-                    start their own prop firm.{' '}
+                    start their own prop firm.
                   </p>
                   <a target='_blank' href='https://traderscentral.capital/'>
                     LEARN MORE

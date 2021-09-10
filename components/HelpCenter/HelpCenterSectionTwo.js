@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { gsap } from 'gsap/dist/gsap'
 
 export default function HelpCenterSectionTwo () {
@@ -34,78 +35,90 @@ export default function HelpCenterSectionTwo () {
         </div>
         <div
           style={{ margin: 'auto' }}
-          className='row col-11 eyntkBoxs d-flex align-items-stretch justify-content-center'
+          className='row col-12 eyntkBoxs d-flex align-items-stretch justify-content-center'
         >
-          <div className='col-10 col-md-5 '>
-            <div className='eyntkBox eyntkBoxOne'>
-              <h3 className='mb-4'>Fund</h3>
-              {/* <Image
-                src='/images/piggy.png'
-                alt='Image'
-                width={225}
-                height={165.38}
-              /> */}
-              <p>
-                Learn how to get <br />
-                funded in 24 hrs
-              </p>
-            </div>
-          </div>
+          <Link
+            href={{
+              pathname: '/help-center/sections',
+              query: { name: 'Fund' }
+            }}
+          >
+            <div className='col-10 col-md-5 d-flex justify-content-center'>
+              <div className='eyntkBox eyntkBoxOne'>
+                <h3 className='mb-4'>Fund</h3>
 
-          <div className='col-10 col-md-5 '>
-            <div className='eyntkBox eyntkBoxTwo'>
-              <h3 className='mb-4'>Crypto</h3>
-              {/* <Image
-                src='/images/token.png'
-                alt='Image'
-                width={225}
-                height={165.38}
-              /> */}
-              <p>
-                How to get
-                <br />
-                started with our
-                <br />
-                spot cryptos
-              </p>
+                <p>
+                  Learn how to get <br />
+                  funded in 24 hrs
+                </p>
+              </div>
             </div>
-          </div>
+          </Link>
 
-          <div className='col-10 col-md-5 '>
-            <div className='eyntkBox eyntkBoxThree'>
-              <h3 className='mb-4'>Tokens</h3>
-              {/* <Image
-                src='/images/bitcoin.png'
-                alt='Image'
-                width={225}
-                height={165.38}
-              /> */}
-              <p>
-                Help with sending,
-                <br />
-                receiving and
-                <br />
-                redeeming
-              </p>
+          <Link
+            href={{
+              pathname: '/help-center/crypto',
+              query: { name: 'Crypto' }
+            }}
+          >
+            <div className='col-10 col-md-5 d-flex justify-content-center'>
+              <div className='eyntkBox eyntkBoxTwo'>
+                <h3 className='mb-4'>Crypto</h3>
+
+                <p>
+                  How to get
+                  <br />
+                  started with our
+                  <br />
+                  spot cryptos
+                </p>
+              </div>
             </div>
-          </div>
+          </Link>
 
-          <div className='col-10 col-md-5 '>
-            <div className='eyntkBox eyntkBoxFour'>
-              <h3 className='mb-4'>Liquidity</h3>
-              {/* <Image
+          <Link
+            href={{
+              pathname: '/help-center/articles',
+              query: { name: 'Traders Central Token', parent: 'Tokens' }
+            }}
+          >
+            <div className='col-10 col-md-5 d-flex justify-content-center'>
+              <div className='eyntkBox eyntkBoxThree'>
+                <h3 className='mb-4'>Tokens</h3>
+
+                <p>
+                  Help with sending,
+                  <br />
+                  receiving and
+                  <br />
+                  redeeming
+                </p>
+              </div>
+            </div>
+          </Link>
+          <Link
+            href={{
+              pathname: '/help-center/liquidity',
+              query: { name: 'Liquidity' }
+            }}
+          >
+            <div className='col-10 col-md-5 d-flex justify-content-center'>
+              <div className='eyntkBox eyntkBoxFour'>
+                <h3 className='mb-4'>Liquidity</h3>
+                {/* <Image
                 src='/images/laquidty.png'
                 alt='Image'
                 width={225}
                 height={165.38}
               /> */}
-              <p>
-                Prop fund
-                <br />
-                startup help
-              </p>
+                <p>
+                  Prop fund
+                  <br />
+                  startup help
+                </p>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

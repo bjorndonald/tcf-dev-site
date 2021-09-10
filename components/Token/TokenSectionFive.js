@@ -18,14 +18,14 @@ export default function TokenSectionFive () {
   //     .from('.tokenSectionFive .gaspSlideRight', { x: 50, opacity: 0 }, 'start')
   // }, [tl])
   return (
-    <div className='tokenSectionFive'>
+    <div className='tokenSectionFive '>
       <div className=' py-5 d-flex align-items-center heightHv'>
         <div className='container'>
           <div className='row  d-flex align-items-stretch'>
             <div className='col-12 mb-4 gaspSlideLeft'>
               <div className='tradingBasicI'>
                 <video loop={true} autoPlay='autoplay' muted={true}>
-                  <source src='/videos/tokenRlhiwNew.mp4' type='video/mp4' />
+                  <source src='/videos/tokenVideo.mp4' type='video/mp4' />
                   Your browser does not support the video tag.
                 </video>
               </div>

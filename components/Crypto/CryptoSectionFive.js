@@ -12,7 +12,7 @@ export default function CryptoSectionFive () {
   // }, [tl])
   return (
     <div className='cryptoSectionFive py-5 d-flex align-items-center'>
-      <div className='container'>
+      <div className='container d-flex justify-content-center'>
         <div className='row py-5 flex-column align-items-center justify-content-between'>
           <h1>
             Sign Up to Buy & Sell Crypto In <br />
@@ -32,10 +32,10 @@ export default function CryptoSectionFive () {
             </div>
           </div>
           <div className='row mt-3 justify-content-center'>
-            <a href='' className='btn btn-blue'>
+            <a href='' className='link'>
               Policies
             </a>
-            <a href='' className='btn btn-blue'>
+            <a href='' className='link'>
               Login
             </a>
           </div>

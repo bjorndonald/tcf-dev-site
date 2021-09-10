@@ -32,16 +32,9 @@ export default function ContactSection () {
               <h2>Let&apos;s get you funded</h2>
             </div>
           </div>
-          <div className='col-md-6 gaspSlideLeft'>
-            <Image
-              src='/images/ContactUsCardImage.png'
-              alt='Image'
-              width={1445}
-              height={900}
-            />
-          </div>
-          <div className='col-md-6 gaspSlideRight'>
-            <div className='contactUsFormWrapper p'>
+
+          <div className='col-md-12 d-flex justify-content-center gaspSlideRight'>
+            <div className='contactUsFormWrapper p col-md-6'>
               <form>
                 <div className='emailWrap fieldWrap'>
                   <input
@@ -72,13 +65,13 @@ export default function ContactSection () {
                   />
                 </div>
                 <div className='yesCheckBox fieldWrap'>
-                  <p>
-                    <label className='checkbox-container'>
+                  <p className='d-flex align-items-center justify-content-center'>
+                    <label className='checkbox-container mr-2'>
                       <input type='checkbox' values='yes' />
                       <span className='checkmark'></span>
                     </label>
                     {/* <input type='checkbox' value='yes' />  */}
-                    Send me helpful info.
+                    <span>Send me helpful info.</span>
                   </p>
                 </div>
                 <div className='fieldWrap'>

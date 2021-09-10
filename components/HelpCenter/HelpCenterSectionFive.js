@@ -26,7 +26,7 @@ export default function HelpCenterSectionFive () {
             <div className='sectionTitleWrap mb-5 d-flex flex-column align-items-center'>
               <h2>Join Our Trading Community</h2>
               <p className=''>
-                Meeting over 4{','}000 traders from 175 countries
+                Meeting over 9{','}000 traders from 175 countries
               </p>
               <a className=' btn btn-black px-3 py-1' href='#'>
                 Accept Invite

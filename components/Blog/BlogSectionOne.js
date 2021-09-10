@@ -11,7 +11,7 @@ export default function BlogSectionOne () {
   //   })
   // }, [tl])
   return (
-    <div className='blogSectionOne py-5 d-flex align-items-center heightHv'>
+    <div className='blogSectionOne d-flex align-items-center heightHv'>
       <div className='container'>
         {/* <div className='row pt-5 top-title'>
           <div className='col-12'>
@@ -23,11 +23,9 @@ export default function BlogSectionOne () {
 
         <div
           style={{ marginTop: '2rem' }}
-          className='row py-5 flex-column align-items-center justify-content-between'
+          className='row  flex-column align-items-center justify-content-between'
         >
-          <h1 style={{ marginBottom: '3rem' }} className=''>
-            All you need to know.
-          </h1>
+          <h1 className=''>All you need to know</h1>
 
           <div className='row flex-column align-items-center justify-content-between'>
             {/* <h3>Buy & Sell Crypto In Seconds!</h3>
@@ -43,7 +41,7 @@ export default function BlogSectionOne () {
               <div className='cord'>
                 <div className='tip'></div>
               </div>
-              <div className=' smallCard smallCardOne smallCard1 card align-items-center flex-md-row mb-5'>
+              <div className=' smallCard smallCardOne smallCard1 card align-items-center flex-md-row '>
                 {/* <Image
                 className="card-img-right flex-auto d-none d-md-block"
                 src="/images/wgyImg-01.jpg"
@@ -52,10 +50,8 @@ export default function BlogSectionOne () {
                 width={300}
                 height={124.8}
               /> */}
-                <div className='placeholder-image'>
-                  <span>See</span>
-                </div>
-                <div className='card-body ml-2 d-flex align-items-stretch '>
+                <div className='placeholder-image'></div>
+                <div className='card-body  d-flex align-items-stretch '>
                   <div className='d-flex align-items-end'>
                     <div className='card-body-four-line'>
                       {/* <div className="cardNum">1.</div> */}
@@ -70,7 +66,7 @@ export default function BlogSectionOne () {
                 </div>
               </div>
 
-              <div className=' smallCard smallCardOne smallCard1 card align-items-center flex-md-row mb-5'>
+              <div className=' smallCard smallCardOne smallCard1 card align-items-center flex-md-row '>
                 {/* <Image
                 className="card-img-right flex-auto d-none d-md-block"
                 src="/images/wgyImg-01.jpg"
@@ -79,10 +75,8 @@ export default function BlogSectionOne () {
                 width={300}
                 height={124.8}
               /> */}
-                <div className='placeholder-image'>
-                  <span>See</span>
-                </div>
-                <div className='card-body ml-2 d-flex align-items-stretch '>
+                <div className='placeholder-image'></div>
+                <div className='card-body  d-flex align-items-stretch '>
                   <div className='d-flex align-items-end'>
                     <div className='card-body-four-line'>
                       {/* <div className="cardNum">1.</div> */}
@@ -97,7 +91,7 @@ export default function BlogSectionOne () {
                 </div>
               </div>
 
-              <div className=' smallCard smallCardOne smallCard1 card align-items-center flex-md-row mb-5'>
+              <div className=' smallCard smallCardOne smallCard1 card align-items-center flex-md-row '>
                 {/* <Image
                 className="card-img-right flex-auto d-none d-md-block"
                 src="/images/wgyImg-01.jpg"
@@ -106,10 +100,8 @@ export default function BlogSectionOne () {
                 width={300}
                 height={124.8}
               /> */}
-                <div className='placeholder-image'>
-                  <span>See</span>
-                </div>
-                <div className='card-body ml-2 d-flex align-items-stretch '>
+                <div className='placeholder-image'></div>
+                <div className='card-body  d-flex align-items-stretch '>
                   <div className='d-flex align-items-end'>
                     <div className='card-body-four-line'>
                       {/* <div className="cardNum">1.</div> */}
@@ -124,7 +116,7 @@ export default function BlogSectionOne () {
                 </div>
               </div>
 
-              <div className=' smallCard smallCardOne smallCard1 card align-items-center flex-md-row mb-5'>
+              <div className=' smallCard smallCardOne smallCard1 card align-items-center flex-md-row '>
                 {/* <Image
                 className="card-img-right flex-auto d-none d-md-block"
                 src="/images/wgyImg-01.jpg"
@@ -133,10 +125,8 @@ export default function BlogSectionOne () {
                 width={300}
                 height={124.8}
               /> */}
-                <div className='placeholder-image'>
-                  <span>See</span>
-                </div>
-                <div className='card-body ml-2 d-flex align-items-stretch '>
+                <div className='placeholder-image'></div>
+                <div className='card-body  d-flex align-items-stretch '>
                   <div className='d-flex align-items-end'>
                     <div className='card-body-four-line'>
                       {/* <div className="cardNum">1.</div> */}

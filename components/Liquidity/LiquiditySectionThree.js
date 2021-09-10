@@ -27,21 +27,22 @@ export default function LiquiditySectionThree () {
   //     )
   // }, [tl])
   return (
-    <div className='liquiditySectionThree py-5 d-flex align-items-center heightHv'>
+    <div className='liquiditySectionThree py-5 d-flex align-items-center'>
       <div className='container'>
-        <div className='row py-5 d-flex align-items-stretch'>
+        <div className='row  d-flex align-items-stretch'>
           <div className='col-12 col-md-6 gaspSlideLeft d-flex align-items-center'>
             <div className='tradingBasicHP '>
               <h2>Personalized Portal</h2>
               <p>
-                The personalized portal allows you to manage all your <br />
-                traders and process their tasks.
+                The personalized portal allows you to manage all your traders
+                and process their tasks.
               </p>
             </div>
           </div>
           <div className='col-12 col-md-6 gaspSlideRight mt-4'>
             <div className='tradingBasicI'>
-              <div className='placeholder-image'></div>
+              {/* <div className='placeholder-image'></div> */}
+              <img src='/images/liquidity/Two.jpg' alt='' />
               {/* <Image src="/images/personalized-portal.jpg" alt="Personalized Portal" width={540} height={405} /> */}
             </div>
           </div>

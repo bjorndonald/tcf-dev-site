@@ -25,167 +25,122 @@ export default function TokenSectionFaq () {
 
   // }, [tl]);
 
+  const toggle = e => {
+    $(
+      $(e.target)
+        .parent()
+        .find('span')[0]
+    ).toggle()
+    $(
+      $(e.target)
+        .parent()
+        .find('span')[1]
+    ).toggle()
+  }
+
   return (
     <div className='tokenSectionFaq faqSection py-5 d-flex align-items-center heightHv'>
       <div className='container'>
         <div className='row'>
-          <div className='col-12 pb-5 gaspSlideLeft'>
+          <div className='col-12 header-section gaspSlideLeft'>
             <h2>FAQ</h2>
+            <h4>Ready to learn how it works?</h4>
           </div>
           <div className='col-12 gaspSlideRight'>
             <Accordion>
               <Card>
                 <Card.Header>
-                  <Accordion.Toggle as={Button} variant='link' eventKey='0'>
-                    When are new features going to be availble? <span>+</span>
+                  <Accordion.Toggle
+                    as={props => (
+                      <div onClick={toggle}>
+                        <Button {...props} />
+                      </div>
+                    )}
+                    variant='link'
+                    eventKey='0'
+                  >
+                    What are TCT's? <span>+</span>
+                    <span style={{ display: 'none' }}>-</span>
                   </Accordion.Toggle>
                 </Card.Header>
 
                 <Accordion.Collapse eventKey='0'>
                   <Card.Body>
-                    Anim pariatur cliche reprehenderit{','} enim eiusmod high
-                    life accusamus terry richardson ad squid. 3 wolf moon
-                    officia aute{','} non cupidatat skateboard dolor brunch.
-                    Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                    moon tempor{','} sunt aliqua put a bird on it squid
-                    single-origin coffee nulla assumenda shoreditch et. Nihil
-                    anim keffiyeh helvetica{','} craft beer labore wes anderson
-                    cred nesciunt sapiente ea proident. Ad vegan excepteur
-                    butcher vice lomo. Leggings occaecat craft beer
-                    farm-to-table{','} raw denim aesthetic synth nesciunt you
-                    probably haven{"'"}t heard of them accusamus labore
-                    sustainable VHS.{' '}
+                    Currently traders central token is being tested in the
+                    proprietary arm of the ecosystem. Its redeemable for
+                    discounts on funding plans.
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
 
               <Card>
                 <Card.Header>
-                  <Accordion.Toggle as={Button} variant='link' eventKey='1'>
-                    How do i send money instantly with Traders Central Cash?{' '}
-                    <span>+</span>
+                  <Accordion.Toggle
+                    as={props => (
+                      <div onClick={toggle}>
+                        <Button {...props} />
+                      </div>
+                    )}
+                    variant='link'
+                    eventKey='1'
+                  >
+                    How can I earn TCT's? <span>+</span>
+                    <span style={{ display: 'none' }}>-</span>
                   </Accordion.Toggle>
                 </Card.Header>
 
                 <Accordion.Collapse eventKey='1'>
                   <Card.Body>
-                    Anim pariatur cliche reprehenderit{','} enim eiusmod high
-                    life accusamus terry richardson ad squid. 3 wolf moon
-                    officia aute{','} non cupidatat skateboard dolor brunch.
-                    Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                    moon tempor{','} sunt aliqua put a bird on it squid
-                    single-origin coffee nulla assumenda shoreditch et. Nihil
-                    anim keffiyeh helvetica{','} craft beer labore wes anderson
-                    cred nesciunt sapiente ea proident. Ad vegan excepteur
-                    butcher vice lomo. Leggings occaecat craft beer
-                    farm-to-table{','} raw denim aesthetic synth nesciunt you
-                    probably haven{"'"}t heard of them accusamus labore
-                    sustainable VHS.{' '}
+                    By signing up, shaking your phone daily and reaching
+                    milestones.
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
 
               <Card>
                 <Card.Header>
-                  <Accordion.Toggle as={Button} variant='link' eventKey='2'>
-                    {' '}
-                    How do i send money instantly with Traders Central Cash?{' '}
+                  <Accordion.Toggle
+                    as={props => (
+                      <div onClick={toggle}>
+                        <Button {...props} />
+                      </div>
+                    )}
+                    variant='link'
+                    eventKey='2'
+                  >
+                    Can send TCT's to friends?
                     <span>+</span>
+                    <span style={{ display: 'none' }}>-</span>
                   </Accordion.Toggle>
                 </Card.Header>
 
                 <Accordion.Collapse eventKey='2'>
                   <Card.Body>
-                    Anim pariatur cliche reprehenderit{','} enim eiusmod high
-                    life accusamus terry richardson ad squid. 3 wolf moon
-                    officia aute{','} non cupidatat skateboard dolor brunch.
-                    Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                    moon tempor{','} sunt aliqua put a bird on it squid
-                    single-origin coffee nulla assumenda shoreditch et. Nihil
-                    anim keffiyeh helvetica{','} craft beer labore wes anderson
-                    cred nesciunt sapiente ea proident. Ad vegan excepteur
-                    butcher vice lomo. Leggings occaecat craft beer
-                    farm-to-table{','} raw denim aesthetic synth nesciunt you
-                    probably haven{"'"}t heard of them accusamus labore
-                    sustainable VHS.{' '}
+                    Yes you can send to friends and request from them also.
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
 
               <Card>
                 <Card.Header>
-                  <Accordion.Toggle as={Button} variant='link' eventKey='3'>
-                    But actually{','} are you really serious about no account
-                    fees? <span>+</span>
+                  <Accordion.Toggle
+                    as={props => (
+                      <div onClick={toggle}>
+                        <Button {...props} />
+                      </div>
+                    )}
+                    variant='link'
+                    eventKey='3'
+                  >
+                    When are new use cases going to be available? <span>+</span>
+                    <span style={{ display: 'none' }}>-</span>
                   </Accordion.Toggle>
                 </Card.Header>
 
                 <Accordion.Collapse eventKey='3'>
                   <Card.Body>
-                    Anim pariatur cliche reprehenderit{','} enim eiusmod high
-                    life accusamus terry richardson ad squid. 3 wolf moon
-                    officia aute{','} non cupidatat skateboard dolor brunch.
-                    Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                    moon tempor{','} sunt aliqua put a bird on it squid
-                    single-origin coffee nulla assumenda shoreditch et. Nihil
-                    anim keffiyeh helvetica{','} craft beer labore wes anderson
-                    cred nesciunt sapiente ea proident. Ad vegan excepteur
-                    butcher vice lomo. Leggings occaecat craft beer
-                    farm-to-table{','} raw denim aesthetic synth nesciunt you
-                    probably haven{"'"}t heard of them accusamus labore
-                    sustainable VHS.{' '}
-                  </Card.Body>
-                </Accordion.Collapse>
-              </Card>
-
-              <Card>
-                <Card.Header>
-                  <Accordion.Toggle as={Button} variant='link' eventKey='4'>
-                    I already use Traders Central Cash is this different?{' '}
-                    <span>+</span>
-                  </Accordion.Toggle>
-                </Card.Header>
-
-                <Accordion.Collapse eventKey='4'>
-                  <Card.Body>
-                    Anim pariatur cliche reprehenderit{','} enim eiusmod high
-                    life accusamus terry richardson ad squid. 3 wolf moon
-                    officia aute{','} non cupidatat skateboard dolor brunch.
-                    Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                    moon tempor{','} sunt aliqua put a bird on it squid
-                    single-origin coffee nulla assumenda shoreditch et. Nihil
-                    anim keffiyeh helvetica{','} craft beer labore wes anderson
-                    cred nesciunt sapiente ea proident. Ad vegan excepteur
-                    butcher vice lomo. Leggings occaecat craft beer
-                    farm-to-table{','} raw denim aesthetic synth nesciunt you
-                    probably haven{"'"}t heard of them accusamus labore
-                    sustainable VHS.{' '}
-                  </Card.Body>
-                </Accordion.Collapse>
-              </Card>
-
-              <Card>
-                <Card.Header>
-                  <Accordion.Toggle as={Button} variant='link' eventKey='5'>
-                    {' '}
-                    Why should i use this to send money? <span>+</span>
-                  </Accordion.Toggle>
-                </Card.Header>
-
-                <Accordion.Collapse eventKey='5'>
-                  <Card.Body>
-                    Anim pariatur cliche reprehenderit{','} enim eiusmod high
-                    life accusamus terry richardson ad squid. 3 wolf moon
-                    officia aute{','} non cupidatat skateboard dolor brunch.
-                    Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                    moon tempor{','} sunt aliqua put a bird on it squid
-                    single-origin coffee nulla assumenda shoreditch et. Nihil
-                    anim keffiyeh helvetica{','} craft beer labore wes anderson
-                    cred nesciunt sapiente ea proident. Ad vegan excepteur
-                    butcher vice lomo. Leggings occaecat craft beer
-                    farm-to-table{','} raw denim aesthetic synth nesciunt you
-                    probably haven{"'"}t heard of them accusamus labore
-                    sustainable VHS.{' '}
+                    We’re working to release new features to earn and redeem
+                    tct's on a rolling basis.
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>

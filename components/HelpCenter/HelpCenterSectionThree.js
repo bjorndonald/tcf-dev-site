@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react'
 import { gsap } from 'gsap/dist/gsap'
 import Image from 'next/image'
+import Link from 'next/link'
 
-export default function HelpCenterSectionThree () {
+export default function HelpCenterSectionThree (props) {
   // useEffect(() => {
   //   gsap.timeline({
   //     scrollTrigger: {
@@ -20,6 +21,7 @@ export default function HelpCenterSectionThree () {
   //   .from(".helpCenterSectionThree .smallCardTwo", { x: 50, opacity : 0, duration: 0.8 },">-0.5", 'start')
   //   .from(".helpCenterSectionThree .smallCardThree", { x: 50, opacity : 0, duration: 0.8 },">-0.5", 'start');
   // }, [tl]);
+  console.log(props.articles[0])
 
   return (
     <div className='helpCenterSectionThree py-5 d-flex align-items-center heightHv'>
@@ -32,41 +34,35 @@ export default function HelpCenterSectionThree () {
           </div>
         </div>
 
-        <div className='row'>
-          <div className='row col-lg-12 article '>
-            <div className='col-12 col-md-6 px-2'>
-              <div className='placeholder-image'>
-                <span>See</span>
-              </div>
+        <div className='row justify-content-center'>
+          {/* <div className='row col-lg-12 article '>
+            <div className=' left'>
+              <div className='placeholder-image'></div>
             </div>
 
-            <div className='col-12 col-md-6 px-2 pl-5 d-flex justify-content-center flex-column align-items-center text-center'>
+            <div className=' right d-flex justify-content-center flex-column align-items-center text-center'>
               <h1>Article Title</h1>
               <p>
                 Exploring the history of forex trading <br />
                 and how it shapes our world today.
               </p>
             </div>
-          </div>
+          </div> */}
 
-          <div className='row col-lg-12 article '>
-            <div className='col-12 col-md-6 px-2'>
-              <div className='placeholder-image'>
-                <span>See</span>
+          {props.articles.slice(0, 2).map(article => (
+            <div className='row col-12 article '>
+              <div className=' left col-md-4'>
+                <div className='image'>{article.image}</div>
+              </div>
+
+              <div className='right col-md-4 justify-content-center flex-column align-items-center text-center'>
+                <a target='article' href={article.link}>
+                  <h1>{article.title}</h1>
+                </a>
+                <p>{article.description.substr(0, 100)}...</p>
               </div>
             </div>
-
-            <div className='col-12 col-md-6 px-2 pl-5 d-flex justify-content-center flex-column align-items-center text-center'>
-              <h1>Article Title</h1>
-              <p>
-                Learn the different terminologies,
-                <br />
-                understand its history and become
-                <br />
-                an expert
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

@@ -13,6 +13,15 @@
   }
 }
 
+.registerSectionOne {
+  padding-top: 5vh;
+  height: 80vh;
+
+  h1 {
+    text-align: center;
+  }
+}
+
 .tradingBasicSectionThree {
   h2 {
     color: #000;
@@ -20,5 +29,54 @@
     margin-top: 5rem;
     font-size: 3rem;
     // margin-bottom: 7rem;
+  }
+}
+
+.liquiditySectionTwo,
+.liquiditySectionThree,
+.liquiditySectionFour,
+.liquiditySectionFive {
+  h2:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.liquiditySectionOne {
+  height: 70vh;
+  .container {
+    margin-top: 10vh;
+  }
+  h1 {
+    font-size: 7vh;
+    text-align: center;
+  }
+
+  p {
+    margin-top: 5vh;
+    margin-bottom: 7vh;
+    font-size: 3.5vh;
+  }
+
+  .btn {
+    border-radius: 5vh;
+    padding: 1vh 5vh;
+    font-size: 3vh;
+  }
+}
+
+.liquiditySectionTwo,
+.liquiditySectionThree,
+.liquiditySectionFour,
+.liquiditySectionFive {
+  height: 50vh;
+}
+
+.liquiditySectionFaq {
+  min-height: 70vh;
+  margin-bottom: 5vh;
+
+  .accordion-section {
+    min-height: 60vh;
   }
 }

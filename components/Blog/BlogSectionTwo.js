@@ -36,7 +36,7 @@ export default function BlogSectionOne () {
             <br /> learning to be the best.
           </h4>
 
-          <div className='button mt-3'>
+          <div className='button'>
             <a className=' btn btn-black px-3 ' href='#'>
               Sign-up
             </a>

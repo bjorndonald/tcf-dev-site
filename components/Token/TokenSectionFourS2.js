@@ -27,7 +27,7 @@ export default function TokenSectionThree () {
   //     )
   // }, [tl])
   return (
-    <div className='tokenSectionThree tokenSectionaCOE py-5 d-flex align-items-center heightHv'>
+    <div className='tokenSectionThree tokenSectionaCOE d-flex align-items-center '>
       <div className='container'>
         <div className='row py-5 d-flex align-items-stretch'>
           <div className='col-12 col-md-6 mb-4 gaspSlideRight'>

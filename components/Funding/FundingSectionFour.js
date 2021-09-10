@@ -5,8 +5,60 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
   ssr: false
 })
 import { gsap } from 'gsap/dist/gsap'
+import {
+  Accordion,
+  OverlayTrigger,
+  Tab,
+  Row,
+  Col,
+  Nav,
+  Tooltip,
+  Card,
+  Button
+} from 'react-bootstrap'
+import PositionTable from '../Faqs/PositionTable'
+// import SubCategories from './SubCategories'
+import $ from 'jquery'
+import OTFTrading from './OTFTrading'
+import MonthlyTrading from './MonthlyTrading'
+import MonthlyCapital from './MonthlyCapital'
+import MonthlyWithDrawals from './MonthlyWithDrawals'
+import OTFWithDrawals from './OTFWithDrawals'
+import OTFCapital from './OTFCapital'
 
 export default function FundingSectionFour () {
+  const toggle = e => {
+    $(
+      $(e.target)
+        .parent()
+        .find('span')[0]
+    ).toggle()
+    $(
+      $(e.target)
+        .parent()
+        .find('span')[1]
+    ).toggle()
+  }
+
+  const toggleSwitch = e => {
+    $(e.target)
+      .parent()
+      .css('z-index', '4')
+    $(e.target)
+      .parent()
+      .parent()
+      .find('.nav-item')
+      .each((i, x) => {
+        console.log(x)
+        if (
+          $(x)
+            .find('a')
+            .hasClass('active')
+        ) {
+          $(x).css('z-index', '2')
+        }
+      })
+  }
   // useEffect(() => {
   //   gsap.timeline({
   //     scrollTrigger: {
@@ -23,36 +75,147 @@ export default function FundingSectionFour () {
 
   // }, [tl]);
   return (
-    <div className='fundingSectionFour py-5 d-flex align-items-center heightHv'>
+    <div className='fundingSectionFour py-5 d-flex align-items-center '>
       <div className='container'>
         <div className='row py-5'>
           <div className='col-12'>
-            <div className='sectionTitleWrap text-center mb-5'>
+            <div className='sectionTitleWrap text-center mb-4'>
               <h2>Everything you need to know</h2>
-              <p>Relevant information regarding your preffered plan</p>
+              <p>Relevant information regarding your preferred plan</p>
             </div>
           </div>
-          <div className='col-12 gaspSlideRight'>
-            <div className='row mt-5 justify-content-center'>
-              <h4 className='m-2'>Trading Rules</h4>
-              <h4 className='m-2'>Position Size Guide</h4>
-              <h4 className='m-2'>Capital Growth</h4>
-              <h4 className='m-2'>Withdrawals</h4>
+          <Tab.Container id='nav-tab-example' defaultActiveKey='monthly'>
+            <div className='col-12 text-center '>
+              <div className='priceTableNav d-flex justify-content-center mb-2'>
+                <Nav>
+                  <Nav.Item style={{ zIndex: 4 }}>
+                    <Nav.Link onClick={toggleSwitch} eventKey='monthly'>
+                      Monthly
+                    </Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item style={{ zIndex: 2 }}>
+                    <Nav.Link onClick={toggleSwitch} eventKey='onetime'>
+                      One Time
+                    </Nav.Link>
+                  </Nav.Item>
+                </Nav>
+              </div>
             </div>
+            <div className='col-12'>
+              <Tab.Content className='mt-1'>
+                <Tab.Pane eventKey='monthly'>
+                  <Tab.Container id='subcategories' defaultActiveKey='trading'>
+                    <div className='col-12 gaspSlideRight'>
+                      <div className='row mt-1 justify-content-center'>
+                        <Nav>
+                          <Nav.Item>
+                            <Nav.Link eventKey='trading'>
+                              Trading Rules
+                            </Nav.Link>
+                          </Nav.Item>
+                          <Nav.Item>
+                            <Nav.Link eventKey='position'>
+                              Position Size{' '}
+                            </Nav.Link>
+                          </Nav.Item>
+                          <Nav.Item>
+                            <Nav.Link eventKey='capital'>
+                              Capital Growth
+                            </Nav.Link>
+                          </Nav.Item>
+                          <Nav.Item>
+                            <Nav.Link eventKey='withdrawals'>
+                              Withdrawals
+                            </Nav.Link>
+                          </Nav.Item>
+                        </Nav>
+                      </div>
+                    </div>
 
-            <div className='row mt-5'>
-              <div className='col-md-6 col-12 p-3'>
-                <div className='placeholder-image'>
-                  <span>See</span>
-                </div>
-              </div>
-              <div className='col-md-6 col-12 p-3'>
-                <div className='placeholder-image'>
-                  <span>See</span>
-                </div>
-              </div>
+                    <div className='col-12'>
+                      <Tab.Content className='mt-5'>
+                        <Tab.Pane eventKey='trading' id='trading'>
+                          <div className='col-8 m-auto' id='trading-section'>
+                            <div className='col-12 gaspSlideRight'>
+                              <MonthlyTrading />
+                            </div>
+                          </div>
+                        </Tab.Pane>
+                        <Tab.Pane eventKey='position' id='position'>
+                          <div className='col-8 m-auto' id='position-section'>
+                            <PositionTable />
+                          </div>
+                        </Tab.Pane>
+                        <Tab.Pane eventKey='capital' id='capital'>
+                          <div className='col-8 m-auto' id='position-section'>
+                            <MonthlyCapital />
+                          </div>
+                        </Tab.Pane>
+                        <Tab.Pane eventKey='withdrawals' id='withdrawals'>
+                          <div className='col-8 m-auto' id='position-section'>
+                            <MonthlyWithDrawals />
+                          </div>
+                        </Tab.Pane>
+                      </Tab.Content>
+                    </div>
+                  </Tab.Container>
+                </Tab.Pane>
+                <Tab.Pane eventKey='onetime'>
+                  <Tab.Container id='subcategories' defaultActiveKey='trading'>
+                    <div className='col-12 gaspSlideRight'>
+                      <div className='row mt-1 justify-content-center'>
+                        <Nav>
+                          <Nav.Item>
+                            <Nav.Link eventKey='trading'>
+                              Trading Rules
+                            </Nav.Link>
+                          </Nav.Item>
+
+                          <Nav.Item>
+                            <Nav.Link eventKey='capital'>
+                              Capital Growth
+                            </Nav.Link>
+                          </Nav.Item>
+                          <Nav.Item>
+                            <Nav.Link eventKey='withdrawals'>
+                              Withdrawals
+                            </Nav.Link>
+                          </Nav.Item>
+                        </Nav>
+                      </div>
+                    </div>
+
+                    <div className='col-12'>
+                      <Tab.Content className='mt-5'>
+                        <Tab.Pane eventKey='trading' id='trading'>
+                          <div className='col-8 m-auto' id='trading-section'>
+                            <div className='col-12 gaspSlideRight'>
+                              <OTFTrading />
+                            </div>
+                          </div>
+                        </Tab.Pane>
+                        {/* <Tab.Pane eventKey='position' id='position'>
+                          <div className='col-8 m-auto' id='position-section'>
+                            <PositionTable />
+                          </div>
+                        </Tab.Pane> */}
+                        <Tab.Pane eventKey='capital' id='capital'>
+                          <div className='col-8 m-auto' id='position-section'>
+                            <OTFCapital />
+                          </div>
+                        </Tab.Pane>
+                        <Tab.Pane eventKey='withdrawals' id='withdrawals'>
+                          <div className='col-8 m-auto' id='position-section'>
+                            <OTFWithDrawals />
+                          </div>
+                        </Tab.Pane>
+                      </Tab.Content>
+                    </div>
+                  </Tab.Container>
+                </Tab.Pane>
+              </Tab.Content>
             </div>
-          </div>
+          </Tab.Container>
         </div>
       </div>
     </div>

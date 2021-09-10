@@ -1,0 +1,32 @@
+@media only screen and (min-width: 480px) and (max-width: 1048px) {
+  .sectionOne {
+    height: 80vh;
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    .HomeHeroVideo {
+      margin-top: -10vh;
+    }
+  }
+
+  .sectionMobile {
+    .fixedBox img {
+      width: 40rem;
+      margin-left: -18.5rem;
+    }
+
+    .sectionTwoContentWrap {
+      margin-left: 1rem;
+    }
+  }
+
+  .sectionThree {
+    .homeBoxOne .card .image {
+    }
+  }
+}

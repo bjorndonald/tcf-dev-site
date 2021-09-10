@@ -38,18 +38,18 @@ export default function LiquiditySectionOne () {
   return (
     <div className='liquiditySectionOne py-5 d-flex align-items-center'>
       <div className='container'>
-        <div className='row py-5 d-flex align-items-stretch'>
+        <div className='row  d-flex align-items-stretch'>
           <div className='col-12 d-flex align-items-center justify-content-center liquiditySectionOneL'>
             <div className='heading d-flex flex-column align-items-center'>
               {/* <h1>TraderCentral Capital</h1> */}
               <h1>Start your Prop Fund in 24 hours</h1>
-              <p className='my-3' style={{ textAlign: 'center' }}>
-                Suite of products to help
+              <p className='' style={{ textAlign: 'center' }}>
+                We eliminate lengthy paperwork, legal complexity,
                 <br />
-                boost your financial positioning
+                and numerous fees
               </p>
               <div className='button mt-3'>
-                <a className=' btn btn-black px-3 ' href='#'>
+                <a className=' btn btn-black  ' href='/register'>
                   Sign-up
                 </a>
               </div>

@@ -1,8 +1,10 @@
 import configReducer from './configReducer'
 import { combineReducers } from 'redux'
+import articlesReducer from './articles'
 
 const rootReducer = combineReducers({
-  config: configReducer
+  config: configReducer,
+  articles: articlesReducer
 })
 
 export default rootReducer

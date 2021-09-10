@@ -14,15 +14,27 @@ import './../public/css/token.scss'
 import './../public/css/help.scss'
 import './../public/css/funding.scss'
 import './../public/css/archive.scss'
+import './../public/css/basics.scss'
+import './../public/css/faqs.scss'
+import './../public/css/mobile.scss'
+import './../public/css/laptop.scss'
+import './../public/css/layout.scss'
 
 import { Fragment } from 'react'
 
 import { createStore, applyMiddleware } from 'redux'
 import rootReducer from './../store/reducers/rootReducer'
+import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit'
 import { Provider } from 'react-redux'
 import thunk from 'redux-thunk'
+import toast from '../store/middleware/toast'
+import api from '../store/middleware/api'
 
-const store = createStore(rootReducer, applyMiddleware(thunk))
+// const store = createStore(rootReducer, applyMiddleware(thunk, toast, api))
+const store = configureStore({
+  reducer: rootReducer,
+  middleware: [...getDefaultMiddleware(), toast, api]
+})
 
 export default function MyApp ({ Component, pageProps }) {
   return (

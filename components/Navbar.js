@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useLayoutEffect, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -12,28 +12,27 @@ export default function NavBar () {
     }
   };*/
 
+  useLayoutEffect(() => {
+    $('.mobileMenuList .mobileMenuListChild').on('click', function () {
+      $(this)
+        .find('ul')
+        .toggleClass('mobileMenuListSubShow')
+    })
+    return () => {}
+  }, [])
   useEffect(() => {
-    // window.addEventListener("scroll", handleScrollTop);
-    // return () => {
-    //   window.removeEventListener("scroll", handleScrollTop);
-    // };
+    $('.navOpen').on('click', function () {
+      $('.menu-overlay').css('width', '100%')
+    })
+
+    $('.navClose').on('click', function () {
+      $('.menu-overlay').css('width', '0')
+    })
 
     $(function () {
       $(document).on('scroll', function () {
         var $nav = $('.navbar-fixed-top')
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height())
-      })
-
-      $('.navOpen').on('click', function () {
-        $('.menu-overlay').css('width', '100%')
-      })
-
-      $('.navClose').on('click', function () {
-        $('.menu-overlay').css('width', '0')
-      })
-
-      $('.mobileMenuList .mobileMenuListChild').on('click', function () {
-        $('.mobileMenuListSub', this).toggleClass('mobileMenuListSubShow')
       })
     })
   })
@@ -80,24 +79,26 @@ export default function NavBar () {
 
             <ul className='mobileMenuList'>
               <li className='mobileMenuListChild'>
-                <a className='mobileMenuListChildA' href='#'>
-                  Products
-                </a>
+                <a className='mobileMenuListChildA'>Products</a>
                 <ul className='mobileMenuListSub mobileMenuListSubI'>
                   <li>
                     <Link href='/products/funding'>
                       <a
                         href='/products/funding'
-                        className='mobileMenuListSubIA'
+                        className='mobileMenuListSubIA navClose'
                       >
                         <div className='mobileMenuListSubiW d-flex align-items-stretch'>
-                          <div className='mobileMenuListSubImg'>
-                            <Image
+                          <div className='mobileMenuListSubImg d-flex justify-content-center align-items-center'>
+                            <img
                               className=''
-                              src='/images/piggy.png'
+                              src='/images/home/boxOne.jpg'
                               alt='Card image cap'
-                              width={259.19}
-                              height={190.15}
+                              style={{
+                                width: 'auto',
+                                height: '100%'
+                              }}
+                              // width={259.19}
+                              // height={190.15}
                             />
                           </div>
                           <div className='mobileMenuListSubiC d-flex align-items-center'>
@@ -114,15 +115,18 @@ export default function NavBar () {
                   </li>
                   <li>
                     <Link href='/products/token'>
-                      <a href='/products/token' className='mobileMenuListSubIA'>
+                      <a
+                        href='/products/token'
+                        className='mobileMenuListSubIA navClose'
+                      >
                         <div className='mobileMenuListSubiW d-flex align-items-stretch'>
                           <div className='mobileMenuListSubImg'>
-                            <Image
+                            <img
                               className='mobileMenuListSubImg'
-                              src='/images/token.png'
+                              src='/images/home/boxTwo.jpg'
                               alt='Card image cap'
-                              width={259.19}
-                              height={190.15}
+                              // width={259.19}
+                              // height={190.15}
                             />
                           </div>
                           <div className='mobileMenuListSubiC d-flex align-items-center'>
@@ -140,17 +144,17 @@ export default function NavBar () {
                   <li>
                     <Link
                       href='/products/crypto'
-                      className='mobileMenuListSubIA'
+                      className='mobileMenuListSubIA navClose'
                       // href='https://tccrypto.io/'
                     >
                       <div className='mobileMenuListSubiW d-flex align-items-stretch'>
                         <div className='mobileMenuListSubImg'>
-                          <Image
+                          <img
                             className='mobileMenuListSubImg'
-                            src='/images/bitcoin.png'
+                            src='/images/home/boxThree.jpg'
                             alt='Card image cap'
-                            width={259.19}
-                            height={190.15}
+                            // width={259.19}
+                            // height={190.15}
                           />
                         </div>
                         <div className='mobileMenuListSubiC d-flex align-items-center'>
@@ -165,17 +169,17 @@ export default function NavBar () {
                   <li>
                     <Link href='/products/liquidity'>
                       <a
-                        className='mobileMenuListSubIA'
+                        className='mobileMenuListSubIA navClose'
                         href='/products/liquidity'
                       >
                         <div className='mobileMenuListSubiW d-flex align-items-stretch'>
                           <div className='mobileMenuListSubImg'>
-                            <Image
+                            <img
                               className='mobileMenuListSubImg'
-                              src='/images/laquidty.png'
+                              src='/images/home/boxFour.jpg'
                               alt='Card image cap'
-                              width={259.19}
-                              height={190.15}
+                              // width={259.19}
+                              // height={190.15}
                             />
                           </div>
                           <div className='mobileMenuListSubiC d-flex align-items-center'>
@@ -192,47 +196,49 @@ export default function NavBar () {
               </li>
 
               <li className='mobileMenuListChild'>
-                <a className='mobileMenuListChildA' href='#'>
-                  Learn
-                </a>
+                <a className='mobileMenuListChildA'>Learn</a>
                 <ul className='mobileMenuListSub'>
-                  <li>
+                  {/* <li>
                     <Link href='/archive'>
-                      <a className='mobileMenuListSubA'>Bites</a>
+                      <a className='mobileMenuListSubA navClose'>Bites</a>
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href='/trading-basic'>
-                      <a className='mobileMenuListSubA'>Basics</a>
+                      <a className='mobileMenuListSubA navClose'>Basics</a>
                     </Link>
                   </li>
                 </ul>
               </li>
               <li className='mobileMenuListChild'>
-                <a className='mobileMenuListChildA' href='#'>
-                  About
-                </a>
+                <a className='mobileMenuListChildA'>About</a>
                 <ul className='mobileMenuListSub'>
                   <li>
                     <Link href='/about-us'>
-                      <a className='mobileMenuListSubA'>Model</a>
+                      <a className='mobileMenuListSubA navClose'>Model</a>
                     </Link>
                   </li>
-                  {/* <li><Link href="/station"><a className="mobileMenuListSubA">Station</a></Link></li> */}
+                  {/* <li><Link href="/station"><a className="mobileMenuListSubA navClose">Station</a></Link></li> */}
                   <li>
-                    <Link
-                      // href='https://www.centralstation.blog/'
-                      href='/blog'
-                      targe='_blank'
+                    {/* <Link
+                      href='https://bit.ly/2X9xdjC'
+                      // href='/blog'
+                      targe='_blog'
+                    > */}
+                    <a
+                      target='_blog'
+                      href='https://bit.ly/2X9xdjC'
+                      className='mobileMenuListSubA navClose'
                     >
-                      <a className='mobileMenuListSubA'>Blog</a>
-                    </Link>
+                      Blog
+                    </a>
+                    {/* </Link> */}
                   </li>
                 </ul>
               </li>
               <li className='mobileMenuListS'>
                 <Link href='/help-center'>
-                  <a className='mobileMenuListSA'>Help Center</a>
+                  <a className='mobileMenuListSA navClose'>Help Center</a>
                 </Link>
               </li>
             </ul>
@@ -291,9 +297,7 @@ export default function NavBar () {
                             <p
                               className='mt-4'
                               style={{ textAlign: 'right', color: '#fff' }}
-                            >
-                              See
-                            </p>
+                            ></p>
                           </div>
                         </div>
                       </a>
@@ -310,9 +314,7 @@ export default function NavBar () {
                             <p
                               className='mt-4'
                               style={{ textAlign: 'right', color: '#fff' }}
-                            >
-                              See
-                            </p>
+                            ></p>
                           </div>
                         </div>
                       </a>
@@ -329,9 +331,7 @@ export default function NavBar () {
                             <p
                               className='mt-4'
                               style={{ textAlign: 'right', color: '#fff' }}
-                            >
-                              See
-                            </p>
+                            ></p>
                           </div>
                         </div>
                       </a>
@@ -348,9 +348,7 @@ export default function NavBar () {
                             <p
                               className='mt-4'
                               style={{ textAlign: 'right', color: '#fff' }}
-                            >
-                              See
-                            </p>
+                            ></p>
                           </div>
                         </div>
                       </a>
@@ -374,11 +372,11 @@ export default function NavBar () {
                   className='dropdown-menu white-background'
                   aria-labelledby='navbarDropdownMenuLinkTwo'
                 >
-                  <li>
+                  {/* <li>
                     <Link href='/archive'>
                       <a className='dropdown-item'>Bites</a>
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href='/trading-basic'>
                       <a className='dropdown-item'>Basics</a>
@@ -408,13 +406,19 @@ export default function NavBar () {
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      // href='https://www.centralstation.blog/'
-                      href='/blog'
-                      target='_blank'
+                    {/* <Link
+                      href='https://bit.ly/2X9xdjC'
+                      // href='/blog'
+                      target='_blog'
+                    > */}
+                    <a
+                      target='_blog'
+                      href='https://bit.ly/2X9xdjC'
+                      className='dropdown-item'
                     >
-                      <a className='dropdown-item'>Blog</a>
-                    </Link>
+                      Blog
+                    </a>
+                    {/* </Link> */}
                   </li>
                 </ul>
               </li>
@@ -429,14 +433,14 @@ export default function NavBar () {
 
           <div className='navbar-text text-end topNavLinkRight d-none d-lg-block  d-xl-block'>
             <a
-              href='https://dash.traderscentral.fund/login'
+              href='https://fund.traderscentral.com/login'
               target='_blank'
               className='btn me-2 m-2'
             >
               Login
             </a>
             <a
-              href='https://dash.traderscentral.fund/login'
+              href='https://fund.traderscentral.com/sign-up'
               target='_blank'
               className='btn btn-black px-5'
             >

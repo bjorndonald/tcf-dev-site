@@ -20,7 +20,7 @@ export default function FundingSectionTwo () {
   return (
     <div className='fundingSectionTwo py-5 d-flex align-items-center'>
       <div className='container'>
-        <div className='row py-5 d-flex align-items-stretch'>
+        <div className='row  d-flex align-items-stretch'>
           <div className='col-12'>
             <div className='sectionTitleWrap text-center mb-5'>
               <h2>How it works</h2>
@@ -48,10 +48,11 @@ export default function FundingSectionTwo () {
             </div>
           </div>
           <div className='col-12 col-md-6 gaspSlideRight'>
-            <video loop={true} autoPlay='autoplay' muted={true}>
+            <img src='/images/fundingTwo.jpg' alt='' />
+            {/* <video loop={true} autoPlay='autoplay' muted={true}>
               <source src='/videos/how-it-works.mp4' type='video/mp4' />
               Your browser does not support the video tag.
-            </video>
+            </video> */}
           </div>
         </div>
       </div>

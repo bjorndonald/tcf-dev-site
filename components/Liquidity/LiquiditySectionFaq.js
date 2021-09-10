@@ -3,6 +3,18 @@ import { gsap } from 'gsap/dist/gsap'
 import { Accordion, Card, Button } from 'react-bootstrap'
 
 export default function LiquiditySectionFaq () {
+  const toggle = e => {
+    $(
+      $(e.target)
+        .parent()
+        .find('span')[0]
+    ).toggle()
+    $(
+      $(e.target)
+        .parent()
+        .find('span')[1]
+    ).toggle()
+  }
   // useEffect(() => {
   //   $(function () {
   //     $( ".faqSection button" ).on("click", function() {
@@ -24,19 +36,28 @@ export default function LiquiditySectionFaq () {
   //   .from(".tokenSectionFaq .gaspSlideRight", { y: 50, opacity : 0 }, 'start');
   // }, [tl]);
   return (
-    <div className='tokenSectionFaq faqSection py-5 d-flex align-items-center heightHv'>
+    <div className='liquiditySectionFaq faqSection py-5 d-flex align-items-center'>
       <div className='container'>
         <div className='row'>
           <div className='col-12 pb-5 gaspSlideLeft'>
             <h2>FAQ</h2>
           </div>
-          <div className='col-12 gaspSlideRight '>
+          <div className='col-12 accordion-section gaspSlideRight '>
             <Accordion>
               <Card>
                 <Card.Header>
-                  <Accordion.Toggle as={Button} variant='link' eventKey='0'>
+                  <Accordion.Toggle
+                    as={props => (
+                      <div onClick={toggle}>
+                        <Button {...props} />
+                      </div>
+                    )}
+                    variant='link'
+                    eventKey='0'
+                  >
                     What are the requirements to access liquidity?{' '}
                     <span>+</span>
+                    <span style={{ display: 'none' }}>-</span>
                   </Accordion.Toggle>
                 </Card.Header>
 
@@ -52,8 +73,17 @@ export default function LiquiditySectionFaq () {
 
               <Card>
                 <Card.Header>
-                  <Accordion.Toggle as={Button} variant='link' eventKey='1'>
+                  <Accordion.Toggle
+                    as={props => (
+                      <div onClick={toggle}>
+                        <Button {...props} />
+                      </div>
+                    )}
+                    variant='link'
+                    eventKey='1'
+                  >
                     How long does it take to get set up? <span>+</span>
+                    <span style={{ display: 'none' }}>-</span>
                   </Accordion.Toggle>
                 </Card.Header>
 
@@ -70,8 +100,17 @@ export default function LiquiditySectionFaq () {
 
               <Card>
                 <Card.Header>
-                  <Accordion.Toggle as={Button} variant='link' eventKey='2'>
+                  <Accordion.Toggle
+                    as={props => (
+                      <div onClick={toggle}>
+                        <Button {...props} />
+                      </div>
+                    )}
+                    variant='link'
+                    eventKey='2'
+                  >
                     What happens after I apply? <span>+</span>
+                    <span style={{ display: 'none' }}>-</span>
                   </Accordion.Toggle>
                 </Card.Header>
 
@@ -88,9 +127,18 @@ export default function LiquiditySectionFaq () {
 
               <Card>
                 <Card.Header>
-                  <Accordion.Toggle as={Button} variant='link' eventKey='3'>
+                  <Accordion.Toggle
+                    as={props => (
+                      <div onClick={toggle}>
+                        <Button {...props} />
+                      </div>
+                    )}
+                    variant='link'
+                    eventKey='3'
+                  >
                     Are partners from all over the globe accepted?{' '}
                     <span>+</span>
+                    <span style={{ display: 'none' }}>-</span>
                   </Accordion.Toggle>
                 </Card.Header>
 

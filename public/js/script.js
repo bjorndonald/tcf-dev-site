@@ -81,14 +81,41 @@ jQuery(document).ready(function ($) {
     })
   })
 
-  // console.log('aa')
+  $('.fundingSectionThree .nav-item').on('click', function () {
+    console.log('ffff')
+    $(this).css('z-index', '4')
+    $(this)
+      .parent()
 
-  $('.fundingSectionThree .nav-link').on('click', function () {
+      .find('.nav-item')
+      .each((i, x) => {
+        if (
+          $(x)
+            .find('a')
+            .hasClass('active')
+        ) {
+          $(x).css('z-index', '2')
+        }
+      })
+  })
+
+  // $('.mobileMenuListChild').on('click', function () {
+  //   console.log('hjdhjdhdjh')
+  //   // $(this)
+  //   //   .find('ul')
+  //   //   .css('visibility', 'visible')
+  //   // $(this)
+  //   //   .find('ul')
+  //   //   .css('opacity', '1')
+  //   // $(this)
+  //   //   .find('ul')
+  //   //   .css('height', '100%')
+  // })
+
+  $('.nav-switch .nav-item').on('click', function () {
+    console.log('hh')
+    $(this).css('z-index', '4')
     $(this)
-      .parent()
-      .css('z-index', '4')
-    $(this)
-      .parent()
       .parent()
       .find('.nav-item')
       .each((i, x) => {
@@ -101,6 +128,10 @@ jQuery(document).ready(function ($) {
         }
       })
   })
+
+  // $('.mobileMenuListSub a').on('click', () => {
+  //   $('.menu-fullS').css('width', '0%')
+  // })
 
   // $('.dropdown-toggle').dropdown()
 
@@ -119,21 +150,21 @@ jQuery(document).ready(function ($) {
   //   trigger: 'hover'
   // })
 
-  $('.btnCad85').click(function () {
-    $('.cadText85').show()
-    $('.cadText170').hide()
-    $('.cadText345').hide()
-  })
+  // $('.btnCad85').click(function () {
+  //   $('.cadText85').show()
+  //   $('.cadText170').hide()
+  //   $('.cadText345').hide()
+  // })
 
-  $('.btnCad170').click(function () {
-    $('.cadText85').hide()
-    $('.cadText170').show()
-    $('.cadText345').hide()
-  })
+  // $('.btnCad170').click(function () {
+  //   $('.cadText85').hide()
+  //   $('.cadText170').show()
+  //   $('.cadText345').hide()
+  // })
 
-  $('.btnCad345').click(function () {
-    $('.cadText85').hide()
-    $('.cadText170').hide()
-    $('.cadText345').show()
-  })
+  // $('.btnCad345').click(function () {
+  //   $('.cadText85').hide()
+  //   $('.cadText170').hide()
+  //   $('.cadText345').show()
+  // })
 })

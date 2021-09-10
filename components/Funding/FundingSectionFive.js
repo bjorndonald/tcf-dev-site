@@ -23,7 +23,10 @@ export default function FundingSectionFive () {
 
   // }, [tl]);
   return (
-    <div className='sectionContactUs py-5 d-flex align-items-center heightHv'>
+    <div
+      style={{ marginTop: '20vh' }}
+      className='sectionContactUs py-5 d-flex align-items-center heightHv'
+    >
       <div className='container'>
         <div className='row flex-column align-items-center'>
           <div className='col-12'>
@@ -64,8 +67,8 @@ export default function FundingSectionFive () {
                   />
                 </div>
                 <div className='yesCheckBox fieldWrap'>
-                  <p>
-                    <label className='checkbox-container'>
+                  <p className='d-flex align-items-center justify-content-center'>
+                    <label className='checkbox-container mr-2'>
                       <input type='checkbox' values='yes' />
                       <span className='checkmark'></span>
                     </label>

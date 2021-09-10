@@ -35,8 +35,8 @@ export default function AboutUsSectionDttiy () {
               <Image
                 src='/images/iphone_skeleton.png'
                 alt='Discover the trader in you'
-                width={330}
-                height={600}
+                width={345}
+                height={700}
               />
             </div>
           </div>

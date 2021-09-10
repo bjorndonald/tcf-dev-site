@@ -2,8 +2,10 @@ import React, { useEffect } from 'react'
 import Image from 'next/image'
 import { gsap } from 'gsap/dist/gsap'
 import { connect } from 'react-redux'
+import { useRouter } from 'next/router'
 
 function FundingHeroSection (props) {
+  const router = useRouter()
   // useEffect(() => {
   //   props.timeline
   //     .to('.fundingSectionOne', {
@@ -36,13 +38,13 @@ function FundingHeroSection (props) {
           <div className='col-12'>
             <div className=' text-center  py-5 '>
               {/* <h2>Funding in 24 hours</h2> */}
-              <Image
-                style={{ width: '80%' }}
+              <img
+                // style={{ width: '80%' }}
                 className='py-4'
                 src='/images/funding-hero.png'
                 alt='Trader Central Fund'
-                width={2732}
-                height={1626}
+                // width={2732}
+                // height={1626}
               />
               <h1>Funding in 24 hours</h1>
             </div>

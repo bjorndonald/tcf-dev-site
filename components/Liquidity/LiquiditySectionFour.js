@@ -27,13 +27,14 @@ export default function LiquiditySectionFour () {
   //     )
   // }, [tl])
   return (
-    <div className='liquiditySectionFour py-5 d-flex align-items-center heightHv'>
+    <div className='liquiditySectionFour py-5 d-flex align-items-center '>
       <div className='container'>
-        <div className='row py-5 d-flex align-items-stretch'>
+        <div className='row d-flex align-items-stretch'>
           <div className='col-12 col-md-6 gaspSlideLeft mb-4'>
             <div className='tradingBasicV'>
               {/* <Image src="/images/branding-suite.jpg" alt="Branding Suite" width={540} height={405} /> */}
-              <div className='placeholder-image'></div>
+              {/* <div className='placeholder-image'></div> */}
+              <img src='/images/liquidity/Three.jpg' alt='' />
             </div>
           </div>
           <div className='col-12 col-md-6 gaspSlideRight d-flex align-items-center'>

@@ -35,7 +35,7 @@ function HeroSection (props) {
   // }, [])
 
   return (
-    <div className='sectionOne d-flex align-items-center py-5'>
+    <div className='sectionOne d-flex align-items-center'>
       <div className='wrapper '>
         <div className='row py-5 d-flex align-items-stretch'>
           <div className='col-12 col-md-6  d-flex align-items-center'>
@@ -47,7 +47,7 @@ function HeroSection (props) {
               </p>
               <a
                 className=' btn btn-black px-3 py-1'
-                href='https://dash.traderscentral.fund/login'
+                href='https://fund.traderscentral.com/login'
                 target='_blank'
               >
                 Sign-up
@@ -57,10 +57,11 @@ function HeroSection (props) {
 
           <div className='col-12 col-md-6  align-right'>
             <div className='HomeHeroVideo'>
-              <video loop={true} autoPlay='autoplay' muted={true}>
+              <img src='/images/home/homeOne.jpg' alt='' />
+              {/* <video loop={true} autoPlay='autoplay' muted={true}>
                 <source src='/videos/home_header_a-new.mp4' type='video/mp4' />
                 Your browser does not support the video tag.
-              </video>
+              </video> */}
             </div>
           </div>
         </div>

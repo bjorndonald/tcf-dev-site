@@ -35,7 +35,7 @@ export default function TokenSectionFourS1 () {
   //   })
   // }, [tl])
   return (
-    <div className='tokenSectionFour tokenSectionSl py-5'>
+    <div className='tokenSectionFour tokenSectionSl'>
       <div className='container'>
         <h1 style={{ textAlign: 'center' }}>Choose your TC Tags</h1>
         <div className='row py-5' style={{ position: 'relative' }}>
@@ -46,8 +46,9 @@ export default function TokenSectionFourS1 () {
               left: 0,
               width: '100%',
               height: '100%',
-              position: 'absolute',
-              zIndex: 300
+              position: 'absolute'
+              // overflow: 'hidden'
+              // zIndex: 300
             }}
           >
             <div className='tokenSectionSlLeft stickyContent'>
@@ -64,10 +65,10 @@ export default function TokenSectionFourS1 () {
                 /> */}
                 <img
                   style={{
-                    width: '43.06640625rem',
-                    height: '23.16015625rem',
-                    marginTop: '-4.125rem',
-                    marginRight: '-2.5rem'
+                    width: '40rem',
+                    height: '24rem',
+                    marginTop: '-5.5rem',
+                    marginRight: '-1.95rem'
                   }}
                   src='/images/tcTag.png'
                   alt=''
@@ -80,7 +81,7 @@ export default function TokenSectionFourS1 () {
             <div className='tokenSectionSlRight d-flex justify-content-center'>
               <div className='tokenSectionSlT_top'></div>
               <ul className='d-flex flex-column align-items-center'>
-                <li className='item item1'>Myllionaire</li>
+                <li className='item item1 active'>Myllionaire</li>
                 <li className='item item2'>2ogato</li>
                 <li className='item item3'>Pinky</li>
                 <li className='item item4'>DarthVadar</li>

@@ -8,6 +8,8 @@ import CryptoSectionTwo from '../../components/Crypto/CryptoSectionTwo'
 import CryptoSectionThree from '../../components/Crypto/CryptoSectionThree'
 import CryptoSectionFour from '../../components/Crypto/CryptoSectionFour'
 import CryptoSectionFive from '../../components/Crypto/CryptoSectionFive'
+import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 export default function crypto () {
   // gsap.registerPlugin(ScrollTrigger)
@@ -15,7 +17,29 @@ export default function crypto () {
 
   return (
     <Fragment>
-      <MetaTag title='Crypto page' />
+      <MetaTag
+        title='TC Crypto | Traders Central'
+        description={`TC Crypto: Buy and Sell Cryptocurrencies within seconds. Sign up for Free and get started instantly. `}
+      />
+      <Head>
+        <script
+          src='https://code.jquery.com/jquery-3.2.1.slim.min.js'
+          integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN'
+          crossOrigin='anonymous'
+        ></script>
+        <script
+          src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'
+          integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q'
+          crossOrigin='anonymous'
+        ></script>
+        <script
+          src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'
+          integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl'
+          crossOrigin='anonymous'
+        ></script>
+        {/* <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script> */}
+        <script src='/js/script.js'></script>
+      </Head>
       <CryptoSectionOne />
       <CryptoSectionTwo />
       <CryptoSectionThree />

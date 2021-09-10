@@ -19,6 +19,14 @@ p {
   font-family: eina;
 }
 
+.btn-black:hover,
+.article h1:hover,
+.card-title:hover,
+.cadText85:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 @media (min-width: 1200px) {
   .container,
   .container-lg,
@@ -37,6 +45,11 @@ p {
 
 body {
   font-family: futura-pt, 'system-ui', Helvetica Neue, sans-serif !important;
+}
+
+html {
+  width: 100vw;
+  /* overflow: hidden; */
 }
 
 a,
@@ -104,6 +117,18 @@ select {
   position: sticky;
 }
 
+.accordion button p {
+  font-size: 1.875rem;
+}
+
+.accordion button p:hover {
+  text-decoration: underline;
+}
+
+.accordion button:hover {
+  text-decoration: none !important;
+}
+
 .bg-background {
   /*background-color: #f9f8f7;*/
 }
@@ -121,7 +146,7 @@ select {
   color: #fff !important;
   border-radius: 30px;
   font-size: 20px;
-  padding: 8px 40px !important;
+  padding: 8px 40px;
 }
 
 .card-body-Four-line {
@@ -174,7 +199,7 @@ select {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 9999;
+  z-index: 999999;
   top: 0;
   left: 0;
   background-color: #000;
@@ -246,9 +271,18 @@ select {
 }
 
 .menu-overlay .mobileMenuList .mobileMenuListSubImg {
-  width: 35%;
+  /* width: 35%; */
+  width: 16.199375rem;
+  height: 11.884375rem;
   margin-right: 5%;
   display: inline-block;
+  overflow: hidden;
+}
+
+.menu-overlay .mobileMenuList .mobileMenuListSubImg img {
+  /* width: 35%; */
+  height: auto;
+  width: 100%;
 }
 
 .menu-overlay .mobileMenuList .mobileMenuListSubiC {
@@ -291,6 +325,10 @@ select {
   visibility: visible;
   opacity: 1;
   height: 100%;
+}
+
+.types .card {
+  background-image: url('/images/MobileSectionBackground.JPG');
 }
 
 .mainMenu .navbar-brand {
@@ -390,6 +428,10 @@ select {
   visibility: visible;
 }
 
+.topNavLinkRight a:hover {
+  text-decoration: underline;
+}
+
 .topNavLink .dropdown.dropdown-inline .dropdown-menu li {
   display: inline-block;
   opacity: 0;
@@ -469,6 +511,10 @@ select {
   color: #fff;
 }
 
+.topNavLink .nav-item.dropdown.NavFourBox .dropdown-menu h2:hover {
+  text-decoration: underline;
+}
+
 .topNavLink .nav-item.dropdown.NavFourBox .dropdown-menu p {
   font-size: 16px;
   min-height: 38px;
@@ -486,6 +532,7 @@ select {
   margin-top: 72px;
   overflow: hidden;
   height: 100vh;
+  padding: 3rem 0;
 }
 .sectionOne .row {
   min-height: 400px;
@@ -505,6 +552,12 @@ select {
   margin-top: -100px -10rem;
   position: relative;
   z-index: -1;
+  height: 100%;
+}
+
+.sectionOne .HomeHeroVideo img {
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 767px) {
@@ -520,10 +573,11 @@ select {
 /*** sectionTwo ***/
 .sectionTwo {
   /* background:#000; */
-  background-image: url('/images/MobileSectionBackground.JPG');
+  background-color: #8c26f3;
+  /* background-image: url('/images/MobileSectionBackground.JPG'); */
   background-position: center;
   background-size: cover;
-  height: 75vh;
+  height: 100vh;
 }
 
 .sectionTwo h2,
@@ -535,8 +589,23 @@ select {
 .sectionTwo h2 {
   font-family: eina;
   font-weight: bold;
-  font-size: 50px;
-  /* font-weight: 900; */
+  font-size: 4.25rem;
+
+  /* line-height: 5rem; */
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.sectionTwo .button {
+  margin-top: 2rem;
+}
+
+.sectionTwo .button .btn {
+  background-color: white;
+  border-radius: 3.125rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.375rem 1.25rem;
 }
 
 .sectionTwo p {
@@ -561,7 +630,11 @@ select {
 }
 
 .fixedBox img {
-  width: 100%;
+  /* width: 45rem; */
+  margin-left: -10.5rem;
+  /* height: 70.3125rem; */
+  width: 35.625rem;
+  height: 62.5rem;
 }
 
 .sectionMobile .box {
@@ -594,7 +667,7 @@ select {
 }
 
 .sectionMobile .box img {
-  margin-left: 0.1rem !important;
+  /* margin-left: 0.1rem !important; */
 }
 
 .image-skeleton {
@@ -602,7 +675,7 @@ select {
 
 .mobImg {
   position: relative;
-  width: 17.5rem;
+  width: 50rem;
   height: 100%;
   border-radius: 1.9vw;
   margin: 0 auto;
@@ -626,11 +699,14 @@ select {
 }
 
 .mobImg .box img {
-  width: 100%;
+  width: 18rem;
+  height: 35.3125rem;
+  margin-left: -0.25rem;
+
   display: block;
   overflow: hidden;
   border-radius: 2.35vw;
-  margin: 0 auto -0.1vw -0.02vw !important;
+  margin: -0.16rem auto -0.1vw -0.1rem;
 }
 
 .mobImg .box div {
@@ -647,6 +723,14 @@ select {
   position: relative;
   width: 100%;
   height: 5.625rem;
+}
+
+.sectionTwoContentWrap {
+  margin-left: 0rem;
+}
+
+.sectionTwoContent {
+  width: 100%;
 }
 
 .sectionTwoList .sectionTwoNav {
@@ -668,22 +752,26 @@ select {
 }
 
 .sectionTwoList ul li {
-  color: #888;
+  color: #fff;
   text-align: center;
   line-height: 30px;
   font-family: eina;
-
+  cursor: pointer;
   padding: 0 10px;
-  font-weight: bold;
+  font-weight: normal;
+}
+
+.sectionTwoList ul li:hover {
+  text-decoration: underline;
+}
+
+.sectionTwoNav ul li:hover {
+  text-decoration: underline;
 }
 
 .sectionTwoList ul li.active {
-  /* text-decoration: underline; */
-  color: #fff;
-}
-
-.sectionTwoList ul li.active:hover {
-  text-decoration: none;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .sectionTwoContentWrap {
@@ -702,7 +790,7 @@ select {
 
 .sectionTwoContentLine {
   overflow: hidden;
-  height: 60px;
+  height: 5rem;
 }
 
 @media (max-width: 767px) {
@@ -719,15 +807,15 @@ select {
   }
 
   .fixedBox img {
-    width: 100% !important;
+    /* width: 100% !important; */
   }
 
   .sectionMobile .box img {
-    width: 100% !important;
+    /* width: 100% !important; */
   }
 
   .sectionMobile .box img {
-    margin-left: -2px !important;
+    /* margin-left: -2px !important; */
   }
 
   .sectionTwoList ul {
@@ -930,71 +1018,101 @@ select {
 
 .homeBoxOne .card .image {
   position: absolute;
-  right: -12rem;
-  width: 47rem;
-  height: 68rem;
-  transform: scale(0.5);
-  bottom: -30rem;
-  background-image: url(../images/home/performance-mobile.en_ca.webp);
+  right: -17rem;
+  width: 66rem;
+  z-index: 2;
+  height: 84rem;
+  transform: scale(0.25);
+  bottom: -32rem;
+  /* background-image: url(../images/home/boxOne.jpg); */
 }
 
-.homeBoxOne .card {
+.homeBoxOne .card,
+.homeBoxTwo .card,
+.homeBoxThree .card,
+.homeBoxFour .card {
   position: relative;
   color: #fff;
-  background-color: #be015f;
+
   /* background-color: #f8ddaf; */
+}
+
+.homeBoxTwo .card .background,
+.homeBoxThree .card .background,
+.homeBoxFive .card .background {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: absolute;
+  background-color: #000;
+}
+
+.homeBoxOne .card .background,
+.homeBoxFour .card .background {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: absolute;
+  background-color: #000;
+}
+
+.homeBoxTwo .card .text {
+  /* padding-top: 2rem !important; */
+}
+
+.sectionThree .card > div:last-child {
+  margin-top: 0px !important;
+}
+
+.homeBoxOne .card .text,
+.homeBoxTwo .card .text,
+.homeBoxThree .card .text,
+.homeBoxFour .card .text {
+  width: 100%;
+  padding: 5% 5%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  position: absolute;
 }
 
 .homeBoxTwo .card .image {
   position: absolute;
-  right: 0rem;
-  width: 32rem;
-  height: 32rem;
+  right: 2.5rem;
+  width: 24rem;
+  height: 24rem;
   bottom: 0;
-  background-image: url(../images/home/cash-coin.webp);
-}
-
-.homeBoxTwo .card {
-  background-color: #3101a5;
-  position: relative;
-
-  /* background-color: #57544a; */
-  color: #fff;
-  /* background-image: url(../images/homeBoxTwoBg.png); */
+  z-index: 2;
+  /* transform: scale(0.5); */
+  /* background-image: url(../images/home/boxTwo.jpg); */
 }
 
 .homeBoxThree .card .image {
   position: absolute;
-  right: -12rem;
-  width: 55rem;
-  height: 48rem;
-  bottom: -13rem;
-  transform: scale(0.5);
-  background-image: url(../images/home/moneybag.webp);
-}
-
-.homeBoxThree .card {
-  background-color: #be015f;
-  /* background-color: #7ca5cf; */
-  color: #fff;
-  /* background-image: url(../images/homeBoxThreeBg.png); */
+  right: 0.5rem;
+  width: 24rem;
+  height: 24rem;
+  bottom: 0.5rem;
+  z-index: 2;
+  border-radius: 3.125rem;
+  /* transform: scale(0.5); */
+  /* background-image: url(../images/home/boxThree.jpg); */
 }
 
 .homeBoxFour .card .image {
   position: absolute;
-  right: -16rem;
-  width: 56rem;
-  height: 56rem;
-  bottom: -16rem;
-  transform: scale(0.5);
-  background-image: url(../images/home/crypto.webp);
-}
-
-.homeBoxFour .card {
-  background-color: #3101a5;
-  /* background-color: #825c79; */
-  color: #fff;
-  /* background-image: url(../images/homeBoxFourBg.png); */
+  right: 0rem;
+  width: 24rem;
+  height: 24rem;
+  bottom: 0rem;
+  z-index: 2;
+  /* transform: scale(0.5); */
+  background-image: url(../images/home/boxFour.jpg);
 }
 
 .homeBoxOne .card h3,
@@ -1006,6 +1124,13 @@ select {
 .homeBoxFour .card h3,
 .homeBoxFour .card p {
   /* color: #fff; */
+}
+
+.homeBoxOne .card:hover h1,
+.homeBoxTwo .card:hover h1,
+.homeBoxThree .card:hover h1,
+.homeBoxFour .card:hover h1 {
+  text-decoration: underline;
 }
 
 /* .homeBoxOne .card span,
@@ -1069,6 +1194,14 @@ select {
   appearance: checkbox;
 }
 
+.sectionContactUs .fieldWrap input[type='submit'] {
+  font-size: 1.5rem;
+}
+
+.sectionContactUs .fieldWrap input[type='submit']:hover {
+  text-decoration: underline;
+}
+
 .sectionContactUs .fieldWrap {
   margin-bottom: 20px;
   position: relative;
@@ -1076,8 +1209,22 @@ select {
 
 .sectionContactUs .fieldWrap input,
 .sectionContactUs .fieldWrap select {
-  background-color: #000;
+  background-color: #8c26f3;
   color: #fff;
+  border-color: #8c26f3;
+}
+
+.sectionContactUs .fieldWrap {
+  font-size: 1.5rem;
+}
+
+.sectionContactUs .fieldWrap input {
+  /* text-align: center; */
+}
+
+.sectionContactUs .fieldWrap select {
+  /* display: flex; */
+  /* justify-content: center; */
 }
 
 .sectionContactUs .fieldWrap select {
@@ -1142,6 +1289,10 @@ select {
   text-align: center;
   width: 90%;
   margin: 0 auto;
+}
+
+.sectionContactUs span {
+  margin-bottom: -0.125rem;
 }
 
 /** Footer **/
@@ -1227,6 +1378,10 @@ select {
   .site-footer .row {
     position: relative;
   }
+}
+
+.socials {
+  margin-bottom: 3rem;
 }
 
 /** noCenterSliderOC **/
@@ -1355,8 +1510,89 @@ select {
 
 .pTable ul li {
   font-size: 15px;
-  line-height: 24px;
-  padding: 3px 0;
+  display: flex;
+  align-items: center;
+  line-height: 1.5rem;
+  /* padding: 3px 0; */
+  padding-top: 3px;
+  padding-bottom: 3px;
+  /* padding-left: 1.5625rem; */
+}
+
+.monthly .pTableDetail {
+  border-radius: 3.125rem;
+}
+
+.monthly .pTableDetailWrap {
+  border-radius: 3.125rem;
+  margin-right: -1rem;
+}
+
+.one-time .pTableDetail {
+  border-radius: 3.125rem;
+}
+
+.one-time .pTableDetailWrap {
+  border-radius: 3.125rem;
+  margin-right: -1.5rem;
+}
+
+.one-time .pTableDetailWrap {
+  background-color: #000;
+  color: #fff;
+}
+
+.monthly .pTableDetail li {
+  padding: 0.15rem 0;
+}
+
+.monthly .pTableSingleListWrap li {
+  padding: 0.15rem 0;
+}
+
+.one-time .pTableSingleListWrap li {
+  background-color: transparent;
+}
+
+.one-time .pTableSingleListWrap {
+  background-color: #be015f;
+  color: rgb(75, 63, 63);
+  border-radius: 3.125rem;
+  margin-left: -1.5rem;
+}
+
+.one-time .pTableSingleList {
+  border-radius: 3.125rem;
+}
+
+.fundingSectionThree .one-time .pTableSingleListWrap .cadText85 {
+  font-size: 2rem;
+  padding-top: 1rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  line-height: 1rem;
+  border-radius: 3.125rem;
+}
+
+.monthly .pTableSingleList {
+  padding-top: 5rem;
+}
+
+.monthly .pTableSingleListWrap {
+  border-radius: 3.125rem;
+  margin-left: -1rem;
+}
+
+.pTableDetail ul li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0rem;
+  line-height: 1.25rem;
+  font-weight: bold;
 }
 
 .pTableDetailWrap {
@@ -1365,13 +1601,83 @@ select {
   border-radius: 16px 0 0 16px;
 }
 
+.pTableDetail ul li .pTableiconWrap {
+  height: 1.15rem;
+}
+
+/* .pTableDetail ul li .pTableiconWrap {
+  height: 1.15rem;
+} */
+
+.pTableSingleList ul {
+  margin-bottom: 1rem;
+}
+
+.pTableSingleList h3 {
+  font-family: eina;
+}
+
+.pTableSingleList p {
+  font-family: eina;
+  font-weight: normal;
+  font-size: 0.5rem;
+}
+
+.pTableSingleList ul li {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.one-time .expandedWrap {
+  margin-top: -1rem;
+  border-radius: 3.125rem;
+  padding-top: 1rem;
+  margin-bottom: -1rem;
+}
+
+.pTableDetail {
+  padding-bottom: 4rem;
+  padding-top: 5rem !important;
+}
+
 .pTableDetailM {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
+.pTableSingleList small {
+  display: flex;
+  align-items: center;
+}
+
+.one-time .pTableDetail {
+  padding-right: 0px;
+}
+
+.one-time .pTableiconWrap {
+  height: 1rem;
+  /* position: absolute; */
+}
+
+.pTableiconWrap svg:first-child {
+  margin-bottom: 0.5rem;
+}
+
+.pTableiconWrap svg:last-child {
+  margin-bottom: 0.5rem;
+}
+
 .pTableDetail {
   padding: 25px;
+  padding-left: 1rem;
+  padding-bottom: 4rem;
+}
+
+.pTableDetail svg {
+  fill: #fff;
 }
 
 .pTableDetailWrap h3 {
@@ -1379,11 +1685,11 @@ select {
 }
 
 .pTableiconWrap {
-  width: 21px;
-  height: 17px;
+  width: 1.5rem;
+  height: 1.35rem;
   overflow: hidden;
   display: inline-block;
-  line-height: 18px;
+  line-height: 1.0625rem;
 }
 
 .pTableiconWrap:hover .pTableiconAtive {
@@ -1391,8 +1697,8 @@ select {
 }
 
 .pTableiconWrap .pTableicon {
-  width: 13px;
-  height: 13px;
+  width: 1rem;
+  height: 1rem;
   margin-left: 4px;
   cursor: pointer;
 }
@@ -1431,26 +1737,38 @@ select {
   padding: 25px 0;
   padding-bottom: 0px !important;
   margin: 0;
-  color: rgb(91, 94, 105);
+  font-size: 1.5rem;
+  color: #fff;
 }
 
 .pTableSingleList p {
-  font-size: 15px;
+  font-size: 0.75rem;
   padding: 0 15px;
-  color: rgb(91, 94, 105);
+  color: #fff;
 }
+
+.pTableSingleList small {
+  display: flex;
+  color: #fff;
+  justify-content: center;
+}
+
 .pTableSingleList .hideBtn + p {
   font-size: 12px;
 }
 
 .pTableSingleList li {
   margin: 0 -14.5px;
-  color: rgb(91, 94, 105);
+  color: #fff;
+}
+
+.pTableSingleList svg {
+  fill: #fff;
 }
 
 .pTableSingleList li:nth-child(odd) {
-  background: rgb(247, 247, 247);
-  color: rgb(91, 94, 105);
+  background: transparent;
+  color: white;
 }
 
 .pTableSingleList p span {
@@ -1627,7 +1945,7 @@ select {
 /** Help Center **/
 
 .helpCenterSectionOne {
-  height: 80vh;
+  height: 60vh;
 }
 
 .helpCenterSectionOne h1 {
@@ -1653,13 +1971,13 @@ select {
 }
 
 .helpCenterSearchBox .searchField {
-  padding: 1.25rem 1.5rem;
-  /* border: #acacac 1px solid; */
-  border-radius: 3.125rem;
+  padding: 3.6vh 2.4vh;
+  border: none;
+  border-radius: 5vh;
   font-weight: bold;
   background-color: #f0f0f0;
   border-left: none;
-  font-size: 2.25rem;
+  font-size: 2.5vh;
 }
 
 .helpCenterSearchBox .searchField::placeholder {
@@ -1672,7 +1990,8 @@ select {
 .eyntkBoxs .eyntkBox {
   border-radius: 3.75rem;
   margin: 10px 0;
-  aspect-ratio: 1;
+  width: 21.5rem;
+  height: 21.5rem;
   padding: 15px;
   transform: translateY(0);
   transition: 0.35s cubic-bezier(0.19, 1, 0.4, 1);
@@ -2171,13 +2490,98 @@ select {
   }
   .tokenSectionSl ul li,
   .tokenSectionSl p {
-    font-size: 15px !important;
+    font-size: 15px;
   }
 
   .cytI img {
     width: 20px;
   }
 }
+
+/** TRADING RULES **/
+
+.cryptoHelpSectionOne .accordion .card {
+  border: none;
+  border-radius: 0 !important;
+  border-bottom: 1px solid #000;
+  background-color: transparent !important;
+}
+
+.cryptoHelpSectionOne .accordion .card-header {
+  background: transparent !important;
+  padding: 0;
+  border: none;
+}
+
+.cryptoHelpSectionOne .accordion .card-body {
+  color: #000;
+  font-size: 1.5rem;
+  padding-top: 0rem;
+  padding-left: 0rem;
+}
+
+.cryptoHelpSectionOne .accordion .card button {
+  color: #000;
+  font-size: 30px;
+  border-radius: 0;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.cryptoHelpSectionOne .accordion button {
+  background: none;
+  display: flex !important;
+  width: 100%;
+
+  text-align: left;
+  padding: 15px 20px;
+  white-space: unset !important;
+}
+
+/** TRADING RULES **/
+
+.fundingSectionFour .card {
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.fundingSectionFour .card-header {
+  background: #fff;
+  padding: 0;
+  border: none;
+}
+
+.fundingSectionFour .card-body {
+  color: #000;
+  font-size: 1.5rem;
+  padding-top: 0rem;
+  padding-left: 0rem;
+}
+
+.fundingSectionFour .card button {
+  color: #000;
+  font-size: 30px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.fundingSectionFour button {
+  background: none;
+  display: flex !important;
+  width: 100%;
+
+  text-align: left;
+  padding: 15px 20px;
+  white-space: unset !important;
+}
+
+/* onetime */
+
+/** liquidity **/
 
 /** FAQ **/
 .faqSection h2 {
@@ -2337,8 +2741,9 @@ select {
   content: ' ';
   background: url(../images/checkIcon.png) no-repeat center center;
   background-size: cover;
-  height: 27px;
-  width: 27px;
+  height: 1.4rem;
+  top: 0.25rem;
+  width: 1.4rem;
   position: absolute;
   left: -34px;
 }

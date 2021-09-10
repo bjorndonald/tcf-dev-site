@@ -1,8 +1,26 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { gsap } from 'gsap/dist/gsap'
 import Image from 'next/image'
 
+const data = {
+  one: <img src='/images/basics/basicsOne.jpg' alt='' />,
+  two: <img src='/images/basics/basicsTwo.jpg' alt='' />,
+  three: <img src='/images/basics/basicsThree.jpg' alt='' />,
+  four: <img src='/images/basics/basicsFour.jpg' alt='' />
+}
+
 export default function HelpCenterSectionFour () {
+  const [image, setImage] = useState(
+    <img src='/images/basics/basicsOne.jpg' alt='' />
+  )
+  const activate = e => {
+    $(e.target)
+      .parent()
+      .find('h3')
+      .removeClass('active')
+    $(e.target).addClass('active')
+    setImage(data[$(e.target).attr('id')])
+  }
   // useEffect(() => {
   //     gsap.timeline({
   //       scrollTrigger: {
@@ -30,17 +48,23 @@ export default function HelpCenterSectionFour () {
           </div>
         </div>
 
-        <div className='row justify-content-center'>
-          <div className='col-md-6 px-3'>
-            <div className='placeholder-image'></div>
-          </div>
-          <div className='col-md-5 list'>
-            <h1>1. Forex</h1>
-            <h3>2. Stocks</h3>
-            <h3>3. Crypto</h3>
-            <h3>4. Meme</h3>
-            <h3>Culture</h3>
-            <h3>Investing</h3>
+        <div className='row  body'>
+          <div className='col-md-4 px-3 article-images'>{image}</div>
+          <div className=' list'>
+            <h3 id='one' onClick={activate} className='active'>
+              1. Forex
+            </h3>
+            <h3 id='two' onClick={activate}>
+              2. Stocks
+            </h3>
+            <h3 id='three' onClick={activate}>
+              3. Crypto
+            </h3>
+            <h3 id='four' onClick={activate}>
+              4. Meme
+            </h3>
+            <h4>Culture</h4>
+            <h4>Investing</h4>
           </div>
         </div>
       </div>

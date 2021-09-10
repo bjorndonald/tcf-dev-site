@@ -26,12 +26,11 @@ function funding (props) {
 
   return (
     <div>
-      <MetaTag title='Funding page' />
-      {/* <FundingHeroSection tl={hc_tl} />
-      <FundingSectionTwo tl={hc_tl} />
-      <FundingSectionThree tl={hc_tl} />
-      <FundingSectionFour tl={hc_tl} />
-      <ContactSection tl={hc_tl} /> */}
+      <MetaTag
+        description={`Traders Central Fund connects traders to backers to get funded in less 
+than 24 hours. Choose between our Monthly and One Time Fee Model.`}
+        title='Traders Central Fund - Decentralizing Retail Funding | Traders Central'
+      />
       <Head>
         <script
           src='https://code.jquery.com/jquery-3.2.1.slim.min.js'
@@ -48,7 +47,7 @@ function funding (props) {
           integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl'
           crossOrigin='anonymous'
         ></script>
-        <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+        {/* <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script> */}
         <script src='/js/script.js'></script>
       </Head>
       <FundingHeroSection />

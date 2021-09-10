@@ -1,7 +1,13 @@
 import React, { useEffect } from 'react'
 import { gsap } from 'gsap/dist/gsap'
+import { useRouter } from 'next/router'
 
 export default function CryptoSectionOne () {
+  const router = useRouter()
+
+  useEffect(() => {
+    return () => {}
+  }, [])
   // useEffect(() => {
   //   tl.to('.cryptoSectionOne', {
   //     opacity: 1,

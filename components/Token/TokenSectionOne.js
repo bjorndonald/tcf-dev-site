@@ -34,18 +34,16 @@ function TokenSectionOne (props) {
   //     )
   // }, [])
   return (
-    <div className='tokenSectionOne py-5 d-flex align-items-center heightHv'>
+    <div className='tokenSectionOne  d-flex align-items-center '>
       <div className='container'>
         <div className='row py-5'>
           <div className='col-12'>
             <div className=' text-center helpCenterSectionOneTitle py-5'>
               {/* <p className='pOne'>Trader Central Token</p> */}
-              <h1>Send and Redeem in Seconds</h1>
-              <p className='pTwo my-5'>
-                Stack up, share discounts, get cash back
-              </p>
+              <h1>Send and Redeem in seconds</h1>
+              <p className='pTwo'>Stack up, share discounts, get cash back</p>
               <a
-                className=' btn btn-black px-3 py-1'
+                className=' btn btn-black '
                 href='https://dash.traderscentral.fund/sign-up'
                 target='_blank'
                 style={{ opacity: '1', transform: 'translate(0px, 0px)' }}

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
+import Link from 'next/link'
 
 function HelpCenterSectionOne (props) {
   // useEffect(() => {
@@ -25,12 +26,22 @@ function HelpCenterSectionOne (props) {
   return (
     <div className='helpCenterSectionOne py-5 d-flex align-items-center'>
       <div className='container'>
+        {/* <div className='row'>
+          <nav aria-label='breadcrumb'>
+            <ol class='breadcrumb'>
+              <li class='breadcrumb-item'>
+                <Link href='/help-center'>Home</Link>
+              </li>
+              
+            </ol>
+          </nav>
+        </div> */}
         <div className='row py-5 justify-content-center'>
           <div className='col-8'>
             <div className=' text-center helpCenterSectionOneTitle py-5'>
               <div className='d-flex flex-column align-items-center'>
                 <h1>Help Center</h1>
-                <h3>Hi there! Let's help you out</h3>
+                <h3>Let's help you out</h3>
               </div>
 
               <form>

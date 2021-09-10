@@ -26,7 +26,11 @@ function Home (props) {
 
   return props.loading ? null : (
     <Fragment>
-      <MetaTag title='Home Page' />
+      <MetaTag
+        description={`Traders Central offers a range of financial products including Funding, Cryptocurrency Exchange, Liquidity and TC Token with a mission to 
+decentralize finance to everyone.`}
+        title='Traders Central | Decentralizing Finance For Everyone'
+      />
       <Head>
         <script
           src='https://code.jquery.com/jquery-3.2.1.slim.min.js'
@@ -43,7 +47,7 @@ function Home (props) {
           integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl'
           crossOrigin='anonymous'
         ></script>
-        <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+        {/* <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script> */}
         <script src='/js/script.js'></script>
       </Head>
       <HeroSection />

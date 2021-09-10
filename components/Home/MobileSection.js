@@ -55,9 +55,12 @@ function MobileSection (props) {
       <div className='sectionTwo d-flex align-items-center'>
         <div className='container '>
           <div className='row d-flex align-items-stretch'>
-            <div className='col-12 col-md-2 d-flex align-items-center p-0'>
+            {/* <div className='col-12 col-md-2 d-flex align-items-center p-0'>
               <div className='sectionTwoList'>
-                <div className='sectionTwoNav sectionTwoNavFix sectionTwoNavF'>
+                <div
+                  style={{ opacity: 1 }}
+                  className='sectionTwoNav sectionTwoNavFix sectionTwoNavF'
+                >
                   <ul>
                     <li>
                       <i className='fa fa-arrow-up' aria-hidden='true'></i>
@@ -70,7 +73,10 @@ function MobileSection (props) {
                     </li>
                   </ul>
                 </div>
-                <div className='sectionTwoNav sectionTwoNav-2 '>
+                <div
+                  style={{ opacity: 0, display: 'none' }}
+                  className='sectionTwoNav sectionTwoNav-2 '
+                >
                   <ul>
                     <li>
                       <i className='fa fa-arrow-up' aria-hidden='true'></i>
@@ -83,7 +89,10 @@ function MobileSection (props) {
                     </li>
                   </ul>
                 </div>
-                <div className='sectionTwoNav sectionTwoNav-3'>
+                <div
+                  style={{ opacity: 0, display: 'none' }}
+                  className='sectionTwoNav sectionTwoNav-3'
+                >
                   <ul>
                     <li>
                       <i className='fa fa-arrow-up' aria-hidden='true'></i>
@@ -97,8 +106,8 @@ function MobileSection (props) {
                   </ul>
                 </div>
               </div>
-            </div>
-            <div className='col-12 col-md-4 '>
+            </div> */}
+            <div className='col-12 col-md-6 images'>
               <div className='mobImg'>
                 <div className='fixedBox'>
                   {/* <Image
@@ -108,14 +117,7 @@ function MobileSection (props) {
                     height={832.5}
                     alt='Image'
                   /> */}
-                  <img
-                    style={{
-                      width: '17.5rem',
-                      height: 555
-                    }}
-                    src='/images/iphone_skeleton.png'
-                    alt='Image'
-                  />
+                  <img src='/images/home/mobileSection.png' alt='Image' />
                 </div>
                 <div className='box box2'>
                   {/* <Image
@@ -124,14 +126,7 @@ function MobileSection (props) {
                     height={832.5}
                     alt='Image'
                   /> */}
-                  <img
-                    style={{
-                      width: '17.5rem',
-                      height: 555
-                    }}
-                    src='/images/mob-2.png'
-                    alt='Image'
-                  />
+                  {/* <img style={{}} src='/images/mob-2.png' alt='Image' /> */}
                 </div>
                 <div className='box box3'>
                   {/* <Image
@@ -140,14 +135,7 @@ function MobileSection (props) {
                     height={832.5}
                     alt='Image'
                   /> */}
-                  <img
-                    style={{
-                      width: '17.5rem',
-                      height: 555
-                    }}
-                    src='/images/mob-3.png'
-                    alt='Image'
-                  />
+                  {/* <img style={{}} src='/images/mob-3.png' alt='Image' /> */}
                 </div>
                 <div className='box box4'>
                   {/* <Image
@@ -156,45 +144,28 @@ function MobileSection (props) {
                     height={832.5}
                     alt='Image'
                   /> */}
-                  <img
-                    style={{
-                      width: '17.5rem',
-                      height: 555
-                    }}
-                    src='/images/mob-4.png'
-                    alt='Image'
-                  />
+                  {/* <img style={{}} src='/images/mob-4.png' alt='Image' /> */}
                 </div>
               </div>
             </div>
-            <div className='col-12 col-md-6'>
+            <div className='col-12 col-md-6 descriptions'>
               <div
                 className='sectionTwoContentWrap'
-                style={{ marginLeft: '12rem' }}
+                // style={{ marginLeft: '12rem' }}
               >
                 <div className='sectionTwoContent sectionTwoContent-1 d-flex flex-column justify-content-center'>
                   <h2>
-                    <div className='sectionTwoContentLine sectionTwoContentLineOne'>
-                      <div className='sectionTwoContentLineOneInner'>
-                        Keep tabs on{' '}
-                      </div>
-                    </div>
-                    <div className='sectionTwoContentLine sectionTwoContentLineTwo'>
-                      <div className='sectionTwoContentLineTwoInner'>
-                        your portfolio
-                      </div>
-                    </div>
+                    Explore our features
                     {/* <div className="sectionTwoContentLine sectionTwoContentLineThree">
                                     <div className="sectionTwoContentLineThreeInner">Profile</div>
                                 </div> */}
                   </h2>
-                  <p>
-                    Stay on top of your assets. All your
-                    <br />
-                    accounts in one place, track analytics
-                    <br />
-                    and process tasks
-                  </p>
+                  <p>Let's get you to the moon!</p>
+                  <div className='button'>
+                    <a href='' className='btn btn-white'>
+                      Get Started
+                    </a>
+                  </div>
                 </div>
 
                 <div

@@ -38,7 +38,7 @@ export default function ArchiveSectionOne () {
           </div>
           <div className='col-md-6 article'>
             <div className='placeholder-image'></div>
-            <h2>Top 5 Crypto News</h2>
+            <h2>What is Arbitrage</h2>
           </div>
           <div className='col-md-6 article'>
             <div className='placeholder-image'></div>
@@ -46,7 +46,7 @@ export default function ArchiveSectionOne () {
           </div>
           <div className='col-md-6 article'>
             <div className='placeholder-image'></div>
-            <h2>Top 5 Crypto News</h2>
+            <h2>What is Arbitrage</h2>
           </div>
           <div className='col-md-6 article'>
             <div className='placeholder-image'></div>
@@ -54,7 +54,7 @@ export default function ArchiveSectionOne () {
           </div>
           <div className='col-md-6 article'>
             <div className='placeholder-image'></div>
-            <h2>Top 5 Crypto News</h2>
+            <h2>What is Arbitrage</h2>
           </div>
           <div className='col-md-6 article'>
             <div className='placeholder-image'></div>
@@ -62,7 +62,7 @@ export default function ArchiveSectionOne () {
           </div>
           <div className='col-md-6 article'>
             <div className='placeholder-image'></div>
-            <h2>Top 5 Crypto News</h2>
+            <h2>What is Arbitrage</h2>
           </div>
         </div>
         <div className='row buttons justify-content-center '>

@@ -27,10 +27,10 @@ export default function TokenSectionThree () {
   //     )
   // }, [tl])
   return (
-    <div className='tokenSectionThree tokenSectionaCOE py-5 d-flex align-items-center heightHv'>
+    <div className='tokenSectionThree tokenSectionaCOE d-flex align-items-center'>
       <div className='container'>
-        <div className='row py-5 d-flex align-items-stretch'>
-          <div className='col-12 col-md-6 d-flex align-items-center  mb-4 gaspSlideLeft'>
+        <div className='row  d-flex align-items-stretch'>
+          <div className='col-12 col-md-6 d-flex align-items-center justify-content-center mb-4 gaspSlideLeft'>
             <div className='tradingBasicHP '>
               <h2 style={{ textAlign: 'center' }}>
                 A currency for our <br />
@@ -44,16 +44,11 @@ export default function TokenSectionThree () {
           </div>
           <div className='col-12 col-md-6 mb-4 gaspSlideRight'>
             <div className='tradingBasicI'>
-              <Image
-                src='/images/comp_4.gif'
-                alt='A currency for our ecosystem'
-                width={540}
-                height={405}
-              />
+              <img src='/images/token/One.jpg' alt='' />
             </div>
           </div>
         </div>
-        <div className='row py-5 d-flex align-items-stretch'>
+        <div className='row  d-flex align-items-stretch'>
           <div className='col-12 col-md-6 mb-4 gaspSlideRight'>
             <div className='tradingBasicI'>
               {/* <Image
@@ -62,7 +57,7 @@ export default function TokenSectionThree () {
                 width={540}
                 height={405}
               /> */}
-              <div className='placeholder-image'></div>
+              <img src='/images/token/Two.jpg' alt='' />
             </div>
           </div>
           <div className='col-12 col-md-6 d-flex align-items-center justify-content-center mb-4 gaspSlideLeft'>

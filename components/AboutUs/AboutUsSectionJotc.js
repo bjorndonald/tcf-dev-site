@@ -32,10 +32,8 @@ export default function AboutUsSectionJotc () {
         <div className='row d-flex align-items-center helpCenterSectionFiveOne'>
           <div className='col-12  gaspSlideLeft'>
             <div className='sectionTitleWrap mb-5 flex-column d-flex align-items-center'>
-              <h2>Join Our Trading Community</h2>
-              <p className='mt-2 mb-5'>
-                Meeting over 4,000 traders from 175 countries
-              </p>
+              <h2>Join our trading community</h2>
+              <p className=''>Meeting over 9,000 traders from 175 countries</p>
               <div className='button'>
                 <a
                   className=' btn btn-black px-3 py-1'
