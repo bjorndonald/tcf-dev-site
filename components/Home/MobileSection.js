@@ -160,7 +160,7 @@ function MobileSection (props) {
                                     <div className="sectionTwoContentLineThreeInner">Profile</div>
                                 </div> */}
                   </h2>
-                  <p>Let's get you to the moon!</p>
+                  <p> A better trading experience</p>
                   <div className='button'>
                     <a href='' className='btn btn-white'>
                       Get Started

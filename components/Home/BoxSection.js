@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 export default function BoxSection () {
   return (
@@ -22,6 +23,7 @@ export default function BoxSection () {
               <div className='background'></div>
               <video
                 loop={true}
+                playsInline
                 className='image'
                 autoPlay='autoplay'
                 muted={true}
@@ -52,6 +54,7 @@ export default function BoxSection () {
               <div className='background'></div>
               <video
                 loop={true}
+                playsInline
                 className='image'
                 autoPlay='autoplay'
                 muted={true}
@@ -79,6 +82,7 @@ export default function BoxSection () {
               <div className='background'></div>
               <video
                 loop={true}
+                playsInline
                 className='image'
                 autoPlay='autoplay'
                 muted={true}
@@ -104,32 +108,35 @@ export default function BoxSection () {
           </div>
 
           <div className=' homeBoxFour col-12 col-md-6'>
-            <a traget='_blank' href='https://tccrypto.io/' className='card'>
-              <div className='background'></div>
-              <video
-                loop={true}
-                className='image'
-                autoPlay='autoplay'
-                muted={true}
-              >
-                <source src='/videos/home/boxFour.mp4' type='video/mp4' />
-                Your browser does not support the video tag.
-              </video>
-              {/* <img src='/images/home/boxFour.jpg' className='image' alt='' /> */}
-              <div className='text'>
-                <h1>Crypto</h1>
-                <p>
-                  Buy and Sell <br />
-                  Crypto
-                </p>
-                {/* <div className='hideText'>
+            <Link href='products/crypto'>
+              <a className='card'>
+                <div className='background'></div>
+                <video
+                  loop={true}
+                  playsInline
+                  className='image'
+                  autoPlay='autoplay'
+                  muted={true}
+                >
+                  <source src='/videos/home/boxFour.mp4' type='video/mp4' />
+                  Your browser does not support the video tag.
+                </video>
+                {/* <img src='/images/home/boxFour.jpg' className='image' alt='' /> */}
+                <div className='text'>
+                  <h1>Crypto</h1>
+                  <p>
+                    Buy and Sell <br />
+                    Crypto
+                  </p>
+                  {/* <div className='hideText'>
                   Towards sound money and decentralisation
                 </div> */}
-              </div>
-              <div className='d-flex justify-content-end see-btn'>
-                {/* <span>See</span> */}
-              </div>
-            </a>
+                </div>
+                <div className='d-flex justify-content-end see-btn'>
+                  {/* <span>See</span> */}
+                </div>
+              </a>
+            </Link>
           </div>
         </div>
       </div>

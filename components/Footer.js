@@ -127,19 +127,19 @@ fgu04
             <p style={{ fontSize: 'small', textAlign: 'justify' }}>
               We provide funding services to traders through several affiliates.
               Our referral/introductory funding product is offered by Traders
-              Central Fund Corp which is a Canadian entity with registration no.
-              BC1281254 and connects traders and brokers to backers for funding
+              Central Fund Corp, which is a Canadian entity with registration
+              no. BC1281254 connects traders and brokers to backers for funding
               trading accounts. Our introductory crypto spot trading and
               liquidity services product is offered by Prime Bridge Security,
-              LLC which is a St. Vincent and Grenadines entity with registration
-              no 959 LLC. It provides a technology platform to facilitate the
-              online purchase and selling of digital currencies, digital assets,
-              and legal tender or fiat currency (crypto to crypto, crypto to
-              fiat, and fiat to crypto trading). Trading contains substantial
-              risk. There is always a potential of loss of some or all of the
-              amount invested and the value in your funded account can increase
-              or decrease. Past performance is not necessarily indicative of
-              future results. View legal{' '}
+              LLC, a St. Vincent and Grenadines entity with registration no 959
+              LLC. It provides a technology platform to facilitate online
+              purchasing and selling of digital currencies, digital assets, and
+              legal tender or fiat currency (crypto to crypto, crypto to fiat,
+              and fiat to crypto trading). Trading contains substantial risk.
+              There is a potential of losing some or all of an amount invested.
+              The value in your funded account can increase or decrease. Past
+              performance is not necessarily indicative of future results. View
+              legal
               <a
                 style={{ fontSize: 'small', textDecoration: 'underline' }}
                 href='https://legal.traderscentral.com'

@@ -1,24 +1,41 @@
+.sectionOne {
+  .btn {
+    padding: 0.5rem 1.5rem;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .sectionOne {
     height: calc(100vh - 6vh);
     padding-bottom: 0;
     .HomeHeroVideo {
-      margin-top: -1rem;
+      margin-top: 3rem;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
 
     h1 {
       margin-top: 10rem;
-      font-size: 3.6rem;
+      font-size: 2rem;
       text-align: center;
+      font-weight: bolder;
 
       br {
         display: none;
       }
     }
 
+    .btn {
+      font-size: 1rem;
+    }
+
     p {
       text-align: center;
-      font-size: 1.8rem;
+      font-size: 1rem;
 
       br {
         display: none;
@@ -33,6 +50,24 @@
 
   .sectionMobile {
     padding-top: 0;
+  }
+
+  .sectionThree {
+    h2 {
+      font-size: 2rem !important;
+    }
+
+    h1 {
+      font-size: 2rem !important;
+    }
+
+    p {
+      font-size: 1.25rem !important;
+    }
+
+    .homeBoxOne {
+      margin-top: -20rem;
+    }
   }
 
   .nav__container {
@@ -149,6 +184,8 @@
     button {
       font-size: 1.2rem !important;
       position: relative;
+      display: flex;
+      align-items: center;
     }
   }
 
@@ -504,7 +541,7 @@
       right: -13.5rem;
       width: 47rem;
 
-      height: 72rem;
+      height: 76rem;
       transform: scale(0.25);
       bottom: -32.5rem;
     }
@@ -532,26 +569,26 @@
     }
 
     .homeBoxTwo .card .image {
-      right: -9rem;
-      width: 32rem;
-      height: 32rem;
+      right: -2rem;
+      width: 16rem;
+      height: 16rem;
       transform: scale(0.75);
-      bottom: -8rem;
+      bottom: -2rem;
     }
 
     .homeBoxThree .card .image {
-      right: -20rem;
-      width: 55rem;
-      height: 48rem;
-      bottom: -16rem;
+      right: -5rem;
+      width: 28rem;
+      height: 28rem;
+      bottom: -5rem;
       transform: scale(0.5);
     }
 
     .homeBoxFour .card .image {
-      right: -20rem;
-      width: 56rem;
-      height: 56rem;
-      bottom: -20rem;
+      right: -10rem;
+      width: 42rem;
+      height: 42rem;
+      bottom: -10rem;
       transform: scale(0.375);
     }
   }
@@ -678,13 +715,27 @@
       }
     }
   }
+  .fundingSectionFour {
+    .card-body {
+      font-size: 2.5vh;
+    }
+  }
+
+  .fundingSectionFour .card-header button {
+    display: flex;
+    align-items: center;
+    p {
+      font-size: 1.2rem !important;
+      margin-bottom: 0;
+    }
+  }
 
   .aboutUsSectionOne {
     height: 65vh;
     padding-top: 0;
 
     h1 {
-      font-size: 2.75rem;
+      font-size: 2.5rem;
       margin-bottom: 5rem;
     }
 
@@ -708,10 +759,11 @@
   .aboutUsSectionEs {
     height: 60vh;
     padding-top: 1rem;
+    margin-top: 5.5vh;
     padding-bottom: 7.5rem;
     .owlEs {
       width: 90vw;
-      height: 90vw;
+      height: 100vw;
       .aboutSlider .item {
         padding: 5.5rem 0 3.5rem 0;
       }
@@ -759,16 +811,33 @@
 
     .col-md-5 {
       padding: 0 !important;
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
     }
   }
 
   .aboutUsSectionJotc {
+    height: 50vh;
     h2 {
+      font-size: 2.5rem;
       text-align: center;
     }
 
     p {
+      font-size: 1rem;
       text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      padding: 0.5rem 1.75rem;
+      font-size: 1.125rem;
     }
   }
 

@@ -41,9 +41,9 @@ function HelpCenterSectionOne (props) {
             <div className=' text-center helpCenterSectionOneTitle py-5'>
               <div className='d-flex flex-column align-items-center'>
                 <h1>Help Center</h1>
-                <h3>Let's help you out</h3>
+                {/* <h3>Let's help you out</h3> */}
               </div>
-
+              {/*  */}
               <form>
                 <div className='input-group mb-3 helpCenterSearchBox'>
                   <input

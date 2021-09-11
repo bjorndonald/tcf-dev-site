@@ -36,7 +36,7 @@ export default function AboutUsSectionJotc () {
               <p className=''>Meeting over 9,000 traders from 175 countries</p>
               <div className='button'>
                 <a
-                  className=' btn btn-black px-3 py-1'
+                  className=' btn btn-black '
                   href='https://t.me/Traderscentralchatroom'
                   target='_blank'
                 >

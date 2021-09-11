@@ -79,6 +79,17 @@ jQuery(document).ready(function ($) {
       $customSelect.removeClass('active')
       $optionlist.hide()
     })
+
+    nP = navigator.platform
+    if (
+      nP == 'iPad' ||
+      nP == 'iPhone' ||
+      nP == 'iPod' ||
+      nP == 'iPhone Simulator' ||
+      nP == 'iPad Simulator'
+    ) {
+      $this.remove()
+    }
   })
 
   $('.fundingSectionThree .nav-item').on('click', function () {

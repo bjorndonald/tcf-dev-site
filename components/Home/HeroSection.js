@@ -46,7 +46,7 @@ function HeroSection (props) {
                 financial positioning
               </p>
               <a
-                className=' btn btn-black px-3 py-1'
+                className=' btn btn-black'
                 href='https://fund.traderscentral.com/login'
                 target='_blank'
               >

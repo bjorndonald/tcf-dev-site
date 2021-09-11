@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { gsap } from 'gsap/dist/gsap'
 
 export default function TokenSectionTwo () {
-  const [video, setVideo] = useState(true)
+  const [video, setVideo] = useState(false)
   // useEffect(() => {
   //   gsap.timeline({
   //     scrollTrigger: {
