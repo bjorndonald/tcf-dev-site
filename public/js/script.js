@@ -9,11 +9,34 @@ $(function () {
 })
 
 jQuery(document).ready(function ($) {
+  $('.mobileMenuList .mobileMenuListChild').on('click', function () {
+    $(this)
+      .find('ul')
+      .toggleClass('mobileMenuListSubShow')
+  })
+
+  $('.navOpen').on('click', function () {
+    if ($(this).attr('aria-expanded') == 'false') {
+      $('.menu-overlay').css('width', '67%')
+      $(this).attr('aria-expanded', 'true')
+    } else if ($(this).attr('aria-expanded') == 'true') {
+      $('.menu-overlay').css('width', '0')
+      $(this).attr('aria-expanded', 'false')
+    }
+  })
+
+  $('.navClose').on('click', function () {
+    console.log('SS')
+    $('.menu-overlay').css('width', '0')
+    $('.navOpen').attr('aria-expanded', 'false')
+  })
+
   $('.custom-select-box').each(function () {
     var $this = $(this),
       selectOptions = $(this).children('option').length
 
     $this.addClass('hide-select')
+
     $this.wrap('<div class="select"></div>')
     $this.after('<div class="custom-select-bx"></div>')
     $('div.select').append('<div class="arrow-right"></div>')
@@ -72,6 +95,7 @@ jQuery(document).ready(function ($) {
       $(this).addClass('active')
       $customSelect.text($(this).text()).removeClass('active')
       $this.val($(this).attr('rel'))
+      console.log($this.val())
       $optionlist.hide()
     })
 
@@ -79,17 +103,6 @@ jQuery(document).ready(function ($) {
       $customSelect.removeClass('active')
       $optionlist.hide()
     })
-
-    nP = navigator.platform
-    if (
-      nP == 'iPad' ||
-      nP == 'iPhone' ||
-      nP == 'iPod' ||
-      nP == 'iPhone Simulator' ||
-      nP == 'iPad Simulator'
-    ) {
-      $this.remove()
-    }
   })
 
   $('.fundingSectionThree .nav-item').on('click', function () {

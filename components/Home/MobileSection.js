@@ -117,7 +117,7 @@ function MobileSection (props) {
                     height={832.5}
                     alt='Image'
                   /> */}
-                  <img src='/images/home/mobileSection.png' alt='Image' />
+                  <img src='/images/home/mobilePhone.jpg' alt='Image' />
                 </div>
                 <div className='box box2'>
                   {/* <Image
@@ -162,7 +162,10 @@ function MobileSection (props) {
                   </h2>
                   <p> A better trading experience</p>
                   <div className='button'>
-                    <a href='' className='btn btn-white'>
+                    <a
+                      href='https://fund.traderscentral.com/sign-up'
+                      className='btn btn-white'
+                    >
                       Get Started
                     </a>
                   </div>

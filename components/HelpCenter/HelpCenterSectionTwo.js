@@ -45,11 +45,22 @@ export default function HelpCenterSectionTwo () {
           >
             <div className='col-10 col-md-5 d-flex justify-content-center'>
               <div className='eyntkBox eyntkBoxOne'>
-                <h3 className='mb-4'>Fund</h3>
+                <div className='background'></div>
+                <video
+                  loop={true}
+                  playsInline
+                  className='image'
+                  autoPlay='autoplay'
+                  muted={true}
+                >
+                  <source src='/videos/home/boxOne.mp4' type='video/mp4' />
+                  Your browser does not support the video tag.
+                </video>
+                <h3 className='mb-2'>Fund</h3>
 
                 <p>
                   Learn how to get <br />
-                  funded in 24 hrs
+                  &nbsp;funded in 24 hrs
                 </p>
               </div>
             </div>
@@ -63,7 +74,18 @@ export default function HelpCenterSectionTwo () {
           >
             <div className='col-10 col-md-5 d-flex justify-content-center'>
               <div className='eyntkBox eyntkBoxTwo'>
-                <h3 className='mb-4'>Crypto</h3>
+                <div className='background'></div>
+                <video
+                  loop={true}
+                  playsInline
+                  className='image'
+                  autoPlay='autoplay'
+                  muted={true}
+                >
+                  <source src='/videos/home/boxFour.mp4' type='video/mp4' />
+                  Your browser does not support the video tag.
+                </video>
+                <h3 className='mb-2'>Crypto</h3>
 
                 <p>
                   How to get
@@ -84,7 +106,18 @@ export default function HelpCenterSectionTwo () {
           >
             <div className='col-10 col-md-5 d-flex justify-content-center'>
               <div className='eyntkBox eyntkBoxThree'>
-                <h3 className='mb-4'>Tokens</h3>
+                <div className='background'></div>
+                <video
+                  loop={true}
+                  playsInline
+                  className='image'
+                  autoPlay='autoplay'
+                  muted={true}
+                >
+                  <source src='/videos/home/boxTwo.mp4' type='video/mp4' />
+                  Your browser does not support the video tag.
+                </video>
+                <h3 className='mb-2'>Tokens</h3>
 
                 <p>
                   Help with sending,
@@ -104,7 +137,18 @@ export default function HelpCenterSectionTwo () {
           >
             <div className='col-10 col-md-5 d-flex justify-content-center'>
               <div className='eyntkBox eyntkBoxFour'>
-                <h3 className='mb-4'>Liquidity</h3>
+                <div className='background'></div>
+                <video
+                  loop={true}
+                  playsInline
+                  className='image'
+                  autoPlay='autoplay'
+                  muted={true}
+                >
+                  <source src='/videos/home/boxThree.mp4' type='video/mp4' />
+                  Your browser does not support the video tag.
+                </video>
+                <h3 className='mb-2'>Liquidity</h3>
                 {/* <Image
                 src='/images/laquidty.png'
                 alt='Image'

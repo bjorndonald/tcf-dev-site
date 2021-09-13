@@ -44,7 +44,9 @@ export default function Footer () {
                     </Link>
                   </li>
                   <li>
-                    <a href='https://tccrypto.io/'>Crypto</a>
+                    <Link href='/products/crypto'>
+                      <a>Crypto</a>
+                    </Link>
                   </li>
                   <li>
                     <Link href='/products/liquidity'>
@@ -56,11 +58,11 @@ export default function Footer () {
               <div className='linkList mb-5'>
                 <p>Learn</p>
                 <ul>
-                  <li>
+                  {/* <li>
                     <Link href='/archive'>
                       <a>Bites</a>
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href='/trading-basic'>
                       <a>Basics</a>
@@ -77,9 +79,7 @@ export default function Footer () {
                     </Link>
                   </li>
                   <li>
-                    <Link href='/station'>
-                      <a>Blog</a>
-                    </Link>
+                    <a href='https://bit.ly/2X9xdjC'>Blog</a>
                   </li>
                 </ul>
               </div>
@@ -110,9 +110,14 @@ fgu04
               </li>
 
               <li>
-                <a href='https://twitter.com/TradersCentral'>
+                <a href='https://youtube.com/channel/UCXnnh-fnrMW2R_HMWFC_6dA'>
                   <i className='fa fa-youtube-play' aria-hidden='true'></i>{' '}
                   Youtube
+                </a>
+              </li>
+              <li>
+                <a href='https://t.me/Traderscentralchatroom'>
+                  <i className='fa fa-telegram' aria-hidden='true'></i> Telegram
                 </a>
               </li>
             </ul>

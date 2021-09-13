@@ -78,5 +78,26 @@
 
   .accordion-section {
     min-height: 60vh;
+
+    button {
+      position: relative;
+      padding: 2rem 0 !important;
+      h6 {
+        font-size: 1rem !important;
+        width: 95%;
+        margin-bottom: 0;
+        font-weight: bold;
+      }
+
+      span {
+        position: absolute;
+        right: 0;
+        top: calc((100% - 2.5rem) / 2);
+      }
+    }
+    .card-body {
+      font-size: 1rem !important;
+      font-weight: normal;
+    }
   }
 }

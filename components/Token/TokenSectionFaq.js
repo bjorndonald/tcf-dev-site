@@ -39,7 +39,7 @@ export default function TokenSectionFaq () {
   }
 
   return (
-    <div className='tokenSectionFaq faqSection py-5 d-flex align-items-center heightHv'>
+    <div className='tokenSectionFaq faqSection py-5 d-flex align-items-center'>
       <div className='container'>
         <div className='row'>
           <div className='col-12 header-section gaspSlideLeft'>

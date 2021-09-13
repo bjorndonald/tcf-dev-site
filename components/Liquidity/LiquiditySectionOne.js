@@ -46,7 +46,7 @@ export default function LiquiditySectionOne () {
               <p className='' style={{ textAlign: 'center' }}>
                 We eliminate lengthy paperwork, legal complexity,
                 <br />
-                and numerous fees
+                &nbsp;and numerous fees
               </p>
               <div className='button mt-3'>
                 <a className=' btn btn-black  ' href='/register'>

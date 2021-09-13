@@ -1,6 +1,4 @@
 import React, { Fragment, useEffect } from 'react'
-import SectionsSectionOne from '../../components/Sections/SectionsSectionOne'
-import SectionsSectionTwo from '../../components/Sections/SectionsSectionTwo'
 import MetaTag from '../../components/MetaTag'
 import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
@@ -8,9 +6,11 @@ import { connect } from 'react-redux'
 import { clearTimeline, setTimeline } from '../../store/actions/configActions'
 import Head from 'next/head'
 import { useRouter } from 'next/dist/client/router'
+import SearchSectionOne from '../../components/Search/SearchSectionOne'
+import SearchSectionTwo from '../../components/Search/SearchSectionTwo'
 
 export async function getStaticProps () {
-  const res = await fetch('https://api.intercom.io/help_center/collections', {
+  const res = await fetch('https://api.intercom.io/articles?per_page=200', {
     method: 'GET',
     mode: 'cors',
     cache: 'no-cache',
@@ -22,13 +22,49 @@ export async function getStaticProps () {
         'Bearer dG9rOjU4YzgxZjE1XzRlMTVfNDJlMV85YjM5XzIzMDRhODA5MDBlYzoxOjA='
     }
   })
-  const collections = await res.json()
+  const articles = await res.json()
+
+  const collection_res = await fetch(
+    'https://api.intercom.io/help_center/collections',
+    {
+      method: 'GET',
+      mode: 'cors',
+      cache: 'no-cache',
+      credentials: 'same-origin',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+        Authorization:
+          'Bearer dG9rOjU4YzgxZjE1XzRlMTVfNDJlMV85YjM5XzIzMDRhODA5MDBlYzoxOjA='
+      }
+    }
+  )
+  const collections = await collection_res.json()
+
+  const section_res = await fetch(
+    'https://api.intercom.io/help_center/sections',
+    {
+      method: 'GET',
+      mode: 'cors',
+      cache: 'no-cache',
+      credentials: 'same-origin',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+        Authorization:
+          'Bearer dG9rOjU4YzgxZjE1XzRlMTVfNDJlMV85YjM5XzIzMDRhODA5MDBlYzoxOjA='
+      }
+    }
+  )
+  const sections = await section_res.json()
 
   // By returning { props: { collections } }, the Blog component
   // will receive `collections` as a prop at build time
   return {
     props: {
-      collections
+      articles: articles.data,
+      collections: collections.data,
+      sections: sections.data
     }
   }
 }
@@ -36,7 +72,7 @@ export async function getStaticProps () {
 function sections (props) {
   return (
     <Fragment>
-      <MetaTag title='Help Center' />
+      <MetaTag title='Search Results' />
       <Head>
         <script
           src='https://code.jquery.com/jquery-3.2.1.slim.min.js'
@@ -56,7 +92,8 @@ function sections (props) {
         <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
         <script src='/js/script.js'></script>
       </Head>
-      <SectionsSectionTwo collections={props.collections} />
+      <SearchSectionOne />
+      <SearchSectionTwo {...props} />
     </Fragment>
   )
 }

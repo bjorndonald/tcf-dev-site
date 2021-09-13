@@ -47,7 +47,7 @@ function HeroSection (props) {
               </p>
               <a
                 className=' btn btn-black'
-                href='https://fund.traderscentral.com/login'
+                href='https://fund.traderscentral.com/sign-up'
                 target='_blank'
               >
                 Sign-up

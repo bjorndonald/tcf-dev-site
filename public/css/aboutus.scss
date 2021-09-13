@@ -83,18 +83,20 @@
   height: 80vh;
 
   h2 {
-    font-size: 3.75rem;
+    font-size: 3rem;
   }
-
   p {
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-top: 1.5rem;
     margin-bottom: 5rem;
   }
-
   .btn {
-    padding: 0.5rem 1.5rem;
-    font-size: 2rem;
+    border-radius: 3.125rem;
+    font-size: 1.5rem;
+  }
+
+  .btn:hover {
+    text-decoration: underline;
   }
 }
 

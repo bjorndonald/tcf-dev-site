@@ -1,12 +1,18 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
+import countries from './countries.json'
 const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
   ssr: false
 })
 import { gsap } from 'gsap/dist/gsap'
 
 export default function FundingSectionFive () {
+  const [firstName, setfirstName] = useState('')
+  const [lastName, setlastName] = useState('')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [country, setCountry] = useState('')
   // useEffect(() => {
   //   gsap.timeline({
   //     scrollTrigger: {
@@ -22,6 +28,39 @@ export default function FundingSectionFive () {
   //   .from(".fundingSectionFour .gaspSlideRight", { x: -50, opacity : 0 }, "start");
 
   // }, [tl]);
+
+  const submitData = () => {
+    var value = {
+      first_name: firstName,
+      last_name: lastName,
+      email: email,
+      country: $('.fCountry').val(),
+      password: password
+    }
+
+    let formData = new FormData()
+    formData.append('first_name', value.first_name)
+    formData.append('last_name', value.last_name)
+    formData.append('email', value.email)
+    formData.append('country', value.country)
+    formData.append('password', value.password)
+    fetch(
+      'https://headerng.herokuapp.com/https://fund.traderscentral.com/auth/createAccount',
+      {
+        method: 'POST', // or 'PUT'
+        headers: {},
+        body: formData
+      }
+    )
+      .then(response => response.json())
+      .then(data => {
+        console.log(data)
+        window.open(data.data.redirect, 'portal')
+      })
+      .catch(error => {
+        // console.error('Error:', error)
+      })
+  }
   return (
     <div
       style={{ marginTop: '20vh' }}
@@ -37,9 +76,30 @@ export default function FundingSectionFive () {
 
           <div className='col-md-6 gaspSlideRight'>
             <div className='contactUsFormWrapper p'>
-              <form>
+              <form onSubmit={submitData}>
+                <div className='nameWrap fieldWrap'>
+                  <input
+                    value={firstName}
+                    onChange={e => setfirstName(e.target.value)}
+                    type='text'
+                    className='fEmail'
+                    placeholder='First Name'
+                  />
+                </div>
+
+                <div className='nameWrap fieldWrap'>
+                  <input
+                    value={lastName}
+                    onChange={e => setlastName(e.target.value)}
+                    type='text'
+                    className='fEmail'
+                    placeholder='Last Name'
+                  />
+                </div>
                 <div className='emailWrap fieldWrap'>
                   <input
+                    value={email}
+                    onChange={e => setEmail(e.target.value)}
                     type='email'
                     className='fEmail'
                     placeholder='Email Address'
@@ -47,24 +107,40 @@ export default function FundingSectionFive () {
                 </div>
                 <div className='passWrap fieldWrap'>
                   <input
+                    value={password}
+                    onChange={e => setPassword(e.target.value)}
                     type='password'
                     className='fPass'
                     placeholder='Password'
                   />
                 </div>
                 <div className='countryWrap fieldWrap'>
-                  <select className='fCountry custom-select-box'>
+                  <select
+                    value={country}
+                    onChange={e => {
+                      console.log(e.target.value)
+                      setCountry(e.target.value)
+                    }}
+                    className='fCountry custom-select-box'
+                  >
                     <option>Country</option>
-                    <option>Option Two</option>
-                    <option>Option three</option>
+                    {/* <option>Option Two</option>
+                    <option>Option three</option> */}
+                    {countries.map((x, i) => (
+                      <option key={i} value={x}>
+                        {x}
+                      </option>
+                    ))}
                   </select>
                 </div>
                 <div className='submitWrap fieldWrap'>
-                  <input
-                    type='submit'
+                  <a
+                    onClick={submitData}
                     className='btn btnSubmit'
                     value='Get Started'
-                  />
+                  >
+                    Get Started
+                  </a>
                 </div>
                 <div className='yesCheckBox fieldWrap'>
                   <p className='d-flex align-items-center justify-content-center'>
@@ -73,7 +149,7 @@ export default function FundingSectionFive () {
                       <span className='checkmark'></span>
                     </label>
                     {/* <input type='checkbox' value='yes' />  */}
-                    Send me helpful info.
+                    <span>Send me helpful info.</span>
                   </p>
                 </div>
                 <div className='fieldWrap'>

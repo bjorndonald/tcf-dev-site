@@ -55,6 +55,7 @@ function FundSectionTwo (props) {
                   >
                     <div className='col-10 col-md-5 d-flex justify-content-center'>
                       <div className='eyntkBox eyntkBoxOne'>
+                        <div className='background'></div>
                         <h3 className='mb-4'>{post.name}</h3>
 
                         <p>{post.description}</p>

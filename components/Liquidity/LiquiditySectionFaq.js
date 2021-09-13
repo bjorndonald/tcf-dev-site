@@ -55,7 +55,7 @@ export default function LiquiditySectionFaq () {
                     variant='link'
                     eventKey='0'
                   >
-                    What are the requirements to access liquidity?{' '}
+                    <h6>What are the requirements to access liquidity? </h6>
                     <span>+</span>
                     <span style={{ display: 'none' }}>-</span>
                   </Accordion.Toggle>
@@ -82,7 +82,7 @@ export default function LiquiditySectionFaq () {
                     variant='link'
                     eventKey='1'
                   >
-                    How long does it take to get set up? <span>+</span>
+                    <h6>How long does it take to get set up?</h6> <span>+</span>
                     <span style={{ display: 'none' }}>-</span>
                   </Accordion.Toggle>
                 </Card.Header>
@@ -109,7 +109,7 @@ export default function LiquiditySectionFaq () {
                     variant='link'
                     eventKey='2'
                   >
-                    What happens after I apply? <span>+</span>
+                    <h6>What happens after I apply?</h6> <span>+</span>
                     <span style={{ display: 'none' }}>-</span>
                   </Accordion.Toggle>
                 </Card.Header>
@@ -136,7 +136,7 @@ export default function LiquiditySectionFaq () {
                     variant='link'
                     eventKey='3'
                   >
-                    Are partners from all over the globe accepted?{' '}
+                    <h6>Are partners from all over the globe accepted? </h6>
                     <span>+</span>
                     <span style={{ display: 'none' }}>-</span>
                   </Accordion.Toggle>

@@ -283,31 +283,3 @@ function ArticlesSectionTwo (props) {
 }
 
 export default ArticlesSectionTwo
-{
-  /* <Fragment>
-                              {coll_section == 'No_section' ? null : (
-                                <h3 className='mb-1 mt-5'>{coll_section}</h3>
-                              )}
-
-                              {articles[section][coll_section].map(article => {
-                                return (
-                                  <Link
-                                    href={{
-                                      pathname: '/help-center/article/',
-                                      query: {
-                                        id: article.id,
-                                        name: article.title,
-                                        parent: router.query.name,
-                                        grandparent: router.query.parent
-                                      }
-                                    }}
-                                  >
-                                    <div className='article shadow-sm p-3 bg-white rounded'>
-                                      <h4>{article.title}</h4>
-                                      <h5>{article.description}</h5>
-                                    </div>
-                                  </Link>
-                                )
-                              })}
-                            </Fragment> */
-}

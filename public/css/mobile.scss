@@ -83,19 +83,21 @@
 
   .fundingSectionOne {
     overflow: hidden;
+
+    height: 80vh;
     .text-center {
       margin-top: 0rem;
 
       h1 {
         margin-top: -5rem;
-        font-size: 4rem;
+        font-size: 2rem;
       }
     }
 
     img {
-      margin-left: -7.5rem;
-      width: 40rem;
-      height: 24rem;
+      // margin-left: -29vw;
+      width: 84vw;
+      height: 84vw;
     }
   }
 
@@ -105,15 +107,65 @@
     h3 {
       text-align: center;
     }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: normal;
+    }
+
+    li {
+      font-size: 1.25rem;
+    }
   }
 
   .fundingSectionThree {
     .monthly .pTableDetailWrap {
-      margin-right: 0;
+      margin: 0;
+      margin-right: 0rem;
+      margin-top: 0rem !important;
     }
 
     .monthly .pTableSingleListWrap {
-      margin-left: 0;
+      margin: 0;
+      margin-left: -4rem;
+    }
+
+    .one-time .pTableDetailWrap {
+      margin: 0;
+      margin-top: 4rem !important;
+      margin-right: 0rem;
+    }
+
+    .one-time .pTableSingleListWrap:first-child {
+      margin: 0;
+      margin-left: -3rem !important;
+    }
+
+    .one-time .expandedWrap {
+      margin-left: -6rem !important;
+    }
+
+    .col-md-3,
+    .col-md-2 {
+      width: 80%;
+      flex: 0 0 80%;
+      max-width: 80%;
+
+      .pTableDetailWrap {
+        width: 100%;
+      }
+
+      .pTableSingleListWrap {
+        width: 100%;
+      }
     }
   }
 
@@ -121,6 +173,42 @@
     .col-8 {
       flex: auto;
       max-width: 100%;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: normal;
+    }
+  }
+
+  .sectionContactUs {
+    p {
+      font-weight: normal;
+      br {
+        display: none;
+      }
+    }
+
+    input {
+      font-size: 1rem !important;
+    }
+
+    .select {
+      font-size: 1rem !important;
+    }
+
+    .custom-select-bx {
+      font-size: 1rem !important;
+    }
+
+    .select-options {
+      li {
+        font-size: 1rem !important;
+      }
     }
   }
 
@@ -210,7 +298,130 @@
     }
   }
 
-  .cryptoSectionOne,
+  .searchSectionTwo {
+    .body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+
+  .helpCenterSectionOne,
+  .searchSectionOne {
+    height: 30vh;
+
+    h1 {
+      margin-top: 10vh;
+      font-size: 1.5rem;
+    }
+
+    form {
+      input {
+        font-size: 1rem !important;
+      }
+
+      .input-group-text {
+        font-size: 1rem !important;
+      }
+    }
+  }
+  .helpCenterSectionTwo {
+    .eyntkBoxs {
+      padding-left: 0;
+      padding-right: 0;
+
+      .col-md-5 {
+        padding: 0 !important;
+      }
+
+      .eyntkBoxOne {
+        video {
+          bottom: -0.1rem;
+        }
+      }
+
+      .eyntkBox {
+        border-radius: 0.75625rem !important;
+        width: 25rem;
+        height: 25rem;
+
+        h3 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1rem;
+          font-weight: normal;
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .helpCenterSectionThree {
+    h2 {
+      font-size: 1.75rem !important;
+    }
+
+    .article {
+      margin-bottom: 1rem;
+      .left {
+        margin-bottom: 1rem;
+      }
+      .right {
+        h1 {
+          font-size: 1.25rem;
+        }
+
+        p {
+          font-size: 1rem;
+          font-weight: normal;
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .helpCenterSectionFour {
+    .col-9 {
+      -moz-box-flex: 0;
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 0 !important;
+
+      img {
+        width: 100%;
+      }
+
+      .list {
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+    .sectionTitleWrap {
+      margin-bottom: 3rem;
+
+      h2 {
+        font-size: 2rem !important;
+      }
+    }
+
+    .article-images {
+      margin-bottom: 2rem;
+    }
+  }
+
   .cryptoSectionTwo,
   .cryptoSectionThree,
   .cryptoSectionFour,
@@ -219,11 +430,13 @@
   }
 
   .cryptoSectionOne {
+    height: 75vh;
     .row {
       width: 100%;
     }
     h1 {
       font-size: 3rem;
+      display: none;
       margin-top: 2rem;
       margin-bottom: 2rem;
       br {
@@ -232,12 +445,14 @@
     }
 
     h2 {
+      font-size: 1.5rem !important;
       text-align: center;
     }
 
     .cryptoTextWrap {
       width: 100% !important;
       input {
+        font-size: 1rem !important;
         width: 60% !important;
       }
 
@@ -247,10 +462,89 @@
     }
   }
 
+  .cryptoSectionTwo {
+    .container {
+      max-width: 95%;
+    }
+    img {
+      height: 4.625rem !important;
+    }
+
+    h4 {
+      font-size: 1.25rem !important;
+    }
+
+    p {
+      font-size: 0.875rem !important;
+      line-height: 1.5rem !important;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .cryptoSectionThree {
+    .container {
+      max-width: 94%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .card {
+      border-radius: 0.625rem;
+    }
+    h1 {
+      font-size: 1.5rem !important;
+    }
+
+    img {
+      height: 5rem !important;
+    }
+
+    p {
+      font-size: 1.25rem !important;
+    }
+
+    span {
+      font-size: 1rem !important;
+    }
+
+    .col-md-3 {
+      margin-bottom: 2rem;
+    }
+  }
+
   .cryptoSectionFour {
     .col-md-4 {
       width: 100%;
       flex: auto;
+    }
+
+    .container {
+      max-width: 87.5%;
+      padding: 0;
+    }
+
+    .steps {
+      img {
+        height: 5rem !important;
+      }
+
+      h4 {
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem !important;
+      }
+
+      p {
+        font-size: 0.875rem !important;
+        line-height: 1.5rem;
+
+        br {
+          display: none;
+        }
+      }
     }
 
     .fee {
@@ -263,22 +557,44 @@
   .cryptoSectionTwo,
   .cryptoSectionFour {
     .card {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
   }
 
   .cryptoSectionFive {
+    padding: 0;
     .row {
       width: 100%;
     }
 
+    h1 {
+      font-size: 1.5rem;
+      br {
+        display: none;
+      }
+    }
+
+    img {
+      width: 1.5rem !important;
+      height: 1.5rem !important;
+    }
+
     .cryptoTextWrap {
       width: 100% !important;
+      height: 3rem !important;
+      margin-top: 1rem;
+      padding-bottom: 0.25rem !important;
+      padding-top: 0.25rem !important;
+      padding-right: 0.25rem !important;
       input {
         width: 60% !important;
+        font-size: 1.25rem !important;
       }
 
       .btn {
+        height: 2.5rem !important;
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
         width: 40% !important;
       }
     }
@@ -286,6 +602,51 @@
 
   .liquiditySectionOne {
     height: auto;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: normal;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .liquiditySectionTwo {
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: normal;
+    }
+  }
+
+  .liquiditySectionThree,
+  .liquiditySectionFour,
+  .liquiditySectionFour,
+  .liquiditySectionFive {
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      text-align: center;
+      font-weight: normal;
+    }
   }
 
   .liquiditySectionTwo,
@@ -297,6 +658,33 @@
     .placeholder-image {
       width: 100%;
       min-width: 100%;
+    }
+  }
+
+  .liquiditySectionFaq {
+    h2 {
+      font-size: 2rem;
+    }
+
+    button {
+      position: relative;
+      padding: 2rem 0 !important;
+      h6 {
+        font-size: 1rem !important;
+        width: 95%;
+        margin-bottom: 0;
+        font-weight: bold;
+      }
+
+      span {
+        position: absolute;
+        right: 0;
+        top: calc((100% - 2.5rem) / 2);
+      }
+    }
+    .card-body {
+      font-size: 1rem !important;
+      font-weight: normal;
     }
   }
 
@@ -334,7 +722,8 @@
     }
   }
 
-  .helpCenterSectionOne {
+  .helpCenterSectionOne,
+  .searchSectionOne {
     .col-8 {
       max-width: 100%;
       flex: auto;
@@ -362,6 +751,25 @@
       h2 {
         font-size: 3.25rem;
       }
+    }
+  }
+
+  .helpCenterSectionFive {
+    height: 40vh;
+    h2 {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      padding: 0.5rem 1.75rem;
+      font-size: 1.125rem;
     }
   }
 
@@ -489,10 +897,10 @@
       // margin-left: 2rem;
 
       img {
-        width: 100%;
-        margin-bottom: -2.5rem;
+        width: 80%;
+        margin-bottom: 5rem;
         margin-left: 0rem;
-        height: 75.3125vh;
+        height: 65.3125vh;
       }
     }
 
@@ -538,7 +946,7 @@
 
   .sectionThree {
     .homeBoxOne .card .image {
-      right: -13.5rem;
+      right: -17.5rem;
       width: 47rem;
 
       height: 76rem;
@@ -569,37 +977,42 @@
     }
 
     .homeBoxTwo .card .image {
-      right: -2rem;
-      width: 16rem;
-      height: 16rem;
+      right: -4rem;
+      width: 20rem;
+      height: 20rem;
       transform: scale(0.75);
-      bottom: -2rem;
+      bottom: -4rem;
     }
 
     .homeBoxThree .card .image {
-      right: -5rem;
+      right: -6rem;
       width: 28rem;
       height: 28rem;
-      bottom: -5rem;
+      bottom: -6rem;
       transform: scale(0.5);
     }
 
     .homeBoxFour .card .image {
-      right: -10rem;
+      right: -15rem;
       width: 42rem;
       height: 42rem;
-      bottom: -10rem;
+      bottom: -14rem;
       transform: scale(0.375);
     }
   }
 
   .site-footer {
     .socials {
-      margin-bottom: 6rem;
+      margin-bottom: 3.45rem;
     }
   }
 
   .fundingSectionThree {
+    padding-right: 0;
+    padding-left: 0;
+    .container {
+      max-width: 100vw;
+    }
     .pTableDetail {
       h3 {
         text-align: center;
@@ -610,20 +1023,73 @@
       }
     }
 
+    .monthly {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      justify-content: flex-start;
+    }
+
+    .one-time {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      justify-content: flex-start;
+    }
+
+    h3 {
+      padding-top: 0 !important;
+      font-size: 1.75rem;
+    }
+
+    p,
+    small {
+      font-size: 0.75rem !important;
+    }
+
+    li {
+      font-size: 1rem !important;
+    }
+
+    .btn-outline-dark {
+      margin-bottom: 1rem;
+    }
+
     .pTableSingleList {
       padding-bottom: 5rem;
     }
 
+    .pTableSingleListWrap {
+      margin-left: 0rem;
+    }
+
     .one-time .pTableDetailWrap {
       border-radius: 3.125rem;
-      margin-right: 0rem;
-      margin-bottom: 1rem;
+      margin: 0;
+      margin-top: 3.85rem;
+      margin-bottom: 0rem;
     }
 
     .one-time .pTableSingleListWrap {
       border-radius: 3.125rem;
-      margin-left: 0rem;
-      margin-bottom: 2rem;
+      margin: 0;
+      margin-bottom: 0rem;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+    .monthly .pTableSingleListWrap {
+      padding-bottom: 0;
+    }
+
+    .monthly .pTableDetail,
+    .one-time .pTableDetail {
+      padding-top: calc(4rem + 2px);
+    }
+
+    .monthly .pTableDetail li {
+      line-height: 1.5rem;
+    }
+
+    .one-time .pTableSingleList {
+      padding-bottom: 0;
     }
   }
 
@@ -660,7 +1126,7 @@
 
   .tradingBasicSectionThree {
     h2 {
-      font-size: 3.5rem;
+      font-size: 3.25rem;
     }
     .header-section {
       margin-top: 2rem;
@@ -694,10 +1160,16 @@
             padding-left: 0;
 
             h5 {
-              font-size: 3rem;
+              font-size: 1.25rem;
+              margin-bottom: 0.5rem;
+              text-align: center;
             }
 
             p {
+              font-size: 1rem;
+              line-height: 1.75rem;
+              font-weight: normal;
+              text-align: center;
               br {
                 display: none;
               }
@@ -709,10 +1181,18 @@
   }
 
   .tradingBasicSectionFour {
+    margin-top: -5vh;
+    height: 40vh;
+    padding: 1rem 0;
+    margin-bottom: 5vh;
     h4 {
       br {
         display: none;
       }
+    }
+
+    .row {
+      padding: 1rem 0;
     }
   }
   .fundingSectionFour {

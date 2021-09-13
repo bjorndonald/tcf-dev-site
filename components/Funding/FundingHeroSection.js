@@ -40,7 +40,7 @@ function FundingHeroSection (props) {
               {/* <h2>Funding in 24 hours</h2> */}
               <img
                 // style={{ width: '80%' }}
-                className='py-4'
+                className=''
                 src='/images/funding-hero.png'
                 alt='Trader Central Fund'
                 // width={2732}

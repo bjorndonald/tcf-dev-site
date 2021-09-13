@@ -13,22 +13,9 @@ export default function NavBar () {
   };*/
 
   useLayoutEffect(() => {
-    $('.mobileMenuList .mobileMenuListChild').on('click', function () {
-      $(this)
-        .find('ul')
-        .toggleClass('mobileMenuListSubShow')
-    })
     return () => {}
   }, [])
   useEffect(() => {
-    $('.navOpen').on('click', function () {
-      $('.menu-overlay').css('width', '100%')
-    })
-
-    $('.navClose').on('click', function () {
-      $('.menu-overlay').css('width', '0')
-    })
-
     $(function () {
       $(document).on('scroll', function () {
         var $nav = $('.navbar-fixed-top')
@@ -50,7 +37,7 @@ export default function NavBar () {
       <div className='container-fluid'>
         <nav className='navbar navbar-expand-lg navbar-light'>
           <Link href='/'>
-            <a className='navbar-brand'>
+            <a className='navbar-brand navClose'>
               {' '}
               <Image
                 src='/images/logo.png'
@@ -60,22 +47,8 @@ export default function NavBar () {
               />
             </a>
           </Link>
-          <div className='menu-fullS menu-overlay '>
-            <div className='menu-overlay-cBtn text-right my-4'>
-              <button
-                className='navbar-toggler navClose'
-                type='button'
-                data-bs-toggle='collapsea'
-                data-bs-target='#navbarSupportedContenta'
-                aria-controls='navbarSupportedContenta'
-                aria-expanded='false'
-                aria-label='Toggle navigation'
-              >
-                <span className=''>
-                  <i className='fa fa-times' aria-hidden='true'></i>
-                </span>
-              </button>
-            </div>
+          <div className='menu-fullS menu-overlay shadow-sm'>
+            <div className='menu-overlay-cBtn text-right my-4'></div>
 
             <ul className='mobileMenuList'>
               <li className='mobileMenuListChild'>
@@ -89,17 +62,19 @@ export default function NavBar () {
                       >
                         <div className='mobileMenuListSubiW d-flex align-items-stretch'>
                           <div className='mobileMenuListSubImg d-flex justify-content-center align-items-center'>
-                            <img
-                              className=''
-                              src='/images/home/boxOne.jpg'
-                              alt='Card image cap'
-                              style={{
-                                width: 'auto',
-                                height: '100%'
-                              }}
-                              // width={259.19}
-                              // height={190.15}
-                            />
+                            <video
+                              loop={true}
+                              playsInline
+                              className='image'
+                              autoPlay='autoplay'
+                              muted={true}
+                            >
+                              <source
+                                src='/videos/home/boxOne.mp4'
+                                type='video/mp4'
+                              />
+                              Your browser does not support the video tag.
+                            </video>
                           </div>
                           <div className='mobileMenuListSubiC d-flex align-items-center'>
                             <div>
@@ -121,13 +96,19 @@ export default function NavBar () {
                       >
                         <div className='mobileMenuListSubiW d-flex align-items-stretch'>
                           <div className='mobileMenuListSubImg'>
-                            <img
-                              className='mobileMenuListSubImg'
-                              src='/images/home/boxTwo.jpg'
-                              alt='Card image cap'
-                              // width={259.19}
-                              // height={190.15}
-                            />
+                            <video
+                              loop={true}
+                              playsInline
+                              className='image'
+                              autoPlay='autoplay'
+                              muted={true}
+                            >
+                              <source
+                                src='/videos/home/boxTwo.mp4'
+                                type='video/mp4'
+                              />
+                              Your browser does not support the video tag.
+                            </video>
                           </div>
                           <div className='mobileMenuListSubiC d-flex align-items-center'>
                             <div>
@@ -144,18 +125,24 @@ export default function NavBar () {
                   <li>
                     <Link
                       href='/products/crypto'
-                      className='mobileMenuListSubIA navClose'
+                      className='mobileMenuListSubIA'
                       // href='https://tccrypto.io/'
                     >
-                      <div className='mobileMenuListSubiW d-flex align-items-stretch'>
+                      <div className='mobileMenuListSubiW d-flex align-items-stretch navClose'>
                         <div className='mobileMenuListSubImg'>
-                          <img
-                            className='mobileMenuListSubImg'
-                            src='/images/home/boxThree.jpg'
-                            alt='Card image cap'
-                            // width={259.19}
-                            // height={190.15}
-                          />
+                          <video
+                            loop={true}
+                            playsInline
+                            className='image'
+                            autoPlay='autoplay'
+                            muted={true}
+                          >
+                            <source
+                              src='/videos/home/boxFour.mp4'
+                              type='video/mp4'
+                            />
+                            Your browser does not support the video tag.
+                          </video>
                         </div>
                         <div className='mobileMenuListSubiC d-flex align-items-center'>
                           <div>
@@ -174,13 +161,19 @@ export default function NavBar () {
                       >
                         <div className='mobileMenuListSubiW d-flex align-items-stretch'>
                           <div className='mobileMenuListSubImg'>
-                            <img
-                              className='mobileMenuListSubImg'
-                              src='/images/home/boxFour.jpg'
-                              alt='Card image cap'
-                              // width={259.19}
-                              // height={190.15}
-                            />
+                            <video
+                              loop={true}
+                              playsInline
+                              className='image'
+                              autoPlay='autoplay'
+                              muted={true}
+                            >
+                              <source
+                                src='/videos/home/boxThree.mp4'
+                                type='video/mp4'
+                              />
+                              Your browser does not support the video tag.
+                            </video>
                           </div>
                           <div className='mobileMenuListSubiC d-flex align-items-center'>
                             <div>
@@ -252,10 +245,26 @@ export default function NavBar () {
             aria-expanded='false'
             aria-label='Toggle navigation'
           >
-            <span className=''>
-              <i className='fa fa-bars' aria-hidden='true'></i>
-            </span>
+            <a className='menu-bars'>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
           </button>
+
+          {/* <button
+            className='navbar-toggler navClose'
+            type='button'
+            data-bs-toggle='collapsea'
+            data-bs-target='#navbarSupportedContenta'
+            aria-controls='navbarSupportedContenta'
+            aria-expanded='false'
+            aria-label='Toggle navigation'
+          >
+            <span className=''>
+              <i className='fa fa-times' aria-hidden='true'></i>
+            </span>
+          </button> */}
 
           {/* <button
             className="navbar-toggler"

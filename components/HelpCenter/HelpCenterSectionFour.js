@@ -48,8 +48,11 @@ export default function HelpCenterSectionFour () {
           </div>
         </div>
 
-        <div className='row  body'>
-          <div className='col-md-4 px-3 article-images'>{image}</div>
+        <div
+          style={{ margin: 'auto' }}
+          className='row col-9 body d-flex align-items-center justify-content-between'
+        >
+          <div className='col-md-6  article-images'>{image}</div>
           <div className=' list'>
             <h3 id='one' onClick={activate} className='active'>
               1. Forex

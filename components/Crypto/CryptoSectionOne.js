@@ -33,6 +33,8 @@ export default function CryptoSectionOne () {
   // }, [tl])
   return (
     <div className='cryptoSectionOne py-5 d-flex align-items-center '>
+      <div className='background'></div>
+      <canvas id='BtcUsdChart'></canvas>
       <div className='container d-flex flex-column align-items-center justify-content-between'>
         <div className='row py-5 flex-column align-items-center justify-content-between'>
           <h1>
@@ -41,7 +43,7 @@ export default function CryptoSectionOne () {
           </h1>
 
           <div className='row mt-5 flex-column align-items-center justify-content-between'>
-            <h2 className='mb-3'>Buy & Sell Crypto In Seconds!</h2>
+            <h2 className='mb-4'>Buy & Sell Crypto In Seconds!</h2>
             <div className='cryptoTextWrap'>
               <input placeholder='Enter Email' type='text' />
               <a href='' className='btn btn-moon'>

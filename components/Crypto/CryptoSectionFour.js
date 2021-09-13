@@ -20,7 +20,7 @@ export default function CryptoSectionFour () {
         <div className='row steps d-flex justify-content-between'>
           <div className='card col-md-3 d-flex shadow-sm flex-column align-items-center justify-content-center'>
             <img src='/images/crypto/signup.svg' alt='' />
-            <h4 className='my-4'>Portfolios</h4>
+            <h4 className=''>Portfolios</h4>
             <p>
               Buy and sell popular digital currencies, keep track of them in the
               one place.
@@ -29,7 +29,7 @@ export default function CryptoSectionFour () {
 
           <div className='card col-md-3 d-flex shadow-sm flex-column align-items-center justify-content-center'>
             <img src='/images/crypto/verify.svg' alt='' />
-            <h4 className='my-4'>Accessibility</h4>
+            <h4 className=''>Accessibility</h4>
             <p>
               24/7 trading platform accessible worldwide, compatible with
               multiple devices.
@@ -38,7 +38,7 @@ export default function CryptoSectionFour () {
 
           <div className='card col-md-3 d-flex shadow-sm flex-column align-items-center justify-content-center'>
             <img src='/images/crypto/celebration.svg' alt='' />
-            <h4 className='my-4'>Vault Protection</h4>
+            <h4 className=''>Vault Protection</h4>
             <p>
               For added security, store your funds in a vault with time delayed
               withdrawals.

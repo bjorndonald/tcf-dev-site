@@ -28,9 +28,9 @@ export default function TradingBasicSectionFour () {
   //     )
   // }, [tl])
   return (
-    <div className='tradingBasicSectionFour py-5 d-flex align-items-center '>
+    <div className='tradingBasicSectionFour  d-flex align-items-center '>
       <div className='container'>
-        <div className='row py-5 flex-column d-flex align-items-center justify-content-center'>
+        <div className='row flex-column d-flex align-items-center justify-content-center'>
           <h4 style={{ textAlign: 'center' }}>
             Receive new content and keep
             <br /> learning to be the best.
