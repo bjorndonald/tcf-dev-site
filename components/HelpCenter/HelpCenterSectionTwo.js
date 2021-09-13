@@ -90,9 +90,9 @@ export default function HelpCenterSectionTwo () {
                 <p>
                   How to get
                   <br />
-                  started with our
+                  &nbsp;started with our
                   <br />
-                  spot cryptos
+                  &nbsp;spot cryptos
                 </p>
               </div>
             </div>
@@ -122,9 +122,9 @@ export default function HelpCenterSectionTwo () {
                 <p>
                   Help with sending,
                   <br />
-                  receiving and
+                  &nbsp;receiving and
                   <br />
-                  redeeming
+                  &nbsp;redeeming
                 </p>
               </div>
             </div>
@@ -158,7 +158,7 @@ export default function HelpCenterSectionTwo () {
                 <p>
                   Prop fund
                   <br />
-                  startup help
+                  &nbsp;startup help
                 </p>
               </div>
             </div>

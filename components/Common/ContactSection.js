@@ -69,9 +69,9 @@ export default function ContactSection () {
   }
 
   return (
-    <div className='sectionContactUs mt-5 py-5 d-flex align-items-center heightHv'>
+    <div className='sectionContactUs  py-5 d-flex align-items-center heightHv'>
       <div className='container'>
-        <div className='row mt-5'>
+        <div className='row mt-2'>
           <div className='col-12'>
             <div className='contactUsH py-5 sectionTitleWrap'>
               <h2>Let&apos;s get you funded</h2>

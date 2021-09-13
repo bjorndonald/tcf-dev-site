@@ -9,6 +9,7 @@ $(function () {
 })
 
 jQuery(document).ready(function ($) {
+  $('.menu-fullS').scrollTop()
   $('.mobileMenuList .mobileMenuListChild').on('click', function () {
     $(this)
       .find('ul')
@@ -29,6 +30,7 @@ jQuery(document).ready(function ($) {
     console.log('SS')
     $('.menu-overlay').css('width', '0')
     $('.navOpen').attr('aria-expanded', 'false')
+    $('.menu-fullS').scrollTop(0)
   })
 
   $('.custom-select-box').each(function () {
