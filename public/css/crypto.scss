@@ -41,21 +41,21 @@
 
     .cryptoTextWrap {
       display: flex;
-      width: 34.7625vw;
-      height: 3.125rem;
+      width: 50rem;
+      height: 4rem;
       border-radius: 3.125rem;
       background-color: #fff;
-      padding-left: 1rem;
-      padding-top: 0.25rem;
-      padding-bottom: 0.25rem;
-      padding-right: 0.25rem;
+      padding-left: 2rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-right: 0.5rem;
 
       input {
         background-color: transparent;
         border: none;
         outline: none;
-        font-size: 1vw;
-        width: 35vw;
+        font-size: 1.5vw;
+        width: 35rem;
       }
 
       .btn {
@@ -173,7 +173,7 @@
     }
 
     .negative-change {
-      color: #D22B2B;
+      color: #d22b2b;
     }
 
     .positive-change {
@@ -376,7 +376,7 @@
       border: none;
       outline: none;
 
-      font-size: 1.75rem;
+      font-size: 1.5vw;
       width: 35rem;
     }
 

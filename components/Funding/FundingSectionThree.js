@@ -876,7 +876,7 @@ export default function FundingSectionThree () {
                         <h3>Stage Two</h3>
                         <p>First step of the evaluation</p>
                         <ul>
-                          <li>80%</li>
+                          <li>85%</li>
                           <li>1:200</li>
                           <li>Sixty Days</li>
                           <li>Five Percent</li>

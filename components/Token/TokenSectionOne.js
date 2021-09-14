@@ -36,7 +36,7 @@ function TokenSectionOne (props) {
   return (
     <div className='tokenSectionOne  d-flex align-items-center '>
       <div className='container'>
-        <div className='row py-5'>
+        <div className='row '>
           <div className='col-12'>
             <div className=' text-center helpCenterSectionOneTitle py-5'>
               {/* <p className='pOne'>Trader Central Token</p> */}

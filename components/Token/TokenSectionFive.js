@@ -19,7 +19,7 @@ export default function TokenSectionFive () {
   // }, [tl])
   return (
     <div className='tokenSectionFive '>
-      <div className=' py-5 d-flex align-items-center heightHv'>
+      <div className='d-flex align-items-center heightHv'>
         <div className='container'>
           <div className='row  d-flex align-items-stretch'>
             <div className='col-12 mb-4 gaspSlideLeft'>

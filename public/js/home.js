@@ -1,5 +1,5 @@
 'use strict'
-
+//
 $(function () {
   getBTCUSDPrice()
   // Disable Legend & Title From Chartjs

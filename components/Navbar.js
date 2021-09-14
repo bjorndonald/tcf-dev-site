@@ -12,10 +12,6 @@ export default function NavBar () {
     }
   };*/
 
-  useLayoutEffect(() => {
-    return () => {}
-  }, [])
-
   return (
     // <div
     //   className={

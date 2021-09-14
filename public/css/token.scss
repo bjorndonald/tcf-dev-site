@@ -44,6 +44,10 @@
     padding: 1vh 3vh;
     font-size: 3vh;
   }
+
+  .row {
+    padding: 3rem 0;
+  }
 }
 
 .tokenSectionTwo {
@@ -104,6 +108,7 @@
 
 .tokenSectionFaq {
   height: 80vh;
+  padding: 3rem 0;
   .header-section {
     padding-bottom: 3rem;
   }
@@ -123,4 +128,8 @@
 .tokenSectionFive {
   height: 80vh;
   margin-bottom: 10vh;
+}
+
+.tokenSectionFive {
+  padding: 2rem 0;
 }
