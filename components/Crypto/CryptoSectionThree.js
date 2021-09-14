@@ -20,26 +20,26 @@ export default function CryptoSectionThree () {
               <div className='col-md-3 d-flex flex-column align-items-center'>
                 <img src='/images/crypto/bitcoin.svg' alt='' />
                 <p className=''>Bitcoin</p>
-                <span className=''>$46,567.00</span>
-                <span className='green '>+5.46%</span>
+                <span id='bitcoinPriceBox' className=''></span>
+                <span id='bitcoinPriceChangeBox' className='green '></span>
               </div>
               <div className='col-md-3 d-flex flex-column align-items-center'>
                 <img src='/images/crypto/ethereum.svg' alt='' />
                 <p className=''>Ethereum</p>
-                <span className=''>$3,239.87</span>
-                <span className='green '>+7.13%</span>
+                <span id='ethereumPriceBox' className=''></span>
+                <span id='ethereumPriceChangeBox' className='green '></span>
               </div>
               <div className='col-md-3 d-flex flex-column align-items-center'>
                 <img src='/images/crypto/dogecoin.svg' alt='' />
                 <p className=''>Dogecoin</p>
-                <span className=''>$0.28</span>
-                <span className='green '>+6%</span>
+                <span id='dogecoinPriceBox' className=''></span>
+                <span id='dogecoinPriceChangeBox' className='green '></span>
               </div>
               <div className='col-md-3 d-flex flex-column align-items-center'>
                 <img src='/images/crypto/bitcoin-cash.svg' alt='' />
                 <p className=''>Bitcoin Cash</p>
-                <span className=''>$631.26</span>
-                <span className='green '>+4.49%</span>
+                <span id='bitcoin-cashPriceBox' className=''></span>
+                <span id='bitcoin-cashPriceChangeBox' className='green '></span>
               </div>
             </div>
           </div>
