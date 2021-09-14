@@ -40,7 +40,9 @@ export default function NavBar () {
 
             <ul className='mobileMenuList'>
               <li className='mobileMenuListChild'>
-                <a className='mobileMenuListChildA'>Products</a>
+                <a className='mobileMenuListChildA'>
+                  <span>Products</span>
+                </a>
                 <ul className='mobileMenuListSub mobileMenuListSubI'>
                   <li>
                     <Link href='/products/funding'>
@@ -58,7 +60,7 @@ export default function NavBar () {
                               muted={true}
                             >
                               <source
-                                src='/videos/home/boxOne.mp4'
+                                src='/images/home/boxOne_white.mp4'
                                 type='video/mp4'
                               />
                               Your browser does not support the video tag.
@@ -92,7 +94,7 @@ export default function NavBar () {
                               muted={true}
                             >
                               <source
-                                src='/videos/home/boxTwo.mp4'
+                                src='/images/home/boxTwo_white.mp4'
                                 type='video/mp4'
                               />
                               Your browser does not support the video tag.
@@ -118,19 +120,11 @@ export default function NavBar () {
                     >
                       <div className='mobileMenuListSubiW d-flex align-items-stretch navClose'>
                         <div className='mobileMenuListSubImg'>
-                          <video
-                            loop={true}
-                            playsInline
+                          <img
+                            src='/images/home/boxFour_white.gif'
+                            alt=''
                             className='image'
-                            autoPlay='autoplay'
-                            muted={true}
-                          >
-                            <source
-                              src='/videos/home/boxFour.mp4'
-                              type='video/mp4'
-                            />
-                            Your browser does not support the video tag.
-                          </video>
+                          />
                         </div>
                         <div className='mobileMenuListSubiC d-flex align-items-center'>
                           <div>
@@ -157,7 +151,7 @@ export default function NavBar () {
                               muted={true}
                             >
                               <source
-                                src='/videos/home/boxThree.mp4'
+                                src='/images/home/boxThree_white.mp4'
                                 type='video/mp4'
                               />
                               Your browser does not support the video tag.
@@ -177,7 +171,9 @@ export default function NavBar () {
               </li>
 
               <li className='mobileMenuListChild'>
-                <a className='mobileMenuListChildA'>Learn</a>
+                <a className='mobileMenuListChildA'>
+                  <span>Learn</span>
+                </a>
                 <ul className='mobileMenuListSub'>
                   {/* <li>
                     <Link href='/archive'>
@@ -192,7 +188,9 @@ export default function NavBar () {
                 </ul>
               </li>
               <li className='mobileMenuListChild'>
-                <a className='mobileMenuListChildA'>About</a>
+                <a className='mobileMenuListChildA'>
+                  <span>About</span>
+                </a>
                 <ul className='mobileMenuListSub'>
                   <li>
                     <Link href='/about-us'>
@@ -219,7 +217,9 @@ export default function NavBar () {
               </li>
               <li className='mobileMenuListS'>
                 <Link href='/help-center'>
-                  <a className='mobileMenuListSA navClose'>Help Center</a>
+                  <a className='mobileMenuListSA navClose'>
+                    <span>Help Center</span>
+                  </a>
                 </Link>
               </li>
             </ul>

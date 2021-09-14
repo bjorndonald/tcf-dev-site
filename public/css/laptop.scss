@@ -185,6 +185,13 @@
 }
 
 @media only screen and (min-width: 765px) and (max-width: 1048px) {
+  .helpCenterSectionFour {
+    .col-10 {
+      -moz-box-flex: 0;
+      flex: 0 0 85%;
+      max-width: 85%;
+    }
+  }
   .sectionTwo {
     height: 120vh;
     .container {
@@ -196,7 +203,7 @@
         flex: auto;
         max-width: 60%;
         width: 60%;
-        margin-top: -30rem;
+        margin-top: -25rem;
       }
 
       .col-md-2 {
@@ -330,6 +337,20 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1445px) {
+  .tokenSectionThree {
+    .row:first-child {
+      margin-top: 5rem;
+    }
+  }
+
+  .helpCenterSectionFour {
+    .col-10 {
+      -moz-box-flex: 0;
+      flex: 0 0 63%;
+      max-width: 63%;
+    }
+  }
+
   .fundingSectionThree {
     .one-time {
       .col-md-2 {
@@ -342,6 +363,16 @@
 
       .pTableSingleListWrap {
         // width: 120%;
+      }
+    }
+    .monthly {
+      .pTableDetailWrap {
+        width: 100%;
+        margin-right: -2rem;
+      }
+
+      .pTableSingleListWrap {
+        width: 110%;
       }
     }
   }
@@ -364,6 +395,29 @@
 }
 
 @media only screen and (min-width: 430px) and (max-width: 768px) {
+  .sectionOne {
+    .HomeHeroVideo {
+      margin-top: 0;
+    }
+  }
+  .helpCenterSectionFour {
+    .container {
+      padding: 0;
+
+      .row {
+        padding: 0;
+      }
+    }
+    .col-10 {
+      -moz-box-flex: 0;
+      flex: 0 0 110% !important;
+      max-width: 110% !important;
+    }
+
+    .col-md-6 {
+      padding: 0;
+    }
+  }
   .sectionTwo {
     padding-top: 10vh;
     .fixedBox {
@@ -379,10 +433,54 @@
     }
   }
 
+  .sectionThree {
+    .card {
+      p {
+        font-size: 1.5rem;
+      }
+    }
+
+    .homeBoxOne video {
+      right: 0.5rem !important;
+      // bottom: -1rem !important;
+    }
+
+    .homeBoxTwo video {
+      right: -1rem !important;
+      bottom: -1rem !important;
+    }
+  }
+
+  .helpCenterSectionFour {
+    .col-10 {
+      -moz-box-flex: 0;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+
   .fundingSectionFour {
     .gaspSlideRight {
       .nav {
         justify-content: center;
+      }
+    }
+  }
+
+  .fundingSectionThree {
+    .monthly {
+      .col-md-3 {
+        -moz-box-flex: 0;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      .pTableDetailWrap {
+        width: 90%;
+        margin-right: -2rem;
+      }
+
+      .pTableSingleListWrap {
+        width: 150%;
       }
     }
   }
@@ -414,5 +512,15 @@
   .tokenSectionFive {
     height: 70vh;
     margin-top: -27.5vh;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .helpCenterSectionFour {
+    .col-10 {
+      -moz-box-flex: 0;
+      flex: 0 0 85%;
+      max-width: 85%;
+    }
   }
 }

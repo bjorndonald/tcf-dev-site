@@ -117,7 +117,7 @@ function MobileSection (props) {
                     height={832.5}
                     alt='Image'
                   /> */}
-                  <img src='/images/home/mobilePhone.jpg' alt='Image' />
+                  <img src='/images/Landing.gif' alt='Image' />
                 </div>
                 <div className='box box2'>
                   {/* <Image
@@ -163,59 +163,14 @@ function MobileSection (props) {
                   <p> A better trading experience</p>
                   <div className='button'>
                     <a
+                      style={{ fontWeight: 'bold' }}
                       href='https://fund.traderscentral.com/sign-up'
                       className='btn btn-white'
+                      target='portal'
                     >
                       Get Started
                     </a>
                   </div>
-                </div>
-
-                <div
-                  style={{ opacity: 0 }}
-                  className='sectionTwoContent sectionTwoContent-2 d-flex flex-column justify-content-center'
-                >
-                  <h2>
-                    <div className='sectionTwoContentLine sectionTwoContentLineOne'>
-                      <div className='sectionTwoContentLineOneInner '>
-                        Socials Function
-                      </div>
-                    </div>
-                    {/* <div className="sectionTwoContentLine sectionTwoContentLineTwo">
-                                    <div className="sectionTwoContentLineTwoInner">Portfolio With Ease</div>
-                                </div>
-                                <div className="sectionTwoContentLine sectionTwoContentLineThree">
-                                    <div className="sectionTwoContentLineThreeInner">Message</div>
-                                </div> */}
-                  </h2>
-                  <p>
-                    Send, Receive, and Redeem TCT whilst sharing your next
-                    trading set-ups with your friends, all the while meeting
-                    other TC traders!
-                  </p>
-                </div>
-
-                <div
-                  style={{ opacity: 0 }}
-                  className='sectionTwoContent sectionTwoContent-3 d-flex flex-column justify-content-center'
-                >
-                  <h2>
-                    <div className='sectionTwoContentLine sectionTwoContentLineOne'>
-                      <div className='sectionTwoContentLineOneInner'>
-                        Endless Customisation
-                      </div>
-                    </div>
-                    {/* <div className="sectionTwoContentLine sectionTwoContentLineTwo">
-                                    <div className="sectionTwoContentLineTwoInner">Portfolio With Ease</div>
-                                </div>
-                                <div className="sectionTwoContentLine sectionTwoContentLineThree">
-                                    <div className="sectionTwoContentLineThreeInner">Setting</div>
-                                </div> */}
-                  </h2>
-                  <p>
-                    Change your username, manage your referrals, and upload your
-                    KYC with ease in the settings area.
-                  </p>
                 </div>
               </div>
             </div>

@@ -240,6 +240,10 @@ select {
   border: none;
 }
 
+.btn-black {
+  font-weight: bold;
+}
+
 .menu-bars {
   width: 1.5625rem;
   height: 1.5625rem;
@@ -359,12 +363,31 @@ select {
 .menu-overlay .mobileMenuList li a {
   color: #000;
   padding: 8px;
+  /* padding-right: 4rem; */
   font-size: 25px;
-  display: block;
+  text-align: left;
+  /* display: flex;
+  justify-content: flex-end; */
+  width: 100%;
+}
+
+.mobileMenuListSA span {
+  margin-right: 35px;
+}
+
+.menu-overlay .mobileMenuList li a span {
+  width: 50%;
+  margin-left: 20%;
+  display: inline-block;
+}
+
+.mobileMenuListSubA {
+  margin-left: 20%;
 }
 
 .menu-overlay .mobileMenuList .mobileMenuListChildA:after {
   float: right;
+  margin-top: 5px;
   margin-left: 10px;
   content: '';
   display: inline-block;
@@ -1173,7 +1196,7 @@ select {
   bottom: -3rem;
   z-index: 2;
   /* transform: scale(0.5); */
-  background-image: url(../images/home/boxFour.jpg);
+  /* background-image: url(../images/home/boxFour.jpg); */
 }
 
 .homeBoxOne .card h3,
@@ -1238,6 +1261,8 @@ select {
   border: #918080 1px solid;
   border-radius: 50px;
   width: 100%;
+  text-align: center;
+  font-weight: bold;
   /* background-color: #e5edfb !important; */
 }
 
@@ -1256,7 +1281,7 @@ select {
 }
 
 .sectionContactUs .fieldWrap .btn {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -1349,6 +1374,7 @@ select {
   padding: 20px 15px;
   border: #000 1px solid;
   border-radius: 50px;
+  font-size: 1.5rem;
   background: #000;
   color: #fff;
   width: 100%;
@@ -1402,6 +1428,11 @@ select {
 
 .footer-bottom {
   border-top: 1px solid #5e5e5e;
+}
+
+.footer-bottom p,
+.footer-bottom a {
+  color: #00000080;
 }
 
 @media (max-width: 960px) {

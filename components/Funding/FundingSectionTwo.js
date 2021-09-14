@@ -29,11 +29,7 @@ export default function FundingSectionTwo () {
           </div>
           <div className='col-12 col-md-6 d-flex align-items-center gaspSlideLeft'>
             <div>
-              <h3>
-                One Time Fee <br />
-                Monthly Subscriptions? <br />
-                Your Pick!
-              </h3>
+              <h3>One Time Fee or Monthly Subscription? Your pick!</h3>
               <ul>
                 <li>
                   Pay once, pass the test and get funded. Keep up to 85% of
@@ -41,7 +37,7 @@ export default function FundingSectionTwo () {
                 </li>
                 <li>
                   Get access to live capital with our recurring subscription,
-                  Keep up to 60% of profits. Trade aytime, hold trades over the
+                  Keep up to 60% of profits. Trade anytime, hold trades over the
                   weekend.
                 </li>
               </ul>

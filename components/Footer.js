@@ -6,7 +6,7 @@ export default function Footer () {
     <div className='site-footer pt-5 bg-white'>
       <div className='container'>
         <div className='row'>
-          <div className='col-12 col-md-6 footer-col-three mb-5'>
+          <div className='col-12 col-md-4 footer-col-three mb-5'>
             <h2>
               Decentralising
               <br />
@@ -28,7 +28,7 @@ export default function Footer () {
             </ul>
           </div> */}
 
-          <div className='col-12 col-md-6 mb-3 footer-col-two'>
+          <div className='col-12 col-md-8 mb-3 footer-col-two'>
             <div className='d-flex justify-content-between'>
               <div className='linkList mb-5'>
                 <p>Products</p>
@@ -83,45 +83,49 @@ export default function Footer () {
                   </li>
                 </ul>
               </div>
+              <div className='linkList mb-5'>
+                <ul>
+                  <li>
+                    <a
+                      href='https://www.instagram.com/traderscentralfund/?utm_source=ig_profile_share&igshid=1h8hs678
+fgu04
+'
+                    >
+                      <i className='fa fa-instagram' aria-hidden='true'></i>{' '}
+                      Instagram
+                    </a>
+                  </li>
+                  <li>
+                    <a href='https://www.facebook.com/TradersCPF/'>
+                      <i className='fa fa-facebook' aria-hidden='true'></i>{' '}
+                      Facebook
+                    </a>
+                  </li>
+                  <li>
+                    <a href='https://twitter.com/TradersCentral'>
+                      <i className='fa fa-twitter' aria-hidden='true'></i>{' '}
+                      Twitter
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href='https://youtube.com/channel/UCXnnh-fnrMW2R_HMWFC_6dA'>
+                      <i className='fa fa-youtube-play' aria-hidden='true'></i>{' '}
+                      Youtube
+                    </a>
+                  </li>
+                  <li>
+                    <a href='https://t.me/Traderscentralchatroom'>
+                      <i className='fa fa-telegram' aria-hidden='true'></i>{' '}
+                      Telegram
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
-          <div className='col-md-6 socials footer-col-four '>
-            <ul>
-              <li>
-                <a
-                  href='https://www.instagram.com/traderscentralfund/?utm_source=ig_profile_share&igshid=1h8hs678
-fgu04
-'
-                >
-                  <i className='fa fa-instagram' aria-hidden='true'></i>{' '}
-                  Instagram
-                </a>
-              </li>
-              <li>
-                <a href='https://www.facebook.com/TradersCPF/'>
-                  <i className='fa fa-facebook' aria-hidden='true'></i> Facebook
-                </a>
-              </li>
-              <li>
-                <a href='https://twitter.com/TradersCentral'>
-                  <i className='fa fa-twitter' aria-hidden='true'></i> Twitter
-                </a>
-              </li>
-
-              <li>
-                <a href='https://youtube.com/channel/UCXnnh-fnrMW2R_HMWFC_6dA'>
-                  <i className='fa fa-youtube-play' aria-hidden='true'></i>{' '}
-                  Youtube
-                </a>
-              </li>
-              <li>
-                <a href='https://t.me/Traderscentralchatroom'>
-                  <i className='fa fa-telegram' aria-hidden='true'></i> Telegram
-                </a>
-              </li>
-            </ul>
-          </div>
+          <div className='col-md-6 socials footer-col-four '></div>
           <div className='col-md-6 d-flex align-items-end justify-content-end'>
             <p>© 2021, Traders Central Inc. All Rights Reserved.</p>
           </div>

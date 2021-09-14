@@ -5,6 +5,7 @@ import $ from 'jquery'
 
 export default function FundingSectionThree () {
   const [cadText, setCadText] = useState('85')
+  const [leverage, setLeverage] = useState('1:6')
   // useEffect(() => {
   //   gsap.timeline({
   //     scrollTrigger: {
@@ -52,6 +53,8 @@ export default function FundingSectionThree () {
       })
   }
 
+  const changeText = () => {}
+
   return (
     <div className='fundingSectionThree py-5 d-flex align-items-center'>
       <div className='container-fluid'>
@@ -93,6 +96,7 @@ export default function FundingSectionThree () {
                         <a
                           onClick={e => {
                             setCadText('85')
+                            setLeverage('1:6')
                             activate(e)
                           }}
                           className='btnCad85 btn btn-outline-dark mx-1'
@@ -108,6 +112,7 @@ export default function FundingSectionThree () {
                           onClick={e => {
                             setCadText('170')
                             activate(e)
+                            setLeverage('1:6')
                           }}
                           className='btnCad170 btn btn-outline-dark mx-1'
                         >
@@ -122,6 +127,7 @@ export default function FundingSectionThree () {
                           onClick={e => {
                             setCadText('345')
                             activate(e)
+                            setLeverage('1:3')
                           }}
                           className='btnCad345 btn btn-outline-dark mx-1'
                         >
@@ -416,7 +422,7 @@ export default function FundingSectionThree () {
                             <li>Five Percent</li>
                             <li>Ten Percent</li>
                             <li>Forex, Gold, Cryptos* and Indices*</li>
-                            <li>1:6</li>
+                            <li>{leverage}</li>
                             <li>up to 60%</li>
                             <li>Overnight and Over the weekend</li>
                           </ul>
@@ -532,50 +538,6 @@ export default function FundingSectionThree () {
                         <div className='pTableDetail '>
                           <h3></h3>
                           <ul>
-                            <li>
-                              Profit Share
-                              <OverlayTrigger
-                                placement={'top'}
-                                overlay={
-                                  <Tooltip>
-                                    Profit share refers to the profit percentage
-                                    paid to the trader
-                                  </Tooltip>
-                                }
-                              >
-                                <span className='pTableiconWrap'>
-                                  <svg
-                                    className='pTableicon pTableiconAtive'
-                                    viewBox='0 0 14 14'
-                                  >
-                                    <g>
-                                      <path
-                                        d='M7,0C3.1,0,0,3.1,0,7s3.1,7,7,7s7-3.1,7-7S10.9,0,7,0z M7,12.7c-3.2,0-5.7-2.6-5.7-5.7c0-3.2,2.6-5.7,5.7-5.7
-                                              s5.7,2.6,5.7,5.7C12.7,10.2,10.2,12.7,7,12.7z'
-                                      ></path>
-                                      <path d='M7,9.8c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8s0.8-0.4,0.8-0.8C7.8,10.1,7.5,9.8,7,9.8z'></path>
-                                      <path
-                                        d='M7,2.5c-1.3,0-2.3,1-2.3,2.3c0,0.4,0.3,0.6,0.6,0.6s0.6-0.3,0.6-0.6c0-0.6,0.5-1.1,1.1-1.1s1.1,0.5,1.1,1.1S7.6,5.9,7,5.9
-                                              c-0.4,0-0.6,0.3-0.6,0.6v1.3c0,0.4,0.3,0.6,0.6,0.6s0.6-0.3,0.6-0.6V7.1c1-0.3,1.7-1.2,1.7-2.2C9.3,3.6,8.3,2.5,7,2.5z'
-                                      ></path>
-                                    </g>
-                                  </svg>
-
-                                  <svg
-                                    className='pTableicon pTableiconNotAtive'
-                                    viewBox='0 0 14 14'
-                                  >
-                                    <path
-                                      d='M7,0C3.1,0,0,3.1,0,7s3.1,7,7,7s7-3.1,7-7S10.9,0,7,0z M7,11.4c-0.4,0-0.8-0.3-0.8-0.8c0-0.4,0.3-0.8,0.8-0.8
-                                          s0.8,0.3,0.8,0.8C7.8,11,7.4,11.4,7,11.4z M7.6,7.1v0.7c0,0.3-0.3,0.6-0.6,0.6S6.4,8.2,6.4,7.8V6.5c0-0.3,0.2-0.6,0.6-0.6
-                                          c0.6,0,1.1-0.5,1.1-1.1c0-0.6-0.5-1.1-1.1-1.1S5.9,4.2,5.9,4.8c0,0.3-0.3,0.6-0.6,0.6S4.7,5.2,4.7,4.8c0-1.3,1-2.3,2.3-2.3
-                                          s2.3,1.1,2.3,2.4C9.3,5.9,8.6,6.8,7.6,7.1z'
-                                    ></path>
-                                  </svg>
-                                </span>
-                              </OverlayTrigger>
-                            </li>
-
                             <li>Leverage</li>
                             <li>
                               Trading Period
@@ -751,6 +713,49 @@ export default function FundingSectionThree () {
                                 </span>
                               </OverlayTrigger>
                             </li>
+                            <li>
+                              Profit Share
+                              <OverlayTrigger
+                                placement={'top'}
+                                overlay={
+                                  <Tooltip>
+                                    Profit share is 85% to the Traders and it’s
+                                    only available on the live funded account
+                                  </Tooltip>
+                                }
+                              >
+                                <span className='pTableiconWrap'>
+                                  <svg
+                                    className='pTableicon pTableiconAtive'
+                                    viewBox='0 0 14 14'
+                                  >
+                                    <g>
+                                      <path
+                                        d='M7,0C3.1,0,0,3.1,0,7s3.1,7,7,7s7-3.1,7-7S10.9,0,7,0z M7,12.7c-3.2,0-5.7-2.6-5.7-5.7c0-3.2,2.6-5.7,5.7-5.7
+                                              s5.7,2.6,5.7,5.7C12.7,10.2,10.2,12.7,7,12.7z'
+                                      ></path>
+                                      <path d='M7,9.8c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8s0.8-0.4,0.8-0.8C7.8,10.1,7.5,9.8,7,9.8z'></path>
+                                      <path
+                                        d='M7,2.5c-1.3,0-2.3,1-2.3,2.3c0,0.4,0.3,0.6,0.6,0.6s0.6-0.3,0.6-0.6c0-0.6,0.5-1.1,1.1-1.1s1.1,0.5,1.1,1.1S7.6,5.9,7,5.9
+                                              c-0.4,0-0.6,0.3-0.6,0.6v1.3c0,0.4,0.3,0.6,0.6,0.6s0.6-0.3,0.6-0.6V7.1c1-0.3,1.7-1.2,1.7-2.2C9.3,3.6,8.3,2.5,7,2.5z'
+                                      ></path>
+                                    </g>
+                                  </svg>
+
+                                  <svg
+                                    className='pTableicon pTableiconNotAtive'
+                                    viewBox='0 0 14 14'
+                                  >
+                                    <path
+                                      d='M7,0C3.1,0,0,3.1,0,7s3.1,7,7,7s7-3.1,7-7S10.9,0,7,0z M7,11.4c-0.4,0-0.8-0.3-0.8-0.8c0-0.4,0.3-0.8,0.8-0.8
+                                          s0.8,0.3,0.8,0.8C7.8,11,7.4,11.4,7,11.4z M7.6,7.1v0.7c0,0.3-0.3,0.6-0.6,0.6S6.4,8.2,6.4,7.8V6.5c0-0.3,0.2-0.6,0.6-0.6
+                                          c0.6,0,1.1-0.5,1.1-1.1c0-0.6-0.5-1.1-1.1-1.1S5.9,4.2,5.9,4.8c0,0.3-0.3,0.6-0.6,0.6S4.7,5.2,4.7,4.8c0-1.3,1-2.3,2.3-2.3
+                                          s2.3,1.1,2.3,2.4C9.3,5.9,8.6,6.8,7.6,7.1z'
+                                    ></path>
+                                  </svg>
+                                </span>
+                              </OverlayTrigger>
+                            </li>
                           </ul>
                         </div>
                       </div>
@@ -810,7 +815,7 @@ export default function FundingSectionThree () {
                           <h3>Stage One</h3>
                           <p>First step of the evaluation</p>
                           <ul>
-                            <li>85%</li>
+                            {/* <li>85%</li> */}
                             <li>1:200</li>
                             <li>Thirty Days </li>
                             <li>Ten Percent</li>
@@ -876,7 +881,7 @@ export default function FundingSectionThree () {
                         <h3>Stage Two</h3>
                         <p>First step of the evaluation</p>
                         <ul>
-                          <li>85%</li>
+                          {/* <li>85%</li> */}
                           <li>1:200</li>
                           <li>Sixty Days</li>
                           <li>Five Percent</li>

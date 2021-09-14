@@ -30,6 +30,9 @@
   background-color: #8c26f3;
   padding: 1.25rem 1.875rem;
   font-size: 1.5rem;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
   border-radius: 3.125rem;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;

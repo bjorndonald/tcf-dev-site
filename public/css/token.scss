@@ -63,10 +63,20 @@
 
 .tokenSectionThree {
   padding-top: 3rem;
-  padding: 10rem 0;
+  padding: 1rem 0;
 
   .row:first-child {
     margin-bottom: 5rem;
+  }
+
+  .col-md-6:first-child {
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  .col-md-6:last-child {
+    padding: 0;
+    justify-content: flex-end;
   }
 
   h2:hover {
