@@ -10,7 +10,7 @@ export default function Footer () {
             <h2>
               Decentralising
               <br />
-              funding for all
+              finance for all
             </h2>
           </div>
           {/* <div className='col-12 col-md-6 footer-col-one'>
