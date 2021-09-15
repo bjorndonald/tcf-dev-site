@@ -145,9 +145,10 @@ select {
 .btn-black {
   background: #000;
   color: #fff !important;
-  border-radius: 30px;
-  font-size: 20px;
-  padding: 8px 40px;
+  /* border-radius: 30px; */
+  border-radius: 3.125rem;
+  padding: 1vh 3vh;
+  font-size: 3vh;
 }
 
 .card-body-Four-line {
@@ -360,6 +361,29 @@ select {
   margin: 10px 0;
 }
 
+.registration-section .registration {
+  padding: 2rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registration-section .registration .btn {
+  margin-bottom: 0.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.registration-section .registration .btn:hover {
+  text-decoration: underline;
+}
+
+.registration-section .registration .link:hover {
+  text-decoration: underline;
+}
+
 .menu-overlay .mobileMenuList li a {
   color: #000;
   padding: 8px;
@@ -482,6 +506,12 @@ select {
 
 .topNavLink .bubble-bg {
   position: relative;
+}
+
+.topNavLinkRight .get-started {
+  border-radius: 5vh;
+  padding: 1vh 3vh;
+  /* font-size: 3vh !important; */
 }
 
 .topNavLink a,
@@ -687,9 +717,15 @@ select {
 .sectionTwo .button .btn {
   background-color: white;
   border-radius: 3.125rem;
-  font-size: 1.2rem;
+  /* border-radius: 5vh; */
+  padding: 1vh 3vh;
+  font-size: 3vh;
   font-weight: bold;
-  padding: 0.375rem 1.25rem;
+  /* padding: 0.375rem 1.25rem; */
+}
+
+.sectionTwo .button .btn:hover {
+  text-decoration: underline;
 }
 
 .sectionTwo p {
@@ -709,16 +745,18 @@ select {
   position: relative;
   width: 100%;
   text-align: center;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   z-index: 1000;
 }
 
 .fixedBox img {
   /* width: 45rem; */
-  margin-left: -10.5rem;
+  /* margin-left: -10.5rem; */
   /* height: 70.3125rem; */
   width: 27.625rem;
-  height: 48.5rem;
+  height: 84.5vh;
 }
 
 .sectionMobile .box {
@@ -759,7 +797,7 @@ select {
 
 .mobImg {
   position: relative;
-  width: 50rem;
+  width: 100%;
   height: 100%;
   border-radius: 1.9vw;
   margin: 0 auto;
@@ -768,12 +806,6 @@ select {
 
 .image-skeleton {
   transform: scale(1.5);
-}
-
-@media (max-width: 767px) {
-  .mobImg {
-    width: 42%;
-  }
 }
 
 .mobImg .box {
@@ -1060,9 +1092,14 @@ select {
 
 .sectionThree .card {
   min-height: 34rem;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  transform: translateZ(0);
   /*max-height: 59rem;*/
   height: calc(5rem + 38vw);
   max-height: 550px;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
 }
 
 .homeBoxOne .card span,
@@ -1191,10 +1228,10 @@ select {
 
 .homeBoxFour .card .image {
   position: absolute;
-  right: -1.5rem;
+  right: 1rem;
   width: 24rem;
   height: 24rem;
-  bottom: -3rem;
+  bottom: -2rem;
   z-index: 2;
   /* transform: scale(0.5); */
   /* background-image: url(../images/home/boxFour.jpg); */
@@ -1242,6 +1279,34 @@ select {
   background-position: left center;
 }
 
+.sectionContactUs input:active:-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #8c26f383;
+}
+.sectionContactUs input:active:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #8c26f383;
+  opacity: 1;
+}
+.sectionContactUs input:active::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #8c26f383;
+  opacity: 1;
+}
+.sectionContactUs input:active:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #8c26f383;
+}
+.sectionContactUs input:active::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #8c26f383;
+}
+
+.sectionContactUs input:active::placeholder {
+  /* Most modern browsers support this now. */
+  color: #8c26f383;
+}
+
 .sectionContactUs h2 {
   font-size: 40px;
   text-align: center;
@@ -1270,7 +1335,7 @@ select {
 .sectionContactUs .fEmail::placeholder,
 .sectionContactUs .fPass::placeholder,
 .sectionContactUs .fCountry::placeholder {
-  color: #000;
+  color: #8c26f383;
 }
 
 .yesCheckBox {
@@ -1300,6 +1365,7 @@ select {
   background-color: #8c26f3;
   color: #fff;
   border-color: #8c26f3;
+  box-shadow: none !important;
 }
 
 .sectionContactUs .fieldWrap input[type='submit'] {
@@ -1317,6 +1383,9 @@ select {
 
 .sectionContactUs .fieldWrap input {
   /* text-align: center; */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .sectionContactUs .fieldWrap select {
@@ -1371,6 +1440,34 @@ select {
   color: #fff;
 }
 
+/* ////////////////////////////// */
+
+.sectionContactUs .fieldWrap input:focus:-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: rgb(87, 20, 153);
+}
+.sectionContactUs .fieldWrap input:focus:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: rgb(87, 20, 153);
+}
+.sectionContactUs .fieldWrap input:focus::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: rgb(87, 20, 153);
+}
+.sectionContactUs .fieldWrap input:focus:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(87, 20, 153);
+}
+.sectionContactUs .fieldWrap input:focus::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(87, 20, 153);
+}
+
+.sectionContactUs .fieldWrap input:focus::placeholder {
+  /* Most modern browsers support this now. */
+  color: rgb(87, 20, 153);
+}
+
 .sectionContactUs .btnSubmit {
   padding: 20px 15px;
   border: #000 1px solid;
@@ -1394,12 +1491,20 @@ select {
 }
 
 /** Footer **/
+.site-footer .linkList:last-child {
+  padding-right: 2rem;
+}
+
 .site-footer a,
 .site-footer a:hover {
   font-size: 1.25rem;
   color: #000;
-  text-decoration: none;
+  /* text-decoration: none; */
   font-weight: 600;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
 }
 
 .site-footer ul {
@@ -1682,7 +1787,7 @@ select {
 }
 
 .monthly .pTableSingleList {
-  padding-top: 5rem;
+  padding-top: 2.5rem;
 }
 
 .monthly .pTableSingleListWrap {

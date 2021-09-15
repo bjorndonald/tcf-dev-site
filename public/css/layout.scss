@@ -2,3 +2,10 @@
   margin-top: auto;
   margin-bottom: auto;
 }
+
+.sectionContactUs {
+  input::placeholder {
+    /* Most modern browsers support this now. */
+    color: #8c26f383;
+  }
+}

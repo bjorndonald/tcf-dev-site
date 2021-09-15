@@ -22,7 +22,9 @@
   height: 70vh;
 
   .btn {
-    font-size: 1.5rem;
+    border-radius: 5vh;
+    padding: 1vh 3vh;
+    font-size: 3vh;
   }
 }
 
@@ -30,7 +32,7 @@
   padding-top: 3rem;
   h1 {
     margin-top: 4vh;
-    font-size: 8vh;
+    font-size: 7.5vh;
     font-weight: bolder;
     margin-bottom: 2vh;
   }
@@ -62,7 +64,7 @@
   margin-top: -5vh;
   h2 {
     // margin-top: -10vh;
-    font-size: 2.5rem;
+    font-size: 3.75rem;
     font-weight: bolder;
   }
 }
@@ -92,7 +94,7 @@
   }
   .btn {
     border-radius: 3.125rem;
-    font-size: 1.5rem;
+    font-size: 3vh;
   }
 
   .btn:hover {

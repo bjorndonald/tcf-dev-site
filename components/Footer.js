@@ -29,7 +29,7 @@ export default function Footer () {
           </div> */}
 
           <div className='col-12 col-md-8 mb-3 footer-col-two'>
-            <div className='d-flex justify-content-between'>
+            <div className='d-flex links-line justify-content-between'>
               <div className='linkList mb-5'>
                 <p>Products</p>
                 <ul>

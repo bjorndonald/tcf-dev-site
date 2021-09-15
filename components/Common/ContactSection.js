@@ -31,6 +31,8 @@ export default function ContactSection () {
           .text()
       )
 
+      $customSelect.append('<div class="arrow-down"></div>')
+
       var $optionlist = $('<ul />', {
         class: 'select-options'
       }).insertAfter($customSelect)

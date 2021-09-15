@@ -222,6 +222,18 @@ export default function NavBar () {
                   </a>
                 </Link>
               </li>
+              <li className='registration-section'>
+                <div className='registration'>
+                  <div className='button'>
+                    <a href='' className='btn btn-black'>
+                      Get Started
+                    </a>
+                  </div>
+                  <a href='' className='link' style={{ textAlign: 'center' }}>
+                    Login
+                  </a>
+                </div>
+              </li>
             </ul>
           </div>
           <button
@@ -439,7 +451,7 @@ export default function NavBar () {
             <a
               href='https://fund.traderscentral.com/sign-up'
               target='_blank'
-              className='btn btn-black px-5'
+              className='btn btn-black get-started'
             >
               Get Started
             </a>

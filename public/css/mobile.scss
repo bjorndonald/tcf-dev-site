@@ -47,7 +47,7 @@
     }
 
     .btn {
-      font-size: 1rem;
+      font-size: 3vh;
     }
 
     p {
@@ -135,7 +135,7 @@
 
     p {
       font-size: 1rem;
-      font-weight: normal;
+      font-weight: bold;
     }
 
     li {
@@ -198,7 +198,7 @@
 
     p {
       font-size: 1rem;
-      font-weight: normal;
+      font-weight: bold;
     }
   }
 
@@ -242,16 +242,22 @@
   }
 
   .tokenSectionOne {
+    height: 50vh;
+    padding-top: 2rem;
     padding-bottom: 0rem;
     h1 {
-      margin-top: 5rem;
-      font-size: 3rem;
+      margin-top: 0rem;
+      font-size: 2.5rem;
       letter-spacing: -0.15rem;
     }
 
     p {
-      font-size: 1.4rem;
+      font-size: 1.25rem;
       margin-bottom: 3vh;
+    }
+
+    .btn {
+      font-size: 3vh;
     }
   }
 
@@ -328,6 +334,10 @@
 
     p {
       font-size: 1.2rem;
+      font-weight: bold;
+      br {
+        display: none;
+      }
     }
 
     .row {
@@ -355,7 +365,7 @@
 
     h1 {
       margin-top: 10vh;
-      font-size: 1.5rem;
+      font-size: 2.75rem;
     }
 
     form {
@@ -389,12 +399,12 @@
         height: 25rem;
 
         h3 {
-          font-size: 2rem;
+          font-size: 1.75rem;
         }
 
         p {
           font-size: 1rem;
-          font-weight: normal;
+          font-weight: bold;
           br {
             display: none;
           }
@@ -655,7 +665,7 @@
       font-size: 1.25rem;
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
-      font-weight: normal;
+      font-weight: bold;
 
       br {
         display: none;
@@ -672,7 +682,15 @@
 
     p {
       font-size: 1rem;
-      font-weight: normal;
+      font-weight: bold;
+      text-align: center;
+
+      br {
+        display: none;
+      }
+    }
+    br {
+      display: none;
     }
   }
 
@@ -689,7 +707,10 @@
     p {
       font-size: 1rem;
       text-align: center;
-      font-weight: normal;
+      font-weight: bold;
+      br {
+        display: none;
+      }
     }
   }
 
@@ -793,7 +814,7 @@
 
     .sectionTitleWrap {
       h2 {
-        font-size: 3.25rem;
+        font-size: 2rem;
       }
     }
   }
@@ -828,13 +849,25 @@
       width: 100%;
       min-width: 100%;
     }
+    .col-9 {
+      -moz-box-flex: 0;
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 0;
+    }
 
     .body {
       justify-content: center;
 
+      img {
+        width: 100%;
+        height: auto;
+      }
+
       .list {
         padding-left: 0;
         display: flex;
+        margin: auto;
         flex-direction: column;
         align-items: center;
       }
@@ -941,7 +974,7 @@
       // margin-left: 2rem;
 
       img {
-        width: 60%;
+        width: auto;
         margin-bottom: 3rem;
         margin-left: 0rem;
         height: 48.3125vh;
@@ -1037,7 +1070,7 @@
     }
 
     .homeBoxFour .card .image {
-      right: -15rem;
+      right: -12rem;
       width: 42rem;
       height: 42rem;
       bottom: -14rem;
@@ -1059,7 +1092,12 @@
     }
     .pTableDetail {
       h3 {
+        margin-top: 0;
+        // margin-bottom: 1.5rem;
         text-align: center;
+      }
+      ul {
+        margin-top: -0.75rem;
       }
       li {
         display: flex;
@@ -1125,7 +1163,7 @@
 
     .monthly .pTableDetail,
     .one-time .pTableDetail {
-      padding-top: calc(4rem + 2px);
+      padding-top: calc(2rem + 2px);
     }
 
     .monthly .pTableDetail li {
@@ -1212,7 +1250,7 @@
             p {
               font-size: 1rem;
               line-height: 1.75rem;
-              font-weight: normal;
+              font-weight: bold;
               text-align: center;
               br {
                 display: none;
@@ -1259,7 +1297,7 @@
     padding-top: 0;
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 3.25rem;
       margin-bottom: 5rem;
     }
 
@@ -1285,6 +1323,10 @@
     padding-top: 1rem;
     margin-top: 5.5vh;
     padding-bottom: 14.5rem;
+
+    h2 {
+      font-size: 2.5rem;
+    }
     .owlEs {
       width: 90vw;
       height: 100vw;
@@ -1330,7 +1372,7 @@
     }
 
     h2 {
-      font-size: 2.75rem;
+      font-size: 2.5rem;
     }
 
     .col-md-5 {
@@ -1360,8 +1402,8 @@
     }
 
     .btn {
-      padding: 0.5rem 1.75rem;
-      font-size: 1.125rem;
+      padding: 1vh 3vh;
+      font-size: 3vh;
     }
   }
 

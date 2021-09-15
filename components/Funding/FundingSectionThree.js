@@ -140,7 +140,10 @@ export default function FundingSectionThree () {
                     <div className='col-12 col-md-3 d-flex align-items-start justify-content-end'>
                       <div className='pTableDetailWrap pTableDetailM w-90'>
                         <div className='pTableDetail '>
-                          <h3>Funding Options</h3>
+                          <h3>
+                            Funding <br />
+                            Options
+                          </h3>
                           <ul>
                             <li>Trading Platform </li>
                             <li>

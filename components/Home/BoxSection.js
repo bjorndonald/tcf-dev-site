@@ -108,10 +108,10 @@ export default function BoxSection () {
           </div>
 
           <div className=' homeBoxFour col-12 col-md-6'>
-            <Link href='products/crypto'>
+            <Link href='/products/crypto'>
               <a className='card'>
                 <div className='background'></div>
-                <video
+                {/* <video
                   loop={true}
                   playsInline
                   className='image'
@@ -120,8 +120,12 @@ export default function BoxSection () {
                 >
                   <source src='/videos/home/boxFour.mp4' type='video/mp4' />
                   Your browser does not support the video tag.
-                </video>
-                {/* <img src='/images/home/boxFour.jpg' className='image' alt='' /> */}
+                </video> */}
+                <img
+                  src='/images/home/boxFour_white.gif'
+                  className='image'
+                  alt=''
+                />
                 <div className='text'>
                   <h1>Crypto</h1>
                   <p>

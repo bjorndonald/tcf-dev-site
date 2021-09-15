@@ -20,6 +20,7 @@ import './../public/css/search.scss'
 import './../public/css/mobile.scss'
 import './../public/css/laptop.scss'
 import './../public/css/layout.scss'
+import './../public/css/landscape.scss'
 
 import { Fragment } from 'react'
 
