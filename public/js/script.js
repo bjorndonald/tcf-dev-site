@@ -33,79 +33,79 @@ jQuery(document).ready(function ($) {
     $('.menu-fullS').scrollTop(0)
   })
 
-  $('.custom-select-box').each(function () {
-    var $this = $(this),
-      selectOptions = $(this).children('option').length
+  // $('.custom-select-box').each(function () {
+  //   var $this = $(this),
+  //     selectOptions = $(this).children('option').length
 
-    $this.addClass('hide-select')
+  //   $this.addClass('hide-select')
 
-    $this.wrap('<div class="select"></div>')
-    $this.after('<div class="custom-select-bx"></div>')
-    $('div.select').append('<div class="arrow-right"></div>')
-    var $customSelect = $this.next('div.custom-select-bx')
-    $customSelect.text(
-      $this
-        .children('option')
-        .eq(0)
-        .text()
-    )
+  //   $this.wrap('<div class="select"></div>')
+  //   $this.after('<div class="custom-select-bx"></div>')
+  //   $('div.select').append('<div class="arrow-right"></div>')
+  //   var $customSelect = $this.next('div.custom-select-bx')
+  //   $customSelect.text(
+  //     $this
+  //       .children('option')
+  //       .eq(0)
+  //       .text()
+  //   )
 
-    var $optionlist = $('<ul />', {
-      class: 'select-options'
-    }).insertAfter($customSelect)
+  //   var $optionlist = $('<ul />', {
+  //     class: 'select-options'
+  //   }).insertAfter($customSelect)
 
-    for (var i = 0; i < selectOptions; i++) {
-      $('<li />', {
-        text: $this
-          .children('option')
-          .eq(i)
-          .text(),
-        rel: $this
-          .children('option')
-          .eq(i)
-          .val()
-      }).appendTo($optionlist)
-    }
+  //   for (var i = 0; i < selectOptions; i++) {
+  //     $('<li />', {
+  //       text: $this
+  //         .children('option')
+  //         .eq(i)
+  //         .text(),
+  //       rel: $this
+  //         .children('option')
+  //         .eq(i)
+  //         .val()
+  //     }).appendTo($optionlist)
+  //   }
 
-    var $optionlistItems = $optionlist.children('li')
+  //   var $optionlistItems = $optionlist.children('li')
 
-    $customSelect.on('click', function (e) {
-      e.stopPropagation()
+  //   $customSelect.on('click', function (e) {
+  //     e.stopPropagation()
 
-      $('div.custom-select-bx.active')
-        .not(this)
-        .each(function () {
-          $(this)
-            .removeClass('active')
-            .next('ul.select-options')
+  //     $('div.custom-select-bx.active')
+  //       .not(this)
+  //       .each(function () {
+  //         $(this)
+  //           .removeClass('active')
+  //           .next('ul.select-options')
 
-            .hide()
-        })
-      $(this)
-        .toggleClass('active')
-        .next('ul.select-options')
+  //           .hide()
+  //       })
+  //     $(this)
+  //       .toggleClass('active')
+  //       .next('ul.select-options')
 
-        .show()
-    })
+  //       .show()
+  //   })
 
-    $optionlistItems.click(function (e) {
-      e.stopPropagation()
-      $(this)
-        .parent()
-        .find('li')
-        .removeClass('active')
-      $(this).addClass('active')
-      $customSelect.text($(this).text()).removeClass('active')
-      $this.val($(this).attr('rel'))
-      console.log($this.val())
-      $optionlist.hide()
-    })
+  //   $optionlistItems.click(function (e) {
+  //     e.stopPropagation()
+  //     $(this)
+  //       .parent()
+  //       .find('li')
+  //       .removeClass('active')
+  //     $(this).addClass('active')
+  //     $customSelect.text($(this).text()).removeClass('active')
+  //     $this.val($(this).attr('rel'))
+  //     console.log($this.val())
+  //     $optionlist.hide()
+  //   })
 
-    $(document).click(function () {
-      $customSelect.removeClass('active')
-      $optionlist.hide()
-    })
-  })
+  //   $(document).click(function () {
+  //     $customSelect.removeClass('active')
+  //     $optionlist.hide()
+  //   })
+  // })
 
   $('.fundingSectionThree .nav-item').on('click', function () {
     console.log('ffff')

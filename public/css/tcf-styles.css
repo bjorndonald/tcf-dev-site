@@ -1109,6 +1109,7 @@ select {
   transform: scale(0.25);
   bottom: -32rem;
   /* background-image: url(../images/home/boxOne.jpg); */
+  /*  */
 }
 
 .homeBoxOne .card,
