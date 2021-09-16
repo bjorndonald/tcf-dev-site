@@ -357,7 +357,10 @@ export default function NavBar () {
 
                   <li>
                     <Link href='/products/liquidity'>
-                      <a className='box-dropdown-item' href='liquidity'>
+                      <a
+                        className='box-dropdown-item'
+                        // href='/products/liquidity'
+                      >
                         <div className='card'>
                           <div className='card-body'>
                             <h2>Liquidity</h2>
