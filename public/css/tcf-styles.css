@@ -341,7 +341,8 @@ select {
   width: 16.199375rem;
   height: 11.884375rem;
   margin-right: 5%;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
   overflow: hidden;
 }
 

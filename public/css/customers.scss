@@ -1,5 +1,6 @@
 .customersSectionOne {
   .container {
+    max-width: 60vw;
     padding-top: 10rem;
     padding-bottom: 5rem;
 
@@ -70,7 +71,7 @@
 
       .slide {
         width: calc((100% - 6vw) / 4);
-        height: calc(((1300px - 30px) - 6vw) / 4);
+        height: calc(((70vw - 30px) - 6vw) / 4);
         background-color: black;
         border-radius: 1.5625rem;
       }
@@ -81,6 +82,7 @@
 .customersSectionTwo {
   padding: 5rem 0;
   .container {
+    max-width: 70vw;
     h2 {
       text-align: center;
       margin: auto;
@@ -102,6 +104,7 @@
 .customersSectionThree {
   padding: 5rem 0;
   .container {
+    max-width: 70vw;
     h2 {
       font-size: 3.75rem;
       margin: auto;
@@ -163,7 +166,7 @@
 
         .slide {
           width: calc((100% - 4vw) / 3);
-          height: calc(1.75 * (((1300px - 30px) - 4vw) / 3));
+          height: calc(1.75 * (((70vw - 30px) - 4vw) / 3));
           background-color: black;
           border-radius: 1.5625rem;
         }
@@ -176,6 +179,7 @@
   padding-top: 5rem;
   padding-bottom: 10rem;
   .container {
+    max-width: 70vw;
     .bubble {
       padding: 2rem 5rem;
       background-color: #8c26f3;

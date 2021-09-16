@@ -51,7 +51,7 @@ export default function NavBar () {
                         className='mobileMenuListSubIA navClose'
                       >
                         <div className='mobileMenuListSubiW d-flex align-items-stretch'>
-                          <div className='mobileMenuListSubImg d-flex justify-content-center align-items-center'>
+                          <div className='mobileMenuListSubImg d-flex justify-content-center'>
                             <video
                               loop={true}
                               playsInline
