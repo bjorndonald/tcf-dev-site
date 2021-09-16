@@ -1366,6 +1366,7 @@ select {
   color: #fff;
   border-color: #8c26f3;
   box-shadow: none !important;
+  outline-color: royalblue;
 }
 
 .sectionContactUs .fieldWrap input[type='submit'] {

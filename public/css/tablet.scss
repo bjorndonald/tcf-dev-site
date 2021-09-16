@@ -1,0 +1,121 @@
+@media only screen and (min-width: 430px) and (max-width: 768px) {
+  .sectionOne {
+    .HomeHeroVideo {
+      margin-top: 0;
+    }
+  }
+  .helpCenterSectionFour {
+    .container {
+      padding: 0;
+
+      .row {
+        padding: 0;
+      }
+    }
+    .col-10 {
+      -moz-box-flex: 0;
+      flex: 0 0 110% !important;
+      max-width: 110% !important;
+    }
+
+    .col-md-6 {
+      padding: 0;
+    }
+  }
+  .sectionTwo {
+    // padding-top: 10vh;
+    .fixedBox {
+      img {
+        width: auto;
+        height: 60vh;
+        margin-left: 0;
+        margin-top: -5vh;
+      }
+    }
+
+    .descriptions {
+      bottom: 2rem !important;
+    }
+  }
+
+  .sectionThree {
+    .card {
+      p {
+        font-size: 1.5rem;
+      }
+    }
+
+    .homeBoxOne video {
+      right: 0.5rem !important;
+      // bottom: -1rem !important;
+    }
+
+    .homeBoxTwo video {
+      right: -1rem !important;
+      bottom: -1rem !important;
+    }
+  }
+
+  .helpCenterSectionFour {
+    .col-10 {
+      -moz-box-flex: 0;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+
+  .fundingSectionFour {
+    .gaspSlideRight {
+      .nav {
+        justify-content: center;
+      }
+    }
+  }
+
+  .fundingSectionThree {
+    .monthly {
+      .col-md-3 {
+        -moz-box-flex: 0;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      .pTableDetailWrap {
+        width: 90%;
+        margin-right: -2rem;
+      }
+
+      .pTableSingleListWrap {
+        width: 150%;
+      }
+    }
+  }
+
+  .tokenSectionOne {
+    padding-bottom: 0;
+    padding-top: 5rem;
+    height: 50vh;
+
+    .row {
+      padding: 0;
+    }
+  }
+
+  .tokenSectionTwo {
+    margin-top: 0;
+    height: 65vh;
+    padding-bottom: 0;
+  }
+
+  .tokenSectionThree {
+    padding: 0;
+
+    .row:first-child {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .tokenSectionFive {
+    height: 70vh;
+    margin-top: -27.5vh;
+  }
+}

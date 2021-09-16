@@ -49,7 +49,7 @@ export default function CryptoSectionFive () {
                 placeholder='Enter Email'
               />
               <a onClick={onSubmit} className='btn btn-moon'>
-                To The Moon
+                <span>To The Moon</span>
                 <i className='fa fa-rocket m-1' aria-hidden='true'></i>
               </a>
             </form>

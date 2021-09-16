@@ -42,6 +42,7 @@
 
     .cryptoTextWrap {
       display: flex;
+      justify-content: space-between;
       width: 50rem;
       height: 4rem;
       border-radius: 3.125rem;
@@ -56,22 +57,29 @@
         border: none;
         outline: none;
         font-size: 1.5rem;
-        width: 35rem;
+        width: 28rem;
       }
       //
 
       .btn {
-        width: 15rem;
-        height: 100%;
+        // width: 15rem;
+        // height: 100%;
         background-color: #0d469f;
         color: white;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.5rem;
-        border-radius: 3.125rem;
+        border-radius: 5vh;
+        padding: 1vh 5vh;
+        font-weight: bold;
+        font-size: 3vh;
+
+        span:hover {
+          text-decoration: underline;
+        }
 
         &:hover {
+          text-decoration: underline;
           background: #10309b none repeat scroll 0 0;
         }
       }
@@ -365,6 +373,7 @@
   .cryptoTextWrap {
     margin-top: 3rem;
     display: flex;
+    justify-content: space-between;
     width: 50rem;
     height: 4rem;
     border-radius: 3.125rem;
@@ -380,22 +389,25 @@
       outline: none;
 
       font-size: 1.5rem;
-      width: 35rem;
+      width: 28rem;
     }
 
     .btn {
-      width: 15rem;
-      height: 100%;
       background-color: #0d469f;
       color: white;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 1.5rem;
-      border-radius: 3.125rem;
+      border-radius: 5vh;
+      padding: 1vh 5vh;
+      font-weight: bold;
+      font-size: 3vh;
 
       &:hover {
         background: #10309b none repeat scroll 0 0;
+      }
+      span:hover {
+        text-decoration: underline;
       }
     }
   }

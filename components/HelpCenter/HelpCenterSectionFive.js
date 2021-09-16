@@ -28,7 +28,7 @@ export default function HelpCenterSectionFive () {
               <p className=''>
                 Meeting over 9{','}000 traders from 175 countries
               </p>
-              <a className=' btn btn-black px-3 py-1' href='#'>
+              <a className=' btn btn-black' href='#'>
                 Accept Invite
               </a>
             </div>
