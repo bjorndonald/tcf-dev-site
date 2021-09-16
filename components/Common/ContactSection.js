@@ -148,7 +148,7 @@ export default function ContactSection () {
   }
 
   return (
-    <div className='sectionContactUs  py-5 d-flex align-items-center heightHv'>
+    <div className='sectionContactUs d-flex align-items-center '>
       <div className='container'>
         <div className='row mt-2'>
           <div className='col-12'>

@@ -2,6 +2,9 @@ import React, { Fragment } from 'react'
 import MetaTag from './../components/MetaTag'
 import Head from 'next/head'
 import CustomersSectionOne from '../components/Customers/CustomersSectionOne'
+import CustomersSectionTwo from '../components/Customers/CustomersSectionTwo'
+import CustomersSectionThree from '../components/Customers/CustomersSectionThree'
+import CustomersSectionFour from '../components/Customers/CustomersSectionFour'
 
 function customers () {
   return (
@@ -31,6 +34,9 @@ function customers () {
         {/* <script src='/js/video.js'></script> */}
       </Head>
       <CustomersSectionOne />
+      <CustomersSectionTwo />
+      <CustomersSectionThree />
+      <CustomersSectionFour />
     </Fragment>
   )
 }

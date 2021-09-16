@@ -1275,6 +1275,9 @@ select {
 /** sectionContactUs **/
 
 .sectionContactUs {
+  /* margin-top: 3rem; */
+  padding: 3rem 0;
+  height: auto;
   background-color: #fff;
   background-position: left center;
 }
