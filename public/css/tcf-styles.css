@@ -1022,6 +1022,13 @@ select {
   background-position: bottom right;
 }
 
+.sectionThree .row .row {
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .sectionThree .card > div:last-child {
   margin-top: -20px;
 }
