@@ -11,7 +11,7 @@ function customers () {
     <Fragment>
       <MetaTag
         title='Our Customers | Traders Central'
-        description={`Sign up for Traders Central to benefit from our suite of financial products that our customers love.`}
+        description={`Sign up for Traders Central to benefit from our suite of financial products that our customers love`}
       />
       <Head>
         <script
@@ -19,6 +19,12 @@ function customers () {
           integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
           crossorigin='anonymous'
         ></script>
+        <script
+          type='text/javascript'
+          src='//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js'
+          async
+        ></script>
+
         <script
           src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'
           integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q'

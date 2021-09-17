@@ -8,7 +8,11 @@ function CustomersSectionFour () {
           <div className='bubble'>
             <p>Join over 60,000 users</p>
             <div className='button'>
-              <a href='' className='btn btn-black'>
+              <a
+                href='https://fund.traderscentral.com/sign-up'
+                className='btn btn-black'
+                target='register'
+              >
                 Free Sign-up
               </a>
             </div>

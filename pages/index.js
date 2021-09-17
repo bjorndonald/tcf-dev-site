@@ -27,8 +27,7 @@ function Home (props) {
   return props.loading ? null : (
     <Fragment>
       <MetaTag
-        description={`Traders Central offers a range of financial products including Funding, Cryptocurrency Exchange, Liquidity and TC Token with a mission to 
-decentralize finance to everyone.`}
+        description={`Traders Central offers a suite of financial products, including Funding, Spot cryptocurrency Exchanging, and Liquidity services with a mission to decentralize finance to everyone.`}
         title='Traders Central | Decentralizing Finance For Everyone'
       />
       <Head>
@@ -37,6 +36,7 @@ decentralize finance to everyone.`}
           integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN'
           crossOrigin='anonymous'
         ></script>
+
         <script
           src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'
           integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q'

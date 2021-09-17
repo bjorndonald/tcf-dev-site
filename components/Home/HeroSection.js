@@ -37,7 +37,7 @@ function HeroSection (props) {
   return (
     <div className='sectionOne d-flex align-items-center'>
       <div className='wrapper '>
-        <div className='row  d-flex align-items-stretch'>
+        <div className='row  d-flex '>
           <div className='col-12 col-md-6  d-flex align-items-center'>
             <div className='hero-heading'>
               <h1 className=''>Designed for everyone</h1>

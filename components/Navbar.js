@@ -197,6 +197,13 @@ export default function NavBar () {
                       <a className='mobileMenuListSubA navClose'>Model</a>
                     </Link>
                   </li>
+                  <li>
+                    <Link href='/customers'>
+                      <a className='mobileMenuListSubA navClose'>
+                        Our Customers
+                      </a>
+                    </Link>
+                  </li>
                   {/* <li><Link href="/station"><a className="mobileMenuListSubA navClose">Station</a></Link></li> */}
                   <li>
                     {/* <Link
@@ -417,12 +424,17 @@ export default function NavBar () {
                   About
                 </a>
                 <ul
-                  className='dropdown-menu white-background'
+                  className='dropdown-menu white-background wider-background'
                   aria-labelledby='navbarDropdownMenuLinkThree'
                 >
                   <li>
                     <Link href='/about-us'>
-                      <a className='dropdown-item'>Model</a>
+                      <a className='dropdown-item navClose'>Model</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='/customers'>
+                      <a className='dropdown-item navClose'>Our Customers</a>
                     </Link>
                   </li>
                   <li>
@@ -434,7 +446,7 @@ export default function NavBar () {
                     <a
                       target='_blog'
                       href='https://bit.ly/2X9xdjC'
-                      className='dropdown-item'
+                      className='dropdown-item navClose'
                     >
                       Blog
                     </a>

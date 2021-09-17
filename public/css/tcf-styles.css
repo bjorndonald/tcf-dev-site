@@ -490,10 +490,19 @@ select {
 
 .white-background {
   background-color: white !important;
-  width: 15rem !important;
+  min-width: 15rem;
+
   border-radius: 3.125rem !important;
   overflow: hidden;
   left: calc((100% - 15rem) / 2) !important;
+}
+
+.wider-background {
+  min-width: 22rem;
+}
+
+.wider-background a {
+  padding: 0.25rem 0.5rem;
 }
 
 .white-background li {

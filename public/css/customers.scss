@@ -1,3 +1,8 @@
+.lb-canvas {
+  img {
+    width: auto;
+  }
+}
 .customersSectionOne {
   .container {
     max-width: 60vw;
@@ -20,13 +25,13 @@
       justify-content: center;
     }
 
-    .placeholder-div {
+    iframe {
       width: 100%;
-      i {
-        font-size: 12rem;
-        color: #8c26f3;
-      }
-      height: 80vh;
+
+      height: 70vh;
+    }
+
+    .placeholder-div {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -39,6 +44,8 @@
   .video-slider {
     margin-top: 2rem;
     position: relative;
+    height: auto;
+    // overflow: hidden;
     .next-button,
     .prev-button {
       position: absolute;
@@ -62,18 +69,52 @@
     }
 
     .slider {
-      overflow: hidden;
       display: flex;
-
-      justify-content: space-between;
+      overflow: hidden;
+      // display: grid;
+      // grid-template-columns:
+      //   calc((100% - 6vw) / 4) calc((100% - 6vw) / 4) calc((100% - 6vw) / 4)
+      //   calc((100% - 6vw) / 4);
+      // grid-gap: 2vw;
+      // height: calc(((70vw - 30px) - 6vw) / 4);
+      // justify-content: space-between;
+      height: auto;
 
       width: 100%;
+      // margin-left: -2vw;
+
+      img {
+        margin-right: 2vw;
+        width: 100%;
+        min-width: calc((100% - 6vw) / 4);
+        height: auto;
+        border: 1px solid #555;
+
+        border-radius: 1.5625rem;
+      }
 
       .slide {
+        margin-right: 2vw;
         width: calc((100% - 6vw) / 4);
-        height: calc(((70vw - 30px) - 6vw) / 4);
-        background-color: black;
+        min-width: calc((100% - 6vw) / 4);
+        // height: calc(((70vw - 30px) - 6vw) / 4);
+
         border-radius: 1.5625rem;
+        position: relative;
+
+        i {
+          position: absolute;
+
+          font-size: 4rem;
+          color: #8c26f3;
+
+          top: calc((100% - 4rem) / 2);
+          left: calc((100% - 4rem) / 2);
+        }
+      }
+
+      .slide.active {
+        background-color: red;
       }
     }
   }
@@ -81,6 +122,7 @@
 
 .customersSectionTwo {
   padding: 5rem 0;
+  height: auto;
   .container {
     max-width: 70vw;
     h2 {
@@ -88,6 +130,23 @@
       margin: auto;
       font-size: 3.75rem;
       margin-bottom: 3rem;
+    }
+
+    .tp-widget-loader {
+      // height: 100%;
+    }
+
+    .row:last-child {
+      // height: 80vh;
+    }
+
+    .trustpilot-widget {
+      width: 100%;
+      // height: 100%;
+
+      iframe {
+        // height: 100% !important;
+      }
     }
 
     .placeholder-div {
@@ -131,7 +190,7 @@
       }
     }
 
-    .video-slider {
+    .withdrawals-slider {
       margin-top: 2rem;
       position: relative;
       .next-button,
@@ -163,12 +222,22 @@
         justify-content: space-between;
 
         width: 100%;
+        // max-height: ;
 
         .slide {
-          width: calc((100% - 4vw) / 3);
+          width: calc((100% - 2vw) / 3);
+          min-width: calc((100%-2vw) / 3);
           height: calc(1.75 * (((70vw - 30px) - 4vw) / 3));
-          background-color: black;
+          // background-color: black;
           border-radius: 1.5625rem;
+          margin-right: 2vw;
+          cursor: zoom-in;
+          overflow: hidden;
+
+          img {
+            height: 100%;
+            width: auto;
+          }
         }
       }
     }

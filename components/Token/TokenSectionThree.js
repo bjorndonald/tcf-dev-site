@@ -55,7 +55,7 @@ export default function TokenSectionThree () {
           style={{ margin: 'auto' }}
           className='row  col-10  d-flex align-items-center justify-content-between'
         >
-          <div className='col-10 col-md-6 mb-4 gaspSlideRight'>
+          <div className='col-md-6 mb-4 gaspSlideRight'>
             <div className='tradingBasicI'>
               {/* <Image
                 src='/images/comp_4.gif'

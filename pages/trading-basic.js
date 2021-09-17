@@ -16,7 +16,7 @@ export default function tradingBasic () {
     <Fragment>
       <MetaTag
         title='Trading Basics - Learn The Fundamentals of Trading | Traders Central'
-        description={`Learn the Fundamentals of Forex, Crypto & Stock Trading and discover 
+        description={`Learn the Fundamentals of Forex, Crypto &amp; Stock Trading and discover 
 the trader in you by unleashing your true potential.`}
       />
       <Head>

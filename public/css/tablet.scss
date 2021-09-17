@@ -8,7 +8,40 @@
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 770px) {
+@media only screen and (min-width: 768px) and (max-width: 770px) {
+  .helpCenterSectionThree {
+    .article {
+      justify-content: space-between;
+
+      .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+  }
+
+  .helpCenterSectionFour {
+    .col-9 {
+      flex: 0 0 100%;
+      max-width: 100%;
+
+      img {
+        width: auto;
+      }
+    }
+
+    .article-images {
+      margin-left: 4rem;
+      margin-right: 1rem;
+    }
+
+    .list {
+      // margin-right: 0 !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
   .container {
     max-width: 95vw;
   }
@@ -22,10 +55,12 @@
     }
 
     .row {
-      height: 100%;
+      height: calc(100% + 5vh);
+      // flex-direction: column;
       justify-content: space-between;
     }
     .col-md-6:first-child {
+      height: 35vh;
       justify-content: center;
     }
     .col-md-6 {
@@ -33,19 +68,21 @@
       max-width: 100%;
     }
     .col-md-6:last-child {
-      height: 90vw;
+      height: 60vh;
     }
     .HomeHeroVideo {
       margin: 0;
 
       width: 100%;
       height: 100%;
+      display: flex;
+      align-items: flex-end;
 
       img {
-        margin-top: 1%;
+        // margin-top: -6rem;
         width: 135%;
         margin-left: -5%;
-        height: 100%;
+        height: auto;
       }
     }
 
@@ -150,7 +187,7 @@
     }
     .row {
       .row {
-        margin-left: 1rem;
+        margin-left: 0rem;
         margin-right: 0;
         justify-content: space-between;
 
@@ -413,6 +450,240 @@
       }
     }
   }
+
+  .liquiditySectionOne,
+  .liquiditySectionTwo,
+  .liquiditySectionThree,
+  .liquiditySectionFour,
+  .liquiditySectionFive {
+    height: auto;
+
+    h2 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .tradingBasicHP {
+      width: 100%;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .tradingBasicSectionThree {
+    h2 {
+      // font-size: 3.25rem;
+    }
+    .header-section {
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+    }
+    .basic-content {
+      flex-direction: column;
+      width: 100%;
+
+      .smallCard {
+        width: 100%;
+        overflow: hidden;
+        flex-direction: column;
+
+        .image {
+          // padding-left: 1rem;
+          width: 100%;
+          margin-bottom: 3rem;
+          height: auto;
+          min-width: 100%;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .col-md-6 {
+          width: 100%;
+
+          .card-body-four-line {
+            padding-left: 0;
+
+            h5 {
+              // font-size: 1.25rem;
+              margin-bottom: 0.5rem;
+              text-align: center;
+            }
+
+            p {
+              // font-size: 1rem;
+              // line-height: 1.75rem;
+              font-weight: bold;
+              text-align: center;
+              br {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .tradingBasicSectionFour {
+    height: auto;
+    margin-top: -3rem;
+  }
+
+  //ABOUT US
+  .aboutUsSectionOne {
+    .container {
+      .aboutUsSectionOneImg {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .aboutUsSectionEs {
+    height: auto;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+
+  .aboutUsSectionThree {
+    height: auto;
+
+    .col-md-5 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+  .aboutUsSectionJotc {
+    height: auto;
+  }
+
+  .helpCenterSectionOne {
+    height: auto;
+
+    .col-md-5 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    .col-8 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .helpCenterSearchBox {
+      width: 80vw;
+    }
+  }
+
+  .helpCenterSectionTwo {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+
+      .eyntkBox {
+        padding: 1.5rem 0.5rem 1rem 1rem;
+        width: 18.5rem;
+        height: 18.5rem;
+      }
+
+      .eyntkBoxFour {
+        .image {
+          width: 10.5rem;
+          height: 10.5rem;
+        }
+      }
+
+      .col-12 {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+    .col-md-5 {
+      flex: 0 0 50%;
+      max-width: 50%;
+
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+
+  .helpCenterSectionThree {
+    .image {
+      margin: auto;
+      width: auto !important;
+      min-width: auto !important;
+      display: flex;
+      justify-content: center;
+
+      img {
+        height: 100% !important;
+        width: 120% !important;
+      }
+    }
+
+    .right {
+      margin-top: 1rem;
+
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  .helpCenterSectionFour {
+    .article-images {
+      display: flex;
+      justify-content: center;
+    }
+
+    .list {
+      margin: auto;
+
+      h3,
+      h4 {
+        text-align: center;
+      }
+    }
+  }
+
+  .helpCenterSectionFive {
+    h2 {
+      text-align: center;
+    }
+  }
+
+  .articlesSectionTwo {
+    .collection-header {
+      .col-md-2 {
+        flex: 0 0 25%;
+        max-width: 25%;
+      }
+      .col-md-10 {
+        flex: 0 0 75%;
+        max-width: 75%;
+      }
+    }
+  }
 }
 
 // Landscape
@@ -432,9 +703,9 @@
     height: 120vh;
     .container {
       .images {
-        margin-top: -14rem;
+        // margin-top: -14rem;
         img {
-          height: 70vh;
+          height: auto;
         }
       }
       .descriptions {
@@ -453,12 +724,45 @@
 
   .sectionThree {
     .container {
+      .col-md-6 {
+        min-height: calc(((100vw * 0.95) - 60px) / 2);
+        height: calc(((100vw * 0.95) - 60px) / 2);
+        max-height: calc(((100vw * 0.95) - 60px) / 2);
+        margin-bottom: 1.75rem;
+
+        .card {
+          min-height: 100%;
+          height: 100%;
+        }
+      }
+
+      .homeBoxOne {
+        .image {
+          right: -8.5rem;
+          width: 33rem;
+
+          height: 42rem;
+
+          bottom: -16rem;
+        }
+      }
+
       .homeBoxTwo {
         .image {
           width: 16rem;
           height: 16rem;
           right: -1.5rem;
           bottom: -1.5rem;
+        }
+      }
+
+      .homeBoxThree {
+        .image {
+          width: 12rem;
+          height: 12rem;
+          border-radius: 1.5625rem;
+          right: 1rem;
+          bottom: 1rem;
         }
       }
 
@@ -477,6 +781,112 @@
     .col-md-6 {
       flex: 0 0 75%;
       max-width: 75%;
+    }
+  }
+
+  .fundingSectionThree {
+    .monthly {
+      margin-left: -17.5%;
+    }
+    .col-md-3 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+  .fundingSectionFour {
+    .col-8 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+
+  .tokenSectionThree {
+    .col-10 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+
+  .cryptoSectionOne,
+  .cryptoSectionFive {
+    .cryptoTextWrap {
+      width: 80vw !important;
+      input {
+        width: 40% !important;
+        font-size: 3vh;
+      }
+    }
+  }
+
+  .cryptoSectionTwo {
+    height: auto;
+    .row {
+      flex-wrap: wrap;
+    }
+    .card {
+      margin: 2vw 0.5vw;
+      flex: auto;
+      max-width: 42.5vw;
+      padding: 2rem 1rem;
+      width: 45vw;
+    }
+  }
+
+  .cryptoSectionThree {
+    height: auto;
+    .row {
+      flex-wrap: wrap;
+    }
+    .col-md-3 {
+      margin: 2vw 0.5vw;
+      flex: auto;
+      max-width: 40vw;
+      padding: 2rem 1rem;
+      width: 40vw;
+    }
+  }
+
+  .cryptoSectionFour {
+    height: auto;
+    .steps {
+      .row {
+        flex-wrap: wrap;
+      }
+      .card {
+        margin: 2vw 0.5vw;
+        flex: auto !important;
+        max-width: 42.5vw !important;
+        padding: 2rem 1rem;
+        width: 42.5vw !important;
+      }
+    }
+
+    .fees-section {
+      .row {
+        flex-wrap: wrap;
+      }
+      .fee {
+        margin: 0.5rem;
+        flex: auto;
+        max-width: 40vw;
+        padding: 2rem 1rem;
+        width: 40vw;
+      }
+
+      .card {
+        border-radius: 1.5625rem !important;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 510px) {
+  .sectionOne {
+    .HomeHeroVideo {
+      img {
+        // margin-top: 15vw;
+      }
     }
   }
 }
