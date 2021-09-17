@@ -1,3 +1,13 @@
+@media only screen and (min-width: 634px) and (max-width: 666px) {
+  .sectionOne {
+    .HomeHeroVideo {
+      img {
+        margin-top: 5%;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 480px) and (max-width: 770px) {
   .container {
     max-width: 95vw;

@@ -6,7 +6,7 @@ export default function BoxSection () {
     <div className='sectionThree py-5'>
       <div className='container'>
         <div className='row'>
-          <div className='row'>
+          <div className='row col-12'>
             <div className='col-12 col-md-6 sectionThreeHeader'>
               <div className='internal'>
                 <h2>
