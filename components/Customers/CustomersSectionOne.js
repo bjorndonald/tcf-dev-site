@@ -4,7 +4,7 @@ import $ from 'jquery'
 import { placeholder_images, videos } from './videos'
 
 function CustomersSectionOne () {
-  const [index, setIndex] = useState(8)
+  const [index, setIndex] = useState(0)
   const prev = () => {
     var leftPos = $('.video-slider .slider').scrollLeft()
     console.log(leftPos)

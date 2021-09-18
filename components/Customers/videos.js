@@ -1,4 +1,4 @@
-export const videos = [
+const temp_videos = [
   <iframe
     width='1280'
     height='720'
@@ -82,7 +82,7 @@ export const videos = [
   ></iframe>
 ]
 
-export const placeholder_images = [
+const images = [
   {
     image: <img src='/images/customers/one.webp' alt='' />
   },
@@ -113,3 +113,14 @@ export const placeholder_images = [
     image: <img src='/images/customers/five.webp' alt='' />
   }
 ]
+
+function reverseArr (input) {
+  var ret = new Array()
+  for (var i = input.length - 1; i >= 0; i--) {
+    ret.push(input[i])
+  }
+  return ret
+}
+
+export const videos = reverseArr(temp_videos)
+export const placeholder_images = reverseArr(images)

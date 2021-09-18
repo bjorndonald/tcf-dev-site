@@ -54,34 +54,30 @@ function CustomersSectionThree () {
     },
     {
       image: <img src='/images/withdrawals/7.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/7.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/8.png' />,
       url: <Lightbox onClose={fullScreen} image='/images/withdrawals/8.png' />
     },
     {
-      image: <img src='/images/withdrawals/9.png' />,
+      image: <img src='/images/withdrawals/8.png' />,
       url: <Lightbox onClose={fullScreen} image='/images/withdrawals/9.png' />
     },
     {
-      image: <img src='/images/withdrawals/10.png' />,
+      image: <img src='/images/withdrawals/9.png' />,
       url: <Lightbox onClose={fullScreen} image='/images/withdrawals/10.png' />
     },
     {
-      image: <img src='/images/withdrawals/11.png' />,
+      image: <img src='/images/withdrawals/10.png' />,
       url: <Lightbox onClose={fullScreen} image='/images/withdrawals/11.png' />
     },
     {
-      image: <img src='/images/withdrawals/12.png' />,
+      image: <img src='/images/withdrawals/11.png' />,
       url: <Lightbox onClose={fullScreen} image='/images/withdrawals/12.png' />
     },
     {
-      image: <img src='/images/withdrawals/13.png' />,
+      image: <img src='/images/withdrawals/12.png' />,
       url: <Lightbox onClose={fullScreen} image='/images/withdrawals/13.png' />
     },
     {
-      image: <img src='/images/withdrawals/14.png' />,
+      image: <img src='/images/withdrawals/13.png' />,
       url: <Lightbox onClose={fullScreen} image='/images/withdrawals/14.png' />
     }
   ]
@@ -98,6 +94,7 @@ function CustomersSectionThree () {
       200
     )
   }
+  //
   return (
     <Fragment>
       {show ? withdrawals[index].url : null}
