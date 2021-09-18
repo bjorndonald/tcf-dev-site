@@ -1909,8 +1909,14 @@ select {
   fill: #fff;
 }
 
+.monthly .pTableDetailWrap ul {
+  margin-top: 22px;
+}
+
 .pTableDetailWrap h3 {
   margin: 32px 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .pTableiconWrap {

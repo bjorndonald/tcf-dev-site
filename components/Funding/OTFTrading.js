@@ -263,31 +263,7 @@ function OTFTrading () {
           </Card.Body>
         </Accordion.Collapse>
       </Card>
-      {/* //////////////////////////// */}
-      <Card>
-        <Card.Header>
-          <Accordion.Toggle
-            as={props => (
-              <div onClick={toggle}>
-                <Button {...props} />
-              </div>
-            )}
-            variant='link'
-            eventKey='7'
-          >
-            <p>Account Leverage Type and Platform</p>
-            <span>+</span>
-            <span style={{ display: 'none' }}>-</span>
-          </Accordion.Toggle>
-        </Card.Header>
 
-        <Accordion.Collapse eventKey='7'>
-          <Card.Body>
-            Raw spreads account with leverage of <b>1:200</b> on
-            industry-standard MT5. MT4 can be provided upon request
-          </Card.Body>
-        </Accordion.Collapse>
-      </Card>
       {/* //////////////////////////// */}
       <Card>
         <Card.Header>

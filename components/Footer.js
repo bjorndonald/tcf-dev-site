@@ -71,11 +71,11 @@ export default function Footer () {
                 </ul>
               </div>
               <div className='linkList mb-5'>
-                <p>Who We Are</p>
+                <p>About Us</p>
                 <ul>
                   <li>
                     <Link href='/about-us'>
-                      <a>About</a>
+                      <a>Model</a>
                     </Link>
                   </li>
                   <li>
