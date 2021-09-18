@@ -13,7 +13,7 @@ function CustomersSectionFour () {
                 className='btn btn-black'
                 target='register'
               >
-                Free Sign-up
+                Sign up for free
               </a>
             </div>
           </div>

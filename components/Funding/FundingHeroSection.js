@@ -47,6 +47,12 @@ function FundingHeroSection (props) {
                 // height={1626}
               />
               <h1>Funding in 24 hours</h1>
+              <a
+                href='https://fund.traderscentral.com/sign-up'
+                className='btn btn-black'
+              >
+                Free Trial
+              </a>
             </div>
           </div>
         </div>

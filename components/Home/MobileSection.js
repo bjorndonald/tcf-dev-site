@@ -168,7 +168,7 @@ function MobileSection (props) {
                       className='btn btn-white'
                       target='portal'
                     >
-                      Get Started
+                      Free Trial
                     </a>
                   </div>
                 </div>
