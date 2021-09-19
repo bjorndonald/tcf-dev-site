@@ -217,20 +217,27 @@
 
       .slider {
         overflow: hidden;
-        display: flex;
-
-        justify-content: space-between;
-
+        display: grid;
+        grid-template-columns:
+          calc((100% - 4vw) / 3) calc((100% - 4vw) / 3)
+          calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3)
+          calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3)
+          calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3)
+          calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3);
+        // justify-content: space-between;
+        grid-gap: 2vw;
         width: 100%;
         // max-height: ;
 
         .slide {
-          width: calc((100% - 2vw) / 3);
-          min-width: calc((100%-2vw) / 3);
+          width: 100%;
+          // width: calc((100% - 2vw) / 9);
+          // min-width: calc((100% - 2vw) / 3);
           height: calc(1.75 * (((70vw - 30px) - 4vw) / 3));
           // background-color: black;
           border-radius: 1.5625rem;
           margin-right: 2vw;
+          // display: flex;
           cursor: zoom-in;
           overflow: hidden;
 

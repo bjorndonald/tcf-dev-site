@@ -1560,9 +1560,19 @@
       }
       max-width: 90vw;
 
+      .slider {
+        grid-template-columns:
+          calc((100% - 2vw) / 2) calc((100% - 2vw) / 2)
+          calc((100% - 2vw) / 2) calc((100% - 2vw) / 2) calc((100% - 2vw) / 2)
+          calc((100% - 2vw) / 2) calc((100% - 2vw) / 2) calc((100% - 2vw) / 2)
+          calc((100% - 2vw) / 2) calc((100% - 2vw) / 2) calc((100% - 2vw) / 2)
+          calc((100% - 2vw) / 2) calc((100% - 2vw) / 2) calc((100% - 2vw) / 2) !important;
+      }
+
       .slide {
-        width: calc((100% - 2vw) / 2) !important ;
-        min-width: calc((100% - 2vw) / 2) !important;
+        width: 100%;
+        // width: calc((100% - 2vw) / 2) !important ;
+        // min-width: calc((100% - 2vw) / 2) !important;
         border-radius: 0.78125rem !important;
         height: calc(1.75 * (((70vh - 30px) - 4vw) / 3)) !important;
 
