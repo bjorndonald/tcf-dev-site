@@ -8,10 +8,16 @@
     }
 
     .btn {
+      background-color: white;
       margin-top: 2rem;
+      font-weight: bold;
       border-radius: 5vh;
       padding: 1vh 5vh;
       font-size: 3vh;
+    }
+
+    .btn:hover {
+      text-decoration: underline;
     }
   }
 

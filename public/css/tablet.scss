@@ -42,6 +42,15 @@
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
+  .aboutUsSectionThree {
+    .col-md-5 {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
   .container {
     max-width: 95vw;
   }
@@ -487,15 +496,19 @@
     }
     .header-section {
       margin-top: 2rem;
+      height: auto;
       margin-bottom: 3rem;
     }
     .basic-content {
+      margin-top: 30%;
       flex-direction: column;
       width: 100%;
+      height: auto;
 
       .smallCard {
         width: 100%;
-        overflow: hidden;
+        height: auto;
+        // overflow: hidden;
         flex-direction: column;
 
         .image {
@@ -511,7 +524,8 @@
         }
 
         .col-md-6 {
-          width: 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
 
           .card-body-four-line {
             padding-left: 0;
@@ -539,7 +553,7 @@
 
   .tradingBasicSectionFour {
     height: auto;
-    margin-top: -3rem;
+    margin-top: -20rem;
   }
 
   //ABOUT US
@@ -558,12 +572,50 @@
     height: auto;
     padding-top: 1vh;
     padding-bottom: 1vh;
+
+    .owlEs {
+      width: 100vw;
+      height: 100vw;
+    }
+
+    .col-md-6 {
+      -moz-box-flex: 0;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .aboutSliderC {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h3 {
+        font-size: 7.5vw;
+      }
+      p {
+        font-size: 2vw;
+      }
+      .aboutSlider {
+        width: 50%;
+        p {
+          text-align: center;
+        }
+      }
+    }
+
+    .owl-dots .owl-dot:nth-child(1) {
+      left: calc((100% - 70px) / 2);
+    }
+
+    .item {
+      padding: 22.5vw 0;
+    }
   }
 
   .aboutUsSectionThree {
     height: auto;
 
     .col-md-5 {
+      padding: 0.5rem !important;
       flex: 0 0 50%;
       max-width: 50%;
     }
@@ -571,6 +623,11 @@
 
   .aboutUsSectionJotc {
     height: auto;
+
+    h2,
+    p {
+      text-align: center;
+    }
   }
 
   .helpCenterSectionOne {
@@ -683,6 +740,63 @@
         max-width: 75%;
       }
     }
+  }
+
+  .customersSectionOne,
+  .customersSectionTwo,
+  .customersSectionThree,
+  .customersSectionFour {
+    .container {
+      max-width: 90vw;
+    }
+  }
+
+  .customersSectionOne {
+    .container {
+      iframe {
+        height: 50vh;
+      }
+      .prev-button,
+      .next-button {
+        top: calc((100% - 3rem) / 2);
+        z-index: 5;
+        i {
+          font-size: 3rem;
+        }
+      }
+
+      .prev-button {
+        left: -1.5rem;
+      }
+
+      .next-button {
+        right: -1.5rem;
+      }
+    }
+  }
+
+  .customersSectionThree {
+    .container {
+      .prev-button,
+      .next-button {
+        z-index: 5;
+        i {
+          font-size: 6rem;
+        }
+      }
+
+      .prev-button {
+        left: -1.5rem !important;
+      }
+
+      .next-button {
+        right: -1.5rem !important;
+      }
+    }
+  }
+
+  .tradingBasicSectionThree {
+    height: auto;
   }
 }
 
@@ -887,6 +1001,15 @@
       img {
         // margin-top: 15vw;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .aboutUsSectionThree {
+    .col-md-5 {
+      max-width: 100%;
+      flex: 0 0 100%;
     }
   }
 }
