@@ -79,6 +79,11 @@ export default function Footer () {
                     </Link>
                   </li>
                   <li>
+                    <Link href='/customers'>
+                      <a>Our Customers</a>
+                    </Link>
+                  </li>
+                  <li>
                     <a href='https://bit.ly/2X9xdjC'>Blog</a>
                   </li>
                 </ul>
