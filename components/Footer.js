@@ -64,7 +64,7 @@ export default function Footer () {
                     </Link>
                   </li> */}
                   <li>
-                    <Link href='/trading-basic'>
+                    <Link href='/trading-basics'>
                       <a>Basics</a>
                     </Link>
                   </li>

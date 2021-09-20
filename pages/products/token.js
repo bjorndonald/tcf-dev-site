@@ -29,8 +29,8 @@ function token (props) {
   return props.loading ? null : (
     <Fragment>
       <MetaTag
-        description={`"Traders Central Token (TCT) is the virtual currency used within the TC Ecosystem. 
-Claim your TCTs daily and redeem for discounts or share with your friends."`}
+        description={`Traders Central Token (TCT) is the virtual currency used within the TC Ecosystem. 
+Claim your TCTs daily and redeem for discounts or share with your friends.`}
         title='Traders Central Token | Traders Central'
       />
       {/* <TokenSectionOne tl={hc_tl} />
