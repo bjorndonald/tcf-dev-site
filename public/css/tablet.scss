@@ -727,6 +727,9 @@
     h2 {
       text-align: center;
     }
+    p {
+      text-align: center;
+    }
   }
 
   .articlesSectionTwo {
@@ -898,6 +901,16 @@
     }
   }
 
+  .tradingBasicSectionThree {
+    .card-body-four-line {
+      padding-left: 0rem !important;
+    }
+
+    .col-md-6 {
+      padding-left: 0.5rem;
+    }
+  }
+
   .fundingSectionThree {
     .monthly {
       margin-left: -17.5%;
@@ -991,6 +1004,203 @@
       .card {
         border-radius: 1.5625rem !important;
       }
+    }
+  }
+
+  .aboutUsSectionOne {
+    height: auto;
+  }
+
+  .aboutUsSectionEs {
+    height: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    .owlEs {
+      // width: 70vw;
+      // height: 70vw;
+      flex: auto;
+      max-width: 75vw;
+
+      .owl-stage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .aboutUsSectionThree {
+    height: auto;
+  }
+
+  .customersSectionOne,
+  .customersSectionTwo,
+  .customersSectionThree,
+  .customersSectionFour {
+    .container {
+      max-width: 90vw;
+    }
+  }
+
+  .customersSectionOne {
+    .container {
+      iframe {
+        height: 70vh;
+      }
+      .prev-button,
+      .next-button {
+        top: calc((100% - 3rem) / 2);
+        z-index: 5;
+        i {
+          font-size: 3rem;
+        }
+      }
+
+      .prev-button {
+        left: -1.5rem;
+      }
+
+      .next-button {
+        right: -1.5rem;
+      }
+    }
+  }
+
+  .customersSectionThree {
+    .container {
+      .prev-button,
+      .next-button {
+        z-index: 5;
+        i {
+          font-size: 6rem;
+        }
+      }
+
+      .prev-button {
+        left: -1.5rem !important;
+      }
+
+      .next-button {
+        right: -1.5rem !important;
+      }
+    }
+  }
+
+  .helpCenterSectionOne {
+    height: auto;
+
+    .col-md-5 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    .col-8 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .helpCenterSearchBox {
+      width: 80vw;
+    }
+  }
+
+  .helpCenterSectionTwo {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+
+      .eyntkBox {
+        padding: 1.5rem 0.5rem 1rem 1rem;
+        width: 18.5rem;
+        height: 18.5rem;
+
+        p {
+          br {
+            display: none;
+          }
+        }
+      }
+
+      .eyntkBoxFour {
+        .image {
+          width: 10.5rem;
+          height: 10.5rem;
+        }
+      }
+
+      .col-12 {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+    .col-md-5 {
+      flex: 0 0 50%;
+      max-width: 50%;
+
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+
+  .helpCenterSectionThree {
+    .image {
+      margin: auto;
+      width: auto !important;
+      min-width: auto !important;
+      display: flex;
+      justify-content: center;
+
+      img {
+        height: 100% !important;
+        width: 120% !important;
+      }
+    }
+
+    .right {
+      margin-top: 1rem;
+      padding-left: 2rem !important;
+      flex: 0 0 50%;
+      max-width: 50%;
+
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  .helpCenterSectionFour {
+    .article-images {
+      display: flex;
+      justify-content: center;
+    }
+
+    .col-9 {
+      flex: 0 0 95%;
+      max-width: 95%;
+    }
+
+    .list {
+      margin: auto;
+      margin-right: 0;
+
+      h3,
+      h4 {
+        text-align: center;
+      }
+    }
+  }
+
+  .helpCenterSectionFive {
+    h2 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
     }
   }
 }

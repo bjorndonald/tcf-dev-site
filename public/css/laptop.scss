@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
   // CRYPTO PAGE
   .cryptoSectionOne,
   .cryptoSectionFive {
@@ -98,5 +98,16 @@
   // Section Contact Us
   .sectionContactUs {
     height: auto;
+  }
+
+  // Customers page
+  .customersSectionOne {
+    .container {
+      max-width: 75vw;
+
+      iframe {
+        height: 50vh;
+      }
+    }
   }
 }

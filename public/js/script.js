@@ -18,17 +18,17 @@ jQuery(document).ready(function ($) {
 
   $('.navOpen').on('click', function () {
     if ($(this).attr('aria-expanded') == 'false') {
-      $('.menu-overlay').css('width', '67%')
+      $('.menu-overlay').css('left', '33%')
       $(this).attr('aria-expanded', 'true')
     } else if ($(this).attr('aria-expanded') == 'true') {
-      $('.menu-overlay').css('width', '0')
+      $('.menu-overlay').css('left', '100%')
       $(this).attr('aria-expanded', 'false')
     }
   })
 
   $('.navClose').on('click', function () {
     console.log('SS')
-    $('.menu-overlay').css('width', '0')
+    $('.menu-overlay').css('left', '100%')
     $('.navOpen').attr('aria-expanded', 'false')
     $('.menu-fullS').scrollTop(0)
   })
