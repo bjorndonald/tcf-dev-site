@@ -446,17 +446,6 @@ function LandingSectionTwo () {
                             </small>
                           </p>
                         </div>
-                        <h4>Price {'CAD ' + cadText}</h4>
-                        <a
-                          className='btn btn-primary cadText85'
-                          href='https://fund.traderscentral.com/sign-up'
-                        >
-                          Get Funded
-                        </a>
-
-                        <small className='mt-2'>
-                          Click the button above to make payment
-                        </small>
                       </div>
                     </div>
                   </div>
@@ -524,6 +513,17 @@ function LandingSectionTwo () {
                             </small>
                           </p>
                         </div>
+                        <h4>Price {'CAD ' + cadText}</h4>
+                        <a
+                          className='btn btn-primary cadText85'
+                          href='https://fund.traderscentral.com/sign-up'
+                        >
+                          Get Funded
+                        </a>
+
+                        <small className='mt-2'>
+                          Click the button above to make payment
+                        </small>
                       </div>
                     </div>
                   </div>
