@@ -104,7 +104,7 @@ function MonthlyTrading () {
           </Card.Body>
         </Accordion.Collapse>
       </Card>
-      {/* ///////////////////////////// */}
+      {/* ////////////////////////////// */}
       <Card>
         <Card.Header>
           <Accordion.Toggle
@@ -116,13 +116,54 @@ function MonthlyTrading () {
             variant='link'
             eventKey='3'
           >
-            <p>Subscription Cycle</p>
+            <p>Group Trading</p>
             <span>+</span>
             <span style={{ display: 'none' }}>-</span>
           </Accordion.Toggle>
         </Card.Header>
 
         <Accordion.Collapse eventKey='3'>
+          <Card.Body>
+            Trading as a group; placing and exiting trades together manually or
+            with a copier in a similar pattern is not allowed. Bagley depends on
+            diverse data patterns to monetize users' trading data.
+            <br />
+            <b>What is the consequence of copy/group trading?</b>
+            <br />
+            <ol>
+              <li>
+                First Offence: 50% fine on initial withdrawal, the trader is
+                allowed to renew the account from a pending withdrawal
+              </li>
+              <li>Second Offence: Withdrawal held and account is closed</li>
+            </ol>
+            <b>Can I appeal a flag?</b>
+            <br />
+            If you believe Bagley flagged you incorrectly, you can reach out to
+            the risk desk and dispute the flag. The risk desk will then provide
+            evidence of the flag in the transaction report in 24 business hours.
+          </Card.Body>
+        </Accordion.Collapse>
+      </Card>
+      {/* ///////////////////////////// */}
+      <Card>
+        <Card.Header>
+          <Accordion.Toggle
+            as={props => (
+              <div onClick={toggle}>
+                <Button {...props} />
+              </div>
+            )}
+            variant='link'
+            eventKey='4'
+          >
+            <p>Subscription Cycle</p>
+            <span>+</span>
+            <span style={{ display: 'none' }}>-</span>
+          </Accordion.Toggle>
+        </Card.Header>
+
+        <Accordion.Collapse eventKey='4'>
           <Card.Body>
             The subscription cycle lasts for thirty days, you'll be sent a
             reminder to renew two days before expiry. You can renew your
@@ -140,7 +181,7 @@ function MonthlyTrading () {
               </div>
             )}
             variant='link'
-            eventKey='3'
+            eventKey='5'
           >
             <p>Withdrawals and Drawdown Limit</p>
             <span>+</span>
@@ -148,7 +189,7 @@ function MonthlyTrading () {
           </Accordion.Toggle>
         </Card.Header>
 
-        <Accordion.Collapse eventKey='3'>
+        <Accordion.Collapse eventKey='5'>
           <Card.Body>
             Withdrawals are based on <b>five percent</b> blocks. Maximum
             drawdown of <b>ten percent.</b>
@@ -172,7 +213,7 @@ function MonthlyTrading () {
               </div>
             )}
             variant='link'
-            eventKey='4'
+            eventKey='6'
           >
             <p>Hedging, Expert Advisors, Trade Copiers</p>
             <span>+</span>
@@ -180,7 +221,7 @@ function MonthlyTrading () {
           </Accordion.Toggle>
         </Card.Header>
 
-        <Accordion.Collapse eventKey='4'>
+        <Accordion.Collapse eventKey='6'>
           <Card.Body>
             Hedging, ea's and trade copiers are not allowed.
           </Card.Body>

@@ -48,7 +48,6 @@ function Home (props) {
           crossOrigin='anonymous'
         ></script>
         {/* <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script> */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YL9KHEXJY5"></script>
         <script src='/js/script.js'></script>
       </Head>
       <HeroSection />

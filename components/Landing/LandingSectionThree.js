@@ -3,7 +3,7 @@ import React, { Component, createRef } from 'react'
 const TrustBox = ({ trustBoxRef }) => (
   <div
     ref={trustBoxRef}
-    className='trustpilot-widget'
+    class='trustpilot-widget'
     data-locale='en-US'
     data-template-id='5613c9cde69ddc09340c6beb'
     data-businessunit-id='5ccc70aa442b4b00014a6d17'
@@ -21,7 +21,7 @@ const TrustBox = ({ trustBoxRef }) => (
   </div>
 )
 
-export class CustomersSectionTwo extends Component {
+export class LandingSectionThree extends Component {
   constructor (props) {
     super(props)
     this.trustBoxRef = React.createRef()
@@ -36,7 +36,7 @@ export class CustomersSectionTwo extends Component {
   }
   render () {
     return (
-      <div className='customersSectionTwo'>
+      <div className='landingSectionThree'>
         <div className='container'>
           <div className='row'>
             <h2>
@@ -53,4 +53,4 @@ export class CustomersSectionTwo extends Component {
   }
 }
 
-export default CustomersSectionTwo
+export default LandingSectionThree

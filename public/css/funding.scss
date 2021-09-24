@@ -203,10 +203,16 @@
 
   .pTableiconWrap {
     width: 1.5rem;
-    height: 1.25rem !important;
+    height: 1.125rem !important;
     overflow: hidden;
-    display: inline-block;
+    flex-direction: column;
+    justify-content: flex-start;
+    display: inline-flex;
     line-height: 1.0625rem;
+
+    svg {
+      min-height: 1.125rem !important;
+    }
   }
 
   .pTableiconWrap svg:first-child {
