@@ -219,7 +219,9 @@
         overflow: hidden;
         display: grid;
         grid-template-columns:
-          calc((100% - 4vw) / 3) calc((100% - 4vw) / 3)
+          calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3)
+          calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3)
+          calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3)
           calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3)
           calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3)
           calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3)

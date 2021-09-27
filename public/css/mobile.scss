@@ -1607,6 +1607,56 @@
       }
     }
   }
+
+  .landingSectionOne {
+    .container {
+      .col-md-5 {
+        margin-bottom: 4rem;
+      }
+
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+
+      .inputWrap {
+        width: 80vw;
+      }
+
+      .col-12 {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      form {
+        margin: auto;
+      }
+
+      .button {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  .landingSectionTwo {
+    .btn-outline-dark {
+      margin-bottom: 1rem;
+    }
+
+    .pTableDetailWrap {
+      width: 100%;
+      margin-bottom: 1rem !important;
+      margin-right: 0rem !important;
+    }
+
+    .pTableSingleListWrap {
+      margin-bottom: 1rem !important;
+      margin-left: 0rem !important;
+    }
+  }
 }
 
 @media only screen and (max-width: 480px) and (min-height: 726px) and (max-height: 890px) {

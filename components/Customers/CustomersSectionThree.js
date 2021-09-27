@@ -79,6 +79,34 @@ function CustomersSectionThree () {
     {
       image: <img src='/images/withdrawals/14.png' />,
       url: <Lightbox onClose={fullScreen} image='/images/withdrawals/14.png' />
+    },
+    {
+      image: <img src='/images/withdrawals/15.png' />,
+      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/15.png' />
+    },
+    {
+      image: <img src='/images/withdrawals/16.png' />,
+      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/16.png' />
+    },
+    {
+      image: <img src='/images/withdrawals/17.png' />,
+      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/17.png' />
+    },
+    {
+      image: <img src='/images/withdrawals/18.png' />,
+      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/18.png' />
+    },
+    {
+      image: <img src='/images/withdrawals/19.png' />,
+      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/19.png' />
+    },
+    {
+      image: <img src='/images/withdrawals/20.png' />,
+      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/20.png' />
+    },
+    {
+      image: <img src='/images/withdrawals/21.png' />,
+      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/21.png' />
     }
   ]
 
