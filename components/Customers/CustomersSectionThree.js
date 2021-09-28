@@ -107,6 +107,22 @@ function CustomersSectionThree () {
     {
       image: <img src='/images/withdrawals/21.png' />,
       url: <Lightbox onClose={fullScreen} image='/images/withdrawals/21.png' />
+    },
+    {
+      image: <img src='/images/withdrawals/22.png' />,
+      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/22.png' />
+    },
+    {
+      image: <img src='/images/withdrawals/23.png' />,
+      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/23.png' />
+    },
+    {
+      image: <img src='/images/withdrawals/24.png' />,
+      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/24.png' />
+    },
+    {
+      image: <img src='/images/withdrawals/25.png' />,
+      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/25.png' />
     }
   ]
 

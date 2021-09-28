@@ -132,8 +132,8 @@ export default function TradingBasicSectionThree () {
                     {/* <div className='cardNum'>3.</div> */}
                     <h5 className='card-title'>Meme Culture</h5>
                     <p className='card-text'>
-                      Understand how twiter and reddit have <br />
-                      fueled a new trading (cult) stratey
+                      Understand how Twitter and Reddit have <br />
+                      fueled a new trading (cult) strategy
                     </p>
                   </div>
                 </div>
@@ -158,9 +158,9 @@ export default function TradingBasicSectionThree () {
                     {/* <div className='cardNum'>4.</div> */}
                     <h5 className='card-title'>Stocks</h5>
                     <p className='card-text'>
-                      From the trading pits & floors to fintech
+                      From the trading pits & floors to Fintech
                       <br />
-                      apps, learn and understand the stock <br />
+                      &nbsp;apps, learn and understand the stock <br />
                       market
                     </p>
                   </div>

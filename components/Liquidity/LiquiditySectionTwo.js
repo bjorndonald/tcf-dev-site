@@ -42,7 +42,7 @@ export default function LiquiditySectionTwo () {
               <h2>The Backbone for Prop Funds</h2>
               <p>
                 For ambitious founders around the world, we make starting a
-                local fund as simple, borderless and programable as the resr of
+                local fund as simple, borderless and programable as the rest of
                 the internet.
               </p>
             </div>
