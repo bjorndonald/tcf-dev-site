@@ -105,7 +105,7 @@ export default function TradingBasicSectionThree () {
                     {/* <div className='cardNum'>2.</div> */}
                     <h5 className='card-title'>Cryptocurrencies</h5>
                     <p className='card-text'>
-                      Learn the different terminoligies, <br />
+                      Learn the different terminologies, <br />
                       understand its history and become <br />
                       an expert
                     </p>

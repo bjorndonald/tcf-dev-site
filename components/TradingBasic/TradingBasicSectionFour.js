@@ -37,7 +37,7 @@ export default function TradingBasicSectionFour () {
           </h4>
 
           <div className='button mt-3'>
-            <a className=' btn btn-black' href='#'>
+            <a className=' btn btn-black' href='https://fund.traderscentral.com/sign-up'>
               Sign-up
             </a>
           </div>
