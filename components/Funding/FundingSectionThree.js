@@ -4,6 +4,11 @@ import { gsap } from 'gsap/dist/gsap'
 import $ from 'jquery'
 import MonthlySection from './MonthlySection'
 
+Date.prototype.addHours = function (h) {
+  this.setTime(this.getTime() + h * 60 * 60 * 1000)
+  return this
+}
+
 export default function FundingSectionThree () {
   const [cadText, setCadText] = useState('85')
   const [leverage, setLeverage] = useState('1:6')
@@ -29,11 +34,16 @@ export default function FundingSectionThree () {
   //   .from(".fundingSectionThree #nav-tab-example-tabpane-monthly .btn.btn-outline-dark", { y: 50, opacity : 0 }, "start")
   //   .from(".fundingSectionThree .pTable", { y: 50, opacity : 0 }), "start";
   // }, [tl]);
+  var date = new Date('Oct 04, 2021')
+
   var countDownDate = new Date('Oct 04, 2021').getTime()
   useEffect(() => {
     setInterval(function () {
       // Get today's date and time
-      var now = new Date().getTime()
+      var dateNow = new Date()
+      dateNow.setTime(dateNow.getTime() - 8 * 60 * 60 * 1000)
+      var now = dateNow.getTime()
+      // console.log(new Date(new Date().toUTCString()).toTimeString())
 
       // Find the distance between now and the count down date
       var distance = countDownDate - now
