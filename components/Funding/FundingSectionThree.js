@@ -7,6 +7,10 @@ import MonthlySection from './MonthlySection'
 export default function FundingSectionThree () {
   const [cadText, setCadText] = useState('85')
   const [leverage, setLeverage] = useState('1:6')
+  const [days, setDays] = useState(0)
+  const [hours, setHours] = useState(0)
+  const [minutes, setMinutes] = useState(0)
+  const [seconds, setSeconds] = useState(0)
   // useEffect(() => {
   //   gsap.timeline({
   //     scrollTrigger: {
@@ -25,6 +29,37 @@ export default function FundingSectionThree () {
   //   .from(".fundingSectionThree #nav-tab-example-tabpane-monthly .btn.btn-outline-dark", { y: 50, opacity : 0 }, "start")
   //   .from(".fundingSectionThree .pTable", { y: 50, opacity : 0 }), "start";
   // }, [tl]);
+  var countDownDate = new Date('Oct 04, 2021').getTime()
+  useEffect(() => {
+    setInterval(function () {
+      // Get today's date and time
+      var now = new Date().getTime()
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24))
+      var hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      )
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000)
+
+      setSeconds(seconds)
+      setMinutes(minutes)
+      setHours(hours)
+      setDays(days)
+
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        setSeconds(0)
+        setMinutes(0)
+        setHours(0)
+        setDays(0)
+      }
+    }, 1000)
+  }, [])
 
   const activate = e => {
     $(e.target)
@@ -91,6 +126,7 @@ export default function FundingSectionThree () {
                   <p className='mb-4' style={{ textAlign: 'center' }}>
                     Pay Once, Get Funded
                   </p>
+
                   <div className='row funding-prices'>
                     <div className='col-12 text-center mb-5 '>
                       <OverlayTrigger
@@ -179,6 +215,37 @@ export default function FundingSectionThree () {
                       </OverlayTrigger>
                     </div>
                   </div>
+                  <div className='countdown'>
+                    <h2>Profit Targets dropping in</h2>
+                    <ul>
+                      <li>
+                        <div className='value'>
+                          <h1>{days < 10 ? '0' + days : days}</h1>
+                        </div>
+                        <p>Days</p>
+                      </li>
+
+                      <li>
+                        <div className='value'>
+                          <h1>{hours < 10 ? '0' + hours : hours}</h1>
+                        </div>
+                        <p>Hours</p>
+                      </li>
+
+                      <li>
+                        <div className='value'>
+                          <h1>{minutes < 10 ? '0' + minutes : minutes}</h1>
+                        </div>
+                        <p>Minutes</p>
+                      </li>
+                      <li>
+                        <div className='value'>
+                          <h1>{seconds < 10 ? '0' + seconds : seconds}</h1>
+                        </div>
+                        <p>Seconds</p>
+                      </li>
+                    </ul>
+                  </div>
                   <div className=' one-time row d-flex align-items-stretch  pTable'>
                     <div className='col-12 col-md-2 d-flex align-items-start justify-content-end'>
                       <div className='pTableDetailWrap w-80'>
@@ -230,7 +297,7 @@ export default function FundingSectionThree () {
                               </OverlayTrigger>
                             </li>
                             <li>
-                              Total Profit Target (2 Stages)
+                              Profit Target
                               <OverlayTrigger
                                 placement={'top'}
                                 overlay={
@@ -465,7 +532,19 @@ export default function FundingSectionThree () {
                             {/* <li>85%</li> */}
                             <li>1:200</li>
                             <li>Thirty Days </li>
-                            <li>Ten Percent</li>
+                            <li>
+                              Ten Percent
+                              <br />
+                              <p
+                                className='m-0'
+                                style={{
+                                  fontWeight: 'normal',
+                                  fontSize: '80%'
+                                }}
+                              >
+                                Soon to be 8%
+                              </p>
+                            </li>
                             <li>Ten Percent</li>
                             <li>Ten Day</li>
                           </ul>
@@ -531,7 +610,16 @@ export default function FundingSectionThree () {
                           {/* <li>85%</li> */}
                           <li>1:200</li>
                           <li>Sixty Days</li>
-                          <li>Five Percent</li>
+                          <li>
+                            Five Percent
+                            <br />
+                            <p
+                              className='m-0'
+                              style={{ fontWeight: 'normal', fontSize: '80%' }}
+                            >
+                              Soon to be 4%
+                            </p>
+                          </li>
                           <li>Ten Percent</li>
                           <li>Ten days</li>
                         </ul>

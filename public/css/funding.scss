@@ -66,7 +66,82 @@
     justify-content: center;
   }
 
+  .countdown {
+    // margin-top: calc((1 / 900) * 100vh);
+    display: flex;
+    // top: calc(50% - 1vw - ((30 / 900) * 100vh));
+    // right: 11vw;
+    // position: absolute;
+    // width: 12vw;
+    margin-bottom: 3rem;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      color: #be015f;
+      font-size: 1.5rem;
+      margin-bottom: 0;
+      margin-right: 2rem;
+    }
+    // flex-direction: column;
+
+    h4 {
+      font-weight: 300;
+      font-size: 1vw;
+      text-align: center;
+      // width: 70%;
+      color: #fff;
+      line-height: calc((39.09 / 900) * 100vh);
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 14rem;
+      margin-bottom: 0;
+      // margin-top: 0.25vw;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .value {
+          width: calc((35 / 900) * 100vh);
+          height: calc((35 / 900) * 100vh);
+          border-radius: 0.45vw;
+          background: #be015f;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          h1 {
+            font-family: eina;
+            font-style: normal;
+            font-weight: bold;
+            width: auto !important;
+            color: white;
+            margin: 0px !important;
+            font-size: calc((24 / 900) * 100vh);
+            line-height: calc((39 / 900) * 100vh);
+          }
+        }
+        p {
+          // font-family: 'Montserrat';
+          font-weight: 300;
+          font-size: 1rem;
+          margin-top: 0.25vw;
+          margin-bottom: 0;
+          line-height: calc((12 / 900) * 100vh);
+        }
+      }
+    }
+  }
+
   .one-time {
+    position: relative;
+
     .pTableDetailWrap:first-child {
       margin-top: 2.5rem;
       width: 95%;
@@ -74,6 +149,17 @@
 
     .pTableSingleListWrap {
       width: 120%;
+    }
+
+    .pTableSingleListWrap {
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+          line-height: 0.9rem;
+        }
+      }
     }
   }
   .btn-outline-dark {
@@ -100,6 +186,7 @@
 
     .pTableSingleList ul li {
       color: white;
+
       background-color: transparent;
     }
 

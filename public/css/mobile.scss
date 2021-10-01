@@ -155,10 +155,31 @@
       margin-left: -4rem;
     }
 
+    .countdown {
+      flex-direction: column;
+      h2 {
+        margin-right: 0;
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+      }
+      ul {
+        padding: 0;
+        width: 14rem;
+
+        li {
+        }
+      }
+    }
+
     .one-time .pTableDetailWrap {
       margin: 0;
-      margin-top: 4rem !important;
+      margin-top: 8rem !important;
       margin-right: 0rem;
+
+      li:nth-child(3) {
+        padding-top: 0.9rem;
+        padding-bottom: 0.9rem;
+      }
     }
 
     .one-time .pTableSingleListWrap:first-child {

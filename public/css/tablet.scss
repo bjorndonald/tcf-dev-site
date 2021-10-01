@@ -288,6 +288,19 @@
     }
   }
 
+  .fundingSectionThree {
+    .countdown {
+      ul {
+        padding-left: 0;
+        width: 15rem;
+        justify-content: space-between;
+      }
+      p {
+        font-size: 1rem !important;
+      }
+    }
+  }
+
   .fundingSectionFour {
     .gaspSlideRight {
       .nav {
@@ -918,6 +931,12 @@
     .col-md-3 {
       flex: 0 0 50%;
       max-width: 50%;
+    }
+
+    .countdown {
+      p {
+        font-size: 1.25rem;
+      }
     }
   }
 
