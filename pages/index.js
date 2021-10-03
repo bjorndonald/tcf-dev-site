@@ -11,7 +11,7 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { connect } from 'react-redux'
 import { clearTimeline, setTimeline } from '../store/actions/configActions'
 
-function Home (props) {
+function Home(props) {
   // props.clearTimeline()
   // gsap.registerPlugin(ScrollTrigger)
   // let hc_tl = gsap.timeline()
@@ -48,6 +48,7 @@ function Home (props) {
           crossOrigin='anonymous'
         ></script>
         {/* <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script> */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YL9KHEXJY5"></script>
         <script src='/js/script.js'></script>
       </Head>
       <HeroSection />
