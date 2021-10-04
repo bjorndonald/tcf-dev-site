@@ -134,7 +134,7 @@ export default function FundingSectionThree () {
                 </Tab.Pane>
                 <Tab.Pane eventKey='onetime'>
                   <p className='mb-4 subtitle' style={{ textAlign: 'center' }}>
-                    Pay Once, get funded
+                    Pay once, get funded
                   </p>
 
                   <div className='row funding-prices'>
