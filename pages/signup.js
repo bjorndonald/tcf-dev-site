@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import MetaTag from './../components/MetaTag'
 import Head from 'next/head'
-import signUpSectionOne from '../components/SignUp/signUpSectionOne'
+import signUpSectionOne from '../components/SignUp/SignUpSectionOne'
 
 function signup () {
   return (
