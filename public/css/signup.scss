@@ -1,6 +1,6 @@
 .signUpSectionOne {
   .text-center {
-    padding-top: 20vh;
+    padding-top: 8.5vh;
     margin: auto;
     margin-bottom: 7.5vh;
 
@@ -9,24 +9,52 @@
       font-weight: bolder;
     }
   }
+
+  nav.signup {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .link-row {
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+
+    a {
+      font-size: 3vh;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
   .page-options {
     display: flex;
     flex-direction: column;
-    width: 28vw;
+    width: 30vw;
+
     margin: auto;
     align-items: center;
-
+    .page-option:first-child {
+      margin-top: 0rem;
+    }
     .page-option {
       display: flex;
       width: 100%;
+      //   margin-left: -8rem;
       align-items: center;
-      margin-bottom: 1rem;
+      //   margin-top: -2rem;
+      margin-bottom: 4rem;
       img {
-        height: 5rem;
+        height: 6rem;
         width: auto;
+        margin-right: 2rem;
       }
       .column {
         display: flex;
+        // margin-left: -5.5rem;
         flex-direction: column;
         flex: 1;
         h4 {
@@ -48,6 +76,10 @@
           }
         }
       }
+    }
+
+    .page-option:first-child {
+      margin-top: 0rem;
     }
   }
 }

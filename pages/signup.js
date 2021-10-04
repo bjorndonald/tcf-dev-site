@@ -1,13 +1,18 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import MetaTag from './../components/MetaTag'
 import Head from 'next/head'
+import $ from 'jquery'
 import SignUpSectionOne from '../components/SignUp/SignUpSectionOne'
 
 function signup () {
+  useEffect(() => {
+    $('.top-menu').hide()
+    return () => {}
+  }, [])
   return (
     <Fragment>
       <MetaTag
-        title='Our Customers | Traders Central'
+        title='Sign up | Traders Central'
         description={`Sign up for Traders Central to benefit from our suite of financial products that our customers love`}
       />
       <Head>

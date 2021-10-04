@@ -1,8 +1,23 @@
 import React from 'react'
+import RightCaret from './RightCaret'
+import Link from 'next/link'
+import Image from 'next/image'
 
 function signUpSectionOne () {
   return (
     <div className='signUpSectionOne'>
+      <nav className='signup'>
+        <Link href='/'>
+          <a className='navbar-brand navClose'>
+            <Image
+              src='/images/logo.png'
+              alt='Traders Central Fund Logo'
+              width={200}
+              height={51.02}
+            />
+          </a>
+        </Link>
+      </nav>
       <div className='text-center'>
         <h1>Lets get started</h1>
       </div>
@@ -14,32 +29,7 @@ function signUpSectionOne () {
             <h4>Funding</h4>
             <a className='btn btn-black'>
               I want to get funded in 24 hours
-              <svg
-                width='197'
-                height='357'
-                viewBox='0 0 197 357'
-                fill='none'
-                xmlns='http://www.w3.org/2000/svg'
-              >
-                <line
-                  x1='176.777'
-                  y1='179.411'
-                  x2='19.7992'
-                  y2='336.388'
-                  stroke='white'
-                  stroke-width='28'
-                  stroke-linecap='round'
-                />
-                <line
-                  x1='176.978'
-                  y1='176.777'
-                  x2='20.0002'
-                  y2='19.799'
-                  stroke='white'
-                  stroke-width='28'
-                  stroke-linecap='round'
-                />
-              </svg>
+              <RightCaret />
             </a>
           </div>
         </div>
@@ -47,23 +37,35 @@ function signUpSectionOne () {
           <img src='/images/signup/crypto.png' alt='' />
           <div className='column'>
             <h4>Crypto</h4>
-            <a className='btn btn-black'>I want to trade cryptocurrencies</a>
+            <a className='btn btn-black'>
+              I want to trade cryptocurrencies <RightCaret />
+            </a>
           </div>
         </div>
         <div className='page-option'>
           <img src='/images/signup/liquidity.png' alt='' />
           <div className='column'>
             <h4>Liquidity</h4>
-            <a className='btn btn-black'>I want to start a prop fund</a>
+            <a className='btn btn-black'>
+              I want to start a prop fund in 24 hrs <RightCaret />
+            </a>
           </div>
         </div>
         <div className='page-option'>
           <img src='/images/signup/tools.png' alt='' />
           <div className='column'>
             <h4>Funding</h4>
-            <a className='btn btn-black'>I want to access trading software</a>
+            <a className='btn btn-black'>
+              I want to access trading software <RightCaret />
+            </a>
           </div>
         </div>
+      </div>
+
+      <div className='link-row'>
+        <Link href='/home' className='link'>
+          <a>Back to Hompage</a>
+        </Link>
       </div>
     </div>
   )
