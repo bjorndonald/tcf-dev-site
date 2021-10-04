@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import MetaTag from './../components/MetaTag'
 import Head from 'next/head'
-import signUpSectionOne from '../components/SignUp/SignUpSectionOne'
+import SignUpSectionOne from '../components/SignUp/SignUpSectionOne'
 
 function signup () {
   return (
@@ -36,7 +36,7 @@ function signup () {
         <script src='/js/script.js'></script>
         {/* <script src='/js/video.js'></script> */}
       </Head>
-      <signUpSectionOne />
+      <SignUpSectionOne />
     </Fragment>
   )
 }
