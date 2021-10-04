@@ -150,6 +150,10 @@
       margin-top: 0rem !important;
     }
 
+    .subtitle {
+      font-size: 1rem;
+    }
+
     .monthly .pTableSingleListWrap {
       margin: 0;
       margin-left: -4rem;
@@ -1130,22 +1134,25 @@
       flex-wrap: nowrap;
       overflow-x: auto;
       justify-content: flex-start;
+      p,
+      small {
+        font-size: 0.75rem !important;
+      }
     }
 
     .one-time {
       flex-wrap: nowrap;
       overflow-x: auto;
       justify-content: flex-start;
+      p,
+      small {
+        font-size: 0.75rem !important;
+      }
     }
 
     h3 {
       padding-top: 0 !important;
       font-size: 1.75rem;
-    }
-
-    p,
-    small {
-      font-size: 0.75rem !important;
     }
 
     li {

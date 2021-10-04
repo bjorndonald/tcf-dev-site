@@ -16,7 +16,7 @@ function MonthlySection (props) {
   }
   return (
     <Fragment>
-      <p className='mb-4' style={{ textAlign: 'center' }}>
+      <p className='mb-4 subtitle' style={{ textAlign: 'center' }}>
         Live funding in 24 hours, no evaluation needed
       </p>
       <div className='row funding-prices'>

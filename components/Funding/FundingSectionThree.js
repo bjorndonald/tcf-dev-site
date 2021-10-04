@@ -133,8 +133,8 @@ export default function FundingSectionThree () {
                   <MonthlySection />
                 </Tab.Pane>
                 <Tab.Pane eventKey='onetime'>
-                  <p className='mb-4' style={{ textAlign: 'center' }}>
-                    Pay Once, Get Funded
+                  <p className='mb-4 subtitle' style={{ textAlign: 'center' }}>
+                    Pay Once, get Funded
                   </p>
 
                   <div className='row funding-prices'>
