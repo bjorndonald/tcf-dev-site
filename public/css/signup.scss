@@ -1,0 +1,11 @@
+.signUpSectionOne{
+    .page-options{
+        display: flex;
+        flex-direction: column;
+
+        .page-option{
+            display: flex;
+            align-items: center;
+        }
+    }
+}

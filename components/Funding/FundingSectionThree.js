@@ -225,37 +225,7 @@ export default function FundingSectionThree () {
                       </OverlayTrigger>
                     </div>
                   </div>
-                  <div className='countdown'>
-                    <h2>Profit Targets dropping in</h2>
-                    <ul>
-                      <li>
-                        <div className='value'>
-                          <h1>{days < 10 ? '0' + days : days}</h1>
-                        </div>
-                        <p>Days</p>
-                      </li>
 
-                      <li>
-                        <div className='value'>
-                          <h1>{hours < 10 ? '0' + hours : hours}</h1>
-                        </div>
-                        <p>Hours</p>
-                      </li>
-
-                      <li>
-                        <div className='value'>
-                          <h1>{minutes < 10 ? '0' + minutes : minutes}</h1>
-                        </div>
-                        <p>Minutes</p>
-                      </li>
-                      <li>
-                        <div className='value'>
-                          <h1>{seconds < 10 ? '0' + seconds : seconds}</h1>
-                        </div>
-                        <p>Seconds</p>
-                      </li>
-                    </ul>
-                  </div>
                   <div className=' one-time row d-flex align-items-stretch  pTable'>
                     <div className='col-12 col-md-2 d-flex align-items-start justify-content-end'>
                       <div className='pTableDetailWrap w-80'>
@@ -543,9 +513,9 @@ export default function FundingSectionThree () {
                             <li>1:200</li>
                             <li>Thirty Days </li>
                             <li>
-                              Ten Percent
-                              <br />
-                              <p
+                              Eight Percent
+                              {/* <br /> */}
+                              {/* <p
                                 className='m-0'
                                 style={{
                                   fontWeight: 'normal',
@@ -553,7 +523,7 @@ export default function FundingSectionThree () {
                                 }}
                               >
                                 Soon to be 8%
-                              </p>
+                              </p> */}
                             </li>
                             <li>Ten Percent</li>
                             <li>Ten Day</li>
@@ -621,14 +591,14 @@ export default function FundingSectionThree () {
                           <li>1:200</li>
                           <li>Sixty Days</li>
                           <li>
-                            Five Percent
-                            <br />
+                            Four Percent
+                            {/* <br />
                             <p
                               className='m-0'
                               style={{ fontWeight: 'normal', fontSize: '80%' }}
                             >
                               Soon to be 4%
-                            </p>
+                            </p> */}
                           </li>
                           <li>Ten Percent</li>
                           <li>Ten days</li>
