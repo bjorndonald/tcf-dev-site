@@ -11,6 +11,12 @@
     }
   }
 
+  .signUpSectionOne {
+    .page-options {
+      width: 40rem;
+    }
+  }
+
   .cryptoSectionTwo {
     height: auto;
     .row {
@@ -171,6 +177,11 @@
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .signUpSectionOne {
+    .page-options {
+      width: 40rem;
+    }
+  }
   .fundingSectionThree {
     .monthly {
       margin-left: -13%;
