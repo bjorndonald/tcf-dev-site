@@ -7,7 +7,7 @@ import ChallengeSectionOne from '../components/Challenge/ChallengeSectionOne'
 function challenge () {
   useEffect(() => {
     $('.top-menu').hide()
-    // $('.site-footer').hide()
+    $('.site-footer').hide()
     return () => {}
   }, [])
   return (
