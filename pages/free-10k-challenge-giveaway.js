@@ -2,9 +2,9 @@ import React, { Fragment, useEffect } from 'react'
 import MetaTag from './../components/MetaTag'
 import Head from 'next/head'
 import $ from 'jquery'
-import SignUpSectionOne from '../components/SignUp/SignUpSectionOne'
+import ChallengeSectionOne from '../components/Challenge/challengeSectionOne'
 
-function signup () {
+function challenge () {
   useEffect(() => {
     $('.top-menu').hide()
     // $('.site-footer').hide()
@@ -42,9 +42,9 @@ function signup () {
         <script src='/js/script.js'></script>
         {/* <script src='/js/video.js'></script> */}
       </Head>
-      <SignUpSectionOne />
+      <ChallengeSectionOne />
     </Fragment>
   )
 }
 
-export default signup
+export default challenge
