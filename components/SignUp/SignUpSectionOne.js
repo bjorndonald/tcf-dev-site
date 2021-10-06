@@ -51,15 +51,15 @@ function signUpSectionOne () {
             </a>
           </div>
         </div>
-        <div className='page-option'>
+        {/* <div className='page-option'>
           <img src='/images/signup/tools.png' alt='' />
           <div className='column'>
-            <h4>Funding</h4>
+            <h4>Tools</h4>
             <a className='btn btn-black'>
               I want to access trading software <RightCaret />
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* <div className='link-row'>
