@@ -7,7 +7,7 @@ import SignUpSectionOne from '../components/SignUp/SignUpSectionOne'
 function signup () {
   useEffect(() => {
     $('.top-menu').hide()
-    // $('.site-footer').hide()
+
     return () => {}
   }, [])
   return (

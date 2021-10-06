@@ -62,11 +62,11 @@ function signUpSectionOne () {
         </div>
       </div>
 
-      <div className='link-row'>
+      {/* <div className='link-row'>
         <Link href='/home' className='link'>
           <a>Back to Hompage</a>
         </Link>
-      </div>
+      </div> */}
     </div>
   )
 }
