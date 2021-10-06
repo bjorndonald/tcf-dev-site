@@ -47,7 +47,7 @@ function signUpSectionOne () {
           <div className='column'>
             <h4>Liquidity</h4>
             <a className='btn btn-black'>
-              I want to start a prop fund in 24 hrs <RightCaret />
+              I want to start a prop fund in 24 hours <RightCaret />
             </a>
           </div>
         </div>
