@@ -2,7 +2,7 @@ import React, { Fragment, useEffect } from 'react'
 import MetaTag from './../components/MetaTag'
 import Head from 'next/head'
 import $ from 'jquery'
-import ChallengeSectionOne from '../components/Challenge/challengeSectionOne'
+import ChallengeSectionOne from '../components/Challenge/ChallengeSectionOne'
 
 function challenge () {
   useEffect(() => {
