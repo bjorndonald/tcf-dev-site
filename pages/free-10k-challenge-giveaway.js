@@ -13,8 +13,8 @@ function challenge () {
   return (
     <Fragment>
       <MetaTag
-        title='Sign up | Traders Central'
-        description={`Sign up for Traders Central to benefit from our suite of financial products that our customers love`}
+        title='Traders Central Fund Giveaway | Traders Central'
+        description={``}
       />
       <Head>
         <script
