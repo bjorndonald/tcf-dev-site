@@ -54,6 +54,24 @@
   .container {
     max-width: 95vw;
   }
+  .challengeSectionOne {
+    overflow: hidden;
+    .tc-wrapper {
+      width: 100vw;
+
+      .puzzle {
+        img {
+          width: 125%;
+          margin-left: -12.5%;
+        }
+
+        h4 {
+          font-size: 3.5vw;
+          bottom: 45vw;
+        }
+      }
+    }
+  }
   .sectionOne {
     height: calc(100vh - 6vh);
     padding-bottom: 0;

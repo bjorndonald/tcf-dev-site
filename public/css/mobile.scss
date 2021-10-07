@@ -1252,8 +1252,25 @@
   }
 
   .challengeSectionOne {
+    overflow: hidden;
     .tc-wrapper {
       width: 100vw;
+
+      .puzzle {
+        img {
+          width: 175%;
+          margin-left: -37.5%;
+        }
+
+        h4 {
+          font-size: 3.5vw;
+          bottom: 30vh;
+        }
+      }
+    }
+
+    .tc-card {
+      width: 90vw;
     }
   }
 

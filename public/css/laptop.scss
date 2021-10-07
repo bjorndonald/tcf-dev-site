@@ -11,6 +11,28 @@
     }
   }
 
+  .challengeSectionOne {
+    overflow: hidden;
+    .tc-wrapper {
+      width: 100vw;
+
+      .puzzle {
+        img {
+          width: 125%;
+          margin-left: -12.5%;
+        }
+
+        h4 {
+          bottom: 45vw;
+        }
+      }
+    }
+
+    .tc-card {
+      // width: 90vw;
+    }
+  }
+
   .signUpSectionOne {
     .page-options {
       width: 40rem;
@@ -153,6 +175,19 @@
 }
 
 @media only screen and (min-width: 1440px) and (max-width: 2560px) {
+  .challengeSectionOne {
+    .tc-wrapper {
+      .puzzle {
+        h4 {
+          bottom: 24.5rem;
+        }
+      }
+    }
+
+    .tc-card {
+      // width: 90vw;
+    }
+  }
   .countdown {
     z-index: 5;
     // left: 100%;
@@ -180,6 +215,19 @@
   .signUpSectionOne {
     .page-options {
       width: 40rem;
+    }
+  }
+  .challengeSectionOne {
+    .tc-wrapper {
+      .puzzle {
+        h4 {
+          bottom: 24.5rem;
+        }
+      }
+    }
+
+    .tc-card {
+      // width: 90vw;
     }
   }
   .fundingSectionThree {

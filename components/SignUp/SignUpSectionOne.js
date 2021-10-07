@@ -27,7 +27,7 @@ function signUpSectionOne () {
           <img src='/images/signup/funding.png' alt='' />
           <div className='column'>
             <h4>Funding</h4>
-            <a className='btn btn-black'>
+            <a href=" https://fund.traderscentral.com/login" className='btn btn-black'>
               I want to get funded in 24 hours
               <RightCaret />
             </a>
@@ -37,7 +37,7 @@ function signUpSectionOne () {
           <img src='/images/signup/crypto.png' alt='' />
           <div className='column'>
             <h4>Crypto</h4>
-            <a className='btn btn-black'>
+            <a href="https://trade.tccrypto.io/signup" className='btn btn-black'>
               I want to trade cryptocurrencies <RightCaret />
             </a>
           </div>
