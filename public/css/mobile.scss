@@ -1253,6 +1253,13 @@
 
   .challengeSectionOne {
     overflow: hidden;
+    h2 {
+      font-size: 6vh;
+    }
+
+    h4 {
+      font-size: 1.25rem;
+    }
     .tc-wrapper {
       width: 100vw;
 
@@ -1271,6 +1278,15 @@
 
     .tc-card {
       width: 90vw;
+      h3 {
+        font-size: 2rem;
+      }
+
+      p {
+        color: white;
+        text-align: center;
+        font-size: 2vh;
+      }
     }
   }
 
