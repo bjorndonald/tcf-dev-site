@@ -50,6 +50,58 @@
   }
 }
 
+@media only screen and (min-width: 570px) and (max-width: 767px) {
+  .fundingSectionThree {
+    .text-center {
+      a {
+        margin-bottom: 1rem;
+      }
+    }
+    .wrapper {
+      max-width: 100%;
+      width: 100%;
+    }
+    .col-12 {
+      padding: 0;
+    }
+    .col-md-5 {
+      flex: 0 0 95%;
+
+      max-width: 95%;
+      .pTableSingleListWrap {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 570px) {
+  .fundingSectionThree {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    .text-center {
+      a {
+        margin-bottom: 1rem;
+      }
+    }
+    .wrapper {
+      max-width: 100%;
+      width: 100%;
+    }
+    .col-12 {
+      padding: 0;
+    }
+    .col-md-5 {
+      flex: 0 0 100%;
+
+      max-width: 100%;
+      .pTableSingleListWrap {
+        width: 100%;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .container {
     max-width: 95vw;

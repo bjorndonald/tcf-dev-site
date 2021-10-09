@@ -188,7 +188,7 @@
 
     .one-time .pTableSingleListWrap:first-child {
       margin: 0;
-      margin-left: -3rem !important;
+      // margin-left: -3rem !important;
     }
 
     .one-time .expandedWrap {
@@ -1753,6 +1753,32 @@
     .pTableSingleListWrap {
       margin-bottom: 1rem !important;
       margin-left: 0rem !important;
+    }
+  }
+
+  .fundingSectionThree {
+    .text-center {
+      a {
+        margin-bottom: 1rem;
+      }
+    }
+    .wrapper {
+      max-width: 92.5%;
+      width: 92.5%;
+    }
+    .col-12 {
+      padding: 0;
+    }
+    .col-md-5 {
+      flex: 0 0 100%;
+
+      max-width: 100%;
+      .pTableSingleListWrap {
+        width: 100%;
+        padding: 1rem 0;
+        padding-bottom: 1.5rem;
+        // margin-left: 0 !important;
+      }
     }
   }
 }

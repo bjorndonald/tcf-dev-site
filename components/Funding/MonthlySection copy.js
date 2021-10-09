@@ -3,7 +3,6 @@ import { OverlayTrigger, Tab, Row, Col, Nav, Tooltip } from 'react-bootstrap'
 import Left from './monthly/Left'
 import Right from './monthly/Right'
 import Data from './monthly/Data'
-import Monthly from './Monthly'
 
 function MonthlySection (props) {
   const [cadText, setCadText] = useState('85')
@@ -66,10 +65,9 @@ function MonthlySection (props) {
           </OverlayTrigger>
         </div>
       </div>
-      <div className='col-12 row mx-0 justify-content-center'>
-        {/* <Left />
-        <Right cadText={cadText} leverage={leverage} /> */}
-        <Monthly leverage={leverage} cadText={cadText} />
+      <div className='monthly row d-flex align-items-stretch pTable'>
+        <Left />
+        <Right cadText={cadText} leverage={leverage} />
       </div>
     </Fragment>
   )

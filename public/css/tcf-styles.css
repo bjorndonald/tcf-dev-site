@@ -770,6 +770,14 @@ select {
   height: 84.5vh;
 }
 
+.fixedBox video {
+  /* width: 45rem; */
+  /* margin-left: -10.5rem; */
+  /* height: 70.3125rem; */
+  width: 27.625rem;
+  height: 84.5vh;
+}
+
 .sectionMobile .box {
   position: absolute;
   width: 100.5%;

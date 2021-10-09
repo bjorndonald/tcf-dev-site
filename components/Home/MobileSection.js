@@ -55,58 +55,6 @@ function MobileSection (props) {
       <div className='sectionTwo d-flex align-items-center'>
         <div className='container '>
           <div className='row d-flex align-items-stretch'>
-            {/* <div className='col-12 col-md-2 d-flex align-items-center p-0'>
-              <div className='sectionTwoList'>
-                <div
-                  style={{ opacity: 1 }}
-                  className='sectionTwoNav sectionTwoNavFix sectionTwoNavF'
-                >
-                  <ul>
-                    <li>
-                      <i className='fa fa-arrow-up' aria-hidden='true'></i>
-                    </li>
-                    <li className='active'>Manage</li>
-                    <li>Connect</li>
-                    <li>Learn</li>
-                    <li>
-                      <i className='fa fa-arrow-down' aria-hidden='true'></i>
-                    </li>
-                  </ul>
-                </div>
-                <div
-                  style={{ opacity: 0, display: 'none' }}
-                  className='sectionTwoNav sectionTwoNav-2 '
-                >
-                  <ul>
-                    <li>
-                      <i className='fa fa-arrow-up' aria-hidden='true'></i>
-                    </li>
-                    <li>Manage</li>
-                    <li className='active'>Connect</li>
-                    <li>Learn</li>
-                    <li>
-                      <i className='fa fa-arrow-down' aria-hidden='true'></i>
-                    </li>
-                  </ul>
-                </div>
-                <div
-                  style={{ opacity: 0, display: 'none' }}
-                  className='sectionTwoNav sectionTwoNav-3'
-                >
-                  <ul>
-                    <li>
-                      <i className='fa fa-arrow-up' aria-hidden='true'></i>
-                    </li>
-                    <li>Manage</li>
-                    <li>Connect</li>
-                    <li className='active'>Learn</li>
-                    <li>
-                      <i className='fa fa-arrow-down' aria-hidden='true'></i>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div> */}
             <div className='col-12 col-md-6 images'>
               <div className='mobImg'>
                 <div className='fixedBox'>
@@ -117,35 +65,19 @@ function MobileSection (props) {
                     height={832.5}
                     alt='Image'
                   /> */}
-                  <img src='/images/Landing.gif' alt='Image' />
+                  <video
+                    loop={true}
+                    playsInline
+                    className='image'
+                    autoPlay='autoplay'
+                    muted={true}
+                  >
+                    <source src='/images/Landing.webm' type='video/webm' />
+                  </video>
                 </div>
-                <div className='box box2'>
-                  {/* <Image
-                    src='/images/mob-2.png'
-                    width={424}
-                    height={832.5}
-                    alt='Image'
-                  /> */}
-                  {/* <img style={{}} src='/images/mob-2.png' alt='Image' /> */}
-                </div>
-                <div className='box box3'>
-                  {/* <Image
-                    src='/images/mob-3.png'
-                    width={424}
-                    height={832.5}
-                    alt='Image'
-                  /> */}
-                  {/* <img style={{}} src='/images/mob-3.png' alt='Image' /> */}
-                </div>
-                <div className='box box4'>
-                  {/* <Image
-                    src='/images/mob-4.png'
-                    width={424}
-                    height={832.5}
-                    alt='Image'
-                  /> */}
-                  {/* <img style={{}} src='/images/mob-4.png' alt='Image' /> */}
-                </div>
+                <div className='box box2'></div>
+                <div className='box box3'></div>
+                <div className='box box4'></div>
               </div>
             </div>
             <div className='col-12 col-md-6 descriptions'>

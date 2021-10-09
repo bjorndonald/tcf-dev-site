@@ -139,140 +139,62 @@
     }
   }
 
+  .one-time {
+    position: relative;
+
+    .pTableDetailWrap:first-child {
+      margin-top: 2.5rem;
+      width: 95%;
+    }
+
+    .pTableSingleListWrap {
+      width: 120%;
+    }
+
+    .pTableSingleListWrap {
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+          line-height: 0.9rem;
+        }
+      }
+    }
+  }
   .btn-outline-dark {
     border-radius: 3.125rem;
   }
-  .col-md-5 {
-    padding: 0;
-  }
-  .wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .column {
-    h3 {
-      padding-top: 0px;
-      font-size: 2.25rem;
-    }
-
-    p {
-      font-size: 1.125rem;
-      font-weight: bold;
-    }
-  }
-  ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    li {
-      list-style: none;
-      display: flex;
-      margin: 0;
-      width: 90%;
-      padding: 0.25rem 0 !important;
-      border-bottom: 1px solid;
-      p {
-        font-size: 1.125rem;
-      }
-      p:first-child {
-        width: 50%;
-        margin-bottom: 0;
-        display: flex;
-        align-items: center;
-        font-weight: bold;
-      }
-      p:last-child {
-        width: 50%;
-        flex-wrap: wrap;
-        display: flex;
-        justify-content: center;
-        line-height: 1.25rem;
-        font-weight: lighter;
-        text-align: center;
-        margin-bottom: 0;
-      }
-    }
-    li:nth-child(5) {
-      p:first-child {
-        width: 60%;
-      }
-      p:last-child {
-        width: 40%;
-        padding-right: 15%;
-      }
-    }
-  }
-  ul,
-  ol {
-    padding-left: 0;
-  }
-
-  p {
-    padding: 0;
-  }
-  .one-time {
-    .pTableSingleListWrap {
-      background-color: #7a20eb;
-      color: white;
-      margin-left: 0rem;
-      padding-top: 0rem;
-      padding-bottom: 1.25rem;
-      width: 80%;
-
-      small {
-        font-size: 0.825rem;
-      }
-
-      ul {
-        li:nth-child(6) {
-          p:first-child {
-            width: 45%;
-
-            padding-right: 15%;
-          }
-          p:last-child {
-            padding-left: 7.5%;
-            width: 55%;
-            vertical-align: middle;
-            display: flex;
-            align-items: center;
-          }
-        }
-      }
-
-      .pTableSingleList {
-        padding-top: 1rem;
-      }
-
-      .cadText85 {
-        font-size: 2rem;
-        padding-top: 1rem;
-        background-color: #000;
-        color: #fff;
-        border: none;
-        padding-bottom: 1rem;
-        padding-left: 2.8rem;
-        padding-right: 2.8rem;
-        line-height: 1rem;
-        border-radius: 3.125rem;
-      }
-    }
-  }
   .monthly {
-    .pTableSingleListWrap {
-      background-color: #7a20eb;
+    .pTableDetailWrap:first-child {
+      background-color: black;
       color: white;
-      margin-left: 0rem;
-      padding-top: 0rem;
-      padding-bottom: 0.75rem;
-      width: 80%;
+      margin-top: 1.5rem;
+    }
+    .pTableDetailWrap {
+      width: 60%;
+      margin-right: -2rem;
+    }
 
-      .pTableSingleList {
-        padding-top: 1rem;
-      }
+    .pTableSingleList h3 {
+      color: white;
+    }
+
+    .pTableSingleList p {
+      color: white;
+    }
+
+    .pTableSingleList ul li {
+      color: white;
+
+      background-color: transparent;
+    }
+
+    .pTableSingleListWrap {
+      background-color: #be015f;
+      color: white;
+      margin-left: -2rem;
+      width: 90%;
 
       .cadText85 {
         font-size: 2rem;

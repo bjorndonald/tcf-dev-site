@@ -211,6 +211,76 @@
   }
 }
 
+@media only screen and (min-width: 1440px) and (max-width: 1715px) {
+  .fundingSectionThree {
+    .col-md-5 {
+      .pTableSingleListWrap {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1167px) and (max-width: 1440px) {
+  .fundingSectionThree {
+    .col-md-5 {
+      flex: 0 0 50%;
+      max-width: 50%;
+      .pTableSingleListWrap {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1167px) {
+  .fundingSectionThree {
+    .col-md-5 {
+      flex: 0 0 57%;
+      max-width: 57%;
+      .pTableSingleListWrap {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .fundingSectionThree {
+    .col-md-5 {
+      flex: 0 0 65%;
+      max-width: 65%;
+      .pTableSingleListWrap {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 926px) {
+  .fundingSectionThree {
+    .col-md-5 {
+      flex: 0 0 73%;
+      max-width: 73%;
+      .pTableSingleListWrap {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 848px) {
+  .fundingSectionThree {
+    .col-md-5 {
+      flex: 0 0 80%;
+      max-width: 80%;
+      .pTableSingleListWrap {
+        width: 100%;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .signUpSectionOne {
     .page-options {
