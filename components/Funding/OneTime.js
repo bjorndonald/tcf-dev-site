@@ -132,7 +132,7 @@ function OneTime(props) {
                     <InfoIcon />
                   </OverlayTrigger>
                 </p>
-                <p>30 days</p>
+                <p>60 days</p>
               </li>
               <li>
                 <p>
