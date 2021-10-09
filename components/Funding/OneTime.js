@@ -1,10 +1,11 @@
 import React from 'react'
-import { OverlayTrigger, Tab, Row, Col, Nav, Tooltip } from 'react-bootstrap'
 import { gsap } from 'gsap/dist/gsap'
+import { OverlayTrigger, Tab, Row, Col, Nav, Tooltip } from 'react-bootstrap'
+
 import $ from 'jquery'
 import InfoIcon from '../../icons/InfoIcon'
 
-function OneTime(props) {
+function OneTime (props) {
   return (
     <div className='wrapper'>
       <div className='col-12 col-md-5 d-flex justify-content-center bottom-one-time'>
@@ -31,7 +32,9 @@ function OneTime(props) {
                       </Tooltip>
                     }
                   >
-                    <InfoIcon />
+                    <div>
+                      <InfoIcon />
+                    </div>
                   </OverlayTrigger>
                 </p>
                 <p>30 days</p>
@@ -49,7 +52,9 @@ function OneTime(props) {
                       </Tooltip>
                     }
                   >
-                    <InfoIcon />
+                    <div>
+                      <InfoIcon />
+                    </div>
                   </OverlayTrigger>
                 </p>
                 <p>8%</p>
@@ -67,7 +72,9 @@ function OneTime(props) {
                       </Tooltip>
                     }
                   >
-                    <InfoIcon />
+                    <div>
+                      <InfoIcon />
+                    </div>
                   </OverlayTrigger>
                 </p>
                 <p>10%</p>
@@ -85,7 +92,9 @@ function OneTime(props) {
                       </Tooltip>
                     }
                   >
-                    <InfoIcon />
+                    <div>
+                      <InfoIcon />
+                    </div>
                   </OverlayTrigger>
                 </p>
                 <p>10</p>
@@ -97,17 +106,20 @@ function OneTime(props) {
                     placement={'top'}
                     overlay={
                       <Tooltip>
-                        Traders will be allowed to choose between having a 50% positive days or 5% max daily loss limit on their evaluation
+                        Traders will be allowed to choose between having a 50%
+                        positive days or 5% max daily loss limit on their
+                        evaluation
                       </Tooltip>
                     }
                   >
-                    <InfoIcon />
+                    <div>
+                      <InfoIcon />
+                    </div>
                   </OverlayTrigger>
                 </p>
                 <p>50% positive days or 5% daily loss limit</p>
               </li>
             </ul>
-
 
             <div className='column'>
               <h3>Stage 2</h3>
@@ -129,7 +141,9 @@ function OneTime(props) {
                       </Tooltip>
                     }
                   >
-                    <InfoIcon />
+                    <div>
+                      <InfoIcon />
+                    </div>
                   </OverlayTrigger>
                 </p>
                 <p>60 days</p>
@@ -147,7 +161,9 @@ function OneTime(props) {
                       </Tooltip>
                     }
                   >
-                    <InfoIcon />
+                    <div>
+                      <InfoIcon />
+                    </div>
                   </OverlayTrigger>
                 </p>
                 <p>4%</p>
@@ -165,7 +181,9 @@ function OneTime(props) {
                       </Tooltip>
                     }
                   >
-                    <InfoIcon />
+                    <div>
+                      <InfoIcon />
+                    </div>
                   </OverlayTrigger>
                 </p>
                 <p>10%</p>
@@ -183,7 +201,9 @@ function OneTime(props) {
                       </Tooltip>
                     }
                   >
-                    <InfoIcon />
+                    <div>
+                      <InfoIcon />
+                    </div>
                   </OverlayTrigger>
                 </p>
                 <p>10</p>
@@ -195,11 +215,15 @@ function OneTime(props) {
                     placement={'top'}
                     overlay={
                       <Tooltip>
-                        Traders will be allowed to choose between having a 50% positive days or 5% max daily loss limit on their evaluation
+                        Traders will be allowed to choose between having a 50%
+                        positive days or 5% max daily loss limit on their
+                        evaluation
                       </Tooltip>
                     }
                   >
-                    <InfoIcon />
+                    <div>
+                      <InfoIcon />
+                    </div>
                   </OverlayTrigger>
                 </p>
                 <p>50% positive days or 5% daily loss limit</p>
@@ -216,7 +240,9 @@ function OneTime(props) {
                       </Tooltip>
                     }
                   >
-                    <InfoIcon />
+                    <div>
+                      <InfoIcon />
+                    </div>
                   </OverlayTrigger>
                 </p>
                 <p>85%</p>

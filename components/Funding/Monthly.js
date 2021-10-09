@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { gsap } from 'gsap/dist/gsap'
 import { OverlayTrigger, Tab, Row, Col, Nav, Tooltip } from 'react-bootstrap'
 import InfoIcon from '../../icons/InfoIcon'
 function Monthly (props) {
@@ -37,7 +38,9 @@ function Monthly (props) {
                       </Tooltip>
                     }
                   >
-                    <InfoIcon />
+                    <div>
+                      <InfoIcon />
+                    </div>
                   </OverlayTrigger>
                 </p>
                 <p>24/5</p>
@@ -57,7 +60,9 @@ function Monthly (props) {
                       </Tooltip>
                     }
                   >
-                    <InfoIcon />
+                    <div>
+                      <InfoIcon />
+                    </div>
                   </OverlayTrigger>
                 </p>
                 <p>Five Percent</p>
@@ -73,7 +78,9 @@ function Monthly (props) {
                       </Tooltip>
                     }
                   >
-                    <InfoIcon />
+                    <div>
+                      <InfoIcon />
+                    </div>
                   </OverlayTrigger>
                 </p>
                 <p>Ten Percent</p>
@@ -91,7 +98,9 @@ function Monthly (props) {
                       </Tooltip>
                     }
                   >
-                    <InfoIcon />
+                    <div>
+                      <InfoIcon />
+                    </div>
                   </OverlayTrigger>
                 </p>
                 <p>Forex, Gold, Cryptos* and Indices*</p>
@@ -113,7 +122,9 @@ function Monthly (props) {
                       </Tooltip>
                     }
                   >
-                    <InfoIcon />
+                    <div>
+                      <InfoIcon />
+                    </div>
                   </OverlayTrigger>
                 </p>
                 <p>up to 60%</p>
@@ -129,7 +140,9 @@ function Monthly (props) {
                       </Tooltip>
                     }
                   >
-                    <InfoIcon />
+                    <div>
+                      <InfoIcon />
+                    </div>
                   </OverlayTrigger>
                 </p>
                 <p>Overnight and Over the weekend</p>
