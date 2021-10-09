@@ -1,0 +1,170 @@
+<div className='col-12 row mx-0 top-side justify-content-center'>
+        <div className=' one-time col-12 row d-flex align-items-stretch  pTable'>
+          <div className='col-12 col-md-2 d-flex align-items-start justify-content-end'>
+            <div className='pTableDetailWrap w-80'>
+              <div className='pTableDetail '>
+                <h3></h3>
+                <ul>
+                  <li>Leverage</li>
+                  <li>
+                    Trading Period
+                    <OverlayTrigger
+                      placement={'top'}
+                      overlay={
+                        <Tooltip>
+                          Trading period refers to the overall duration of the
+                          evaluation.
+                        </Tooltip>
+                      }
+                    >
+                      <InfoIcon />
+                    </OverlayTrigger>
+                  </li>
+                  <li>
+                    Profit Target
+                    <OverlayTrigger
+                      placement={'top'}
+                      overlay={
+                        <Tooltip>
+                          Profit target means that a trader must hit a profit in
+                          the sum of closed positions on the assigned trading
+                          account.
+                        </Tooltip>
+                      }
+                    >
+                      <InfoIcon />
+                    </OverlayTrigger>
+                  </li>
+                  <li>
+                    Drawdown Limit
+                    <OverlayTrigger
+                      placement={'top'}
+                      overlay={
+                        <Tooltip>
+                          This means, the equity of the trading account must
+                          not, at any moment during both stages duration, reach
+                          a loss of -10%.
+                        </Tooltip>
+                      }
+                    >
+                      <InfoIcon />
+                    </OverlayTrigger>
+                  </li>
+                  <li>
+                    Minimum trading days
+                    <OverlayTrigger
+                      placement={'top'}
+                      overlay={
+                        <Tooltip>
+                          A trading day is defined as a day when at least one
+                          trade is placed.
+                        </Tooltip>
+                      }
+                    >
+                      <InfoIcon />
+                    </OverlayTrigger>
+                  </li>
+                  <li>
+                    Profit Share
+                    <OverlayTrigger
+                      placement={'top'}
+                      overlay={
+                        <Tooltip>
+                          Profit share is 85% to the Traders and it’s only
+                          available on the live funded account
+                        </Tooltip>
+                      }
+                    >
+                      <InfoIcon />
+                    </OverlayTrigger>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className='col-12 col-md-2 d-flex align-i justify-content-endtems-start'>
+            <div className='pTableSingleListWrap w-80'>
+              <div className='pTableSingleList'>
+                <h3>Stage One</h3>
+                <p>First step of the evaluation</p>
+                <ul>
+                  
+                  <li>1:200</li>
+                  <li>Thirty Days </li>
+                  <li>Eight Percent</li>
+                  <li>Ten Percent</li>
+                  <li>Ten Day</li>
+                </ul>
+                <div className='mb-4'>
+                  <p>
+                    <small>
+                      Fifty Percent or 5% daily loss limit{' '}
+                      <OverlayTrigger
+                        placement={'top'}
+                        overlay={
+                          <Tooltip>
+                            <b>
+                              Traders will be allowed to choose between having a
+                              50% positive day on their evaluation or daily loss
+                              limit.
+                            </b>
+                          </Tooltip>
+                        }
+                      >
+                        <InfoIcon />
+                      </OverlayTrigger>
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='col-12 col-md-2 pTableSingleListWrap expandedWrap'>
+            <div className='pTableSingleList'>
+              <h3>Stage Two</h3>
+              <p>First step of the evaluation</p>
+              <ul>
+                {/* <li>85%</li> */}
+                <li>1:200</li>
+                <li>Sixty Days</li>
+                <li>Four Percent</li>
+                <li>Ten Percent</li>
+                <li>Ten days</li>
+              </ul>
+              <div className='mb-4'>
+                <p>
+                  <small>
+                    Fifty Percent or 5% daily loss limit{' '}
+                    <OverlayTrigger
+                      placement={'top'}
+                      overlay={
+                        <Tooltip>
+                          <b>
+                            Traders will be allowed to choose between having a
+                            50% positive day on their evaluation or daily loss
+                            limit.
+                          </b>
+                        </Tooltip>
+                      }
+                    >
+                      <InfoIcon />
+                    </OverlayTrigger>
+                  </small>
+                </p>
+              </div>
+              <a
+                className='btn btn-primary cadText85'
+                href='https://fund.traderscentral.com/sign-up'
+              >
+                {'CAD ' + cadText}
+              </a>
+
+              <small className='mt-2'>
+                Click the button above to make payment
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>

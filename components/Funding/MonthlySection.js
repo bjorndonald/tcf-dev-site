@@ -66,9 +66,11 @@ function MonthlySection (props) {
           </OverlayTrigger>
         </div>
       </div>
+      {/* <div className='col-12 row mx-0 justify-content-center monthly'>
+        <Left />
+        <Right cadText={cadText} leverage={leverage} />
+      </div> */}
       <div className='col-12 row mx-0 justify-content-center'>
-        {/* <Left />
-        <Right cadText={cadText} leverage={leverage} /> */}
         <Monthly leverage={leverage} cadText={cadText} />
       </div>
     </Fragment>

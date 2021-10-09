@@ -7,7 +7,7 @@ import InfoIcon from '../../icons/InfoIcon'
 function OneTime (props) {
   return (
     <div className='wrapper'>
-      <div className='col-12 col-md-5 d-flex justify-content-center one-time'>
+      <div className='col-12 col-md-5 d-flex justify-content-center bottom-one-time'>
         {' '}
         <div className='pTableSingleListWrap  pTableSingleListWrapRound'>
           <div className='pTableSingleList'>

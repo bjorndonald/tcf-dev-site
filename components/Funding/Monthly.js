@@ -13,7 +13,7 @@ function Monthly (props) {
   }
   return (
     <div className='wrapper'>
-      <div className='col-12 col-md-5 d-flex justify-content-center monthly'>
+      <div className='col-12 col-md-5 d-flex justify-content-center bottom-monthly'>
         {' '}
         <div className='pTableSingleListWrap  pTableSingleListWrapRound'>
           <div className='pTableSingleList'>
@@ -49,10 +49,11 @@ function Monthly (props) {
                     placement={'top'}
                     overlay={
                       <Tooltip>
-                        Withdrawal requests must be made before the 20th is each
-                        month. Withdrawals are paid between the 25th - 30th of
-                        every month via Bank Transfer, Paypal, Skrill, Mobile
-                        Money, Interac, Cash Pick up and Bitcoin.
+                        Withdrawal methods currently available by our backers
+                        are Crypto (BTC, ETH, USDC-ERC20, USDT-TC20), for bank
+                        transfer you can use the backers partner exchange
+                        tccrypto.io. Receiving withdrawals via tccrypto.io is
+                        optional.
                       </Tooltip>
                     }
                   >
@@ -97,7 +98,7 @@ function Monthly (props) {
               </li>
               <li>
                 <p>Account Leverage</p>
-                <p>{props.leverage}</p>
+                <p>1:6</p>
               </li>
 
               <li>

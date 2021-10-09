@@ -151,6 +151,80 @@
     justify-content: center;
   }
 
+  .top-side {
+    margin-bottom: 10rem;
+  }
+
+  .one-time {
+    position: relative;
+
+    .pTableDetailWrap:first-child {
+      margin-top: 2.5rem;
+      width: 95%;
+    }
+
+    .pTableSingleListWrap {
+      width: 120%;
+    }
+
+    .pTableSingleListWrap {
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+          line-height: 0.9rem;
+        }
+      }
+    }
+  }
+
+  .monthly {
+    .pTableDetailWrap:first-child {
+      background-color: black;
+      color: white;
+      margin-top: 1.5rem;
+    }
+    .pTableDetailWrap {
+      width: 60%;
+      margin-right: -2rem;
+    }
+
+    .pTableSingleList h3 {
+      color: white;
+    }
+
+    .pTableSingleList p {
+      color: white;
+    }
+
+    .pTableSingleList ul li {
+      color: white;
+
+      background-color: transparent;
+    }
+
+    .pTableSingleListWrap {
+      background-color: #be015f;
+      color: white;
+      margin-left: -2rem;
+      width: 90%;
+
+      .cadText85 {
+        font-size: 2rem;
+        padding-top: 1rem;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        padding-bottom: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        line-height: 1rem;
+        border-radius: 3.125rem;
+      }
+    }
+  }
+
   .column {
     h3 {
       padding-top: 0px;
@@ -162,6 +236,7 @@
       font-weight: bold;
     }
   }
+
   ul {
     display: flex;
     flex-direction: column;
@@ -195,16 +270,17 @@
         margin-bottom: 0;
       }
     }
-    li:nth-child(5) {
-      p:first-child {
-        width: 60%;
-      }
-      p:last-child {
-        width: 40%;
-        padding-right: 15%;
-      }
-    }
+    // li:nth-child(5) {
+    //   p:first-child {
+    //     width: 60%;
+    //   }
+    //   p:last-child {
+    //     width: 40%;
+    //     // padding-right: 15%;
+    //   }
+    // }
   }
+
   ul,
   ol {
     padding-left: 0;
@@ -213,7 +289,7 @@
   p {
     padding: 0;
   }
-  .one-time {
+  .bottom-one-time {
     .pTableSingleListWrap {
       background-color: #7a20eb;
       color: white;
@@ -261,7 +337,7 @@
       }
     }
   }
-  .monthly {
+  .bottom-monthly {
     .pTableSingleListWrap {
       background-color: #7a20eb;
       color: white;

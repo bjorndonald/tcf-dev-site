@@ -3,6 +3,7 @@ import { OverlayTrigger, Tab, Row, Col, Nav, Tooltip } from 'react-bootstrap'
 import { gsap } from 'gsap/dist/gsap'
 import $ from 'jquery'
 import OneTime from './OneTime'
+import InfoIcon from '../../icons/InfoIcon'
 
 function OneTimeSection () {
   const [cadText, setCadText] = useState('85')
@@ -102,6 +103,7 @@ function OneTimeSection () {
           </OverlayTrigger>
         </div>
       </div>
+
       <div className='col-12 row mx-0 justify-content-center'>
         <OneTime cadText={cadText} />
       </div>
