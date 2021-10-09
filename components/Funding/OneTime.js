@@ -4,7 +4,7 @@ import { gsap } from 'gsap/dist/gsap'
 import $ from 'jquery'
 import InfoIcon from '../../icons/InfoIcon'
 
-function OneTime (props) {
+function OneTime(props) {
   return (
     <div className='wrapper'>
       <div className='col-12 col-md-5 d-flex justify-content-center one-time'>
@@ -92,22 +92,23 @@ function OneTime (props) {
               </li>
               <li>
                 <p>
-                  Profit Share
+                  Rule
                   <OverlayTrigger
                     placement={'top'}
                     overlay={
                       <Tooltip>
-                        Profit share is 85% to the Traders and it’s only
-                        available on the live funded account
+                        Traders will be allowed to choose between having a 50% positive days or 5% max daily loss limit on their evaluation
                       </Tooltip>
                     }
                   >
                     <InfoIcon />
                   </OverlayTrigger>
                 </p>
-                <p>50% or 5% daily loss limit</p>
+                <p>50% positive days or 5% daily loss limit</p>
               </li>
             </ul>
+
+
             <div className='column'>
               <h3>Stage 2</h3>
             </div>
@@ -149,7 +150,7 @@ function OneTime (props) {
                     <InfoIcon />
                   </OverlayTrigger>
                 </p>
-                <p>8%</p>
+                <p>4%</p>
               </li>
               <li>
                 <p>
@@ -189,6 +190,22 @@ function OneTime (props) {
               </li>
               <li>
                 <p>
+                  Rule
+                  <OverlayTrigger
+                    placement={'top'}
+                    overlay={
+                      <Tooltip>
+                        Traders will be allowed to choose between having a 50% positive days or 5% max daily loss limit on their evaluation
+                      </Tooltip>
+                    }
+                  >
+                    <InfoIcon />
+                  </OverlayTrigger>
+                </p>
+                <p>50% positive days or 5% daily loss limit</p>
+              </li>
+              <li>
+                <p>
                   Profit Share
                   <OverlayTrigger
                     placement={'top'}
@@ -202,7 +219,7 @@ function OneTime (props) {
                     <InfoIcon />
                   </OverlayTrigger>
                 </p>
-                <p>50% or 5% daily loss limit</p>
+                <p>85%</p>
               </li>
             </ul>
           </div>
