@@ -107,7 +107,7 @@ function Monthly (props) {
               </li>
               <li>
                 <p>Account Leverage</p>
-                <p>1:6</p>
+                <p>{props.leverage}</p>
               </li>
 
               <li>
