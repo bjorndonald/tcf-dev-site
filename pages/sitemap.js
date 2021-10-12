@@ -5,7 +5,7 @@ const Sitemap = () => {}
 export const getServerSideProps = ({ res }) => {
   const baseUrl = {
     development: 'http://localhost:8000',
-    production: 'https://traderscentralfund.com'
+    production: 'https://traderscentral.com'
   }[process.env.NODE_ENV]
 
   const staticPages = fs
