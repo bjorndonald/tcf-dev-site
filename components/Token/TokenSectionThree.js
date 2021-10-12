@@ -29,11 +29,8 @@ export default function TokenSectionThree () {
   return (
     <div className='tokenSectionThree tokenSectionaCOE d-flex align-items-center'>
       <div className='container'>
-        <div
-          style={{ margin: 'auto' }}
-          className='row  col-10 justify-content-between d-flex align-items-center'
-        >
-          <div className='col-md-6 d-flex align-items-center  mb-4 gaspSlideLeft'>
+        <div className='row  col-10 justify-content-between d-flex align-items-center'>
+          <div className='col-md-6 d-flex align-items-center gaspSlideLeft'>
             <div className='tradingBasicHP '>
               <h2 style={{ textAlign: 'center' }}>
                 A currency for our <br />
@@ -51,11 +48,8 @@ export default function TokenSectionThree () {
             </div>
           </div>
         </div>
-        <div
-          style={{ margin: 'auto' }}
-          className='row  col-10  d-flex align-items-center justify-content-between'
-        >
-          <div className='col-md-6 mb-4 gaspSlideRight'>
+        <div className='row  col-10  d-flex align-items-center justify-content-between'>
+          <div className='col-md-6  gaspSlideRight'>
             <div className='tradingBasicI'>
               {/* <Image
                 src='/images/comp_4.gif'
@@ -76,6 +70,25 @@ export default function TokenSectionThree () {
                 It's simple, login and shake
                 <br /> your phone for discounts
               </p>
+            </div>
+          </div>
+        </div>
+        <div className='row new col-10 justify-content-between d-flex align-items-center'>
+          <div className='col-md-6 d-flex align-items-center gaspSlideLeft'>
+            <div className='tradingBasicHP '>
+              <h2 style={{ textAlign: 'center' }}>
+                Earn yield with
+                <br /> wagers
+              </h2>
+              <p style={{ textAlign: 'center' }}>
+                Place fun bets weekly with
+                <br /> your TCT's
+              </p>
+            </div>
+          </div>
+          <div className='col-12  col-md-6 mb-4 gaspSlideRight'>
+            <div className='tradingBasicI'>
+              <img src='/images/token/Three.jpg' alt='' />
             </div>
           </div>
         </div>

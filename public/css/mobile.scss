@@ -267,9 +267,13 @@
   }
 
   .tokenSectionOne {
-    height: 50vh;
-    padding-top: 2rem;
+    height: auto;
+    padding-top: 3rem;
     padding-bottom: 0rem;
+
+    .row {
+      padding: 0;
+    }
     h1 {
       margin-top: 0rem;
       font-size: 2.5rem;
@@ -367,6 +371,35 @@
 
     .row {
       flex-direction: column;
+    }
+
+    .col-10 {
+      margin: 2rem auto;
+
+      .col-md-6:first-child {
+        margin-bottom: 2rem;
+      }
+
+      .col-md-6:last-child {
+        // margin-top: -2rem;
+      }
+    }
+
+    .new {
+      margin-top: 8rem;
+      margin-bottom: 3rem;
+      img {
+        // margin-left: -25%;
+        // width: 150%;
+      }
+
+      // .col-md-6:first-child {
+      //   margin-bottom: 0rem;
+      // }
+
+      // .col-md-6:last-child {
+      //   margin-top: -1rem;
+      // }
     }
   }
 
