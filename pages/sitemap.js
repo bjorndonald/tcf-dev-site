@@ -16,7 +16,7 @@ export const getServerSideProps = ({ res }) => {
       }[process.env.NODE_ENV]
     )
     .filter(staticPage => {
-      return !['_app.js', 'sitemap.js'].includes(staticPage)
+      return !['_app.js', 'sitemap.js', 'api', 'products'].includes(staticPage)
     })
     .map(staticPagePath => {
       return `${baseUrl}/${staticPagePath}`
