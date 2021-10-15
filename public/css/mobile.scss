@@ -1895,6 +1895,354 @@
       }
     }
   }
+
+  .loginSectionOne.web {
+    display: none;
+  }
+
+  .loginSectionOne.mobile {
+    background-color: #8f23f5;
+    height: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    .first-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      padding-top: 3rem;
+      padding-bottom: 5rem;
+
+      .top-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        img {
+          width: auto;
+          height: 6rem;
+          margin-right: 1.5rem;
+        }
+
+        h2 {
+          line-height: 3rem;
+        }
+      }
+
+      .graphic {
+        width: 100%;
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .btn {
+          width: 80%;
+        }
+
+        .btn:first-child {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+
+    .second-inner {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-card {
+      width: 90vw;
+
+      .top-row {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .login-card {
+      padding: 2rem;
+      background-color: white;
+      border-radius: 1.5625rem;
+      display: flex;
+      width: 90vw;
+      height: auto;
+      flex-direction: column;
+
+      .top-row {
+        margin-bottom: 1rem;
+        img {
+          width: auto;
+          height: 6rem;
+          margin-right: 1.5rem;
+        }
+
+        h2 {
+          line-height: 3rem;
+        }
+      }
+
+      .link {
+        font-weight: bold;
+        font-size: 1.125rem;
+      }
+
+      .link:hover {
+        text-decoration: underline;
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        label {
+          margin-bottom: 0rem;
+          font-size: 1.125rem;
+          text-align: center;
+          font-weight: bold;
+          width: 100%;
+          color: black;
+        }
+
+        .textWrapper {
+          display: flex;
+          align-items: center;
+          background-color: #8f23f5;
+          border-radius: 1.5625rem;
+          width: 100%;
+          padding-right: 1rem;
+
+          i {
+            font-size: 1.5rem;
+            color: white;
+          }
+        }
+
+        input {
+          flex-grow: 1;
+          border: none;
+          border-radius: 1.5625rem;
+          background-color: #8f23f5;
+          font-size: 1.25rem;
+          color: white;
+          outline: none;
+          padding: 0.75rem 1.25rem;
+        }
+      }
+
+      .button {
+        width: 100%;
+
+        .btn {
+          width: 100%;
+          border-radius: 5vh;
+          padding: 1vh 3vh;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .inner {
+      margin-top: 10vh;
+      padding-bottom: 10vh;
+      flex-direction: column-reverse;
+
+      .graphic {
+        margin-right: 0;
+        width: 80vw;
+        margin-top: 5vh;
+
+        height: auto;
+      }
+    }
+  }
+
+  .sign-upSectionOne.web {
+    display: none;
+  }
+
+  .sign-upSectionOne.mobile {
+    background-color: #8f23f5;
+    height: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    h6 {
+      font-size: 0.75rem;
+    }
+
+    .links {
+      display: flex;
+      margin-top: 1rem;
+      justify-content: center;
+    }
+
+    .first-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      padding-top: 3rem;
+      padding-bottom: 5rem;
+
+      .top-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        img {
+          width: auto;
+          height: 6rem;
+          margin-right: 1.5rem;
+        }
+
+        h2 {
+          line-height: 3rem;
+        }
+      }
+
+      .graphic {
+        width: 100%;
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .btn {
+          width: 80%;
+        }
+
+        .btn:first-child {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+
+    .second-inner {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-card {
+      width: 90vw;
+
+      .top-row {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .login-card {
+      padding: 2rem;
+      background-color: white;
+      border-radius: 1.5625rem;
+      display: flex;
+      width: 90vw;
+      height: auto;
+      flex-direction: column;
+
+      .top-row {
+        margin-bottom: 1rem;
+        img {
+          width: auto;
+          height: 6rem;
+          margin-right: 1.5rem;
+        }
+
+        h2 {
+          line-height: 3rem;
+        }
+      }
+
+      .link {
+        font-weight: bold;
+        font-size: 1.125rem;
+      }
+
+      .link:hover {
+        text-decoration: underline;
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        label {
+          margin-bottom: 0rem;
+          font-size: 1.125rem;
+          text-align: center;
+          font-weight: bold;
+          width: 100%;
+          color: black;
+        }
+
+        .textWrapper {
+          display: flex;
+          align-items: center;
+          background-color: #8f23f5;
+          border-radius: 1.5625rem;
+          width: 100%;
+          padding-right: 1rem;
+
+          i {
+            font-size: 1.5rem;
+            color: white;
+          }
+        }
+
+        input {
+          flex-grow: 1;
+          border: none;
+          border-radius: 1.5625rem;
+          background-color: #8f23f5;
+          font-size: 1.25rem;
+          color: white;
+          outline: none;
+          padding: 0.75rem 1.25rem;
+        }
+      }
+
+      .button {
+        width: 100%;
+
+        .btn {
+          width: 100%;
+          border-radius: 5vh;
+          padding: 1vh 3vh;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .inner {
+      margin-top: 10vh;
+      padding-bottom: 10vh;
+      flex-direction: column-reverse;
+
+      .graphic {
+        margin-right: 0;
+        width: 80vw;
+        margin-top: 5vh;
+
+        height: auto;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 480px) and (min-height: 726px) and (max-height: 890px) {

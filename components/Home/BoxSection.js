@@ -29,7 +29,7 @@ export default function BoxSection () {
                   autoPlay='autoplay'
                   muted={true}
                 >
-                  <source src='/videos/home/boxOne.mp4' type='video/mp4' />
+                  <source src='/videos/home/boxOne.webm' type='video/webm' />
                   Your browser does not support the video tag.
                 </video>
                 {/* <img src='/images/home/boxOne.jpg' className='image' alt='' /> */}
@@ -61,7 +61,7 @@ export default function BoxSection () {
                 autoPlay='autoplay'
                 muted={true}
               >
-                <source src='/videos/home/boxTwo.mp4' type='video/mp4' />
+                <source src='/videos/home/boxTwo.webm' type='video/webm' />
                 Your browser does not support the video tag.
               </video>
               {/* <img src='/images/home/boxTwo.jpg' className='image' alt='' /> */}
@@ -89,7 +89,7 @@ export default function BoxSection () {
                 autoPlay='autoplay'
                 muted={true}
               >
-                <source src='/videos/home/boxThree.mp4' type='video/mp4' />
+                <source src='/videos/home/boxThree.webm' type='video/webm' />
                 Your browser does not support the video tag.
               </video>
               {/* <img src='/images/home/boxThree.jpg' className='image' alt='' /> */}
@@ -120,7 +120,7 @@ export default function BoxSection () {
                   autoPlay='autoplay'
                   muted={true}
                 >
-                  <source src='/videos/home/boxFour.mp4' type='video/mp4' />
+                  <source src='/videos/home/boxFour.webm' type='video/webm' />
                   Your browser does not support the video tag.
                 </video> */}
                 <img
