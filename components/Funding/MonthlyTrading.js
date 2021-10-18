@@ -101,7 +101,10 @@ function MonthlyTrading () {
             Only the following can be traded in pairs; USD, GBP, EUR, AUD, NZD,
             CHF, CAD, JPY, Gold and Silver. Crypto and Indices are available as
             an{' '}
-            <a href='https://medium.com/traders-central-eco/introducing-crypto-and-indices-trading-on-the-monthly-plan-d044a4b84e57'>
+            <a
+              target='trading'
+              href='https://medium.com/traders-central-eco/introducing-crypto-and-indices-trading-on-the-monthly-plan-d044a4b84e57'
+            >
               unlock-able add-on
             </a>
             .
