@@ -235,6 +235,7 @@ export default function NavBar () {
                     <a
                       href='https://fund.traderscentral.com/get-started'
                       className='btn btn-black'
+                      target="_blank"
                     >
                       Get Started
                     </a>
