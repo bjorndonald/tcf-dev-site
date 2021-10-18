@@ -25,6 +25,37 @@
     }
   }
 
+  select {
+    background-color: #8c26f3;
+    color: #fff;
+    border-color: #8c26f3;
+    box-shadow: none !important;
+    outline-color: royalblue;
+  }
+
+  .custom-select-bx {
+    flex-grow: 1;
+    border: none;
+    border-radius: 1.5625rem;
+    background-color: #8f23f5;
+    font-size: 1.25rem;
+    color: white;
+    outline: none;
+    padding: 0.5rem 1.25rem;
+  }
+
+  .fCountry {
+    padding: 20px 30px;
+    border: #918080 1px solid;
+    border-radius: 50px;
+    width: 100%;
+    background-color: #8f23f5;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    /* background-color: #e5edfb !important; */
+  }
+
   .links {
     display: flex;
     margin-top: 1rem;
@@ -53,15 +84,16 @@
     flex-direction: column;
 
     .top-row {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       img {
         width: auto;
-        height: 6rem;
+        height: 4.5rem;
         margin-right: 1.5rem;
       }
 
       h2 {
-        line-height: 3rem;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
       }
     }
 
@@ -109,7 +141,7 @@
         font-size: 1.25rem;
         color: white;
         outline: none;
-        padding: 0.75rem 1.25rem;
+        padding: 0.5rem 1.25rem;
       }
     }
 

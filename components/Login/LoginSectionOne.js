@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import $ from 'jquery'
+import Link from 'next/link'
 
 function LoginSectionOne () {
   const [stage, setStage] = useState('one')
@@ -45,9 +46,11 @@ function LoginSectionOne () {
               <a onClick={() => setStage('two')} className='btn btn-black'>
                 Login
               </a>
-              <a href='' className='btn btn-black'>
-                Sign up
-              </a>
+              <Link href='/sign-up'>
+                <a href='' className='btn btn-black'>
+                  Sign up
+                </a>
+              </Link>
             </div>
           </div>
         ) : stage == 'two' ? (
@@ -146,12 +149,14 @@ function LoginSectionOne () {
               </a>
             </div>
             <div className='row justify-content-center'>
-              <a
-                href='https://fund.traderscentral.com/sign-up'
-                className='link'
-              >
-                Sign-up
-              </a>
+              <Link href='/sign-up'>
+                <a
+                  href='https://fund.traderscentral.com/sign-up'
+                  className='link'
+                >
+                  Sign-up
+                </a>
+              </Link>
             </div>
           </div>
         </div>

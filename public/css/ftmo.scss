@@ -1,5 +1,12 @@
 .ftmoSectionOne {
   .container {
+    .web {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
     padding-top: 12.5vh;
     .pTableDetail ul li .pTableiconWrap {
       height: 1.15rem;
@@ -18,6 +25,7 @@
 
     .bottom-table {
       justify-content: center;
+      margin-bottom: 10vh;
     }
 
     h4 {

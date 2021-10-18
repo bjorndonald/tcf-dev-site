@@ -10,7 +10,7 @@ function TopTable () {
           <ul>
             <li>
               <h3></h3>
-              <h3>FTMO</h3>
+              <h3>The Prop Trading</h3>
               <h3>TCF</h3>
             </li>
             <li>
@@ -19,7 +19,7 @@ function TopTable () {
               <p>Challenge, Instant Funding</p>
             </li>
             <li>
-              <p>Account Type</p>
+              <p>Funded Account Type</p>
               <p>Demo</p>
               <p>Live</p>
             </li>

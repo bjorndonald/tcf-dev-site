@@ -726,6 +726,10 @@
     display: flex;
     width: 100%;
   }
+  a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
 
   .types {
     // color: #fff;

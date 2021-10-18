@@ -6,7 +6,7 @@ import Head from 'next/head'
 import $ from 'jquery'
 import LoginSectionOne from '../components/Login/LoginSectionOne'
 
-export default function faqs () {
+export default function login () {
   useEffect(() => {
     $('.top-menu').hide()
     $('.site-footer').hide()

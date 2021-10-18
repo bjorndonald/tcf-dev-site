@@ -891,62 +891,62 @@
     height: auto;
   }
 
-  .ftmoSectionOne {
-    overflow-x: hidden;
-    .col-12 {
-      padding: 0;
-    }
-    .top-table {
-      justify-content: flex-start !important;
-    }
+  // .ftmoSectionOne {
+  //   overflow-x: hidden;
+  //   .col-12 {
+  //     padding: 0;
+  //   }
+  //   .top-table {
+  //     justify-content: flex-start !important;
+  //   }
 
-    .bottom-table {
-      overflow-x: scroll;
-      justify-content: flex-start;
-    }
-    .top-table {
-      .pTableSingleListWrap {
-        width: 58rem !important;
-        flex: 0 0 58rem !important;
-        max-width: 58rem !important;
-      }
-    }
-    .bottom-table {
-      .pTableSingleListWrap {
-        width: 80rem !important;
-        flex: 0 0 80rem !important;
-        max-width: 80rem !important;
-      }
-    }
-    .top-table {
-      // padding: 0;
-      overflow-x: scroll;
+  //   .bottom-table {
+  //     overflow-x: scroll;
+  //     justify-content: flex-start;
+  //   }
+  //   .top-table {
+  //     .pTableSingleListWrap {
+  //       width: 58rem !important;
+  //       flex: 0 0 58rem !important;
+  //       max-width: 58rem !important;
+  //     }
+  //   }
+  //   .bottom-table {
+  //     .pTableSingleListWrap {
+  //       width: 80rem !important;
+  //       flex: 0 0 80rem !important;
+  //       max-width: 80rem !important;
+  //     }
+  //   }
+  //   .top-table {
+  //     // padding: 0;
+  //     overflow-x: scroll;
 
-      .bottomBtn {
-        display: flex;
-        justify-content: center !important;
-        .right {
-          width: auto !important;
-        }
-      }
+  //     .bottomBtn {
+  //       display: flex;
+  //       justify-content: center !important;
+  //       .right {
+  //         width: auto !important;
+  //       }
+  //     }
 
-      ul {
-        li {
-          p:nth-child(2),
-          h3:nth-child(2),
-          p:first-child,
-          h3:first-child {
-            width: 27.5%;
-          }
+  //     ul {
+  //       li {
+  //         p:nth-child(2),
+  //         h3:nth-child(2),
+  //         p:first-child,
+  //         h3:first-child {
+  //           width: 27.5%;
+  //         }
 
-          p:last-child,
-          h3:last-child {
-            width: 45%;
-          }
-        }
-      }
-    }
-  }
+  //         p:last-child,
+  //         h3:last-child {
+  //           width: 45%;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 // Landscape

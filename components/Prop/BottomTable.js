@@ -11,12 +11,12 @@ function BottomTable () {
           <ul>
             <li>
               <h3></h3>
-              <h3>FTMO</h3>
+              <h3>The Prop Trading</h3>
               <h3>TCF</h3>
             </li>
             <li>
               <p>Leverage</p>
-              <p>1:100</p>
+              <p>1:200</p>
               <p>1:200</p>
             </li>
             <li>
@@ -30,9 +30,7 @@ function BottomTable () {
                 25% increase{' '}
                 <OverlayTrigger
                   placement={'top'}
-                  overlay={
-                    <Tooltip>If 10% profit achieved in 4 months</Tooltip>
-                  }
+                  overlay={<Tooltip>If 6% profit achieved in 3 months</Tooltip>}
                 >
                   <div className='d-flex align-items-center'>
                     <InfoIcon />
@@ -43,7 +41,9 @@ function BottomTable () {
                 100% increase at 10% target{' '}
                 <OverlayTrigger
                   placement={'top'}
-                  overlay={<Tooltip>Double every 10% & scale</Tooltip>}
+                  overlay={
+                    <Tooltip>Double every 10% & scale up to $2 M</Tooltip>
+                  }
                 >
                   <div className='d-flex align-items-center'>
                     <InfoIcon />
@@ -72,13 +72,28 @@ function BottomTable () {
             </li>
             <li>
               <p>Profit Target</p>
-              <p>10% (Stage 1) 5% (Stage 2)</p>
+              <p>8% (Stage 1) 5% (Stage 2)</p>
               <p>8% (Stage 1) 4% (Stage 2)</p>
             </li>
             <li>
               <p>Min Trading Days</p>
-              <p>10 (Stage 1 & 2)</p>
-              <p>10 (Stage 1 & 2)</p>
+              <p>0</p>
+              <p>
+                10 (Stage 1 & 2){' '}
+                <OverlayTrigger
+                  placement={'top'}
+                  overlay={
+                    <Tooltip>
+                      Minimum trading days rule setup for long term success of
+                      trader
+                    </Tooltip>
+                  }
+                >
+                  <div className='d-flex align-items-center'>
+                    <InfoIcon />
+                  </div>
+                </OverlayTrigger>
+              </p>
             </li>
             <li>
               <p>Total Max Loss</p>
@@ -101,14 +116,33 @@ function BottomTable () {
               </p>
             </li>
             <li>
-              <p>Support</p>
-              <p>Live chat, Email</p>
-              <p>Live chat, Telegram Group, Email</p>
+              <p>Profit Split</p>
+              <p>80%</p>
+              <p>85%</p>
             </li>
             <li>
-              <p>100k Challenge Price</p>
-              <p>&euro;540 (~623$)</p>
-              <p>545 CAD (~431$)</p>
+              <p>Lot Size Limit</p>
+              <p>
+                Yes{' '}
+                <OverlayTrigger
+                  placement={'top'}
+                  overlay={
+                    <Tooltip>
+                      5.0 Lot limit per instrument for 3 months on 100k account
+                    </Tooltip>
+                  }
+                >
+                  <div className='d-flex align-items-center'>
+                    <InfoIcon />
+                  </div>
+                </OverlayTrigger>
+              </p>
+              <p>No</p>
+            </li>
+            <li>
+              <p>200k Challenge Price</p>
+              <p>899$</p>
+              <p>905 CAD (~726$)</p>
             </li>
             <li>
               <p>Discounts</p>
