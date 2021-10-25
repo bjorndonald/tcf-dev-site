@@ -233,8 +233,9 @@ export default function NavBar () {
                 <div className='registration'>
                   <div className='button'>
                     <a
-                      href='https://fund.traderscentral.com/sign-up'
+                      href='https://fund.traderscentral.com/get-started'
                       className='btn btn-black'
+                      target="_blank"
                     >
                       Get Started
                     </a>
@@ -472,7 +473,7 @@ export default function NavBar () {
               Login
             </a>
             <a
-              href='https://fund.traderscentral.com/sign-up'
+              href='https://fund.traderscentral.com/get-started'
               target='_blank'
               className='btn btn-black get-started'
             >
