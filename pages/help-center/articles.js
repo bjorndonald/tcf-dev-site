@@ -35,7 +35,7 @@ export async function getStaticProps () {
         'Bearer dG9rOjU4YzgxZjE1XzRlMTVfNDJlMV85YjM5XzIzMDRhODA5MDBlYzoxOjA='
     }
   })
-  const bres = await fetch('https://api.intercom.io/articles?per_page=198', {
+  const bres = await fetch('https://api.intercom.io/articles?per_page=202', {
     method: 'GET',
     mode: 'cors',
     cache: 'no-cache',

@@ -14,11 +14,11 @@ function FundSectionTwo (props) {
       <div className='container '>
         <div className='row mt-5'>
           <nav aria-label='breadcrumb'>
-            <ol class='breadcrumb'>
-              <li class='breadcrumb-item'>
+            <ol className='breadcrumb'>
+              <li className='breadcrumb-item'>
                 <Link href='/help-center'>Home</Link>
               </li>
-              <li class='breadcrumb-item'>
+              <li className='breadcrumb-item'>
                 <a href='#'>{router.query.name}</a>
               </li>
               {/*

@@ -43,6 +43,7 @@ function ArticlesSectionTwo (props) {
     var url = new URL(url_string)
     var collection = {}
     name = url.searchParams.get('name')
+    var test_arr = []
 
     if (articles_array[name]) {
       articles_array[name].map(section => {
@@ -55,6 +56,7 @@ function ArticlesSectionTwo (props) {
         all_articles[section.name] = tmp
         section_articles = []
       })
+      console.log(all_articles)
 
       articles_array[name].map(section => {
         props.sections.data.map(sect => {
@@ -75,7 +77,7 @@ function ArticlesSectionTwo (props) {
       //   })
       // })
 
-      console.log(all_articles)
+      // console.log(all_articles)
 
       collection = props.collections.data.find(
         coll => coll.id == router.query.id
@@ -207,8 +209,9 @@ function ArticlesSectionTwo (props) {
                                       </h3>
                                     )}
 
-                                    {articles[section.name][coll_section].map(
-                                      article => {
+                                    {articles[section.name][coll_section]
+                                      .reverse()
+                                      .map(article => {
                                         return (
                                           <Link
                                             href={{
@@ -227,8 +230,7 @@ function ArticlesSectionTwo (props) {
                                             </div>
                                           </Link>
                                         )
-                                      }
-                                    )}
+                                      })}
                                   </Fragment>
                                 )
                               }
