@@ -66,6 +66,13 @@
     justify-content: center;
   }
 
+  .priceTableNavs {
+    .bubbles {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
   .countdown {
     // margin-top: calc((1 / 900) * 100vh);
     display: flex;
@@ -366,8 +373,25 @@
     }
   }
 }
-.priceTableNav {
-  .nav {
+.priceTableNavs {
+  .nav.bubbles {
+    .nav-item {
+      .nav-link {
+        font-weight: bold;
+        border-radius: 3.125rem;
+        background-color: black;
+        color: white;
+        padding: 0.5rem 1.25rem;
+      }
+
+      .nav-link.active {
+        background-color: #7a20eb;
+        color: white;
+      }
+    }
+  }
+
+  .nav.nav-switch {
     position: relative;
     width: 14rem;
     height: 4rem;
@@ -634,21 +658,40 @@
 .fundingSectionFour {
   height: 80vh;
   margin-bottom: 0vh;
-  .nav-link {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
+  .priceTableNavs {
+    .bubbles {
+      display: flex;
+      justify-content: center;
 
-  .placeholder-image {
-    cursor: pointer;
-  }
+      .nav-item {
+        margin-top: 1rem;
+      }
+      .nav-item:nth-child(2) {
+        // margin-right: 8px !important;
+      }
 
-  .nav-link.active {
-    text-decoration: underline;
+      .nav-item:nth-child(3) {
+        // margin-right: 8px !important;
+      }
+    }
   }
+  .subcategories {
+    .nav-link {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
 
-  .nav-link:hover {
-    text-decoration: underline;
+    .placeholder-image {
+      cursor: pointer;
+    }
+
+    .nav-link.active {
+      text-decoration: underline;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
   }
 
   .nav-switch {
