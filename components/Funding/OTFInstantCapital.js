@@ -70,7 +70,7 @@ function OTFInstantCapital() {
 
         <Accordion.Collapse eventKey='1'>
           <Card.Body>
-            If you can make a 10% return on your $25K trading book – growing your account to $27.5k, we will top up your initial funding to $55k.
+            If you can make a 10% return on your $25K trading book – growing your account to $27.5k, we will top up your initial funding to $50k.
           </Card.Body>
         </Accordion.Collapse>
       </Card>
