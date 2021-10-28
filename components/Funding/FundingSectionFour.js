@@ -26,6 +26,7 @@ import MonthlyCapital from './MonthlyCapital'
 import MonthlyWithDrawals from './MonthlyWithDrawals'
 import OTFWithDrawals from './OTFWithDrawals'
 import OTFCapital from './OTFCapital'
+import OTFInstantCapital from './OTFInstantCapital'
 
 export default function FundingSectionFour () {
   const toggle = e => {
@@ -260,7 +261,7 @@ export default function FundingSectionFour () {
                         </Tab.Pane> */}
                         <Tab.Pane eventKey='capital' id='capital'>
                           <div className='col-8 m-auto' id='position-section'>
-                            <OTFCapital />
+                            <OTFInstantCapital />
                           </div>
                         </Tab.Pane>
                         <Tab.Pane eventKey='withdrawals' id='withdrawals'>
