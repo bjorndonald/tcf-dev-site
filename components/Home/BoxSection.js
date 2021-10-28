@@ -29,9 +29,15 @@ export default function BoxSection () {
                   autoPlay='autoplay'
                   muted={true}
                 >
-                  <source src='/videos/home/boxOne.webm' type='video/webm' />
+                  <source src='videos/home/boxOne.webm' type='video/webm' />
+                  <source src='videos/home/boxOne.mp4' type='video/mp4' />
                   Your browser does not support the video tag.
                 </video>
+                {/* <img
+                  src='/images/home/boxFour_white.gif'
+                  className='image'
+                  alt=''
+                /> */}
                 {/* <img src='/images/home/boxOne.jpg' className='image' alt='' /> */}
                 <div className='text'>
                   <h1>Fund</h1>
@@ -61,9 +67,15 @@ export default function BoxSection () {
                 autoPlay='autoplay'
                 muted={true}
               >
-                <source src='/videos/home/boxTwo.webm' type='video/webm' />
+                <source src='videos/home/boxTwo.webm' type='video/webm' />
+                <source src='videos/home/boxTwo.mp4' type='video/mp4' />
                 Your browser does not support the video tag.
               </video>
+              {/* <img
+                src='/images/home/boxTwo_white.gif'
+                className='image'
+                alt=''
+              /> */}
               {/* <img src='/images/home/boxTwo.jpg' className='image' alt='' /> */}
               <div className='text'>
                 <h1>Tokens</h1>
@@ -89,9 +101,15 @@ export default function BoxSection () {
                 autoPlay='autoplay'
                 muted={true}
               >
-                <source src='/videos/home/boxThree.webm' type='video/webm' />
+                <source src='videos/home/boxThree.webm' type='video/webm' />
+                <source src='videos/home/boxThree.mp4' type='video/mp4' />
                 Your browser does not support the video tag.
               </video>
+              {/* <img
+                src='/images/home/boxThree_white.gif'
+                className='image'
+                alt=''
+              /> */}
               {/* <img src='/images/home/boxThree.jpg' className='image' alt='' /> */}
               <div className='text'>
                 <h1>Liquidity</h1>
@@ -113,21 +131,22 @@ export default function BoxSection () {
             <Link href='/products/crypto'>
               <a className='card'>
                 <div className='background'></div>
-                {/* <video
+                <video
                   loop={true}
                   playsInline
                   className='image'
                   autoPlay='autoplay'
                   muted={true}
                 >
-                  <source src='/videos/home/boxFour.webm' type='video/webm' />
+                  <source src='videos/home/boxFour.webm' type='video/webm' />
+                  <source src='videos/home/boxFour.mp4' type='video/mp4' />
                   Your browser does not support the video tag.
-                </video> */}
-                <img
+                </video>
+                {/* <img
                   src='/images/home/boxFour_white.gif'
                   className='image'
                   alt=''
-                />
+                /> */}
                 <div className='text'>
                   <h1>Crypto</h1>
                   <p>

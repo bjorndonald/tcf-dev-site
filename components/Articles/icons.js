@@ -5,6 +5,7 @@ import CommsMail from '../../icons/CommsMail'
 import PaperPlanes from '../../icons/PaperPlanes'
 import ToolsDashboard from '../../icons/ToolsDashboard'
 import UserCheck from '../../icons/UserCheck'
+import PackageIcon from '../../icons/PackageIcon'
 
 export const icons_data = {
   'biz-delivery': <BizDelivery />,
@@ -13,5 +14,6 @@ export const icons_data = {
   'comms-mail': <CommsMail />,
   'paper-planes': <PaperPlanes />,
   'tools-dashboard': <ToolsDashboard />,
-  'user-check': <UserCheck />
+  'user-check': <UserCheck />,
+  'biz-package': <PackageIcon />
 }

@@ -178,12 +178,12 @@ function PositionTable () {
         <td>0.24</td>
         <td>0.12</td>
       </tr>
-      <tr>
+      {/* <tr>
         <td>XAG/USD</td>
         <td>0.24</td>
         <td>0.24</td>
         <td>0.12</td>
-      </tr>
+      </tr> */}
       <tr>
         <td>USDCHF</td>
         <td>1.00</td>

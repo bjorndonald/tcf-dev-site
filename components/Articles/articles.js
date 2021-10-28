@@ -45,9 +45,22 @@ export const articles_array = {
       icon: 'biz-dollar'
     },
     {
+      id: '3194130',
+      workspace_id: 'gq5zuv4i',
+      name: '(OTF) Instant ',
+      url: 'https://help.traderscentral.com/',
+      order: 2,
+      created_at: 1635357096,
+      updated_at: 1635358046,
+      type: 'collection',
+      description:
+        'Everything you need to know about the one time fee instant funding plan. ',
+      icon: 'biz-package'
+    },
+    {
       id: '2663596',
       workspace_id: 'gq5zuv4i',
-      name: 'One Time Fee Plan',
+      name: 'OTF Challenge',
       parent: 'Funding Plans',
       link:
         'https://help.traderscentralfund.com/en/collections/2663596-one-time-fee-plan',

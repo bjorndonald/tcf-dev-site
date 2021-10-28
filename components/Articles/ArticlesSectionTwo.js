@@ -125,7 +125,7 @@ function ArticlesSectionTwo (props) {
             <Fragment>
               <Tab.Container defaultActiveKey={'0'}>
                 <div className='col-md-3'>
-                  <Nav>
+                  <Nav className='flex-column'>
                     {articleSections.map((section, index) => (
                       <Nav.Item>
                         <Nav.Link eventKey={index}>{section.name}</Nav.Link>
