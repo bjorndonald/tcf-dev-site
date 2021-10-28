@@ -70,8 +70,8 @@ function OTFWithDrawals () {
         <Accordion.Collapse eventKey='1'>
           <Card.Body>
             Evaluation accounts are run on demo and not eligible for
-            withdrawals. Live accounts accounts needs to be in profit net of
-            commissions and swap to request a withdrawal.
+            withdrawals. Live accounts needs to be in profit net of commissions
+            and swap to request a withdrawal.
           </Card.Body>
         </Accordion.Collapse>
       </Card>

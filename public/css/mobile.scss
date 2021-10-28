@@ -144,6 +144,7 @@
   }
 
   .fundingSectionThree {
+    overflow-x: hidden;
     .monthly .pTableDetailWrap {
       margin: 0;
       margin-right: 0rem;
@@ -164,7 +165,7 @@
         justify-content: center;
 
         .nav-link {
-          font-size: 0.75rem;
+          font-size: 3.5vw;
         }
 
         .nav-item:nth-child(2) {
@@ -241,6 +242,10 @@
       max-width: 100%;
     }
 
+    .tableNavs {
+      padding: 0;
+    }
+
     .subcategories {
       padding: 0;
       .col-12 {
@@ -257,7 +262,7 @@
         justify-content: center;
 
         .nav-link {
-          font-size: 0.75rem;
+          font-size: 3.5vw;
         }
 
         .nav-item:nth-child(2) {

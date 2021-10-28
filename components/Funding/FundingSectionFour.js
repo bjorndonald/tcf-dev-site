@@ -82,12 +82,12 @@ export default function FundingSectionFour () {
         <div className='row py-5'>
           <div className='col-12'>
             <div className='sectionTitleWrap text-center mb-4'>
-              <h2 style={{fontSize: '48px'}}>Q&amp;A’s</h2>
+              <h2 style={{ fontSize: '48px' }}>Q&amp;A’s</h2>
               <p>Relevant information regarding your preferred plan</p>
             </div>
           </div>
           <Tab.Container id='nav-tab-example' defaultActiveKey='monthly'>
-            <div className='col-12 text-center '>
+            <div className='col-12 text-center tableNavs'>
               <div className='priceTableNavs d-flex justify-content-center mb-4'>
                 <Nav className='bubbles'>
                   <Nav.Item style={{ zIndex: 4, marginRight: 16 }}>
