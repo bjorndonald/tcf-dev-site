@@ -81,7 +81,7 @@ export default function FundingSectionFour () {
       <div className='container'>
         <div className='row py-5'>
           <div className='col-12'>
-            <div className='sectionTitleWrap text-center mb-4 mt-5'>
+            <div className='sectionTitleWrap text-center mb-4'>
               <h2 style={{fontSize: '48px'}}>Q&amp;A’s</h2>
               <p>Relevant information regarding your preferred plan</p>
             </div>
