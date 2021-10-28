@@ -5,6 +5,7 @@ import $ from 'jquery'
 import MonthlySection from './MonthlySection'
 import InfoIcon from '../../icons/InfoIcon'
 import OneTimeSection from './OneTimeSection'
+import OTFFundingSection from './OTFFundingSection'
 
 Date.prototype.addHours = function (h) {
   this.setTime(this.getTime() + h * 60 * 60 * 1000)
@@ -114,16 +115,21 @@ export default function FundingSectionThree () {
           </div>
           <Tab.Container id='nav-tab-example' defaultActiveKey='monthly'>
             <div className='col-12 text-center '>
-              <div className='priceTableNav d-flex justify-content-center mb-4'>
-                <Nav>
-                  <Nav.Item style={{ zIndex: 4 }}>
+              <div className='priceTableNavs d-flex justify-content-center mb-4'>
+                <Nav className='bubbles'>
+                  <Nav.Item style={{ zIndex: 4, marginRight: 16 }}>
                     <Nav.Link onClick={toggleSwitch} eventKey='monthly'>
                       Monthly
                     </Nav.Link>
                   </Nav.Item>
+                  <Nav.Item style={{ zIndex: 2, marginRight: 16 }}>
+                    <Nav.Link onClick={toggleSwitch} eventKey='otffunding'>
+                      OTF Instant
+                    </Nav.Link>
+                  </Nav.Item>
                   <Nav.Item style={{ zIndex: 2 }}>
                     <Nav.Link onClick={toggleSwitch} eventKey='onetime'>
-                      One Time
+                      OTF Challenge
                     </Nav.Link>
                   </Nav.Item>
                 </Nav>
@@ -133,6 +139,9 @@ export default function FundingSectionThree () {
               <Tab.Content className='mt-1'>
                 <Tab.Pane eventKey='monthly'>
                   <MonthlySection />
+                </Tab.Pane>
+                <Tab.Pane eventKey='otffunding'>
+                  <OTFFundingSection />
                 </Tab.Pane>
                 <Tab.Pane eventKey='onetime'>
                   <OneTimeSection />

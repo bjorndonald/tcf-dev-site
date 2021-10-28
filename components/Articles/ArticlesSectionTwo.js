@@ -56,7 +56,6 @@ function ArticlesSectionTwo (props) {
         all_articles[section.name] = tmp
         section_articles = []
       })
-      console.log(all_articles)
 
       articles_array[name].map(section => {
         props.sections.data.map(sect => {

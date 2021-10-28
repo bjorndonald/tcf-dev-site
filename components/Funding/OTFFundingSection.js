@@ -4,10 +4,11 @@ import { gsap } from 'gsap/dist/gsap'
 import $ from 'jquery'
 import OneTime from './OneTime'
 import InfoIcon from '../../icons/InfoIcon'
+import OTFFunding from './OTFFunding'
 
-function OneTimeSection () {
-  const [cadText, setCadText] = useState('85')
-  const [leverage, setLeverage] = useState('1:6')
+function OTFFundingSection (props) {
+  const [cadText, setCadText] = useState('252')
+  const [leverage, setLeverage] = useState('1:50')
   const activate = e => {
     $(e.target)
       .parent()
@@ -18,97 +19,92 @@ function OneTimeSection () {
   return (
     <Fragment>
       <p className='mb-4 subtitle' style={{ textAlign: 'center' }}>
-        Pay once, pass challenge & get funded
+        Pay once, get live funding
       </p>
-
       <div className='row funding-prices'>
         <div className='col-12 text-center mb-5 '>
-          <OverlayTrigger placement={'top'} overlay={<Tooltip>CAD 60</Tooltip>}>
+          <OverlayTrigger
+            placement={'top'}
+            overlay={<Tooltip>CAD 101</Tooltip>}
+          >
             <a
               onClick={e => {
-                setCadText('60')
+                setCadText('101')
+                setLeverage('1:50')
                 activate(e)
               }}
-              className='btnCad85 btn btn-outline-dark mx-1'
+              className='btnCad101 btn btn-outline-dark mx-1'
+            >
+              USD 2,000
+            </a>
+          </OverlayTrigger>
+          <OverlayTrigger
+            placement={'top'}
+            overlay={<Tooltip>CAD 252</Tooltip>}
+          >
+            <a
+              onClick={e => {
+                setCadText('252')
+                setLeverage('1:50')
+                activate(e)
+              }}
+              className='btnCad252 btn btn-outline-dark mx-1 active'
             >
               USD 5,000
             </a>
           </OverlayTrigger>
-          <OverlayTrigger placement={'top'} overlay={<Tooltip>CAD 85</Tooltip>}>
+          <OverlayTrigger
+            placement={'top'}
+            overlay={<Tooltip>CAD 505</Tooltip>}
+          >
             <a
               onClick={e => {
-                setCadText('85')
+                setCadText('505')
+                setLeverage('1:50')
                 activate(e)
               }}
-              className='btnCad170 btn btn-outline-dark mx-1 active'
+              className='btnCad505 btn btn-outline-dark mx-1'
             >
               USD 10,000
             </a>
           </OverlayTrigger>
           <OverlayTrigger
             placement={'top'}
-            overlay={<Tooltip>CAD 170</Tooltip>}
+            overlay={<Tooltip>CAD 1262</Tooltip>}
           >
             <a
               onClick={e => {
-                setCadText('170')
+                setCadText('1262')
                 activate(e)
+                setLeverage('1:50')
               }}
-              className='btnCad345 btn btn-outline-dark mx-1'
+              className='btnCad1262 btn btn-outline-dark mx-1'
             >
               USD 25,000
             </a>
           </OverlayTrigger>
           <OverlayTrigger
             placement={'top'}
-            overlay={<Tooltip>CAD 302</Tooltip>}
+            overlay={<Tooltip>CAD 2524</Tooltip>}
           >
             <a
               onClick={e => {
-                setCadText('302')
+                setCadText('2524')
                 activate(e)
+                setLeverage('1:50')
               }}
-              className='btnCad345 btn btn-outline-dark mx-1'
+              className='btnCad2524 btn btn-outline-dark mx-1'
             >
               USD 50,000
             </a>
           </OverlayTrigger>
-          <OverlayTrigger
-            placement={'top'}
-            overlay={<Tooltip>CAD 545</Tooltip>}
-          >
-            <a
-              onClick={e => {
-                setCadText('545')
-                activate(e)
-              }}
-              className='btnCad345 btn btn-outline-dark mx-1'
-            >
-              USD 100,000
-            </a>
-          </OverlayTrigger>
-          <OverlayTrigger
-            placement={'top'}
-            overlay={<Tooltip>CAD 905</Tooltip>}
-          >
-            <a
-              onClick={e => {
-                setCadText('905')
-                activate(e)
-              }}
-              className='btnCad345 btn btn-outline-dark mx-1'
-            >
-              USD 200,000
-            </a>
-          </OverlayTrigger>
         </div>
       </div>
-
       <div className='col-12 row mx-0 justify-content-center'>
-        <OneTime cadText={cadText} />
+        <OTFFunding leverage={leverage} cadText={cadText} />
       </div>
     </Fragment>
   )
 }
 
-export default OneTimeSection
+export default OTFFundingSection
