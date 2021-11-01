@@ -22,133 +22,145 @@ function CustomersSectionThree () {
   const fullScreen = () => {
     setShow(false)
   }
-
-  const withdrawals = [
-    {
-      image: <img src='/images/withdrawals/1.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/1.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/2.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/2.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/3.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/3.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/4.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/4.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/5.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/5.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/6.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/6.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/7.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/7.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/8.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/8.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/9.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/9.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/10.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/10.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/11.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/11.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/12.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/12.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/13.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/13.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/14.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/14.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/15.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/15.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/16.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/16.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/17.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/17.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/18.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/18.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/19.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/19.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/20.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/20.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/21.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/21.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/22.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/22.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/23.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/23.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/24.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/24.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/25.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/25.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/26.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/26.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/27.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/27.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/28.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/28.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/29.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/29.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/30.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/30.png' />
-    },
-    {
-      image: <img src='/images/withdrawals/31.png' />,
-      url: <Lightbox onClose={fullScreen} image='/images/withdrawals/31.png' />
+  const withdrawals = [...Array(77).keys()].map((element, index) => {
+    return {
+      image: <img src={`/images/withdrawals/${element + 1}.png`} />,
+      url: (
+        <Lightbox
+          onClose={fullScreen}
+          image={`/images/withdrawals/${index + 1}.png`}
+        />
+      )
     }
-  ]
+  })
+
+  // const withdrawals = [
+  //   {
+  //     image: <img src='/images/withdrawals/1.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/1.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/2.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/2.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/3.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/3.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/4.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/4.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/5.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/5.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/6.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/6.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/7.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/7.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/8.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/8.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/9.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/9.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/10.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/10.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/11.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/11.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/12.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/12.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/13.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/13.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/14.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/14.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/15.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/15.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/16.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/16.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/17.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/17.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/18.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/18.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/19.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/19.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/20.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/20.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/21.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/21.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/22.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/22.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/23.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/23.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/24.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/24.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/25.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/25.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/26.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/26.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/27.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/27.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/28.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/28.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/29.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/29.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/30.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/30.png' />
+  //   },
+  //   {
+  //     image: <img src='/images/withdrawals/31.png' />,
+  //     url: <Lightbox onClose={fullScreen} image='/images/withdrawals/31.png' />
+  //   },
+
+  // ]
 
   const next = () => {
     var leftPos = $('.withdrawals-slider .slider').scrollLeft()
