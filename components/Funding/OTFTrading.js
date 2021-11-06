@@ -225,8 +225,8 @@ function OTFTrading () {
 
         <Accordion.Collapse eventKey='5'>
           <Card.Body>
-            Profit target of <b>ten percent</b> to complete the evaluation for{' '}
-            <b>stage one</b> and <b>five percent</b> for <b>stage two</b>.
+            Profit target of <b>eight percent</b> to complete the evaluation for{' '}
+            <b>stage one</b> and <b>four percent</b> for <b>stage two</b>.
             Maximum drawdown of ten percent (This means, the equity of the
             trading account must not, at any moment during both stages duration,
             reach a loss of -10%.)
