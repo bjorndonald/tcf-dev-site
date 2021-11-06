@@ -1,3 +1,4 @@
+import React, { Fragment } from 'react'
 import MetaTag from './../components/MetaTag'
 import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
