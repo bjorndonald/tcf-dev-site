@@ -143,7 +143,7 @@ function OTFTrading () {
         </Accordion.Collapse>
       </Card>
       {/* //////////////////////////// */}
-      <Card>
+      {/* <Card>
         <Card.Header>
           <Accordion.Toggle
             as={props => (
@@ -179,7 +179,7 @@ function OTFTrading () {
             Please read the advice on passing the challenge in this section.
           </Card.Body>
         </Accordion.Collapse>
-      </Card>
+      </Card> */}
       {/* //////////////////////////// */}
       <Card>
         <Card.Header>
@@ -233,8 +233,40 @@ function OTFTrading () {
           </Card.Body>
         </Accordion.Collapse>
       </Card>
-      {/* //////////////////////////// */}
+      {/* //////////////////////////////////////// */}
       <Card>
+        <Card.Header>
+          <Accordion.Toggle
+            as={props => (
+              <div onClick={toggle}>
+                <Button {...props} />
+              </div>
+            )}
+            variant='link'
+            eventKey='6'
+          >
+            <p>
+              What if I achieve the profit target before the minimum required
+              trading days?
+            </p>
+            <span>+</span>
+            <span style={{ display: 'none' }}>-</span>
+          </Accordion.Toggle>
+        </Card.Header>
+
+        <Accordion.Collapse eventKey='6'>
+          <Card.Body>
+            You can reduce your lot size for up to 75% of the average lot size
+            used on all of your challenge trades until now. You can’t use 0.01
+            lot sizes or any amount lower than one fourth the average lot size
+            used till now on your challenge.
+          </Card.Body>
+        </Accordion.Collapse>
+      </Card>
+
+      {/* //////////////////////////// */}
+      {/* //////////////////////////// */}
+      {/* <Card>
         <Card.Header>
           <Accordion.Toggle
             as={props => (
@@ -262,7 +294,7 @@ function OTFTrading () {
             ></iframe>
           </Card.Body>
         </Accordion.Collapse>
-      </Card>
+      </Card> */}
 
       {/* //////////////////////////// */}
       <Card>
@@ -341,7 +373,7 @@ function OTFTrading () {
         </Accordion.Collapse>
       </Card>
       {/* //////////////////////////// */}
-      <Card>
+      {/* <Card>
         <Card.Header>
           <Accordion.Toggle
             as={props => (
@@ -369,7 +401,7 @@ function OTFTrading () {
             ></iframe>
           </Card.Body>
         </Accordion.Collapse>
-      </Card>
+      </Card> */}
       {/* //////////////////////////// */}
       <Card>
         <Card.Header>

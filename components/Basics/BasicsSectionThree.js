@@ -2,26 +2,26 @@ import React from 'react'
 
 function BasicsSectionThree () {
   return (
-    <div className='basicsSectionTwo py-5 d-flex align-items-center'>
+    <div className='basicsSectionThree '>
       <div className='container'>
         <div className='row'>
           <h2>Latest articles</h2>
         </div>
-        <div className='row'>
-          <div className='col-md-3'>
-            <img src='' alt='' />
+        <div className='row articles'>
+          <div className='article'>
+            <div className='purple-box'></div>
             <span>Article title</span>
           </div>
-          <div className='col-md-3'>
-            <img src='' alt='' />
+          <div className='article'>
+            <div className='purple-box'></div>
             <span>Article title</span>
           </div>
-          <div className='col-md-3'>
-            <img src='' alt='' />
+          <div className='article'>
+            <div className='purple-box'></div>
             <span>Article title</span>
           </div>
-          <div className='col-md-3'>
-            <img src='' alt='' />
+          <div className='article'>
+            <div className='purple-box'></div>
             <span>Article title</span>
           </div>
         </div>

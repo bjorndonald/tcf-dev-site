@@ -1,6 +1,19 @@
 import React from 'react'
+import { Accordion, Button, Card } from 'react-bootstrap'
 
 function Faq () {
+  const toggle = e => {
+    $(
+      $(e.target)
+        .parent()
+        .find('span')[0]
+    ).toggle()
+    $(
+      $(e.target)
+        .parent()
+        .find('span')[1]
+    ).toggle()
+  }
   return (
     <Accordion>
       <Card>

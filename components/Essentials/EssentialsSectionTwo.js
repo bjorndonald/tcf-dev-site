@@ -7,21 +7,21 @@ function EssentialsSectionTwo () {
         <div className='text-center'>
           <h2>Latest articles</h2>
         </div>
-        <div className='row'>
+        <div className='articles'>
           <div className='article'>
-            <img src='' alt='' />
+            <div className='purple-box'></div>
             <span>Article title</span>
           </div>
           <div className='article'>
-            <img src='' alt='' />
+            <div className='purple-box'></div>
             <span>Article title</span>
           </div>
           <div className='article'>
-            <img src='' alt='' />
+            <div className='purple-box'></div>
             <span>Article title</span>
           </div>
           <div className='article'>
-            <img src='' alt='' />
+            <div className='purple-box'></div>
             <span>Article title</span>
           </div>
         </div>

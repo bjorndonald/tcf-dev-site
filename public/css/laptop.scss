@@ -100,6 +100,14 @@
     // }
   }
 
+  .basicArticlesSectionOne {
+    .d-flex {
+      .article {
+        width: calc((100% - 4rem) / 3) !important;
+      }
+    }
+  }
+
   // CRYPTO PAGE
   .cryptoSectionOne,
   .cryptoSectionFive {

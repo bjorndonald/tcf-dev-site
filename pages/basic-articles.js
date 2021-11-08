@@ -3,11 +3,10 @@ import MetaTag from './../components/MetaTag'
 import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import Head from 'next/head'
-import BasicsSectionOne from '../components/Basics/BasicsSectionOne'
-import BasicsSectionTwo from '../components/Basics/BasicsSectionTwo'
-import BasicsSectionThree from '../components/Basics/BasicsSectionThree'
+import BasicArticlesSectionOne from '../components/BasicArticles/BasicArticlesSectionOne'
+import BasicArticlesSectionTwo from '../components/BasicArticles/BasicArticlesSectionTwo'
 
-export default function basics () {
+export default function basicarticles () {
   // gsap.registerPlugin(ScrollTrigger)
   // let hc_tl = gsap.timeline()
 
@@ -37,9 +36,8 @@ the trader in you by unleashing your true potential.`}
         {/* <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script> */}
         <script src='/js/script.js'></script>
       </Head>
-      <BasicsSectionOne />
-      <BasicsSectionTwo />
-      <BasicsSectionThree />
+      <BasicArticlesSectionOne />
+      <BasicArticlesSectionTwo />
     </Fragment>
   )
 }

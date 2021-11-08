@@ -2823,6 +2823,50 @@ select {
   white-space: unset !important;
 }
 
+/** TRADING RULES **/
+
+.basicsSectionTwo .card,
+.essentialsSectionOne .card {
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.basicsSectionTwo .card-header,
+.essentialsSectionOne .card-header {
+  background: #fff;
+  padding: 0;
+  border: none;
+}
+
+.basicsSectionTwo .card-body,
+.essentialsSectionOne .card-body {
+  color: #000;
+  font-size: 1.5rem;
+  padding-top: 0rem;
+  padding-left: 0rem;
+}
+
+.basicsSectionTwo .card button,
+.essentialsSectionOne .card button {
+  color: #000;
+  font-size: 30px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.basicsSectionTwo button,
+.essentialsSectionOne button {
+  background: none;
+  display: flex !important;
+  width: 100%;
+
+  text-align: left;
+  padding: 15px 20px;
+  white-space: unset !important;
+}
+
 /* onetime */
 
 /** liquidity **/

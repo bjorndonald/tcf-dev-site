@@ -98,6 +98,85 @@
     }
   }
 
+  .essentialsSectionOne {
+    .container {
+      .row {
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .row:first-child {
+        flex-direction: column;
+        align-items: center;
+        h1,
+        h4 {
+          text-align: center;
+        }
+        h1 {
+          margin-bottom: 0.5rem;
+        }
+
+        h4 {
+          margin-bottom: 3rem;
+        }
+        .col-md-4 {
+          flex: 0 0 100%;
+          max-width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+        .col-md-7 {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .essentialsSectionTwo {
+    .articles {
+      flex-wrap: wrap;
+      .article {
+        margin-bottom: 2rem;
+        min-width: calc((100% - 2rem) / 2) !important;
+
+        .purple-box {
+          height: 12rem !important;
+        }
+      }
+    }
+  }
+
+  .basicArticlesSectionOne {
+    .container {
+      .d-flex {
+        flex-wrap: wrap;
+        .article {
+          margin-bottom: 2rem;
+          width: 100%;
+          .purple-box {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .basicArticlesSectionTwo {
+    .container {
+      .col-md-12,
+      .col-12 {
+        padding: 0;
+
+        .article {
+          span {
+            margin-top: 0.5rem;
+          }
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
   .fundingSectionOne {
     overflow: hidden;
 
