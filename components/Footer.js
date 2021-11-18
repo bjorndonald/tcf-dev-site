@@ -84,6 +84,16 @@ export default function Footer () {
                     </Link>
                   </li>
                   <li>
+                    {/* <Link href='/affiliate'> */}
+                    <a
+                      target='affiliate'
+                      href='https://tcf-affiliate.herokuapp.com/'
+                    >
+                      Affiliate Program
+                    </a>
+                    {/* </Link> */}
+                  </li>
+                  <li>
                     <a href='https://bit.ly/2X9xdjC'>Blog</a>
                   </li>
                 </ul>

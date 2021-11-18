@@ -1,8 +1,12 @@
 import React, { useEffect, useLayoutEffect, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 
 export default function NavBar () {
+  const router = useRouter()
+  console.log(router.pathname)
+
   /*const [scrollTop, setScrollTop] = useState(false);
   const handleScrollTop = () => {
     if (window.scrollY > 77) {
@@ -197,10 +201,22 @@ export default function NavBar () {
                       <a className='mobileMenuListSubA navClose'>Model</a>
                     </Link>
                   </li>
+
                   <li>
                     <Link href='/customers'>
                       <a className='mobileMenuListSubA navClose'>
                         Our Customers
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='/affiliate'>
+                      <a
+                        target='affiliate'
+                        href=' https://affiliates.traderscentral.com/'
+                        className='mobileMenuListSubA navClose'
+                      >
+                        Affiliate Program
                       </a>
                     </Link>
                   </li>
@@ -233,9 +249,13 @@ export default function NavBar () {
                 <div className='registration'>
                   <div className='button'>
                     <a
-                      href='https://fund.traderscentral.com/get-started'
+                      href={
+                        router.pathname == '/products/crypto'
+                          ? 'https://trade.tccrypto.io/signup'
+                          : 'https://fund.traderscentral.com/get-started'
+                      }
                       className='btn btn-black'
-                      target="_blank"
+                      target='_blank'
                     >
                       Get Started
                     </a>
@@ -439,6 +459,17 @@ export default function NavBar () {
                     </Link>
                   </li>
                   <li>
+                    <Link href='/affiliate'>
+                      <a
+                        target='affiliate'
+                        href=' https://affiliates.traderscentral.com/'
+                        className='dropdown-item navClose'
+                      >
+                        Affiliate Program
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
                     {/* <Link
                       href='https://bit.ly/2X9xdjC'
                       // href='/blog'
@@ -473,7 +504,11 @@ export default function NavBar () {
               Login
             </a>
             <a
-              href='https://fund.traderscentral.com/get-started'
+              href={
+                router.pathname == '/products/crypto'
+                  ? 'https://trade.tccrypto.io/signup'
+                  : 'https://fund.traderscentral.com/get-started'
+              }
               target='_blank'
               className='btn btn-black get-started'
             >
