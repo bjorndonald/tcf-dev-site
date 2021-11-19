@@ -72,6 +72,7 @@ function MobileSection (props) {
                     autoPlay='autoplay'
                     muted={true}
                   >
+                    <source src='/images/Landing.3gb' type='video/3gb' />
                     <source src='/images/Landing.webm' type='video/webm' />
                   </video>
                 </div>
