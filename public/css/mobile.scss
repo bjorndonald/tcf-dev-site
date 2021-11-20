@@ -1118,12 +1118,14 @@
   }
 
   .sectionTwo {
-    height: 120vh;
+    height: 130vh;
     .container {
       position: relative;
+      height: 100%;
 
       .images {
-        margin-top: -20rem;
+        // margin-top: -10rem;
+        // margin-top: -7.5rem;
       }
 
       .col-md-2 {
@@ -1145,7 +1147,7 @@
         position: absolute;
         left: 0;
         height: auto;
-        bottom: 6rem;
+        bottom: 25rem;
         max-width: 100%;
 
         .sectionTwoContentWrap,
@@ -1166,11 +1168,21 @@
     }
 
     .fixedBox {
+      border: none;
+      overflow: hidden;
       // margin-left: 2rem;
-
+      // margin-top: -5rem;
+      video {
+        border: none;
+        outline: none;
+      }
+      video:focus {
+        outline: none;
+      }
       img {
         width: auto;
-        margin-bottom: 3rem;
+
+        // margin-bottom: 3rem;
         margin-left: 0rem;
         height: 48.3125vh;
       }
