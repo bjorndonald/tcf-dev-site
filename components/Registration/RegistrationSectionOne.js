@@ -7,6 +7,10 @@ import { shallowEqual } from 'react-redux'
 import SectionOne from './graphics/SectionOne'
 import SectionFour from './graphics/SectionFour'
 import SectionFive from './graphics/SectionFive'
+import SectionSeven from './graphics/SectionSeven'
+import SectionNine from './graphics/SectionNine'
+import VolumeSection from './graphics/VolumeSection'
+import ExperienceSection from './graphics/ExperienceSection'
 
 function scorePassword (pass) {
   var score = 0
@@ -390,7 +394,9 @@ function Sixth (props) {
           </div>
         </form>
       </div>
-      <div className='graphic'></div>
+      <div className='graphic'>
+        <SectionSeven />
+      </div>
     </div>
   )
 }
@@ -461,7 +467,9 @@ function Seventh (props) {
           </div>
         </form>
       </div>
-      <div className='graphic'></div>
+      <div className='graphic'>
+        <SectionSeven />
+      </div>
     </div>
   )
 }
@@ -521,7 +529,9 @@ function Eigth (props) {
           </div>
         </form>
       </div>
-      <div className='graphic'></div>
+      <div className='graphic'>
+        <SectionNine />
+      </div>
     </div>
   )
 }
@@ -561,7 +571,9 @@ function Volume (props) {
           </div>
         </form>
       </div>
-      <div className='graphic'></div>
+      <div className='graphic'>
+        <VolumeSection />
+      </div>
     </div>
   )
 }
@@ -603,7 +615,9 @@ function Experience (props) {
           </div>
         </form>
       </div>
-      <div className='graphic'></div>
+      <div className='graphic'>
+        <ExperienceSection />
+      </div>
     </div>
   )
 }
