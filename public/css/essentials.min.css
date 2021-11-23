@@ -1,0 +1,97 @@
+.essentialsSectionOne .container .col-md-7 h1 {
+  font-weight: bolder;
+  font-size: 8vh;
+}
+.essentialsSectionOne .container .col-md-7 h4 {
+  margin-top: 3.2vh;
+  font-size: 4.32vh;
+}
+.essentialsSectionOne .container .col-md-4 {
+  display: flex;
+  justify-content: flex-end;
+}
+.essentialsSectionOne .container .col-md-4 .purple-box {
+  width: 20rem;
+  height: 20rem;
+  background-color: #8411f0;
+  border-radius: 1.5625rem;
+}
+.essentialsSectionOne .container .row:first-child {
+  padding-top: 7.5rem;
+  padding-bottom: 5rem;
+}
+.essentialsSectionOne .container .row:nth-child(2) p {
+  margin: 1rem 0;
+  width: 100%;
+}
+.essentialsSectionOne .container .row:nth-child(3) .accordion {
+  margin: 5rem 0;
+  width: 100%;
+}
+.essentialsSectionOne .container .row:last-child {
+  padding: 5rem 0;
+}
+.essentialsSectionOne .container .row:last-child p {
+  margin-bottom: 5rem;
+}
+.essentialsSectionOne .container .row:last-child p:last-child {
+  margin-bottom: 0;
+}
+.essentialsSectionOne .container .accordion button {
+  display: flex;
+  align-items: center;
+}
+.essentialsSectionOne .container .accordion p {
+  margin-bottom: 0;
+}
+.essentialsSectionOne .container p {
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  text-align: justify;
+}
+
+.essentialsSectionTwo {
+  padding: 5vh 0;
+}
+.essentialsSectionTwo .container .row:first-child {
+  margin-bottom: 3.2vh;
+}
+.essentialsSectionTwo .container h2 {
+  width: 100%;
+  font-size: 3.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bolder;
+}
+.essentialsSectionTwo .container .button {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0;
+}
+.essentialsSectionTwo .container .button .btn {
+  border-radius: 5vh;
+  padding: 1vh 5vh;
+  font-size: 3vh;
+}
+.essentialsSectionTwo .container .articles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.essentialsSectionTwo .container .articles .article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc((100% - 8rem) / 4);
+}
+.essentialsSectionTwo .container .articles .article .purple-box {
+  background-color: #8411f0;
+  border-radius: 1.5625rem;
+  width: 100%;
+  height: 15rem;
+}
+.essentialsSectionTwo .container .articles .article span {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  font-weight: bolder;
+}

@@ -1,0 +1,269 @@
+.scrolled {
+  background-color: white;
+}
+
+.registrationSectionOne {
+  position: relative;
+}
+.registrationSectionOne .graphic {
+  width: 13.5rem;
+}
+.registrationSectionOne .curve {
+  width: 62.5rem;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.registrationSectionOne .container {
+  padding: 20vh 0;
+}
+.registrationSectionOne .container .seventh .buttons {
+  margin-top: 8.75rem;
+}
+.registrationSectionOne .container .volume .form-section {
+  width: 36rem;
+}
+.registrationSectionOne .container .volume .form-section form {
+  width: auto;
+}
+.registrationSectionOne .container .volume .form-section form .form-group {
+  width: 11.25rem;
+}
+.registrationSectionOne .container .volume .form-section form .form-group .formWrapper {
+  width: auto;
+}
+.registrationSectionOne .container .volume .form-section form .form-group .formWrapper input {
+  width: 11.25rem;
+}
+.registrationSectionOne .container .volume .form-section form .buttons {
+  margin-top: 8.5rem;
+  width: 70%;
+}
+.registrationSectionOne .container .experience .buttons {
+  margin-top: 8.5rem;
+}
+.registrationSectionOne .container .experience .form-group-buttons {
+  width: 80%;
+}
+.registrationSectionOne .container .ninth .form-group-buttons {
+  width: 50%;
+}
+.registrationSectionOne .container .ninth .buttons {
+  width: 60%;
+  margin-top: 8.5rem;
+}
+.registrationSectionOne .container .ninth .form-section {
+  width: 40rem;
+}
+.registrationSectionOne .container .eleventh .form-section {
+  width: 100%;
+}
+.registrationSectionOne .container .eleventh .form-section form .form-row {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.registrationSectionOne .container .eleventh .form-section form .form-row .form-group {
+  display: flex;
+  align-items: center;
+  margin-right: 1.85rem;
+}
+.registrationSectionOne .container .eleventh .form-section form .form-row .form-group label {
+  font-size: 1.125rem;
+  margin-right: 1.85rem;
+  color: #244191;
+}
+.registrationSectionOne .container .eleventh .form-section form .form-row .form-group .formWrapper {
+  width: 19.0625rem;
+}
+.registrationSectionOne .container .eleventh .buttons {
+  width: 30%;
+  margin-top: 8.5rem;
+}
+.registrationSectionOne .container .twelfth .form-section {
+  width: 100%;
+}
+.registrationSectionOne .container .twelfth .button {
+  width: 16.6875rem;
+}
+.registrationSectionOne .container .form-section {
+  width: 24rem;
+}
+.registrationSectionOne .container .form-section h1 {
+  font-size: 2.75rem;
+  font-weight: bolder;
+  margin-bottom: 0;
+}
+.registrationSectionOne .container .form-section h4 {
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+.registrationSectionOne .container .form-section .button .btn-blue {
+  background: #244191;
+  border-radius: 5vh;
+  padding: 1vh 5vh;
+  width: 100%;
+  font-size: 2vh;
+  color: white;
+}
+.registrationSectionOne .container .form-section p {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  font-weight: normal;
+  justify-content: center;
+}
+.registrationSectionOne .container .form-section p a {
+  margin-left: 0.25rem;
+  font-size: 1rem;
+  color: #244191;
+}
+.registrationSectionOne .container .form-section form {
+  margin-top: 2rem;
+}
+.registrationSectionOne .container .form-section form .form-group label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+.registrationSectionOne .container .form-section form .form-group .formWrapper {
+  background: #f8f8f8;
+  padding: 0 1rem;
+  border-radius: 3.125rem;
+  display: flex;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+.registrationSectionOne .container .form-section form .form-group .formWrapper input {
+  padding: 1rem 0;
+  border: none;
+  flex: 1;
+  background: transparent;
+}
+.registrationSectionOne .container .form-section form .form-group .formWrapper svg {
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.3125rem;
+}
+.registrationSectionOne .container .form-section form .form-group .formWrapper svg path {
+  fill: black;
+}
+.registrationSectionOne .container .form-section form .form-group .formWrapper svg.active path {
+  fill: #acacac;
+}
+.registrationSectionOne .container .form-section form .form-group:last-child {
+  margin-bottom: 0;
+}
+.registrationSectionOne .container .form-section form .strength-meter {
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+.registrationSectionOne .container .form-section form .strength-meter small {
+  font-size: 0.75rem;
+}
+.registrationSectionOne .container .form-section form .strength-meter .strength {
+  width: 100%;
+  background: #f8f8f8;
+  height: 0.625rem;
+  border-radius: 3.125rem;
+  position: relative;
+}
+.registrationSectionOne .container .form-section form .strength-meter .strength .tracker {
+  background: #02909a;
+  position: absolute;
+  left: 0;
+  border-radius: 3.125rem;
+  height: 100%;
+  top: 0;
+}
+.registrationSectionOne .container .first {
+  display: flex;
+}
+.registrationSectionOne .container .single-button {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.registrationSectionOne .container .single-button .btn-blue {
+  background: #244191;
+  border-radius: 5vh;
+  padding: 1vh 5vh;
+  flex: 0.575;
+  font-size: 2vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.registrationSectionOne .container .single-button .btn-blue svg {
+  width: 1.5rem;
+}
+.registrationSectionOne .container .single-button .btn-blue svg path {
+  stroke: white;
+}
+.registrationSectionOne .container .form-group-buttons {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  justify-content: flex-start;
+  margin-top: 2.5rem;
+}
+.registrationSectionOne .container .form-group-buttons .btn-white {
+  background: #f8f8f8;
+  border-radius: 5vh;
+  padding: 1vh 5vh;
+  flex: 0.2;
+  font-weight: bold;
+  font-size: 2vh;
+  margin-left: 5%;
+  color: black;
+}
+.registrationSectionOne .container .form-group-buttons .btn-black {
+  background: #000;
+  border-radius: 5vh;
+  padding: 1vh 5vh;
+  flex: 0.35;
+  font-size: 2vh;
+  color: white;
+  font-weight: bold;
+}
+.registrationSectionOne .container .form-group-buttons .btn-black svg {
+  width: 1.5rem;
+}
+.registrationSectionOne .container .form-group-buttons .btn-black svg path {
+  fill: white;
+}
+.registrationSectionOne .container .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+.registrationSectionOne .container .buttons .btn-transparent {
+  background: #00000000;
+  border-radius: 5vh;
+  padding: 1vh 5vh;
+  flex: 0.275;
+  font-size: 2vh;
+  border: 1px solid black;
+  color: black;
+}
+.registrationSectionOne .container .buttons .btn-blue {
+  background: #244191;
+  border-radius: 5vh;
+  padding: 1vh 5vh;
+  flex: 0.575;
+  font-size: 2vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.registrationSectionOne .container .buttons .btn-blue svg {
+  width: 1.5rem;
+}
+.registrationSectionOne .container .buttons .btn-blue svg path {
+  stroke: white;
+}

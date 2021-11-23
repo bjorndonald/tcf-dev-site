@@ -1,0 +1,93 @@
+.blogSectionOne {
+  padding-bottom: 10vh;
+}
+.blogSectionOne .container {
+  margin-top: 0;
+}
+.blogSectionOne .container .card-body {
+  margin-left: 1rem;
+}
+.blogSectionOne .cord {
+  position: absolute;
+  height: calc(100% - 8rem);
+  width: 0.5rem;
+  left: 14.5rem;
+  z-index: -2;
+  background-color: black;
+}
+.blogSectionOne .cord .tip {
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: #000;
+  bottom: -0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -0.75rem;
+}
+.blogSectionOne .cord .tip::after {
+  content: "";
+  background-color: #fff;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 500%;
+}
+.blogSectionOne .top-title {
+  margin-top: 10vh;
+}
+.blogSectionOne .card {
+  border: none;
+  background-color: transparent;
+}
+.blogSectionOne h1 {
+  font-size: 4rem;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+.blogSectionOne .button {
+  width: 100%;
+}
+.blogSectionOne .button .btn {
+  font-size: 1.75rem;
+}
+.blogSectionOne .button .d-flex {
+  padding-left: 1rem;
+  width: 28rem;
+}
+
+.blogSectionTwo {
+  background-color: #000;
+  color: #fff;
+  height: 70vh;
+}
+.blogSectionTwo h4 {
+  font-family: eina;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.blogSectionTwo .btn {
+  background-color: #fff;
+  font-size: 1.75rem;
+  color: #000 !important;
+}
+
+.blogSectionOne .placeholder-image {
+  height: 18rem;
+}
+.blogSectionOne .smallCard {
+  margin-bottom: 12rem;
+}
+.blogSectionOne h5 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.blogSectionOne h5:hover {
+  text-decoration: underline;
+}
+.blogSectionOne p {
+  font-size: 2rem;
+  text-align: center;
+}

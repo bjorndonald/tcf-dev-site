@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 
 export default function NavBar () {
   const router = useRouter()
+  console.log(router.pathname)
 
   /*const [scrollTop, setScrollTop] = useState(false);
   const handleScrollTop = () => {
@@ -22,9 +23,7 @@ export default function NavBar () {
     //     (scrollTop ? "scrolled" : "")
     //   }
     // >
-    <div
-      className={'fixed-top bg-white nav__container navbar-fixed-top top-menu'}
-    >
+    <div className={'fixed-top nav__container navbar-fixed-top top-menu'}>
       <div className='container-fluid'>
         <nav className='navbar navbar-expand-lg navbar-light'>
           <Link href='/'>
@@ -178,6 +177,11 @@ export default function NavBar () {
                   <span>Learn</span>
                 </a>
                 <ul className='mobileMenuListSub'>
+                  {/* <li>
+                    <Link href='/archive'>
+                      <a className='mobileMenuListSubA navClose'>Bites</a>
+                    </Link>
+                  </li> */}
                   <li>
                     <Link href='/trading-basics'>
                       <a className='mobileMenuListSubA navClose'>Basics</a>

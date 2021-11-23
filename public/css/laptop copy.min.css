@@ -1,0 +1,312 @@
+@media only screen and (min-width: 480px) and (max-width: 1048px) {
+  .sectionOne {
+    height: 80vh;
+  }
+  .sectionOne h1 {
+    font-size: 3rem;
+  }
+  .sectionOne p {
+    font-size: 1.5rem;
+  }
+  .sectionOne .HomeHeroVideo {
+    margin-top: -2vh;
+  }
+
+  .sectionMobile .fixedBox img {
+    width: 40rem;
+    height: auto;
+    margin-left: -18.5rem;
+  }
+  .sectionMobile .sectionTwoContentWrap {
+    margin-left: 1rem;
+  }
+
+  .cryptoSectionOne .cryptoTextWrap,
+.cryptoSectionFive .cryptoTextWrap {
+    width: 80vw !important;
+  }
+
+  .cryptoSectionTwo {
+    height: auto;
+  }
+  .cryptoSectionTwo .row {
+    flex-wrap: wrap;
+  }
+  .cryptoSectionTwo .card {
+    margin: 2vw 0.5vw;
+    flex: auto;
+    max-width: 42.5vw;
+    padding: 2rem 1rem;
+    width: 45vw;
+  }
+
+  .cryptoSectionThree {
+    height: auto;
+  }
+  .cryptoSectionThree .row {
+    flex-wrap: wrap;
+  }
+  .cryptoSectionThree .col-md-3 {
+    margin: 2vw 0.5vw;
+    flex: auto;
+    max-width: 40vw;
+    padding: 2rem 1rem;
+    width: 40vw;
+  }
+
+  .cryptoSectionFour {
+    height: auto;
+  }
+  .cryptoSectionFour .steps .row {
+    flex-wrap: wrap;
+  }
+  .cryptoSectionFour .steps .card {
+    margin: 2vw 0.5vw;
+    flex: auto !important;
+    max-width: 42.5vw !important;
+    padding: 2rem 1rem;
+    width: 42.5vw !important;
+  }
+  .cryptoSectionFour .fees-section .row {
+    flex-wrap: wrap;
+  }
+  .cryptoSectionFour .fees-section .fee {
+    margin: 0.5rem;
+    flex: auto;
+    max-width: 40vw;
+    padding: 2rem 1rem;
+    width: 40vw;
+  }
+  .cryptoSectionFour .fees-section .card {
+    border-radius: 1.5625rem !important;
+  }
+
+  .sectionThree .card {
+    max-height: 40vw;
+    height: 40vw;
+    min-height: 40vw;
+  }
+  .sectionThree .sectionThreeHeader {
+    max-height: 40vw;
+    height: 40vw;
+    min-height: 40vw;
+  }
+  .sectionThree .homeBoxOne video {
+    width: 20vw !important;
+    height: auto !important;
+    transform: scale(1) !important;
+    right: 2rem !important;
+    bottom: 0 !important;
+  }
+  .sectionThree .homeBoxTwo video {
+    width: 30vw;
+    height: 30vw;
+    transform: scale(1);
+    right: -2rem;
+    bottom: -2rem;
+  }
+  .sectionThree .homeBoxThree video {
+    width: 25vw !important;
+    height: 25vw !important;
+    transform: scale(1) !important;
+    right: 1rem !important;
+    bottom: 1rem !important;
+  }
+  .sectionThree .homeBoxFour video {
+    width: 25vw !important;
+    height: 25vw !important;
+    transform: scale(1) !important;
+    right: 1rem !important;
+    bottom: 1rem !important;
+  }
+
+  .fundingSectionThree .col-md-3 {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  .fundingSectionThree .one-time .col-md-2 {
+    flex: 0 0 30%;
+    max-width: 30%;
+    padding-left: 0;
+  }
+  .fundingSectionThree .one-time .pTableDetailWrap {
+    width: 150% !important;
+  }
+  .fundingSectionFour .col-8 {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+}
+@media only screen and (min-width: 765px) and (max-width: 1048px) {
+  .helpCenterSectionFour .col-10 {
+    flex: 0 0 85%;
+    max-width: 85%;
+  }
+
+  .sectionTwo {
+    height: 120vh;
+  }
+  .sectionTwo .container {
+    position: relative;
+  }
+  .sectionTwo .container .row {
+    justify-content: center;
+  }
+  .sectionTwo .container .images {
+    flex: auto;
+    max-width: 60%;
+    width: 60%;
+    margin-top: -25rem;
+  }
+  .sectionTwo .container .col-md-2 {
+    position: absolute;
+    left: 0;
+    height: auto;
+    top: 3rem;
+    max-width: 25%;
+  }
+  .sectionTwo .container .col-md-2 .sectionTwoContentWrap,
+.sectionTwo .container .col-md-2 .sectionTwoList {
+    position: relative;
+    width: 10rem;
+    height: 5.625rem;
+  }
+  .sectionTwo .container .descriptions {
+    position: absolute;
+    left: 0;
+    height: auto;
+    bottom: -1rem;
+    max-width: 100%;
+  }
+  .sectionTwo .container .descriptions .sectionTwoContentWrap,
+.sectionTwo .container .descriptions .sectionTwoContent {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+  .sectionTwo .fixedBox img {
+    width: auto;
+    margin-left: 0rem;
+    height: 57.3125vh;
+  }
+  .sectionTwo .sectionTwoContentWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sectionTwo h2 {
+    display: flex;
+    font-size: 10vw;
+    justify-content: center;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .sectionTwo h2 .sectionTwoContentLine {
+    height: auto;
+  }
+  .sectionTwo .button {
+    display: flex;
+    justify-content: center;
+  }
+  .sectionTwo p {
+    margin-top: 0rem;
+    font-size: 4vw;
+    text-align: center;
+  }
+  .sectionTwo p br {
+    display: none;
+  }
+  .sectionTwo .mobImg {
+    width: 100%;
+  }
+  .fundingSectionThree .monthly .pTableDetailWrap {
+    width: 120%;
+  }
+  .fundingSectionThree .monthly .pTableSingleListWrap {
+    width: 120%;
+  }
+  .fundingSectionThree .col-md-2 {
+    flex: 0 0 34% !important;
+    max-width: 34% !important;
+  }
+  .fundingSectionThree .col-md-2 .pTableDetailWrap {
+    width: 120%;
+    margin-right: -1rem;
+  }
+  .fundingSectionThree .col-md-2 .pTableDetailWrap .pTableDetail {
+    padding-left: 0.5rem;
+  }
+
+  .tokenSectionTwo {
+    height: 100vh;
+    margin-top: -15vh;
+  }
+
+  .tokenSectionFaq {
+    padding-top: 0;
+  }
+
+  .tokenSectionFive {
+    height: 75vh;
+    margin-top: -20vh;
+  }
+}
+@media (min-width: 1441px) {
+  .sectionMobile .fixedBox img {
+    width: auto;
+    height: 62.5vh;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1445px) {
+  .tokenSectionThree .row:first-child {
+    margin-top: 5rem;
+  }
+
+  .sectionMobile .fixedBox img {
+    height: 60.5vh;
+    width: auto;
+  }
+
+  .helpCenterSectionFour .col-10 {
+    flex: 0 0 63%;
+    max-width: 63%;
+  }
+
+  .fundingSectionThree .one-time .col-md-2 {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+  .fundingSectionThree .monthly .pTableDetailWrap {
+    width: 100%;
+    margin-right: -2rem;
+  }
+  .fundingSectionThree .monthly .pTableSingleListWrap {
+    width: 110%;
+  }
+
+  .tokenSectionOne {
+    padding-bottom: 0;
+  }
+
+  .tokenSectionTwo {
+    padding-bottom: 0rem;
+  }
+
+  .tokenSectionThree {
+    padding: 0rem;
+  }
+  .tokenSectionThree .row {
+    margin-top: -6rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .helpCenterSectionFour .col-10 {
+    flex: 0 0 85%;
+    max-width: 85%;
+  }
+
+  .sectionTwo img {
+    height: 40.5vh;
+    width: auto;
+  }
+}

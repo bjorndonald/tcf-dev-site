@@ -7,13 +7,13 @@ function BasicArticlesSectionOne () {
         <h2>Latest articles</h2>
         <div className='d-flex '>
           <div className='article'>
-            <div className='purple-box'></div>
+            <img src='/images/basicArticles/basicArticleOne.PNG' alt='' />
           </div>
           <div className='article'>
-            <div className='purple-box'></div>
+            <img src='/images/basicArticles/basicArticleTwo.PNG' alt='' />
           </div>
           <div className='article'>
-            <div className='purple-box'></div>
+            <img src='/images/basicArticles/basicArticleThree.PNG' alt='' />
           </div>
         </div>
       </div>

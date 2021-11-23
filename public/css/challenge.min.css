@@ -1,0 +1,62 @@
+.challengeSectionOne {
+  background-color: #8719da;
+}
+.challengeSectionOne .tc-wrapper {
+  padding: 2rem 0 5rem 0;
+  width: 70rem;
+  margin: auto;
+}
+.challengeSectionOne h2 {
+  color: white;
+  font-size: 8vh;
+  text-align: center;
+}
+.challengeSectionOne h4 {
+  color: white;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 1.75rem;
+}
+.challengeSectionOne .puzzle {
+  position: relative;
+}
+.challengeSectionOne .puzzle img {
+  width: 100%;
+  height: auto;
+}
+.challengeSectionOne .puzzle h4 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  bottom: 40vh;
+}
+.challengeSectionOne .tc-card {
+  padding: 2rem;
+  width: 40rem;
+  border-radius: 3.125rem;
+  margin: 0rem auto 2rem auto;
+}
+.challengeSectionOne .tc-card h3 {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.challengeSectionOne .tc-card p {
+  color: white;
+  text-align: center;
+  font-size: 2.75vh;
+}
+.challengeSectionOne .pink {
+  background-color: #a12ba1;
+}
+.challengeSectionOne .button {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.challengeSectionOne .purple {
+  background-color: #602ca8;
+}

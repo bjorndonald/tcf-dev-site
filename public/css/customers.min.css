@@ -1,0 +1,212 @@
+.lb-canvas img {
+  width: auto;
+}
+
+.customersSectionOne .container {
+  max-width: 60vw;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+.customersSectionOne .container h1 {
+  font-size: 8vh;
+  margin-bottom: 6rem;
+  text-align: center;
+  width: 100%;
+}
+.customersSectionOne .container .video-section {
+  margin-bottom: 2vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.customersSectionOne .container iframe {
+  width: 100%;
+  height: 70vh;
+}
+.customersSectionOne .container .placeholder-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5625rem;
+  background-color: black;
+}
+.customersSectionOne .video-slider {
+  margin-top: 2rem;
+  position: relative;
+  height: auto;
+}
+.customersSectionOne .video-slider .next-button,
+.customersSectionOne .video-slider .prev-button {
+  position: absolute;
+}
+.customersSectionOne .video-slider .next-button i,
+.customersSectionOne .video-slider .prev-button i {
+  color: #8c26f3;
+  font-size: 6rem;
+}
+.customersSectionOne .video-slider .prev-button {
+  top: calc((100% - 6rem) / 2);
+  left: -6rem;
+}
+.customersSectionOne .video-slider .prev-button i {
+  transform: scale(-1, -1);
+}
+.customersSectionOne .video-slider .next-button {
+  top: calc((100% - 6rem) / 2);
+  right: -6rem;
+}
+.customersSectionOne .video-slider .slider {
+  display: flex;
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+}
+.customersSectionOne .video-slider .slider img {
+  margin-right: 2vw;
+  width: 100%;
+  min-width: calc((100% - 6vw) / 4);
+  height: auto;
+  border: 1px solid #555;
+  border-radius: 1.5625rem;
+}
+.customersSectionOne .video-slider .slider .slide {
+  margin-right: 2vw;
+  width: calc((100% - 6vw) / 4);
+  min-width: calc((100% - 6vw) / 4);
+  border-radius: 1.5625rem;
+  position: relative;
+}
+.customersSectionOne .video-slider .slider .slide i {
+  position: absolute;
+  font-size: 4rem;
+  color: #8c26f3;
+  top: calc((100% - 4rem) / 2);
+  left: calc((100% - 4rem) / 2);
+}
+.customersSectionOne .video-slider .slider .slide.active {
+  background-color: red;
+}
+
+.customersSectionTwo {
+  padding: 5rem 0;
+  height: auto;
+}
+.customersSectionTwo .container {
+  max-width: 70vw;
+}
+.customersSectionTwo .container h2 {
+  text-align: center;
+  margin: auto;
+  font-size: 3.75rem;
+  margin-bottom: 3rem;
+}
+.customersSectionTwo .container .trustpilot-widget {
+  width: 100%;
+}
+.customersSectionTwo .container .placeholder-div {
+  width: 100%;
+  height: 80vh;
+  border-radius: 1.5625rem;
+  background-color: black;
+}
+
+.customersSectionThree {
+  padding: 5rem 0;
+}
+.customersSectionThree .container {
+  max-width: 70vw;
+}
+.customersSectionThree .container h2 {
+  font-size: 3.75rem;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+.customersSectionThree .container .placeholder-div {
+  width: 100%;
+  height: 80vh;
+  border-radius: 1.5625rem;
+  background-color: black;
+}
+.customersSectionThree .container h4 {
+  margin: auto;
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.customersSectionThree .container h4 a {
+  color: #8c26f3;
+  text-decoration: underline;
+}
+.customersSectionThree .container .withdrawals-slider {
+  margin-top: 2rem;
+  position: relative;
+}
+.customersSectionThree .container .withdrawals-slider .next-button,
+.customersSectionThree .container .withdrawals-slider .prev-button {
+  position: absolute;
+}
+.customersSectionThree .container .withdrawals-slider .next-button i,
+.customersSectionThree .container .withdrawals-slider .prev-button i {
+  color: #8c26f3;
+  font-size: 6rem;
+}
+.customersSectionThree .container .withdrawals-slider .prev-button {
+  top: calc((100% - 6rem) / 2);
+  left: -6rem;
+}
+.customersSectionThree .container .withdrawals-slider .prev-button i {
+  transform: scale(-1, -1);
+}
+.customersSectionThree .container .withdrawals-slider .next-button {
+  top: calc((100% - 6rem) / 2);
+  right: -6rem;
+}
+.customersSectionThree .container .withdrawals-slider .slider {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc( (100% - 4vw) / 3 ) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc( (100% - 4vw) / 3 ) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc( (100% - 4vw) / 3 ) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc( (100% - 4vw) / 3 ) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc( (100% - 4vw) / 3 ) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc( (100% - 4vw) / 3 ) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc( (100% - 4vw) / 3 ) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc( (100% - 4vw) / 3 ) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc( (100% - 4vw) / 3 ) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc( (100% - 4vw) / 3 ) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc( (100% - 4vw) / 3 ) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc( (100% - 4vw) / 3 ) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc( (100% - 4vw) / 3 ) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc( (100% - 4vw) / 3 ) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc( (100% - 4vw) / 3 ) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc( (100% - 4vw) / 3 ) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc( (100% - 4vw) / 3 ) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc( (100% - 4vw) / 3 ) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc( (100% - 4vw) / 3 ) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc( (100% - 4vw) / 3 ) calc((100% - 4vw) / 3) calc((100% - 4vw) / 3) calc( (100% - 4vw) / 3 ) calc((100% - 4vw) / 3);
+  grid-gap: 2vw;
+  width: 100%;
+}
+.customersSectionThree .container .withdrawals-slider .slider .slide {
+  width: 100%;
+  height: calc(1.75 * (((70vw - 30px) - 4vw) / 3));
+  border-radius: 1.5625rem;
+  margin-right: 2vw;
+  cursor: zoom-in;
+  overflow: hidden;
+}
+.customersSectionThree .container .withdrawals-slider .slider .slide img {
+  height: 100%;
+  width: auto;
+}
+
+.customersSectionFour {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+.customersSectionFour .container {
+  max-width: 70vw;
+}
+.customersSectionFour .container .bubble {
+  padding: 2rem 5rem;
+  background-color: #8c26f3;
+  border-radius: 6.25rem;
+  margin: auto;
+}
+.customersSectionFour .container .bubble p {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+.customersSectionFour .container .bubble .button {
+  display: flex;
+  justify-content: center;
+}
+.customersSectionFour .container .bubble .btn {
+  border-radius: 5vh;
+  padding: 1vh 5vh;
+  font-size: 3vh;
+}

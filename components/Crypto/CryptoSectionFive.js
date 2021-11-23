@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { gsap } from 'gsap/dist/gsap'
 import $ from 'jquery'
+import { useRouter } from 'next/router'
 
 export default function CryptoSectionFive () {
+  const router = useRouter()
   const [email, setEmail] = useState('')
   // useEffect(() => {
   //   tl.from('.cryptoSectionThree', {
@@ -14,19 +16,34 @@ export default function CryptoSectionFive () {
   // }, [tl])
   const onSubmit = () => {
     console.log($('#email-info').serializeArray())
-    $.ajax({
-      url: 'https://api.apispreadsheets.com/data/18118/',
-      type: 'post',
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    if (re.test(String(email).toLowerCase())) {
+      $.ajax({
+        url: 'https://api.apispreadsheets.com/data/18118/',
+        type: 'post',
 
-      data: $('#email-info').serializeArray(),
-      success: function () {
-        setEmail('')
-      },
-      error: function (err) {
-        console.log(err)
-      }
-    })
+        data: $('#email-info').serializeArray(),
+        success: function () {
+          setEmail('')
+          router.push('https://trade.tccrypto.io/signup')
+        },
+        error: function (err) {
+          console.log(err)
+        }
+      })
+    } else {
+      console.log('Email is not in correct format.')
+    }
   }
+
+  function onEnter (e) {
+    // e.preventDefault()
+    console.log(e.keyCode)
+    if (e.keyCode == 13) {
+      onSubmit()
+    }
+  }
+
   return (
     <div className='cryptoSectionFive d-flex align-items-center'>
       <div className='container d-flex justify-content-center'>
@@ -40,11 +57,16 @@ export default function CryptoSectionFive () {
           <hr />
 
           <div className='row flex-column align-items-center justify-content-between'>
-            <form className='cryptoTextWrap' id='email-info'>
+            <form
+              onSubmit={e => e.preventDefault()}
+              className='cryptoTextWrap'
+              id='email-info'
+            >
               <input
                 type='text'
                 name='email'
                 value={email}
+                onKeyDown={onEnter}
                 onChange={event => setEmail(event.target.value)}
                 placeholder='Enter Email'
               />

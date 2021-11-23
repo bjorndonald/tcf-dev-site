@@ -1,0 +1,74 @@
+.signUpSectionOne .text-center {
+  padding-top: 8.5vh;
+  margin: auto;
+  margin-bottom: 7.5vh;
+}
+.signUpSectionOne .text-center h1 {
+  text-align: center;
+  font-weight: bolder;
+}
+.signUpSectionOne nav.signup {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.signUpSectionOne .link-row {
+  margin-top: 4vh;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10vh;
+}
+.signUpSectionOne .link-row a {
+  font-size: 3vh;
+  font-weight: bold;
+}
+.signUpSectionOne .link-row a:hover {
+  text-decoration: underline;
+}
+.signUpSectionOne .page-options {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  margin: auto;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+.signUpSectionOne .page-options .page-option:first-child {
+  margin-top: 0rem;
+}
+.signUpSectionOne .page-options .page-option {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.signUpSectionOne .page-options .page-option img {
+  height: 6rem;
+  width: auto;
+  margin-right: 2rem;
+}
+.signUpSectionOne .page-options .page-option .column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.signUpSectionOne .page-options .page-option .column h4 {
+  padding-left: 0.5rem;
+  font-size: 1.5rem;
+}
+.signUpSectionOne .page-options .page-option .column .btn {
+  padding: 1vh 3vh;
+  font-size: 2.75vh;
+  flex-wrap: nowrap;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.signUpSectionOne .page-options .page-option .column .btn svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+.signUpSectionOne .page-options .page-option:first-child {
+  margin-top: 0rem;
+}

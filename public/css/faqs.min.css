@@ -1,0 +1,130 @@
+.faqsSectionOne .nav-link {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.faqsSectionOne .nav-link.active {
+  text-decoration: underline;
+}
+.faqsSectionOne .nav-link:hover {
+  text-decoration: underline;
+}
+.faqsSectionOne .nav-switch .nav-link.active {
+  text-decoration: none;
+}
+.faqsSectionOne .nav-switch .nav-link:hover {
+  text-decoration: none;
+}
+.faqsSectionOne .nav-switch .nav {
+  position: relative;
+  width: 14rem;
+  height: 3rem;
+}
+.faqsSectionOne .nav-switch .nav .nav-item {
+  position: absolute;
+  top: 0;
+  height: 3rem;
+  width: 8rem;
+}
+.faqsSectionOne .nav-switch .nav .nav-item .nav-link {
+  background-color: #000000;
+  color: white;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.875rem;
+}
+.faqsSectionOne .nav-switch .nav .nav-item .nav-link.active {
+  background-color: #ebeef5;
+  color: black;
+  border: none;
+  border-radius: 1.875rem;
+  z-index: 4;
+}
+.faqsSectionOne .nav-switch .nav .nav-item:first-child {
+  left: 0;
+}
+.faqsSectionOne .nav-switch .nav .nav-item:first-child .nav-link {
+  padding-right: 2rem;
+}
+.faqsSectionOne .nav-switch .nav .nav-item:last-child .nav-link {
+  padding-left: 2rem;
+}
+.faqsSectionOne .nav-switch .nav .nav-item:first-child .nav-link.active {
+  padding-right: 1rem;
+}
+.faqsSectionOne .nav-switch .nav .nav-item:last-child .nav-link.active {
+  padding-left: 1rem;
+}
+.faqsSectionOne .nav-switch .nav .nav-item:last-child {
+  right: 0;
+}
+.faqsSectionOne .headerSection {
+  padding-left: 1.5rem;
+  padding-right: 2rem;
+  display: flex;
+  width: 100%;
+}
+.faqsSectionOne #trading-section {
+  color: #fff;
+}
+.faqsSectionOne #capital-section {
+  max-height: 30rem;
+  overflow-y: scroll;
+}
+.faqsSectionOne #capital-section table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.faqsSectionOne #capital-section td,
+.faqsSectionOne #capital-section th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.faqsSectionOne #capital-section tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.faqsSectionOne .types .card {
+  border-radius: 3.125rem;
+  background-position: center;
+  background-size: cover;
+}
+.faqsSectionOne .types .card small {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: lighter;
+}
+.faqsSectionOne .types .card p {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+.faqsSectionOne #position-section table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.faqsSectionOne #position-section td,
+.faqsSectionOne #position-section th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.faqsSectionOne #position-section tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.faqsSectionOne .types .card {
+  border-radius: 3.125rem;
+  background-position: center;
+  background-size: cover;
+}
+.faqsSectionOne .types .card small {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: lighter;
+}
+.faqsSectionOne .types .card p {
+  font-size: 1.5rem;
+  font-weight: normal;
+}

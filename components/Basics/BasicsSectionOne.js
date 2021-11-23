@@ -7,17 +7,19 @@ function BasicsSectionOne () {
         <div className='row'>
           <div className='col-md-5'>
             <h1>
-              Dicover the
+              Discover the
               <br />
               trader in you
             </h1>
             <h4>
               The must-know basics to
               <br />
-              become a successful trader
+              &nbsp;become a successful trader
             </h4>
           </div>
-          <div className='col-md-7'></div>
+          <div className='col-md-7'>
+            <img src='/images/basic/basicHeader.PNG' alt='' />
+          </div>
         </div>
       </div>
     </div>

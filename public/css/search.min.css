@@ -1,0 +1,75 @@
+.searchSectionOne {
+  height: 30vh;
+}
+.searchSectionOne .searchSearchBox {
+  background-color: #f0f0f0;
+  border-radius: 5vh;
+  width: 80%;
+  margin: 1rem auto;
+}
+.searchSectionOne .searchField {
+  font-family: eina;
+  font-weight: bold;
+  padding: 3.6vh 2.4vh;
+  border: none;
+  border-radius: 5vh;
+  background-color: #f0f0f0;
+  border-left: none;
+  font-size: 2.5vh;
+}
+.searchSectionOne .input-group-prepend {
+  border: none;
+  border-bottom-right-radius: 3.125rem;
+  border-top-right-radius: 3.125rem;
+}
+.searchSectionOne .input-group-text {
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-bottom-right-radius: 3.125rem !important;
+  border-top-right-radius: 3.125rem !important;
+  border: none;
+  background-color: #f0f0f0;
+  padding: 0 1.5rem;
+}
+
+.searchSectionTwo .nav-item {
+  margin-bottom: 1rem;
+}
+.searchSectionTwo .nav-link.active {
+  text-decoration: underline;
+}
+.searchSectionTwo h1 {
+  font-size: 2.0625rem;
+}
+.searchSectionTwo h3 {
+  font-size: 1.125rem;
+}
+.searchSectionTwo .body {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.searchSectionTwo h5 {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #565867;
+}
+.searchSectionTwo .article {
+  border-bottom: 1px #ccc solid;
+  cursor: pointer;
+}
+.searchSectionTwo .article .placeholder-image {
+  width: 18rem;
+  height: 14rem;
+}
+.searchSectionTwo .article p {
+  font-size: 1rem;
+}
+.searchSectionTwo .article h4 {
+  font-size: 1.125rem;
+  font-weight: lighter;
+}
+.searchSectionTwo .article h5 {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #565867;
+}

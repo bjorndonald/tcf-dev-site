@@ -1,0 +1,351 @@
+.scrolled {
+  background-color: white;
+}
+.registrationSectionOne {
+  position: relative;
+  .graphic {
+    width: auto;
+  }
+  .curve {
+    width: 62.5rem;
+    height: auto;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .container {
+    padding: 20vh 0;
+    padding-left: 6rem;
+    padding-bottom: 10vh;
+    .seventh {
+      .buttons {
+        margin-top: 8.75rem;
+      }
+    }
+    .first,
+    .second,
+    .third,
+    .fourth,
+    .fifth,
+    .sixth {
+      display: flex;
+      justify-content: space-between;
+    }
+    .volume {
+      .form-section {
+        width: 36rem;
+        form {
+          width: auto;
+
+          .form-group {
+            width: 11.25rem;
+
+            .formWrapper {
+              width: auto;
+              input {
+                width: 11.25rem;
+              }
+            }
+          }
+
+          .buttons {
+            margin-top: 8.5rem;
+            width: 70%;
+          }
+        }
+      }
+    }
+    .experience {
+      .buttons {
+        margin-top: 8.5rem;
+        // width: 70%;
+      }
+      .form-group-buttons {
+        width: 80%;
+      }
+    }
+    .ninth {
+      .form-group-buttons {
+        width: 50%;
+      }
+      .buttons {
+        width: 60%;
+        margin-top: 8.5rem;
+      }
+      .form-section {
+        width: 40rem;
+      }
+    }
+    .eleventh {
+      .form-section {
+        width: 100%;
+
+        form {
+          .form-row {
+            display: flex;
+            margin-bottom: 1.5rem;
+
+            .form-group {
+              display: flex;
+              align-items: center;
+              margin-right: 1.85rem;
+
+              label {
+                font-size: 1.125rem;
+                margin-right: 1.85rem;
+                color: #244191;
+              }
+
+              .formWrapper {
+                width: 19.0625rem;
+              }
+            }
+          }
+        }
+      }
+      .buttons {
+        width: 30%;
+        margin-top: 8.5rem;
+      }
+    }
+    .twelfth {
+      .form-section {
+        width: 100%;
+      }
+
+      .button {
+        width: 16.6875rem;
+      }
+    }
+    .form-section {
+      width: 24rem;
+      h1 {
+        font-size: 2.75rem;
+        font-weight: bolder;
+        margin-bottom: 0;
+      }
+      h4 {
+        font-weight: normal;
+        font-size: 1.5rem;
+      }
+
+      .button {
+        .btn-blue {
+          font-family: eina;
+          font-weight: bold;
+          background: #244191;
+          border-radius: 5vh;
+          padding: 1vh 5vh;
+          width: 100%;
+          font-size: 18px;
+          color: white;
+        }
+      }
+
+      p {
+        margin-top: 2rem;
+        font-size: 1rem;
+        font-weight: 500;
+        display: flex;
+        font-weight: normal;
+        justify-content: center;
+
+        a {
+          margin-left: 0.25rem;
+          font-size: 1rem;
+          color: #244191;
+        }
+      }
+
+      form {
+        margin-top: 2rem;
+
+        .form-group {
+          label {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+          }
+
+          .formWrapper {
+            background: #f8f8f8;
+            padding: 0 1rem;
+            border-radius: 3.125rem;
+            display: flex;
+            margin-bottom: 0.5rem;
+            align-items: center;
+
+            input {
+              padding: 1rem 0;
+              border: none;
+              flex: 1;
+              background: transparent;
+            }
+
+            svg {
+              cursor: pointer;
+              width: 1.5rem;
+              height: 1.3125rem;
+              path {
+                fill: black;
+              }
+            }
+
+            svg.active {
+              path {
+                fill: #acacac;
+              }
+            }
+          }
+        }
+
+        .form-group:last-child {
+          margin-bottom: 0;
+        }
+
+        .strength-meter {
+          width: 100%;
+          margin-top: 0.5rem;
+          margin-bottom: 2rem;
+          padding: 0 1rem;
+
+          small {
+            font-size: 0.75rem;
+          }
+          .strength {
+            width: 100%;
+            background: #f8f8f8;
+            height: 0.625rem;
+            border-radius: 3.125rem;
+            position: relative;
+            .tracker {
+              background: #02909a;
+              // width: 70%;
+              position: absolute;
+              left: 0;
+              border-radius: 3.125rem;
+              height: 100%;
+              top: 0;
+            }
+          }
+        }
+      }
+    }
+    .first {
+      display: flex;
+      //   flex-direction: column;
+    }
+
+    .single-button {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+
+      .btn-blue {
+        font-weight: bold;
+        font-family: eina;
+        background: #244191;
+        border-radius: 5vh;
+        padding: 1vh 5vh;
+        flex: 0.575;
+        // width: 100%;
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          path {
+            stroke: white;
+          }
+          width: 1.5rem;
+        }
+      }
+    }
+
+    .form-group-buttons {
+      display: flex;
+      width: 100%;
+      flex: 1;
+      justify-content: flex-start;
+      margin-top: 2.5rem;
+      .btn-white {
+        font-family: eina;
+        background: #f8f8f8;
+        border-radius: 5vh;
+        padding: 1vh 5vh;
+        // width: 100%;
+        flex: 0.2;
+        font-weight: bold;
+        font-size: 18px;
+        margin-left: 5%;
+        // border: 1px solid black;
+        color: black;
+      }
+
+      .btn-black {
+        font-family: eina;
+        background: #000;
+        border-radius: 5vh;
+        padding: 1vh 5vh;
+        flex: 0.35;
+        // width: 100%;
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+
+        svg {
+          path {
+            fill: white;
+          }
+
+          width: 1.5rem;
+        }
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2.5rem;
+      .btn-transparent {
+        font-family: eina;
+        font-weight: bold;
+        background: #00000000;
+        border-radius: 5vh;
+        padding: 1vh 5vh;
+        // width: 100%;
+        flex: 0.275;
+        font-size: 18px;
+        border: 1px solid black;
+        color: black;
+      }
+
+      .btn-blue {
+        font-family: eina;
+        font-weight: bold;
+        background: #244191;
+        border-radius: 5vh;
+        padding: 1vh 5vh;
+        flex: 0.575;
+        // width: 100%;
+        font-size: 18px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          path {
+            stroke: white;
+          }
+          width: 1.5rem;
+        }
+      }
+    }
+  }
+}

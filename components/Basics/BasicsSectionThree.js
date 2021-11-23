@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 function BasicsSectionThree () {
   return (
@@ -26,9 +27,9 @@ function BasicsSectionThree () {
           </div>
         </div>
         <div className='button'>
-          <a href='' className='btn btn-black'>
-            See all articles
-          </a>
+          <Link href='/essentials'>
+            <a className='btn btn-black'>See all articles</a>
+          </Link>
         </div>
       </div>
     </div>

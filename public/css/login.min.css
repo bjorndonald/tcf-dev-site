@@ -1,0 +1,90 @@
+.loginSectionOne.mobile {
+  display: none;
+}
+
+.loginSectionOne.web {
+  height: 100vh;
+  background-color: #8f23f5;
+  display: flex;
+  align-items: center;
+}
+.loginSectionOne.web .inner {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.loginSectionOne.web .graphic {
+  height: 55vh;
+  width: auto;
+  margin-right: 5vw;
+}
+.loginSectionOne.web .login-card {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1.5625rem;
+  display: flex;
+  width: 28rem;
+  flex-direction: column;
+}
+.loginSectionOne.web .login-card .top-row {
+  margin-bottom: 2rem;
+}
+.loginSectionOne.web .login-card .top-row img {
+  width: auto;
+  height: 6rem;
+  margin-right: 1.5rem;
+}
+.loginSectionOne.web .login-card .top-row h2 {
+  line-height: 3rem;
+}
+.loginSectionOne.web .login-card .link {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+.loginSectionOne.web .login-card .link:hover {
+  text-decoration: underline;
+}
+.loginSectionOne.web .login-card .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loginSectionOne.web .login-card .form-group label {
+  margin-bottom: 0rem;
+  font-size: 1.125rem;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+.loginSectionOne.web .login-card .form-group .textWrapper {
+  display: flex;
+  align-items: center;
+  background-color: #8f23f5;
+  border-radius: 1.5625rem;
+  width: 100%;
+  padding-right: 1rem;
+}
+.loginSectionOne.web .login-card .form-group .textWrapper i {
+  font-size: 1.5rem;
+  color: white;
+}
+.loginSectionOne.web .login-card .form-group input {
+  flex-grow: 1;
+  border: none;
+  border-radius: 1.5625rem;
+  background-color: #8f23f5;
+  font-size: 1.25rem;
+  color: white;
+  outline: none;
+  padding: 0.75rem 1.25rem;
+}
+.loginSectionOne.web .login-card .button {
+  width: 100%;
+}
+.loginSectionOne.web .login-card .button .btn {
+  width: 100%;
+  border-radius: 5vh;
+  padding: 1vh 3vh;
+  font-size: 18px;
+}

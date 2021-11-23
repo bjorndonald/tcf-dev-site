@@ -1,0 +1,138 @@
+.sign-upSectionOne.mobile {
+  display: none;
+}
+
+.sign-upSectionOne.web {
+  height: 100vh;
+  background-color: #8f23f5;
+  display: flex;
+  align-items: center;
+}
+.sign-upSectionOne.web h6 {
+  font-size: 0.75rem;
+}
+.sign-upSectionOne.web .form-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sign-upSectionOne.web .form-row .form-group {
+  width: calc((100% - 2rem) / 2);
+}
+.sign-upSectionOne.web .form-row .form-group input {
+  width: 100%;
+}
+.sign-upSectionOne.web select {
+  background-color: #8c26f3;
+  color: #fff;
+  border-color: #8c26f3;
+  box-shadow: none !important;
+  outline-color: royalblue;
+}
+.sign-upSectionOne.web .custom-select-bx {
+  flex-grow: 1;
+  border: none;
+  border-radius: 1.5625rem;
+  background-color: #8f23f5;
+  font-size: 1.25rem;
+  color: white;
+  outline: none;
+  padding: 0.5rem 1.25rem;
+}
+.sign-upSectionOne.web .fCountry {
+  padding: 20px 30px;
+  border: #918080 1px solid;
+  border-radius: 50px;
+  width: 100%;
+  background-color: #8f23f5;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  /* background-color: #e5edfb !important; */
+}
+.sign-upSectionOne.web .links {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+}
+.sign-upSectionOne.web .inner {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.sign-upSectionOne.web .graphic {
+  height: 55vh;
+  width: auto;
+  margin-right: 5vw;
+}
+.sign-upSectionOne.web .login-card {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1.5625rem;
+  display: flex;
+  width: 28rem;
+  flex-direction: column;
+}
+.sign-upSectionOne.web .login-card .top-row {
+  margin-bottom: 1rem;
+}
+.sign-upSectionOne.web .login-card .top-row img {
+  width: auto;
+  height: 4.5rem;
+  margin-right: 1.5rem;
+}
+.sign-upSectionOne.web .login-card .top-row h2 {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+.sign-upSectionOne.web .login-card .link {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+.sign-upSectionOne.web .login-card .link:hover {
+  text-decoration: underline;
+}
+.sign-upSectionOne.web .login-card .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sign-upSectionOne.web .login-card .form-group label {
+  margin-bottom: 0rem;
+  font-size: 1.125rem;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+.sign-upSectionOne.web .login-card .form-group .textWrapper {
+  display: flex;
+  align-items: center;
+  background-color: #8f23f5;
+  border-radius: 1.5625rem;
+  width: 100%;
+  padding-right: 1rem;
+}
+.sign-upSectionOne.web .login-card .form-group .textWrapper i {
+  font-size: 1.5rem;
+  color: white;
+}
+.sign-upSectionOne.web .login-card .form-group input {
+  flex-grow: 1;
+  border: none;
+  border-radius: 1.5625rem;
+  background-color: #8f23f5;
+  font-size: 1.25rem;
+  color: white;
+  outline: none;
+  padding: 0.5rem 1.25rem;
+}
+.sign-upSectionOne.web .login-card .button {
+  width: 100%;
+}
+.sign-upSectionOne.web .login-card .button .btn {
+  width: 100%;
+  border-radius: 5vh;
+  padding: 1vh 3vh;
+  font-size: 18px;
+}

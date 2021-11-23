@@ -55,6 +55,16 @@
       }
     }
 
+    .accordion {
+      button {
+        display: flex;
+        align-items: center;
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+
     p {
       font-size: 1.125rem;
       line-height: 1.25rem;

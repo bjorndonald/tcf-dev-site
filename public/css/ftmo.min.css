@@ -1,0 +1,201 @@
+.ftmoSectionOne .container {
+  padding-top: 12.5vh;
+}
+.ftmoSectionOne .container .web {
+  display: block;
+}
+.ftmoSectionOne .container .mobile {
+  display: none;
+}
+.ftmoSectionOne .container .pTableDetail ul li .pTableiconWrap {
+  height: 1.15rem;
+}
+.ftmoSectionOne .container .button {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  display: flex;
+  justify-content: center;
+}
+.ftmoSectionOne .container .top-table {
+  justify-content: center;
+}
+.ftmoSectionOne .container .bottom-table {
+  justify-content: center;
+  margin-bottom: 10vh;
+}
+.ftmoSectionOne .container h4 {
+  font-size: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.ftmoSectionOne .container .text-center {
+  margin-bottom: 5rem;
+}
+.ftmoSectionOne .container .text-center h2 {
+  font-size: 3.75rem;
+}
+.ftmoSectionOne .container svg {
+  fill: white;
+}
+.ftmoSectionOne .container .pTableiconWrap {
+  width: 1.5rem;
+  margin-left: 4px;
+  height: 1.5rem !important;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  display: inline-flex;
+  line-height: 1.45rem;
+}
+.ftmoSectionOne .container .pTableiconWrap svg {
+  min-height: 1.5rem !important;
+}
+.ftmoSectionOne .container .pTableiconWrap svg:first-child {
+  margin-bottom: 0rem !important;
+}
+.ftmoSectionOne .container .pTableiconWrap .pTableicon {
+  width: 1.5rem;
+  margin-left: 0;
+  cursor: pointer;
+}
+.ftmoSectionOne .container .pTableiconWrap svg:last-child {
+  margin-bottom: 0rem !important;
+}
+.ftmoSectionOne .container .pTableDetail svg {
+  fill: #fff;
+  width: 1.35rem;
+  height: 1.35rem;
+}
+.ftmoSectionOne .container ul {
+  display: flex;
+  padding-left: 0;
+  flex-direction: column;
+  align-items: center;
+}
+.ftmoSectionOne .container ul p,
+.ftmoSectionOne .container ul h3 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.ftmoSectionOne .container ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  width: 90%;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid;
+}
+.ftmoSectionOne .container ul li p {
+  font-size: 1.45rem;
+  line-height: 2rem;
+}
+.ftmoSectionOne .container ul li p:first-child {
+  width: 25%;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.ftmoSectionOne .container ul li p:nth-child(2) {
+  width: 32.5%;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ftmoSectionOne .container ul li p:last-child {
+  width: 32.5%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  line-height: 1.25rem;
+  font-weight: lighter;
+  text-align: center;
+  margin-bottom: 0;
+}
+.ftmoSectionOne .container ul li h3 {
+  font-weight: bold;
+  padding-top: 0;
+  font-size: 2rem;
+}
+.ftmoSectionOne .container ul li h3:first-child {
+  width: calc((25%));
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.ftmoSectionOne .container ul li h3:nth-child(2) {
+  width: 32.5%;
+  margin-bottom: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.ftmoSectionOne .container ul li h3:last-child {
+  width: 32.5%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  line-height: 1.25rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+.ftmoSectionOne .container ul li:nth-child(9) p:first-child {
+  width: 25%;
+}
+.ftmoSectionOne .container ul li:nth-child(9) p:nth-child(2) {
+  width: 20%;
+  padding-left: 7.5%;
+}
+.ftmoSectionOne .container ul li:nth-child(9) p:last-child {
+  padding-left: 3.125%;
+  width: 40%;
+}
+.ftmoSectionOne .container ul li:first-child,
+.ftmoSectionOne .container ul li:last-child {
+  border-bottom: none;
+}
+.ftmoSectionOne .container ul li:first-child {
+  padding-bottom: 0.5rem;
+}
+.ftmoSectionOne .container .pTableSingleListWrap {
+  border-radius: 3rem;
+  background-color: #7a20eb;
+  color: white;
+  margin-left: 0rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  width: 100%;
+}
+.ftmoSectionOne .container .pTableSingleListWrap small {
+  font-size: 0.825rem;
+}
+.ftmoSectionOne .container .pTableSingleListWrap .bottomBtn {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.ftmoSectionOne .container .pTableSingleListWrap .bottomBtn .right {
+  width: 32.5%;
+  display: flex;
+  justify-content: center;
+}
+.ftmoSectionOne .container .pTableSingleListWrap .pTableSingleList {
+  padding-top: 1rem;
+}
+.ftmoSectionOne .container .pTableSingleListWrap .cadText85 {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding-bottom: 1rem;
+  padding-left: 2.8rem;
+  padding-right: 2.8rem;
+  line-height: 1rem;
+  border-radius: 3.125rem;
+}

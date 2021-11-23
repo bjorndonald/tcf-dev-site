@@ -11,7 +11,7 @@ function EssentialsSectionOne () {
             <h4>The must-know basics to become successful in crypto</h4>
           </div>
           <div className='col-md-4'>
-            <div className='purple-box'></div>
+            <img src='/images/essentials/header.PNG' alt='' />
           </div>
         </div>
         <div className='row'>

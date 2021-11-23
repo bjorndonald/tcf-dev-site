@@ -1,0 +1,130 @@
+.tokenSectionFour {
+  background-color: #db0e72;
+}
+
+.tokenSectionTwo img {
+  height: 100%;
+  border-radius: 5vh;
+}
+
+.tokenSectionSlRight .item {
+  margin: 1.25rem 0;
+}
+
+.tokenSectionThree .container {
+  margin: 0 auto;
+}
+
+.tokenSectionOne {
+  height: 60vh;
+  padding: 3rem 0;
+}
+.tokenSectionOne .container {
+  margin-top: 0;
+}
+.tokenSectionOne h1 {
+  font-size: 8vh;
+}
+.tokenSectionOne p {
+  margin-top: 5vh;
+  margin-bottom: 7vh;
+  font-size: 3.5vh;
+}
+.tokenSectionOne .btn {
+  border-radius: 5vh;
+  padding: 1vh 3vh;
+  font-size: 3vh;
+}
+.tokenSectionOne .row {
+  padding: 3rem 0;
+}
+
+.tokenSectionTwo {
+  height: 100vh;
+  padding-bottom: 10rem;
+}
+.tokenSectionTwo iframe {
+  width: 100%;
+  height: 40vw;
+  border-radius: 3.125rem;
+}
+
+.tokenSectionThree {
+  padding-top: 3rem;
+  padding: 1rem 0;
+}
+.tokenSectionThree .row:first-child {
+  margin-bottom: 5rem;
+}
+.tokenSectionThree .col-10 {
+  margin: 4rem auto;
+}
+.tokenSectionThree .col-10 .col-md-6:first-child {
+  margin-bottom: 2rem;
+}
+.tokenSectionThree .col-10 .col-md-6:last-child {
+  margin-top: -2rem;
+}
+.tokenSectionThree .col-md-6:first-child {
+  padding: 0;
+  justify-content: flex-start;
+}
+.tokenSectionThree .col-md-6:last-child {
+  padding: 0;
+  justify-content: flex-end;
+}
+.tokenSectionThree h2:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.tokenSectionSl ul li {
+  color: #ddd;
+}
+
+.tokenSectionFour {
+  padding: 10rem 0;
+}
+.tokenSectionFour h1 {
+  font-size: 5rem;
+  margin-bottom: 4rem;
+}
+.tokenSectionFour .active {
+  color: white;
+}
+.tokenSectionFour .row {
+  overflow-y: hidden;
+  max-height: 45rem;
+}
+.tokenSectionFour img {
+  width: 40rem;
+  height: 24rem;
+  margin-top: -5.5rem;
+  margin-right: -1.95rem;
+}
+.tokenSectionFaq {
+  height: 80vh;
+  padding: 3rem 0;
+}
+.tokenSectionFaq .header-section {
+  padding-bottom: 3rem;
+}
+.tokenSectionFaq h2 {
+  font-size: 4rem;
+}
+.tokenSectionFaq h4 {
+  font-size: 3rem;
+  text-align: center;
+}
+.tokenSectionFaq .card-body {
+  font-size: 2.5vh;
+}
+
+.tokenSectionFive {
+  height: 80vh;
+  margin-bottom: 10vh;
+}
+
+.tokenSectionFive {
+  padding: 2rem 0;
+}

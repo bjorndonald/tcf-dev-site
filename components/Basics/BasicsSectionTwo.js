@@ -12,15 +12,16 @@ function BasicsSectionTwo () {
 
         <div className='row'>
           <div className='column'>
-            <div className='purple-box'></div>
+            <img src='/images/basic/basicImg1.PNG' alt='' />
+            {/* <div className='purple-box'></div> */}
             <span>Click to view</span>
           </div>
           <div className='column'>
-            <div className='purple-box'></div>
+            <img src='/images/basic/basicImg2.PNG' alt='' />
             <span>Click to view</span>
           </div>
           <div className='column'>
-            <div className='purple-box'></div>
+            <img src='/images/basic/basicImg3.PNG' alt='' />
             <span>Click to view</span>
           </div>
         </div>
@@ -30,7 +31,7 @@ function BasicsSectionTwo () {
 
         <div className='button'>
           <a href='' className='btn btn-black'>
-            See Crypto Esentials
+            See Essential Articles
           </a>
         </div>
       </div>

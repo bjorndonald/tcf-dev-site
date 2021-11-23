@@ -1,0 +1,264 @@
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+  .ftmoSectionOne .container {
+    max-width: 100%;
+  }
+  .ftmoSectionOne p {
+    line-height: 3rem;
+  }
+  .ftmoSectionOne p .d-flex {
+    margin-top: 0.3125rem;
+  }
+  .ftmoSectionOne .bottomBtn {
+    display: flex;
+    justify-content: center !important;
+  }
+  .ftmoSectionOne .bottomBtn .right {
+    width: auto !important;
+  }
+
+  .basicArticlesSectionOne .d-flex .article {
+    width: calc((100% - 4rem) / 3) !important;
+  }
+
+  .cryptoSectionOne .cryptoTextWrap,
+.cryptoSectionFive .cryptoTextWrap {
+    width: 80vw !important;
+  }
+  .cryptoSectionOne .cryptoTextWrap input,
+.cryptoSectionFive .cryptoTextWrap input {
+    width: 40% !important;
+    font-size: 3vh;
+  }
+
+  .challengeSectionOne {
+    overflow: hidden;
+  }
+  .challengeSectionOne .tc-wrapper {
+    width: 100vw;
+  }
+  .challengeSectionOne .tc-wrapper .puzzle img {
+    width: 125%;
+    margin-left: -12.5%;
+  }
+  .challengeSectionOne .tc-wrapper .puzzle h4 {
+    bottom: 45vw;
+  }
+  .signUpSectionOne .page-options {
+    width: 40rem;
+  }
+
+  .cryptoSectionTwo {
+    height: auto;
+  }
+  .cryptoSectionTwo .row {
+    flex-wrap: wrap;
+  }
+  .cryptoSectionTwo .card {
+    margin: 2vw 0.5vw;
+    flex: auto;
+    max-width: 42.5vw;
+    padding: 2rem 1rem;
+    width: 45vw;
+  }
+
+  .cryptoSectionThree {
+    height: auto;
+  }
+  .cryptoSectionThree .row {
+    flex-wrap: wrap;
+  }
+  .cryptoSectionThree .col-md-3 {
+    margin: 2vw 0.5vw;
+    flex: auto;
+    max-width: 40vw;
+    padding: 2rem 1rem;
+    width: 40vw;
+  }
+
+  .cryptoSectionFour {
+    height: auto;
+  }
+  .cryptoSectionFour .steps .row {
+    flex-wrap: wrap;
+  }
+  .cryptoSectionFour .steps .card {
+    margin: 2vw 0.5vw;
+    flex: auto !important;
+    max-width: 42.5vw !important;
+    padding: 2rem 1rem;
+    width: 42.5vw !important;
+  }
+  .cryptoSectionFour .fees-section .row {
+    flex-wrap: wrap;
+  }
+  .cryptoSectionFour .fees-section .fee {
+    margin: 0.5rem;
+    flex: auto;
+    max-width: 40vw;
+    padding: 2rem 1rem;
+    width: 40vw;
+  }
+  .cryptoSectionFour .fees-section .card {
+    border-radius: 1.5625rem !important;
+  }
+
+  .tokenSectionOne,
+.tokenSectionFive {
+    height: auto;
+  }
+
+  .fundingSectionThree .col-md-3 {
+    flex: 0 0 35%;
+    max-width: 35%;
+  }
+  .fundingSectionThree .col-md-2 {
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+  .fundingSectionThree .col-md-2 .pTableDetailWrap {
+    width: 120% !important;
+  }
+  .fundingSectionThree .col-md-2 .pTableSingleListWrap {
+    width: 120% !important;
+  }
+  .fundingSectionThree .countdown {
+    z-index: 5;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    top: calc(50% - 1vw - ((45 / 900) * 100vh));
+    right: 0;
+  }
+  .fundingSectionThree .countdown ul {
+    padding-left: 1rem;
+    width: auto !important;
+  }
+  .fundingSectionThree .countdown li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .fundingSectionThree .countdown p {
+    margin-top: 0.25rem !important;
+    font-size: 1rem;
+  }
+
+  .sectionContactUs {
+    height: auto;
+  }
+
+  .customersSectionOne .container {
+    max-width: 75vw;
+  }
+  .customersSectionOne .container iframe {
+    height: 50vh;
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width: 2560px) {
+  .challengeSectionOne .tc-wrapper .puzzle h4 {
+    bottom: 24.5rem;
+  }
+  .countdown {
+    z-index: 5;
+    top: calc(50% - 1vw - ((45 / 900) * 100vh));
+    right: 0;
+  }
+  .countdown ul {
+    width: auto;
+  }
+  .countdown li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .countdown p {
+    margin-top: 0.25rem !important;
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1715px) {
+  .fundingSectionThree .col-md-5 .pTableSingleListWrap {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1167px) and (max-width: 1440px) {
+  .fundingSectionThree .col-md-5 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .fundingSectionThree .col-md-5 .pTableSingleListWrap {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1023px) and (max-width: 1167px) {
+  .fundingSectionThree .col-md-5 {
+    flex: 0 0 57%;
+    max-width: 57%;
+  }
+  .fundingSectionThree .col-md-5 .pTableSingleListWrap {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .fundingSectionThree .col-md-5 {
+    flex: 0 0 65%;
+    max-width: 65%;
+  }
+  .fundingSectionThree .col-md-5 .pTableSingleListWrap {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 926px) {
+  .fundingSectionThree .col-md-5 {
+    flex: 0 0 73%;
+    max-width: 73%;
+  }
+  .fundingSectionThree .col-md-5 .pTableSingleListWrap {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 848px) {
+  .fundingSectionThree .col-md-5 {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+  .fundingSectionThree .col-md-5 .pTableSingleListWrap {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .signUpSectionOne .page-options {
+    width: 40rem;
+  }
+
+  .challengeSectionOne .tc-wrapper .puzzle h4 {
+    bottom: 24.5rem;
+  }
+  .fundingSectionThree .col-md-3 {
+    flex: 0 0 35%;
+    max-width: 35%;
+  }
+  .fundingSectionThree .col-md-2 {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+  .fundingSectionThree .countdown {
+    padding-right: 1rem;
+    z-index: 5;
+    top: calc(50% - 1vw - ((45 / 900) * 100vh));
+    right: 0;
+  }
+  .fundingSectionThree .countdown ul {
+    padding-left: 1rem;
+    width: auto;
+  }
+  .fundingSectionThree .countdown h2 {
+    margin-right: 1rem;
+  }
+  .fundingSectionThree .countdown li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .fundingSectionThree .countdown p {
+    margin-top: 0.25rem !important;
+    font-size: 1rem;
+  }
+}

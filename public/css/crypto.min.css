@@ -1,0 +1,339 @@
+.cryptoSectionOne {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.cryptoSectionOne .background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(160deg, #082157 25%, rgba(252, 66, 123, 0.9318102241) 100%);
+  z-index: -2;
+}
+.cryptoSectionOne #BtcUsdChart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100% !important;
+  z-index: -1;
+}
+.cryptoSectionOne .container {
+  margin-top: 0%;
+}
+.cryptoSectionOne h1 {
+  font-size: 4rem;
+  margin-bottom: 5rem;
+  color: white;
+  text-align: center;
+}
+.cryptoSectionOne .row h2 {
+  font-size: 2.5rem;
+  color: white;
+}
+.cryptoSectionOne .row .cryptoTextWrap {
+  display: flex;
+  justify-content: space-between;
+  width: 50rem;
+  height: 4rem;
+  border-radius: 3.125rem;
+  background-color: #fff;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+}
+.cryptoSectionOne .row .cryptoTextWrap input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  width: 24rem;
+}
+.cryptoSectionOne .row .cryptoTextWrap .btn {
+  background-color: #0d469f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5vh;
+  padding: 1vh 5vh;
+  font-weight: bold;
+  font-size: 3vh;
+}
+.cryptoSectionOne .row .cryptoTextWrap .btn span:hover {
+  text-decoration: underline;
+}
+.cryptoSectionOne .row .cryptoTextWrap .btn:hover {
+  text-decoration: underline;
+  background: #10309b none repeat scroll 0 0;
+}
+
+.cryptoSectionTwo {
+  height: 90vh;
+  background-color: #f8f7fc;
+}
+.cryptoSectionTwo .container {
+  max-width: 90%;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.cryptoSectionTwo .card {
+  padding: 3rem;
+  text-align: center;
+}
+.cryptoSectionTwo .card img {
+  height: 8rem;
+}
+.cryptoSectionTwo .card h4 {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+.cryptoSectionTwo .card p {
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  font-weight: bold;
+  color: #333;
+}
+@media (min-width: 768px) {
+  .cryptoSectionTwo .col-md-2 {
+    flex: 0 0 22%;
+    max-width: 22%;
+  }
+}
+@media (min-width: 576px) {
+  .cryptoSectionTwo .col-sm-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  .cryptoSectionTwo .col-md-10-5 {
+    width: 9.5238095238%;
+  }
+  .cryptoSectionTwo .col-md-1-5 {
+    width: 66.666666666%;
+  }
+}
+
+.cryptoSectionThree {
+  background: linear-gradient(160deg, #082157 25%, rgba(252, 66, 123, 0.9318102241) 100%);
+}
+.cryptoSectionThree .container {
+  max-width: 90%;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0%;
+}
+.cryptoSectionThree h1 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.cryptoSectionThree .card {
+  padding: 5rem 0;
+  border-radius: 3.125rem;
+}
+.cryptoSectionThree .col-md-3 img {
+  height: 14rem;
+}
+.cryptoSectionThree .col-md-3 p {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+.cryptoSectionThree .col-md-3 span {
+  font-size: 1.25rem;
+}
+.cryptoSectionThree .col-md-3 .negative-change {
+  color: #d22b2b;
+}
+.cryptoSectionThree .col-md-3 .positive-change {
+  color: #3ab194;
+}
+
+.cryptoSectionFour {
+  height: 180vh;
+  background-color: #f8f7fc;
+}
+.cryptoSectionFour .container {
+  max-width: 90%;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0%;
+}
+.cryptoSectionFour .card {
+  border: none;
+}
+.cryptoSectionFour .card h4 {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+}
+.cryptoSectionFour .card p {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+.cryptoSectionFour .fees-section {
+  margin-top: 5rem;
+  font-family: eina;
+}
+.cryptoSectionFour .fees-section .fee {
+  padding: 0 3rem;
+}
+.cryptoSectionFour .fees-section .tab-content {
+  width: 100%;
+}
+.cryptoSectionFour .fees-section .tab-content img {
+  width: 12rem;
+}
+.cryptoSectionFour .fees-section .tab-content .card {
+  border-radius: 3.125rem;
+}
+.cryptoSectionFour .fees-section .tab-content .card h3 {
+  font-size: 1.75rem;
+}
+.cryptoSectionFour .fees-section .tab-content .card .line {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 2rem 0;
+}
+.cryptoSectionFour .fees-section .tab-content .card .row {
+  width: 100%;
+  margin-bottom: 0;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.cryptoSectionFour .fees-section .tab-content .card .row svg {
+  width: 1rem;
+  fill: #7bb4a5;
+  margin-right: 1rem;
+}
+.cryptoSectionFour .fees-section .tab-content .card .row svg path {
+  fill: #7bb4a5;
+}
+.cryptoSectionFour .fees-section .tab-content .card .row b {
+  color: #777;
+  font-weight: normal;
+}
+.cryptoSectionFour .fees-section .tab-content .card .row p {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+  font-weight: bold;
+  line-height: 1.75rem;
+}
+.cryptoSectionFour .fees-section .tab-content .card .row p span {
+  color: #777;
+}
+.cryptoSectionFour .fees-section .nav-link {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.cryptoSectionFour .fees-section .nav-link.active {
+  text-decoration: underline;
+}
+.cryptoSectionFour .fees-section .nav-link:hover {
+  text-decoration: underline;
+}
+.cryptoSectionFour .fees-section h1 {
+  color: #000;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+.cryptoSectionFour h1 {
+  color: #db0e72;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.cryptoSectionFour .steps .card {
+  padding: 4rem 2rem;
+}
+.cryptoSectionFour .steps .card img {
+  height: 8rem;
+}
+@media (min-width: 768px) {
+  .cryptoSectionFour .steps .col-md-3 {
+    flex: 0 0 31%;
+    max-width: 31%;
+  }
+}
+@media (min-width: 576px) {
+  .cryptoSectionFour .steps .col-sm-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+.cryptoSectionFive {
+  padding: 3rem 0;
+  background: linear-gradient(160deg, #082157 25%, rgba(252, 66, 123, 0.9318102241) 100%);
+  height: 60vh;
+}
+.cryptoSectionFive .link {
+  text-decoration: underline;
+  margin: 0 1rem;
+  color: white;
+}
+.cryptoSectionFive h1 {
+  color: white;
+  text-align: center;
+}
+.cryptoSectionFive h1 img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.cryptoSectionFive hr {
+  width: 5rem;
+  height: 1px;
+  background-color: white;
+}
+.cryptoSectionFive .cryptoTextWrap {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  width: 50rem;
+  height: 4rem;
+  border-radius: 3.125rem;
+  background-color: #fff;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+}
+.cryptoSectionFive .cryptoTextWrap input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  width: 24rem;
+}
+.cryptoSectionFive .cryptoTextWrap .btn {
+  background-color: #0d469f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5vh;
+  padding: 1vh 5vh;
+  font-weight: bold;
+  font-size: 3vh;
+}
+.cryptoSectionFive .cryptoTextWrap .btn:hover {
+  background: #10309b none repeat scroll 0 0;
+}
+.cryptoSectionFive .cryptoTextWrap .btn span:hover {
+  text-decoration: underline;
+}
+
+.cryptoSectionFive .btn-blue {
+  padding: 0.5rem 1rem;
+  background-color: #0d2461;
+  color: white;
+  margin: 0 0.1255rem;
+}
