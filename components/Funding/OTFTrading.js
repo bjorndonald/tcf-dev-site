@@ -423,11 +423,11 @@ function OTFTrading () {
         <Accordion.Collapse eventKey='12'>
           <Card.Body>
             <ol>
-              <li>Major and Minor Forex pairs - $7 per lot</li>
+              <li>Forex pairs - $3.5 per lot</li>
               <li>Metals - $7 per lot</li>
               <li>Crypto - 0.5%</li>
               <li>Indices - 0.0004%</li>
-              <li>Stocks - 0.2%</li>
+              <li>Stocks - 0.1%</li>
             </ol>
           </Card.Body>
         </Accordion.Collapse>
