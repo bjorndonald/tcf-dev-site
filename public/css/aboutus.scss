@@ -59,8 +59,8 @@
 .aboutUsSectionEs {
   height: 100vh;
   // margin-top: 10vh;
-  padding-top: 20vh;
-  padding-bottom: 30vh;
+  padding-top: 0vh;
+  padding-bottom: 12.5vh;
   margin-top: -5vh;
   h2 {
     // margin-top: -10vh;
@@ -163,4 +163,9 @@
       font-size: 1.35rem;
     }
   }
+}
+
+.aboutUsSectionEs {
+  height: auto;
+  margin-bottom: 5vw;
 }

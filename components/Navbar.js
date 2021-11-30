@@ -23,7 +23,13 @@ export default function NavBar () {
     //     (scrollTop ? "scrolled" : "")
     //   }
     // >
-    <div className={'fixed-top nav__container navbar-fixed-top top-menu'}>
+    <div
+      className={
+        router.pathname == '/products/funding'
+          ? 'fixed-top nav__container navbar-fixed-top bg-white top-menu'
+          : 'fixed-top nav__container navbar-fixed-top top-menu'
+      }
+    >
       <div className='container-fluid'>
         <nav className='navbar navbar-expand-lg navbar-light'>
           <Link href='/'>
@@ -499,7 +505,7 @@ export default function NavBar () {
               target='_blank'
               className='btn me-2 m-2'
             >
-              Login
+              Login 
             </a>
             <a
               href={

@@ -72,10 +72,9 @@ function MobileSection (props) {
                     autoPlay='autoplay'
                     muted
                   >
-                    {/* <source src='/images/Landing.3gb' type='video/3gb' />*/}
-                    <source src='/images/Landing.webm' type='video/webm' />
-                    {/* <source src='/images/Landing.mp4' type='video/mp4' /> */}
-                    <source src='/images/Landing.mov' />
+                    {/* <source src='/images/Landing.3gb' type='video/3gb' />
+                    <source src='/images/Landing.webm' type='video/webm' /> */}
+                    <source src='/images/Landing.mp4' />
                   </video>
                 </div>
                 <div className='box box2'></div>

@@ -50,7 +50,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   margin-right: 0.5rem;
   border-radius: 3.125rem;
   cursor: pointer;
@@ -82,7 +82,10 @@
   transform: scale(1.5);
   transition: all 0.3s ease;
 }
-input[type='radio'] {
+.registrationSectionOne input[type='checkbox'] {
+  display: none;
+}
+.registrationSectionOne input[type='radio'] {
   display: none;
 }
 #option-1:checked ~ .option-1,

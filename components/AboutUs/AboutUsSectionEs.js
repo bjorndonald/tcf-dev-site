@@ -58,10 +58,7 @@ LEARN MORE */}
                     Connecting retail traders to backers to provide them with
                     start up capital.
                   </p>
-                  <a
-                    target='_blank'
-                    href='https://help.traderscentralfund.com/en/'
-                  >
+                  <a target='_blank' href='https://help.traderscentral.com/en/'>
                     LEARN MORE
                   </a>
                 </div>
@@ -78,7 +75,7 @@ LEARN MORE */}
                   </p>
                   <a
                     target='_blank'
-                    href='https://help.traderscentralfund.com/en/collections/3060993-broker-information'
+                    href='https://help.traderscentral.com/en/collections/3060993-broker-information'
                   >
                     LEARN MORE
                   </a>
@@ -94,7 +91,7 @@ LEARN MORE */}
                     Providing liquidity to over 80 funds allowing anyone to
                     start their own prop firm.
                   </p>
-                  <a target='_blank' href='https://traderscentral.capital/'>
+                  <a target='_blank' href='https://www.primebridge.io/'>
                     LEARN MORE
                   </a>
                 </div>

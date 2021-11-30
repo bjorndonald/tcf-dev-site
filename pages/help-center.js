@@ -10,7 +10,7 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { connect } from 'react-redux'
 import { clearTimeline, setTimeline } from '../store/actions/configActions'
 import Head from 'next/head'
-import { loadArticles } from '../store/reducers/articles'
+import { loadArticles } from '../store/articles'
 
 function helpCenter (props) {
   // props.clearTimeline()

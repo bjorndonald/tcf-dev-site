@@ -473,6 +473,10 @@ select {
   margin: 0 auto;
 }
 
+.fixed-top .get-started {
+  padding-bottom: 1.25vh !important;
+}
+
 .dropdown-item:focus,
 .dropdown-item:hover,
 .dropdown-item {
@@ -704,6 +708,20 @@ select {
   background-position: center;
   background-size: cover;
   height: 100vh;
+}
+
+/* Loading  */
+.loading-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 1);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
 .sectionTwo h2,
