@@ -155,7 +155,7 @@ function OTFFunding (props) {
                 className='btn btn-primary cadText85'
                 href='https://fund.traderscentral.com/sign-up'
               >
-                {'CAD ' + props.cadText}
+                CAD <span style={{textDecoration: 'line-through'}}>{props.cadOriginalText}</span> {props.cadText}
               </a>
             </div>
           </div>

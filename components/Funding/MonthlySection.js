@@ -6,7 +6,8 @@ import Data from './monthly/Data'
 import Monthly from './Monthly'
 
 function MonthlySection (props) {
-  const [cadText, setCadText] = useState('85')
+  const [cadOriginalText, setCadOriginalText] = useState('85')
+  const [cadText, setCadText] = useState('68')
   const [leverage, setLeverage] = useState('1:6')
   const activate = e => {
     $(e.target)
@@ -22,44 +23,47 @@ function MonthlySection (props) {
       </p>
       <div className='row funding-prices'>
         <div className='col-12 text-center mb-5 '>
-          <OverlayTrigger placement={'top'} overlay={<Tooltip>CAD 85</Tooltip>}>
+          <OverlayTrigger placement={'top'} overlay={<Tooltip>CAD 68</Tooltip>}>
             <a
               onClick={e => {
-                setCadText('85')
+                  setCadOriginalText('85')
+                  setCadText('68')
                 setLeverage('1:6')
                 activate(e)
               }}
-              className='btnCad85 btn btn-outline-dark mx-1'
+              className='btnCad68 btn btn-outline-dark mx-1'
             >
               USD 12,500
             </a>
           </OverlayTrigger>
           <OverlayTrigger
             placement={'top'}
-            overlay={<Tooltip>CAD 170</Tooltip>}
+            overlay={<Tooltip>CAD 128</Tooltip>}
           >
             <a
               onClick={e => {
-                setCadText('170')
+                  setCadOriginalText('170')
+                  setCadText('128')
                 activate(e)
                 setLeverage('1:6')
               }}
-              className='btnCad170 btn btn-outline-dark mx-1'
+              className='btnCad128 btn btn-outline-dark mx-1'
             >
               USD 25,000
             </a>
           </OverlayTrigger>
           <OverlayTrigger
             placement={'top'}
-            overlay={<Tooltip>CAD 345</Tooltip>}
+            overlay={<Tooltip>CAD 242</Tooltip>}
           >
             <a
               onClick={e => {
-                setCadText('345')
+                  setCadOriginalText('345')
+                setCadText('242')
                 activate(e)
                 setLeverage('1:3')
               }}
-              className='btnCad345 btn btn-outline-dark mx-1'
+              className='btnCad242 btn btn-outline-dark mx-1'
             >
               USD 50,000
             </a>
@@ -71,7 +75,7 @@ function MonthlySection (props) {
         <Right cadText={cadText} leverage={leverage} />
       </div> */}
       <div className='col-12 row mx-0 justify-content-center'>
-        <Monthly leverage={leverage} cadText={cadText} />
+        <Monthly leverage={leverage} cadOriginalText={cadOriginalText} cadText={cadText} />
       </div>
     </Fragment>
   )

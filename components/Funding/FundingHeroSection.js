@@ -1,77 +1,94 @@
-import React, { useEffect } from 'react'
+import React, {useEffect, useState} from 'react'
 import Image from 'next/image'
-import { gsap } from 'gsap/dist/gsap'
-import { connect } from 'react-redux'
-import { useRouter } from 'next/router'
+import {gsap} from 'gsap/dist/gsap'
+import {connect} from 'react-redux'
+import {useRouter} from 'next/router'
 
-function FundingHeroSection (props) {
-  const router = useRouter()
-  // useEffect(() => {
-  //   props.timeline
-  //     .to('.fundingSectionOne', {
-  //       opacity: 1,
-  //       duration: 0.8,
-  //       delay: 0.8,
-  //       ease: 'easeIn'
-  //     })
-  //     .from(
-  //       '.fundingSectionOne h1',
-  //       { x: '+=50', opacity: 0, duration: 0.8, ease: 'easeIn' },
-  //       '>-0'
-  //     )
-  //     .from(
-  //       '.fundingSectionOne h2',
-  //       { x: -50, opacity: 0, duration: 0.8, ease: 'easeIn' },
-  //       '>-0.5'
-  //     )
-  //     .from(
-  //       '.fundingSectionOne img',
-  //       { y: 50, opacity: 0, duration: 0.8, ease: 'easeIn' },
-  //       '>-0.5'
-  //     )
-  // }, [])
+function FundingHeroSection(props) {
+    const router = useRouter()
 
-  return (
-    <div className='fundingSectionOne py-5 d-flex align-items-center '>
-      <div className='container'>
-        <div className='row py-5'>
-          <div className='col-12'>
-            <div className=' text-center  py-5 '>
-              {/* <h2>Funding in 24 hours</h2> */}
-              <img
-                // style={{ width: '80%' }}
-                className=''
-                src='/images/funding-hero.png'
-                alt='Trader Central Fund'
-                // width={2732}
-                // height={1626}
-              />
-              <h1>Funding in 24 hours</h1>
-              <a
-                href='https://fund.traderscentral.com/sign-up'
-                className='btn btn-white'
-              >
-                Start Free Trial
-              </a>
+    const calculateTimeLeft = () => {
+        const difference = +new Date(`2021-12-31 23:59:59 GMT-0800 (PST)`) - +new Date();
+        let timeLeft = {};
+
+        if (difference > 0) {
+            timeLeft = {
+                days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+                hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+                minutes: Math.floor((difference / 1000 / 60) % 60),
+                seconds: Math.floor((difference / 1000) % 60),
+            };
+        }
+
+        return timeLeft;
+    };
+
+    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+    const [year] = useState(new Date().getFullYear());
+
+    useEffect(() => {
+        setTimeout(() => {
+            setTimeLeft(calculateTimeLeft());
+        }, 1000);
+    });
+
+    const timerComponents = [];
+
+    Object.keys(timeLeft).forEach((interval) => {
+        if (!timeLeft[interval]) {
+            return;
+        }
+
+        timerComponents.push(
+            <span>
+                {timeLeft[interval]} {interval}{" "}
+            </span>
+        );
+    });
+
+
+    return (
+        <div className='fundingSectionOne py-3 d-flex align-items-center justify-content-center'>
+            <div className="container-fluid px-0">
+                <div className='text-center'>
+                    <h2 className="mb-4">Save up to 30%</h2>
+                    <h4 className="d-block d-md-none text-white">Ends in</h4>
+                    <div className="h4 countDownContainer position-relative mb-5 mb-lg-n4 text-white"
+                         style={{zIndex: '100'}}>
+                        <span className="d-none d-md-block">Ends in</span>
+                        <div className="countDownCircle mr-2 ml-md-2">{timeLeft.days}</div> Days
+                        <div className="countDownCircle mx-2">{timeLeft.hours}</div> Hours
+                        <div className="countDownCircle mx-2">{timeLeft.minutes}</div> Minutes
+                    </div>
+                    <img
+                        style={{height: 'auto', width: '100%', maxHeight: '380px'}}
+                        className=''
+                        src='/images/december-savings.png'
+                        alt='Trader Central Fund'
+                    />
+                    <a
+                        href='https://fund.traderscentral.com/sign-up'
+                        className='btn btn-white'
+                    >
+                        Get discount
+                    </a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  )
+    )
 }
 
 const mapDispatchToProps = dispatch => ({
-  setTimeline: timeline => {
-    dispatch(setTimeline(timeline))
-  },
-  clearTimeline: timeline => {
-    dispatch(clearTimeline(timeline))
-  }
+    setTimeline: timeline => {
+        dispatch(setTimeline(timeline))
+    },
+    clearTimeline: timeline => {
+        dispatch(clearTimeline(timeline))
+    }
 })
 
 const mapStateToProps = state => ({
-  timeline: state.config.timeline
+    timeline: state.config.timeline
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(FundingHeroSection)
