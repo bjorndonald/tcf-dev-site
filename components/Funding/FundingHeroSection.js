@@ -27,25 +27,13 @@ function FundingHeroSection(props) {
     const [year] = useState(new Date().getFullYear());
 
     useEffect(() => {
-        setTimeout(() => {
+        const timer = setTimeout(() => {
             setTimeLeft(calculateTimeLeft());
         }, 1000);
+        return () => clearTimeout(timer);
     });
 
     const timerComponents = [];
-
-    Object.keys(timeLeft).forEach((interval) => {
-        if (!timeLeft[interval]) {
-            return;
-        }
-
-        timerComponents.push(
-            <span>
-                {timeLeft[interval]} {interval}{" "}
-            </span>
-        );
-    });
-
 
     return (
         <div className='fundingSectionOne py-3 d-flex align-items-center justify-content-center'>
