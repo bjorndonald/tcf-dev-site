@@ -8,7 +8,7 @@ function FundingHeroSection(props) {
     const router = useRouter()
 
     const calculateTimeLeft = () => {
-        const difference = +new Date(`2021-12-31 23:59:59 GMT-0800 (PST)`) - +new Date();
+        const difference = +new Date(`12/31/2021 23:59:59 GMT-0800 (PST)`) - +new Date();
         let timeLeft = {};
 
         if (difference > 0) {
@@ -19,12 +19,10 @@ function FundingHeroSection(props) {
                 seconds: Math.floor((difference / 1000) % 60),
             };
         }
-
         return timeLeft;
     };
 
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-    const [year] = useState(new Date().getFullYear());
 
     useEffect(() => {
         const timer = setTimeout(() => {
