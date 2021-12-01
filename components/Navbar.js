@@ -505,7 +505,7 @@ export default function NavBar () {
               target='_blank'
               className='btn me-2 m-2'
             >
-              Login 
+              Login
             </a>
             <a
               href={

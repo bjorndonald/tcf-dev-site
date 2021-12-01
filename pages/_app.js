@@ -40,7 +40,7 @@ import './../public/css/video-controls.scss'
 import { Fragment } from 'react'
 
 import { createStore, applyMiddleware } from 'redux'
-import rootReducer from './../store/rootReducer'
+import rootReducer from './../store/reducers/rootReducer'
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit'
 import { Provider } from 'react-redux'
 import thunk from 'redux-thunk'
