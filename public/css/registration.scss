@@ -6,22 +6,6 @@
   .graphic {
     width: auto;
   }
-  .tracker-line {
-    background-color: #f1f1f1;
-    height: 0.75rem;
-    width: 100%;
-    border-radius: 3.125rem;
-
-    .tracker {
-      background: #244191;
-      border-radius: 3.125rem;
-      transition: 0.5s;
-      // width: 5rem;
-      height: 100%;
-      margin-top: 4.875rem;
-      margin-bottom: 5.8125rem;
-    }
-  }
   .curve {
     width: 62.5rem;
     height: auto;
@@ -36,72 +20,18 @@
     padding-left: 6rem;
     padding-bottom: 10vh;
     .seventh {
-      display: flex;
-      justify-content: space-between;
       .buttons {
         margin-top: 8.75rem;
       }
-      .form-section {
-        width: 36rem;
-      }
     }
-    .fourth,
-    .experience,
-    .volume {
-      .graphic {
-        margin-right: 5vw;
-        svg {
-        }
-      }
-    }
-    .ninth,
-    .tenth {
-      display: flex;
-      justify-content: space-between;
-    }
-    .ninth {
-      .form-section {
-        min-width: 40rem;
-      }
-    }
-    .tenth {
-      .form-wrapper {
-        // display: block;
-
-        label {
-          width: auto;
-        }
-      }
-    }
-    .buttons {
-      width: 24rem;
-    }
-
-    .error {
-      text-align: left !important;
-      color: red;
-      transition: 0.5s;
-      margin: 0.5rem 0 !important;
-      justify-content: flex-start !important;
-    }
-
     .first,
     .second,
     .third,
     .fourth,
     .fifth,
-    .sixth,
-    .seventh,
-    .volume,
-    .experience,
-    .eleventh {
+    .sixth {
       display: flex;
       justify-content: space-between;
-    }
-    .eleventh {
-      .form-section {
-        min-width: 100%;
-      }
     }
     .volume {
       .form-section {
@@ -180,51 +110,14 @@
         margin-top: 8.5rem;
       }
     }
-    .eleventh {
-      .graphic {
-        margin-left: -10rem;
-        display: flex;
-        align-items: flex-end;
-
-        img {
-          height: 23.25rem;
-          width: auto;
-        }
-      }
-    }
     .twelfth {
       .form-section {
         width: 100%;
       }
 
       .button {
-        width: 20rem;
+        width: 16.6875rem;
       }
-
-      .graphic {
-        margin-top: -17.5rem;
-
-        svg {
-          width: 60rem;
-        }
-      }
-    }
-
-    .error {
-      input {
-        border: 2px solid red;
-      }
-    }
-
-    .headlights {
-      position: absolute;
-      top: 0;
-      right: 22.5rem;
-      z-index: 2;
-    }
-
-    .btn {
-      position: relative;
     }
     .form-section {
       width: 24rem;
@@ -245,7 +138,6 @@
           background: #244191;
           border-radius: 5vh;
           padding: 1vh 5vh;
-          padding-bottom: 1.25vh !important;
           width: 100%;
           font-size: 18px;
           color: white;
@@ -271,42 +163,10 @@
         margin-top: 2rem;
 
         .form-group {
-          position: relative;
           label {
             font-size: 1rem;
             font-weight: bold;
             margin-bottom: 0.75rem;
-          }
-
-          ul {
-            display: none;
-            position: absolute;
-            flex-direction: column;
-            overflow-y: auto;
-
-            list-style: none;
-            padding-left: 0;
-            left: 0;
-            background-color: #fff;
-            box-shadow: 0px 0px 23px 0px rgb(0 0 0 / 50%);
-            border-radius: 5px;
-            z-index: 2;
-            max-height: 20rem;
-            top: calc(100% + 1rem);
-            width: 100%;
-
-            li {
-              cursor: pointer;
-              border-bottom: 1px solid #ccc;
-              padding: 0.5rem;
-              width: 100%;
-            }
-            li:hover {
-              background-color: #f2f2f2;
-            }
-            li {
-              border-bottom: none;
-            }
           }
 
           .formWrapper {
@@ -319,14 +179,9 @@
 
             input {
               padding: 1rem 0;
-
               border: none;
               flex: 1;
               background: transparent;
-            }
-
-            .search-box {
-              padding-left: 1rem;
             }
 
             svg {
@@ -382,9 +237,6 @@
       display: flex;
       //   flex-direction: column;
     }
-    .btn {
-      position: relative;
-    }
 
     .single-button {
       margin-top: 2rem;
@@ -397,7 +249,6 @@
         background: #244191;
         border-radius: 5vh;
         padding: 1vh 5vh;
-        padding-bottom: 1.25vh !important;
         flex: 0.575;
         // width: 100%;
         font-size: 18px;
@@ -427,7 +278,6 @@
         background: #f8f8f8;
         border-radius: 5vh;
         padding: 1vh 5vh;
-        padding-bottom: 1.25vh !important;
         // width: 100%;
         flex: 0.2;
         font-weight: bold;
@@ -437,16 +287,11 @@
         color: black;
       }
 
-      .btn:first-child {
-        margin-left: 0;
-      }
-
       .btn-black {
         font-family: eina;
         background: #000;
         border-radius: 5vh;
         padding: 1vh 5vh;
-        padding-bottom: 1.25vh !important;
         flex: 0.35;
         // width: 100%;
         font-size: 18px;
@@ -461,11 +306,6 @@
           width: 1.5rem;
         }
       }
-
-      .btn.active {
-        background-color: #000;
-        color: white;
-      }
     }
 
     .buttons {
@@ -478,7 +318,6 @@
         background: #00000000;
         border-radius: 5vh;
         padding: 1vh 5vh;
-        padding-bottom: 1.25vh !important;
         // width: 100%;
         flex: 0.275;
         font-size: 18px;
@@ -492,7 +331,6 @@
         background: #244191;
         border-radius: 5vh;
         padding: 1vh 5vh;
-        padding-bottom: 1.25vh !important;
         flex: 0.575;
         // width: 100%;
         font-size: 18px;
