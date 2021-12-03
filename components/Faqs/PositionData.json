@@ -1,0 +1,170 @@
+[
+  {
+    "pair": "AUD/USD",
+    "position50k": "1.57",
+    "position25k": "1.04",
+    "position12_5k": "0.52"
+  },
+  {
+    "pair": "AUD/NZD",
+    "position50k": "1.57",
+    "position25k": "1.05",
+    "position12_5k": "0.53"
+  },
+  {
+    "pair": "AUD/CAD",
+    "position50k": "1.57",
+    "position25k": "1.05",
+    "position12_5k": "0.53"
+  },
+  {
+    "pair": "AUD/CHF",
+    "position50k": "1.57",
+    "position25k": "1.05",
+    "position12_5k": "0.53"
+  },
+  {
+    "pair": "AUD/JPY",
+    "position50k": "1.57",
+    "position25k": "1.05",
+    "position12_5k": "0.53"
+  },
+  {
+    "pair": "NZD/USD",
+    "position50k": "1.66",
+    "position25k": "1.11",
+    "position12_5k": "0.55"
+  },
+  {
+    "pair": "NZD/JPY",
+    "position50k": "1.66",
+    "position25k": "1.11",
+    "position12_5k": "0.55"
+  },
+  {
+    "pair": "NZD/CHF",
+    "position50k": "1.66",
+    "position25k": "1.11",
+    "position12_5k": "0.55"
+  },
+  {
+    "pair": "NZD/CAD",
+    "position50k": "1.66",
+    "position25k": "1.11",
+    "position12_5k": "0.55"
+  },
+  {
+    "pair": "GBP/USD",
+    "position50k": "0.81",
+    "position25k": "0.55",
+    "position12_5k": "0.27"
+  },
+  {
+    "pair": "GBP/JPY",
+    "position50k": "0.81",
+    "position25k": "0.55",
+    "position12_5k": "0.27"
+  },
+  {
+    "pair": "GBP/CAD",
+    "position50k": "0.81",
+    "position25k": "0.55",
+    "position12_5k": "0.27"
+  },
+  {
+    "pair": "GBP/CHF",
+    "position50k": "0.81",
+    "position25k": "0.55",
+    "position12_5k": "0.27"
+  },
+  {
+    "pair": "GBP/AUD",
+    "position50k": "0.81",
+    "position25k": "0.55",
+    "position12_5k": "0.27"
+  },
+  {
+    "pair": "GBP/NZD",
+    "position50k": "0.81",
+    "position25k": "0.55",
+    "position12_5k": "0.27"
+  },
+  {
+    "pair": "EUR/AUD",
+    "position50k": "0.93",
+    "position25k": "0.61",
+    "position12_5k": "0.31"
+  },
+  {
+    "pair": "EUR/NZD",
+    "position50k": "0.93",
+    "position25k": "0.61",
+    "position12_5k": "0.31"
+  },
+  {
+    "pair": "EUR/USD",
+    "position50k": "0.93",
+    "position25k": "0.61",
+    "position12_5k": "0.31"
+  },
+  {
+    "pair": "EUR/JPY",
+    "position50k": "0.93",
+    "position25k": "0.61",
+    "position12_5k": "0.31"
+  },
+  {
+    "pair": "EUR/GBP",
+    "position50k": "0.93",
+    "position25k": "0.61",
+    "position12_5k": "0.31"
+  },
+  {
+    "pair": "EUR/CAD",
+    "position50k": "0.93",
+    "position25k": "0.61",
+    "position12_5k": "0.31"
+  },
+  {
+    "pair": "EUR/CHF",
+    "position50k": "0.93",
+    "position25k": "0.61",
+    "position12_5k": "0.31"
+  },
+  {
+    "pair": "USD/JPY",
+    "position50k": "1",
+    "position25k": "0.67",
+    "position12_5k": "0.33"
+  },
+  {
+    "pair": "USD/CAD",
+    "position50k": "1",
+    "position25k": "0.67",
+    "position12_5k": "0.33"
+  },
+  {
+    "pair": "USD/CHF",
+    "position50k": "1",
+    "position25k": "0.67",
+    "position12_5k": "0.33"
+  },
+  {
+    "pair": "CHF/JPY",
+    "position50k": "0.98",
+    "position25k": "0.65",
+    "position12_5k": "0.33"
+  },
+  {
+    "pair": "CAD/CHF",
+    "position50k": "1.41",
+    "position25k": "0.93",
+    "position12_5k": "0.47"
+  },
+  {
+    "pair": "CAD/JPY",
+    "position50k": "1.41",
+    "position25k": "0.93",
+    "position12_5k": "0.47"
+  }
+]

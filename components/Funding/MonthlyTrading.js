@@ -47,8 +47,8 @@ function MonthlyTrading () {
           <Card.Body>
             Traders will manage a live account with leverage of{' '}
             <b>
-              1:6 for the $12,500 and $25,000 account size and 1:3 for the
-              $50,000 account size.
+              1:4 for the $12,500 and the $25,000
+              account size and 1:3 for the $50,000 account size.
             </b>
           </Card.Body>
         </Accordion.Collapse>

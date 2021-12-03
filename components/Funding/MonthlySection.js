@@ -8,7 +8,7 @@ import Monthly from './Monthly'
 function MonthlySection (props) {
   const [cadOriginalText, setCadOriginalText] = useState('85')
   const [cadText, setCadText] = useState('68')
-  const [leverage, setLeverage] = useState('1:6')
+  const [leverage, setLeverage] = useState('1:4')
   const activate = e => {
     $(e.target)
       .parent()
@@ -28,7 +28,7 @@ function MonthlySection (props) {
               onClick={e => {
                   setCadOriginalText('85')
                   setCadText('68')
-                setLeverage('1:6')
+                setLeverage('1:4')
                 activate(e)
               }}
               className='btnCad68 btn btn-outline-dark mx-1'
@@ -45,7 +45,7 @@ function MonthlySection (props) {
                   setCadOriginalText('170')
                   setCadText('128')
                 activate(e)
-                setLeverage('1:6')
+                setLeverage('1:4')
               }}
               className='btnCad128 btn btn-outline-dark mx-1'
             >

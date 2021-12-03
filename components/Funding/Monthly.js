@@ -5,7 +5,7 @@ import InfoIcon from '../../icons/InfoIcon'
 
 function Monthly(props) {
     const [cadText, setCadText] = useState('68')
-    const [leverage, setLeverage] = useState('1:6')
+    const [leverage, setLeverage] = useState('1:4')
     const activate = e => {
         $(e.target)
             .parent()
