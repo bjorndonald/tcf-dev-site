@@ -166,5 +166,11 @@
     "position50k": "1.41",
     "position25k": "0.93",
     "position12_5k": "0.47"
+  },
+  {
+    "pair": "XAU/USD",
+    "position50k": "0.24",
+    "position25k": "0.16",
+    "position12_5k": "0.08"
   }
 ]
