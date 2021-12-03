@@ -1,9 +1,22 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { gsap, Power3 } from 'gsap/dist/gsap'
 import Image from 'next/image'
 import { connect } from 'react-redux'
 
 function MobileSection (props) {
+  const [videoSource, setVideoSource] = useState('/images/Landing.webm');
+  const [videoSourceType, setVideoSourceType] = useState('video/webm');
+  const videoRef = useRef();
+
+  useEffect(()=>{
+    const isSafari = /constructor/i.test(window.HTMLElement) || (function (p) {return p.toString() === "[object SafariRemoteNotification]";})(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+    if(isSafari == true){
+      setVideoSource('/images/Landing.mov')
+      setVideoSourceType('video/mp4')
+      videoRef?.current.load();
+    }
+  });
+
   // useEffect(() => {
   //   gsap
   //     .timeline({
@@ -65,17 +78,14 @@ function MobileSection (props) {
                     height={832.5}
                     alt='Image'
                   /> */}
-                  <video
+                  <video ref={videoRef}
                     loop={true}
                     playsInline
                     className='image'
                     autoPlay='autoplay'
                     muted
                   >
-                    {/* <source src='/images/Landing.3gb' type='video/3gb' />*/}
-                    <source src='/images/Landing.webm' type='video/webm' />
-                    {/* <source src='/images/Landing.mp4' type='video/mp4' /> */}
-                    <source src='/images/Landing.mov' />
+                    <source src={videoSource} type={videoSourceType} />
                   </video>
                 </div>
                 <div className='box box2'></div>
