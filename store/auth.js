@@ -19,7 +19,7 @@ const slice = createSlice({
     },
     authRequestFailed: (auth, action) => {
       auth.loading = false
-      console.log(action.payload)
+      alert(action.payload)
     },
     registrationDone: (auth, action) => {
       auth.loading = false
