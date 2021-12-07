@@ -51,7 +51,7 @@ export default function LiquiditySectionOne () {
               </p>
               <div className='button mt-3'>
                 <Link href='/registration'>
-                  <a className=' btn btn-black  '>Sign-up</a>
+                  <a className=' btn btn-black'>Sign-up</a>
                 </Link>
               </div>
             </div>
