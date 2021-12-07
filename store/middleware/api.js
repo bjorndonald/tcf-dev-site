@@ -99,6 +99,7 @@ const api = ({ dispatch }) => next => async action => {
       }
     } catch (error) {
       console.log(error)
+      dispatch({ type: onError, payload: 'Server error. Please try again.' })
       // General
     }
   }
