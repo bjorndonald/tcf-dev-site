@@ -49,7 +49,11 @@ export default function LiquiditySectionOne () {
                 <br />
                 &nbsp;and numerous fees
               </p>
-              <div className='button mt-3'></div>
+              <div className='button mt-3'>
+                <Link href='/registration'>
+                  <a className=' btn btn-black  '>Sign-up</a>
+                </Link>
+              </div>
             </div>
           </div>
 
