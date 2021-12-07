@@ -1423,6 +1423,7 @@ const mapDispatchToProps = dispatch => ({
   addDetails: data => {
     dispatch(addDetails(data))
   },
+  //
   verifyEmail: data => {
     // dispatch(emailVerified(16))
     dispatch(verifyEmail(data))
