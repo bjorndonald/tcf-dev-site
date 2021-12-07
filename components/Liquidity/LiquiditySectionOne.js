@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { gsap } from 'gsap/dist/gsap'
+import Link from 'next/link'
 
 export default function LiquiditySectionOne () {
   // useEffect(() => {
@@ -49,9 +50,9 @@ export default function LiquiditySectionOne () {
                 &nbsp;and numerous fees
               </p>
               <div className='button mt-3'>
-                <a className=' btn btn-black  ' href='/register'>
-                  Sign-up
-                </a>
+                <Link href='/registration'>
+                  <a className=' btn btn-black  '>Sign-up</a>
+                </Link>
               </div>
             </div>
           </div>
