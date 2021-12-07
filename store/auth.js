@@ -22,6 +22,7 @@ const slice = createSlice({
       alert(action.payload)
     },
     registrationDone: (auth, action) => {
+      console.log('done', 'test')
       auth.loading = false
       auth.onboardingSection = 'two'
     },

@@ -83,14 +83,19 @@ const api = ({ dispatch }) => next => async action => {
         method,
         data
       })
-      console.log(response.data)
-      if (response.data.status == 'success') {
+      console.log(response.data.status)
+      if (
+        response.data.status == 'success' ||
+        response.data.status == undefined
+      ) {
         dispatch(actions.apiCallSuccess(response.data?.data))
         if (url == '/auth/varifiyEmail') {
           if (onSuccess)
             dispatch({ type: onSuccess, payload: response.data?.user_id })
-        } else if (onSuccess)
-          dispatch({ type: onSuccess, payload: response.data?.data })
+        } else {
+          if (onSuccess)
+            dispatch({ type: onSuccess, payload: response.data?.data })
+        }
       }
       if (response.data.status == 'error') {
         dispatch(actions.apiCallFailed(response.data.message))
