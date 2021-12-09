@@ -22,6 +22,10 @@
       margin-bottom: 5.8125rem;
     }
   }
+
+  .mobile-tracker-line {
+    display: none;
+  }
   .curve {
     width: 62.5rem;
     height: auto;
@@ -506,6 +510,285 @@
             stroke: white;
           }
           width: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .web {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .registrationSectionOne {
+    position: relative;
+    .graphic {
+      width: 100vw;
+
+      svg,
+      img {
+        width: 100vw !important;
+        height: auto !important;
+      }
+    }
+
+    .twelfth {
+      .headlights {
+        width: 100%;
+        right: 0;
+        .mobile {
+          width: 100%;
+          svg {
+            width: 100vw;
+          }
+        }
+      }
+      .button {
+        display: flex;
+        justify-content: center;
+        width: 100% !important;
+
+        .btn {
+          width: auto !important;
+        }
+      }
+      .graphic {
+      }
+      .form-section {
+        margin-top: 10vh !important;
+
+        h1 {
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .mobile {
+      display: block;
+    }
+
+    .web {
+      display: none;
+    }
+
+    .mobile-tracker-line {
+      display: block;
+      background-color: #f1f1f1;
+      height: 0.75rem;
+      width: 100%;
+      border-radius: 3.125rem;
+
+      .tracker {
+        background: #244191;
+        border-radius: 3.125rem;
+        transition: 0.5s;
+        // width: 5rem;
+        height: 100%;
+        margin-top: 4.875rem;
+        margin-bottom: 5.8125rem;
+      }
+    }
+    .curve {
+      width: 100%;
+    }
+    .container {
+      padding-left: 0;
+      padding-top: 12vh;
+      .tracker-line {
+        display: none;
+      }
+
+      .eleventh {
+        .graphic {
+          margin-left: 0;
+        }
+        .form-section {
+          min-width: auto;
+        }
+        .mobile-tracker-line {
+          margin-top: -8vh;
+        }
+        .buttons {
+          margin: 3.9vh auto 0 auto;
+          width: calc(100% - 10.8vh);
+        }
+        .form-row {
+          max-width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+        }
+        .form-group {
+          width: 100%;
+          margin-right: 0 !important;
+        }
+
+        .formWrapper {
+          width: auto !important;
+          flex-grow: 1;
+          padding: 0;
+
+          input {
+            flex: 1;
+            padding: 0 1rem;
+          }
+        }
+      }
+
+      .seventh {
+        .mobile-tracker-line {
+          margin-top: -8vh;
+        }
+        .buttons {
+          margin: 3.9vh auto 0 auto;
+          width: calc(100% - 10.8vh);
+        }
+      }
+
+      .sixth {
+        .form-group-buttons {
+          display: flex;
+          justify-content: center;
+        }
+        .mobile-tracker-line {
+          margin-top: -4vh;
+        }
+        .buttons {
+          margin: 3.9vh auto 0 auto;
+          width: calc(100% - 10.8vh);
+        }
+      }
+
+      .fifth {
+        h1 {
+          display: inline-block;
+          width: 100%;
+          span {
+            margin-left: 0.5rem;
+          }
+          br {
+            display: none;
+          }
+        }
+
+        .form-group-buttons {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+
+        .buttons {
+          margin: 3.3vh auto 0 auto;
+          width: calc(100% - 10.8vh);
+        }
+      }
+
+      .third,
+      .fourth,
+      .experience {
+        .mobile-tracker-line {
+          margin-top: -6vh;
+        }
+        .buttons {
+          margin-top: 3.3vh;
+        }
+      }
+
+      .ninth {
+        .mobile-tracker-line {
+          margin-top: -6vh;
+        }
+        .buttons {
+          margin-top: 3.3vh;
+        }
+        .form-group-buttons {
+          margin: 3.3vh auto 0 auto;
+          width: calc(100% - 10.8vh);
+          .btn {
+            width: 47.5%;
+            flex: auto;
+          }
+        }
+        .buttons {
+          margin: 3.3vh auto 0 auto;
+          width: calc(100% - 10.8vh);
+        }
+        .form-section {
+          min-width: auto;
+        }
+
+        h1 {
+          width: 90vw;
+          margin: auto;
+          display: inline-block;
+          word-wrap: break-word;
+          br {
+            display: none;
+          }
+        }
+      }
+
+      .fourth {
+        .buttons {
+          margin: 3.3vh auto 0 auto;
+          width: calc(100% - 10.8vh);
+        }
+      }
+
+      .first,
+      .second {
+        .button {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          .btn {
+            width: auto;
+          }
+        }
+      }
+
+      .first,
+      .second,
+      .third,
+      .fourth,
+      .fifth,
+      .sixth,
+      .seventh,
+      .eighth,
+      .volume,
+      .ninth,
+      .experience,
+      .tenth,
+      .eleventh,
+      .twelfth {
+        flex-direction: column;
+        align-items: center;
+
+        .form-section {
+          width: 90vw;
+          margin: auto;
+        }
+      }
+
+      .third,
+      .fourth,
+      .fifth,
+      .sixth,
+      .seventh,
+      .eighth,
+      .ninth,
+      .tenth,
+      .volume,
+      .experience,
+      .twelfth {
+        .graphic {
+          margin-top: 6vh;
         }
       }
     }

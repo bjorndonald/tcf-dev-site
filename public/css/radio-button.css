@@ -85,6 +85,9 @@
 input[type='radio'] {
   display: none;
 }
+input[type='checkbox'] {
+  display: none;
+}
 #option-1:checked ~ .option-1,
 #option-2:checked ~ .option-2,
 #option-3:checked ~ .option-3,

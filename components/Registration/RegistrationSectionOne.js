@@ -11,6 +11,7 @@ import SectionFive from './graphics/SectionFive'
 import SectionSeven from './graphics/SectionSeven'
 import SectionNine from './graphics/SectionNine'
 import SectionLast from './graphics/SectionLast'
+import SectionMobileLast from './graphics/SectionMobileLast'
 import SectionFourteen from './graphics/SectionFourteen'
 import VolumeSection from './graphics/VolumeSection'
 import ExperienceSection from './graphics/ExperienceSection'
@@ -44,6 +45,8 @@ import {
 } from '../../store/auth'
 import Loading from './../Loading'
 import HeadLights from './graphics/HeadLights'
+import MobileHeadLights from './graphics/MobileHeadLights'
+import MobileCurve from './MobileCurve'
 
 function scorePassword (pass) {
   var score = 0
@@ -151,7 +154,7 @@ function First (props) {
               }}
               className='btn btn-blue'
             >
-              Next
+              Continue
             </a>
           </div>
 
@@ -204,7 +207,7 @@ function Second (props) {
               }}
               className='btn btn-blue'
             >
-              Next
+              Submit
             </a>
           </div>
 
@@ -279,6 +282,14 @@ function Third (props) {
           {lastNameError ? (
             <p className='error'>Last name is required.</p>
           ) : null}
+          <div className='mobile-tracker-line'>
+            <div
+              style={{
+                width: `${(props.progress / 12) * 100}%`
+              }}
+              className='tracker'
+            ></div>
+          </div>
           <div className='buttons'>
             <a
               onClick={() => {
@@ -394,6 +405,15 @@ function Fourth (props) {
             </ul>
           </div>
 
+          <div className='mobile-tracker-line'>
+            <div
+              style={{
+                width: `${(props.progress / 12) * 100}%`
+              }}
+              className='tracker'
+            ></div>
+          </div>
+
           <div className='buttons'>
             <a
               onClick={() => {
@@ -437,7 +457,7 @@ function Fifth (props) {
         <h1>
           Are you above
           <br />
-          the age of 18?
+          <span></span>the age of 18?
         </h1>
 
         <form action=''>
@@ -460,6 +480,14 @@ function Fifth (props) {
             >
               No
             </a>
+          </div>
+          <div className='mobile-tracker-line'>
+            <div
+              style={{
+                width: `${(props.progress / 12) * 100}%`
+              }}
+              className='tracker'
+            ></div>
           </div>
           {answer ? (
             <div className='buttons'>
@@ -582,7 +610,18 @@ function Sixth (props) {
                   />
                 </div>
               </div>
-
+            </>
+          ) : null}
+          <div className='mobile-tracker-line'>
+            <div
+              style={{
+                width: `${(props.progress / 12) * 100}%`
+              }}
+              className='tracker'
+            ></div>
+          </div>
+          {answer ? (
+            <>
               <div className='buttons'>
                 <a
                   onClick={e => {
@@ -686,6 +725,15 @@ function Seventh (props) {
             </label>
           </div>
 
+          <div className='mobile-tracker-line'>
+            <div
+              style={{
+                width: `${(props.progress / 12) * 100}%`
+              }}
+              className='tracker'
+            ></div>
+          </div>
+
           <div className='buttons'>
             <a
               onClick={e => {
@@ -773,6 +821,15 @@ function Eigth (props) {
             </label>
           </div>
 
+          <div className='mobile-tracker-line'>
+            <div
+              style={{
+                width: `${(props.progress / 12) * 100}%`
+              }}
+              className='tracker'
+            ></div>
+          </div>
+
           <div className='buttons'>
             <a
               onClick={e => {
@@ -834,7 +891,14 @@ function Volume (props) {
             </div>
           </div>
           {volumeError ? <p className='error'>Volume is required</p> : null}
-
+          <div className='mobile-tracker-line'>
+            <div
+              style={{
+                width: `${(props.progress / 12) * 100}%`
+              }}
+              className='tracker'
+            ></div>
+          </div>
           <div className='buttons'>
             <a
               onClick={e => {
@@ -910,6 +974,15 @@ function Experience (props) {
             </a>
           </div>
 
+          <div className='mobile-tracker-line'>
+            <div
+              style={{
+                width: `${(props.progress / 12) * 100}%`
+              }}
+              className='tracker'
+            ></div>
+          </div>
+
           <div className='buttons'>
             <a
               onClick={e => {
@@ -974,6 +1047,15 @@ function Ninth (props) {
             >
               No
             </a>
+          </div>
+
+          <div className='mobile-tracker-line'>
+            <div
+              style={{
+                width: `${(props.progress / 12) * 100}%`
+              }}
+              className='tracker'
+            ></div>
           </div>
 
           <div className='buttons'>
@@ -1068,6 +1150,15 @@ function Tenth (props) {
               <div className='dot'></div>
               <span>US$4000+</span>
             </label>
+          </div>
+
+          <div className='mobile-tracker-line'>
+            <div
+              style={{
+                width: `${(props.progress / 12) * 100}%`
+              }}
+              className='tracker'
+            ></div>
           </div>
 
           <div className='buttons'>
@@ -1187,7 +1278,14 @@ function Eleventh (props) {
             </div>
           </div>
           {error ? <p className='error'>All fields are required.</p> : null}
-
+          <div className='mobile-tracker-line'>
+            <div
+              style={{
+                width: `${(props.progress / 12) * 100}%`
+              }}
+              className='tracker'
+            ></div>
+          </div>
           <div className='buttons'>
             <a
               onClick={e => {
@@ -1214,8 +1312,8 @@ function Eleventh (props) {
                     instagram_url: instagram,
                     telegram: telegram
                   })
-                  props.addDetails(props.data)
-                  // props.socialsAdded()
+                  // props.addDetails(props.data)
+                  props.socialsAdded()
                 } else {
                   setError(true)
                   setTimeout(() => {
@@ -1265,10 +1363,20 @@ function Twelfth (props) {
         </form>
       </div>
       <div className='graphic'>
-        <SectionLast />
+        <div className='mobile'>
+          <SectionMobileLast />
+        </div>
+        <div className='web'>
+          <SectionLast />
+        </div>
       </div>
       <div className='headlights'>
-        <HeadLights />
+        <div className='mobile'>
+          <MobileHeadLights />
+        </div>
+        <div className='web'>
+          <HeadLights />
+        </div>
       </div>
     </div>
   )
@@ -1286,6 +1394,7 @@ function RegistrationSectionOne (props) {
   ) : (
     <div className='registrationSectionOne'>
       <Curve />
+      {props.onboardingSection != 'twelve' ? <MobileCurve /> : null}
       <div className='container'>
         {props.onboardingSection == 'one' ? (
           <First {...props} setData={setData} setSection={setSection} />
@@ -1414,8 +1523,8 @@ function RegistrationSectionOne (props) {
 
 const mapDispatchToProps = dispatch => ({
   register: data => {
-    dispatch(register(data))
-    // dispatch(registrationDone(data))
+    // dispatch(register(data))
+    dispatch(registrationDone(data))
   },
   sendCode: data => {
     dispatch(sendCode(data))
@@ -1425,8 +1534,8 @@ const mapDispatchToProps = dispatch => ({
   },
   //
   verifyEmail: data => {
-    // dispatch(emailVerified(16))
-    dispatch(verifyEmail(data))
+    dispatch(emailVerified(16))
+    // dispatch(verifyEmail(data))
   },
   legalInfoAdded: () => {
     dispatch(legalInfoAdded())
