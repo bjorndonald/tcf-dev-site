@@ -1312,8 +1312,8 @@ function Eleventh (props) {
                     instagram_url: instagram,
                     telegram: telegram
                   })
-                  // props.addDetails(props.data)
-                  props.socialsAdded()
+                  props.addDetails(props.data)
+                  // props.socialsAdded()
                 } else {
                   setError(true)
                   setTimeout(() => {
@@ -1523,8 +1523,8 @@ function RegistrationSectionOne (props) {
 
 const mapDispatchToProps = dispatch => ({
   register: data => {
-    // dispatch(register(data))
-    dispatch(registrationDone(data))
+    dispatch(register(data))
+    // dispatch(registrationDone(data))
   },
   sendCode: data => {
     dispatch(sendCode(data))
@@ -1534,8 +1534,8 @@ const mapDispatchToProps = dispatch => ({
   },
   //
   verifyEmail: data => {
-    dispatch(emailVerified(16))
-    // dispatch(verifyEmail(data))
+    // dispatch(emailVerified(16))
+    dispatch(verifyEmail(data))
   },
   legalInfoAdded: () => {
     dispatch(legalInfoAdded())
