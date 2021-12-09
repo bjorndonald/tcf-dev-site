@@ -159,7 +159,8 @@ function First (props) {
           </div>
 
           <p>
-            Already a Partner? <a href=''>Log In</a>
+            Already a Partner?{' '}
+            <a href='https://liquidity.traderscentral.com/'>Log In</a>
           </p>
         </form>
       </div>
