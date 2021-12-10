@@ -54,7 +54,12 @@ function FundingHeroSection (props) {
             Minutes
           </div>
           <img
-            style={{ height: 'auto', width: '100%', maxHeight: '380px' }}
+            style={{
+              height: 'auto',
+              width: '100%',
+              maxHeight: 'auto',
+              marginTop: '-5.5vh'
+            }}
             className=''
             src='/images/december-savings.png'
             alt='Trader Central Fund'
