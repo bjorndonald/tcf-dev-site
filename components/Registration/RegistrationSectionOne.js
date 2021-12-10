@@ -1313,7 +1313,13 @@ function Eleventh (props) {
                     instagram_url: instagram,
                     telegram: telegram
                   })
-                  props.addDetails(props.data)
+                  props.addDetails({
+                    ...props.data,
+                    website_url: website,
+                    facebook_url: facebook,
+                    instagram_url: instagram,
+                    telegram: telegram
+                  })
                   // props.socialsAdded()
                 } else {
                   setError(true)
