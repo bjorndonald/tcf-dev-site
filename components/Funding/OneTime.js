@@ -66,9 +66,7 @@ function OneTime (props) {
                     placement={'top'}
                     overlay={
                       <Tooltip>
-                        This means, the equity of the trading account must not,
-                        at any moment during both stages duration, reach a loss
-                        of -10%.
+                        This means the initial equity in your trading account should not surpass -10%. For Eg, on a $100,000 account, your account equity must not fall below $90,0000.
                       </Tooltip>
                     }
                   >
@@ -175,9 +173,7 @@ function OneTime (props) {
                     placement={'top'}
                     overlay={
                       <Tooltip>
-                        This means, the equity of the trading account must not,
-                        at any moment during both stages duration, reach a loss
-                        of -10%.
+                        This means the initial equity in your trading account should not surpass -10%. For Eg, on a $100,000 account, your account equity must not fall below $90,0000.
                       </Tooltip>
                     }
                   >
