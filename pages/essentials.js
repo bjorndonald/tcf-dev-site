@@ -6,11 +6,17 @@ import Head from 'next/head'
 
 import EssentialsSectionOne from '../components/Essentials/EssentialsSectionOne'
 import EssentialsSectionTwo from '../components/Essentials/EssentialsSectionTwo'
+import { useRouter } from 'next/router'
+import { useState } from 'react'
+import { useEffect } from 'react'
 
-export default function essentials () {
-  // gsap.registerPlugin(ScrollTrigger)
-  // let hc_tl = gsap.timeline()
+export function getServerSideProps (context) {
+  return {
+    props: { url: context.req.url }
+  }
+}
 
+export default function essentials (props) {
   return (
     <Fragment>
       <MetaTag
@@ -36,7 +42,7 @@ the trader in you by unleashing your true potential.`}
         ></script>
         {/* <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script> */}
         <script src='/js/script.js'></script>
-        <EssentialsSectionOne />
+        <EssentialsSectionOne {...props} />
         <EssentialsSectionTwo />
       </Head>
     </Fragment>

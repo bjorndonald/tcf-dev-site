@@ -846,7 +846,12 @@ function Eigth (props) {
               onClick={e => {
                 e.preventDefault()
                 if (check.length) {
-                  props.setData({ ...props.data, market_services: check })
+                  props.setData({
+                    ...props.data,
+                    market_services: check,
+                    per_month_user_volumn: null,
+                    prop_fund_experience: null
+                  })
                   props.marketServicesAdded()
                 }
               }}
@@ -916,7 +921,9 @@ function Volume (props) {
                 if (volume.length) {
                   props.setData({
                     ...props.data,
-                    per_month_user_volumn: volume
+                    per_month_user_volumn: volume,
+                    market_services: null,
+                    prop_fund_experience: null
                   })
                   props.volumeAdded()
                   setVolumeError(false)
@@ -998,7 +1005,12 @@ function Experience (props) {
               onClick={e => {
                 e.preventDefault()
                 if (answer != null) {
-                  props.setData({ ...props.data, prop_fund_experience: answer })
+                  props.setData({
+                    ...props.data,
+                    prop_fund_experience: answer,
+                    market_services: null,
+                    per_month_user_volumn: null
+                  })
                   props.experienceAdded()
                 }
               }}

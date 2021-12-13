@@ -45,9 +45,11 @@
 
     .row:last-child {
       padding: 5rem 0;
-
+      h2 {
+        margin-top: 2rem;
+      }
       p {
-        margin-bottom: 5rem;
+        margin-bottom: 1rem;
       }
 
       p:last-child {
@@ -129,7 +131,4 @@
 }
 
 @media only screen and (max-width: 480px) {
-
-  
-
 }
