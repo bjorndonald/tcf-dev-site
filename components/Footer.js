@@ -101,11 +101,7 @@ export default function Footer () {
               <div className='linkList mb-5'>
                 <ul>
                   <li>
-                    <a
-                      href='https://www.instagram.com/traderscentralfund/?utm_source=ig_profile_share&igshid=1h8hs678
-fgu04
-'
-                    >
+                    <a href='https://www.instagram.com/traderscentraleco/'>
                       <i className='fa fa-instagram' aria-hidden='true'></i>{' '}
                       Instagram
                     </a>
