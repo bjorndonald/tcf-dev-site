@@ -107,7 +107,7 @@ const slice = createSlice({
     },
     detailsAdded: (auth, action) => {
       auth.loading = false
-      console.log(action.payload)
+      console.log('details', action.payload)
       auth.onboardingSection = 'twelve'
       // auth.progress = auth.progress + 1
     },
@@ -206,11 +206,12 @@ export const verifyEmail = data => (dispatch, getState) => {
 export const addDetails = data => (dispatch, getState) => {
   var temp = data
   temp.user_id = getState().auth.user_id
+  console.log(temp)
   dispatch(
     apiCallBegan({
       url: '/auth/RegistrationAdditionalDetails',
       method: 'POST',
-      data,
+      data: temp,
       onStart: authRequested.type,
       onSuccess: detailsAdded.type,
       onError: authRequestFailed.type

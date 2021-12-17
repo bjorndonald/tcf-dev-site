@@ -36,6 +36,7 @@ import './../public/css/tablet.scss'
 import './../public/css/layout.scss'
 import './../public/css/landscape.scss'
 import './../public/css/video-controls.scss'
+import { useRouter } from 'next/router'
 
 import { Fragment } from 'react'
 
@@ -54,11 +55,12 @@ const store = configureStore({
 })
 
 export default function MyApp ({ Component, pageProps }) {
+  const router = useRouter()
   return (
     <Fragment>
       <Provider store={store}>
         <Layout>
-          <Component {...pageProps} />
+          <Component {...pageProps} key={router.asPath} />
         </Layout>
       </Provider>
     </Fragment>

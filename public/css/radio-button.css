@@ -50,7 +50,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   margin-right: 0.5rem;
   border-radius: 3.125rem;
   cursor: pointer;

@@ -748,19 +748,25 @@ function Seventh (props) {
             <a
               onClick={e => {
                 e.preventDefault()
+                console.log('test', firstCheck)
+                console.log('test', secondCheck)
+                console.log('test', thirdCheck)
                 if (secondCheck) {
                   props.setData({
                     ...props.data,
                     interested_services: 'Market Making'
                   })
                   props.servicesAdded('eight')
-                } else if (firstCheck) {
+                }
+                if (firstCheck) {
                   props.setData({
                     ...props.data,
                     interested_services: 'Prop Fund Setup'
                   })
                   props.servicesAdded('experience')
-                } else if (firstCheck && thirdCheck) {
+                }
+                if (firstCheck && thirdCheck) {
+                  console.log('test', 'test')
                   props.setData({
                     ...props.data,
                     interested_services:
@@ -849,8 +855,8 @@ function Eigth (props) {
                   props.setData({
                     ...props.data,
                     market_services: check,
-                    per_month_user_volumn: null,
-                    prop_fund_experience: null
+                    per_month_user_volumn: 0,
+                    prop_fund_experience: 0
                   })
                   props.marketServicesAdded()
                 }
@@ -921,9 +927,9 @@ function Volume (props) {
                 if (volume.length) {
                   props.setData({
                     ...props.data,
-                    per_month_user_volumn: volume,
-                    market_services: null,
-                    prop_fund_experience: null
+                    per_month_user_volumn: parseFloat(volume),
+                    market_services: '',
+                    prop_fund_experience: 0
                   })
                   props.volumeAdded()
                   setVolumeError(false)
@@ -1008,8 +1014,8 @@ function Experience (props) {
                   props.setData({
                     ...props.data,
                     prop_fund_experience: answer,
-                    market_services: null,
-                    per_month_user_volumn: null
+                    market_services: '',
+                    per_month_user_volumn: 0
                   })
                   props.experienceAdded()
                 }
@@ -1376,7 +1382,9 @@ function Twelfth (props) {
         <form action=''>
           <div className='button'>
             <Link href='/'>
-              <a className='btn btn-blue'>Return to Homepage</a>
+              <a href='/' className='btn btn-blue'>
+                Return to Homepage
+              </a>
             </Link>
           </div>
         </form>
@@ -1405,6 +1413,7 @@ function RegistrationSectionOne (props) {
   const [section, setSection] = useState('one')
   const [data, setData] = useState({})
   useEffect(() => {
+    setSection('one')
     props.loadCountries()
     return () => {}
   }, [])
