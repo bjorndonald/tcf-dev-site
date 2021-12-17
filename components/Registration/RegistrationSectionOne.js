@@ -1525,6 +1525,7 @@ function RegistrationSectionOne (props) {
         ) : null}
         {/* <Twelfth /> */}
         {props.onboardingSection == 'one' ||
+        props.onboardingSection == 'twelve' ||
         props.onboardingSection == 'two' ? null : (
           <div className='tracker-line'>
             <div
