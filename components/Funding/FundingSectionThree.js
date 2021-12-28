@@ -216,7 +216,7 @@ export default function FundingSectionThree () {
               </Tab.Content>
             </div>
           </Tab.Container>
-          <div className='currency-switcher'>
+          {/* <div className='currency-switcher'>
             <div className='bubble'>
               <img src='/images/funding/dollar_sign.png' alt='Dollar sign' />
             </div>
@@ -232,7 +232,7 @@ export default function FundingSectionThree () {
                 </li>
               ))}
             </ol>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
