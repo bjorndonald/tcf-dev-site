@@ -93,7 +93,7 @@ const api = ({ dispatch }) => next => async action => {
           if (onSuccess)
             dispatch({ type: onSuccess, payload: response.data?.user_id })
         } else {
-          // console.log('api', response.data)
+          console.log('api', response.data)
           if (onSuccess)
             dispatch({ type: onSuccess, payload: response.data?.data })
         }

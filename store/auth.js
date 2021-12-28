@@ -205,7 +205,7 @@ export const verifyEmail = data => (dispatch, getState) => {
 // Add additional details to onboarding user API
 export const addDetails = data => (dispatch, getState) => {
   var temp = data
-  temp.user_id = getState().auth.user_id
+  temp.user_id = parseInt(getState().auth.user_id)
   console.log(temp)
   dispatch(
     apiCallBegan({

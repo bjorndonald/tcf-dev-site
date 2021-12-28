@@ -111,13 +111,50 @@ function OTFTrading () {
             variant='link'
             eventKey='3'
           >
-            <p>Prohibited Strategies</p>
+            <p>Group Trading</p>
             <span>+</span>
             <span style={{ display: 'none' }}>-</span>
           </Accordion.Toggle>
         </Card.Header>
 
         <Accordion.Collapse eventKey='3'>
+          <Card.Body>
+            Trading as a group; placing and exiting trades together manually or
+            with a copier in a similar pattern is not allowed. Bagley depends on
+            diverse data patterns to monetize users' trading data.
+            <br />
+            <br />
+            <b>What is the consequences of copy/group trading?</b>
+            <ul>
+              <li>
+                First Offence: 50% fine on initial withdrawal, the trader is
+                allowed to renew the account from a pending withdrawal
+              </li>
+              <br />
+              <li>Second Offence: Withdrawal held and account is closed</li>
+            </ul>
+          </Card.Body>
+        </Accordion.Collapse>
+      </Card>
+      {/* //////////////////////////// */}
+      <Card>
+        <Card.Header>
+          <Accordion.Toggle
+            as={props => (
+              <div onClick={toggle}>
+                <Button {...props} />
+              </div>
+            )}
+            variant='link'
+            eventKey='4'
+          >
+            <p>Prohibited Strategies</p>
+            <span>+</span>
+            <span style={{ display: 'none' }}>-</span>
+          </Accordion.Toggle>
+        </Card.Header>
+
+        <Accordion.Collapse eventKey='4'>
           <Card.Body>
             Martingale trading is the only prohibited strategy. Martingale to us
             is defined as opening a position while first position opened is in
@@ -138,7 +175,7 @@ function OTFTrading () {
               </div>
             )}
             variant='link'
-            eventKey='3'
+            eventKey='5'
           >
             <p>Drawdown limit and withdrawal target</p>
             <span>+</span>
@@ -146,7 +183,7 @@ function OTFTrading () {
           </Accordion.Toggle>
         </Card.Header>
 
-        <Accordion.Collapse eventKey='3'>
+        <Accordion.Collapse eventKey='5'>
           <Card.Body>
             Maximum drawdown of five percent (This means, the equity of the
             trading account must not, at any moment during both stages duration,
@@ -165,7 +202,7 @@ function OTFTrading () {
               </div>
             )}
             variant='link'
-            eventKey='4'
+            eventKey='6'
           >
             <p>Hedging, Exert Advisors and Ea's</p>
             <span>+</span>
@@ -173,7 +210,7 @@ function OTFTrading () {
           </Accordion.Toggle>
         </Card.Header>
 
-        <Accordion.Collapse eventKey='4'>
+        <Accordion.Collapse eventKey='6'>
           <Card.Body>Hedging, ea's and trade copiers are allowed.</Card.Body>
         </Accordion.Collapse>
       </Card>

@@ -125,6 +125,39 @@ function OTFTrading () {
             variant='link'
             eventKey='3'
           >
+            <p>Group Trading</p>
+            <span>+</span>
+            <span style={{ display: 'none' }}>-</span>
+          </Accordion.Toggle>
+        </Card.Header>
+
+        <Accordion.Collapse eventKey='3'>
+          <Card.Body>
+            What is the consequence of copy/group trading? (OTF Challenge)
+            <br />
+            <br />
+            <ul>
+              <li>
+                First Offence: Warning, trader allowed to proceed to stage two.
+              </li>
+              <br />
+              <li>Second Offence: Account is closed.</li>
+            </ul>
+          </Card.Body>
+        </Accordion.Collapse>
+      </Card>
+      {/* ///////////////////////////// */}
+      <Card>
+        <Card.Header>
+          <Accordion.Toggle
+            as={props => (
+              <div onClick={toggle}>
+                <Button {...props} />
+              </div>
+            )}
+            variant='link'
+            eventKey='3'
+          >
             <p>Prohibited Strategies</p>
             <span>+</span>
             <span style={{ display: 'none' }}>-</span>

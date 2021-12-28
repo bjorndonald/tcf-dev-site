@@ -348,7 +348,6 @@ function Fourth (props) {
   // const [country, setCountry] = useState("")
 
   useEffect(() => {
-    console.log(props.countries)
     return () => {}
   }, [])
   function openSearchBox (event) {
@@ -428,7 +427,10 @@ function Fourth (props) {
               onClick={e => {
                 e.preventDefault()
                 if (countryId.length) {
-                  props.setData({ ...props.data, country_id: countryId })
+                  props.setData({
+                    ...props.data,
+                    country_id: parseInt(countryId)
+                  })
                   props.countryAdded()
                 }
               }}
