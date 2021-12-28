@@ -156,7 +156,7 @@ function OTFTrading () {
               </div>
             )}
             variant='link'
-            eventKey='3'
+            eventKey='4'
           >
             <p>Prohibited Strategies</p>
             <span>+</span>
@@ -164,7 +164,7 @@ function OTFTrading () {
           </Accordion.Toggle>
         </Card.Header>
 
-        <Accordion.Collapse eventKey='3'>
+        <Accordion.Collapse eventKey='4'>
           <Card.Body>
             Martingale trading is the only prohibited strategy. Martingale to us
             is defined as opening a position while first position opened is in
@@ -223,7 +223,7 @@ function OTFTrading () {
               </div>
             )}
             variant='link'
-            eventKey='4'
+            eventKey='5'
           >
             <p>Can I request a refund?</p>
             <span>+</span>
@@ -231,7 +231,7 @@ function OTFTrading () {
           </Accordion.Toggle>
         </Card.Header>
 
-        <Accordion.Collapse eventKey='4'>
+        <Accordion.Collapse eventKey='5'>
           <Card.Body>
             The one time fee is reimbursed to you with the first profit split
             when you become a Traders Central fund manager.
@@ -248,7 +248,7 @@ function OTFTrading () {
               </div>
             )}
             variant='link'
-            eventKey='5'
+            eventKey='6'
           >
             <p>Profit target and Drawdown Limit</p>
             <span>+</span>
@@ -256,7 +256,7 @@ function OTFTrading () {
           </Accordion.Toggle>
         </Card.Header>
 
-        <Accordion.Collapse eventKey='5'>
+        <Accordion.Collapse eventKey='6'>
           <Card.Body>
             Profit target of <b>eight percent</b> to complete the evaluation for{' '}
             <b>stage one</b> and <b>four percent</b> for <b>stage two</b>.
@@ -276,7 +276,7 @@ function OTFTrading () {
               </div>
             )}
             variant='link'
-            eventKey='6'
+            eventKey='7'
           >
             <p>
               What if I achieve the profit target before the minimum required
@@ -287,7 +287,7 @@ function OTFTrading () {
           </Accordion.Toggle>
         </Card.Header>
 
-        <Accordion.Collapse eventKey='6'>
+        <Accordion.Collapse eventKey='7'>
           <Card.Body>
             You can reduce your lot size for up to 75% of the average lot size
             used on all of your challenge trades until now. You can’t use 0.01

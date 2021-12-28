@@ -26,8 +26,8 @@ function MonthlySection (props) {
           <OverlayTrigger placement={'top'} overlay={<Tooltip>CAD 68</Tooltip>}>
             <a
               onClick={e => {
-                  setCadOriginalText('85')
-                  setCadText('68')
+                setCadOriginalText('85')
+                setCadText('68')
                 setLeverage('1:4')
                 activate(e)
               }}
@@ -42,8 +42,8 @@ function MonthlySection (props) {
           >
             <a
               onClick={e => {
-                  setCadOriginalText('170')
-                  setCadText('128')
+                setCadOriginalText('170')
+                setCadText('128')
                 activate(e)
                 setLeverage('1:4')
               }}
@@ -58,7 +58,7 @@ function MonthlySection (props) {
           >
             <a
               onClick={e => {
-                  setCadOriginalText('345')
+                setCadOriginalText('345')
                 setCadText('242')
                 activate(e)
                 setLeverage('1:3')
@@ -75,7 +75,11 @@ function MonthlySection (props) {
         <Right cadText={cadText} leverage={leverage} />
       </div> */}
       <div className='col-12 row mx-0 justify-content-center'>
-        <Monthly leverage={leverage} cadOriginalText={cadOriginalText} cadText={cadText} />
+        <Monthly
+          leverage={leverage}
+          cadOriginalText={cadOriginalText}
+          cadText={cadText}
+        />
       </div>
     </Fragment>
   )
