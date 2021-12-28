@@ -153,8 +153,9 @@ function Monthly (props) {
               <a
                 className='btn btn-primary cadText85'
                 href='https://fund.traderscentral.com/sign-up'
+                target={'_blank'}
               >
-                CAD{' '}
+                {(!isNaN(props.cadText)) ? 'CAD ': ''}
                 <span style={{ textDecoration: 'line-through' }}>
                   {props.cadOriginalText}
                 </span>{' '}
