@@ -100,8 +100,10 @@ function MonthlySection(props) {
                     >
                         <a
                             onClick={e => {
-                                setCadOriginalText('170')
-                                setCadText('128')
+                                // setCadOriginalText('170')
+                                // setCadText('128')
+                                setCadText('Limited')
+                                setCadOriginalText('')
                                 activate(e)
                                 setLeverage('1:4')
                             }}
@@ -116,10 +118,8 @@ function MonthlySection(props) {
                     >
                         <a
                             onClick={e => {
-                                // setCadOriginalText('345')
-                                // setCadText('242')
-                                setCadText('Limited')
-                                setCadOriginalText('')
+                                setCadOriginalText('345')
+                                setCadText('242')
                                 activate(e)
                                 setLeverage('1:3')
                             }}
