@@ -155,7 +155,7 @@ function Monthly (props) {
                 href='https://fund.traderscentral.com/sign-up'
                 target={'_blank'}
               >
-                {(!isNaN(props.cadText)) ? 'CAD ': ''}
+                {!isNaN(props.cadText) ? props.currency + ' ' : ''}
                 <span style={{ textDecoration: 'line-through' }}>
                   {props.cadOriginalText}
                 </span>{' '}

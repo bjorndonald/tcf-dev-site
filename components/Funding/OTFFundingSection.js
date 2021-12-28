@@ -143,6 +143,7 @@ function OTFFundingSection (props) {
           leverage={leverage}
           cadOriginalText={cadCurrencyOriginal}
           cadText={cadCurrency}
+          currency={props.currency}
         />
       </div>
     </Fragment>

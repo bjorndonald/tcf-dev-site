@@ -147,7 +147,7 @@ function OneTimeSection (props) {
       </div>
 
       <div className='col-12 row mx-0 justify-content-center'>
-        <OneTime cadOriginalText={cadCurrencyOriginal} cadText={cadCurrency} />
+        <OneTime cadOriginalText={cadCurrencyOriginal} currency={props.currency} cadText={cadCurrency} />
       </div>
     </Fragment>
   )

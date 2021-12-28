@@ -66,7 +66,9 @@ function OneTime (props) {
                     placement={'top'}
                     overlay={
                       <Tooltip>
-                        This means the initial equity in your trading account should not surpass -10%. For Eg, on a $100,000 account, your account equity must not fall below $90,0000.
+                        This means the initial equity in your trading account
+                        should not surpass -10%. For Eg, on a $100,000 account,
+                        your account equity must not fall below $90,0000.
                       </Tooltip>
                     }
                   >
@@ -173,7 +175,9 @@ function OneTime (props) {
                     placement={'top'}
                     overlay={
                       <Tooltip>
-                        This means the initial equity in your trading account should not surpass -10%. For Eg, on a $100,000 account, your account equity must not fall below $90,0000.
+                        This means the initial equity in your trading account
+                        should not surpass -10%. For Eg, on a $100,000 account,
+                        your account equity must not fall below $90,0000.
                       </Tooltip>
                     }
                   >
@@ -250,7 +254,11 @@ function OneTime (props) {
               className='btn btn-primary cadText85'
               href='https://fund.traderscentral.com/sign-up'
             >
-              CAD <span style={{textDecoration: 'line-through'}}>{props.cadOriginalText}</span> {props.cadText}
+              {props.currency}{' '}
+              <span style={{ textDecoration: 'line-through' }}>
+                {props.cadOriginalText}
+              </span>{' '}
+              {props.cadText}
             </a>
           </div>
           <small>Click to pay</small>

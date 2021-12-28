@@ -137,6 +137,7 @@ function MonthlySection(props) {
             <div className='col-12 row mx-0 justify-content-center'>
                 <Monthly
                     leverage={leverage}
+                    currency={props.currency}
                     cadOriginalText={cadCurrencyOriginal}
                     cadText={cadCurrency}
                 />
