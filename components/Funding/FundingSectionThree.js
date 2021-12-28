@@ -168,23 +168,23 @@ export default function FundingSectionThree () {
               <h2>Plans and Pricing</h2>
             </div>
           </div>
-          <Tab.Container id='nav-tab-example' defaultActiveKey='monthly'>
+          <Tab.Container id='nav-tab-example' defaultActiveKey='otffunding'>
             <div className='col-12 text-center '>
               <div className='priceTableNavs d-flex justify-content-center mb-4'>
                 <Nav className='bubbles'>
                   <Nav.Item style={{ zIndex: 4, marginRight: 16 }}>
-                    <Nav.Link onClick={toggleSwitch} eventKey='monthly'>
-                      Monthly
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item style={{ zIndex: 2, marginRight: 16 }}>
                     <Nav.Link onClick={toggleSwitch} eventKey='otffunding'>
                       OTF Instant
                     </Nav.Link>
                   </Nav.Item>
-                  <Nav.Item style={{ zIndex: 2 }}>
+                  <Nav.Item style={{ zIndex: 2, marginRight: 16 }}>
                     <Nav.Link onClick={toggleSwitch} eventKey='onetime'>
                       OTF Challenge
+                    </Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item style={{ zIndex: 2 }}>
+                    <Nav.Link onClick={toggleSwitch} eventKey='monthly'>
+                      Monthly
                     </Nav.Link>
                   </Nav.Item>
                 </Nav>
