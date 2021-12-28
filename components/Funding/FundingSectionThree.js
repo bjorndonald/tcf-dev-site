@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { OverlayTrigger, Tab, Row, Col, Nav, Tooltip } from 'react-bootstrap'
 import { gsap } from 'gsap/dist/gsap'
 import $ from 'jquery'
+import Big from 'big.js'
+import { usePaginatedQuery } from 'react-query'
+// import { Cashify } from 'cashify'
 import MonthlySection from './MonthlySection'
 import InfoIcon from '../../icons/InfoIcon'
 import OneTimeSection from './OneTimeSection'
@@ -12,13 +15,53 @@ Date.prototype.addHours = function (h) {
   return this
 }
 
+const currencies = ['CAD', 'USD', 'EUR', 'GBP', 'JPY', 'AUD', 'NZD', 'CHF']
+
+async function fetchCurrencies (key) {
+  const res = await fetch(
+    process.env.NODE_ENV === 'development'
+      ? 'https://headerng.herokuapp.com/https://freecurrencyapi.net/api/v2/latest?apikey=fec0ee30-67e4-11ec-a666-a97e840d4f92&base_currency=CAD'
+      : 'https://freecurrencyapi.net/api/v2/latest?apikey=fec0ee30-67e4-11ec-a666-a97e840d4f92&base_currency=CAD',
+    {
+      method: 'GET',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json'
+      }
+      // body: JSON.stringify({ user_id: id })
+    }
+  )
+  return res.json()
+}
+
 export default function FundingSectionThree () {
+  const { resolvedData, latestData, status } = usePaginatedQuery(
+    ['statistics'],
+    fetchCurrencies,
+    {
+      staleTime: 200,
+      cacheTime: 10,
+      onSuccess: () => {
+        console.log('data', resolvedData)
+        // props.creditlineAccountsReceived(resolvedData)
+      },
+      onError: error => {
+        console.log('error', error)
+      }
+    }
+  )
   const [cadText, setCadText] = useState('85')
   const [leverage, setLeverage] = useState('1:6')
   const [days, setDays] = useState(0)
   const [hours, setHours] = useState(0)
   const [minutes, setMinutes] = useState(0)
   const [seconds, setSeconds] = useState(0)
+  const [currency, setCurrency] = useState('CAD')
+  const [previous, setPreviousCurrency] = useState('CAD')
+
+  // console.log('fx', fx.convert(1000))
+  // // var thisline = new Error().stack
+  // console.log('line', thisline)
   // useEffect(() => {
   //   gsap.timeline({
   //     scrollTrigger: {
@@ -104,6 +147,18 @@ export default function FundingSectionThree () {
 
   const changeText = () => {}
 
+  const newCurrency = value => {
+    // const cashify = new Cashify({ base: 'CAD', rates: resolvedData.data })
+    // const converted = cashify.convert(10, {
+    //   from: 'CAD',
+    //   to: currency,
+    //   BigJs: Big
+    // })
+    // console.log('convert', converted)
+    setPreviousCurrency(currency)
+    setCurrency(value)
+  }
+
   return (
     <div className='fundingSectionThree py-5 d-flex align-items-center'>
       <div className='container-fluid'>
@@ -138,17 +193,46 @@ export default function FundingSectionThree () {
             <div className='col-12'>
               <Tab.Content className='mt-1'>
                 <Tab.Pane eventKey='monthly'>
-                  <MonthlySection />
+                  <MonthlySection
+                    currencies={resolvedData?.data}
+                    currency={currency}
+                    previous={previous}
+                  />
                 </Tab.Pane>
                 <Tab.Pane eventKey='otffunding'>
-                  <OTFFundingSection />
+                  <OTFFundingSection
+                    currencies={resolvedData?.data}
+                    currency={currency}
+                    previous={previous}
+                  />
                 </Tab.Pane>
                 <Tab.Pane eventKey='onetime'>
-                  <OneTimeSection />
+                  <OneTimeSection
+                    currencies={resolvedData?.data}
+                    currency={currency}
+                    previous={previous}
+                  />
                 </Tab.Pane>
               </Tab.Content>
             </div>
           </Tab.Container>
+          <div className='currency-switcher'>
+            <div className='bubble'>
+              <img src='/images/funding/dollar_sign.png' alt='Dollar sign' />
+            </div>
+            <span>Select currency: </span>
+            <ol>
+              {currencies.map((x, i) => (
+                <li
+                  key={i}
+                  onClick={() => newCurrency(x)}
+                  className={x === currency ? 'active' : ''}
+                >
+                  {x}
+                </li>
+              ))}
+            </ol>
+          </div>
         </div>
       </div>
     </div>

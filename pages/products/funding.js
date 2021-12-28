@@ -11,6 +11,7 @@ import Head from 'next/head'
 import FundingSectionFive from '../../components/Funding/FundingSectionFive'
 import { connect } from 'react-redux'
 import { clearTimeline, setTimeline } from '../../store/actions/configActions'
+import { ReactQueryDevtools } from 'react-query-devtools'
 
 function funding (props) {
   // props.clearTimeline()
@@ -55,6 +56,9 @@ than 24 hours. Choose between our Monthly and One Time Fee Model.`}
       <FundingSectionThree />
       <FundingSectionFour />
       <FundingSectionFive />
+      {process.env.NODE_ENV == 'development' ? (
+        <ReactQueryDevtools initialIsOpen={false} />
+      ) : null}
     </div>
   )
 }

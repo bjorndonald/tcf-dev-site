@@ -66,6 +66,56 @@
     justify-content: center;
   }
 
+  .currency-switcher {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+    .bubble {
+      width: 1.5rem;
+      height: 1.5rem;
+      background-color: #7a20eb;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 0.5rem;
+        height: auto;
+      }
+    }
+
+    span {
+      font-size: 1rem;
+      color: #979797;
+      margin: 0 0.5rem;
+    }
+    ol {
+      margin-bottom: 0;
+      display: inline-flex;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+
+      li {
+        transition: 0.2s;
+        font-size: 1rem;
+        padding: 0.075rem 0.35rem;
+        color: #979797;
+        cursor: pointer;
+      }
+
+      li.active {
+        background-color: #7a20eb;
+        border-radius: 3.125rem;
+        color: white;
+      }
+    }
+  }
+
   .tcf-bubbles {
     .btn {
       font-family: eina;

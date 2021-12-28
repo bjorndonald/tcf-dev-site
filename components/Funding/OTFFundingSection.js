@@ -5,10 +5,13 @@ import $ from 'jquery'
 import OneTime from './OneTime'
 import InfoIcon from '../../icons/InfoIcon'
 import OTFFunding from './OTFFunding'
+import { useEffect } from 'react'
 
 function OTFFundingSection (props) {
   const [cadOriginalText, setCadOriginalText] = useState('252')
   const [cadText, setCadText] = useState('189')
+  const [cadCurrency, setCadCurrency] = useState('189')
+  const [cadCurrencyOriginal, setCadCurrencyOriginal] = useState('252')
   const [leverage, setLeverage] = useState('1:50')
   const activate = e => {
     $(e.target)
@@ -17,6 +20,38 @@ function OTFFundingSection (props) {
       .removeClass('active')
     $(e.target).addClass('active')
   }
+
+  useEffect(() => {
+    // const cashify = new Cashify({
+    //   base: 'CAD',
+    console.log('sslsl', props.currencies)
+    //   rates: props.currencies
+    // })
+    // const converted = cashify.convert(parseFloat(cadText), {
+    //   from: 'CAD',
+    //   to: props.currency,
+    //   BigJs: Big
+    // })
+    if (props.currencies) {
+      var converted = 0
+      var convertedOriginal = 0
+
+      converted = parseFloat(cadText) * props.currencies[props.currency]
+      console.log('sslsl', props.currencies[props.currency])
+      convertedOriginal =
+        parseFloat(cadOriginalText) * props.currencies[props.currency]
+
+      // // // const convertedOriginal = cashify.convert(parseFloat(cadOriginalText), {
+      // // //   from: 'CAD',
+      // // //   to: props.currency,
+      // // //   BigJs: Big
+      // // // })
+      setCadCurrency(converted.toFixed(1))
+      setCadCurrencyOriginal(convertedOriginal.toFixed(1))
+    }
+    return () => {}
+  }, [props.currency, cadText])
+
   return (
     <Fragment>
       <p className='mb-4 subtitle' style={{ textAlign: 'center' }}>
@@ -106,8 +141,8 @@ function OTFFundingSection (props) {
       <div className='col-12 row mx-0 justify-content-center'>
         <OTFFunding
           leverage={leverage}
-          cadOriginalText={cadOriginalText}
-          cadText={cadText}
+          cadOriginalText={cadCurrencyOriginal}
+          cadText={cadCurrency}
         />
       </div>
     </Fragment>

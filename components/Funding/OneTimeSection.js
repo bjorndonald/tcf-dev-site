@@ -4,10 +4,13 @@ import { gsap } from 'gsap/dist/gsap'
 import $ from 'jquery'
 import OneTime from './OneTime'
 import InfoIcon from '../../icons/InfoIcon'
+import { useEffect } from 'react'
 
-function OneTimeSection () {
+function OneTimeSection (props) {
   const [cadOriginalText, setCadOriginalText] = useState('85')
   const [cadText, setCadText] = useState('68')
+  const [cadCurrency, setCadCurrency] = useState('68')
+  const [cadCurrencyOriginal, setCadCurrencyOriginal] = useState('85')
   const [leverage, setLeverage] = useState('1:6')
   const activate = e => {
     $(e.target)
@@ -16,6 +19,38 @@ function OneTimeSection () {
       .removeClass('active')
     $(e.target).addClass('active')
   }
+
+  useEffect(() => {
+    // const cashify = new Cashify({
+    //   base: 'CAD',
+    console.log('sslsl', props.currencies)
+    //   rates: props.currencies
+    // })
+    // const converted = cashify.convert(parseFloat(cadText), {
+    //   from: 'CAD',
+    //   to: props.currency,
+    //   BigJs: Big
+    // })
+    if (props.currencies) {
+      var converted = 0
+      var convertedOriginal = 0
+
+      converted = parseFloat(cadText) * props.currencies[props.currency]
+      console.log('sslsl', props.currencies[props.currency])
+      convertedOriginal =
+        parseFloat(cadOriginalText) * props.currencies[props.currency]
+
+      // // // const convertedOriginal = cashify.convert(parseFloat(cadOriginalText), {
+      // // //   from: 'CAD',
+      // // //   to: props.currency,
+      // // //   BigJs: Big
+      // // // })
+      setCadCurrency(converted.toFixed(1))
+      setCadCurrencyOriginal(convertedOriginal.toFixed(1))
+    }
+    return () => {}
+  }, [props.currency, cadText])
+
   return (
     <Fragment>
       <p className='mb-4 subtitle' style={{ textAlign: 'center' }}>
@@ -112,7 +147,7 @@ function OneTimeSection () {
       </div>
 
       <div className='col-12 row mx-0 justify-content-center'>
-        <OneTime cadOriginalText={cadOriginalText} cadText={cadText} />
+        <OneTime cadOriginalText={cadCurrencyOriginal} cadText={cadCurrency} />
       </div>
     </Fragment>
   )

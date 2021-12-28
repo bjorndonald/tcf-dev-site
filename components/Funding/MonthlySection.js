@@ -1,13 +1,18 @@
 import React, { Fragment, useState } from 'react'
 import { OverlayTrigger, Tab, Row, Col, Nav, Tooltip } from 'react-bootstrap'
+import Big from 'big.js'
+// import { Cashify } from 'cashify'
 import Left from './monthly/Left'
 import Right from './monthly/Right'
 import Data from './monthly/Data'
 import Monthly from './Monthly'
+import { useEffect } from 'react'
 
 function MonthlySection (props) {
   const [cadOriginalText, setCadOriginalText] = useState('85')
   const [cadText, setCadText] = useState('68')
+  const [cadCurrency, setCadCurrency] = useState('68')
+  const [cadCurrencyOriginal, setCadCurrencyOriginal] = useState('85')
   const [leverage, setLeverage] = useState('1:4')
   const activate = e => {
     $(e.target)
@@ -16,6 +21,38 @@ function MonthlySection (props) {
       .removeClass('active')
     $(e.target).addClass('active')
   }
+
+  useEffect(() => {
+    // const cashify = new Cashify({
+    //   base: 'CAD',
+    console.log('sslsl', props.currencies)
+    //   rates: props.currencies
+    // })
+    // const converted = cashify.convert(parseFloat(cadText), {
+    //   from: 'CAD',
+    //   to: props.currency,
+    //   BigJs: Big
+    // })
+    if (props.currencies) {
+      var converted = 0
+      var convertedOriginal = 0
+
+      converted = parseFloat(cadText) * props.currencies[props.currency]
+      console.log('sslsl', props.currencies[props.currency])
+      convertedOriginal =
+        parseFloat(cadOriginalText) * props.currencies[props.currency]
+
+      // // // const convertedOriginal = cashify.convert(parseFloat(cadOriginalText), {
+      // // //   from: 'CAD',
+      // // //   to: props.currency,
+      // // //   BigJs: Big
+      // // // })
+      setCadCurrency(converted.toFixed(1))
+      setCadCurrencyOriginal(convertedOriginal.toFixed(1))
+    }
+    return () => {}
+  }, [props.currency, cadText])
+
   return (
     <Fragment>
       <p className='mb-4 subtitle' style={{ textAlign: 'center' }}>
@@ -26,8 +63,12 @@ function MonthlySection (props) {
           <OverlayTrigger placement={'top'} overlay={<Tooltip>CAD 68</Tooltip>}>
             <a
               onClick={e => {
-                setCadOriginalText('85')
-                setCadText('68')
+                // const converted =
+                //   parseFloat(cadText) * props.currencies[props.currency]
+                // const convertedOriginal =
+                //   parseFloat(cadOriginalText) * props.currencies[props.currency]
+                setCadText(parseFloat('68'))
+                setCadOriginalText(parseFloat('85'))
                 setLeverage('1:4')
                 activate(e)
               }}
@@ -77,8 +118,8 @@ function MonthlySection (props) {
       <div className='col-12 row mx-0 justify-content-center'>
         <Monthly
           leverage={leverage}
-          cadOriginalText={cadOriginalText}
-          cadText={cadText}
+          cadOriginalText={cadCurrencyOriginal}
+          cadText={cadCurrency}
         />
       </div>
     </Fragment>
