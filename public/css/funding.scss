@@ -93,6 +93,14 @@
       color: #979797;
       margin: 0 0.5rem;
     }
+
+    br {
+      display: none;
+    }
+    .fragment {
+      display: flex;
+      align-items: center;
+    }
     ol {
       margin-bottom: 0;
       display: inline-flex;

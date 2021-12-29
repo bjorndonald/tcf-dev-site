@@ -229,6 +229,18 @@
       margin-top: 0rem !important;
     }
 
+    .currency-switcher {
+      flex-direction: column;
+      br {
+        display: block;
+      }
+      .fragment {
+        margin-bottom: 1rem;
+      }
+      ol {
+      }
+    }
+
     .bottom-monthly .pTableSingleList {
       padding-bottom: 0rem !important;
     }

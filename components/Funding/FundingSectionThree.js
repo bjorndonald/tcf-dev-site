@@ -217,10 +217,13 @@ export default function FundingSectionThree () {
             </div>
           </Tab.Container>
           <div className='currency-switcher'>
-            <div className='bubble'>
-              <img src='/images/funding/dollar_sign.png' alt='Dollar sign' />
+            <div className='fragment'>
+              <div className='bubble'>
+                <img src='/images/funding/dollar_sign.png' alt='Dollar sign' />
+              </div>
+              <span>Select currency: </span>
             </div>
-            <span>Select currency: </span>
+
             <ol>
               {currencies.map((x, i) => (
                 <li
