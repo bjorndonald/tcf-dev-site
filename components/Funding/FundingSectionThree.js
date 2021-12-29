@@ -59,27 +59,6 @@ export default function FundingSectionThree () {
   const [currency, setCurrency] = useState('CAD')
   const [previous, setPreviousCurrency] = useState('CAD')
 
-  // console.log('fx', fx.convert(1000))
-  // // var thisline = new Error().stack
-  // console.log('line', thisline)
-  // useEffect(() => {
-  //   gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: ".fundingSectionThree",
-  //       start: "top 150px",
-  //       end: "bottom center",
-  //       scrub: 1,
-  //       pin:true
-  //     }
-  //   })
-  //   .add("start")
-  //   .from(".fundingSectionThree .sectionTitleWrap", { y: 50, opacity : 0 }, "start")
-  //   //.from(".fundingSectionThree .nav .nav-link:first-child", { x: -50, opacity : 0 })
-  //   .from(".fundingSectionThree .priceTableNav", { y: 50, opacity : 0 }, "start")
-  //   .from(".fundingSectionThree .priceTableNav+p", { y: 50, opacity : 0 }, "start")
-  //   .from(".fundingSectionThree #nav-tab-example-tabpane-monthly .btn.btn-outline-dark", { y: 50, opacity : 0 }, "start")
-  //   .from(".fundingSectionThree .pTable", { y: 50, opacity : 0 }), "start";
-  // }, [tl]);
   var date = new Date('Oct 04, 2021')
 
   var countDownDate = new Date('Oct 04, 2021').getTime()
