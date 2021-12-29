@@ -8,7 +8,7 @@ const sslRedirect = require('heroku-ssl-redirect').default
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
-const port = parseInt(process.env.PORT, 10) || 8400
+const port = parseInt(process.env.PORT, 10) || 8500
 
 app.prepare().then(() => {
   const server = express()

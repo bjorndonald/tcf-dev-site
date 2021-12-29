@@ -204,7 +204,7 @@ function OTFTrading () {
             variant='link'
             eventKey='6'
           >
-            <p>Hedging, Exert Advisors and Ea's</p>
+            <p>Hedging, Expert Advisors and Ea's</p>
             <span>+</span>
             <span style={{ display: 'none' }}>-</span>
           </Accordion.Toggle>
