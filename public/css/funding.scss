@@ -51,6 +51,13 @@
   }
 }
 
+@media (max-width: 540px) {
+  .fundingOne {
+    background-size: cover;
+    background-position: 45.8% 0% !important;
+  }
+}
+
 @media (min-width: 480px) and (max-width: 1025px) {
   .fundingSectionOne {
     img {
