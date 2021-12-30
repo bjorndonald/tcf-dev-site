@@ -12,6 +12,7 @@ import FundingSectionFive from '../../components/Funding/FundingSectionFive'
 import { connect } from 'react-redux'
 import { clearTimeline, setTimeline } from '../../store/actions/configActions'
 import { ReactQueryDevtools } from 'react-query-devtools'
+import FundingSectionOne from '../../components/Funding/FundingSectionOne'
 
 function funding (props) {
   // props.clearTimeline()
@@ -51,7 +52,8 @@ than 24 hours. Choose between our Monthly and One Time Fee Model.`}
         {/* <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script> */}
         <script src='/js/script.js'></script>
       </Head>
-      <FundingHeroSection />
+      <FundingSectionOne />
+      {/* <FundingHeroSection /> */}
       <FundingSectionTwo />
       <FundingSectionThree />
       <FundingSectionFour />

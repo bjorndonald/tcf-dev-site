@@ -28,6 +28,29 @@
   }
 }
 
+.fundingOne {
+  background-image: url('/images/funding/new_year_banner.jpg');
+  background-position: center;
+  background-size: cover;
+
+  .container-fluid {
+    height: 100vh;
+    position: relative;
+
+    .btn {
+      position: absolute;
+      bottom: 30vh;
+      background-color: black;
+      // margin-top: 5rem;
+      font-weight: bold;
+      border-radius: 5vh;
+      padding: 1vh 5vh;
+      font-size: 3vh;
+      color: #fff;
+    }
+  }
+}
+
 @media (min-width: 480px) and (max-width: 1025px) {
   .fundingSectionOne {
     img {
