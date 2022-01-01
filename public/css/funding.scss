@@ -29,9 +29,21 @@
 }
 
 .fundingOne {
-  background-image: url('/images/funding/new_year_banner.jpg');
-  background-position: center;
-  background-size: cover;
+  position: relative;
+  // background-image: url('/images/funding/new_year_banner.jpg');
+  // background-position: 20% 60%;
+  // background-size: cover;
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0vw;
+    z-index: -1;
+    background-image: url('/images/funding/new_year_banner.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 107vw;
+    height: 100%;
+  }
 
   .container-fluid {
     height: 100vh;
@@ -53,8 +65,9 @@
 
 @media (max-width: 540px) {
   .fundingOne {
-    background-size: cover;
-    background-position: 45.8% 0% !important;
+    .background {
+      width: 114vw;
+    }
   }
 }
 
