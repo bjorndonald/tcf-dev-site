@@ -82,6 +82,7 @@
       margin-top: 8vh;
 
       height: 50vh;
+      flex-direction: column;
       align-items: center;
       img {
       }
@@ -89,12 +90,12 @@
         position: absolute;
         width: 100vw;
         text-align: center;
-        top: calc((100% - 4vw) / 2);
+        top: calc((100% - 24vw) / 2);
         z-index: 4;
         left: 0;
         display: block !important;
         color: #79689c;
-        font-size: 4vw;
+        font-size: 6vw;
       }
     }
     .web {
