@@ -78,7 +78,7 @@
     }
     .container-fluid.mobile {
       position: relative;
-      display: flex;
+      display: flex !important;
       margin-top: 8vh;
 
       height: 50vh;
