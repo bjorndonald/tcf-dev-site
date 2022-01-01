@@ -20,12 +20,12 @@ function FundingSectionOne () {
           Get 30% off your <br />
           first plan
         </h4>
-        {/* <a
+        <a
           href='https://fund.traderscentral.com/sign-up'
           className='btn btn-black'
         >
           Get discount
-        </a> */}
+        </a>
       </div>
     </div>
   )
