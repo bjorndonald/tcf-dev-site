@@ -45,9 +45,13 @@
     height: 100%;
   }
 
-  .container-fluid {
+  .container-fluid.web {
     height: 100vh;
+    // margin-top: 5vh;
     position: relative;
+    // h4 {
+    //   display: none;
+    // }
 
     .btn {
       position: absolute;
@@ -61,13 +65,40 @@
       color: #fff;
     }
   }
+  .mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 540px) {
   .fundingOne {
+    background-color: #f1f1f1;
     .background {
-      background-image: url('/images/funding/mobile_new_year.jpg');
-      width: 100vw;
+      display: none;
+    }
+    .container-fluid.mobile {
+      position: relative;
+      display: flex;
+      margin-top: 8vh;
+
+      height: 50vh;
+      align-items: center;
+      img {
+      }
+      h4 {
+        position: absolute;
+        width: 100vw;
+        text-align: center;
+        top: calc((100% - 4vw) / 2);
+        z-index: 4;
+        left: 0;
+        display: block !important;
+        color: #79689c;
+        font-size: 4vw;
+      }
+    }
+    .web {
+      display: none !important;
     }
   }
 }
