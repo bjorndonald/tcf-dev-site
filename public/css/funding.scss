@@ -45,9 +45,13 @@
     height: 100%;
   }
 
-  .container-fluid {
+  .container-fluid.web {
     height: 100vh;
+    // margin-top: 5vh;
     position: relative;
+    // h4 {
+    //   display: none;
+    // }
 
     .btn {
       position: absolute;
@@ -61,12 +65,41 @@
       color: #fff;
     }
   }
+  .mobile {
+    display: none !important;
+  }
 }
 
 @media (max-width: 540px) {
   .fundingOne {
+    background-color: #f1f1f1;
     .background {
-      width: 119vw;
+      display: none;
+    }
+    .container-fluid.mobile {
+      position: relative;
+      display: flex !important;
+      margin-top: 8vh;
+
+      height: 50vh;
+      flex-direction: column;
+      align-items: center;
+      img {
+      }
+      h4 {
+        position: absolute;
+        width: 100vw;
+        text-align: center;
+        top: calc((100% - 24vw) / 2);
+        z-index: 4;
+        left: 0;
+        display: block !important;
+        color: #79689c;
+        font-size: 6vw;
+      }
+    }
+    .web {
+      display: none !important;
     }
   }
 }
