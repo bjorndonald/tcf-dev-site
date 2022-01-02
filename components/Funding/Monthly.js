@@ -157,7 +157,7 @@ function Monthly (props) {
               >
                 {!isNaN(props.cadText) ? props.currency + ' ' : ''}
                 <span style={{ textDecoration: 'line-through' }}>
-                  {props.cadOriginalText}
+                  {(props.cadOriginalText === props.cadText) ? '' : props.cadOriginalText}
                 </span>{' '}
                 {props.cadText}
               </a>

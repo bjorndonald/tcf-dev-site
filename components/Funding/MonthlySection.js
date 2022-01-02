@@ -102,7 +102,7 @@ function MonthlySection (props) {
             <a
               onClick={e => {
                 setCadOriginalText(345)
-                setCadText(242)
+                setCadText(345)
                 activate(e)
                 setLeverage('1:3')
               }}
