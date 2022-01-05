@@ -44,7 +44,7 @@ the trader in you by unleashing your true potential.`}
         <script src='/js/script.js'></script>
       </Head>
       <BasicsSectionOne />
-      <BasicsSectionTwo url={props.url} />
+      <BasicsSectionTwo {...props} />
       <BasicsSectionThree />
     </Fragment>
   )
