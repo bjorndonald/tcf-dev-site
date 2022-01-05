@@ -1,7 +1,9 @@
 import React from 'react'
-import Faq from './Faq'
+import CryptoFaq from './CryptoFaq'
+import ForexFaq from './ForexFaq'
+import StockFaq from './StockFaq'
 
-function BasicsSectionTwo () {
+function BasicsSectionTwo (props) {
   return (
     <div className='basicsSectionTwo py-5 d-flex align-items-center'>
       <div className='container'>
@@ -26,7 +28,13 @@ function BasicsSectionTwo () {
           </div>
         </div>
         <div className='row'>
-          <Faq />
+          {props.url.includes('forex') ? (
+            <ForexFaq />
+          ) : props.url.includes('crypto') ? (
+            <CryptoFaq />
+          ) : props.url.includes('stocks') ? (
+            <StockFaq />
+          ) : null}
         </div>
 
         <div className='button'>

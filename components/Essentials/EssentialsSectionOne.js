@@ -2,7 +2,7 @@ import React from 'react'
 import Faq from './Faq'
 import _ from 'lodash'
 import { useRouter, withRouter } from 'next/router'
-import { essentials, stocks } from './pagedata'
+import { essentials, stocks, forex } from './pagedata'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import { useLayoutEffect } from 'react'
@@ -36,11 +36,18 @@ function EssentialsSectionOne (props) {
                   {essential.body}
                 </>
               ))
-            : props.url.includes('stock')
+            : props.url.includes('stocks')
             ? stocks.map((stock, index) => (
                 <>
                   <h2>{stock.title}</h2>
                   {stock.body}
+                </>
+              ))
+            : props.url.includes('forex')
+            ? forex.map((fx, index) => (
+                <>
+                  <h2>{fx.title}</h2>
+                  {fx.body}
                 </>
               ))
             : null}{' '}

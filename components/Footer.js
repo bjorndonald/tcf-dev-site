@@ -138,7 +138,7 @@ export default function Footer () {
 
           <div className='col-md-6 socials footer-col-four '></div>
           <div className='col-md-6 d-flex align-items-end justify-content-end'>
-            <p>© 2021, Traders Central Inc. All Rights Reserved.</p>
+            <p>© 2022, Traders Central Inc. All Rights Reserved.</p>
           </div>
         </div>
 

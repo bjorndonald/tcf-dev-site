@@ -67,10 +67,17 @@
       }
     }
 
-    p {
+    p,
+    li {
+      font-family: eina;
+      font-weight: bold;
       font-size: 1.125rem;
       line-height: 1.25rem;
       text-align: justify;
+    }
+
+    li {
+      margin-bottom: 1rem;
     }
   }
 }

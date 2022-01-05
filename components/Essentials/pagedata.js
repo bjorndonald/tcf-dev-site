@@ -1,3 +1,4 @@
+import Link from 'next/link'
 export const essentials = [
   {
     title: 'What Is Cryptocurrency?',
@@ -931,6 +932,430 @@ export const stocks = [
           suits you and start building your wealth today. Do not forget to check
           out Traders Central if you wish to learn more about stocks or get
           funded with significant capital to trade stock instruments.
+        </p>
+      </>
+    )
+  }
+]
+
+export const forex = [
+  {
+    title: 'What is Forex?',
+    body: (
+      <>
+        <p>
+          Forex is an abbreviation used for Foreign Exchange. The exchange of
+          currencies against one another in a virtual market is called foreign
+          exchange. The forex market is one of the world's most liquid markets.
+          As an average estimate, the forex market undergoes a daily trading
+          volume of over 6.6 trillion U.S. Dollars. The foreign exchange market
+          is an over-the-counter (OTC) market where brokers quote prices and
+          participants (buyers and sellers) directly negotiate transactions. The
+          foreign exchange market is not like the old NYSE (NYSE). More
+          precisely, it is a global network of forex markets connected by
+          computer systems (and even by phone).
+        </p>
+      </>
+    )
+  },
+  {
+    title: 'A Brief History',
+    body: (
+      <>
+        <p>
+          Currency trading has been a common practice for ages. For example, on
+          behalf of textile merchants, the Medici family of Florence was the
+          first to create foreign banks in the 15th century. Between the 17th
+          and 18th centuries, the Forex market in Amsterdam started facilitating
+          agents from England and Holland to settle their foreign exchange
+          transactions. However, contemporary forex trading came into existence
+          at the beginning of the 19th century.
+        </p>
+        <p>
+          Around the 1850s, firms like Alexander Brown & Sons became prominent
+          currency merchants in the U.S., followed by additional participants
+          entering the market over the next three decades. Established in 1870,
+          the Gold Standard Monetary System was the most significant event in
+          the history of currency trading. However, since international trades
+          were less regularized even before the first world war, countries
+          shifted their interest towards the emerging forex market, abandoning
+          the gold standard in the post-war era.
+        </p>
+        <p>
+          Consequently, forex holdings increased by more than 10% compared to
+          the gold reserves that grew 6% in the first decade of the 20th
+          century. In the next couple of years, half of the world's started the
+          foreign exchange in sterling. While Paris, New York, and Berlin were
+          the most active trading hubs, London had only two foreign exchange
+          brokers by 1913.
+        </p>
+        <p>
+          By 1928, forex trading became an integral part of London's financial
+          system. The famous Bretton Woods Accord allowed currency fluctuations
+          within 1% of their par value in 1944.
+        </p>
+        <p>
+          After President Nixon scrapped the Bretton Woods Accord and fixed
+          exchange rates, a free-floating setup for currencies came into
+          existence. However, the Forex markets remained closed between 1972 and
+          1973 since the European Joint Float and Bretton Woods Accord were
+          ineffective during this tenure. Eventually, 1973 became the end of
+          state control of Forex, giving way to a fully floating and free
+          market.
+        </p>
+        <p>
+          Reuters introduced computer monitoring in the same year instead of
+          placing trade quotes via telephone and telex. Then, in the mid-1980s,
+          Reuters developed a real-time network for traders based on the
+          electronic system - the present form of modern forex trading.
+        </p>
+      </>
+    )
+  },
+  {
+    title: 'An Overview of Forex Market',
+    body: (
+      <>
+        <p>
+          The forex market is the world's largest financial market, transacting
+          more than 25x trading volume compared to other equities worldwide. It
+          is a virtual market where participants (governments, commercial banks,
+          investment banks, hedge funds, retail brokers, and investors) buy and
+          sell foreign currencies (e.g., foreign exchange rates, currencies,
+          etc.). Currency trading occurs round the clock, five days a week. As a
+          result, it is the world's only genuinely nonstop trading market. It's
+          also been called the Wall Street/Main Street intersection.
+        </p>
+        <p>
+          The foreign exchange market comprises global currencies, although the
+          concentrated volume revolves around significant currencies, including
+          USD, JPY, EUR, GBP, AUD, CHF, CAD. In addition, a small portion of the
+          forex market also includes futures and options trading.
+        </p>
+        <p>
+          Since currencies are always traded in pairs, there are three types of
+          currency pairs known as majors, minors and exotic currency pairs. All
+          trading pairs that include USD are the majors, while non-USD pairs are
+          the minors. Not to mention, when a pair contains USD and a currency of
+          an emerging economy, it is termed as an exotic currency pair, such as
+          USD/NOK, USD/SEK, USD/DKK, etc.
+        </p>
+        <p>
+          Between the F.X. and other financial markets, the critical difference
+          is the operational activity of corporations facilitating daily
+          business transactions and hedging longer-term risks. The primary
+          purpose of institutional organizations entering the forex market is to
+          undergo large business transactions, risk management and fulfil
+          long-term investment needs.
+        </p>
+      </>
+    )
+  },
+  {
+    title: "Forex Trading: A Beginner's Guide",
+    body: (
+      <>
+        <p>
+          Forex trading is a highly volatile market and carries increased risk
+          exposure. The forex market doesn't have a central regulatory authority
+          overseeing it. However, countries have set up regional regulatory
+          institutions like ASIC, CYSEC, FCA, and NFSA to maintain the financial
+          system's integrity and stability. These regulatory bodies formulate
+          rules and regulations for financial intermediaries to protect citizens
+          from broker's malpractices. Not to mention, forex trading is still
+          unregulated in various jurisdictions worldwide.
+        </p>
+        <p>
+          The world's largest banks are the primary market makers in the
+          currency market. The interbank market is a subsegment of the forex
+          market where banks trade on behalf of themselves or their customers.
+          Banks have developed internal processes to assess and accept sovereign
+          and credit risk for protection. In addition, the industry-imposed
+          regulations aim to protect the interest of all participants.
+        </p>
+        <p>
+          The market pricing is based on the supply and demand mechanism because
+          each participating bank quotes ask and bid prices for a specific
+          currency. The system's massive trade flows make it difficult for
+          participants to manipulate currency prices.
+        </p>
+        <p>
+          With access to interbank dealing, the system helps to ensure
+          transparency for investors. However, brokers/dealers sometimes
+          re-quote prices and even trade against their customers. Therefore,
+          regulated brokers prefer non-regulated brokers while signing up with a
+          financial intermediary.
+        </p>
+        <p>
+          Moreover, traders should also seek other protections available in case
+          the company becomes bankrupt. For instance, brokers registered with
+          funds compensations schemes such as IFSC offer indemnity insurance to
+          their clients in the event of insolvency.
+        </p>
+      </>
+    )
+  },
+  {
+    title: 'How to Get Started with Forex Trading?',
+    body: (
+      <ol>
+        <li>Open a trading account.</li>
+        <p>
+          Once you've decided to step into forex trading, the first thing you
+          need is to open a trading account with a broker. It is recommended to
+          start trading with a demo account first until you are familiar with
+          trading on the platform and confident in your ability to trade. Once
+          you see good results on the demo, you can deposit money into a live
+          account and start trading it.
+        </p>
+        <li>Develop a trading strategy</li>
+        <p>
+          A good trading strategy is critically essential for a meaningful
+          trading experience. Though not always possible, a trading strategy
+          helps you time the market moves reasonably well and enables you to set
+          a roadmap for trading. Remember, switching between different trading
+          strategies can make you confused. Therefore, try to stick with one
+          good trading strategy with an edge. It is important to focus on the
+          win rate and risk-reward ratios of your trade setups to identify a
+          strategy with a strong edge.
+        </p>
+        <li>Journal and reflect on your results</li>
+        <p>
+          If you plan to master the art of trading forex, it is important to
+          journal your trades and constantly reflect upon your results. This
+          will pave the way for you to improve your mindset and tweak the
+          strategy to increase profitability. In addition, the markets are
+          constantly changing all the time. So it is important to reflect and
+          adapt depending on the changes.
+        </p>
+      </ol>
+    )
+  },
+  {
+    title: 'Forex Trading Styles',
+    body: (
+      <>
+        <p>
+          A long and short trade are the two basic forex trade types. An
+          investor betting on future appreciation is known as a long trade. As
+          the name implies, a short trade bet that the currency pair's price
+          will fall. With technical analysis, confirmations, like breakout or
+          moving average, can also help traders refine their trading approach.
+          But it depends on the strategy of the trader. So let's dive further
+          into the three most common trading styles below.
+        </p>
+        <h3>Scalping</h3>
+        <p>
+          Scalping is a trading style where the trader enters minimal time
+          frames and is usually in and out of the position within minutes.
+        </p>
+        <h3>Day Trading</h3>
+        <p>
+          Day trading refers to types of trading in which positions are held and
+          liquidated on the same day. A day trade lasts for minutes or a maximum
+          of a few hours.
+        </p>
+        <h3>Swing Trading</h3>
+        <p>
+          Swing traders hold positions for several days or weeks as opposed to
+          day trading. Traders are also likely to find good swing trade
+          opportunities due to fundamental changes such as major governmental or
+          economic policy changes.
+        </p>
+        <p>
+          The type of trading style you choose should also align with your
+          personality. For example, you may not want to hold positions overnight
+          for multiple days. In that case, you'd best suit for day trading or
+          scalping. Again, it's best to try these different styles and determine
+          what works best for you.
+        </p>
+      </>
+    )
+  },
+  {
+    title: 'Role of Risk Management in Forex Trading ',
+    body: (
+      <>
+        <p>
+          As mentioned above, forex trading carries excessive risk, and hence it
+          is important to follow proper risk management practices.
+        </p>
+        <p>
+          More than profit targets, defining your risk exposure per trade is the
+          most important thing. Because risk is the only thing directly in your
+          control, you can't make money if you lose capital by busting the
+          account.
+        </p>
+        <p>
+          You can risk 0.5% or 1% per trade as an example. It can be lesser or
+          even more depending on your risk appetite. Make sure you are
+          comfortable with the risk amount and won't panic upon facing a losing
+          streak.
+        </p>
+        <h3>Forex Hedging</h3>
+        <p>
+          In the forex market, hedging involves seeking protection against
+          possible losses. Forex hedging is a form of short-term protection that
+          uses options.
+        </p>
+        <p>Primarily, two types of hedging strategies are used in Forex.</p>
+        <ol>
+          <li>
+            Opening an opposite position in the same currency pair, for example,
+            long GBP/USD and short GBP/USD.
+          </li>
+          <li>
+            Selling your position if the investor goes long on a currency.
+          </li>
+
+          <p>
+            <b>Note:</b> Not all brokers allow traders to incorporate hedging
+            techniques. Therefore, you must confirm the trading restrictions
+            before signing up with a broker of your choice.
+          </p>
+        </ol>
+      </>
+    )
+  },
+  {
+    title: 'Pros and Cons of Forex Trading',
+    body: (
+      <>
+        <p>
+          Like all other markets, forex trading also has some pros and cons
+          listed below.
+        </p>
+        <h3>Pros</h3>
+        <p>
+          <b>Liquidity: </b> The forex market is the world's most liquid market.
+          Traders can quickly fill up their positions at desired prices
+          throughout the day. However, the forex market is known to have more
+          liquidity during overlapping sessions. e.g. Many traders prefer the
+          overlap of Newyork and London sessions
+        </p>
+        <p>
+          <b>Accessibility:</b> The forex market remains open five days a week,
+          starting from the Asian session and ending in New York. The long time
+          horizon and comprehensive coverage allow traders to profit or recover
+          losses exploring multiple opportunities.
+        </p>
+        <p>
+          <b>Leverage: </b>With forex trading's extensive use of leverage, you
+          can start small and compound your account over time.
+        </p>
+        <p>
+          <b>Decentralization:</b> The forex market is decentralized compared to
+          the stock or bond market. Thus the chances of price manipulations
+          because of insider trading are lower.
+        </p>
+        <p>
+          <b>Availability of Tools:</b> You can easily open a broker account and
+          install the trading platform of your choice (mt4, mt5, ctrader), and
+          they don't cost anything to start as well.
+        </p>
+        <h3>Cons</h3>
+        <p>
+          <b>Irregular income: </b> Unlike the stock market, the absence of
+          regular income, such as dividend payments, can make it less attractive
+          to traders looking for a steady income stream.
+        </p>
+        <p>
+          <b>Lack of Capital for small investors:</b> Though Forex is a great
+          way to make money, realistically, you need a large capital to make a
+          living out of it. Most people start with a small amount of capital.
+          Hence it is not possible to trade full time immediately. So, you can
+          grow and compound your capital into a large sum over multiple years.
+          If you don't want to wait for numerous years, you can access services
+          from <Link href='/products/funding'>Traders Central Fund</Link> and
+          trade a large account right away. Then, you can either choose an
+          instant live funding plan or perform a challenge to prove your skills
+          and get the account.
+        </p>
+      </>
+    )
+  },
+  {
+    title: 'Common Forex Terminologies',
+    body: (
+      <>
+        <p>
+          Getting yourself familiarized with different forex terminologies is
+          essential for every trader. So let us enlist a few of them below.
+        </p>
+        <p>
+          Ask: An ask is the lowest price that a buyer is willing to pay.
+          Therefore, the "ask" price usually exceeds the "bid" price.
+        </p>
+        <p>
+          Bid: A bid is a price that a seller is willing to accept to sell a
+          currency. While generally lower than asking prices, bid prices can be
+          higher in high-demand situations but rare in Forex.
+        </p>
+        <p>
+          CFD: CFD stands for contract for differences. It is a derivative
+          instrument that allows traders to speculate on currency price
+          movements without owning the underlying asset.
+        </p>
+        <p>
+          Lot: In Forex, currencies are traded in lots. Lot sizes include
+          standard, mini, and micro. For example, while there are 100,000 units
+          of a currency in a standard lot, a mini lot has 10,000 units, and
+          micro-lots comprise 1,000 units.
+        </p>
+        <p>
+          <b>Leverage:</b> Leverage is borrowing money to increase returns. The
+          forex market is known for its high leverage, allowing traders to
+          maximize their returns.
+        </p>
+        <p>
+          <b>Spread:</b> The spread is a small fee built into every forex trade.
+          An exchange rate spread is a difference between buying and selling
+          prices.
+        </p>
+        <p>
+          <b>Pips:</b> A pip stands for "percentage in point." It is used to
+          measure the minimum price move in Forex.
+        </p>
+      </>
+    )
+  },
+  {
+    title: 'Frequently Asked Questions (FAQs) in Forex',
+    body: (
+      <>
+        <h4>Where can you trade Forex?</h4>
+        <p>
+          Forex is traded on three markets: spot, forward, and futures. The spot
+          market is the largest because it is the underlying asset for forwards
+          and futures.
+        </p>
+        <h4>Is Forex regulated?</h4>
+        <p>
+          No, it is not. However, some countries like the U.S. and U.K. have a
+          strict regulatory infrastructure for brokers dealing in Forex. Not to
+          mention, forex trading is still unregulated in various jurisdictions
+          worldwide.
+        </p>
+        <h4>What are binary options? </h4>
+        <p>
+          A binary option is an exotic option with a payoff of either a fixed
+          monetary amount or nothing. Cash-or-nothing is the most common type of
+          binary options trading.
+        </p>
+        <h4>Is Forex trading legal?</h4>
+        <p>
+          Yes, forex trading is completely legal in most countries worldwide.
+          However, some countries like India, Belgium, Malaysia, and North Korea
+          have strict forex restrictions. People are only allowed to trade a
+          limited number of pairs in such countries.
+        </p>
+        <h4>Is Forex trading a gamble?</h4>
+        <p>
+          No, forex trading is not gambling. Instead of just spinning a slot
+          machine, you need to perform technical and fundamental analysis to
+          determine the price direction of an underlying asset. You need to
+          learn forex trading skills to develop different trading strategies to
+          make profitable trading decisions.
         </p>
       </>
     )
