@@ -74,13 +74,10 @@ function BasicsSectionTwo (props) {
         {/* </Link> */}
         <div className='button'>
           {page ? (
-            <a href={'/essentials?page=' + page} className='btn btn-black'>
+            <a href={'/essentials/' + page} className='btn btn-black'>
               See Essential Articles
             </a>
-          ) : 
-            null
-            
-          }
+          ) : null}
         </div>
       </div>
     </div>

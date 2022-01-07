@@ -21,14 +21,16 @@ function EssentialsSectionOne (props) {
         <div className='row align-items-center justify-content-between'>
           <div className='col-md-7'>
             <h1>
-              {props.url.includes('crypto')
+              {props.page === 'crypto'
                 ? 'Crypto'
-                : props.url.includes('stocks')
-                ? 'Stock'
+                : props.page === 'stocks'
+                ? 'Stocks'
+                : props.page === 'forex'
+                ? 'Forex'
                 : null}{' '}
               Essentials
             </h1>
-            <h4>The must-know basics to become successful in crypto</h4>
+            <h4>The must-know basics to become successful in {props.page}</h4>
           </div>
           <div className='col-md-4'>
             <img src='/images/essentials/header.PNG' alt='' />

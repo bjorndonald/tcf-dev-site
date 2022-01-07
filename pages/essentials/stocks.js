@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react'
-import MetaTag from './../components/MetaTag'
+import MetaTag from './../../components/MetaTag'
 import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import Head from 'next/head'
 
-import EssentialsSectionOne from '../components/Essentials/EssentialsSectionOne'
-import EssentialsSectionTwo from '../components/Essentials/EssentialsSectionTwo'
+import EssentialsSectionOne from '../../components/Essentials/EssentialsSectionOne'
+import EssentialsSectionTwo from '../../components/Essentials/EssentialsSectionTwo'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 import { useEffect } from 'react'
@@ -22,16 +22,9 @@ export default function essentials (props) {
   return (
     <Fragment>
       <MetaTag
-        title={`${router.query.page.substring(0, 1).toUpperCase() +
-          router.query.page.substring(1)} Essentials | Traders Central`}
+        title={`Stocks Essentials | Traders Central`}
         description={
-          router.query.page === 'crypto'
-            ? 'The absolute basics you need to get started with Cryptocurrency.'
-            : router.query.page === 'forex'
-            ? "The beginner's guide to understand the utmost essentials in Forex."
-            : router.query.page === 'stocks'
-            ? 'Your comprehensive guide to learn the basics you need to get started with Stocks.'
-            : null
+          'Your comprehensive guide to learn the basics you need to get started with Stocks.'
         }
       />
       <Head>
@@ -52,7 +45,7 @@ export default function essentials (props) {
         ></script>
         {/* <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script> */}
         <script src='/js/script.js'></script>
-        <EssentialsSectionOne {...props} page={router.query} />
+        <EssentialsSectionOne {...props} page={'stocks'} />
         <EssentialsSectionTwo />
       </Head>
     </Fragment>
