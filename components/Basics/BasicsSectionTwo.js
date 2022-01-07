@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import CryptoFaq from './CryptoFaq'
 import ForexFaq from './ForexFaq'
 import StockFaq from './StockFaq'
+import Link from 'next/link'
 
 function BasicsSectionTwo (props) {
   const [page, setPage] = useState(null)
@@ -60,11 +61,33 @@ function BasicsSectionTwo (props) {
             <StockFaq />
           ) : null}
         </div>
-
+        {/* <Link
+              href={{
+                pathname: 'essentials',
+                query: {
+                  page: page
+                }
+              }}
+              as={'essentials'}
+              className='btn btn-black'
+            > */}
+        {/* </Link> */}
         <div className='button'>
-          <a href='' className='btn btn-black'>
-            See Essential Articles
-          </a>
+          {page ? (
+            <a href={'/essentials?page=' + page} className='btn btn-black'>
+              See Essential Articles
+            </a>
+          ) : (
+            <a
+              onClick={e => {
+                e.preventDefault()
+                alert('Select a section')
+              }}
+              className='btn btn-black'
+            >
+              See Essential Articles
+            </a>
+          )}
         </div>
       </div>
     </div>

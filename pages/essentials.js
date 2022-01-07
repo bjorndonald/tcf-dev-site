@@ -17,10 +17,15 @@ export function getServerSideProps (context) {
 }
 
 export default function essentials (props) {
+  const router = useRouter()
+  console.log(useRouter())
   return (
     <Fragment>
       <MetaTag
-        title='Trading Basics - Learn The Fundamentals of Trading | Traders Central'
+        title={`${router.query.page.substring(0, 1).toUpperCase() +
+          router.query.page.substring(
+            1
+          )} Essentials - Learn The Fundamentals of Trading | Traders Central`}
         description={`Learn the Fundamentals of Forex, Crypto &amp; Stock Trading and discover 
 the trader in you by unleashing your true potential.`}
       />
@@ -42,7 +47,7 @@ the trader in you by unleashing your true potential.`}
         ></script>
         {/* <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script> */}
         <script src='/js/script.js'></script>
-        <EssentialsSectionOne {...props} />
+        <EssentialsSectionOne {...props} page={router.query} />
         <EssentialsSectionTwo />
       </Head>
     </Fragment>

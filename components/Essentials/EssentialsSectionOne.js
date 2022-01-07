@@ -1,14 +1,20 @@
 import React from 'react'
 import Faq from './Faq'
 import _ from 'lodash'
-import { useRouter, withRouter } from 'next/router'
+import { useRouter } from 'next/dist/client/router'
+import { withRouter } from 'next/router'
 import { essentials, stocks, forex } from './pagedata'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import { useLayoutEffect } from 'react'
 
 function EssentialsSectionOne (props) {
-  console.log(props.url)
+  const router = useRouter()
+
+  useEffect(() => {
+    console.log(props.page)
+    return () => {}
+  }, [])
   return (
     <div className='essentialsSectionOne'>
       <div className='container'>
@@ -17,7 +23,7 @@ function EssentialsSectionOne (props) {
             <h1>
               {props.url.includes('crypto')
                 ? 'Crypto'
-                : props.url.includes('stock')
+                : props.url.includes('stocks')
                 ? 'Stock'
                 : null}{' '}
               Essentials
