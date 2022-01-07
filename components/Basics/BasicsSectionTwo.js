@@ -77,17 +77,10 @@ function BasicsSectionTwo (props) {
             <a href={'/essentials?page=' + page} className='btn btn-black'>
               See Essential Articles
             </a>
-          ) : (
-            <a
-              onClick={e => {
-                e.preventDefault()
-                alert('Select a section')
-              }}
-              className='btn btn-black'
-            >
-              See Essential Articles
-            </a>
-          )}
+          ) : 
+            null
+            
+          }
         </div>
       </div>
     </div>

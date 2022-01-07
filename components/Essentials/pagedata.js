@@ -392,6 +392,7 @@ export const essentials = [
           can be confusing. So let's enlist some tips to make things a little
           easier for you.{' '}
         </p>
+        <br />
         <ol>
           <li>Learn about different Crypto Platforms</li>
         </ol>
@@ -416,6 +417,7 @@ export const essentials = [
           and cryptocurrency deposits, check out{' '}
           <a href='https://tccrypto.io/fees'>TC Crypto</a>.
         </p>
+        <br />
         <ul>
           <li>Create an Account</li>
         </ul>
@@ -430,6 +432,8 @@ export const essentials = [
           Identity Card/Passport/ Driving license and utility bill needed for
           address verification.
         </p>
+
+        <br />
         <ul>
           <li>Buy the Crypto Assets of your choice.</li>
         </ul>
@@ -445,6 +449,7 @@ export const essentials = [
           presented here is meant to be financial advice but simply an
           educational guide.
         </p>
+        <br />
         <ul>
           <li>Maintain a Journal and monitor your asset portfolio</li>
         </ul>
@@ -828,6 +833,7 @@ export const stocks = [
           below.
         </p>
         <ol>
+          <br />
           <li>Research about the companies you want to invest in</li>
           <p>
             It's critical to research a company before buying its stock. Learn
@@ -1099,6 +1105,7 @@ export const forex = [
     title: 'How to Get Started with Forex Trading?',
     body: (
       <ol>
+        <br />
         <li>Open a trading account.</li>
         <p>
           Once you've decided to step into forex trading, the first thing you
