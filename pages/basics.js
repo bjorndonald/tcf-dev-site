@@ -45,7 +45,7 @@ the trader in you by unleashing your true potential.`}
       </Head>
       <BasicsSectionOne />
       <BasicsSectionTwo {...props} />
-      <BasicsSectionThree />
+      {/* <BasicsSectionThree /> */}
     </Fragment>
   )
 }
