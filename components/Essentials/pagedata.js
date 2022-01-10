@@ -634,49 +634,49 @@ export const stocks = [
           below.
         </p>
         <p>
-          Stockbrokers: Stockbrokers are licenced professionals who buy and sell
-          securities on behalf of investors. Brokers act as financial
+          <b>Stockbrokers</b>: Stockbrokers are licenced professionals who buy
+          and sell securities on behalf of investors. Brokers act as financial
           intermediaries between investors and stock exchanges, buying and
           selling stocks on their behalf. Not to mention, companies need to open
           an account with a retail broker to access the stock markets.
         </p>
         <p>
-          Portfolio Managers: Stock traders are not necessarily skilled enough
-          to make profitable decisions. Therefore, they might wish to seek the
-          services of expert professionals. Hence, they may hire portfolio
-          managers. In addition, companies, such as hedge funds, pension plans,
-          and mutual funds may also have portfolio managers to decide and set
-          investment strategies.
+          <b>Portfolio Managers</b>: Stock traders are not necessarily skilled
+          enough to make profitable decisions. Therefore, they might wish to
+          seek the services of expert professionals. Hence, they may hire
+          portfolio managers. In addition, companies, such as hedge funds,
+          pension plans, and mutual funds may also have portfolio managers to
+          decide and set investment strategies.
         </p>
         <p>
-          Market makers: Market makers facilitate trading by posting bids and
-          asking prices, in addition to holding stock. They also ensure market
-          liquidity for a particular (set of) shares and profit from the spread
-          between the bid and ask prices. Market maker brokers are accused of
-          price manipulation since they do not pass clients' orders directly to
-          the market unless they intervene.
+          <b>Market makers</b>: Market makers facilitate trading by posting bids
+          and asking prices, in addition to holding stock. They also ensure
+          market liquidity for a particular (set of) shares and profit from the
+          spread between the bid and ask prices. Market maker brokers are
+          accused of price manipulation since they do not pass clients' orders
+          directly to the market unless they intervene.
         </p>
         <p>
-          Investment Bankers: Companies looking to go public via an IPO or those
-          anticipating mergers and acquisitions have representatives called
-          investment banks. They handle the listing process of companies
+          <b>Investment Bankers</b>: Companies looking to go public via an IPO
+          or those anticipating mergers and acquisitions have representatives
+          called investment banks. They handle the listing process of companies
           following the stock market's regulations.
         </p>
         <p>
-          Custodian: Custodians keep clients' investments and securities safe,
-          preventing the risk of theft or loss. These institutions work in line
-          with the exchange to transfer shares between trading parties'
+          <b>Custodian</b>: Custodians keep clients' investments and securities
+          safe, preventing the risk of theft or loss. These institutions work in
+          line with the exchange to transfer shares between trading parties'
           accounts.
         </p>
         <p>
-          Speculators: Speculators make market-directional bets on individual
-          stocks or broad indexes. Some speculators hold more prolonged
-          positions while others trade like day traders based on fundamental or
-          technical analysis.
+          <b>Speculators</b>: Speculators make market-directional bets on
+          individual stocks or broad indexes. Some speculators hold more
+          prolonged positions while others trade like day traders based on
+          fundamental or technical analysis.
         </p>
         <p>
-          Arbitrageurs: Arbitrageurs identify exploitation in the market for
-          low-risk gains. Algorithms and HFT programmes typically help to
+          <b>Arbitrageurs</b>: Arbitrageurs identify exploitation in the market
+          for low-risk gains. Algorithms and HFT programmes typically help to
           perform this type of arbitrage.
         </p>
         <p>
@@ -1290,21 +1290,21 @@ export const forex = [
           essential for every trader. So let us enlist a few of them below.
         </p>
         <p>
-          Ask: An ask is the lowest price that a buyer is willing to pay.
+          <b>Ask</b>: An ask is the lowest price that a buyer is willing to pay.
           Therefore, the "ask" price usually exceeds the "bid" price.
         </p>
         <p>
-          Bid: A bid is a price that a seller is willing to accept to sell a
-          currency. While generally lower than asking prices, bid prices can be
-          higher in high-demand situations but rare in Forex.
+          <b>Bid</b>: A bid is a price that a seller is willing to accept to
+          sell a currency. While generally lower than asking prices, bid prices
+          can be higher in high-demand situations but rare in Forex.
         </p>
         <p>
-          CFD: CFD stands for contract for differences. It is a derivative
-          instrument that allows traders to speculate on currency price
-          movements without owning the underlying asset.
+          <b>CFD</b>: CFD stands for contract for differences. It is a
+          derivative instrument that allows traders to speculate on currency
+          price movements without owning the underlying asset.
         </p>
         <p>
-          Lot: In Forex, currencies are traded in lots. Lot sizes include
+          <b>Lot</b>: In Forex, currencies are traded in lots. Lot sizes include
           standard, mini, and micro. For example, while there are 100,000 units
           of a currency in a standard lot, a mini lot has 10,000 units, and
           micro-lots comprise 1,000 units.
@@ -1330,7 +1330,7 @@ export const forex = [
     title: 'Frequently Asked Questions (FAQs) in Forex',
     body: (
       <>
-        <h4>Where can you trade Forex?</h4>
+        <h4 className='mt-2'>Where can you trade Forex?</h4>
         <p>
           Forex is traded on three markets: spot, forward, and futures. The spot
           market is the largest because it is the underlying asset for forwards
