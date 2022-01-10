@@ -75,7 +75,7 @@ function BasicsSectionTwo (props) {
         <div className='button'>
           {page ? (
             <a href={'/essentials/' + page} className='btn btn-black'>
-              See Essential Articles
+              See Essentials Articles
             </a>
           ) : null}
         </div>

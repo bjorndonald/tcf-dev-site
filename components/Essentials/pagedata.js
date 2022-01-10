@@ -393,9 +393,10 @@ export const essentials = [
           easier for you.{' '}
         </p>
         <br />
-        <ol>
+        <br />
+        <ul className='mt-3'>
           <li>Learn about different Crypto Platforms</li>
-        </ol>
+        </ul>
         <p>
           You can buy cryptocurrency on different platforms, including crypto
           exchanges, brokers and hybrid intermediaries. You must choose the best
@@ -418,7 +419,8 @@ export const essentials = [
           <a href='https://tccrypto.io/fees'>TC Crypto</a>.
         </p>
         <br />
-        <ul>
+        <br />
+        <ul className='mt-3'>
           <li>Create an Account</li>
         </ul>
         <p>
@@ -434,7 +436,8 @@ export const essentials = [
         </p>
 
         <br />
-        <ul>
+        <br />
+        <ul className='mt-3'>
           <li>Buy the Crypto Assets of your choice.</li>
         </ul>
         <p>
@@ -450,7 +453,8 @@ export const essentials = [
           educational guide.
         </p>
         <br />
-        <ul>
+        <br />
+        <ul className='mt-3'>
           <li>Maintain a Journal and monitor your asset portfolio</li>
         </ul>
         <p>
