@@ -15,37 +15,58 @@ function BasicsSectionTwo (props) {
         </div>
 
         <div className='row'>
-          <div className='column' style={{ cursor: 'pointer' }}>
-            <img src='/images/basic/basicImg1.PNG' alt='' />
-            {/* <div className='purple-box'></div> */}
-            <a
-              href={'/essentials/forex'}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <span>Click to view</span>
-            </a>
-          </div>
-          <div className='column' style={{ cursor: 'pointer' }}>
-            <img src='/images/basic/basicImg2.PNG' alt='' />
-            <a
-              href={'/essentials/stocks'}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <span>Click to view</span>
-            </a>
-          </div>
-          <div className='column' style={{ cursor: 'pointer' }}>
-            <img src='/images/basic/basicImg3.PNG' alt='' />
-            <a
-              href={'/essentials/crypto'}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <span>Click to view</span>
-            </a>
-          </div>
+          <a
+            className='tc-column'
+            target='_blank'
+            rel='noopener noreferrer'
+            href={'/essentials/forex'}
+          >
+            <div className='column' style={{ cursor: 'pointer' }}>
+              <img src='/images/basic/basicImg1.PNG' alt='' />
+              {/* <div className='purple-box'></div> */}
+              <a
+                href={'/essentials/forex'}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <span>Click to view</span>
+              </a>
+            </div>
+          </a>
+          <a
+            className='tc-column'
+            target='_blank'
+            rel='noopener noreferrer'
+            href={'/essentials/stocks'}
+          >
+            <div className='column' style={{ cursor: 'pointer' }}>
+              <img src='/images/basic/basicImg2.PNG' alt='' />
+              <a
+                href={'/essentials/stocks'}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <span>Click to view</span>
+              </a>
+            </div>
+          </a>
+          <a
+            className='tc-column'
+            target='_blank'
+            rel='noopener noreferrer'
+            href={'/essentials/crypto'}
+          >
+            <div className='column' style={{ cursor: 'pointer' }}>
+              <img src='/images/basic/basicImg3.PNG' alt='' />
+              <a
+                href={'/essentials/crypto'}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <span>Click to view</span>
+              </a>
+            </div>
+          </a>
         </div>
 
         <div className='row'>

@@ -395,7 +395,9 @@ export const essentials = [
         <br />
         <br />
         <ul className='mt-3'>
-          <li>Learn about different Crypto Platforms</li>
+          <li>
+            <b>Learn about different Crypto Platforms</b>
+          </li>
         </ul>
         <p>
           You can buy cryptocurrency on different platforms, including crypto
@@ -421,7 +423,9 @@ export const essentials = [
         <br />
         <br />
         <ul className='mt-3'>
-          <li>Create an Account</li>
+          <li>
+            <b>Create an Account</b>
+          </li>
         </ul>
         <p>
           After researching well enough where to buy crypto, choose one of the
@@ -438,7 +442,9 @@ export const essentials = [
         <br />
         <br />
         <ul className='mt-3'>
-          <li>Buy the Crypto Assets of your choice.</li>
+          <li>
+            <b>Buy the Crypto Assets of your choice.</b>
+          </li>
         </ul>
         <p>
           Finally, making a purchase is the last step. Select your favourite
@@ -455,7 +461,9 @@ export const essentials = [
         <br />
         <br />
         <ul className='mt-3'>
-          <li>Maintain a Journal and monitor your asset portfolio</li>
+          <li>
+            <b>Maintain a Journal and monitor your asset portfolio</b>
+          </li>
         </ul>
         <p>
           It's critical to maintain a journal to keep track of your actions when
@@ -838,7 +846,9 @@ export const stocks = [
         </p>
         <ol>
           <br />
-          <li>Research about the companies you want to invest in</li>
+          <li>
+            <b>Research about the companies you want to invest in</b>
+          </li>
           <p>
             It's critical to research a company before buying its stock. Learn
             and verify your knowledge about your prospective firm. It might be a
@@ -848,7 +858,9 @@ export const stocks = [
             its business model, revenue sources, turnover ratio, growth
             potential, and past performance.
           </p>
-          <li>Understand Investment Basics</li>
+          <li>
+            <b>Understand Investment Basics</b>
+          </li>
           <p>
             Learn the basics of investing before jumping into the stock market.
             It is critical to have clearly defined goals and a workable strategy
@@ -857,7 +869,9 @@ export const stocks = [
             limited by starting with small investments. Do not invest more than
             5% of your investment in a single stock.
           </p>
-          <li>Select a broker carefully</li>
+          <li>
+            <b>Select a broker carefully</b>
+          </li>
           <p>
             Checking a broker's regulation status is one of the most critical
             while signing up with a broker. First, verify the broker's
@@ -881,7 +895,9 @@ export const stocks = [
             also check the supported order types (stop, limit, trailing stops,
             etc.).
           </p>
-          <li>Decide On Your Investment Budget</li>
+          <li>
+            <b>Decide On Your Investment Budget</b>
+          </li>
           <p>
             Buying a certain number of shares or filling your portfolio with
             just one stock isn't always the best idea. It is wise to decide on
@@ -896,7 +912,9 @@ export const stocks = [
             storm. Then, once you're comfortable with how things work, you can
             buy more stock and diversify your portfolio.
           </p>
-          <li>Maintain a Journal to record your Stock Portfolio</li>
+          <li>
+            <b>Maintain a Journal to record your Stock Portfolio</b>
+          </li>
           <p>
             It's essential to maintain a journal to record your actions in the
             market, like what stocks you buy and sell, the quantity & entry/exit
@@ -906,7 +924,9 @@ export const stocks = [
             stock investments, so the entire portfolio's value and individual
             stock contributions can all be seen in one glance.
           </p>
-          <li>Evaluate the purpose of your investment</li>
+          <li>
+            <b>Evaluate the purpose of your investment</b>
+          </li>
           <p>
             Analyze the investment reasons and prioritize them to determine the
             timeline and risk tolerance level before staking your interest in
@@ -1110,7 +1130,9 @@ export const forex = [
     body: (
       <ol>
         <br />
-        <li>Open a trading account.</li>
+        <li>
+          <b>Open a trading account.</b>
+        </li>
         <p>
           Once you've decided to step into forex trading, the first thing you
           need is to open a trading account with a broker. It is recommended to
@@ -1119,7 +1141,9 @@ export const forex = [
           you see good results on the demo, you can deposit money into a live
           account and start trading it.
         </p>
-        <li>Develop a trading strategy</li>
+        <li>
+          <b>Develop a trading strategy</b>
+        </li>
         <p>
           A good trading strategy is critically essential for a meaningful
           trading experience. Though not always possible, a trading strategy
@@ -1130,7 +1154,9 @@ export const forex = [
           win rate and risk-reward ratios of your trade setups to identify a
           strategy with a strong edge.
         </p>
-        <li>Journal and reflect on your results</li>
+        <li>
+          <b>Journal and reflect on your results</b>
+        </li>
         <p>
           If you plan to master the art of trading forex, it is important to
           journal your trades and constantly reflect upon your results. This
