@@ -15,51 +15,73 @@ function BasicsSectionTwo (props) {
         </div>
 
         <div className='row'>
-          <div
-            className='column'
-            style={{ cursor: 'pointer' }}
-            onClick={() => {
-              console.log(page)
-              if (page === 'forex') setPage(null)
-              else setPage('forex')
-            }}
-          >
+          <div className='column' style={{ cursor: 'pointer' }}>
             <img src='/images/basic/basicImg1.PNG' alt='' />
             {/* <div className='purple-box'></div> */}
-            <span>Click to view</span>
+            <a
+              href={'/essentials/forex'}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <span>Click to view</span>
+            </a>
           </div>
-          <div
-            className='column'
-            style={{ cursor: 'pointer' }}
-            onClick={() => {
-              if (page === 'stocks') setPage(null)
-              else setPage('stocks')
-            }}
-          >
+          <div className='column' style={{ cursor: 'pointer' }}>
             <img src='/images/basic/basicImg2.PNG' alt='' />
-            <span>Click to view</span>
+            <a
+              href={'/essentials/stocks'}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <span>Click to view</span>
+            </a>
           </div>
-          <div
-            className='column'
-            style={{ cursor: 'pointer' }}
-            onClick={() => {
-              if (page === 'crypto') setPage(null)
-              else setPage('crypto')
-            }}
-          >
+          <div className='column' style={{ cursor: 'pointer' }}>
             <img src='/images/basic/basicImg3.PNG' alt='' />
-            <span>Click to view</span>
+            <a
+              href={'/essentials/crypto'}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <span>Click to view</span>
+            </a>
           </div>
         </div>
 
         <div className='row'>
-          {page === 'forex' ? (
-            <ForexFaq />
-          ) : page === 'crypto' ? (
-            <CryptoFaq />
-          ) : page === 'stocks' ? (
-            <StockFaq />
-          ) : null}
+          <ForexFaq />
+          <div className='button'>
+            <a
+              href={'/essentials/forex'}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='btn btn-black'
+            >
+              See Forex Essentials
+            </a>
+          </div>
+          <StockFaq />
+          <div className='button'>
+            <a
+              href={'/essentials/stocks'}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='btn btn-black'
+            >
+              See Stock Essentials
+            </a>
+          </div>
+          <CryptoFaq />
+          <div className='button'>
+            <a
+              href={'/essentials/crypto'}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='btn btn-black'
+            >
+              See Crypto Essentials
+            </a>
+          </div>
         </div>
         {/* <Link
               href={{
@@ -72,13 +94,6 @@ function BasicsSectionTwo (props) {
               className='btn btn-black'
             > */}
         {/* </Link> */}
-        <div className='button'>
-          {page ? (
-            <a href={'/essentials/' + page} className='btn btn-black'>
-              See Essentials Articles
-            </a>
-          ) : null}
-        </div>
       </div>
     </div>
   )
