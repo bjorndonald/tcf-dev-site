@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
 .essentialsSectionOne {
   .container {
+    ol {
+      b {
+        li::marker {
+          font-weight: bold;
+        }
+      }
+    }
     // padding-bottom: 5rem;
     .col-md-7 {
       h1 {

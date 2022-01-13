@@ -395,9 +395,9 @@ export const essentials = [
         <br />
         <br />
         <ul className='mt-3'>
-          <li>
-            <b>Learn about different Crypto Platforms</b>
-          </li>
+          <b>
+            <li>Learn about different Crypto Platforms</li>
+          </b>
         </ul>
         <p>
           You can buy cryptocurrency on different platforms, including crypto
@@ -423,9 +423,9 @@ export const essentials = [
         <br />
         <br />
         <ul className='mt-3'>
-          <li>
-            <b>Create an Account</b>
-          </li>
+          <b>
+            <li>Create an Account</li>
+          </b>
         </ul>
         <p>
           After researching well enough where to buy crypto, choose one of the
@@ -442,9 +442,9 @@ export const essentials = [
         <br />
         <br />
         <ul className='mt-3'>
-          <li>
-            <b>Buy the Crypto Assets of your choice.</b>
-          </li>
+          <b>
+            <li>Buy the Crypto Assets of your choice.</li>
+          </b>
         </ul>
         <p>
           Finally, making a purchase is the last step. Select your favourite
@@ -461,9 +461,9 @@ export const essentials = [
         <br />
         <br />
         <ul className='mt-3'>
-          <li>
-            <b>Maintain a Journal and monitor your asset portfolio</b>
-          </li>
+          <b>
+            <li>Maintain a Journal and monitor your asset portfolio</li>
+          </b>
         </ul>
         <p>
           It's critical to maintain a journal to keep track of your actions when
@@ -846,9 +846,9 @@ export const stocks = [
         </p>
         <ol>
           <br />
-          <li>
-            <b>Research about the companies you want to invest in</b>
-          </li>
+          <b>
+            <li>Research about the companies you want to invest in</li>
+          </b>
           <p>
             It's critical to research a company before buying its stock. Learn
             and verify your knowledge about your prospective firm. It might be a
@@ -858,9 +858,9 @@ export const stocks = [
             its business model, revenue sources, turnover ratio, growth
             potential, and past performance.
           </p>
-          <li>
-            <b>Understand Investment Basics</b>
-          </li>
+          <b>
+            <li>Understand Investment Basics</li>
+          </b>
           <p>
             Learn the basics of investing before jumping into the stock market.
             It is critical to have clearly defined goals and a workable strategy
@@ -869,9 +869,9 @@ export const stocks = [
             limited by starting with small investments. Do not invest more than
             5% of your investment in a single stock.
           </p>
-          <li>
-            <b>Select a broker carefully</b>
-          </li>
+          <b>
+            <li>Select a broker carefully</li>
+          </b>
           <p>
             Checking a broker's regulation status is one of the most critical
             while signing up with a broker. First, verify the broker's
@@ -895,9 +895,9 @@ export const stocks = [
             also check the supported order types (stop, limit, trailing stops,
             etc.).
           </p>
-          <li>
-            <b>Decide On Your Investment Budget</b>
-          </li>
+          <b>
+            <li>Decide On Your Investment Budget</li>
+          </b>
           <p>
             Buying a certain number of shares or filling your portfolio with
             just one stock isn't always the best idea. It is wise to decide on
@@ -912,9 +912,9 @@ export const stocks = [
             storm. Then, once you're comfortable with how things work, you can
             buy more stock and diversify your portfolio.
           </p>
-          <li>
-            <b>Maintain a Journal to record your Stock Portfolio</b>
-          </li>
+          <b>
+            <li>Maintain a Journal to record your Stock Portfolio</li>
+          </b>
           <p>
             It's essential to maintain a journal to record your actions in the
             market, like what stocks you buy and sell, the quantity & entry/exit
@@ -924,9 +924,9 @@ export const stocks = [
             stock investments, so the entire portfolio's value and individual
             stock contributions can all be seen in one glance.
           </p>
-          <li>
-            <b>Evaluate the purpose of your investment</b>
-          </li>
+          <b>
+            <li>Evaluate the purpose of your investment</li>
+          </b>
           <p>
             Analyze the investment reasons and prioritize them to determine the
             timeline and risk tolerance level before staking your interest in
@@ -1130,9 +1130,9 @@ export const forex = [
     body: (
       <ol>
         <br />
-        <li>
-          <b>Open a trading account.</b>
-        </li>
+        <b>
+          <li>Open a trading account.</li>
+        </b>
         <p>
           Once you've decided to step into forex trading, the first thing you
           need is to open a trading account with a broker. It is recommended to
@@ -1141,9 +1141,9 @@ export const forex = [
           you see good results on the demo, you can deposit money into a live
           account and start trading it.
         </p>
-        <li>
-          <b>Develop a trading strategy</b>
-        </li>
+        <b>
+          <li>Develop a trading strategy</li>
+        </b>
         <p>
           A good trading strategy is critically essential for a meaningful
           trading experience. Though not always possible, a trading strategy
@@ -1154,9 +1154,9 @@ export const forex = [
           win rate and risk-reward ratios of your trade setups to identify a
           strategy with a strong edge.
         </p>
-        <li>
-          <b>Journal and reflect on your results</b>
-        </li>
+        <b>
+          <li>Journal and reflect on your results</li>
+        </b>
         <p>
           If you plan to master the art of trading forex, it is important to
           journal your trades and constantly reflect upon your results. This
