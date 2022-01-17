@@ -66,98 +66,113 @@ function EssentialsSectionOne (props) {
         <div className='row'>
           <div className='definition'>
             <h4 className='purple'>Definition</h4>
-            <p className='purple'>noun: stock;</p>
             <p className='purple'>
-              the goods or merchandise kept on the premises of a shop or
-              warehouse and available for sale or distribution.
+              noun:{' '}
+              {props.page === 'crypto'
+                ? 'cryptocurrency'
+                : props.page === 'stocks'
+                ? 'stock'
+                : props.page === 'forex'
+                ? 'forex'
+                : null}
+              ;
+            </p>
+            <p className='purple'>
+              {props.page === 'crypto'
+                ? 'a digital currency or decentralized system of exchange that uses advanced cryptography for security.'
+                : props.page === 'stocks'
+                ? `the goods or merchandise kept on the premises of a shop or warehouse and available for sale or distribution.`
+                : props.page === 'forex'
+                ? 'forex is the market in which foreign currencies are traded.'
+                : null}
             </p>
           </div>
           <br />
-          {props.url.includes('crypto')
-            ? essentials.map((essential, index) => (
+          {props.page === 'crypto' ? (
+            <Accordion>
+              {essentials.map((essential, index) => (
                 <>
-                  <Accordion>
-                    <Card>
-                      <Card.Header>
-                        <Accordion.Toggle
-                          as={props => (
-                            <div onClick={toggle}>
-                              <Button {...props} />
-                            </div>
-                          )}
-                          variant='link'
-                          eventKey='0'
-                        >
-                          <h2>{essential.title}</h2>
-                          <span>+</span>
-                          <span style={{ display: 'none' }}>-</span>
-                        </Accordion.Toggle>
-                      </Card.Header>
+                  <Card>
+                    <Card.Header>
+                      <Accordion.Toggle
+                        as={props => (
+                          <div onClick={toggle}>
+                            <Button {...props} />
+                          </div>
+                        )}
+                        variant='link'
+                        eventKey='0'
+                      >
+                        <h2>{essential.title}</h2>
+                        <span>+</span>
+                        <span style={{ display: 'none' }}>-</span>
+                      </Accordion.Toggle>
+                    </Card.Header>
 
-                      <Accordion.Collapse eventKey='0'>
-                        <Card.Body>{essential.body}</Card.Body>
-                      </Accordion.Collapse>
-                    </Card>
-                  </Accordion>
+                    <Accordion.Collapse eventKey='0'>
+                      <Card.Body>{essential.body}</Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
                 </>
-              ))
-            : props.url.includes('stocks')
-            ? stocks.map((stock, index) => (
+              ))}
+            </Accordion>
+          ) : props.page === 'stocks' ? (
+            <Accordion>
+              {stocks.map((stock, index) => (
                 <>
-                  <Accordion>
-                    <Card>
-                      <Card.Header>
-                        <Accordion.Toggle
-                          as={props => (
-                            <div onClick={toggle}>
-                              <Button {...props} />
-                            </div>
-                          )}
-                          variant='link'
-                          eventKey='0'
-                        >
-                          <h2>{stock.title}</h2>
-                          <span>+</span>
-                          <span style={{ display: 'none' }}>-</span>
-                        </Accordion.Toggle>
-                      </Card.Header>
+                  <Card>
+                    <Card.Header>
+                      <Accordion.Toggle
+                        as={props => (
+                          <div onClick={toggle}>
+                            <Button {...props} />
+                          </div>
+                        )}
+                        variant='link'
+                        eventKey='0'
+                      >
+                        <h2>{stock.title}</h2>
+                        <span>+</span>
+                        <span style={{ display: 'none' }}>-</span>
+                      </Accordion.Toggle>
+                    </Card.Header>
 
-                      <Accordion.Collapse eventKey='0'>
-                        <Card.Body>{stock.body}</Card.Body>
-                      </Accordion.Collapse>
-                    </Card>
-                  </Accordion>
+                    <Accordion.Collapse eventKey='0'>
+                      <Card.Body>{stock.body}</Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
                 </>
-              ))
-            : props.url.includes('forex')
-            ? forex.map((fx, index) => (
+              ))}
+            </Accordion>
+          ) : props.page === 'forex' ? (
+            <Accordion>
+              {forex.map((fx, index) => (
                 <>
-                  <Accordion>
-                    <Card>
-                      <Card.Header>
-                        <Accordion.Toggle
-                          as={props => (
-                            <div onClick={toggle}>
-                              <Button {...props} />
-                            </div>
-                          )}
-                          variant='link'
-                          eventKey='0'
-                        >
-                          <h2>{fx.title}</h2>
-                          <span>+</span>
-                          <span style={{ display: 'none' }}>-</span>
-                        </Accordion.Toggle>
-                      </Card.Header>
+                  <Card>
+                    <Card.Header>
+                      <Accordion.Toggle
+                        as={props => (
+                          <div id='inner-button' onClick={toggle}>
+                            <Button {...props} />
+                          </div>
+                        )}
+                        variant='link'
+                        eventKey='0'
+                      >
+                        <h2>{fx.title}</h2>
+                        <span>+</span>
+                        <span style={{ display: 'none' }}>-</span>
+                      </Accordion.Toggle>
+                    </Card.Header>
 
-                      <Accordion.Collapse eventKey='0'>
-                        <Card.Body>{fx.body}</Card.Body>
-                      </Accordion.Collapse>
-                    </Card>
-                  </Accordion>
+                    <Accordion.Collapse eventKey='0'>
+                      <Card.Body>{fx.body}</Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
                 </>
-              ))
-            : null}{' '}
+              ))}
+            </Accordion>
+          ) : null}{' '}
         </div>
         <div className='tc-row mt-5 py-5 flex-column useful d-flex align-items-center justify-content-center'>
           <p
@@ -177,7 +192,7 @@ function EssentialsSectionOne (props) {
             </a>
           </div>
         </div>
-        {props.url.includes('crypto') ? (
+        {props.page === 'crypto' ? (
           <div className='tc-row py-5 others d-flex align-items-center justify-content-center'>
             <div
               style={{
@@ -231,7 +246,7 @@ function EssentialsSectionOne (props) {
               </div>
             </div>
           </div>
-        ) : props.url.includes('stocks') ? (
+        ) : props.page === 'stocks' ? (
           <div className='tc-row py-5 others d-flex align-items-center justify-content-center'>
             <div
               style={{
@@ -285,7 +300,7 @@ function EssentialsSectionOne (props) {
               </div>
             </div>
           </div>
-        ) : props.url.includes('forex') ? (
+        ) : props.page === 'forex' ? (
           <div className='tc-row py-5 others d-flex align-items-center justify-content-center'>
             <div
               style={{
