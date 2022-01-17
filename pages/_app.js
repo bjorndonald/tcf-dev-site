@@ -36,6 +36,7 @@ import './../public/css/tablet.scss'
 import './../public/css/layout.scss'
 import './../public/css/landscape.scss'
 import './../public/css/video-controls.scss'
+import './../public/css/tc-cares.scss'
 import { useRouter } from 'next/router'
 
 import { Fragment } from 'react'
