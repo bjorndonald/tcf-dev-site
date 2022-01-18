@@ -1,210 +1,226 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import MetaTag from './../components/MetaTag'
-// import AboutUsSectionDttiy from '../components/AboutUs/AboutUsSectionDttiy'
-// import AboutUsSectionEs from '../components/AboutUs/AboutUsSectionEs'
-// import AboutUsSectionJotc from '../components/AboutUs/AboutUsSectionJotc'
-import BlogSectionOne from '../components/Blog/BlogSectionOne'
-import BlogSectionTwo from '../components/Blog/BlogSectionTwo'
 import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import Head from 'next/head'
+import TCCarousel from '../components/TCCares/TCCarousel'
 
 
 
-const slideWidth = 30;
 
-const _items = [
+const _items2021 = [
     {
-        player: {
-            title: 'Efren Reyes',
-            desc: 'Known as "The Magician", Efren Reyes is well regarded by many professionals as the greatest all around player of all time.',
-            image: 'https://i.postimg.cc/RhYnBf5m/er-slider.jpg',
+        charity: {
+            title: 'Charity Name',
+            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
+            image: '/images/tcCares/volunteer.png',
+            faceboookLink: 'https://www.facebook.com/',
+            twitterLink: 'https://twitter.com/',
+            instagramLink: 'https://www.instagram.com/',
         },
     },
     {
-        player: {
-            title: "Ronnie O'Sullivan",
-            desc: "Ronald Antonio O'Sullivan is a six-time world champion and is the most successful player in the history of snooker.",
-            image: 'https://i.postimg.cc/qBGQNc37/ro-slider.jpg',
+        charity: {
+            title: 'Charity Name',
+            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
+            image: '/images/tcCares/volunteer.png',
+            faceboookLink: 'https://www.facebook.com/',
+            twitterLink: 'https://twitter.com/',
+            instagramLink: 'https://www.instagram.com/',
         },
     },
     {
-        player: {
-            title: 'Shane Van Boening',
-            desc: 'The "South Dakota Kid" is hearing-impaired and uses a hearing aid, but it has not limited his ability.',
-            image: 'https://i.postimg.cc/cHdMJQKG/svb-slider.jpg',
+        charity: {
+            title: 'Charity Name',
+            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
+            image: '/images/tcCares/volunteer.png',
+            faceboookLink: 'https://www.facebook.com/',
+            twitterLink: 'https://twitter.com/',
+            instagramLink: 'https://www.instagram.com/',
         },
     },
     {
-        player: {
-            title: 'Mike Sigel',
-            desc: 'Mike Sigel or "Captain Hook" as many like to call him is an American professional pool player with over 108 tournament wins.',
-            image: 'https://i.postimg.cc/C12h7nZn/ms-1.jpg',
+        charity: {
+            title: 'Charity Name',
+            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
+            image: '/images/tcCares/volunteer.png',
+            faceboookLink: 'https://www.facebook.com/',
+            twitterLink: 'https://twitter.com/',
+            instagramLink: 'https://www.instagram.com/',
         },
     },
     {
-        player: {
-            title: 'Willie Mosconi',
-            desc: 'Nicknamed "Mr. Pocket Billiards," Willie Mosconi was among the first Billiard Congress of America Hall of Fame inductees.',
-            image: 'https://i.postimg.cc/NfzMDVHP/willie-mosconi-slider.jpg',
+        charity: {
+            title: 'Charity Name',
+            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
+            image: '/images/tcCares/volunteer.png',
+            faceboookLink: 'https://www.facebook.com/',
+            twitterLink: 'https://twitter.com/',
+            instagramLink: 'https://www.instagram.com/',
+        },
+    },
+    {
+        charity: {
+            title: 'Charity Name',
+            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
+            image: '/images/tcCares/volunteer.png',
+            faceboookLink: 'https://www.facebook.com/',
+            twitterLink: 'https://twitter.com/',
+            instagramLink: 'https://www.instagram.com/',
+        },
+    },
+    {
+        charity: {
+            title: 'Charity Name',
+            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
+            image: '/images/tcCares/volunteer.png',
+            faceboookLink: 'https://www.facebook.com/',
+            twitterLink: 'https://twitter.com/',
+            instagramLink: 'https://www.instagram.com/',
+        },
+    },
+    {
+        charity: {
+            title: 'Charity Name',
+            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
+            image: '/images/tcCares/volunteer.png',
+            faceboookLink: 'https://www.facebook.com/',
+            twitterLink: 'https://twitter.com/',
+            instagramLink: 'https://www.instagram.com/',
+        },
+    },
+    {
+        charity: {
+            title: 'Charity Name',
+            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
+            image: '/images/tcCares/volunteer.png',
+            faceboookLink: 'https://www.facebook.com/',
+            twitterLink: 'https://twitter.com/',
+            instagramLink: 'https://www.instagram.com/',
         },
     },
 ];
 
-const length = _items.length;
-_items.push(..._items);
-
-const sleep = (ms = 0) => {
-    return new Promise((resolve) => setTimeout(resolve, ms));
-};
-
-const createItem = (position, idx) => {
-    const item = {
-        styles: {
-            transform: `translateX(${position * slideWidth}rem)`,
+const _items2022 = [
+    {
+        charity: {
+            title: 'Tesla',
+            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
+            image: '/images/tcCares/elon.jpeg',
+            faceboookLink: 'https://www.facebook.com/',
+            twitterLink: 'https://twitter.com/',
+            instagramLink: 'https://www.instagram.com/',
         },
-        player: _items[idx].player,
-    };
+    },
+    {
+        charity: {
+            title: 'Tesla',
+            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
+            image: '/images/tcCares/elon.jpeg',
+            faceboookLink: 'https://www.facebook.com/',
+            twitterLink: 'https://twitter.com/',
+            instagramLink: 'https://www.instagram.com/',
+        },
+    },
+    {
+        charity: {
+            title: 'Tesla',
+            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
+            image: '/images/tcCares/elon.jpeg',
+            faceboookLink: 'https://www.facebook.com/',
+            twitterLink: 'https://twitter.com/',
+            instagramLink: 'https://www.instagram.com/',
+        },
+    },
+    {
+        charity: {
+            title: 'Tesla',
+            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
+            image: '/images/tcCares/elon.jpeg',
+            faceboookLink: 'https://www.facebook.com/',
+            twitterLink: 'https://twitter.com/',
+            instagramLink: 'https://www.instagram.com/',
+        },
+    },
+    {
+        charity: {
+            title: 'Tesla',
+            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
+            image: '/images/tcCares/elon.jpeg',
+            faceboookLink: 'https://www.facebook.com/',
+            twitterLink: 'https://twitter.com/',
+            instagramLink: 'https://www.instagram.com/',
+        },
+    }
+];
 
-    switch (position) {
-        case length - 1:
-        case length + 1:
-            item.styles = {...item.styles, filter: 'grayscale(1)'};
-            break;
-        case length:
-            break;
-        default:
-            item.styles = {...item.styles, opacity: 0};
-            break;
+
+export default function tcCares() {
+    gsap.registerPlugin(ScrollTrigger)
+    let hc_tl = gsap.timeline()
+
+    const [show2021, setShow2021] = useState(true);
+    const [show2022, setShow2022] = useState(false);
+  
+
+    const active2021 = () => {
+        setShow2021(true);
+        setShow2022(false);
+    }
+    const active2022 = () => {
+        setShow2022(true);
+        setShow2021(false);
     }
 
-    return item;
-};
-
-const CarouselSlideItem = ({pos, idx, activeIdx}) => {
-    const item = createItem(pos, idx, activeIdx);
-
     return (
-        <li className="carousel__slide-item" style={item.styles}>
-            <div className="carousel__slide-item-img-link">
-                <img src={item.player.image} alt={item.player.title} />
-            </div>
-            <div className="carousel-slide-item__body">
-                <h4>{item.player.title}</h4>
-                <p>{item.player.desc}</p>
-            </div>
-        </li>
-    );
-};
+        <Fragment>
+            <MetaTag
+                title='Traders Central Cares | Traders Central'
+                description={`Every year we choose charities from anywhere in the world to giveback to`}
+            />
+            <Head>
+                <script
+                    src='https://code.jquery.com/jquery-3.2.1.slim.min.js'
+                    integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN'
+                    crossOrigin='anonymous'
+                ></script>
+                <script
+                    src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'
+                    integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q'
+                    crossOrigin='anonymous'
+                ></script>
+                <script
+                    src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'
+                    integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl'
+                    crossOrigin='anonymous'
+                ></script>
+                {/* <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script> */}
+                <script src='/js/script.js'></script>
+            </Head>
 
-const keys = Array.from(Array(_items.length).keys());
+            <div className='basicsSectionOne py-5 d-flex align-items-center'>
+                <div className='container'>
+                    <div className='row header-section'>
+                        <div className='text-center col'>
+                        <h1>Traders Central Cares</h1>
+                        </div>
+                    </div>
+                    <div className='text-center'>
+                    <h3>Every year we choose charities from anywhere in the world to giveback to.</h3>
+                    </div>
 
-export default function tcCares () {
-  gsap.registerPlugin(ScrollTrigger)
-  let hc_tl = gsap.timeline()
-
-
-
-  const [items, setItems] = React.useState(keys);
-  const [isTicking, setIsTicking] = React.useState(false);
-  const [activeIdx, setActiveIdx] = React.useState(0);
-  const bigLength = items.length;
-
-  const prevClick = (jump = 1) => {
-      if (!isTicking) {
-          setIsTicking(true);
-          setItems((prev) => {
-              return prev.map((_, i) => prev[(i + jump) % bigLength]);
-          });
-      }
-  };
-
-  const nextClick = (jump = 1) => {
-      if (!isTicking) {
-          setIsTicking(true);
-          setItems((prev) => {
-              return prev.map(
-                  (_, i) => prev[(i - jump + bigLength) % bigLength],
-              );
-          });
-      }
-  };
-
-  const handleDotClick = (idx) => {
-      if (idx < activeIdx) prevClick(activeIdx - idx);
-      if (idx > activeIdx) nextClick(idx - activeIdx);
-  };
-
-  React.useEffect(() => {
-      if (isTicking) sleep(300).then(() => setIsTicking(false));
-  }, [isTicking]);
-
-  React.useEffect(() => {
-      setActiveIdx((length - (items[0] % length)) % length) // prettier-ignore
-  }, [items]);
-
-
-  return (
-    <Fragment>
-      <MetaTag
-        title='Trading Blog - Best Trading Tips on Forex, Stocks & Crypto | Traders Central'
-        description={`Want to level up in your trading career? Discover various trading 
-concepts and tips from our Blog.`}
-      />
-      <Head>
-        <script
-          src='https://code.jquery.com/jquery-3.2.1.slim.min.js'
-          integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN'
-          crossOrigin='anonymous'
-        ></script>
-        <script
-          src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'
-          integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q'
-          crossOrigin='anonymous'
-        ></script>
-        <script
-          src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'
-          integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl'
-          crossOrigin='anonymous'
-        ></script>
-        {/* <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script> */}
-        <script src='/js/script.js'></script>
-      </Head>
-      <div className="carousel__wrap my-5">
-            <div className="carousel__inner">
-                {/* <button className="carousel__btn carousel__btn--prev" onClick={() => prevClick()}>
-                    <i className="carousel__btn-arrow carousel__btn-arrow--left" />
-                </button> */}
-                <div className="carousel__container">
-                    <ul className="carousel__slide-list">
-                        {_items.map((pos, i) => (
-                            <CarouselSlideItem
-                                key={i}
-                                idx={i}
-                                pos={pos}
-                                activeIdx={activeIdx}
-                            />
-                        ))}
-                    </ul>
-                </div>
-                {/* <button className="carousel__btn carousel__btn--next" onClick={() => nextClick()}>
-                    <i className="carousel__btn-arrow carousel__btn-arrow--right" />
-                </button> */}
-                <div className="carousel__dots">
-                    {_items.slice(0, length).map((pos, i) => (
-                        <button
-                            key={i}
-                            onClick={() => handleDotClick(i)}
-                            className={i === activeIdx ? 'dot active' : 'dot'}
-                        />
-                    ))}
+                    <div className='row m-0 justify-content-center'>
+                        <div className={`year-button mx-2 ${show2021 && 'year-active'}`} onClick={active2021} role='button'>2021</div>
+                        <div className={`year-button mx-2 ${show2022 && 'year-active'}`} onClick={active2022} role='button'>2022</div>
+                    </div>
+                    {show2021 && <TCCarousel items={_items2021}/>}
+                    {show2022 && <TCCarousel items={_items2022}/>}
                 </div>
             </div>
-        </div>
-    </Fragment>
-  )
+        </Fragment>
+    )
 
 
 
-  
+
 }
