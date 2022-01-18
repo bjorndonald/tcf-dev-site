@@ -97,14 +97,14 @@ export default function tcCares() {
                 <script src='/js/script.js'></script>
             </Head>
 
-            <div className='basicsSectionOne py-5 d-flex align-items-center'>
+            <div className='tc-cares-section py-5 d-flex align-items-center'>
                 <div className='container'>
                     <div className='row header-section'>
-                        <div className='text-center col'>
+                        <div className='text-center col tc-heading'>
                         <h1>Traders Central Cares</h1>
                         </div>
                     </div>
-                    <div className='text-center'>
+                    <div className='text-center tc-subheading'>
                     <h3>Every year we choose charities from anywhere in the world to giveback to.</h3>
                     </div>
 
