@@ -11,148 +11,47 @@ import TCCarousel from '../components/TCCares/TCCarousel'
 const _items2021 = [
     {
         charity: {
-            title: 'Charity Name',
-            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
-            image: '/images/tcCares/volunteer.png',
-            faceboookLink: 'https://www.facebook.com/',
-            twitterLink: 'https://twitter.com/',
-            instagramLink: 'https://www.instagram.com/',
+            title: 'Light of the Youth',
+            desc: 'Youth Outreach',
+            image: '/images/tcCares/light-of-the-you.jpg',
+            faceboookLink: '',
+            twitterLink: '',
+            instagramLink: 'https://instagram.com/rebirth_2k19?utm_medium=copy_link',
         },
     },
     {
         charity: {
-            title: 'Charity Name',
-            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
-            image: '/images/tcCares/volunteer.png',
-            faceboookLink: 'https://www.facebook.com/',
-            twitterLink: 'https://twitter.com/',
-            instagramLink: 'https://www.instagram.com/',
+            title: 'Care4Child',
+            desc: 'Non-profit healthcare focused organisation with the aim of bettering childrens experiences in hospital wards.',
+            image: '/images/tcCares/care-4-a-child.png',
+            faceboookLink: '',
+            twitterLink: 'https://twitter.com/care4achildgh?s=21',
+            instagramLink: 'https://instagram.com/care4achildgh?utm_medium=copy_link',
         },
     },
     {
         charity: {
-            title: 'Charity Name',
-            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
-            image: '/images/tcCares/volunteer.png',
-            faceboookLink: 'https://www.facebook.com/',
-            twitterLink: 'https://twitter.com/',
-            instagramLink: 'https://www.instagram.com/',
+            title: 'Becauseshecan',
+            desc: 'Empowering women and girls to excel in Tech Disciplines and roles.',
+            image: '/images/tcCares/because-she-can.jpeg',
+            faceboookLink: '',
+            twitterLink: 'https://twitter.com/becauseshecan_?s=21',
+            instagramLink: 'https://instagram.com/becauseshecan_?utm_medium=copy_link',
         },
     },
     {
         charity: {
-            title: 'Charity Name',
-            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
-            image: '/images/tcCares/volunteer.png',
-            faceboookLink: 'https://www.facebook.com/',
-            twitterLink: 'https://twitter.com/',
-            instagramLink: 'https://www.instagram.com/',
-        },
-    },
-    {
-        charity: {
-            title: 'Charity Name',
-            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
-            image: '/images/tcCares/volunteer.png',
-            faceboookLink: 'https://www.facebook.com/',
-            twitterLink: 'https://twitter.com/',
-            instagramLink: 'https://www.instagram.com/',
-        },
-    },
-    {
-        charity: {
-            title: 'Charity Name',
-            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
-            image: '/images/tcCares/volunteer.png',
-            faceboookLink: 'https://www.facebook.com/',
-            twitterLink: 'https://twitter.com/',
-            instagramLink: 'https://www.instagram.com/',
-        },
-    },
-    {
-        charity: {
-            title: 'Charity Name',
-            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
-            image: '/images/tcCares/volunteer.png',
-            faceboookLink: 'https://www.facebook.com/',
-            twitterLink: 'https://twitter.com/',
-            instagramLink: 'https://www.instagram.com/',
-        },
-    },
-    {
-        charity: {
-            title: 'Charity Name',
-            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
-            image: '/images/tcCares/volunteer.png',
-            faceboookLink: 'https://www.facebook.com/',
-            twitterLink: 'https://twitter.com/',
-            instagramLink: 'https://www.instagram.com/',
-        },
-    },
-    {
-        charity: {
-            title: 'Charity Name',
-            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
-            image: '/images/tcCares/volunteer.png',
-            faceboookLink: 'https://www.facebook.com/',
-            twitterLink: 'https://twitter.com/',
-            instagramLink: 'https://www.instagram.com/',
-        },
-    },
-];
-
-const _items2022 = [
-    {
-        charity: {
-            title: 'Tesla',
-            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
-            image: '/images/tcCares/elon.jpeg',
-            faceboookLink: 'https://www.facebook.com/',
-            twitterLink: 'https://twitter.com/',
-            instagramLink: 'https://www.instagram.com/',
-        },
-    },
-    {
-        charity: {
-            title: 'Tesla',
-            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
-            image: '/images/tcCares/elon.jpeg',
-            faceboookLink: 'https://www.facebook.com/',
-            twitterLink: 'https://twitter.com/',
-            instagramLink: 'https://www.instagram.com/',
-        },
-    },
-    {
-        charity: {
-            title: 'Tesla',
-            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
-            image: '/images/tcCares/elon.jpeg',
-            faceboookLink: 'https://www.facebook.com/',
-            twitterLink: 'https://twitter.com/',
-            instagramLink: 'https://www.instagram.com/',
-        },
-    },
-    {
-        charity: {
-            title: 'Tesla',
-            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
-            image: '/images/tcCares/elon.jpeg',
-            faceboookLink: 'https://www.facebook.com/',
-            twitterLink: 'https://twitter.com/',
-            instagramLink: 'https://www.instagram.com/',
-        },
-    },
-    {
-        charity: {
-            title: 'Tesla',
-            desc: 'Etiam vitae risus lorem. Donec non euismod urna. Nam egestas ullamcorper nunc, a lobortis elit tempor et. Vivamus sit amet aliquet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum lacus vel enim porta, sit amet hendrerit nisl faucibus. In hac habitasse platea dictumst. Quisque condimentum pretium urna, tincidunt tristique diam lobortis sed. Nam facilisis ullamcorper ipsum ac dignissim. Nam ut neque vel urna varius cursus nec sit amet odio.',
-            image: '/images/tcCares/elon.jpeg',
-            faceboookLink: 'https://www.facebook.com/',
-            twitterLink: 'https://twitter.com/',
-            instagramLink: 'https://www.instagram.com/',
+            title: 'FTFGhana',
+            desc: 'Alleviating the plight of the less privilged',
+            image: '/images/tcCares/for-the-future.jpeg',
+            faceboookLink: '',
+            twitterLink: 'https://twitter.com/ftfghana?s=21',
+            instagramLink: 'https://instagram.com/ftfghana?utm_medium=copy_link',
         },
     }
 ];
+
+const _items2022 = [];
 
 
 export default function tcCares() {

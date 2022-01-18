@@ -24,7 +24,7 @@ export default function TCCarousel({ items }) {
                 <div className='row m-0 py-5 d-flex' key={i}>
                     <div className='align-middle col-5 p-0'>
                         <img
-                            className='rounded-circle w-75 mx-auto'
+                            className='rounded-circle w-75 mx-auto border'
                             alt="..."
                             src={pos.charity.image}
                         />
@@ -33,36 +33,42 @@ export default function TCCarousel({ items }) {
                         <h2>{pos.charity.title}</h2>
                         <p>{pos.charity.desc}</p>
                         <div className='row m-0 p-0 social-media'>
-                            <div className='align-middle'>
+                            <div className='align-middle mr-1'>
                                 <h3 className='m-0'>For more Info visit</h3>
                             </div>
-                            <div className='ml-3'>
-                                <a href={pos.charity.faceboookLink}>
-                                    <img
-                                        className='rounded-circle'
-                                        alt="..."
-                                        src='/images/tcCares/facebook-tc.png'
-                                    />
-                                </a>
-                            </div>
-                            <div className='ml-2'>
-                                <a href={pos.charity.twitterLink}>
-                                    <img
-                                        className='rounded-circle'
-                                        alt="..."
-                                        src='/images/tcCares/twitter-tc.png'
-                                    />
-                                </a>
-                            </div>
-                            <div className='ml-2'>
-                                <a href={pos.charity.instagramLink}>
-                                    <img
-                                        className='rounded-circle'
-                                        alt="..."
-                                        src='/images/tcCares/instagram-tc.png'
-                                    />
-                                </a>
-                            </div>
+                            {pos.charity.faceboookLink !== '' &&
+                                <div className='ml-2'>
+                                    <a href={pos.charity.faceboookLink}>
+                                        <img
+                                            className='rounded-circle'
+                                            alt="..."
+                                            src='/images/tcCares/facebook-tc.png'
+                                        />
+                                    </a>
+                                </div>
+                            }
+                            {pos.charity.twitterLink !== '' &&
+                                <div className='ml-2'>
+                                    <a href={pos.charity.twitterLink}>
+                                        <img
+                                            className='rounded-circle'
+                                            alt="..."
+                                            src='/images/tcCares/twitter-tc.png'
+                                        />
+                                    </a>
+                                </div>
+                            }
+                            {pos.charity.instagramLink !== '' &&
+                                <div className='ml-2'>
+                                    <a href={pos.charity.instagramLink}>
+                                        <img
+                                            className='rounded-circle'
+                                            alt="..."
+                                            src='/images/tcCares/instagram-tc.png'
+                                        />
+                                    </a>
+                                </div>
+                            }
 
                         </div>
                     </div>
