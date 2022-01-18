@@ -68,6 +68,14 @@ export default function Footer () {
                       <a>Basics</a>
                     </Link>
                   </li>
+                  <li>
+                    <a
+                      target='affiliate'
+                      href='https://blog.traderscentral.com/'
+                    >
+                      Academy
+                    </a>
+                  </li>
                 </ul>
               </div>
               <div className='linkList mb-5'>

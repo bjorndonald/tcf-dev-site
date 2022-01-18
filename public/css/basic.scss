@@ -64,12 +64,15 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 3rem;
-
+      .tc-column {
+        width: calc((100% - 10rem) / 3);
+      }
       .column {
         display: flex;
+
         flex-direction: column;
         align-items: center;
-        width: calc((100% - 10rem) / 3);
+
         .purple-box {
           background-color: #8411f0;
           border-radius: 1.5625rem;
@@ -104,20 +107,34 @@
 
     .row:last-child {
       margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       margin-left: 0;
       margin-right: 0;
-    }
 
-    .button {
-      display: flex;
-      justify-content: center;
-      margin: 5rem 0;
-
-      .btn {
-        border-radius: 5vh;
-        padding: 1vh 5vh;
-        font-size: 3vh;
+      .image {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
       }
+
+      h3 {
+        margin-top: 1rem;
+        font-size: 4rem;
+      }
+    }
+  }
+  .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+
+    .btn {
+      border-radius: 5vh;
+      padding: 1vh 5vh;
+      font-size: 3vh;
     }
   }
 }

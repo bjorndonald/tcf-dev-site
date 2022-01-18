@@ -1,8 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+$purple: #8411f0;
+.purple {
+  color: #8411f0;
+}
 .essentialsSectionOne {
   .container {
+    ol {
+      b {
+        li::marker {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .others {
+      margin-bottom: 4rem;
+      .image {
+        width: 20rem;
+        height: 20rem;
+        margin-bottom: 4rem;
+        border-radius: 50%;
+      }
+    }
+
+    .icons {
+      margin-top: 1rem;
+      a {
+        cursor: pointer;
+      }
+      i {
+        color: #8411f0;
+        font-size: 3.25rem;
+      }
+    }
     // padding-bottom: 5rem;
     .col-md-7 {
+      padding: 0;
       h1 {
         font-weight: bolder;
         font-size: 8vh;
@@ -16,12 +49,33 @@
     .col-md-4 {
       display: flex;
       justify-content: flex-end;
+      padding: 0;
 
-      .purple-box {
+      .image {
         width: 20rem;
         height: 20rem;
-        background-color: #8411f0;
-        border-radius: 1.5625rem;
+
+        border-radius: 50%;
+      }
+    }
+
+    .definition {
+      display: flex;
+      flex-direction: column;
+      max-width: 60%;
+      flex: 0 0 60%;
+      margin-top: -8rem;
+      margin-bottom: 8rem;
+
+      h4 {
+        font-size: 1.75rem;
+        margin-bottom: 0.125rem;
+      }
+      p {
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin-top: 0rem !important;
+        margin-bottom: 0 !important;
       }
     }
 
@@ -46,6 +100,7 @@
 
     .row:last-child {
       padding: 5rem 7rem;
+      display: block;
       h2 {
         margin-top: 2rem;
       }
@@ -59,6 +114,7 @@
     }
 
     .accordion {
+      width: 100%;
       button {
         display: flex;
         align-items: center;
@@ -71,7 +127,7 @@
     p,
     li {
       font-family: 'Roboto';
-      font-weight: normal;
+      font-weight: lighter;
       font-size: 1.125rem;
       line-height: 1.25rem;
       text-align: justify;

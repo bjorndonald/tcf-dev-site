@@ -9,12 +9,12 @@ function BasicsSectionTwo (props) {
   return (
     <div className='basicsSectionTwo py-5 d-flex align-items-center'>
       <div className='container'>
-        {/* <div className='row'>
+        <div className='row'>
           <h2>Essentials</h2>
           <h4>Ready to learn how it works?</h4>
-        </div> */}
+        </div>
 
-        {/* <div className='row'>
+        <div className='row'>
           <a
             className='tc-column'
             target='_blank'
@@ -23,7 +23,7 @@ function BasicsSectionTwo (props) {
           >
             <div className='column' style={{ cursor: 'pointer' }}>
               <img src='/images/basic/basicImg1.PNG' alt='' />
-             
+              {/* <div className='purple-box'></div> */}
               <a
                 href={'/essentials/forex'}
                 target='_blank'
@@ -67,19 +67,9 @@ function BasicsSectionTwo (props) {
               </a>
             </div>
           </a>
-        </div> */}
+        </div>
 
         <div className='row'>
-          <div
-            className='image'
-            style={{
-              backgroundImage: `url(/images/basic/basicImg1.PNG)`,
-              backgroundPosition: 'bottom',
-              backgroundSize: 'cover'
-            }}
-          ></div>
-
-          <h3>Forex</h3>
           <ForexFaq />
           <div className='button'>
             <a
@@ -91,17 +81,6 @@ function BasicsSectionTwo (props) {
               See Forex Essentials
             </a>
           </div>
-
-          <div
-            className='image'
-            style={{
-              backgroundImage: `url(/images/basic/basicImg2.PNG)`,
-              backgroundPosition: 'bottom',
-              backgroundSize: 'cover',
-              marginTop: '5rem'
-            }}
-          ></div>
-          <h3>Stocks</h3>
           <StockFaq />
           <div className='button'>
             <a
@@ -113,16 +92,6 @@ function BasicsSectionTwo (props) {
               See Stock Essentials
             </a>
           </div>
-          <div
-            className='image'
-            style={{
-              backgroundImage: `url(/images/basic/basicImg3.PNG)`,
-              backgroundPosition: 'bottom',
-              backgroundSize: 'cover',
-              marginTop: '5rem'
-            }}
-          ></div>
-          <h3>Crypto</h3>
           <CryptoFaq />
           <div className='button'>
             <a
