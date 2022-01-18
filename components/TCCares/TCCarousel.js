@@ -22,15 +22,15 @@ export default function TCCarousel({ items }) {
 
             {items.map((pos, i) => (
                 <div className='row m-0 py-5 d-flex' key={i}>
-                    <div className='align-middle col-5 p-0'>
+                    <div className='align-middle col-sm-5 p-sm-0 pb-2'>
                         <img
                             className='rounded-circle w-75 mx-auto border'
                             alt="..."
                             src={pos.charity.image}
                         />
                     </div>
-                    <div className='col-7 p-0'>
-                        <h2>{pos.charity.title}</h2>
+                    <div className='col-sm-7 charity-desc p-sm-0 p-2'>
+                        <h2 className=''>{pos.charity.title}</h2>
                         <p>{pos.charity.desc}</p>
                         <div className='row m-0 p-0 social-media'>
                             <div className='align-middle mr-1'>

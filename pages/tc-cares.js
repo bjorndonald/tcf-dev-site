@@ -12,7 +12,7 @@ const _items2021 = [
     {
         charity: {
             title: 'Light of the Youth',
-            desc: 'Youth Outreach',
+            desc: 'Light of the Youth is an interdenominational youth network with the aim of winning souls for Christ, disciplining them and impacting our generation (through giving to the needy, success,career ,business and mentorship training sessions and many more) so rebirth is a way we carry out one of our purposes',
             image: '/images/tcCares/light-of-the-you.jpg',
             faceboookLink: '',
             twitterLink: '',
@@ -109,8 +109,8 @@ export default function tcCares() {
                     </div>
 
                     <div className='row m-0 justify-content-center'>
-                        <div className={`year-button mx-2 ${show2021 && 'year-active'}`} onClick={active2021} role='button'>2021</div>
-                        <div className={`year-button mx-2 ${show2022 && 'year-active'}`} onClick={active2022} role='button'>2022</div>
+                        <div className={`year-button mx-2 my-2 ${show2021 && 'year-active'}`} onClick={active2021} role='button'>2021</div>
+                        <div className={`year-button mx-2 my-2 ${show2022 && 'year-active'}`} onClick={active2022} role='button'>2022</div>
                     </div>
                     {show2021 && <TCCarousel items={_items2021}/>}
                     {show2022 && <TCCarousel items={_items2022}/>}

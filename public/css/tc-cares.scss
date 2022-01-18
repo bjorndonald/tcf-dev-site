@@ -18,17 +18,17 @@
 			color: transparent;
 			cursor: pointer;
 			display: block;
-			height: 25px;
-			width: 25px;
+			height: 1.875rem;
+			width: 1.875rem;
 			border-radius: 50%;
 			&:hover {
-				background: #fff;
+				background: #7920EB;
 				outline: 0;
 			}
-			// &:focus {
-			// 	background: #fff;
-			// 	outline: 0;
-			// }
+			&:focus {
+				background: #7920EB;
+				outline: 0;
+			}
 		}
 	}
 	li.slick-active {
@@ -38,6 +38,8 @@
 		}
 	}
 }
+
+
 
 .year-button{ 
     padding: 0px 18px;
@@ -61,3 +63,16 @@
         height: 45px;
     }
 }
+
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+	.charity-desc{
+		h2{
+			font-size: 1.675rem;
+		}
+		h3{
+			font-size: 1.575rem;
+		}
+	}
+  }
