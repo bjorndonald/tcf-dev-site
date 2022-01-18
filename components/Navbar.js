@@ -214,6 +214,11 @@ export default function NavBar () {
                     </Link>
                   </li>
                   <li>
+                    <Link href='/tc-cares'>
+                      <a className='mobileMenuListSubA navClose'>TC Cares</a>
+                    </Link>
+                  </li>
+                  <li>
                     <Link href='/affiliate'>
                       <a
                         target='affiliate'
@@ -449,7 +454,7 @@ export default function NavBar () {
                   About
                 </a>
                 <ul
-                  className='dropdown-menu white-background wider-background'
+                  className='dropdown-menu white-background wider-background center-dropdown'
                   aria-labelledby='navbarDropdownMenuLinkThree'
                 >
                   <li>
@@ -460,6 +465,11 @@ export default function NavBar () {
                   <li>
                     <Link href='/customers'>
                       <a className='dropdown-item navClose'>Our Customers</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='/tc-cares'>
+                      <a className='dropdown-item navClose'>TC Cares</a>
                     </Link>
                   </li>
                   <li>
