@@ -215,7 +215,7 @@ export default function NavBar () {
                   </li>
                   <li>
                     <Link href='/tc-cares'>
-                      <a className='mobileMenuListSubA navClose'>TC Cares</a>
+                      <a className='mobileMenuListSubA navClose'>Cares</a>
                     </Link>
                   </li>
                   <li>
@@ -469,7 +469,7 @@ export default function NavBar () {
                   </li>
                   <li>
                     <Link href='/tc-cares'>
-                      <a className='dropdown-item navClose'>TC Cares</a>
+                      <a className='dropdown-item navClose'>Cares</a>
                     </Link>
                   </li>
                   <li>
