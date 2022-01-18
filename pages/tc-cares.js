@@ -12,7 +12,7 @@ const _items2021 = [
     {
         charity: {
             title: 'Light of the Youth',
-            desc: 'Light of the Youth is an interdenominational youth network with the aim of winning souls for Christ, disciplining them and impacting our generation (through giving to the needy, success,career ,business and mentorship training sessions and many more) so rebirth is a way we carry out one of our purposes',
+            desc: 'Light of the Youth is an interdenominational youth network with the aim of winning souls for Christ, disciplining them and impacting our generation through giving to the needy, equipping youth with tools for success and enrolling them in career , business and mentorship training sessions.',
             image: '/images/tcCares/light-of-the-you.jpg',
             faceboookLink: '',
             twitterLink: '',
