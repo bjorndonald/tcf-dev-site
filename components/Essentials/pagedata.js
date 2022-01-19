@@ -1,6 +1,7 @@
 import Link from 'next/link'
 export const essentialCrypto = [
-  {
+  { 
+    id: 'WhatIsCryptocurrency',
     title: 'What Is Cryptocurrency?',
     body: (
       <>
@@ -42,6 +43,7 @@ export const essentialCrypto = [
     )
   },
   {
+    id: 'HistoryofCryptocurrencies',
     title: 'History of Cryptocurrencies',
     body: (
       <>
@@ -82,6 +84,7 @@ export const essentialCrypto = [
     )
   },
   {
+    id: 'WhatIsBlockchain',
     title: 'What Is Blockchain?',
     body: (
       <>
@@ -127,6 +130,7 @@ export const essentialCrypto = [
     )
   },
   {
+    id: 'HowDoCryptocurrencyTransactionsWork',
     title: 'How Do Cryptocurrency Transactions Work?',
     body: (
       <>
@@ -153,6 +157,7 @@ export const essentialCrypto = [
     )
   },
   {
+    id: 'TheRoleofConsensusInCrypto',
     title: 'The Role of Consensus In Crypto',
     body: (
       <>
@@ -183,6 +188,7 @@ export const essentialCrypto = [
     )
   },
   {
+    id: 'ConsensusMechanismExplained',
     title: 'Consensus Mechanism Explained',
     body: (
       <>
@@ -208,6 +214,7 @@ export const essentialCrypto = [
     )
   },
   {
+    id: 'DifferenceBetweenProofofWorkandProofofStake',
     title: 'Difference Between Proof of Work and Proof of Stake',
     body: (
       <>
@@ -221,6 +228,7 @@ export const essentialCrypto = [
     )
   },
   {
+    id: 'ProofofWorkPoW',
     title: 'Proof-of-Work (PoW)',
     body: (
       <>
@@ -236,6 +244,7 @@ export const essentialCrypto = [
     )
   },
   {
+    id: 'ProofofStakePoS',
     title: 'Proof-of-Stake (PoS)',
     body: (
       <>
@@ -250,6 +259,7 @@ export const essentialCrypto = [
     )
   },
   {
+    id: 'WhyAreCryptocurrenciesSoPopular',
     title: 'Why Are Cryptocurrencies So Popular?',
     body: (
       <>
@@ -282,6 +292,7 @@ export const essentialCrypto = [
     )
   },
   {
+    id: 'CryptocurrencyMining',
     title: 'Cryptocurrency Mining',
     body: (
       <>
@@ -327,6 +338,7 @@ export const essentialCrypto = [
     )
   },
   {
+    id: 'UseCases',
     title: 'Use Cases',
     body: (
       <>
@@ -381,6 +393,7 @@ export const essentialCrypto = [
     )
   },
   {
+    id: 'Howtogetstartedwithcryptocurrencies',
     title: 'How to get started with cryptocurrencies?',
     body: (
       <>
@@ -477,6 +490,7 @@ export const essentialCrypto = [
     )
   },
   {
+    id: 'Legalityofcryptocurrencies',
     title: 'Legality of cryptocurrencies ',
     body: (
       <>
@@ -513,7 +527,8 @@ export const essentialCrypto = [
     )
   },
   {
-    title: 'Cold Storage ',
+    id: 'ColdStorage',
+    title: 'Cold Storage',
     body: (
       <>
         <p>
@@ -530,7 +545,8 @@ export const essentialCrypto = [
     )
   },
   {
-    title: 'Bottom Line ',
+    id: 'BottomLine',
+    title: 'Bottom Line',
     body: (
       <>
         <p>
@@ -561,6 +577,7 @@ export const essentialCrypto = [
 
 export const essentialStocks = [
   {
+    id: 'WhatIsStockMarket',
     title: 'What Is Stock Market?',
     body: (
       <>
@@ -583,6 +600,7 @@ export const essentialStocks = [
     )
   },
   {
+    id: 'UnderstandingtheStockMarket',
     title: 'Understanding the Stock Market',
     body: (
       <>
@@ -604,6 +622,7 @@ export const essentialStocks = [
     )
   },
   {
+    id: 'HowDoestheStockMarketWork',
     title: 'How Does the Stock Market Work?',
     body: (
       <>
@@ -637,6 +656,7 @@ export const essentialStocks = [
     )
   },
   {
+    id: 'StockMarketParticipants',
     title: 'Stock Market Participants',
     body: (
       <>
@@ -707,6 +727,7 @@ export const essentialStocks = [
     )
   },
   {
+    id: 'ExampleofStockExchanges',
     title: 'Example of Stock Exchanges',
     body: (
       <>
@@ -732,6 +753,7 @@ export const essentialStocks = [
     )
   },
   {
+    id: 'FunctionsofaStockMarket',
     title: 'Functions of a Stock Market',
     body: (
       <>
@@ -806,6 +828,7 @@ export const essentialStocks = [
     )
   },
   {
+    id: 'StockMarketRegulations',
     title: 'Stock Market Regulations',
     body: (
       <>
@@ -827,6 +850,7 @@ export const essentialStocks = [
     )
   },
   {
+    id: 'HowToGetStartedWithTheStockMarket',
     title: 'How To Get Started With The Stock Market?',
     body: (
       <>
@@ -950,6 +974,7 @@ export const essentialStocks = [
     )
   },
   {
+    id: 'Conclusiongweghwfj',
     title: 'Conclusion',
     body: (
       <>
@@ -970,6 +995,7 @@ export const essentialStocks = [
 
 export const essentialForex = [
   {
+    id: 'WhatisForex',
     title: 'What is Forex?',
     body: (
       <>
@@ -989,6 +1015,7 @@ export const essentialForex = [
     )
   },
   {
+    id: 'ABriefHistory',
     title: 'A Brief History',
     body: (
       <>
@@ -1043,6 +1070,7 @@ export const essentialForex = [
     )
   },
   {
+    id: 'AnOverviewofForexMarket',
     title: 'An Overview of Forex Market',
     body: (
       <>
@@ -1082,6 +1110,7 @@ export const essentialForex = [
     )
   },
   {
+    id: 'ForexTradingABeginnerGuide',
     title: "Forex Trading: A Beginner's Guide",
     body: (
       <>
@@ -1126,6 +1155,7 @@ export const essentialForex = [
     )
   },
   {
+    id: 'HowtoGetStartedwithForexTrading',
     title: 'How to Get Started with Forex Trading?',
     body: (
       <ol>
@@ -1169,6 +1199,7 @@ export const essentialForex = [
     )
   },
   {
+    id: 'ForexTradingStyles',
     title: 'Forex Trading Styles',
     body: (
       <>
@@ -1210,6 +1241,7 @@ export const essentialForex = [
     )
   },
   {
+    id: 'RoleofRiskManagementinForexTrading',
     title: 'Role of Risk Management in Forex Trading ',
     body: (
       <>
@@ -1255,6 +1287,7 @@ export const essentialForex = [
     )
   },
   {
+    id: 'ProsandConsofForexTrading',
     title: 'Pros and Cons of Forex Trading',
     body: (
       <>
@@ -1312,6 +1345,7 @@ export const essentialForex = [
     )
   },
   {
+    id: 'CommonForexTerminologies',
     title: 'Common Forex Terminologies',
     body: (
       <>
@@ -1357,6 +1391,7 @@ export const essentialForex = [
     )
   },
   {
+    id: 'FrequentlyAskedQuestionsFAQsinForex',
     title: 'Frequently Asked Questions (FAQs) in Forex',
     body: (
       <>

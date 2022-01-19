@@ -34,7 +34,7 @@ export default function EssentialSectionTwo ({faqs}) {
                       </div>
                     )}
                     variant='link'
-                    eventKey={i}
+                    eventKey={faq.id}
                   >
                     <h6>{faq.title}</h6>
                     <span>+</span>
@@ -42,7 +42,7 @@ export default function EssentialSectionTwo ({faqs}) {
                   </Accordion.Toggle>
                 </Card.Header>
 
-                <Accordion.Collapse eventKey={i}>
+                <Accordion.Collapse eventKey={faq.id}>
                   <Card.Body>
                     {faq.body}
                   </Card.Body>

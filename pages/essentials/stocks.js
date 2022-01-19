@@ -15,7 +15,7 @@ const _seeAlso = [
       see: {
           title: 'See Crypto Essentials',
           image: '/images/essentials/essential-crypto.png',
-          link: '/essentials/cypto',
+          link: '/essentials/crypto',
       },
   },
   {

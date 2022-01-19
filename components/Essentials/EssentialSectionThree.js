@@ -4,7 +4,7 @@ import React from 'react'
 export default function EssentialSectionThree ({seeAlso}) {
   
   return (
-    <div className='d-flex align-items-center'>
+    <div className='essentialsSectionThree d-flex align-items-center'>
       <div className='container'>
         <div className='row d-flex align-items-center justify-content-center'>
           <div className='col-12 pb-5 '>
@@ -31,7 +31,7 @@ export default function EssentialSectionThree ({seeAlso}) {
             >
               <div className='text-center mb-5'>
                 <img
-                    className='rounded-circle w-50 mx-auto'
+                    className='rounded-circle mx-auto'
                     alt="..."
                     src={pos.see.image}
                 />
@@ -39,7 +39,7 @@ export default function EssentialSectionThree ({seeAlso}) {
               <div className='button text-center'>
                 <a
                   href={pos.see.link}
-                  target='_blank'
+                  // target='_blank'
                   rel='noopener noreferrer'
                   className='btn btn-black'
                 >
