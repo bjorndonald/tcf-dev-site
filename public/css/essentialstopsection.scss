@@ -1,0 +1,52 @@
+.purple {
+  color: #8411f0;
+}
+  
+  
+  .essentialsSectionOne {
+    // height: 70vh;
+    .container {
+      margin-top: 10vh;
+    }
+    h1 {
+      font-size: 8vh;
+    }
+  
+    .btn {
+      border-radius: 5vh;
+      padding: 1vh 5vh;
+      font-size: 3vh;
+    }
+  }
+  
+  .essentialsSectionFaq {
+    min-height: 60vh;
+    margin-bottom: 5vh;
+  
+    .accordion-section {
+      // min-height: 60vh;
+  
+      button {
+        position: relative;
+        padding: 2rem 0 !important;
+        h6 {
+          font-size: 1.875rem;
+          width: 95%;
+          margin-bottom: 0;
+          font-weight: 400;
+          font-family: futura-pt;
+        }
+  
+        span {
+          position: absolute;
+          right: 0;
+          top: calc((100% - 2.5rem) / 2);
+        }
+      }
+      .card-body {
+        font-size: 1rem !important;
+        font-weight: normal;
+      }
+    }
+  }
+  

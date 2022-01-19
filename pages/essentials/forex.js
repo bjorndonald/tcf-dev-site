@@ -3,25 +3,37 @@ import MetaTag from './../../components/MetaTag'
 import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import Head from 'next/head'
+import EssentialSectionOne from '../../components/Essentials/EssentialSectionOne'
+import EssentialSectionTwo from '../../components/Essentials/EssentialSectionTwo'
+import EssentialSectionThree from '../../components/Essentials/EssentialSectionThree'
+import { essentialForex, essentialsForex } from '../../components/Essentials/pagedata'
 
-import EssentialsSectionOne from '../../components/Essentials/EssentialsSectionOne'
-import EssentialsSectionTwo from '../../components/Essentials/EssentialsSectionTwo'
-import { useRouter } from 'next/router'
-import { useState } from 'react'
-import { useEffect } from 'react'
 
-export function getServerSideProps (context) {
-  return {
-    props: { url: context.req.url }
-  }
-}
 
-export default function essentials (props) {
-  const router = useRouter()
+const _seeAlso = [
+  {
+      see: {
+          title: 'See Crypto Essentials',
+          image: '/images/essentials/essential-crypto.png',
+          link: '/essentials/cypto',
+      },
+  },
+  {
+    see: {
+        title: 'See Stock Essentials',
+        image: '/images/essentials/essential-stock.png',
+        link: '/essentials/stocks',
+    },
+},
+]
+
+export default function forex () {
+  gsap.registerPlugin(ScrollTrigger)
+  let hc_tl = gsap.timeline()
 
   return (
     <Fragment>
-      <MetaTag
+       <MetaTag
         title={`Forex Essentials | Traders Central`}
         description={
           "The beginner's guide to understand the utmost essentials in Forex."
@@ -45,9 +57,12 @@ export default function essentials (props) {
         ></script>
         {/* <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script> */}
         <script src='/js/script.js'></script>
-        <EssentialsSectionOne {...props} page={'forex'} />
-        {/* <EssentialsSectionTwo /> */}
       </Head>
+      <EssentialSectionOne title={'Forex Essentials'} subtitle={'The must-know basics to become successful in forex'} noun={'forex'} definition={'forex is the market in which foreign currencies are traded.'} image={'/images/essentials/essential-forex.png'}/>
+      <EssentialSectionTwo faqs={essentialForex}/>
+      <EssentialSectionThree seeAlso={_seeAlso}/>
+   
     </Fragment>
   )
 }
+

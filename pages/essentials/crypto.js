@@ -3,21 +3,33 @@ import MetaTag from './../../components/MetaTag'
 import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import Head from 'next/head'
+import EssentialSectionOne from '../../components/Essentials/EssentialSectionOne'
+import EssentialSectionTwo from '../../components/Essentials/EssentialSectionTwo'
+import EssentialSectionThree from '../../components/Essentials/EssentialSectionThree'
+import { essentialCrypto } from '../../components/Essentials/pagedata'
 
-import EssentialsSectionOne from '../../components/Essentials/EssentialsSectionOne'
-import EssentialsSectionTwo from '../../components/Essentials/EssentialsSectionTwo'
-import { useRouter } from 'next/router'
-import { useState } from 'react'
-import { useEffect } from 'react'
 
-export function getServerSideProps (context) {
-  return {
-    props: { url: context.req.url }
-  }
-}
 
-export default function essentials (props) {
-  const router = useRouter()
+const _seeAlso = [
+  {
+      see: {
+          title: 'See Forex Essentials',
+          image: '/images/essentials/essential-forex.png',
+          link: '/essentials/forex',
+      },
+  },
+  {
+    see: {
+        title: 'See Stock Essentials',
+        image: '/images/essentials/essential-stock.png',
+        link: '/essentials/stocks',
+    },
+},
+]
+
+export default function crypto () {
+  gsap.registerPlugin(ScrollTrigger)
+  let hc_tl = gsap.timeline()
 
   return (
     <Fragment>
@@ -45,9 +57,11 @@ export default function essentials (props) {
         ></script>
         {/* <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script> */}
         <script src='/js/script.js'></script>
-        <EssentialsSectionOne {...props} page={'crypto'} />
-        {/* <EssentialsSectionTwo /> */}
       </Head>
+      <EssentialSectionOne title={'Crypto Essentials'} subtitle={'The must-know basics to become successful in crypto'} noun={'cryptocurrency'} definition={'a digital currency or decentralized system of exchange that uses advanced cryptography for security.'} image={'/images/essentials/essential-crypto.png'}/>
+      <EssentialSectionTwo faqs={essentialCrypto}/>
+      <EssentialSectionThree seeAlso={_seeAlso}/>
+   
     </Fragment>
   )
 }

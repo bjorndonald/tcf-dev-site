@@ -1,5 +1,5 @@
 import Link from 'next/link'
-export const essentials = [
+export const essentialCrypto = [
   {
     title: 'What Is Cryptocurrency?',
     body: (
@@ -559,7 +559,7 @@ export const essentials = [
   }
 ]
 
-export const stocks = [
+export const essentialStocks = [
   {
     title: 'What Is Stock Market?',
     body: (
@@ -968,7 +968,7 @@ export const stocks = [
   }
 ]
 
-export const forex = [
+export const essentialForex = [
   {
     title: 'What is Forex?',
     body: (
