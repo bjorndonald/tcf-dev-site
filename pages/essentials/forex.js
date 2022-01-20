@@ -4,7 +4,7 @@ import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import Head from 'next/head'
 import EssentialSectionOne from '../../components/Essentials/EssentialSectionOne'
-import EssentialSectionTwo from '../../components/Essentials/EssentialSectionTwo'
+import EssentialSectionFaq from '../../components/Essentials/EssentialSectionFaq'
 import EssentialSectionThree from '../../components/Essentials/EssentialSectionThree'
 import { essentialForex, essentialsForex } from '../../components/Essentials/pagedata'
 
@@ -59,7 +59,7 @@ export default function forex () {
         <script src='/js/script.js'></script>
       </Head>
       <EssentialSectionOne title={'Forex Essentials'} subtitle={'The must-know basics to become successful in forex'} noun={'forex'} definition={'forex is the market in which foreign currencies are traded.'} image={'/images/essentials/essential-forex.png'}/>
-      <EssentialSectionTwo faqs={essentialForex}/>
+      <EssentialSectionFaq faqs={essentialForex}/>
       <EssentialSectionThree seeAlso={_seeAlso}/>
    
     </Fragment>

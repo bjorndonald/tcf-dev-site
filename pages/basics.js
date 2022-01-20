@@ -7,15 +7,15 @@ import BasicsSectionOne from '../components/Basics/BasicsSectionOne'
 import BasicsSectionTwo from '../components/Basics/BasicsSectionTwo'
 import BasicsSectionThree from '../components/Basics/BasicsSectionThree'
 
-export function getServerSideProps (context) {
-  return {
-    props: { url: context.req.url }
-  }
-}
+// export function getServerSideProps (context) {
+//   return {
+//     props: { url: context.req.url }
+//   }
+// }
 
-export default function basics (props) {
-  // gsap.registerPlugin(ScrollTrigger)
-  // let hc_tl = gsap.timeline()
+export default function basics () {
+  gsap.registerPlugin(ScrollTrigger)
+  let hc_tl = gsap.timeline()
 
   return (
     <Fragment>
@@ -44,7 +44,7 @@ the trader in you by unleashing your true potential.`}
         <script src='/js/script.js'></script>
       </Head>
       <BasicsSectionOne />
-      <BasicsSectionTwo {...props} />
+      <BasicsSectionTwo />
       {/* <BasicsSectionThree /> */}
     </Fragment>
   )

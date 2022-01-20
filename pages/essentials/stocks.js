@@ -4,7 +4,7 @@ import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import Head from 'next/head'
 import EssentialSectionOne from '../../components/Essentials/EssentialSectionOne'
-import EssentialSectionTwo from '../../components/Essentials/EssentialSectionTwo'
+import EssentialSectionFaq from '../../components/Essentials/EssentialSectionFaq'
 import EssentialSectionThree from '../../components/Essentials/EssentialSectionThree'
 import { essentialStocks } from '../../components/Essentials/pagedata'
 
@@ -59,7 +59,7 @@ export default function stocks () {
         <script src='/js/script.js'></script>
       </Head>
       <EssentialSectionOne title={'Stocks Essentials'} subtitle={'The must-know basics to become successful in stocks'} noun={'stock'} definition={'the goods or merchandise kept on the premises of a shop or warehouse and available for sale or distribution.'} image={'/images/essentials/essential-stock.png'}/>
-      <EssentialSectionTwo faqs={essentialStocks}/>
+      <EssentialSectionFaq faqs={essentialStocks}/>
       <EssentialSectionThree seeAlso={_seeAlso}/>
    
     </Fragment>

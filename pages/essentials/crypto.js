@@ -4,7 +4,7 @@ import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import Head from 'next/head'
 import EssentialSectionOne from '../../components/Essentials/EssentialSectionOne'
-import EssentialSectionTwo from '../../components/Essentials/EssentialSectionTwo'
+import EssentialSectionFaq from '../../components/Essentials/EssentialSectionFaq'
 import EssentialSectionThree from '../../components/Essentials/EssentialSectionThree'
 import { essentialCrypto } from '../../components/Essentials/pagedata'
 
@@ -59,7 +59,7 @@ export default function crypto () {
         <script src='/js/script.js'></script>
       </Head>
       <EssentialSectionOne title={'Crypto Essentials'} subtitle={'The must-know basics to become successful in crypto'} noun={'cryptocurrency'} definition={'a digital currency or decentralized system of exchange that uses advanced cryptography for security.'} image={'/images/essentials/essential-crypto.png'}/>
-      <EssentialSectionTwo faqs={essentialCrypto}/>
+      <EssentialSectionFaq faqs={essentialCrypto}/>
       <EssentialSectionThree seeAlso={_seeAlso}/>
    
     </Fragment>

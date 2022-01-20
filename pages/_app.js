@@ -38,6 +38,7 @@ import './../public/css/landscape.scss'
 import './../public/css/video-controls.scss'
 import './../public/css/tc-cares.scss'
 import './../public/css/essentialstopsection.scss'
+import './../public/css/basicstop.scss'
 import { useRouter } from 'next/router'
 
 import { Fragment } from 'react'

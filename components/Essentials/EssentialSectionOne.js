@@ -7,14 +7,14 @@ export default function EssentialSectionOne({title, subtitle, noun, definition, 
             <div className='container'>
                 <div className='row'>
                     <div className='col-md-8 my-auto'>
-                        <div className='mb-sm-2 mb-5'>
+                        <div className='mb-sm-2 mb-3'>
                             <h1>{title}</h1>
                         </div>
                         <h2>{subtitle}</h2>
                     </div>
              
                         {/* <img src='/images/essentials/header.PNG' alt='' /> */}
-                        <div className='col-md-4 p-sm-0 pb-2'>
+                        <div className='col-md-4 text-center p-sm-0 mb-3'>
                         <img
                             className='rounded-circle mx-auto'
                             alt="..."

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Accordion, Card, Button } from 'react-bootstrap'
 
-export default function EssentialSectionTwo ({faqs}) {
+export default function EssentialSectionFaq ({faqs}) {
   const toggle = e => {
     $(
       $(e.target)
