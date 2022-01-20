@@ -7,7 +7,7 @@ export default function EssentialSectionOne({title, subtitle, noun, definition, 
             <div className='container'>
                 <div className='row'>
                     <div className='col-md-8 my-auto'>
-                        <div className='mb-sm-2 mb-3'>
+                        <div className='mb-sm-2 mb-5'>
                             <h1>{title}</h1>
                         </div>
                         <h2>{subtitle}</h2>
