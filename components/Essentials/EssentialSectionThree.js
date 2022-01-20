@@ -26,7 +26,7 @@ export default function EssentialSectionThree ({seeAlso}) {
           {seeAlso.map((pos, i) => (
             <div
               
-              className='col'
+              className='col-md-6 mb-5'
               key={i}
             >
               <div className='text-center mb-5'>

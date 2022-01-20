@@ -16,12 +16,9 @@ export default function EssentialSectionTwo ({faqs}) {
   }
  
   return (
-    <div className='essentialsSectionFaq faqSection d-flex align-items-center'>
+    <div className='essentialsSectionFaq faqSection py-5 d-flex align-items-center'>
       <div className='container'>
         <div className='row'>
-          {/* <div className='col-12 pb-5 gaspSlideLeft'>
-            <h2>FAQ</h2>
-          </div> */}
           <div className='col-12 accordion-section gaspSlideRight '>
             <Accordion>
             {faqs.map((faq, i) => (
