@@ -14,7 +14,7 @@ export default function EssentialSectionOne({title, subtitle, noun, definition, 
                     </div>
              
                         {/* <img src='/images/essentials/header.PNG' alt='' /> */}
-                        <div className='col-md-4 text-center p-sm-0 mb-3'>
+                        <div className='col-md-4'>
                         <img src={image} alt='' />
                     </div>
                    
