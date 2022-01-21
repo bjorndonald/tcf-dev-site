@@ -39,7 +39,6 @@ export default function EssentialSectionThree({ seeAlso, page }) {
           console.log('Results from vote sent', result.data)
 
           if (vote === 'down' && page === result.data.page) {
-            setVoteThumbsDown(result.data.downvotes);
             setFeedBackThumbsDown(true);
             setFeedBackThumbsUp(false)
             window.sessionStorage.setItem('hasclicked', true)
