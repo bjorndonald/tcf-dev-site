@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 
 export default function EssentialSectionThree({ seeAlso, page }) {
@@ -6,51 +6,62 @@ export default function EssentialSectionThree({ seeAlso, page }) {
   const [feedBackThumbsDown, setFeedBackThumbsDown] = useState(false);
   const [feedBackThumbsUp, setFeedBackThumbsUp] = useState(false);
 
-  const [voteThumbsDown, setVoteThumbsDown] = useState();
   const [voteThumbsUp, setVoteThumbsUp] = useState();
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+
+
   const thumbsDownHandler = async (vote) => {
-    setIsSubmitting(true);
-    let voteContent = { page, vote }
-    const sendRequest = async () => {
-      const response = await fetch('https://api.traderscentral.com/main-site/v1/submit-feedback', {
-        method: 'POST',
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(voteContent)
-      });
+    if (window) {
+      var hasClicked = window.sessionStorage.getItem('hasclicked');
 
-      if (!response.ok) {
-        throw new Error('posting vote data failed.');
+      if (hasClicked !== page) {
+        setIsSubmitting(true);
+        let voteContent = { page, vote }
+        const sendRequest = async () => {
+          const response = await fetch('https://api.traderscentral.com/main-site/v1/submit-feedback', {
+            method: 'POST',
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify(voteContent)
+          });
+
+          if (!response.ok) {
+            throw new Error('posting vote data failed.');
+          }
+
+          const result = await response.json();
+
+          console.log('Results from vote sent', result.data)
+
+          if (vote === 'down' && page === result.data.page) {
+            setVoteThumbsDown(result.data.downvotes);
+            setFeedBackThumbsDown(true);
+            setFeedBackThumbsUp(false)
+            window.sessionStorage.setItem('hasclicked', true)
+          } else if (vote === 'up' && page === result.data.page) {
+            setVoteThumbsUp(result.data.upvotes);
+            setFeedBackThumbsUp(true);
+            setFeedBackThumbsDown(false)
+          }
+
+          return result.data;
+        }
+
+        try {
+          await sendRequest();
+        } catch (error) {
+          console.log(error)
+        }
+
+        window.sessionStorage.setItem('hasclicked', page);
+        setIsSubmitting(false);
+
       }
-
-      const result = await response.json();
-
-      console.log('Results from vote sent', result.data)
-
-      if (vote === 'down' && page === result.data.page) {
-        setVoteThumbsDown(result.data.downvotes);
-        setFeedBackThumbsDown(true);
-        setFeedBackThumbsUp(false)
-      } else if (vote === 'up' && page === result.data.page) {
-        setVoteThumbsUp(result.data.upvotes);
-        setFeedBackThumbsUp(true);
-        setFeedBackThumbsDown(false)
-      }
-
-      return result.data;
     }
 
-    try {
-      await sendRequest();
-    } catch (error) {
-      console.log(error)
-    }
-
-    setIsSubmitting(false);
   }
   const thumbsDownThumbsUp = (
     <div className='icons purple d-flex align-items-center justify-content-center'>
@@ -79,7 +90,6 @@ export default function EssentialSectionThree({ seeAlso, page }) {
             {isSubmitting && isSubmittingModalContent}
             {feedBackThumbsDown && !isSubmitting &&
               <div className='essentialsLightPurple  mt-2 d-flex align-items-center justify-content-center'>
-                <p style={{ fontSize: '16px' }}>{voteThumbsDown} votes</p>
               </div>
             }
             {feedBackThumbsUp && !isSubmitting &&
