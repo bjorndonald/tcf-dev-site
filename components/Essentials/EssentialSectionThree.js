@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Link from 'next/link';
 
 
 export default function EssentialSectionThree({ seeAlso, page }) {
@@ -11,12 +12,13 @@ export default function EssentialSectionThree({ seeAlso, page }) {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
 
-
   const thumbsDownHandler = async (vote) => {
     if (window) {
-      var hasClicked = window.sessionStorage.getItem('hasclicked');
+      var cryptohasclicked = window.sessionStorage.getItem('cryptohasclicked');
+      var forexhasclicked = window.sessionStorage.getItem('forexhasclicked');
+      var stockshasclicked = window.sessionStorage.getItem('stockshasclicked');
 
-      if (hasClicked !== page) {
+      var returnContent = async () => {
         setIsSubmitting(true);
         let voteContent = { page, vote }
         const sendRequest = async () => {
@@ -49,17 +51,30 @@ export default function EssentialSectionThree({ seeAlso, page }) {
 
           return result.data;
         }
-
         try {
           await sendRequest();
         } catch (error) {
           console.log(error)
         }
 
-        window.sessionStorage.setItem('hasclicked', page);
+        if (page == 'crypto') {
+          window.sessionStorage.setItem('cryptohasclicked', true);
+        } else if (page == 'forex') {
+          window.sessionStorage.setItem('forexhasclicked', true);
+        } else if (page == 'stocks') {
+          window.sessionStorage.setItem('stockshasclicked', true);
+        }
         setIsSubmitting(false);
-
       }
+
+      if (!cryptohasclicked && page == 'crypto') {
+        returnContent();
+      } else if (!forexhasclicked && page == 'forex') {
+        returnContent();
+      } else if (!stockshasclicked && page == 'stocks') {
+        returnContent();
+      }
+
     }
 
   }
@@ -108,23 +123,27 @@ export default function EssentialSectionThree({ seeAlso, page }) {
                 key={i}
               >
                 <div className='text-center mb-5'>
-                  <a href={pos.see.link}>
-                    <img
-                      className='rounded-circle mx-auto'
-                      alt="..."
-                      src={pos.see.image}
-                    />
-                  </a>
+                  <Link
+                    href={pos.see.link}>
+                    <a>
+                      <img
+                        className='rounded-circle mx-auto'
+                        alt="..."
+                        src={pos.see.image}
+                      />
+                    </a>
+                  </Link>
                 </div>
                 <div className='button text-center'>
-                  <a
-                    href={pos.see.link}
-                    // target='_blank'
-                    rel='noopener noreferrer'
-                    className='btn btn-black'
-                  >
-                    {pos.see.title}
-                  </a>
+                  <Link
+                    href={pos.see.link}>
+                    <a
+                      rel='noopener noreferrer'
+                      className='btn btn-black'
+                    >
+                      {pos.see.title}
+                    </a>
+                  </Link>
                 </div>
               </div>
             ))}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import BasicsSectionFaq from './BasicsSectionFaq'
+import Link from 'next/link';
 
 
 
@@ -250,13 +251,15 @@ function BasicsSectionTwo() {
 
             <div className='row'>
               <div className='col-12 text-center mb-4'>
-                <a href={pos.link}>
-                  <img
-                    className='rounded-circle mx-auto'
-                    alt="..."
-                    src={pos.image}
-                  />
-                </a>
+                <Link href={pos.link}>
+                  <a>
+                    <img
+                      className='rounded-circle mx-auto'
+                      alt="..."
+                      src={pos.image}
+                    />
+                  </a>
+                </Link>
               </div>
               <div className='col-12 text-center'>
                 <h3>{pos.title}</h3>
@@ -269,13 +272,14 @@ function BasicsSectionTwo() {
               </div>
               <div className='col-12 text-center mb-5'>
                 <div className='button'>
-                  <a
-                    href={pos.link}
-                    rel='noopener noreferrer'
-                    className='btn btn-black'
-                  >
-                    {pos.linkTitle}
-                  </a>
+                  <Link href={pos.link}>
+                    <a
+                      rel='noopener noreferrer'
+                      className='btn btn-black'
+                    >
+                      {pos.linkTitle}
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
