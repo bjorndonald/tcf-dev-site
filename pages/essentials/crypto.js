@@ -60,7 +60,7 @@ export default function crypto () {
       </Head>
       <EssentialSectionOne title={'Crypto Essentials'} subtitle={'The must-know basics to become successful in crypto'} noun={'cryptocurrency'} definition={'a digital currency or decentralized system of exchange that uses advanced cryptography for security.'} image={'/images/essentials/essential-crypto.png'}/>
       <EssentialSectionFaq faqs={essentialCrypto}/>
-      <EssentialSectionThree seeAlso={_seeAlso}/>
+      <EssentialSectionThree seeAlso={_seeAlso} page={'crypto'}/>
    
     </Fragment>
   )

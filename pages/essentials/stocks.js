@@ -60,7 +60,7 @@ export default function stocks () {
       </Head>
       <EssentialSectionOne title={'Stocks Essentials'} subtitle={'The must-know basics to become successful in stocks'} noun={'stock'} definition={'the goods or merchandise kept on the premises of a shop or warehouse and available for sale or distribution.'} image={'/images/essentials/essential-stock.png'}/>
       <EssentialSectionFaq faqs={essentialStocks}/>
-      <EssentialSectionThree seeAlso={_seeAlso}/>
+      <EssentialSectionThree seeAlso={_seeAlso} page={'stocks'}/>
    
     </Fragment>
   )

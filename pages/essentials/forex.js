@@ -60,7 +60,7 @@ export default function forex () {
       </Head>
       <EssentialSectionOne title={'Forex Essentials'} subtitle={'The must-know basics to become successful in forex'} noun={'forex'} definition={'forex is the market in which foreign currencies are traded.'} image={'/images/essentials/essential-forex.png'}/>
       <EssentialSectionFaq faqs={essentialForex}/>
-      <EssentialSectionThree seeAlso={_seeAlso}/>
+      <EssentialSectionThree seeAlso={_seeAlso} page={'forex'}/>
    
     </Fragment>
   )

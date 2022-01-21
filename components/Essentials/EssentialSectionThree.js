@@ -1,7 +1,69 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 
-export default function EssentialSectionThree({ seeAlso }) {
+export default function EssentialSectionThree({ seeAlso, page }) {
+
+  const [feedBackThumbsDown, setFeedBackThumbsDown] = useState(false);
+  const [feedBackThumbsUp, setFeedBackThumbsUp] = useState(false);
+
+  const [voteThumbsDown, setVoteThumbsDown] = useState();
+  const [voteThumbsUp, setVoteThumbsUp] = useState();
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const thumbsDownHandler = async (vote) => {
+    setIsSubmitting(true);
+    let voteContent = { page, vote }
+    const sendRequest = async () => {
+      const response = await fetch('https://api.traderscentral.com/main-site/v1/submit-feedback', {
+        method: 'POST',
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(voteContent)
+      });
+
+      if (!response.ok) {
+        throw new Error('posting vote data failed.');
+      }
+
+      const result = await response.json();
+
+      console.log('Results from vote sent', result.data)
+
+      if (vote === 'down' && page === result.data.page) {
+        setVoteThumbsDown(result.data.downvotes);
+        setFeedBackThumbsDown(true);
+        setFeedBackThumbsUp(false)
+      } else if (vote === 'up' && page === result.data.page) {
+        setVoteThumbsUp(result.data.upvotes);
+        setFeedBackThumbsUp(true);
+        setFeedBackThumbsDown(false)
+      }
+
+      return result.data;
+    }
+
+    try {
+      await sendRequest();
+    } catch (error) {
+      console.log(error)
+    }
+
+    setIsSubmitting(false);
+  }
+  const thumbsDownThumbsUp = (
+    <div className='icons purple d-flex align-items-center justify-content-center'>
+      <button className={`${feedBackThumbsDown ? 'essentialsLightPurple' : 'purple'} border-0 bg-transparent`} disabled={feedBackThumbsDown} onClick={() => { thumbsDownHandler('down') }}>
+        <i className='fa fa-thumbs-down fa-3x mr-2'></i>
+      </button>
+      <button className={`${feedBackThumbsUp ? 'essentialsLightPurple' : 'purple'} border-0 bg-transparent`} disabled={feedBackThumbsUp} onClick={() => { thumbsDownHandler('up') }}>
+        <i className='fa fa-thumbs-up fa-3x'></i>
+      </button>
+    </div>
+  )
+  const isSubmittingModalContent = <div className='d-flex justify-content-center align-items-center'><div className="spinner-border purple" role="status"><span className="sr-only">Loading...</span></div></div>;
+
 
   return (
     <div className='essentialsSectionThree d-flex align-items-center'>
@@ -11,16 +73,22 @@ export default function EssentialSectionThree({ seeAlso }) {
             <div
               className='purple mb-2 d-flex align-items-center justify-content-center'
             >
-              <p>Did you find this information useful?</p>
+              <p>{feedBackThumbsDown || feedBackThumbsUp ? 'Thank you for your feedback!' : 'Did you find this information useful?'}</p>
             </div>
-            <div className='icons purple d-flex align-items-center justify-content-center'>
-              <a>
-                <i className='fa fa-thumbs-down fa-3x mr-2'></i>
-              </a>
-              <a>
-                <i className='fa fa-thumbs-up fa-3x'></i>
-              </a>
-            </div>
+            {!isSubmitting && thumbsDownThumbsUp}
+            {isSubmitting && isSubmittingModalContent}
+            {feedBackThumbsDown && !isSubmitting &&
+              <div className='essentialsLightPurple  mt-2 d-flex align-items-center justify-content-center'>
+                <p style={{ fontSize: '16px' }}>{voteThumbsDown} votes</p>
+              </div>
+            }
+            {feedBackThumbsUp && !isSubmitting &&
+              <div className='essentialsLightPurple  mt-2 d-flex align-items-center justify-content-center'>
+                <p style={{ fontSize: '16px' }}>{voteThumbsUp} votes</p>
+              </div>
+            }
+
+
           </div>
           <div className='row justify-content-center align-items-center'>
             {seeAlso.map((pos, i) => (
@@ -50,26 +118,6 @@ export default function EssentialSectionThree({ seeAlso }) {
                 </div>
               </div>
             ))}
-
-            {/* <div className='col'>
-              <div className='text-center mb-5'>
-                <img
-                    className='rounded-circle w-50 mx-auto'
-                    alt="..."
-                    src='/images/essentials/essential-crypto.png'
-                />
-              </div>
-              <div className='button text-center'>
-                <a
-                  href={'/essentials/stocks'}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='btn btn-black'
-                >
-                  See Stock Essentials
-                </a>
-              </div>
-            </div> */}
           </div>
 
         </div>
