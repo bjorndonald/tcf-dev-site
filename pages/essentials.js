@@ -7,12 +7,6 @@ import BasicsSectionOne from '../components/Basics/BasicsSectionOne'
 import BasicsSectionTwo from '../components/Basics/BasicsSectionTwo'
 import BasicsSectionThree from '../components/Basics/BasicsSectionThree'
 
-// export function getServerSideProps (context) {
-//   return {
-//     props: { url: context.req.url }
-//   }
-// }
-
 export default function basics () {
   gsap.registerPlugin(ScrollTrigger)
   let hc_tl = gsap.timeline()
@@ -45,7 +39,6 @@ the trader in you by unleashing your true potential.`}
       </Head>
       <BasicsSectionOne />
       <BasicsSectionTwo />
-      {/* <BasicsSectionThree /> */}
     </Fragment>
   )
 }

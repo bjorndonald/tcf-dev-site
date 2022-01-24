@@ -189,8 +189,8 @@ export default function NavBar () {
                     </Link>
                   </li> */}
                   <li>
-                    <Link href='/trading-basics'>
-                      <a className='mobileMenuListSubA navClose'>Basics</a>
+                    <Link href='/essentials'>
+                      <a className='mobileMenuListSubA navClose'>Essentials</a>
                     </Link>
                   </li>
                 </ul>
@@ -435,8 +435,8 @@ export default function NavBar () {
                     </Link>
                   </li> */}
                   <li>
-                    <Link href='/trading-basics'>
-                      <a className='dropdown-item'>Basics</a>
+                    <Link href='/essentials'>
+                      <a className='dropdown-item'>Essentials</a>
                     </Link>
                   </li>
                 </ul>
