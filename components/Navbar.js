@@ -189,10 +189,15 @@ export default function NavBar () {
                     </Link>
                   </li> */}
                   <li>
-                    <Link href='/essentials'>
-                      <a className='mobileMenuListSubA navClose'>Essentials</a>
+                    <Link href='/trading-basics'>
+                      <a className='mobileMenuListSubA navClose'>Basics</a>
                     </Link>
                   </li>
+                  {/*<li>*/}
+                  {/*  <Link href='/essentials'>*/}
+                  {/*    <a className='mobileMenuListSubA navClose'>Essentials</a>*/}
+                  {/*  </Link>*/}
+                  {/*</li>*/}
                 </ul>
               </li>
               <li className='mobileMenuListChild'>
@@ -426,7 +431,7 @@ export default function NavBar () {
                   Learn
                 </a>
                 <ul
-                  className='dropdown-menu white-background'
+                  className='dropdown-menu white-background d-flex align-items-center justify-content-center'
                   aria-labelledby='navbarDropdownMenuLinkTwo'
                 >
                   {/* <li>
@@ -435,10 +440,15 @@ export default function NavBar () {
                     </Link>
                   </li> */}
                   <li>
-                    <Link href='/essentials'>
-                      <a className='dropdown-item'>Essentials</a>
+                    <Link href='/trading-basics'>
+                      <a className='dropdown-item'>Basics</a>
                     </Link>
                   </li>
+                  {/*<li>*/}
+                  {/*  <Link href='/essentials'>*/}
+                  {/*    <a className='dropdown-item'>Essentials</a>*/}
+                  {/*  </Link>*/}
+                  {/*</li>*/}
                 </ul>
               </li>
 
