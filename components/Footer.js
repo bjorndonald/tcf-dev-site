@@ -63,11 +63,11 @@ export default function Footer () {
                       <a>Bites</a>
                     </Link>
                   </li> */}
-                  <li>
-                    <Link href='/trading-basics'>
-                      <a>Basics</a>
-                    </Link>
-                  </li>
+                  {/*<li>*/}
+                  {/*  <Link href='/trading-basics'>*/}
+                  {/*    <a>Basics</a>*/}
+                  {/*  </Link>*/}
+                  {/*</li>*/}
                   <li>
                       <Link href='https://blog.traderscentral.com/'>
                           <a target="_blank" rel="noreferrer">Academy</a>

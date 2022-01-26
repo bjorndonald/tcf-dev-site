@@ -188,11 +188,11 @@ export default function NavBar () {
                       <a className='mobileMenuListSubA navClose'>Bites</a>
                     </Link>
                   </li> */}
-                  <li>
-                    <Link href='/trading-basics'>
-                      <a className='mobileMenuListSubA navClose'>Basics</a>
-                    </Link>
-                  </li>
+                  {/*<li>*/}
+                  {/*  <Link href='/trading-basics'>*/}
+                  {/*    <a className='mobileMenuListSubA navClose'>Basics</a>*/}
+                  {/*  </Link>*/}
+                  {/*</li>*/}
                   <li>
                     <Link href='https://blog.traderscentral.com/'>
                       <a className='mobileMenuListSubA navClose' target="_blank" rel="noreferrer">Academy</a>
@@ -444,11 +444,11 @@ export default function NavBar () {
                       <a className='dropdown-item'>Bites</a>
                     </Link>
                   </li> */}
-                  <li>
-                    <Link href='/trading-basics'>
-                      <a className='dropdown-item'>Basics</a>
-                    </Link>
-                  </li>
+                  {/*<li>*/}
+                  {/*  <Link href='/trading-basics'>*/}
+                  {/*    <a className='dropdown-item'>Basics</a>*/}
+                  {/*  </Link>*/}
+                  {/*</li>*/}
                   <li>
                     <Link href='https://blog.traderscentral.com/'>
                       <a className='dropdown-item' target="_blank" rel="noreferrer">Academy</a>
