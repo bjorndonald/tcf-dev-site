@@ -155,7 +155,7 @@ export default function Footer () {
         <div className='row footer-bottom pt-3 pb-2 '>
           <div className='col-12'>
             <p style={{ fontSize: 'small', textAlign: 'justify' }}>
-              We provide funding services to traders through several affiliates.
+              We provide financial services to traders through several affiliates.
               Our referral/introductory funding product is offered by Traders
               Central Fund Corp, which is a Canadian entity with registration
               no. BC1281254 connects traders and brokers to backers for funding
