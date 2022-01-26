@@ -69,12 +69,14 @@ export default function Footer () {
                     </Link>
                   </li>
                   <li>
-                    <a
-                      target='affiliate'
-                      href='https://blog.traderscentral.com/'
-                    >
-                      Academy
-                    </a>
+                      <Link href='https://blog.traderscentral.com/'>
+                          <a target="_blank" rel="noreferrer">Academy</a>
+                      </Link>
+                  </li>
+                  <li>
+                    <Link href='/essentials'>
+                        <a>Essentials</a>
+                    </Link>
                   </li>
                 </ul>
               </div>
