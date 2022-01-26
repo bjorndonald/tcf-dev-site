@@ -444,11 +444,11 @@ export default function NavBar () {
                       <a className='dropdown-item'>Basics</a>
                     </Link>
                   </li>
-                  {/*<li>*/}
-                  {/*  <Link href='/essentials'>*/}
-                  {/*    <a className='dropdown-item'>Essentials</a>*/}
-                  {/*  </Link>*/}
-                  {/*</li>*/}
+                  <li>
+                    <Link href='/essentials'>
+                      <a className='dropdown-item'>Essentials</a>
+                    </Link>
+                  </li>
                 </ul>
               </li>
 
