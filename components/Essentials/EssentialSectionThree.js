@@ -79,10 +79,10 @@ export default function EssentialSectionThree({ seeAlso, page }) {
   }
   const thumbsDownThumbsUp = (
     <div className='icons purple d-flex align-items-center justify-content-center'>
-      <button className={`${feedBackThumbsDown ? 'essentialsLightPurple' : 'purple'} border-0 bg-transparent`} disabled={feedBackThumbsDown} onClick={() => { thumbsDownHandler('down') }}>
+      <button className={`${feedBackThumbsDown ? 'purple' : 'essentialsLightPurple'} border-0 bg-transparent`} disabled={feedBackThumbsDown} onClick={() => { thumbsDownHandler('down') }}>
         <i className='fa fa-thumbs-down fa-3x mr-2'></i>
       </button>
-      <button className={`${feedBackThumbsUp ? 'essentialsLightPurple' : 'purple'} border-0 bg-transparent`} disabled={feedBackThumbsUp} onClick={() => { thumbsDownHandler('up') }}>
+      <button className={`${feedBackThumbsUp ? 'purple' : 'essentialsLightPurple'} border-0 bg-transparent`} disabled={feedBackThumbsUp} onClick={() => { thumbsDownHandler('up') }}>
         <i className='fa fa-thumbs-up fa-3x'></i>
       </button>
     </div>
