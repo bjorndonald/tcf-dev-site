@@ -20,7 +20,7 @@ const _seeAlso = [
   },
   {
     see: {
-        title: 'See Stock Essentials',
+        title: 'See Stocks Essentials',
         image: '/images/essentials/essential-stock.png',
         link: '/essentials/stocks',
     },

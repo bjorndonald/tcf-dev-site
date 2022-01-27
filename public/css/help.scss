@@ -490,7 +490,7 @@
 }
 
 .helpCenterSectionFour {
-  height: 650px;
+  // height: 650px;
 
   .body {
     justify-content: center;
@@ -503,6 +503,27 @@
       border-radius: 1.5625rem;
     }
   }
+
+  .discover-section {
+    img {
+      width: 80%;
+    }
+    h2{
+      font-size: 48px;
+    }
+    .btn {
+      border-radius: 5vh;
+      padding: 1vh 3vh;
+      font-size: 2.5vh;
+    }
+  
+    .btn:hover {
+      text-decoration: underline;
+    }
+
+  }
+
+  
 
   .placeholder-image {
     width: 460px;
@@ -588,6 +609,18 @@ nav {
       padding-right: 0.5rem;
       color: #6c757d;
       content: '>';
+    }
+  }
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+	.helpCenterSectionFour {
+  
+    .discover-section {
+      img {
+        width: 50%;
+      }
+     
     }
   }
 }
