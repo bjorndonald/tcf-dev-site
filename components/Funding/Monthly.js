@@ -75,7 +75,7 @@ function Monthly (props) {
                     placement={'top'}
                     overlay={
                       <Tooltip>
-                        The drawdown limit here refers to equity.
+                        The drawdown limit here refers to 10% of initial equity or balance. For example, on a 50,000$ account, you can't reach 45000$ or lower in open equity or balance.
                       </Tooltip>
                     }
                   >

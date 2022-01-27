@@ -75,8 +75,7 @@ function OTFFunding (props) {
                     placement={'top'}
                     overlay={
                       <Tooltip>
-                        This means, the equity of the trading account must not
-                        at any moment, reach a loss of -5%
+                        This means your account balance or open equity should not at any point reach -5% of initial equity. e.g. In a 50,000$ account, your open equity or balance shouldn't reach 47500$ or lower.
                       </Tooltip>
                     }
                   >
