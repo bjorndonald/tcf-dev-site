@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect } from 'react'
-import HelpCenterSectionFive from '../components/HelpCenter/HelpCenterSectionFive'
+import HelpCenterSectionDiscover from '../components/HelpCenter/HelpCenterSectionDiscover'
 import HelpCenterSectionFour from '../components/HelpCenter/HelpCenterSectionFour'
 import HelpCenterSectionOne from '../components/HelpCenter/HelpCenterSectionOne'
 import HelpCenterSectionThree from '../components/HelpCenter/HelpCenterSectionThree'
@@ -51,8 +51,8 @@ function helpCenter (props) {
       <HelpCenterSectionOne />
       <HelpCenterSectionTwo />
       <HelpCenterSectionThree {...props} />
-      <HelpCenterSectionFour />
-      <HelpCenterSectionFive />
+      {/* <HelpCenterSectionFour /> */}
+      <HelpCenterSectionDiscover />
     </Fragment>
   )
 }

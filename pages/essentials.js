@@ -5,16 +5,15 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import Head from 'next/head'
 import BasicsSectionOne from '../components/Basics/BasicsSectionOne'
 import BasicsSectionTwo from '../components/Basics/BasicsSectionTwo'
-import BasicsSectionThree from '../components/Basics/BasicsSectionThree'
 
-export default function basics () {
+export default function essentials () {
   gsap.registerPlugin(ScrollTrigger)
   let hc_tl = gsap.timeline()
 
   return (
     <Fragment>
       <MetaTag
-        title='Trading Basics - Learn The Fundamentals of Trading | Traders Central'
+        title='Trading Essentials - Learn The Fundamentals of Trading | Traders Central'
         description={`Learn the Fundamentals of Forex, Crypto &amp; Stock Trading and discover 
 the trader in you by unleashing your true potential.`}
       />
