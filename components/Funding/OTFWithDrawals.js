@@ -45,7 +45,7 @@ function OTFWithDrawals () {
 
         <Accordion.Collapse eventKey='0'>
           <Card.Body>
-            All withdrawals are processed through the client portal.
+            Withdrawals by the funding provider through the client portal.
           </Card.Body>
         </Accordion.Collapse>
       </Card>
