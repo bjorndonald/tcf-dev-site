@@ -58,7 +58,7 @@ export default function stocks () {
         {/* <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script> */}
         <script src='/js/script.js'></script>
       </Head>
-      <EssentialSectionOne title={'Stocks Essentials'} subtitle={'The must-know basics to become successful in stocks'} noun={'stock'} definition={'the goods or merchandise kept on the premises of a shop or warehouse and available for sale or distribution.'} image={'/images/essentials/essential-stock.png'}/>
+      <EssentialSectionOne title={'Stocks Essentials'} subtitle={'The must-know basics to become successful in stocks'} noun={'stock'} definition={'In finance, stock consists of all of the shares into which ownership of a corporation or company is divided.'} image={'/images/essentials/essential-stock.png'}/>
       <EssentialSectionFaq faqs={essentialStocks}/>
       <EssentialSectionThree seeAlso={_seeAlso} page={'stocks'}/>
    
