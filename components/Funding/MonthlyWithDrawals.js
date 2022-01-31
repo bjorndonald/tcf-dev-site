@@ -195,7 +195,7 @@ function MonthlyWithDrawals () {
 
         <Accordion.Collapse eventKey='4'>
           <Card.Body>
-            A withdrawal through crypto attracts a 1% fee. <br />
+          A withdrawal through crypto attracts a 2% LP fee. <br />
             Cryptos can be highly volatile, all withdrawals sent through will be
             equivalent to the exchange rate at the time of sending. At the time
             you receive your crypto withdrawal into your given wallet, the
