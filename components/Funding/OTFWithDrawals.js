@@ -45,7 +45,7 @@ function OTFWithDrawals () {
 
         <Accordion.Collapse eventKey='0'>
           <Card.Body>
-            Withdrawals by the funding provider through the client portal.
+            Withdrawals are processed by the funding provider through the client portal.
           </Card.Body>
         </Accordion.Collapse>
       </Card>
@@ -173,7 +173,7 @@ function OTFWithDrawals () {
         </Accordion.Collapse>
       </Card>
       {/* ////////////////////// */}
-      <Card>
+      {/* <Card>
         <Card.Header>
           <Accordion.Toggle
             as={props => (
@@ -200,9 +200,9 @@ function OTFWithDrawals () {
             control of our bakcers.
           </Card.Body>
         </Accordion.Collapse>
-      </Card>
+      </Card> */}
       {/* ////////////////////// */}
-      <Card>
+      {/* <Card>
         <Card.Header>
           <Accordion.Toggle
             as={props => (
@@ -235,7 +235,7 @@ function OTFWithDrawals () {
             through the backers partner exchange tccrypto.io.
           </Card.Body>
         </Accordion.Collapse>
-      </Card>
+      </Card> */}
       {/* ////////////////////// */}
     </Accordion>
   )
