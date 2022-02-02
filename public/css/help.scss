@@ -333,7 +333,7 @@
     // justify-content: center;
 
     .background {
-      position: absolute;
+      position: relative;
       background-color: black !important;
       z-index: -2;
       top: 0;
@@ -459,7 +459,7 @@
         overflow: hidden;
 
         img {
-          position: absolute;
+          position: relative;
           width: 100%;
           height: auto;
         }
