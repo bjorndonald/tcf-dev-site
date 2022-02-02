@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { gsap } from 'gsap/dist/gsap'
 
-export default function HelpCenterSectionTwo () {
+export default function HelpCenterSectionTwo() {
   // useEffect(() => {
   //   gsap.timeline({
   //     scrollTrigger: {
@@ -44,24 +44,26 @@ export default function HelpCenterSectionTwo () {
             }}
           >
             <div className='col-10 col-md-5 d-flex justify-content-center'>
-              <div className='eyntkBox eyntkBoxOne'>
-                <div className='background'></div>
-                <video
-                  loop={true}
-                  playsInline
-                  className='image'
-                  autoPlay='autoplay'
-                  muted={true}
-                >
-                  <source src='/videos/home/boxOne.mp4' type='video/mp4' />
-                  Your browser does not support the video tag.
-                </video>
+              <div className='eyntkBox eyntkBoxOne' style={{ background: '#000' }}>
+                {/* <div className='background'></div> */}
                 <h3 className='mb-2'>Fund</h3>
 
                 <p>
                   Learn how to get <br />
                   &nbsp;funded in 24 hrs
                 </p>
+
+                <video
+                  loop={true}
+                  playsInline
+                  className='float-right mb-0'
+                  autoPlay='autoplay'
+                  muted={true}
+                >
+                  <source src='/videos/home/boxOne.mp4' type='video/mp4' />
+                  Your browser does not support the video tag.
+                </video>
+
               </div>
             </div>
           </Link>
@@ -73,18 +75,8 @@ export default function HelpCenterSectionTwo () {
             }}
           >
             <div className='col-10 col-md-5 d-flex justify-content-center'>
-              <div className='eyntkBox eyntkBoxTwo'>
-                <div className='background'></div>
-                <video
-                  loop={true}
-                  playsInline
-                  className='image'
-                  autoPlay='autoplay'
-                  muted={true}
-                >
-                  <source src='/videos/home/boxFour.mp4' type='video/mp4' />
-                  Your browser does not support the video tag.
-                </video>
+              <div className='eyntkBox eyntkBoxTwo' style={{ background: '#000' }}>
+                {/* <div className='background'></div> */}
                 <h3 className='mb-2'>Crypto</h3>
 
                 <p>
@@ -94,6 +86,17 @@ export default function HelpCenterSectionTwo () {
                   <br />
                   &nbsp;spot cryptos
                 </p>
+                <video
+                  loop={true}
+                  playsInline
+                  className='float-right mt-2'
+                  autoPlay='autoplay'
+                  muted={true}
+                >
+                  <source src='/videos/home/boxFour.mp4' type='video/mp4' />
+                  Your browser does not support the video tag.
+                </video>
+
               </div>
             </div>
           </Link>
@@ -105,18 +108,8 @@ export default function HelpCenterSectionTwo () {
             }}
           >
             <div className='col-10 col-md-5 d-flex justify-content-center'>
-              <div className='eyntkBox eyntkBoxThree'>
-                <div className='background'></div>
-                <video
-                  loop={true}
-                  playsInline
-                  className='image'
-                  autoPlay='autoplay'
-                  muted={true}
-                >
-                  <source src='/videos/home/boxTwo.mp4' type='video/mp4' />
-                  Your browser does not support the video tag.
-                </video>
+              <div className='eyntkBox eyntkBoxThree' style={{ background: '#000' }}>
+                {/* <div className='background'></div> */}
                 <h3 className='mb-2'>Tokens</h3>
 
                 <p>
@@ -126,6 +119,17 @@ export default function HelpCenterSectionTwo () {
                   <br />
                   &nbsp;redeeming
                 </p>
+                <video
+                  loop={true}
+                  playsInline
+                  className='float-right mt-2'
+                  autoPlay='autoplay'
+                  muted={true}
+                >
+                  <source src='/videos/home/boxTwo.mp4' type='video/mp4' />
+                  Your browser does not support the video tag.
+                </video>
+                
               </div>
             </div>
           </Link>
@@ -136,18 +140,8 @@ export default function HelpCenterSectionTwo () {
             }}
           >
             <div className='col-10 col-md-5 d-flex justify-content-center'>
-              <div className='eyntkBox eyntkBoxFour'>
-                <div className='background'></div>
-                <video
-                  loop={true}
-                  playsInline
-                  className='image'
-                  autoPlay='autoplay'
-                  muted={true}
-                >
-                  <source src='/videos/home/boxThree.mp4' type='video/mp4' />
-                  Your browser does not support the video tag.
-                </video>
+              <div className='eyntkBox eyntkBoxFour' style={{ background: '#000' }}>
+                {/* <div className='background'></div> */}
                 <h3 className='mb-2'>Liquidity</h3>
                 {/* <Image
                 src='/images/laquidty.png'
@@ -160,6 +154,17 @@ export default function HelpCenterSectionTwo () {
                   <br />
                   &nbsp;startup help
                 </p>
+                <video
+                  loop={true}
+                  playsInline
+                  className='float-right mt-2'
+                  autoPlay='autoplay'
+                  muted={true}
+                >
+                  <source src='/videos/home/boxThree.mp4' type='video/mp4' />
+                  Your browser does not support the video tag.
+                </video>
+               
               </div>
             </div>
           </Link>
