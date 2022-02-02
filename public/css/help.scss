@@ -624,3 +624,16 @@ nav {
     }
   }
 }
+
+
+@media screen and (max-width: 600px) {
+	.helpCenterSectionTwo .container {
+    margin-top: 0;
+  
+      video {
+        position: relative;
+      }
+  }
+}
+
+
