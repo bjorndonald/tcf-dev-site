@@ -44,6 +44,7 @@ function FundSectionTwo (props) {
             : sections_array[router.query.name].map(post => {
                 return (
                   <Link
+                    key={post.id}
                     href={{
                       pathname: '/help-center/articles',
                       query: {
@@ -55,7 +56,7 @@ function FundSectionTwo (props) {
                   >
                     <div className='col-10 col-md-5 d-flex justify-content-center'>
                       <div className='eyntkBox eyntkBoxOne'>
-                        <div className='background'></div>
+                        <div className='background' style={{position: "absolute"}}></div>
                         <h3 className='mb-4'>{post.name}</h3>
 
                         <p>{post.description}</p>
