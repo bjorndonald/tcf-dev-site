@@ -51,9 +51,25 @@
 
   .btn-black {
     position: absolute;
-    bottom: 12%;
-    right: 10%;
-    zoom: 0.9;
+    bottom: 5.5%;
+    right: 18%;
+    zoom: 0.85;
+  }
+}
+
+@media (max-width: 1300px) {
+  .fundingOne {
+    .btn-black {
+      right: 15%;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .fundingOne {
+    .btn-black {
+      right: 12%;
+    }
   }
 }
 
@@ -65,7 +81,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1120px) {
   .fundingOne {
     width: 100%;
     height: auto;
@@ -84,13 +100,19 @@
       left: 0;
       z-index: -1;
     }
+
+    .btn-black {
+      bottom: 8%;
+      right: 10%;
+      zoom: 0.85;
+    }
   }
 }
 
-@media (max-width: 748px) {
+@media (max-width: 810px) {
   .fundingOne {
     .btn-black {
-      bottom: 14%;
+      bottom: 8%;
       zoom: 0.7;
     }
   }
@@ -99,8 +121,9 @@
 @media (max-width: 535px) {
   .fundingOne {
     .btn-black {
-      right: 7%;
-      zoom: 0.6;
+      bottom: 10%;
+      right: 8%;
+      zoom: 0.55;
     }
   }
 }
@@ -108,7 +131,7 @@
 @media (max-width: 450px) {
   .fundingOne {
     .btn-black {
-      bottom: 16%;
+      bottom: 10%;
       zoom: 0.45;
     }
   }
