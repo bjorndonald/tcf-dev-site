@@ -30,79 +30,90 @@
 
 .fundingOne {
   position: relative;
-  // background-image: url('/images/funding/new_year_banner.jpg');
-  // background-position: 20% 60%;
-  // background-size: cover;
+  height: calc(100vh - 89px);
+  margin-top: 89px;
+
   .background {
     position: absolute;
     top: 0;
-    left: 0vw;
+    left: 0;
     z-index: -1;
-    background-image: url('/images/funding/new_year_banner.jpg');
-    background-position: center;
-    background-size: cover;
-    width: 107vw;
+    width: 100%;
     height: 100%;
+    background-image: url('/images/funding/mol-banner.jpeg'), url('/images/funding/funding-base.jpeg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 100%, cover;
   }
 
-  .container-fluid.web {
-    height: 100vh;
-    // margin-top: 5vh;
-    position: relative;
-    // h4 {
-    //   display: none;
-    // }
-
-    .btn {
-      position: absolute;
-      bottom: 30vh;
-      background-color: black;
-      // margin-top: 5rem;
-      font-weight: bold;
-      border-radius: 5vh;
-      padding: 1vh 5vh;
-      font-size: 3vh;
-      color: #fff;
-    }
+  .backgroundImage {
+    display: none;
   }
-  .mobile {
-    display: none !important;
+
+  .btn-black {
+    position: absolute;
+    bottom: 12%;
+    right: 10%;
+    zoom: 0.9;
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 1028px) {
   .fundingOne {
-    background-color: #f1f1f1;
+    .btn-black {
+      right: 8%;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .fundingOne {
+    width: 100%;
+    height: auto;
+    margin-top: 79px;
+
     .background {
       display: none;
     }
-    .container-fluid.mobile {
-      position: relative;
-      display: flex !important;
-      margin-top: 8vh;
 
-      height: 50vh;
-      flex-direction: column;
-      align-items: center;
-      img {
-      }
-      h4 {
-        position: absolute;
-        width: 100vw;
-        text-align: center;
-        top: calc((100% - 24vw) / 2);
-        z-index: 4;
-        left: 0;
-        display: block !important;
-        color: #79689c;
-        font-size: 6vw;
-      }
-    }
-    .web {
-      display: none !important;
+    .backgroundImage {
+      display: block;
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: 0;
+      left: 0;
+      z-index: -1;
     }
   }
 }
+
+@media (max-width: 748px) {
+  .fundingOne {
+    .btn-black {
+      bottom: 14%;
+      zoom: 0.7;
+    }
+  }
+}
+
+@media (max-width: 535px) {
+  .fundingOne {
+    .btn-black {
+      right: 7%;
+      zoom: 0.6;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .fundingOne {
+    .btn-black {
+      bottom: 16%;
+      zoom: 0.45;
+    }
+  }
+}
+
 
 @media (min-width: 480px) and (max-width: 1025px) {
   .fundingSectionOne {
@@ -129,6 +140,7 @@
 
 .fundingSectionTwo {
   margin-top: 5vh;
+
   img {
     width: 100%;
   }
@@ -137,6 +149,7 @@
 .fundingSectionThree {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+
   .monthly,
   .one-time {
     justify-content: center;
@@ -173,10 +186,12 @@
     br {
       display: none;
     }
+
     .fragment {
       display: flex;
       align-items: center;
     }
+
     ol {
       margin-bottom: 0;
       display: inline-flex;
@@ -241,6 +256,7 @@
       margin-bottom: 0;
       margin-right: 2rem;
     }
+
     // flex-direction: column;
 
     h4 {
@@ -265,6 +281,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
         .value {
           width: calc((35 / 900) * 100vh);
           height: calc((35 / 900) * 100vh);
@@ -285,6 +302,7 @@
             line-height: calc((39 / 900) * 100vh);
           }
         }
+
         p {
           // font-family: 'Montserrat';
           font-weight: 300;
@@ -300,9 +318,11 @@
   .btn-outline-dark {
     border-radius: 3.125rem;
   }
+
   .col-md-5 {
     padding: 0;
   }
+
   .wrapper {
     width: 100%;
     display: flex;
@@ -330,6 +350,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
         p {
           line-height: 0.9rem;
         }
@@ -343,6 +364,7 @@
       color: white;
       margin-top: 1.5rem;
     }
+
     .pTableDetailWrap {
       width: 60%;
       margin-right: -2rem;
@@ -407,9 +429,11 @@
       width: 90%;
       padding: 0.25rem 0 !important;
       border-bottom: 1px solid;
+
       p {
         font-size: 1.125rem;
       }
+
       p:first-child {
         width: 50%;
         margin-bottom: 0;
@@ -418,6 +442,7 @@
         align-items: center;
         font-weight: bold;
       }
+
       p:last-child {
         width: 50%;
         flex-wrap: wrap;
@@ -429,6 +454,7 @@
         margin-bottom: 0;
       }
     }
+
     // li:nth-child(5) {
     //   p:first-child {
     //     width: 60%;
@@ -448,6 +474,7 @@
   p {
     padding: 0;
   }
+
   .bottom-one-time {
     .pTableSingleListWrap {
       background-color: #7a20eb;
@@ -468,6 +495,7 @@
 
             // padding-right: 15%;
           }
+
           p:last-child {
             padding-right: 10%;
             width: 40%;
@@ -496,6 +524,7 @@
       }
     }
   }
+
   .bottom-monthly {
     .pTableSingleListWrap {
       background-color: #7a20eb;
@@ -524,6 +553,7 @@
     }
   }
 }
+
 .priceTableNavs {
   .nav.bubbles {
     .nav-item {
@@ -653,6 +683,7 @@
     margin-left: 4px;
     cursor: pointer;
   }
+
   .pTableDetail svg {
     fill: #fff;
   }
@@ -705,6 +736,7 @@
 
         width: 100% !important;
       }
+
       .column:first-child {
         padding-left: 2rem;
         width: calc(20% + 2rem);
@@ -713,12 +745,14 @@
           margin-top: 3rem;
         }
       }
+
       .column:last-child {
         width: calc(40%);
         // padding-left: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+
         h3 {
         }
 
@@ -747,6 +781,7 @@
         padding-left: 2rem;
         width: calc(20% + 2rem);
       }
+
       .column:last-child {
         width: calc(40%);
         // padding-left: 2rem;
@@ -762,6 +797,7 @@
         width: 100%;
         padding-bottom: 3rem;
       }
+
       p {
         width: 100% !important;
         font-size: 0.75rem !important;
@@ -794,6 +830,7 @@
       align-items: center;
       padding-left: 2rem;
     }
+
     p:last-child {
       margin-bottom: 0.25rem;
       font-size: 0.9375rem;
@@ -809,6 +846,7 @@
 .fundingSectionFour {
   height: 80vh;
   margin-bottom: 0vh;
+
   .priceTableNavs {
     .bubbles {
       display: flex;
@@ -817,6 +855,7 @@
       .nav-item {
         margin-top: 1rem;
       }
+
       .nav-item:nth-child(2) {
         // margin-right: 8px !important;
       }
@@ -826,6 +865,7 @@
       }
     }
   }
+
   .subcategories {
     .nav-link {
       font-size: 1.5rem;
@@ -853,6 +893,7 @@
     .nav-link:hover {
       text-decoration: none;
     }
+
     .nav {
       position: relative;
       width: 14rem;
@@ -920,6 +961,7 @@
     display: flex;
     width: 100%;
   }
+
   a:hover {
     cursor: pointer;
     text-decoration: underline;
@@ -958,18 +1000,21 @@
 #position-section {
   height: 30rem;
   overflow-y: scroll;
+
   table {
     color: #000;
     //   font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
   }
+
   td,
   th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
   }
+
   tr:nth-child(even) {
     background-color: #dddddd;
   }

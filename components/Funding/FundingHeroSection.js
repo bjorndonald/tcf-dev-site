@@ -61,7 +61,7 @@ function FundingHeroSection (props) {
               marginTop: '-5.5vh'
             }}
             className=''
-            src='/images/december-savings.png'
+            src='/images/funding/mol-banner.jpeg'
             alt='Trader Central Fund'
           />
           <a
