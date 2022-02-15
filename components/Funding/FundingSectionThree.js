@@ -218,7 +218,7 @@ export default function FundingSectionThree() {
                     </div>
                     <p className="mx-auto mt-4 font-weight-light" style={{fontSize: "15px"}}>
                         By subscribing you agree to the
-                        <a href="" target="_blank" style={{fontWeight: "510"}}> funding policy.</a>
+                        <a href="https://legal.traderscentral.com/prime-bridge-llc/funding-policy" target="_blank" style={{fontWeight: "510"}} rel="noreferrer"> funding policy.</a>
                     </p>
                 </div>
             </div>
