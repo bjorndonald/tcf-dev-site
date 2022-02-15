@@ -496,6 +496,10 @@ function OTFTrading() {
                             <li>Performing trading strategies in a way that establishes justified concerns that the
                                 backer might suffer financial or other harm as a result.
                             </li>
+                            <li>Opening substantially larger position sizes compared to your other trades or opening
+                                substantially smaller or larger number of positions compared to your other trades on
+                                your account.
+                            </li>
                         </ol>
                     </Card.Body>
                 </Accordion.Collapse>
