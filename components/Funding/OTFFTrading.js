@@ -215,6 +215,41 @@ function OTFTrading () {
         </Accordion.Collapse>
       </Card>
       {/* //////////////////////////// */}
+      <Card>
+        <Card.Header>
+          <Accordion.Toggle
+              as={props => (
+                  <div onClick={toggle}>
+                    <Button {...props} />
+                  </div>
+              )}
+              variant='link'
+              eventKey='13'
+          >
+            <p>Unauthorized Trading Practises</p>
+            <span>+</span>
+            <span style={{display: 'none'}}>-</span>
+          </Accordion.Toggle>
+        </Card.Header>
+
+        <Accordion.Collapse eventKey='13'>
+          <Card.Body>
+            <ol type={"a"}>
+              <li>Trading strategies that exploit errors in the services, such as errors in displaying
+                prices or data.
+              </li>
+              <li>Any software, artificial intelligence, high-frequency analysis, or mass data entering
+                which might make our service unfair for you or give you an unfair advantage cannot be
+                used.
+              </li>
+              <li>Performing trading strategies in a way that establishes justified concerns that the
+                backer might suffer financial or other harm as a result.
+              </li>
+            </ol>
+          </Card.Body>
+        </Accordion.Collapse>
+      </Card>
+      {/* //////////////////////////// */}
     </Accordion>
   )
 }
