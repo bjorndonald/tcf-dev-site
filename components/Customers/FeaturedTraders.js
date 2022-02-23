@@ -67,13 +67,11 @@ function FeaturedTraders() {
                                 >
                                     {/* eslint-disable-next-line @next/next/no-img-element */}
                                     <img src={item.image} alt={item.name}/>
-                                    <h3 className="mt-3 mb-2">
-                                        Meet the trader: <br/>
+                                    <h3 className="mt-4 mb-3">
                                         {item.name}
                                     </h3>
                                     <h4>
-                                        Exploring the history of forex trading
-                                        and how it shapes our world today
+                                        Learn about their experience in the ecosystem
                                     </h4>
                                 </div>
                             ))}

@@ -224,9 +224,12 @@
   }
 
   img {
-    width: 75%;
+    width: 60%;
     height: auto;
     border-radius: 30px;
+    @media (max-width: 463px) {
+      width: 75%;
+    }
   }
 
   .slideButton {
@@ -270,7 +273,7 @@
   }
 }
 
-.featured-trader{
+.featured-trader {
   .title {
     color: #7966e8;
   }

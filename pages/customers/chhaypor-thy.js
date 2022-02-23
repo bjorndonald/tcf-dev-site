@@ -8,23 +8,12 @@ import FeaturedTraderVote from "../../components/Customers/FeaturedTraderVote";
 function FeaturedTrader() {
     const router = useRouter()
     let traderData = featuredTradersList.find(item => item.url === 'chhaypor-thy');
-    const  shuffle = (a) => {
-        var j, x, i;
-        for (i = a.length - 1; i > 0; i--) {
-            j = Math.floor(Math.random() * (i + 1));
-            x = a[i];
-            a[i] = a[j];
-            a[j] = x;
-        }
-        return a;
-    }
-    let suggestions = shuffle(featuredTradersList);
 
 
     return (
         <Fragment>
             <MetaTag
-                title='Our Customers | Traders Central'
+                title={traderData.name + ' | Traders Central'}
                 description={`Sign up for Traders Central to benefit from our suite of financial products that our customers love`}
             />
 
