@@ -58,8 +58,11 @@ function FeaturedTraders() {
                                     onClick={() => {
                                         router.push({
                                             pathname: '/customers/[slug]',
-                                            query: { slug: item.url },
+                                            query: {slug: item.url},
                                         })
+                                    }}
+                                    style={{
+                                        cursor: 'pointer'
                                     }}
                                 >
                                     {/* eslint-disable-next-line @next/next/no-img-element */}
