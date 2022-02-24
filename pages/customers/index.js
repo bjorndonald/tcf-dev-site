@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react'
-import MetaTag from './../components/MetaTag'
+import MetaTag from '../../components/MetaTag'
 import Head from 'next/head'
-import CustomersSectionOne from '../components/Customers/CustomersSectionOne'
-import CustomersSectionTwo from '../components/Customers/CustomersSectionTwo'
-import CustomersSectionThree from '../components/Customers/CustomersSectionThree'
-import CustomersSectionFour from '../components/Customers/CustomersSectionFour'
+import CustomersSectionOne from '../../components/Customers/CustomersSectionOne'
+import CustomersSectionTwo from '../../components/Customers/CustomersSectionTwo'
+import CustomersSectionThree from '../../components/Customers/CustomersSectionThree'
+import CustomersSectionFour from '../../components/Customers/CustomersSectionFour'
+import FeaturedTraders from "../../components/Customers/FeaturedTraders";
 
-function customers () {
+function index () {
   return (
     <Fragment>
       <MetaTag
@@ -40,6 +41,7 @@ function customers () {
         {/* <script src='/js/video.js'></script> */}
       </Head>
       <CustomersSectionOne />
+      <FeaturedTraders />
       <CustomersSectionTwo />
       <CustomersSectionThree />
       <CustomersSectionFour />
@@ -47,4 +49,4 @@ function customers () {
   )
 }
 
-export default customers
+export default index
