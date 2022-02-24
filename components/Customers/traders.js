@@ -65,7 +65,7 @@ export const featuredTradersList = [
             }, {
                 "question": "Tell us what you like about Traders Central and what you want us to improve.",
                 "answer": [
-                    "What I like about Traders Central Challenge is the profit split of 85% and the target on each of the 2 phrases, where you only need 8% on the first stage, and 4% on the second  stage. Also,  you  only need  5 minimum trading  days.  The  best thing about Traders Central  is you  can claim daily tokens and  use those toward  your plan   where   you   could   save   up   to   50%   of   your   challenge.",
+                    "What I like about Traders Central Challenge is the profit split of 85% and the target on each of the 2 phrases, where you only need 8% on the first stage, and 4% on the second  stage. Also,  you  only need  10 minimum trading  days.  The  best thing about Traders Central  is you  can claim daily tokens and  use those toward  your plan   where   you   could   save   up   to   50%   of   your   challenge.",
                     "What I want Trader Central to improve is to have bigger customer support and a better   system   in   putting   those   traders   who   passed   the   challenge   into   a   live account, besides waiting a couple of days where it needs to be reviewed by the risk team."
                 ]
             },
