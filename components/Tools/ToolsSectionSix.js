@@ -30,6 +30,9 @@ export default function ToolSectionSix() {
           <p>
             <Number>4</Number> <span>Forex margin calculator</span>
           </p>
+          <span className="btnDiv mt-2 ml-1">
+            <button className="mb-4">Get started for free</button>
+          </span>
         </div>
       </div>
     </div>

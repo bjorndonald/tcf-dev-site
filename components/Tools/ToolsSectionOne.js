@@ -12,7 +12,7 @@ export default function ToolSectionOne() {
             one place
           </h1>
 
-          <div className="row mt-5 flex-column align-items-center justify-content-between">
+          <div className="row mt-2 flex-column align-items-center justify-content-between">
             <button className="mb-4">Claim 30% off</button>
           </div>
         </div>

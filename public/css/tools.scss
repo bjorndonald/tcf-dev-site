@@ -7,16 +7,13 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #e5e5e5;
-    background-image: url(../images/tools/gradient-right.svg);
-    background-position: right;
-    background-repeat: no-repeat;
-    // background: linear-gradient(
-    //   90deg,
-    //   rgba(229, 229, 229, 1) 0%,
-    //   rgba(229, 229, 229, 1) 67%,
-    //   rgba(165, 223, 227, 1) 100%
-    // );
+    background: linear-gradient(
+      61deg,
+      rgba(229, 229, 229, 1) 0%,
+      rgba(229, 229, 229, 1) 67%,
+      rgba(165, 223, 227, 1) 100%
+    );
+    background-position: top 0% right;
     z-index: -2;
   }
 
@@ -26,7 +23,7 @@
 
   h1 {
     font-size: 4rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     color: #2b2b2b;
     text-align: center;
   }
@@ -57,7 +54,7 @@
     @media (max-width: 768px) {
       button {
         width: 200px;
-        height: 74px;
+        height: 60px;
         font-size: 20px;
         line-height: 20px;
         padding: 0.8rem 0.5rem;
@@ -67,7 +64,7 @@
       h1 {
         font-style: normal;
         font-weight: 600;
-        font-size: 36px;
+        font-size: 31px;
         line-height: 120%;
       }
     }
@@ -114,16 +111,13 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #e5e5e5;
-    background-image: url(../images/tools/gradient.svg);
-    background-position: left 0% top 30%;
-    background-repeat: no-repeat;
-    // background: linear-gradient(
-    //   90deg,
-    //   rgb(187, 211, 212) 0%,
-    //   rgba(229, 229, 229, 1) 67%,
-    //   rgba(229, 229, 229, 1) 100%
-    // );
+    background: rgb(165, 223, 227);
+    background: linear-gradient(
+      31deg,
+      rgba(165, 223, 227, 1) 0%,
+      rgba(229, 229, 229, 1) 56%,
+      rgba(229, 229, 229, 1) 88%
+    );
     z-index: -2;
   }
 
@@ -131,6 +125,17 @@
     border-radius: 30px;
     border: none;
     width: 100%;
+  }
+
+  @media (max-width: 900px) {
+    .background {
+      background: linear-gradient(
+        90deg,
+        rgba(165, 223, 227, 1) 0%,
+        rgba(229, 229, 229, 1) 56%,
+        rgba(229, 229, 229, 1) 88%
+      );
+    }
   }
 }
 
@@ -144,17 +149,13 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #e5e5e5;
-    background-image: url(../images/tools/gradient-right.svg);
-    background-position: right 0% top -10%;
-    background-repeat: no-repeat;
-
-    // background: linear-gradient(
-    //   90deg,
-    //   rgba(229, 229, 229, 1) 0%,
-    //   rgba(229, 229, 229, 1) 67%,
-    //   rgba(165, 223, 227, 1) 100%
-    // );
+    background: linear-gradient(
+      114deg,
+      rgba(229, 229, 229, 1) 0%,
+      rgba(229, 229, 229, 1) 67%,
+      rgba(165, 223, 227, 1) 100%
+    );
+    background-position: top 0% right;
     z-index: -2;
   }
 
@@ -228,9 +229,9 @@
 
     @media (max-width: 768px) {
       button {
-        width: 200px;
-        height: max-content;
-        font-size: 16px;
+        width: 230px;
+        height: 55px;
+        font-size: 19px;
         line-height: 20px;
         padding: 0.8rem 0.5rem;
         margin: 1rem 0;
@@ -241,6 +242,23 @@
         font-weight: 600;
         font-size: 36px;
         line-height: 120%;
+      }
+
+      p {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 20px;
+        text-align: center;
+      }
+
+      .container {
+        background: rgb(165, 223, 227);
+        background: linear-gradient(
+          90deg,
+          rgba(165, 223, 227, 1) 0%,
+          rgba(229, 229, 229, 1) 56%,
+          rgba(229, 229, 229, 1) 88%
+        );
       }
 
       .card-comp {
@@ -260,16 +278,17 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #e5e5e5;
-    background-image: url(../images/tools/gradient.svg);
-    background-position: left;
-    background-repeat: no-repeat;
-    // background: linear-gradient(
-    //   90deg,
-    //   rgba(229, 229, 229, 1) 0%,
-    //   rgba(229, 229, 229, 1) 67%,
-    //   rgba(165, 223, 227, 1) 100%
-    // );
+    // background-color: #e5e5e5;
+    // background-image: url(../images/tools/gradient.svg);
+    // background-position: left;
+    // background-repeat: no-repeat;
+    background: rgb(165, 223, 227);
+    background: linear-gradient(
+      40deg,
+      rgba(165, 223, 227, 1) 0%,
+      rgba(229, 229, 229, 1) 56%,
+      rgba(229, 229, 229, 1) 88%
+    );
     z-index: -2;
   }
 
@@ -358,17 +377,16 @@
     }
 
     button {
-      width: 290px;
+      width: max-content;
       height: 74px;
-      left: 523px;
-      top: 543px;
+      padding: 0.3rem 2rem;
       background: #59bac1;
       border-radius: 50px;
       outline: none;
       border: none;
       font-style: normal;
       font-weight: bold;
-      font-size: 30px;
+      font-size: 26px;
       line-height: 34px;
       text-align: center;
       color: #f4f4f4;
@@ -377,6 +395,20 @@
   @media (max-width: 900px) {
     .four-img {
       width: 100%;
+    }
+    button {
+      width: 230px;
+      height: 55px;
+      font-size: 19px;
+      line-height: 20px;
+      padding: 0.8rem 0.5rem;
+      margin: 1rem 0;
+      justify-self: center;
+    }
+
+    .btnDiv {
+      display: flex;
+      justify-content: center;
     }
 
     .trade-div {
@@ -404,16 +436,13 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #e5e5e5;
-    background-image: url(../images/tools/gradient.svg);
-    background-position: left;
-    background-repeat: no-repeat;
-    // background: linear-gradient(
-    //   90deg,
-    //   rgba(229, 229, 229, 1) 0%,
-    //   rgba(229, 229, 229, 1) 67%,
-    //   rgba(165, 223, 227, 1) 100%
-    // );
+    background: rgb(165, 223, 227);
+    background: linear-gradient(
+      130deg,
+      rgba(165, 223, 227, 1) 0%,
+      rgba(229, 229, 229, 1) 56%,
+      rgba(229, 229, 229, 1) 88%
+    );
     z-index: -2;
   }
 
@@ -469,7 +498,7 @@
     border: none;
     font-style: normal;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 34px;
     text-align: center;
     color: #f4f4f4;
@@ -486,9 +515,9 @@
 
   @media (max-width: 768px) {
     button {
-      width: 200px;
-      height: 60px;
-      font-size: 18px;
+      width: 230px;
+      height: 55px;
+      font-size: 19px;
       line-height: 20px;
       padding: 0.8rem 0.5rem;
       margin: 1rem 0;
@@ -506,12 +535,7 @@
     }
 
     .watch-card {
-      background: linear-gradient(
-        90deg,
-        rgba(229, 229, 229, 1) 0%,
-        rgba(229, 229, 229, 1) 67%,
-        rgba(165, 223, 227, 1) 100%
-      );
+      background: transparent;
       color: #7fcacf;
       font-size: 25px;
     }
