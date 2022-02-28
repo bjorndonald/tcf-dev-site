@@ -8,6 +8,9 @@ const Number = ({ children }) => {
 };
 
 export default function ToolSectionSix() {
+  const handleClick = () => {
+    window.location.assign("https://auth-tc.herokuapp.com/register");
+  };
   return (
     <div className="toolsSectionFour py-5 d-flex align-items-center ">
       <div className="background"></div>
@@ -31,7 +34,9 @@ export default function ToolSectionSix() {
             <Number>4</Number> <span>Forex margin calculator</span>
           </p>
           <span className="btnDiv mt-2 ml-1">
-            <button className="mb-4">Get started for free</button>
+            <button onClick={handleClick} className="mb-4">
+              Get started for free
+            </button>
           </span>
         </div>
       </div>

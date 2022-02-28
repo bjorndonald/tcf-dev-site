@@ -1,5 +1,5 @@
 .toolsSectionOne {
-  height: 100vh;
+  height: 600px;
   position: relative;
   overflow: hidden;
 
@@ -23,6 +23,7 @@
 
   h1 {
     font-size: 4rem;
+    font-weight: 700;
     margin-bottom: 3rem;
     color: #2b2b2b;
     text-align: center;
@@ -61,18 +62,24 @@
         margin: 1rem 0;
       }
 
+      br {
+        display: none;
+      }
+
       h1 {
         font-style: normal;
-        font-weight: 600;
-        font-size: 31px;
-        line-height: 120%;
+        font-weight: 700;
+        font-size: 37px;
+        line-height: 100%;
+        width: 95%;
+        margin-top: 5rem;
       }
     }
   }
 }
 @media (max-width: 768px) {
   .toolsSectionOne {
-    height: 600px;
+    height: 400px;
   }
   .container {
     flex-direction: column;
@@ -307,7 +314,7 @@
     color: white;
     height: max-content;
     width: max-content;
-    padding: 0.3rem 0.6rem;
+    padding: 0.3rem 0.8rem;
     border-radius: 50%;
     display: inline;
     font-size: 1.5rem;

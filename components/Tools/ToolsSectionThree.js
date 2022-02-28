@@ -39,6 +39,9 @@ const CardComponent = ({ image, text }) => {
 };
 
 export default function ToolSectionThree() {
+  const handleClick = () => {
+    window.location.assign("https://auth-tc.herokuapp.com/register");
+  };
   return (
     <div className="toolsSectionThree d-flex w-full align-items-center ">
       <div className="background"></div>
@@ -54,7 +57,7 @@ export default function ToolSectionThree() {
               return <CardComponent key={d.id} image={d.image} text={d.text} />;
             })}
           </div>
-          <button>Create a free portfolio</button>
+          <button onClick={handleClick}>Create a free portfolio</button>
         </div>
       </div>
     </div>
