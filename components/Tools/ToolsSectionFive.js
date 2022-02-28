@@ -17,6 +17,9 @@ const WatchCard = ({ image, text }) => {
 };
 
 export default function ToolSectionFive() {
+  const handleClick = () => {
+    window.location.assign("https://auth-tc.herokuapp.com/register");
+  };
   return (
     <div className="toolsSectionFive d-flex align-items-center ">
       <div className="background"></div>
@@ -27,7 +30,7 @@ export default function ToolSectionFive() {
             We allow you to monitor price <br />
             changes at all hours of the day and track your{" "}
           </p>
-          <button>Create free watchlist</button>
+          <button onClick={handleClick}>Create free watchlist</button>
         </div>
         <div className="watch-div2 ">
           <WatchCard text="Real time price updates" image={Watch1} />
