@@ -45,7 +45,7 @@ function OTFTrading() {
 
                 <Accordion.Collapse eventKey='0'>
                     <Card.Body>
-                        Traders will manage a live account with leverage of <b>1:50</b>
+                        Traders will manage a live account with leverage of <b>1:50</b>.
                     </Card.Body>
                 </Accordion.Collapse>
             </Card>
@@ -59,7 +59,7 @@ function OTFTrading() {
                             </div>
                         )}
                         variant='link'
-                        eventKey='0'
+                        eventKey='1'
                     >
                         <p>Trading hours</p>
                         <span>+</span>
@@ -67,7 +67,7 @@ function OTFTrading() {
                     </Accordion.Toggle>
                 </Card.Header>
 
-                <Accordion.Collapse eventKey='0'>
+                <Accordion.Collapse eventKey='1'>
                     <Card.Body>
                         Trades can be opened anytime of the day and can be held overnight
                         and over the weekend.
@@ -95,7 +95,7 @@ function OTFTrading() {
 
                 <Accordion.Collapse eventKey='2'>
                     <Card.Body>
-                        All Forex pairs, Crypto currencies, Stocks, Indices and Metals
+                        All Forex pairs, Crypto currencies, Stocks, Indices, and Metals.
                     </Card.Body>
                 </Accordion.Collapse>
             </Card>
@@ -124,14 +124,14 @@ function OTFTrading() {
                         diverse data patterns to monetize users' trading data.
                         <br/>
                         <br/>
-                        <b>What is the consequences of copy/group trading?</b>
+                        <b>What are the consequences of copy/group trading?</b>
                         <ul>
                             <li>
-                                First Offence: 50% fine on initial withdrawal, the trader is
-                                allowed to renew the account from a pending withdrawal
+                                First Offense: 50% fine on initial withdrawal. The trader is
+                                allowed to renew the account from a pending withdrawal.
                             </li>
                             <br/>
-                            <li>Second Offence: Withdrawal held and account is closed</li>
+                            <li>Second Offense: Withdrawal held and account is closed.</li>
                         </ul>
                     </Card.Body>
                 </Accordion.Collapse>
@@ -161,7 +161,7 @@ function OTFTrading() {
                         drawdown, and following positions added in the same direction and
                         same symbol are opened in multipliers of first position size. E.g.
                         For a 1 lot sell position, a multiplier in this case starts from
-                        1.01, so 1 and below is not classified as martingale
+                        1.01, so 1 and below is not classified as martingale.
                     </Card.Body>
                 </Accordion.Collapse>
             </Card>
@@ -188,7 +188,7 @@ function OTFTrading() {
                         Maximum drawdown of five percent (This means, the equity of the
                         trading account must not, at any moment during both stages duration,
                         reach a loss of -5%.). Withdrawal target of 0.5% net of commissions
-                        and swap
+                        and swap.
                     </Card.Body>
                 </Accordion.Collapse>
             </Card>

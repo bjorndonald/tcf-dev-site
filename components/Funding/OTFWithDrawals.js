@@ -69,8 +69,8 @@ function OTFWithDrawals () {
 
         <Accordion.Collapse eventKey='1'>
           <Card.Body>
-            Evaluation accounts are run on demo and not eligible for
-            withdrawals. Live accounts needs to be in profit net of commissions
+            Evaluation accounts are run on demo and are not eligible for
+            withdrawals. Live accounts need to be in profit net of commissions
             and swap to request a withdrawal.
           </Card.Body>
         </Accordion.Collapse>
@@ -96,8 +96,8 @@ function OTFWithDrawals () {
         <Accordion.Collapse eventKey='2'>
           <Card.Body>
             Withdrawals can now be requested on the 14th and 28th of each month
-            for the one time fee plan. Withdrawal methods currently available by
-            our backers are Crypto (BTC, ETH, USDC, USDT), for bank transfer you
+            for the one-time fee plan. Withdrawal methods currently available by
+            our backers are Crypto (BTC, ETH, USDC, USDT). For bank transfer you
             can use the backers partner exchange tccrypto.io.
           </Card.Body>
         </Accordion.Collapse>
@@ -122,11 +122,11 @@ function OTFWithDrawals () {
 
         <Accordion.Collapse eventKey='3'>
           <Card.Body>
-            THESE TERMS AND CONDITIONS ARE MADE IN ENGLISH LANGUAGE. ANY OTHER
-            LANGUAGE TRANSLATION IS PROVIDED AS A CONVENIENCE ONLY. IN THE CASE
-            OF ANY INCONSISTENCY OR DISCREPANCY BETWEEN ORIGINAL ENGLISH TEXTS
-            AND THEIR TRANSLATION INTO ANY OTHER LANGUAGE, AS THE CASE MAY BE,
-            ORIGINAL VERSIONS OF ENGLISH SHALL PREVAIL.
+            These terms and conditions are made in English language. Any other
+            Language translation is provided as a convenience only. In the case
+            Of any inconsistency or discrepancy between original English texts
+            And their translation into any other language, as the case may be,
+            Original versions of English shall prevail.
           </Card.Body>
         </Accordion.Collapse>
       </Card>
@@ -152,21 +152,21 @@ function OTFWithDrawals () {
           <Card.Body>
             <ol>
               <li>
-                IF THE BACKER SUSPECTS THAT A CLIENT HAS ABUSED OR ATTEMPTED TO
-                ABUSE ANY RISK MANAGEMENT RULES OR GUIDELINES, OR OTHERWISE
-                ACTED WITH A LACK OF GOOD FAITH TOWARDS US, THEN THE COMPANY
-                RESERVES THE RIGHT, AT ITS SOLE DISCRETION, TO DENY, WITHHOLD OR
-                WITHDRAW FROM THAT CLIENT. IF NECESSARY TO CANCEL ANY TERMS AND
-                CONDITIONS WITH RESPECT TO THAT CLIENT, EITHER TEMPORARILY OR
-                PERMANENTLY, OR TERMINATE THAT CLIENT'S ACCESS TO THE SERVICE
-                AND/OR BLOCK THAT CLIENT'S ACCOUNT.
+                If the backer suspects that a client has abused or attempted to
+                Abuse any risk management rules or guidelines, or otherwise
+                Acted with a lack of good faith towards us, then the company
+                Reserves the right, at its sole discretion, to deny, withhold or
+                Withdraw from that client. If necessary to cancel any terms and
+                Conditions with respect to that client, either temporarily or
+                Permanently, or terminate that client's access to the service
+                And/or block that client's account.
               </li>
               <li>
-                PARTICIPATION IN THE TRADERS CENTRAL FUNDING OPTIONS IS NOT
-                ALLOWED FOR PERSONS UNDER THE AGE OF 18 OR OTHERWISE UNDER THE
-                LEGAL AGE IN THEIR COUNTRY OF RESIDENCE ("MINORS"). IF FOUND A
-                CLIENT IS A ("MINOR"), THE WITHDRAWAL REQUEST WILL BE REFUSED
-                AND ACCOUNT WILL BE CANCELED.{' '}
+                Participation in the traders central funding options is not
+                Allowed for persons under the age of 18 or otherwise under the
+                Legal age in their country of residence ("Minors"). If found a
+                Client is a ("Minor"), the withdrawal request will be refused
+                And account will be canceled.
               </li>
             </ol>
           </Card.Body>

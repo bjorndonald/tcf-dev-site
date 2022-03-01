@@ -70,5 +70,46 @@ export const featuredTradersList = [
                 ]
             },
         ]
+    },
+    {
+        "image": "https://s3.us-east-1.amazonaws.com/cdn.traders-central/main-site/meet-the-trader/senam.jpg",
+        "name": "Senam",
+        "url": "senam",
+        "subtitles": [
+            "Looking for some inspiration from successful traders?",
+            "Check out how Senam got into trading, what's been done so far, and plans for the future."
+        ],
+        "questions": [
+            {
+                "question": "Tell us a bit about yourself and how you got into trading.",
+                "answer": [
+                    "My girlfriend started trading before me, and she got me interested in it. By being in contact with software having an engineering background, I got interested in automated trading and coding EAs. We worked together to bring combine tech and trading."
+                ]
+            }, {
+                "question": "How was the evaluation for you?",
+                "answer": [
+                    "The evaluation was not too bad, considering the fact that I have taken many challenges in the past and failed. I was elated when I finally succeeded."
+                ]
+            },
+            {
+                "question": "Can you share how much profit you have made if you're comfortable?",
+                "answer": [
+                    "On my MT5 currently, it shows that I have made over 20k in profit (without withdrawals. I have withdrawn over 7k previously before the profit split)."
+                ]
+            },
+            {
+                "question": "Tell us what you like about Traders Central and what you want us to improve.",
+                "answer": [
+                    "I was lured to Traders Central because of the 85/15 split, and the scaling of the account up to 2 million. I also liked the fact that it has a crypto withdrawal option.",
+                    "I would like to see a smoother operation in terms of obtaining the evaluation and funded account upon passing the challenges, and more transparent terms of withdrawals."
+                ]
+            },
+            {
+                "question": "What's next for you in trading?",
+                "answer": [
+                    "If my withdrawals go well, I would like to scale my account, as well as the whitelist, under your company."
+                ]
+            }
+        ]
     }
 ]
