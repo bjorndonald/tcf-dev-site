@@ -496,11 +496,6 @@ export default function NavBar() {
                   {/*  </Link>*/}
                   {/*</li>*/}
                   <li>
-                    <Link href='https://blog.traderscentral.com/'>
-                      <a className='dropdown-item' target="_blank" rel="noreferrer">Academy</a>
-                    </Link>
-                  </li>
-                  <li>
                     <Link href="https://blog.traderscentral.com/">
                       <a
                         className="dropdown-item"
