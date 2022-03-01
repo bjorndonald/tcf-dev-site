@@ -169,7 +169,7 @@ function MonthlyWithDrawals () {
                 AND ACCOUNT WILL BE CANCELED.
               </li>
               <li>
-                AN ACTIVE SUBSCRIPTION IS REQUIRED TO PAYOUT PENDING WITHDRAWALS
+                AN ACTIVE SUBSCRIPTION IS REQUIRED TO PAYOUT PENDING WITHDRAWALS.
               </li>
             </ol>
           </Card.Body>
@@ -185,7 +185,7 @@ function MonthlyWithDrawals () {
               </div>
             )}
             variant='link'
-            eventKey='4'
+            eventKey='5'
           >
             <p>Crypto</p>
             <span>+</span>
@@ -193,7 +193,7 @@ function MonthlyWithDrawals () {
           </Accordion.Toggle>
         </Card.Header>
 
-        <Accordion.Collapse eventKey='4'>
+        <Accordion.Collapse eventKey='5'>
           <Card.Body>
           A withdrawal through crypto attracts a 2% LP fee. <br />
             Cryptos can be highly volatile, all withdrawals sent through will be
@@ -214,7 +214,7 @@ function MonthlyWithDrawals () {
               </div>
             )}
             variant='link'
-            eventKey='4'
+            eventKey='6'
           >
             <p>Bank Transfer</p>
             <span>+</span>
@@ -222,7 +222,7 @@ function MonthlyWithDrawals () {
           </Accordion.Toggle>
         </Card.Header>
 
-        <Accordion.Collapse eventKey='4'>
+        <Accordion.Collapse eventKey='6'>
           <Card.Body>
             Note that if your bank account is denominated in a different
             currency from USD, your bank would also perform a currency exchange
@@ -231,9 +231,9 @@ function MonthlyWithDrawals () {
             including information on their exchange rates, and any possible
             additional fees applied by them. Some bank transfers are processed
             via one or more partner banks, which may result in additional
-            banking fees. Such fees are standard and are beyond our control as
-            in this case we act as the payer and not a payment service provider.
-            We kindly advise you to contact your bank as ask for further
+            banking fees. Such fees are standard and are beyond our control as,
+            in this case, we act as the payer, and not a payment service provider.
+            We kindly advise you to contact your bank to ask for further
             information on the fees they apply. Bank transfers can be used
             through the backers partner exchange tccrypto.io.
           </Card.Body>

@@ -72,18 +72,14 @@ function OTFTrading() {
                     <Card.Body>
                         <ul>
                             <li>
-                                Stage one lasts for <b>thirty days</b>, stage two{' '}
-                                <b>sixty days.</b>{' '}
+                                Stage one: <b>30 days</b>, with a minimum days requirement of <b>10</b>.{' '}
+                            </li>
+                            <li>
+                                Stage two: <b>60 days</b>, with a minimum days requirement of <b>10</b>.{' '}
                             </li>
                             <li>
                                 You can complete the total evaluation in a minimum of{' '}
-                                <b>20 days</b> so far as all other requirements are met
-                            </li>
-                            <li>
-                                Stage one has a minimum days requirement of <b>10</b>
-                            </li>
-                            <li>
-                                Stage two has a minimum days requirement of <b>10</b>
+                                <b>20 days</b> so far as all other requirements are met.
                             </li>
                         </ul>
                     </Card.Body>
@@ -109,7 +105,7 @@ function OTFTrading() {
 
                 <Accordion.Collapse eventKey='2'>
                     <Card.Body>
-                        All Forex pairs, Crypto currencies, Stocks, Indices, Gold and Silver
+                        All Forex pairs, Crypto currencies, Stocks, Indices, Gold, and Silver.
                     </Card.Body>
                 </Accordion.Collapse>
             </Card>
@@ -138,10 +134,10 @@ function OTFTrading() {
                         <br/>
                         <ul>
                             <li>
-                                First Offence: Warning, trader allowed to proceed to stage two.
+                                First Offense: Warning, trader allowed to proceed to stage two.
                             </li>
                             <br/>
-                            <li>Second Offence: Account is closed.</li>
+                            <li>Second Offense: Account is closed.</li>
                         </ul>
                     </Card.Body>
                 </Accordion.Collapse>
@@ -171,7 +167,7 @@ function OTFTrading() {
                         drawdown, and following positions added in the same direction and
                         same symbol are opened in multipliers of first position size. E.g.
                         For a 1 lot sell position, a multiplier in this case starts from
-                        1.01, so 1 and below is not classified as martingale
+                        1.01, so 1 and below is not classified as martingale.
                     </Card.Body>
                 </Accordion.Collapse>
             </Card>
@@ -233,7 +229,7 @@ function OTFTrading() {
 
                 <Accordion.Collapse eventKey='5'>
                     <Card.Body>
-                        The one time fee is reimbursed to you with the first profit split
+                        The one-time fee is reimbursed to you with the first profit split
                         when you become a Traders Central fund manager.
                     </Card.Body>
                 </Accordion.Collapse>
@@ -350,7 +346,7 @@ function OTFTrading() {
                 <Accordion.Collapse eventKey='8'>
                     <Card.Body>
                         Raw spreads account with leverage of <b>1:200</b> on
-                        industry-standard MT5. MT4 can be provided upon request
+                        industry-standard MT5. MT4 can be provided upon request.
                     </Card.Body>
                 </Accordion.Collapse>
             </Card>

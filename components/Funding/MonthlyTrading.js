@@ -139,10 +139,10 @@ function MonthlyTrading () {
             <br />
             <ol>
               <li>
-                First Offence: 50% fine on initial withdrawal, the trader is
-                allowed to renew the account from a pending withdrawal
+                First Offense: 50% fine on initial withdrawal, the trader is
+                allowed to renew the account from a pending withdrawal.
               </li>
-              <li>Second Offence: Withdrawal held and account is closed</li>
+              <li>Second Offense: Withdrawal held and account is closed.</li>
             </ol>
             <b>Can I appeal a flag?</b>
             <br />
@@ -172,9 +172,9 @@ function MonthlyTrading () {
 
         <Accordion.Collapse eventKey='4'>
           <Card.Body>
-            The subscription cycle lasts for thirty days, you'll be sent a
+            The subscription cycle lasts for thirty days, and you'll be sent a
             reminder to renew two days before expiry. You can renew your
-            subscription n your portal.
+            subscription on your portal.
           </Card.Body>
         </Accordion.Collapse>
       </Card>

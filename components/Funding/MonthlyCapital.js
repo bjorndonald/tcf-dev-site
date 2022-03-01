@@ -129,9 +129,9 @@ function MonthlyCapital () {
         <Accordion.Collapse eventKey='3'>
           <Card.Body>
             For the final stage, you must make 10% once again on your $200K
-            trading book, giving you a net of $235k. If you can succeed here we
+            trading book, giving you a net of $235k. If you can succeed here, we
             will allocate $1 Million to you and you will become one of our fund
-            managers. At this stage you will no longer have to pay a
+            managers. At this stage, you will no longer have to pay a
             subscription.
           </Card.Body>
         </Accordion.Collapse>

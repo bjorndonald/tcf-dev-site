@@ -80,7 +80,7 @@ function OTFCapital () {
               </li>
               <li>
                 If you can make a 10% return on your $100K trading book –
-                growing your account to $110 we will top up your funding to
+                growing your account to $110k, we will top up your funding to
                 $200k.{' '}
               </li>
             </ul>
@@ -108,7 +108,7 @@ function OTFCapital () {
         <Accordion.Collapse eventKey='2'>
           <Card.Body>
             If you can make a 10% return on your $200K trading book – growing
-            your account to $220k we will top up your funding to $400k
+            your account to $220k, we will top up your funding to $400k.
           </Card.Body>
         </Accordion.Collapse>
       </Card>
@@ -133,7 +133,7 @@ function OTFCapital () {
         <Accordion.Collapse eventKey='3'>
           <Card.Body>
             If you can make a 10% return on your $400K trading book – growing
-            your account to $440k we will top up your funding to $1M.
+            your account to $440k, we will top up your funding to $1M.
           </Card.Body>
         </Accordion.Collapse>
       </Card>
@@ -158,7 +158,7 @@ function OTFCapital () {
         <Accordion.Collapse eventKey='4'>
           <Card.Body>
             If you can make a 10% return on your $1M trading book – growing your
-            account to $1.1M we will top up your funding to $1.5M.
+            account to $1.1M, we will top up your funding to $1.5M.
           </Card.Body>
         </Accordion.Collapse>
       </Card>
@@ -183,7 +183,7 @@ function OTFCapital () {
         <Accordion.Collapse eventKey='5'>
           <Card.Body>
             If you can make a 10% return on your $1.5M trading book – growing
-            your account to $1.65M we will top up your funding to $2M.
+            your account to $1.65M, we will top up your funding to $2M.
           </Card.Body>
         </Accordion.Collapse>
       </Card>

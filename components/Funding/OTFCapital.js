@@ -108,7 +108,7 @@ function OTFCapital () {
         <Accordion.Collapse eventKey='2'>
           <Card.Body>
             If you can make a 10% return on your $200K trading book – growing
-            your account to $220k we will top up your funding to $400k
+            your account to $220k we will top up your funding to $400k.
           </Card.Body>
         </Accordion.Collapse>
       </Card>
