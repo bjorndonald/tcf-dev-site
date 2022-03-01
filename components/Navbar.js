@@ -87,29 +87,29 @@ export default function NavBar() {
                     </Link>
                   </li>
 
-                  <li>
-                    <Link
-                      href="/products/tools"
-                      className="mobileMenuListSubIA"
-                      // href='https://tccrypto.io/'
-                    >
-                      <div className="mobileMenuListSubiW d-flex align-items-stretch navClose">
-                        <div className="mobileMenuListSubImg">
-                          <img
-                            src="/images/home/boxFour_white.gif"
-                            alt=""
-                            className="image"
-                          />
-                        </div>
-                        <div className="mobileMenuListSubiC d-flex align-items-center">
-                          <div>
-                            <h2>Tools</h2>
-                            <p>All your trading tools in one place.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </Link>
-                  </li>
+                  {/*<li>*/}
+                  {/*  <Link*/}
+                  {/*    href="/products/tools"*/}
+                  {/*    className="mobileMenuListSubIA"*/}
+                  {/*    // href='https://tccrypto.io/'*/}
+                  {/*  >*/}
+                  {/*    <div className="mobileMenuListSubiW d-flex align-items-stretch navClose">*/}
+                  {/*      <div className="mobileMenuListSubImg">*/}
+                  {/*        <img*/}
+                  {/*          src="/images/home/boxFour_white.gif"*/}
+                  {/*          alt=""*/}
+                  {/*          className="image"*/}
+                  {/*        />*/}
+                  {/*      </div>*/}
+                  {/*      <div className="mobileMenuListSubiC d-flex align-items-center">*/}
+                  {/*        <div>*/}
+                  {/*          <h2>Tools</h2>*/}
+                  {/*          <p>All your trading tools in one place.</p>*/}
+                  {/*        </div>*/}
+                  {/*      </div>*/}
+                  {/*    </div>*/}
+                  {/*  </Link>*/}
+                  {/*</li>*/}
                   <li>
                     <Link href="/products/token">
                       <a
@@ -397,22 +397,22 @@ export default function NavBar() {
                       </a>
                     </Link>
                   </li>
-                  <li>
-                    <Link href="/products/tools">
-                      <a className="box-dropdown-item">
-                        <div className="card">
-                          <div className="card-body">
-                            <h2>Tools</h2>
-                            <p>All your trading tools in one place.</p>
-                            <p
-                              className="mt-4"
-                              style={{ textAlign: "right", color: "#fff" }}
-                            ></p>
-                          </div>
-                        </div>
-                      </a>
-                    </Link>
-                  </li>
+                  {/*<li>*/}
+                  {/*  <Link href="/products/tools">*/}
+                  {/*    <a className="box-dropdown-item">*/}
+                  {/*      <div className="card">*/}
+                  {/*        <div className="card-body">*/}
+                  {/*          <h2>Tools</h2>*/}
+                  {/*          <p>All your trading tools in one place.</p>*/}
+                  {/*          <p*/}
+                  {/*            className="mt-4"*/}
+                  {/*            style={{ textAlign: "right", color: "#fff" }}*/}
+                  {/*          ></p>*/}
+                  {/*        </div>*/}
+                  {/*      </div>*/}
+                  {/*    </a>*/}
+                  {/*  </Link>*/}
+                  {/*</li>*/}
 
                   <li>
                     <Link href="/products/token">
