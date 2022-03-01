@@ -482,8 +482,8 @@ export default function NavBar() {
                   Learn
                 </a>
                 <ul
-                  className="dropdown-menu white-background wider-background d-flex align-items-center justify-content-center center-dropdown"
-                  aria-labelledby="navbarDropdownMenuLinkTwo"
+                  className='dropdown-menu white-background wider-background d-flex align-items-center justify-content-center center-dropdown'
+                  aria-labelledby='navbarDropdownMenuLinkTwo'
                 >
                   {/* <li>
                     <Link href='/archive'>
@@ -495,6 +495,11 @@ export default function NavBar() {
                   {/*    <a className='dropdown-item'>Basics</a>*/}
                   {/*  </Link>*/}
                   {/*</li>*/}
+                  <li>
+                    <Link href='https://blog.traderscentral.com/'>
+                      <a className='dropdown-item' target="_blank" rel="noreferrer">Academy</a>
+                    </Link>
+                  </li>
                   <li>
                     <Link href="https://blog.traderscentral.com/">
                       <a
