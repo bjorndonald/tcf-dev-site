@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import Trade from "../../public/images/tools/copy-trade.svg";
+import Trade from "../../public/images/tools/copy-trade2.svg";
 import ToolSectionFive from "./ToolsSectionFive";
 
 const Number = ({ children }) => {
