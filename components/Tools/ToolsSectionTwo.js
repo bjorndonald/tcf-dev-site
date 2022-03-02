@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import Copier from "../../public/images/tools/tc_copier.svg";
+import Copier from "../../public/images/tools/tc_copier2.svg";
 
 export default function ToolSectionTwo() {
   return (

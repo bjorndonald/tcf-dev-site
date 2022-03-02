@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import CryptoCalc from "../../public/images/tools/Crypto-calc.svg";
+import CryptoCalc from "../../public/images/tools/Crypto-calc2.svg";
 
 const Number = ({ children }) => {
   return <div className="number">{children}</div>;
