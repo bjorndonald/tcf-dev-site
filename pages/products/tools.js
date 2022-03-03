@@ -34,12 +34,14 @@ function tools(props) {
         ></script>
         <script src="/js/script.js"></script>
       </Head>
-      <ToolSectionOne />
-      <ToolSectionTwo />
-      <ToolSectionThree />
-      <ToolSectionFour />
-      <ToolSectionFive />
-      <ToolSectionSix />
+      <div className="tools-main-bg">
+        <ToolSectionOne />
+        <ToolSectionTwo />
+        <ToolSectionThree />
+        <ToolSectionFour />
+        <ToolSectionFive />
+        <ToolSectionSix />
+      </div>
     </div>
   );
 }
