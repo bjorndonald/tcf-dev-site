@@ -9,7 +9,7 @@ export default function ToolSectionTwo() {
       <div className="background"></div>
       <div className="container d-flex flex-column align-items-center justify-content-between">
         <div className="row mx-auto flex-column align-items-center justify-content-between">
-          <div className="card">
+          <div className="">
             <Image src={Copier} alt="Copier" />
           </div>
         </div>
