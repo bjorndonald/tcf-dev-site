@@ -4,17 +4,17 @@
   overflow: hidden;
 
   .background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      61deg,
-      rgba(229, 229, 229, 1) 0%,
-      rgba(229, 229, 229, 1) 67%,
-      rgba(165, 223, 227, 1) 100%
-    );
-    background-position: top 0% right;
-    z-index: -2;
+    // position: absolute;
+    // width: 100%;
+    // height: 100%;
+    // background: linear-gradient(
+    //   61deg,
+    //   rgba(229, 229, 229, 1) 0%,
+    //   rgba(229, 229, 229, 1) 67%,
+    //   rgba(165, 223, 227, 1) 100%
+    // );
+    // background-position: top 0% right;
+    // z-index: -2;
   }
 
   .container {
@@ -115,17 +115,17 @@
   width: 100%;
 
   .background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgb(165, 223, 227);
-    background: linear-gradient(
-      31deg,
-      rgba(165, 223, 227, 1) 0%,
-      rgba(229, 229, 229, 1) 56%,
-      rgba(229, 229, 229, 1) 88%
-    );
-    z-index: -2;
+    // position: absolute;
+    // width: 100%;
+    // height: 100%;
+    // background: rgb(165, 223, 227);
+    // background: linear-gradient(
+    //   31deg,
+    //   rgba(165, 223, 227, 1) 0%,
+    //   rgba(229, 229, 229, 1) 56%,
+    //   rgba(229, 229, 229, 1) 88%
+    // );
+    // z-index: -2;
   }
 
   .card {
@@ -153,17 +153,17 @@
   padding: 5rem 0;
 
   .background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      114deg,
-      rgba(229, 229, 229, 1) 0%,
-      rgba(229, 229, 229, 1) 67%,
-      rgba(165, 223, 227, 1) 100%
-    );
-    background-position: top 0% right;
-    z-index: -2;
+    // position: absolute;
+    // width: 100%;
+    // height: 100%;
+    // background: linear-gradient(
+    //   114deg,
+    //   rgba(229, 229, 229, 1) 0%,
+    //   rgba(229, 229, 229, 1) 67%,
+    //   rgba(165, 223, 227, 1) 100%
+    // );
+    // background-position: top 0% right;
+    // z-index: -2;
   }
 
   .container {
@@ -259,13 +259,13 @@
       }
 
       .container {
-        background: rgb(165, 223, 227);
-        background: linear-gradient(
-          90deg,
-          rgba(165, 223, 227, 1) 0%,
-          rgba(229, 229, 229, 1) 56%,
-          rgba(229, 229, 229, 1) 88%
-        );
+        // // background: rgb(165, 223, 227);
+        // // background: linear-gradient(
+        // //   90deg,
+        // //   rgba(165, 223, 227, 1) 0%,
+        // //   rgba(229, 229, 229, 1) 56%,
+        // //   rgba(229, 229, 229, 1) 88%
+        // );
       }
 
       .card-comp {
@@ -282,21 +282,18 @@
   overflow: hidden;
 
   .background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    // background-color: #e5e5e5;
-    // background-image: url(../images/tools/gradient.svg);
-    // background-position: left;
-    // background-repeat: no-repeat;
-    background: rgb(165, 223, 227);
-    background: linear-gradient(
-      40deg,
-      rgba(165, 223, 227, 1) 0%,
-      rgba(229, 229, 229, 1) 56%,
-      rgba(229, 229, 229, 1) 88%
-    );
-    z-index: -2;
+    // position: absolute;
+    // width: 100%;
+    // height: 100%;
+
+    // background: rgb(165, 223, 227);
+    // background: linear-gradient(
+    //   40deg,
+    //   rgba(165, 223, 227, 1) 0%,
+    //   rgba(229, 229, 229, 1) 56%,
+    //   rgba(229, 229, 229, 1) 88%
+    // );
+    // z-index: -2;
   }
 
   .four-img {
@@ -440,17 +437,17 @@
   overflow: hidden;
   padding: 3rem 0;
   .background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgb(165, 223, 227);
-    background: linear-gradient(
-      130deg,
-      rgba(165, 223, 227, 1) 0%,
-      rgba(229, 229, 229, 1) 56%,
-      rgba(229, 229, 229, 1) 88%
-    );
-    z-index: -2;
+    // position: absolute;
+    // width: 100%;
+    // height: 100%;
+    // background: rgb(165, 223, 227);
+    // background: linear-gradient(
+    //   130deg,
+    //   rgba(165, 223, 227, 1) 0%,
+    //   rgba(229, 229, 229, 1) 56%,
+    //   rgba(229, 229, 229, 1) 88%
+    // );
+    // z-index: -2;
   }
 
   p {
@@ -569,4 +566,10 @@
       justify-content: center;
     }
   }
+}
+
+.tools-main-bg {
+  background-image: url("../images/tools/long-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
