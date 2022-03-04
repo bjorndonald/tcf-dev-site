@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import TradeMobile from "../../public/images/tools/copy_trade3.png";
 import Trade from "../../public/images/tools/copy-trade2.svg";
 import ToolSectionFive from "./ToolsSectionFive";
 
@@ -9,13 +10,25 @@ const Number = ({ children }) => {
 };
 
 export default function ToolSectionFour() {
+  const [mobileView, setMobileView] = useState(null);
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      // console.log(window.innerHeight, window.innerWidth);
+      setMobileView(window.innerWidth < 600 ? true : false);
+    });
+  }, []);
   return (
     <>
       <div className="toolsSectionFour py-5 d-flex align-items-center ">
         <div className="background"></div>
         <div id="four-div" className="container d-flex">
           <div className="four-img">
-            <Image src={Trade} alt="trade" />
+            {mobileView ? (
+              <Image src={TradeMobile} alt="trade" />
+            ) : (
+              <Image src={Trade} alt="trade" />
+            )}
+            {/* <Image src={Trade} alt="trade" /> */}
           </div>
           <div className="trade-div mt-2 ">
             <h1>Copy Trader</h1>
