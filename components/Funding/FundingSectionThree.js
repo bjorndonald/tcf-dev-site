@@ -20,8 +20,8 @@ const currencies = ['CAD', 'USD', 'EUR', 'GBP', 'JPY', 'AUD', 'NZD', 'CHF']
 async function fetchCurrencies(key) {
     const res = await fetch(
         process.env.NODE_ENV === 'development'
-            ? 'https://headerng.herokuapp.com/https://freecurrencyapi.net/api/v2/latest?apikey=fec0ee30-67e4-11ec-a666-a97e840d4f92&base_currency=CAD'
-            : 'https://freecurrencyapi.net/api/v2/latest?apikey=fec0ee30-67e4-11ec-a666-a97e840d4f92&base_currency=CAD',
+            ? 'https://headerng.herokuapp.com/https://api.traderscentral.com/currencies/v1/'
+            : 'https://api.traderscentral.com/currencies/v1/',
         {
             method: 'GET',
             headers: {
