@@ -51,6 +51,10 @@
 			display: block;
 			height: 1.875rem;
 			width: 1.875rem;
+			max-height: 1.875rem;
+    max-width: 1.875rem;
+	min-height: 1.875rem;
+    min-width: 1.875rem;
 			border-radius: 50%;
 			&:hover {
 				background: #7920EB;

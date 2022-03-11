@@ -11,7 +11,7 @@ import ArticleSectionOne from '../../components/Article/ArticleSectionOne'
 import ArticleSectionTwo from '../../components/Article/ArticleSectionTwo'
 
 export async function getStaticProps () {
-  const bres = await fetch('https://api.intercom.io/articles?per_page=198', {
+  const bres = await fetch('https://api.intercom.io/articles?per_page=202', {
     method: 'GET',
     mode: 'cors',
     cache: 'no-cache',
