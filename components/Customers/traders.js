@@ -111,5 +111,45 @@ export const featuredTradersList = [
                 ]
             }
         ]
+    },
+    {
+        "image": "https://s3.us-east-1.amazonaws.com/cdn.traders-central/main-site/meet-the-trader/haaris.png",
+        "name": "Haaris",
+        "url": "haaris",
+        "subtitles": [
+            "Haaris is about learning from the experience to achieve all of his goals. We're glad to see him doing always better and to be part of his trading journey",
+            "Check out his testimonial below."
+        ],
+        "questions": [
+            {
+                "question": "Tell us a bit about yourself and how you got into trading.",
+                "answer": [
+                    "I’m 26 years old and found out about trading online through TraderNick. I was initially practicing for quite some time on a demo account before eventually deciding to take the challenge for a funded account"
+                ]
+            }, {
+                "question": "How was the evaluation for you?",
+                "answer": [
+                    "The evaluation was pretty good with 8% on Stage 1, and 4% on Stage 2. The rules of the challenge were also pretty lenient compared to others."
+                ]
+            },
+            {
+                "question": "Can you share how much profit you have made if you're comfortable?",
+                "answer": [
+                    "Well, I’m never overly into sharing the amount of money, but I will give it in terms of percentage. So far, I’ve made approximately 8% in my first month and 10% in my second month."
+                ]
+            },
+            {
+                "question": "Tell us what you like about Traders Central and what you want us to improve.",
+                "answer": [
+                    "I like the simplicity of Traders Central. And, if there was something that I would improve on, it would be anytime payouts, as well as a more up-to-date online interface with possibly a phone line to help with queries faster."
+                ]
+            },
+            {
+                "question": "What's next for you in trading?",
+                "answer": [
+                    "My next goal in trading would be for me to scale my account up."
+                ]
+            }
+        ]
     }
 ]
